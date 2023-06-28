@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>战斗管理服务器介绍 </title>
+      <title>战斗框架介绍 </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="战斗管理服务器介绍 ">
+      <meta name="title" content="战斗框架介绍 ">
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -72,21 +72,17 @@
         </div>
 
         <article data-uid="">
-<h1 id="战斗管理服务器介绍">战斗管理服务器介绍</h1>
+<h1 id="战斗框架介绍">战斗框架介绍</h1>
 
-<h2 id="功能">功能:</h2>
-<p>负责接收后端服务器发来的战斗请求信息，通知/开启<em>战斗服务器实例</em>，分配战斗任务。</p>
-<h2 id="模块">模块：</h2>
-<h3 id="1local">1.[Local]</h3>
-<p>Server，Client负责管理服务器与实例之间的信息交互。包括登录，通知战斗，告知战斗结果等</p>
-<h3 id="2remote">2.[Remote]</h3>
-<p>负责与后端服务器的信息交互。包括接收战斗开启通知，告知战斗结果等</p>
-<h3 id="3controller">3.[Controller]</h3>
-<p>通过<em>ActionCode</em>管理各个消息响应具体实现。</p>
-<h3 id="4fightserverparameter">4.[FightServerParameter]</h3>
-<p>关于管理服务器的一些可配置参数</p>
-<h3 id="5mailutility">5.[MailUtility]</h3>
-<p>报错邮件通知</p>
+<p>本框架DEMO实现了联机对战，热更新，自动化战斗等功能。</p>
+<h2 id="1联机实现">1.联机实现</h2>
+<p>基于<strong>FishNet</strong>网络库,主要涉及脚本放在<em>Sync/Scripts/Utility</em>路径下、<em>XianXia.Utility</em>程序集中，该程序集是<em>XianXia.Client</em>的上层，<em>XianXia.Servr</em>的下层。<br>
+如需更换网络库，更改其中脚本的实现方法即可。</p>
+<h2 id="2热更新">2.热更新</h2>
+<p>基于<strong>JEnigne</strong>的热更新及资源管理网络库，主要调用在<em>ABUtility</em>即其实现脚本中。</p>
+<h2 id="3自动化战斗">3.自动化战斗</h2>
+<p>使用了<strong>ECS</strong>框架作为底层，每位作战的单位被视为一个<strong>Entity</strong>，被添加了<strong>Compont</strong>们:<strong>LegOrgan</strong>,<strong>BodyOrgan</strong>等；各个功能实现由<strong>System</strong>们完成。<br>
+主要涉及脚本放在<em>Sync/Scripts/Server/Unit</em>路径下、<em>XianXia.Server</em>程序集中，主要System为：<strong>UnitMainSystem</strong>，<strong>UnitMoveSysem</strong>，<strong>UnitAttackSystem</strong>等。</p>
 </article>
 
         <div class="contribution d-print-none">
