@@ -1,0 +1,1144 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SkillActive
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SkillActive
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="cfg.skillActive.SkillActive">
+
+
+
+  <h1 id="cfg_skillActive_SkillActive" data-uid="cfg.skillActive.SkillActive" class="text-break">
+    Class SkillActive
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="cfg.html">cfg</a>.<a class="xref" href="cfg.skillActive.html">skillActive</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SkillActive : BeanBase, ITypeId</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Bright.Config.BeanBase.html">BeanBase</a></div>
+      <div><span class="xref">SkillActive</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Bright.Serialization.ITypeId.html">ITypeId</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="cfg_skillActive_SkillActive__ctor_" data-uid="cfg.skillActive.SkillActive.#ctor*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive__ctor_SimpleJSON_JSONNode_" data-uid="cfg.skillActive.SkillActive.#ctor(SimpleJSON.JSONNode)">
+  SkillActive(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkillActive(JSONNode _json)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_json</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive__ctor_" data-uid="cfg.skillActive.SkillActive.#ctor*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive__ctor_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___System_Single___System_Single___System_Collections_Generic_Dictionary_System_Int32_System_Int32__System_Int32_System_Int32_System_Int32_System_Int32_System_String_" data-uid="cfg.skillActive.SkillActive.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32[],System.Single[],System.Single[],System.Collections.Generic.Dictionary{System.Int32,System.Int32},System.Int32,System.Int32,System.Int32,System.Int32,System.String)">
+  SkillActive(int, int, int, int, int, int, int, int, int, int, int, int[], float[], float[], Dictionary&lt;int, int&gt;, int, int, int, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkillActive(int skill_id, int skill_quality, int skill_type, int skill_object, int object_num, int target_determination, int release_range, int skill_SpellRange, int skill_classify, int skill_count, int skill_mp, int[] skill_effect, float[] effect_numer1, float[] effect_numer3, Dictionary&lt;int, int&gt; summoned, int live_time, int skill_shapeshift, int shapeshift_time, int skill_cd, string skill_resourcename)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skill_id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>skill_quality</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>skill_type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>skill_object</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>object_num</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>target_determination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>release_range</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>skill_SpellRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>skill_classify</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>skill_count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>skill_mp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>skill_effect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+    <dt><code>effect_numer1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>effect_numer3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+    <dt><code>summoned</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>live_time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>skill_shapeshift</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>shapeshift_time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>skill_cd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>skill_resourcename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="cfg_skillActive_SkillActive___ID__" data-uid="cfg.skillActive.SkillActive.__ID__">
+  __ID__
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int __ID__ = -1034293792</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="cfg_skillActive_SkillActive_EffectNumer1_" data-uid="cfg.skillActive.SkillActive.EffectNumer1*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_EffectNumer1" data-uid="cfg.skillActive.SkillActive.EffectNumer1">
+  EffectNumer1
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>生效数值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] EffectNumer1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_EffectNumer3_" data-uid="cfg.skillActive.SkillActive.EffectNumer3*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_EffectNumer3" data-uid="cfg.skillActive.SkillActive.EffectNumer3">
+  EffectNumer3
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>生效持续时长</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] EffectNumer3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_LiveTime_" data-uid="cfg.skillActive.SkillActive.LiveTime*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_LiveTime" data-uid="cfg.skillActive.SkillActive.LiveTime">
+  LiveTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>生存时间</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LiveTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_ObjectNum_" data-uid="cfg.skillActive.SkillActive.ObjectNum*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_ObjectNum" data-uid="cfg.skillActive.SkillActive.ObjectNum">
+  ObjectNum
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>生效人数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ObjectNum { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_ReleaseRange_" data-uid="cfg.skillActive.SkillActive.ReleaseRange*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_ReleaseRange" data-uid="cfg.skillActive.SkillActive.ReleaseRange">
+  ReleaseRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>影响范围</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReleaseRange { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_ShapeshiftTime_" data-uid="cfg.skillActive.SkillActive.ShapeshiftTime*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_ShapeshiftTime" data-uid="cfg.skillActive.SkillActive.ShapeshiftTime">
+  ShapeshiftTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>变身时间</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ShapeshiftTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_SkillCd_" data-uid="cfg.skillActive.SkillActive.SkillCd*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_SkillCd" data-uid="cfg.skillActive.SkillActive.SkillCd">
+  SkillCd
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>冷却时间</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SkillCd { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_SkillClassify_" data-uid="cfg.skillActive.SkillActive.SkillClassify*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_SkillClassify" data-uid="cfg.skillActive.SkillActive.SkillClassify">
+  SkillClassify
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>分类</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SkillClassify { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_SkillCount_" data-uid="cfg.skillActive.SkillActive.SkillCount*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_SkillCount" data-uid="cfg.skillActive.SkillActive.SkillCount">
+  SkillCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>释放计数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SkillCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_SkillEffect_" data-uid="cfg.skillActive.SkillActive.SkillEffect*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_SkillEffect" data-uid="cfg.skillActive.SkillActive.SkillEffect">
+  SkillEffect
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>生效类型</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] SkillEffect { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_SkillId_" data-uid="cfg.skillActive.SkillActive.SkillId*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_SkillId" data-uid="cfg.skillActive.SkillActive.SkillId">
+  SkillId
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>序号</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SkillId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_SkillMp_" data-uid="cfg.skillActive.SkillActive.SkillMp*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_SkillMp" data-uid="cfg.skillActive.SkillActive.SkillMp">
+  SkillMp
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>触发蓝量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SkillMp { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_SkillObject_" data-uid="cfg.skillActive.SkillActive.SkillObject*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_SkillObject" data-uid="cfg.skillActive.SkillActive.SkillObject">
+  SkillObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>释放对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SkillObject { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_SkillQuality_" data-uid="cfg.skillActive.SkillActive.SkillQuality*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_SkillQuality" data-uid="cfg.skillActive.SkillActive.SkillQuality">
+  SkillQuality
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>技能品质</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SkillQuality { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_SkillResourcename_" data-uid="cfg.skillActive.SkillActive.SkillResourcename*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_SkillResourcename" data-uid="cfg.skillActive.SkillActive.SkillResourcename">
+  SkillResourcename
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>技能资源名</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SkillResourcename { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_SkillShapeshift_" data-uid="cfg.skillActive.SkillActive.SkillShapeshift*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_SkillShapeshift" data-uid="cfg.skillActive.SkillActive.SkillShapeshift">
+  SkillShapeshift
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>变身技能</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SkillShapeshift { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_SkillSpellRange_" data-uid="cfg.skillActive.SkillActive.SkillSpellRange*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_SkillSpellRange" data-uid="cfg.skillActive.SkillActive.SkillSpellRange">
+  SkillSpellRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>施法距离</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SkillSpellRange { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_SkillType_" data-uid="cfg.skillActive.SkillActive.SkillType*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_SkillType" data-uid="cfg.skillActive.SkillActive.SkillType">
+  SkillType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>类型</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SkillType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_Summoned_" data-uid="cfg.skillActive.SkillActive.Summoned*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_Summoned" data-uid="cfg.skillActive.SkillActive.Summoned">
+  Summoned
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>召唤物</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, int&gt; Summoned { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_TargetDetermination_" data-uid="cfg.skillActive.SkillActive.TargetDetermination*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_TargetDetermination" data-uid="cfg.skillActive.SkillActive.TargetDetermination">
+  TargetDetermination
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>目标判定</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TargetDetermination { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="cfg_skillActive_SkillActive_DeserializeSkillActive_" data-uid="cfg.skillActive.SkillActive.DeserializeSkillActive*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_DeserializeSkillActive_SimpleJSON_JSONNode_" data-uid="cfg.skillActive.SkillActive.DeserializeSkillActive(SimpleJSON.JSONNode)">
+  DeserializeSkillActive(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SkillActive DeserializeSkillActive(JSONNode _json)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_json</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="cfg.skillActive.SkillActive.html">SkillActive</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_GetTypeId_" data-uid="cfg.skillActive.SkillActive.GetTypeId*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_GetTypeId" data-uid="cfg.skillActive.SkillActive.GetTypeId">
+  GetTypeId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetTypeId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_Resolve_" data-uid="cfg.skillActive.SkillActive.Resolve*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_Resolve_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="cfg.skillActive.SkillActive.Resolve(System.Collections.Generic.Dictionary{System.String,System.Object})">
+  Resolve(Dictionary&lt;string, object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resolve(Dictionary&lt;string, object&gt; _tables)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_tables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_ToString_" data-uid="cfg.skillActive.SkillActive.ToString*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_ToString" data-uid="cfg.skillActive.SkillActive.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that represents the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="cfg_skillActive_SkillActive_TranslateText_" data-uid="cfg.skillActive.SkillActive.TranslateText*"></a>
+
+  <h3 id="cfg_skillActive_SkillActive_TranslateText_System_Func_System_String_System_String_System_String__" data-uid="cfg.skillActive.SkillActive.TranslateText(System.Func{System.String,System.String,System.String})">
+  TranslateText(Func&lt;string, string, string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TranslateText(Func&lt;string, string, string&gt; translator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>translator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

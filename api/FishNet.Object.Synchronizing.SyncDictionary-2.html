@@ -1,0 +1,543 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SyncDictionary&lt;TKey, TValue&gt;
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SyncDictionary&lt;TKey, TValue&gt;
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FishNet.Object.Synchronizing.SyncDictionary`2">
+
+
+
+  <h1 id="FishNet_Object_Synchronizing_SyncDictionary_2" data-uid="FishNet.Object.Synchronizing.SyncDictionary`2" class="text-break">
+    Class SyncDictionary&lt;TKey, TValue&gt;
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FishNet.html">FishNet</a>.<a class="xref" href="FishNet.Object.html">Object</a>.<a class="xref" href="FishNet.Object.Synchronizing.html">Synchronizing</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SyncDictionary&lt;TKey, TValue&gt; : SyncIDictionary&lt;TKey, TValue&gt;, ISyncType, IDictionary&lt;TKey, TValue&gt;, ICollection&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IReadOnlyDictionary&lt;TKey, TValue&gt;, IReadOnlyCollection&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TKey</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html">SyncBase</a></div>
+      <div><a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html">SyncIDictionary</a>&lt;TKey, TValue&gt;</div>
+      <div><span class="xref">SyncDictionary&lt;TKey, TValue&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="FishNet.Object.Synchronizing.Internal.ISyncType.html">ISyncType</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;TKey, TValue&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;TKey, TValue&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_IsReadOnly">SyncIDictionary&lt;TKey, TValue&gt;.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_OnChange">SyncIDictionary&lt;TKey, TValue&gt;.OnChange</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Collection">SyncIDictionary&lt;TKey, TValue&gt;.Collection</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_ClientHostCollection">SyncIDictionary&lt;TKey, TValue&gt;.ClientHostCollection</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Count">SyncIDictionary&lt;TKey, TValue&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Keys">SyncIDictionary&lt;TKey, TValue&gt;.Keys</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Values">SyncIDictionary&lt;TKey, TValue&gt;.Values</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_GetCollection_System_Boolean_">SyncIDictionary&lt;TKey, TValue&gt;.GetCollection(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Registered">SyncIDictionary&lt;TKey, TValue&gt;.Registered()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_OnStartCallback_System_Boolean_">SyncIDictionary&lt;TKey, TValue&gt;.OnStartCallback(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_WriteDelta_FishNet_Serializing_PooledWriter_System_Boolean_">SyncIDictionary&lt;TKey, TValue&gt;.WriteDelta(PooledWriter, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_WriteFull_FishNet_Serializing_PooledWriter_">SyncIDictionary&lt;TKey, TValue&gt;.WriteFull(PooledWriter)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Read_FishNet_Serializing_PooledReader_System_Boolean_">SyncIDictionary&lt;TKey, TValue&gt;.Read(PooledReader, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Reset">SyncIDictionary&lt;TKey, TValue&gt;.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Add_System_Collections_Generic_KeyValuePair__0__1__">SyncIDictionary&lt;TKey, TValue&gt;.Add(KeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Add__0__1_">SyncIDictionary&lt;TKey, TValue&gt;.Add(TKey, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Clear">SyncIDictionary&lt;TKey, TValue&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_ContainsKey__0_">SyncIDictionary&lt;TKey, TValue&gt;.ContainsKey(TKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Contains_System_Collections_Generic_KeyValuePair__0__1__">SyncIDictionary&lt;TKey, TValue&gt;.Contains(KeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_CopyTo_System_Collections_Generic_KeyValuePair__0__1____System_Int32_">SyncIDictionary&lt;TKey, TValue&gt;.CopyTo(KeyValuePair&lt;TKey, TValue&gt;[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Remove__0_">SyncIDictionary&lt;TKey, TValue&gt;.Remove(TKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Remove_System_Collections_Generic_KeyValuePair__0__1__">SyncIDictionary&lt;TKey, TValue&gt;.Remove(KeyValuePair&lt;TKey, TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_TryGetValue__0__1__">SyncIDictionary&lt;TKey, TValue&gt;.TryGetValue(TKey, out TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Item__0_">SyncIDictionary&lt;TKey, TValue&gt;.this[TKey]</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_DirtyAll">SyncIDictionary&lt;TKey, TValue&gt;.DirtyAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Dirty__0_">SyncIDictionary&lt;TKey, TValue&gt;.Dirty(TKey)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_Dirty__1_System_Collections_Generic_EqualityComparer__1__">SyncIDictionary&lt;TKey, TValue&gt;.Dirty(TValue, EqualityComparer&lt;TValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.SyncIDictionary-2.html#FishNet_Object_Synchronizing_SyncIDictionary_2_GetEnumerator">SyncIDictionary&lt;TKey, TValue&gt;.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_IsRegistered">SyncBase.IsRegistered</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_IsNetworkInitialized">SyncBase.IsNetworkInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_IsSyncObject">SyncBase.IsSyncObject</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_Settings">SyncBase.Settings</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_SendRate">SyncBase.SendRate</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_IsDirty">SyncBase.IsDirty</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_NetworkManager">SyncBase.NetworkManager</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_NetworkBehaviour">SyncBase.NetworkBehaviour</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_NextSyncTick">SyncBase.NextSyncTick</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_SyncIndex">SyncBase.SyncIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_InitializeInstance_FishNet_Object_NetworkBehaviour_System_UInt32_FishNet_Object_Synchronizing_WritePermission_FishNet_Object_Synchronizing_ReadPermission_System_Single_FishNet_Transporting_Channel_System_Boolean_">SyncBase.InitializeInstance(NetworkBehaviour, uint, WritePermission, ReadPermission, float, Channel, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_SetRegistered">SyncBase.SetRegistered()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_Registered">SyncBase.Registered()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_PreInitialize_FishNet_Managing_NetworkManager_">SyncBase.PreInitialize(NetworkManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_OnStartCallback_System_Boolean_">SyncBase.OnStartCallback(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_CanNetworkSetValues_System_Boolean_">SyncBase.CanNetworkSetValues(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_LogServerNotActiveWarning">SyncBase.LogServerNotActiveWarning()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_Dirty">SyncBase.Dirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_WriteDelta_FishNet_Serializing_PooledWriter_System_Boolean_">SyncBase.WriteDelta(PooledWriter, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_WriteHeader_FishNet_Serializing_PooledWriter_System_Boolean_">SyncBase.WriteHeader(PooledWriter, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_WriteFull_FishNet_Serializing_PooledWriter_">SyncBase.WriteFull(PooledWriter)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_Read_FishNet_Serializing_PooledReader_">SyncBase.Read(PooledReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_Read_FishNet_Serializing_PooledReader_System_Boolean_">SyncBase.Read(PooledReader, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_Reset">SyncBase.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="FishNet.Utility.Extension.DictionaryFN.html#FishNet_Utility_Extension_DictionaryFN_TryGetValueIL2CPP__2_System_Collections_Generic_IDictionary___0___1____0___1__">DictionaryFN.TryGetValueIL2CPP&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, TKey, out TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Collections.CollectionExtensions.html#Spine_Collections_CollectionExtensions_ToOrderedDictionary__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IEqualityComparer___1__">CollectionExtensions.ToOrderedDictionary&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, IEqualityComparer&lt;TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Collections.CollectionExtensions.html#Spine_Collections_CollectionExtensions_ToOrderedDictionary__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__">CollectionExtensions.ToOrderedDictionary&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FishNet_Object_Synchronizing_SyncDictionary_2__ctor_" data-uid="FishNet.Object.Synchronizing.SyncDictionary`2.#ctor*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncDictionary_2__ctor" data-uid="FishNet.Object.Synchronizing.SyncDictionary`2.#ctor">
+  SyncDictionary()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SyncDictionary()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Object_Synchronizing_SyncDictionary_2__ctor_" data-uid="FishNet.Object.Synchronizing.SyncDictionary`2.#ctor*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncDictionary_2__ctor_System_Collections_Generic_IEqualityComparer__0__" data-uid="FishNet.Object.Synchronizing.SyncDictionary`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})">
+  SyncDictionary(IEqualityComparer&lt;TKey&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SyncDictionary(IEqualityComparer&lt;TKey&gt; eq)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eq</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;TKey&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FishNet_Object_Synchronizing_SyncDictionary_2_Keys_" data-uid="FishNet.Object.Synchronizing.SyncDictionary`2.Keys*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncDictionary_2_Keys" data-uid="FishNet.Object.Synchronizing.SyncDictionary`2.Keys">
+  Keys
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;TKey, TValue&gt;.KeyCollection Keys { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;TKey, TValue&gt;.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary{-0,-1}.keycollection">KeyCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Object_Synchronizing_SyncDictionary_2_Values_" data-uid="FishNet.Object.Synchronizing.SyncDictionary`2.Values*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncDictionary_2_Values" data-uid="FishNet.Object.Synchronizing.SyncDictionary`2.Values">
+  Values
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;TKey, TValue&gt;.ValueCollection Values { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;TKey, TValue&gt;.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary{-0,-1}.valuecollection">ValueCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FishNet_Object_Synchronizing_SyncDictionary_2_GetEnumerator_" data-uid="FishNet.Object.Synchronizing.SyncDictionary`2.GetEnumerator*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncDictionary_2_GetEnumerator" data-uid="FishNet.Object.Synchronizing.SyncDictionary`2.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;TKey, TValue&gt;.Enumerator GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;TKey, TValue&gt;.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary{-0,-1}.enumerator">Enumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

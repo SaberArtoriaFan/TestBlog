@@ -1,0 +1,708 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PredictionManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PredictionManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FishNet.Managing.Predicting.PredictionManager">
+
+
+
+  <h1 id="FishNet_Managing_Predicting_PredictionManager" data-uid="FishNet.Managing.Predicting.PredictionManager" class="text-break">
+    Class PredictionManager
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FishNet.html">FishNet</a>.<a class="xref" href="FishNet.Managing.html">Managing</a>.<a class="xref" href="FishNet.Managing.Predicting.html">Predicting</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Additional options for managing the observer system.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class PredictionManager : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PredictionManager</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FishNet_Managing_Predicting_PredictionManager_LastReconcileTick_" data-uid="FishNet.Managing.Predicting.PredictionManager.LastReconcileTick*"></a>
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_LastReconcileTick" data-uid="FishNet.Managing.Predicting.PredictionManager.LastReconcileTick">
+  LastReconcileTick
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Last tick any object reconciled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint LastReconcileTick { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Predicting_PredictionManager_LastReplicateTick_" data-uid="FishNet.Managing.Predicting.PredictionManager.LastReplicateTick*"></a>
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_LastReplicateTick" data-uid="FishNet.Managing.Predicting.PredictionManager.LastReplicateTick">
+  LastReplicateTick
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Last tick any object replicated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint LastReplicateTick { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FishNet_Managing_Predicting_PredictionManager_AddRigidbodyCount_" data-uid="FishNet.Managing.Predicting.PredictionManager.AddRigidbodyCount*"></a>
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_AddRigidbodyCount_UnityEngine_Component_" data-uid="FishNet.Managing.Predicting.PredictionManager.AddRigidbodyCount(UnityEngine.Component)">
+  AddRigidbodyCount(Component)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Increases Rigidbodies count by 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRigidbodyCount(UnityEngine.Component c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <span class="xref">Component</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Predicting_PredictionManager_GetMaximumServerReplicates_" data-uid="FishNet.Managing.Predicting.PredictionManager.GetMaximumServerReplicates*"></a>
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_GetMaximumServerReplicates" data-uid="FishNet.Managing.Predicting.PredictionManager.GetMaximumServerReplicates">
+  GetMaximumServerReplicates()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum number of replicates a server can queue per object. Higher values will put more load on the server and add replicate latency for the client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort GetMaximumServerReplicates()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Predicting_PredictionManager_InvokeOnReconcile_Internal_" data-uid="FishNet.Managing.Predicting.PredictionManager.InvokeOnReconcile_Internal*"></a>
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_InvokeOnReconcile_Internal_FishNet_Object_NetworkBehaviour_System_Boolean_" data-uid="FishNet.Managing.Predicting.PredictionManager.InvokeOnReconcile_Internal(FishNet.Object.NetworkBehaviour,System.Boolean)">
+  InvokeOnReconcile_Internal(NetworkBehaviour, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Invokes OnPre/PostReconcile events.
+Internal use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvokeOnReconcile_Internal(NetworkBehaviour nb, bool before)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nb</code> <a class="xref" href="FishNet.Object.NetworkBehaviour.html">NetworkBehaviour</a></dt>
+    <dd></dd>
+    <dt><code>before</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Predicting_PredictionManager_InvokeOnReplicateReplay_Internal_" data-uid="FishNet.Managing.Predicting.PredictionManager.InvokeOnReplicateReplay_Internal*"></a>
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_InvokeOnReplicateReplay_Internal_UnityEngine_SceneManagement_Scene_System_UInt32_PhysicsScene_PhysicsScene2D_System_Boolean_" data-uid="FishNet.Managing.Predicting.PredictionManager.InvokeOnReplicateReplay_Internal(UnityEngine.SceneManagement.Scene,System.UInt32,PhysicsScene,PhysicsScene2D,System.Boolean)">
+  InvokeOnReplicateReplay_Internal(Scene, uint, PhysicsScene, PhysicsScene2D, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Invokes OnReplicateReplay.
+Internal use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvokeOnReplicateReplay_Internal(UnityEngine.SceneManagement.Scene scene, uint tick, PhysicsScene ps, PhysicsScene2D ps2d, bool before)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <span class="xref">Scene</span></dt>
+    <dd></dd>
+    <dt><code>tick</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>ps</code> <span class="xref">PhysicsScene</span></dt>
+    <dd></dd>
+    <dt><code>ps2d</code> <span class="xref">PhysicsScene2D</span></dt>
+    <dd></dd>
+    <dt><code>before</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Predicting_PredictionManager_IsReplaying_" data-uid="FishNet.Managing.Predicting.PredictionManager.IsReplaying*"></a>
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_IsReplaying" data-uid="FishNet.Managing.Predicting.PredictionManager.IsReplaying">
+  IsReplaying()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns if any prediction is replaying.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReplaying()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Predicting_PredictionManager_IsReplaying_" data-uid="FishNet.Managing.Predicting.PredictionManager.IsReplaying*"></a>
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_IsReplaying_UnityEngine_SceneManagement_Scene_" data-uid="FishNet.Managing.Predicting.PredictionManager.IsReplaying(UnityEngine.SceneManagement.Scene)">
+  IsReplaying(Scene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns if scene is replaying.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReplaying(UnityEngine.SceneManagement.Scene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <span class="xref">Scene</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Predicting_PredictionManager_RemoveRigidbodyCount_" data-uid="FishNet.Managing.Predicting.PredictionManager.RemoveRigidbodyCount*"></a>
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_RemoveRigidbodyCount_UnityEngine_Component_" data-uid="FishNet.Managing.Predicting.PredictionManager.RemoveRigidbodyCount(UnityEngine.Component)">
+  RemoveRigidbodyCount(Component)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Dencreases Rigidbodies count by 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveRigidbodyCount(UnityEngine.Component c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <span class="xref">Component</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Predicting_PredictionManager_SetMaximumServerReplicates_" data-uid="FishNet.Managing.Predicting.PredictionManager.SetMaximumServerReplicates*"></a>
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_SetMaximumServerReplicates_System_UInt16_" data-uid="FishNet.Managing.Predicting.PredictionManager.SetMaximumServerReplicates(System.UInt16)">
+  SetMaximumServerReplicates(ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the maximum number of replicates a server can queue per object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaximumServerReplicates(ushort value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_OnPostReconcile" data-uid="FishNet.Managing.Predicting.PredictionManager.OnPostReconcile">
+  OnPostReconcile
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called after performing a reconcile on a NetworkBehaviour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;NetworkBehaviour&gt; OnPostReconcile</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Object.NetworkBehaviour.html">NetworkBehaviour</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_OnPostReplicateReplay" data-uid="FishNet.Managing.Predicting.PredictionManager.OnPostReplicateReplay">
+  OnPostReplicateReplay
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called after physics is simulated when replaying a replicate method.
+Contains the PhysicsScene and PhysicsScene2D which was simulated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;uint, PhysicsScene, PhysicsScene2D&gt; OnPostReplicateReplay</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <span class="xref">PhysicsScene</span>, <span class="xref">PhysicsScene2D</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_OnPostServerReconcile" data-uid="FishNet.Managing.Predicting.PredictionManager.OnPostServerReconcile">
+  OnPostServerReconcile
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called after the server sends a reconcile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;NetworkBehaviour&gt; OnPostServerReconcile</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Object.NetworkBehaviour.html">NetworkBehaviour</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_OnPreReconcile" data-uid="FishNet.Managing.Predicting.PredictionManager.OnPreReconcile">
+  OnPreReconcile
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called before performing a reconcile on NetworkBehaviour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;NetworkBehaviour&gt; OnPreReconcile</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Object.NetworkBehaviour.html">NetworkBehaviour</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_OnPreReplicateReplay" data-uid="FishNet.Managing.Predicting.PredictionManager.OnPreReplicateReplay">
+  OnPreReplicateReplay
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called before physics is simulated when replaying a replicate method.
+Contains the PhysicsScene and PhysicsScene2D which was simulated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;uint, PhysicsScene, PhysicsScene2D&gt; OnPreReplicateReplay</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>, <span class="xref">PhysicsScene</span>, <span class="xref">PhysicsScene2D</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Predicting_PredictionManager_OnPreServerReconcile" data-uid="FishNet.Managing.Predicting.PredictionManager.OnPreServerReconcile">
+  OnPreServerReconcile
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called before the server sends a reconcile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;NetworkBehaviour&gt; OnPreServerReconcile</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Object.NetworkBehaviour.html">NetworkBehaviour</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

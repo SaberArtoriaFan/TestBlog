@@ -1,0 +1,1281 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TimeManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TimeManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FishNet.Managing.Timing.TimeManager">
+
+
+
+  <h1 id="FishNet_Managing_Timing_TimeManager" data-uid="FishNet.Managing.Timing.TimeManager" class="text-break">
+    Class TimeManager
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FishNet.html">FishNet</a>.<a class="xref" href="FishNet.Managing.html">Managing</a>.<a class="xref" href="FishNet.Managing.Timing.html">Timing</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Provides data and actions for network time and tick based systems.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class TimeManager : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TimeManager</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_ClientUptime_" data-uid="FishNet.Managing.Timing.TimeManager.ClientUptime*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_ClientUptime" data-uid="FishNet.Managing.Timing.TimeManager.ClientUptime">
+  ClientUptime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>How long the local client has been connected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ClientUptime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_FrameTicked_" data-uid="FishNet.Managing.Timing.TimeManager.FrameTicked*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_FrameTicked" data-uid="FishNet.Managing.Timing.TimeManager.FrameTicked">
+  FrameTicked
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if the TimeManager will or has ticked this frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FrameTicked { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_LastPacketTick_" data-uid="FishNet.Managing.Timing.TimeManager.LastPacketTick*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_LastPacketTick" data-uid="FishNet.Managing.Timing.TimeManager.LastPacketTick">
+  LastPacketTick
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tick on the last received packet, be it from server or client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint LastPacketTick { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_LocalTick_" data-uid="FishNet.Managing.Timing.TimeManager.LocalTick*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_LocalTick" data-uid="FishNet.Managing.Timing.TimeManager.LocalTick">
+  LocalTick
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A tick that is not synchronized. This value will only increment. May be used for indexing or Ids with custom logic.
+When called on the server Tick is returned, otherwise LocalTick is returned.
+This value resets upon disconnecting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint LocalTick { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_PhysicsMode_" data-uid="FishNet.Managing.Timing.TimeManager.PhysicsMode*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_PhysicsMode" data-uid="FishNet.Managing.Timing.TimeManager.PhysicsMode">
+  PhysicsMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>How to perform physics.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhysicsMode PhysicsMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Timing.PhysicsMode.html">PhysicsMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_RoundTripTime_" data-uid="FishNet.Managing.Timing.TimeManager.RoundTripTime*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_RoundTripTime" data-uid="FishNet.Managing.Timing.TimeManager.RoundTripTime">
+  RoundTripTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>RoundTripTime in milliseconds. This value includes latency from the tick rate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long RoundTripTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_ServerUptime_" data-uid="FishNet.Managing.Timing.TimeManager.ServerUptime*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_ServerUptime" data-uid="FishNet.Managing.Timing.TimeManager.ServerUptime">
+  ServerUptime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>How long the local server has been connected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ServerUptime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_Tick_" data-uid="FishNet.Managing.Timing.TimeManager.Tick*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_Tick" data-uid="FishNet.Managing.Timing.TimeManager.Tick">
+  Tick
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Current approximate network tick as it is on server.
+When running as client only this is an approximation to what the server tick is.
+The value of this field may increase and decrease as timing adjusts.
+This value is reset upon disconnecting.
+Tick can be used to get the server time by using TicksToTime().
+Use LocalTick for values that only increase.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Tick { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_TickDelta_" data-uid="FishNet.Managing.Timing.TimeManager.TickDelta*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_TickDelta" data-uid="FishNet.Managing.Timing.TimeManager.TickDelta">
+  TickDelta
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A fixed deltaTime for TickRate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TickDelta { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_TickRate_" data-uid="FishNet.Managing.Timing.TimeManager.TickRate*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_TickRate" data-uid="FishNet.Managing.Timing.TimeManager.TickRate">
+  TickRate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>How many times per second the server will simulate. This does not limit server frame rate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort TickRate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_GetPreciseTick_" data-uid="FishNet.Managing.Timing.TimeManager.GetPreciseTick*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_GetPreciseTick_FishNet_Managing_Timing_TickType_" data-uid="FishNet.Managing.Timing.TimeManager.GetPreciseTick(FishNet.Managing.Timing.TickType)">
+  GetPreciseTick(TickType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a PreciseTick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PreciseTick GetPreciseTick(TickType tickType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tickType</code> <a class="xref" href="FishNet.Managing.Timing.TickType.html">TickType</a></dt>
+    <dd><p>Tick to use within PreciseTick.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Timing.PreciseTick.html">PreciseTick</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_GetPreciseTick_" data-uid="FishNet.Managing.Timing.TimeManager.GetPreciseTick*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_GetPreciseTick_System_UInt32_" data-uid="FishNet.Managing.Timing.TimeManager.GetPreciseTick(System.UInt32)">
+  GetPreciseTick(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a PreciseTick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PreciseTick GetPreciseTick(uint tick)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tick</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>Tick to set within the returned PreciseTick.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Timing.PreciseTick.html">PreciseTick</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_GetTickPercent_" data-uid="FishNet.Managing.Timing.TimeManager.GetTickPercent*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_GetTickPercent" data-uid="FishNet.Managing.Timing.TimeManager.GetTickPercent">
+  GetTickPercent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the percentage of how far the TimeManager is into the next tick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetTickPercent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_LocalTickToTick_" data-uid="FishNet.Managing.Timing.TimeManager.LocalTickToTick*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_LocalTickToTick_System_UInt32_" data-uid="FishNet.Managing.Timing.TimeManager.LocalTickToTick(System.UInt32)">
+  LocalTickToTick(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Estimatedly converts a local tick to what it would be for the synchronized tick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint LocalTickToTick(uint localTick)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localTick</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>Local tick to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_SetPhysicsMode_" data-uid="FishNet.Managing.Timing.TimeManager.SetPhysicsMode*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_SetPhysicsMode_FishNet_Managing_Timing_PhysicsMode_" data-uid="FishNet.Managing.Timing.TimeManager.SetPhysicsMode(FishNet.Managing.Timing.PhysicsMode)">
+  SetPhysicsMode(PhysicsMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates physics based on which physics mode to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPhysicsMode(PhysicsMode mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="FishNet.Managing.Timing.PhysicsMode.html">PhysicsMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_SetTickRate_" data-uid="FishNet.Managing.Timing.TimeManager.SetTickRate*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_SetTickRate_System_UInt16_" data-uid="FishNet.Managing.Timing.TimeManager.SetTickRate(System.UInt16)">
+  SetTickRate(ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the TickRate to use. This value is not synchronized, it must be set on client and server independently.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTickRate(ushort value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>New TickRate to use.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_TickToLocalTick_" data-uid="FishNet.Managing.Timing.TimeManager.TickToLocalTick*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_TickToLocalTick_System_UInt32_" data-uid="FishNet.Managing.Timing.TimeManager.TickToLocalTick(System.UInt32)">
+  TickToLocalTick(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Estimatedly converts a synchronized tick to what it would be for the local tick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint TickToLocalTick(uint tick)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tick</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>Synchronized tick to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_TicksToTime_" data-uid="FishNet.Managing.Timing.TimeManager.TicksToTime*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_TicksToTime_FishNet_Managing_Timing_TickType_" data-uid="FishNet.Managing.Timing.TimeManager.TicksToTime(FishNet.Managing.Timing.TickType)">
+  TicksToTime(TickType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts current ticks to time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TicksToTime(TickType tickType = TickType.LocalTick)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tickType</code> <a class="xref" href="FishNet.Managing.Timing.TickType.html">TickType</a></dt>
+    <dd><p>TickType to compare against.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_TicksToTime_" data-uid="FishNet.Managing.Timing.TimeManager.TicksToTime*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_TicksToTime_System_UInt32_" data-uid="FishNet.Managing.Timing.TimeManager.TicksToTime(System.UInt32)">
+  TicksToTime(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a number ticks to time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TicksToTime(uint ticks)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ticks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>Ticks to convert.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_TimePassed_" data-uid="FishNet.Managing.Timing.TimeManager.TimePassed*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_TimePassed_FishNet_Managing_Timing_PreciseTick_System_Boolean_" data-uid="FishNet.Managing.Timing.TimeManager.TimePassed(FishNet.Managing.Timing.PreciseTick,System.Boolean)">
+  TimePassed(PreciseTick, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets time passed from Tick to preciseTick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TimePassed(PreciseTick preciseTick, bool allowNegative = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>preciseTick</code> <a class="xref" href="FishNet.Managing.Timing.PreciseTick.html">PreciseTick</a></dt>
+    <dd><p>PreciseTick value to compare against.</p>
+</dd>
+    <dt><code>allowNegative</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to allow negative values. When false and value would be negative 0 is returned.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_TimePassed_" data-uid="FishNet.Managing.Timing.TimeManager.TimePassed*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_TimePassed_System_UInt32_System_Boolean_" data-uid="FishNet.Managing.Timing.TimeManager.TimePassed(System.UInt32,System.Boolean)">
+  TimePassed(uint, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets time passed from Tick to previousTick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TimePassed(uint previousTick, bool allowNegative = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>previousTick</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The previous tick.</p>
+</dd>
+    <dt><code>allowNegative</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to allow negative values. When false and value would be negative 0 is returned.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_TimePassed_" data-uid="FishNet.Managing.Timing.TimeManager.TimePassed*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_TimePassed_System_UInt32_System_UInt32_" data-uid="FishNet.Managing.Timing.TimeManager.TimePassed(System.UInt32,System.UInt32)">
+  TimePassed(uint, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets time passed from currentTick to previousTick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TimePassed(uint currentTick, uint previousTick)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentTick</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The current tick.</p>
+</dd>
+    <dt><code>previousTick</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>The previous tick.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Timing_TimeManager_TimeToTicks_" data-uid="FishNet.Managing.Timing.TimeManager.TimeToTicks*"></a>
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_TimeToTicks_System_Double_FishNet_Managing_Timing_TickRounding_" data-uid="FishNet.Managing.Timing.TimeManager.TimeToTicks(System.Double,FishNet.Managing.Timing.TickRounding)">
+  TimeToTicks(double, TickRounding)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts time to ticks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint TimeToTicks(double time, TickRounding rounding = TickRounding.RoundNearest)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Time to convert.</p>
+</dd>
+    <dt><code>rounding</code> <a class="xref" href="FishNet.Managing.Timing.TickRounding.html">TickRounding</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_OnFixedUpdate" data-uid="FishNet.Managing.Timing.TimeManager.OnFixedUpdate">
+  OnFixedUpdate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when MonoBehaviours call FixedUpdate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnFixedUpdate</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_OnLateUpdate" data-uid="FishNet.Managing.Timing.TimeManager.OnLateUpdate">
+  OnLateUpdate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when MonoBehaviours call LateUpdate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnLateUpdate</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_OnPostPhysicsSimulation" data-uid="FishNet.Managing.Timing.TimeManager.OnPostPhysicsSimulation">
+  OnPostPhysicsSimulation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When using TimeManager for physics timing, this is called immediately after the physics simulation has occured for the tick.
+While using Unity for physics timing, this is called during Update, only if a physics frame.
+This may be useful if you wish to run physics differently for stacked scenes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;float&gt; OnPostPhysicsSimulation</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_OnPostTick" data-uid="FishNet.Managing.Timing.TimeManager.OnPostTick">
+  OnPostTick
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called after a tick occurs; physics would have simulated if using PhysicsMode.TimeManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnPostTick</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_OnPrePhysicsSimulation" data-uid="FishNet.Managing.Timing.TimeManager.OnPrePhysicsSimulation">
+  OnPrePhysicsSimulation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When using TimeManager for physics timing, this is called immediately before physics simulation will occur for the tick.
+While using Unity for physics timing, this is called during FixedUpdate.
+This may be useful if you wish to run physics differently for stacked scenes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;float&gt; OnPrePhysicsSimulation</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_OnPreTick" data-uid="FishNet.Managing.Timing.TimeManager.OnPreTick">
+  OnPreTick
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called right before a tick occurs, as well before data is read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnPreTick</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_OnRoundTripTimeUpdated" data-uid="FishNet.Managing.Timing.TimeManager.OnRoundTripTimeUpdated">
+  OnRoundTripTimeUpdated
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the local clients ping is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;long&gt; OnRoundTripTimeUpdated</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_OnTick" data-uid="FishNet.Managing.Timing.TimeManager.OnTick">
+  OnTick
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a tick occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnTick</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Timing_TimeManager_OnUpdate" data-uid="FishNet.Managing.Timing.TimeManager.OnUpdate">
+  OnUpdate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when MonoBehaviours call Update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnUpdate</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

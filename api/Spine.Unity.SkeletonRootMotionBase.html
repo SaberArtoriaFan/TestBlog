@@ -1,0 +1,1162 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SkeletonRootMotionBase
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SkeletonRootMotionBase
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.Unity.SkeletonRootMotionBase">
+
+
+
+  <h1 id="Spine_Unity_SkeletonRootMotionBase" data-uid="Spine.Unity.SkeletonRootMotionBase" class="text-break">
+    Class SkeletonRootMotionBase
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a>.<a class="xref" href="Spine.Unity.html">Unity</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Base class for skeleton root motion components.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SkeletonRootMotionBase : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SkeletonRootMotionBase</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Spine.Unity.SkeletonMecanimRootMotion.html">SkeletonMecanimRootMotion</a></div>
+      <div><a class="xref" href="Spine.Unity.SkeletonRootMotion.html">SkeletonRootMotion</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_initialOffset" data-uid="Spine.Unity.SkeletonRootMotionBase.initialOffset">
+  initialOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2 initialOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_rigidBody" data-uid="Spine.Unity.SkeletonRootMotionBase.rigidBody">
+  rigidBody
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody rigidBody</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rigidbody</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_rigidBody2D" data-uid="Spine.Unity.SkeletonRootMotionBase.rigidBody2D">
+  rigidBody2D
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody2D rigidBody2D</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rigidbody2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_rigidbodyDisplacement" data-uid="Spine.Unity.SkeletonRootMotionBase.rigidbodyDisplacement">
+  rigidbodyDisplacement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2 rigidbodyDisplacement</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_rootMotionBone" data-uid="Spine.Unity.SkeletonRootMotionBase.rootMotionBone">
+  rootMotionBone
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Bone rootMotionBone</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Bone.html">Bone</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_rootMotionBoneIndex" data-uid="Spine.Unity.SkeletonRootMotionBase.rootMotionBoneIndex">
+  rootMotionBoneIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int rootMotionBoneIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_rootMotionBoneName" data-uid="Spine.Unity.SkeletonRootMotionBase.rootMotionBoneName">
+  rootMotionBoneName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SpineBone]
+protected string rootMotionBoneName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_rootMotionScaleX" data-uid="Spine.Unity.SkeletonRootMotionBase.rootMotionScaleX">
+  rootMotionScaleX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rootMotionScaleX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_rootMotionScaleY" data-uid="Spine.Unity.SkeletonRootMotionBase.rootMotionScaleY">
+  rootMotionScaleY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rootMotionScaleY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_rootMotionTranslateXPerY" data-uid="Spine.Unity.SkeletonRootMotionBase.rootMotionTranslateXPerY">
+  rootMotionTranslateXPerY
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Skeleton space X translation per skeleton space Y translation root motion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rootMotionTranslateXPerY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_rootMotionTranslateYPerX" data-uid="Spine.Unity.SkeletonRootMotionBase.rootMotionTranslateYPerX">
+  rootMotionTranslateYPerX
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Skeleton space Y translation per skeleton space X translation root motion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rootMotionTranslateYPerX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_skeletonComponent" data-uid="Spine.Unity.SkeletonRootMotionBase.skeletonComponent">
+  skeletonComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ISkeletonComponent skeletonComponent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.ISkeletonComponent.html">ISkeletonComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_tempSkeletonDisplacement" data-uid="Spine.Unity.SkeletonRootMotionBase.tempSkeletonDisplacement">
+  tempSkeletonDisplacement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2 tempSkeletonDisplacement</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_topLevelBones" data-uid="Spine.Unity.SkeletonRootMotionBase.topLevelBones">
+  topLevelBones
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;Bone&gt; topLevelBones</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Spine.Bone.html">Bone</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_transformPositionX" data-uid="Spine.Unity.SkeletonRootMotionBase.transformPositionX">
+  transformPositionX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool transformPositionX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_transformPositionY" data-uid="Spine.Unity.SkeletonRootMotionBase.transformPositionY">
+  transformPositionY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool transformPositionY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_AdditionalScale_" data-uid="Spine.Unity.SkeletonRootMotionBase.AdditionalScale*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_AdditionalScale" data-uid="Spine.Unity.SkeletonRootMotionBase.AdditionalScale">
+  AdditionalScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual float AdditionalScale { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_UsesRigidbody_" data-uid="Spine.Unity.SkeletonRootMotionBase.UsesRigidbody*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_UsesRigidbody" data-uid="Spine.Unity.SkeletonRootMotionBase.UsesRigidbody">
+  UsesRigidbody
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UsesRigidbody { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_AdjustRootMotionToDistance_" data-uid="Spine.Unity.SkeletonRootMotionBase.AdjustRootMotionToDistance*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_AdjustRootMotionToDistance_Vector2_System_Int32_System_Boolean_System_Boolean_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_" data-uid="Spine.Unity.SkeletonRootMotionBase.AdjustRootMotionToDistance(Vector2,System.Int32,System.Boolean,System.Boolean,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean)">
+  AdjustRootMotionToDistance(Vector2, int, bool, bool, float, float, float, float, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AdjustRootMotionToDistance(Vector2 distanceToTarget, int trackIndex = 0, bool adjustX = true, bool adjustY = true, float minX = 0, float maxX = 3.4028235E+38, float minY = 0, float maxY = 3.4028235E+38, bool allowXTranslation = false, bool allowYTranslation = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>distanceToTarget</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>trackIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>adjustX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>adjustY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>minX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>maxX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>minY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>maxY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>allowXTranslation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>allowYTranslation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_CalculateAnimationsMovementDelta_" data-uid="Spine.Unity.SkeletonRootMotionBase.CalculateAnimationsMovementDelta*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_CalculateAnimationsMovementDelta" data-uid="Spine.Unity.SkeletonRootMotionBase.CalculateAnimationsMovementDelta">
+  CalculateAnimationsMovementDelta()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract Vector2 CalculateAnimationsMovementDelta()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_FindRigidbodyComponent_" data-uid="Spine.Unity.SkeletonRootMotionBase.FindRigidbodyComponent*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_FindRigidbodyComponent" data-uid="Spine.Unity.SkeletonRootMotionBase.FindRigidbodyComponent">
+  FindRigidbodyComponent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void FindRigidbodyComponent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_FixedUpdate_" data-uid="Spine.Unity.SkeletonRootMotionBase.FixedUpdate*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_FixedUpdate" data-uid="Spine.Unity.SkeletonRootMotionBase.FixedUpdate">
+  FixedUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void FixedUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_GetAnimationRootMotion_" data-uid="Spine.Unity.SkeletonRootMotionBase.GetAnimationRootMotion*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_GetAnimationRootMotion_Spine_Animation_" data-uid="Spine.Unity.SkeletonRootMotionBase.GetAnimationRootMotion(Spine.Animation)">
+  GetAnimationRootMotion(Animation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetAnimationRootMotion(Animation animation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>animation</code> <a class="xref" href="Spine.Animation.html">Animation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_GetAnimationRootMotion_" data-uid="Spine.Unity.SkeletonRootMotionBase.GetAnimationRootMotion*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_GetAnimationRootMotion_System_Single_System_Single_Spine_Animation_" data-uid="Spine.Unity.SkeletonRootMotionBase.GetAnimationRootMotion(System.Single,System.Single,Spine.Animation)">
+  GetAnimationRootMotion(float, float, Animation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 GetAnimationRootMotion(float startTime, float endTime, Animation animation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>endTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>animation</code> <a class="xref" href="Spine.Animation.html">Animation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_GetAnimationRootMotionInfo_" data-uid="Spine.Unity.SkeletonRootMotionBase.GetAnimationRootMotionInfo*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_GetAnimationRootMotionInfo_Spine_Animation_System_Single_" data-uid="Spine.Unity.SkeletonRootMotionBase.GetAnimationRootMotionInfo(Spine.Animation,System.Single)">
+  GetAnimationRootMotionInfo(Animation, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkeletonRootMotionBase.RootMotionInfo GetAnimationRootMotionInfo(Animation animation, float currentTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>animation</code> <a class="xref" href="Spine.Animation.html">Animation</a></dt>
+    <dd></dd>
+    <dt><code>currentTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.SkeletonRootMotionBase.html">SkeletonRootMotionBase</a>.<a class="xref" href="Spine.Unity.SkeletonRootMotionBase.RootMotionInfo.html">RootMotionInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_GetRemainingRootMotion_" data-uid="Spine.Unity.SkeletonRootMotionBase.GetRemainingRootMotion*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_GetRemainingRootMotion_System_Int32_" data-uid="Spine.Unity.SkeletonRootMotionBase.GetRemainingRootMotion(System.Int32)">
+  GetRemainingRootMotion(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Vector2 GetRemainingRootMotion(int trackIndex = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>trackIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_GetRootMotionInfo_" data-uid="Spine.Unity.SkeletonRootMotionBase.GetRootMotionInfo*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_GetRootMotionInfo_System_Int32_" data-uid="Spine.Unity.SkeletonRootMotionBase.GetRootMotionInfo(System.Int32)">
+  GetRootMotionInfo(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract SkeletonRootMotionBase.RootMotionInfo GetRootMotionInfo(int trackIndex = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>trackIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.SkeletonRootMotionBase.html">SkeletonRootMotionBase</a>.<a class="xref" href="Spine.Unity.SkeletonRootMotionBase.RootMotionInfo.html">RootMotionInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_OnDisable_" data-uid="Spine.Unity.SkeletonRootMotionBase.OnDisable*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_OnDisable" data-uid="Spine.Unity.SkeletonRootMotionBase.OnDisable">
+  OnDisable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDisable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_Reset_" data-uid="Spine.Unity.SkeletonRootMotionBase.Reset*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_Reset" data-uid="Spine.Unity.SkeletonRootMotionBase.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_SetRootMotionBone_" data-uid="Spine.Unity.SkeletonRootMotionBase.SetRootMotionBone*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_SetRootMotionBone_System_String_" data-uid="Spine.Unity.SkeletonRootMotionBase.SetRootMotionBone(System.String)">
+  SetRootMotionBone(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRootMotionBone(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonRootMotionBase_Start_" data-uid="Spine.Unity.SkeletonRootMotionBase.Start*"></a>
+
+  <h3 id="Spine_Unity_SkeletonRootMotionBase_Start" data-uid="Spine.Unity.SkeletonRootMotionBase.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

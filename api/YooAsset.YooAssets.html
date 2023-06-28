@@ -1,0 +1,2127 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class YooAssets
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class YooAssets
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="YooAsset.YooAssets">
+
+
+
+  <h1 id="YooAsset_YooAssets" data-uid="YooAsset.YooAssets" class="text-break">
+    Class YooAssets
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="YooAsset.html">YooAsset</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class YooAssets</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">YooAssets</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="YooAsset_YooAssets_CheckLocationValid_" data-uid="YooAsset.YooAssets.CheckLocationValid*"></a>
+
+  <h3 id="YooAsset_YooAssets_CheckLocationValid_System_String_" data-uid="YooAsset.YooAssets.CheckLocationValid(System.String)">
+  CheckLocationValid(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>检查资源定位地址是否有效</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckLocationValid(string location)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源的定位地址</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_ClearSandbox_" data-uid="YooAsset.YooAssets.ClearSandbox*"></a>
+
+  <h3 id="YooAsset_YooAssets_ClearSandbox" data-uid="YooAsset.YooAssets.ClearSandbox">
+  ClearSandbox()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>清空沙盒目录</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearSandbox()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_CreateBundleDownloader_" data-uid="YooAsset.YooAssets.CreateBundleDownloader*"></a>
+
+  <h3 id="YooAsset_YooAssets_CreateBundleDownloader_System_String_System_Int32_System_Int32_" data-uid="YooAsset.YooAssets.CreateBundleDownloader(System.String,System.Int32,System.Int32)">
+  CreateBundleDownloader(string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建资源下载器，用于下载指定的资源依赖的资源包文件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourceDownloaderOperation CreateBundleDownloader(string location, int downloadingMaxNumber, int failedTryAgain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源定位地址</p>
+</dd>
+    <dt><code>downloadingMaxNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>同时下载的最大文件数</p>
+</dd>
+    <dt><code>failedTryAgain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>下载失败的重试次数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.ResourceDownloaderOperation.html">ResourceDownloaderOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_CreateBundleDownloader_" data-uid="YooAsset.YooAssets.CreateBundleDownloader*"></a>
+
+  <h3 id="YooAsset_YooAssets_CreateBundleDownloader_System_String___System_Int32_System_Int32_" data-uid="YooAsset.YooAssets.CreateBundleDownloader(System.String[],System.Int32,System.Int32)">
+  CreateBundleDownloader(string[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建资源下载器，用于下载指定的资源列表依赖的资源包文件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourceDownloaderOperation CreateBundleDownloader(string[] locations, int downloadingMaxNumber, int failedTryAgain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>locations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>资源定位地址列表</p>
+</dd>
+    <dt><code>downloadingMaxNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>同时下载的最大文件数</p>
+</dd>
+    <dt><code>failedTryAgain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>下载失败的重试次数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.ResourceDownloaderOperation.html">ResourceDownloaderOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_CreateBundleDownloader_" data-uid="YooAsset.YooAssets.CreateBundleDownloader*"></a>
+
+  <h3 id="YooAsset_YooAssets_CreateBundleDownloader_YooAsset_AssetInfo_System_Int32_System_Int32_" data-uid="YooAsset.YooAssets.CreateBundleDownloader(YooAsset.AssetInfo,System.Int32,System.Int32)">
+  CreateBundleDownloader(AssetInfo, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建资源下载器，用于下载指定的资源依赖的资源包文件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourceDownloaderOperation CreateBundleDownloader(AssetInfo assetInfo, int downloadingMaxNumber, int failedTryAgain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetInfo</code> <a class="xref" href="YooAsset.AssetInfo.html">AssetInfo</a></dt>
+    <dd><p>资源信息</p>
+</dd>
+    <dt><code>downloadingMaxNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>同时下载的最大文件数</p>
+</dd>
+    <dt><code>failedTryAgain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>下载失败的重试次数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.ResourceDownloaderOperation.html">ResourceDownloaderOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_CreateBundleDownloader_" data-uid="YooAsset.YooAssets.CreateBundleDownloader*"></a>
+
+  <h3 id="YooAsset_YooAssets_CreateBundleDownloader_YooAsset_AssetInfo___System_Int32_System_Int32_" data-uid="YooAsset.YooAssets.CreateBundleDownloader(YooAsset.AssetInfo[],System.Int32,System.Int32)">
+  CreateBundleDownloader(AssetInfo[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建资源下载器，用于下载指定的资源列表依赖的资源包文件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourceDownloaderOperation CreateBundleDownloader(AssetInfo[] assetInfos, int downloadingMaxNumber, int failedTryAgain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetInfos</code> <a class="xref" href="YooAsset.AssetInfo.html">AssetInfo</a>[]</dt>
+    <dd><p>资源信息列表</p>
+</dd>
+    <dt><code>downloadingMaxNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>同时下载的最大文件数</p>
+</dd>
+    <dt><code>failedTryAgain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>下载失败的重试次数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.ResourceDownloaderOperation.html">ResourceDownloaderOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_CreatePackage_" data-uid="YooAsset.YooAssets.CreatePackage*"></a>
+
+  <h3 id="YooAsset_YooAssets_CreatePackage_System_String_" data-uid="YooAsset.YooAssets.CreatePackage(System.String)">
+  CreatePackage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建资源包</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourcePackage CreatePackage(string packageName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源包名称</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.ResourcePackage.html">ResourcePackage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_CreateResourceDownloader_" data-uid="YooAsset.YooAssets.CreateResourceDownloader*"></a>
+
+  <h3 id="YooAsset_YooAssets_CreateResourceDownloader_System_Int32_System_Int32_" data-uid="YooAsset.YooAssets.CreateResourceDownloader(System.Int32,System.Int32)">
+  CreateResourceDownloader(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建资源下载器，用于下载当前资源版本所有的资源包文件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourceDownloaderOperation CreateResourceDownloader(int downloadingMaxNumber, int failedTryAgain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>downloadingMaxNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>同时下载的最大文件数</p>
+</dd>
+    <dt><code>failedTryAgain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>下载失败的重试次数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.ResourceDownloaderOperation.html">ResourceDownloaderOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_CreateResourceDownloader_" data-uid="YooAsset.YooAssets.CreateResourceDownloader*"></a>
+
+  <h3 id="YooAsset_YooAssets_CreateResourceDownloader_System_String_System_Int32_System_Int32_" data-uid="YooAsset.YooAssets.CreateResourceDownloader(System.String,System.Int32,System.Int32)">
+  CreateResourceDownloader(string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建资源下载器，用于下载指定的资源标签关联的资源包文件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourceDownloaderOperation CreateResourceDownloader(string tag, int downloadingMaxNumber, int failedTryAgain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源标签</p>
+</dd>
+    <dt><code>downloadingMaxNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>同时下载的最大文件数</p>
+</dd>
+    <dt><code>failedTryAgain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>下载失败的重试次数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.ResourceDownloaderOperation.html">ResourceDownloaderOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_CreateResourceDownloader_" data-uid="YooAsset.YooAssets.CreateResourceDownloader*"></a>
+
+  <h3 id="YooAsset_YooAssets_CreateResourceDownloader_System_String___System_Int32_System_Int32_" data-uid="YooAsset.YooAssets.CreateResourceDownloader(System.String[],System.Int32,System.Int32)">
+  CreateResourceDownloader(string[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建资源下载器，用于下载指定的资源标签列表关联的资源包文件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourceDownloaderOperation CreateResourceDownloader(string[] tags, int downloadingMaxNumber, int failedTryAgain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>资源标签列表</p>
+</dd>
+    <dt><code>downloadingMaxNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>同时下载的最大文件数</p>
+</dd>
+    <dt><code>failedTryAgain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>下载失败的重试次数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.ResourceDownloaderOperation.html">ResourceDownloaderOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_CreateResourceUnpacker_" data-uid="YooAsset.YooAssets.CreateResourceUnpacker*"></a>
+
+  <h3 id="YooAsset_YooAssets_CreateResourceUnpacker_System_Int32_System_Int32_" data-uid="YooAsset.YooAssets.CreateResourceUnpacker(System.Int32,System.Int32)">
+  CreateResourceUnpacker(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建内置资源解压器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourceUnpackerOperation CreateResourceUnpacker(int unpackingMaxNumber, int failedTryAgain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unpackingMaxNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>同时解压的最大文件数</p>
+</dd>
+    <dt><code>failedTryAgain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>解压失败的重试次数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.ResourceUnpackerOperation.html">ResourceUnpackerOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_CreateResourceUnpacker_" data-uid="YooAsset.YooAssets.CreateResourceUnpacker*"></a>
+
+  <h3 id="YooAsset_YooAssets_CreateResourceUnpacker_System_String_System_Int32_System_Int32_" data-uid="YooAsset.YooAssets.CreateResourceUnpacker(System.String,System.Int32,System.Int32)">
+  CreateResourceUnpacker(string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建内置资源解压器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourceUnpackerOperation CreateResourceUnpacker(string tag, int unpackingMaxNumber, int failedTryAgain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源标签</p>
+</dd>
+    <dt><code>unpackingMaxNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>同时解压的最大文件数</p>
+</dd>
+    <dt><code>failedTryAgain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>解压失败的重试次数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.ResourceUnpackerOperation.html">ResourceUnpackerOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_CreateResourceUnpacker_" data-uid="YooAsset.YooAssets.CreateResourceUnpacker*"></a>
+
+  <h3 id="YooAsset_YooAssets_CreateResourceUnpacker_System_String___System_Int32_System_Int32_" data-uid="YooAsset.YooAssets.CreateResourceUnpacker(System.String[],System.Int32,System.Int32)">
+  CreateResourceUnpacker(string[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>创建内置资源解压器</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourceUnpackerOperation CreateResourceUnpacker(string[] tags, int unpackingMaxNumber, int failedTryAgain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>资源标签列表</p>
+</dd>
+    <dt><code>unpackingMaxNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>同时解压的最大文件数</p>
+</dd>
+    <dt><code>failedTryAgain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>解压失败的重试次数</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.ResourceUnpackerOperation.html">ResourceUnpackerOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_Destroy_" data-uid="YooAsset.YooAssets.Destroy*"></a>
+
+  <h3 id="YooAsset_YooAssets_Destroy" data-uid="YooAsset.YooAssets.Destroy">
+  Destroy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>销毁资源系统</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Destroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_GetAssetInfo_" data-uid="YooAsset.YooAssets.GetAssetInfo*"></a>
+
+  <h3 id="YooAsset_YooAssets_GetAssetInfo_System_String_" data-uid="YooAsset.YooAssets.GetAssetInfo(System.String)">
+  GetAssetInfo(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取资源信息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssetInfo GetAssetInfo(string location)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源的定位地址</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.AssetInfo.html">AssetInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_GetAssetInfos_" data-uid="YooAsset.YooAssets.GetAssetInfos*"></a>
+
+  <h3 id="YooAsset_YooAssets_GetAssetInfos_System_String_" data-uid="YooAsset.YooAssets.GetAssetInfos(System.String)">
+  GetAssetInfos(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取资源信息列表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssetInfo[] GetAssetInfos(string tag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源标签</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.AssetInfo.html">AssetInfo</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_GetAssetInfos_" data-uid="YooAsset.YooAssets.GetAssetInfos*"></a>
+
+  <h3 id="YooAsset_YooAssets_GetAssetInfos_System_String___" data-uid="YooAsset.YooAssets.GetAssetInfos(System.String[])">
+  GetAssetInfos(string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取资源信息列表</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssetInfo[] GetAssetInfos(string[] tags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>资源标签列表</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.AssetInfo.html">AssetInfo</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_GetPackage_" data-uid="YooAsset.YooAssets.GetPackage*"></a>
+
+  <h3 id="YooAsset_YooAssets_GetPackage_System_String_" data-uid="YooAsset.YooAssets.GetPackage(System.String)">
+  GetPackage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取资源包</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourcePackage GetPackage(string packageName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源包名称</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.ResourcePackage.html">ResourcePackage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_GetSandboxRoot_" data-uid="YooAsset.YooAssets.GetSandboxRoot*"></a>
+
+  <h3 id="YooAsset_YooAssets_GetSandboxRoot" data-uid="YooAsset.YooAssets.GetSandboxRoot">
+  GetSandboxRoot()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取沙盒的根路径</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSandboxRoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_GetStreamingAssetBuildinFolderName_" data-uid="YooAsset.YooAssets.GetStreamingAssetBuildinFolderName*"></a>
+
+  <h3 id="YooAsset_YooAssets_GetStreamingAssetBuildinFolderName" data-uid="YooAsset.YooAssets.GetStreamingAssetBuildinFolderName">
+  GetStreamingAssetBuildinFolderName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取内置文件夹名称</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetStreamingAssetBuildinFolderName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_HasPackage_" data-uid="YooAsset.YooAssets.HasPackage*"></a>
+
+  <h3 id="YooAsset_YooAssets_HasPackage_System_String_" data-uid="YooAsset.YooAssets.HasPackage(System.String)">
+  HasPackage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>检测资源包是否存在</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasPackage(string packageName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源包名称</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_Initialize_" data-uid="YooAsset.YooAssets.Initialize*"></a>
+
+  <h3 id="YooAsset_YooAssets_Initialize_YooAsset_ILogger_" data-uid="YooAsset.YooAssets.Initialize(YooAsset.ILogger)">
+  Initialize(ILogger)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化资源系统</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Initialize(ILogger logger = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logger</code> <a class="xref" href="YooAsset.ILogger.html">ILogger</a></dt>
+    <dd><p>自定义日志处理</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_IsNeedDownloadFromRemote_" data-uid="YooAsset.YooAssets.IsNeedDownloadFromRemote*"></a>
+
+  <h3 id="YooAsset_YooAssets_IsNeedDownloadFromRemote_System_String_" data-uid="YooAsset.YooAssets.IsNeedDownloadFromRemote(System.String)">
+  IsNeedDownloadFromRemote(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否需要从远端更新下载</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNeedDownloadFromRemote(string location)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源的定位地址</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_IsNeedDownloadFromRemote_" data-uid="YooAsset.YooAssets.IsNeedDownloadFromRemote*"></a>
+
+  <h3 id="YooAsset_YooAssets_IsNeedDownloadFromRemote_YooAsset_AssetInfo_" data-uid="YooAsset.YooAssets.IsNeedDownloadFromRemote(YooAsset.AssetInfo)">
+  IsNeedDownloadFromRemote(AssetInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>是否需要从远端更新下载</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNeedDownloadFromRemote(AssetInfo assetInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetInfo</code> <a class="xref" href="YooAsset.AssetInfo.html">AssetInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadAssetAsync_" data-uid="YooAsset.YooAssets.LoadAssetAsync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadAssetAsync_System_String_System_Type_" data-uid="YooAsset.YooAssets.LoadAssetAsync(System.String,System.Type)">
+  LoadAssetAsync(string, Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步加载资源对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssetOperationHandle LoadAssetAsync(string location, Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源的定位地址</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>资源类型</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.AssetOperationHandle.html">AssetOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadAssetAsync_" data-uid="YooAsset.YooAssets.LoadAssetAsync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadAssetAsync_YooAsset_AssetInfo_" data-uid="YooAsset.YooAssets.LoadAssetAsync(YooAsset.AssetInfo)">
+  LoadAssetAsync(AssetInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步加载资源对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssetOperationHandle LoadAssetAsync(AssetInfo assetInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetInfo</code> <a class="xref" href="YooAsset.AssetInfo.html">AssetInfo</a></dt>
+    <dd><p>资源信息</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.AssetOperationHandle.html">AssetOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadAssetAsync_" data-uid="YooAsset.YooAssets.LoadAssetAsync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadAssetAsync__1_System_String_" data-uid="YooAsset.YooAssets.LoadAssetAsync``1(System.String)">
+  LoadAssetAsync&lt;TObject&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步加载资源对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssetOperationHandle LoadAssetAsync&lt;TObject&gt;(string location) where TObject : UnityEngine.Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源的定位地址</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.AssetOperationHandle.html">AssetOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>资源类型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadAssetSync_" data-uid="YooAsset.YooAssets.LoadAssetSync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadAssetSync_System_String_System_Type_" data-uid="YooAsset.YooAssets.LoadAssetSync(System.String,System.Type)">
+  LoadAssetSync(string, Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>同步加载资源对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssetOperationHandle LoadAssetSync(string location, Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源的定位地址</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>资源类型</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.AssetOperationHandle.html">AssetOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadAssetSync_" data-uid="YooAsset.YooAssets.LoadAssetSync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadAssetSync_YooAsset_AssetInfo_" data-uid="YooAsset.YooAssets.LoadAssetSync(YooAsset.AssetInfo)">
+  LoadAssetSync(AssetInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>同步加载资源对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssetOperationHandle LoadAssetSync(AssetInfo assetInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetInfo</code> <a class="xref" href="YooAsset.AssetInfo.html">AssetInfo</a></dt>
+    <dd><p>资源信息</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.AssetOperationHandle.html">AssetOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadAssetSync_" data-uid="YooAsset.YooAssets.LoadAssetSync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadAssetSync__1_System_String_" data-uid="YooAsset.YooAssets.LoadAssetSync``1(System.String)">
+  LoadAssetSync&lt;TObject&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>同步加载资源对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssetOperationHandle LoadAssetSync&lt;TObject&gt;(string location) where TObject : UnityEngine.Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源的定位地址</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.AssetOperationHandle.html">AssetOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>资源类型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadRawFileAsync_" data-uid="YooAsset.YooAssets.LoadRawFileAsync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadRawFileAsync_System_String_" data-uid="YooAsset.YooAssets.LoadRawFileAsync(System.String)">
+  LoadRawFileAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步加载原生文件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RawFileOperationHandle LoadRawFileAsync(string location)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源的定位地址</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.RawFileOperationHandle.html">RawFileOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadRawFileAsync_" data-uid="YooAsset.YooAssets.LoadRawFileAsync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadRawFileAsync_YooAsset_AssetInfo_" data-uid="YooAsset.YooAssets.LoadRawFileAsync(YooAsset.AssetInfo)">
+  LoadRawFileAsync(AssetInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步加载原生文件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RawFileOperationHandle LoadRawFileAsync(AssetInfo assetInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetInfo</code> <a class="xref" href="YooAsset.AssetInfo.html">AssetInfo</a></dt>
+    <dd><p>资源信息</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.RawFileOperationHandle.html">RawFileOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadRawFileSync_" data-uid="YooAsset.YooAssets.LoadRawFileSync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadRawFileSync_System_String_" data-uid="YooAsset.YooAssets.LoadRawFileSync(System.String)">
+  LoadRawFileSync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>同步加载原生文件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RawFileOperationHandle LoadRawFileSync(string location)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源的定位地址</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.RawFileOperationHandle.html">RawFileOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadRawFileSync_" data-uid="YooAsset.YooAssets.LoadRawFileSync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadRawFileSync_YooAsset_AssetInfo_" data-uid="YooAsset.YooAssets.LoadRawFileSync(YooAsset.AssetInfo)">
+  LoadRawFileSync(AssetInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>同步加载原生文件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RawFileOperationHandle LoadRawFileSync(AssetInfo assetInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetInfo</code> <a class="xref" href="YooAsset.AssetInfo.html">AssetInfo</a></dt>
+    <dd><p>资源信息</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.RawFileOperationHandle.html">RawFileOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadSceneAsync_" data-uid="YooAsset.YooAssets.LoadSceneAsync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadSceneAsync_System_String_LoadSceneMode_System_Boolean_System_Int32_" data-uid="YooAsset.YooAssets.LoadSceneAsync(System.String,LoadSceneMode,System.Boolean,System.Int32)">
+  LoadSceneAsync(string, LoadSceneMode, bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步加载场景</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneOperationHandle LoadSceneAsync(string location, LoadSceneMode sceneMode = null, bool activateOnLoad = true, int priority = 100)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>场景的定位地址</p>
+</dd>
+    <dt><code>sceneMode</code> <span class="xref">LoadSceneMode</span></dt>
+    <dd><p>场景加载模式</p>
+</dd>
+    <dt><code>activateOnLoad</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>加载完毕时是否主动激活</p>
+</dd>
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>优先级</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.SceneOperationHandle.html">SceneOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadSceneAsync_" data-uid="YooAsset.YooAssets.LoadSceneAsync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadSceneAsync_YooAsset_AssetInfo_LoadSceneMode_System_Boolean_System_Int32_" data-uid="YooAsset.YooAssets.LoadSceneAsync(YooAsset.AssetInfo,LoadSceneMode,System.Boolean,System.Int32)">
+  LoadSceneAsync(AssetInfo, LoadSceneMode, bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步加载场景</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneOperationHandle LoadSceneAsync(AssetInfo assetInfo, LoadSceneMode sceneMode = null, bool activateOnLoad = true, int priority = 100)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetInfo</code> <a class="xref" href="YooAsset.AssetInfo.html">AssetInfo</a></dt>
+    <dd><p>场景的资源信息</p>
+</dd>
+    <dt><code>sceneMode</code> <span class="xref">LoadSceneMode</span></dt>
+    <dd><p>场景加载模式</p>
+</dd>
+    <dt><code>activateOnLoad</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>加载完毕时是否主动激活</p>
+</dd>
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>优先级</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.SceneOperationHandle.html">SceneOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadSubAssetsAsync_" data-uid="YooAsset.YooAssets.LoadSubAssetsAsync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadSubAssetsAsync_System_String_System_Type_" data-uid="YooAsset.YooAssets.LoadSubAssetsAsync(System.String,System.Type)">
+  LoadSubAssetsAsync(string, Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步加载子资源对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SubAssetsOperationHandle LoadSubAssetsAsync(string location, Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源的定位地址</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>子对象类型</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.SubAssetsOperationHandle.html">SubAssetsOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadSubAssetsAsync_" data-uid="YooAsset.YooAssets.LoadSubAssetsAsync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadSubAssetsAsync_YooAsset_AssetInfo_" data-uid="YooAsset.YooAssets.LoadSubAssetsAsync(YooAsset.AssetInfo)">
+  LoadSubAssetsAsync(AssetInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步加载子资源对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SubAssetsOperationHandle LoadSubAssetsAsync(AssetInfo assetInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetInfo</code> <a class="xref" href="YooAsset.AssetInfo.html">AssetInfo</a></dt>
+    <dd><p>资源信息</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.SubAssetsOperationHandle.html">SubAssetsOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadSubAssetsAsync_" data-uid="YooAsset.YooAssets.LoadSubAssetsAsync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadSubAssetsAsync__1_System_String_" data-uid="YooAsset.YooAssets.LoadSubAssetsAsync``1(System.String)">
+  LoadSubAssetsAsync&lt;TObject&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>异步加载子资源对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SubAssetsOperationHandle LoadSubAssetsAsync&lt;TObject&gt;(string location) where TObject : UnityEngine.Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源的定位地址</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.SubAssetsOperationHandle.html">SubAssetsOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>资源类型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadSubAssetsSync_" data-uid="YooAsset.YooAssets.LoadSubAssetsSync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadSubAssetsSync_System_String_System_Type_" data-uid="YooAsset.YooAssets.LoadSubAssetsSync(System.String,System.Type)">
+  LoadSubAssetsSync(string, Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>同步加载子资源对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SubAssetsOperationHandle LoadSubAssetsSync(string location, Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源的定位地址</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>子对象类型</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.SubAssetsOperationHandle.html">SubAssetsOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadSubAssetsSync_" data-uid="YooAsset.YooAssets.LoadSubAssetsSync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadSubAssetsSync_YooAsset_AssetInfo_" data-uid="YooAsset.YooAssets.LoadSubAssetsSync(YooAsset.AssetInfo)">
+  LoadSubAssetsSync(AssetInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>同步加载子资源对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SubAssetsOperationHandle LoadSubAssetsSync(AssetInfo assetInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetInfo</code> <a class="xref" href="YooAsset.AssetInfo.html">AssetInfo</a></dt>
+    <dd><p>资源信息</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.SubAssetsOperationHandle.html">SubAssetsOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_LoadSubAssetsSync_" data-uid="YooAsset.YooAssets.LoadSubAssetsSync*"></a>
+
+  <h3 id="YooAsset_YooAssets_LoadSubAssetsSync__1_System_String_" data-uid="YooAsset.YooAssets.LoadSubAssetsSync``1(System.String)">
+  LoadSubAssetsSync&lt;TObject&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>同步加载子资源对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SubAssetsOperationHandle LoadSubAssetsSync&lt;TObject&gt;(string location) where TObject : UnityEngine.Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>location</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源的定位地址</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.SubAssetsOperationHandle.html">SubAssetsOperationHandle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>资源类型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_SetCacheSystemCachedFileVerifyLevel_" data-uid="YooAsset.YooAssets.SetCacheSystemCachedFileVerifyLevel*"></a>
+
+  <h3 id="YooAsset_YooAssets_SetCacheSystemCachedFileVerifyLevel_YooAsset_EVerifyLevel_" data-uid="YooAsset.YooAssets.SetCacheSystemCachedFileVerifyLevel(YooAsset.EVerifyLevel)">
+  SetCacheSystemCachedFileVerifyLevel(EVerifyLevel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置缓存系统参数，已经缓存文件的校验等级</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetCacheSystemCachedFileVerifyLevel(EVerifyLevel verifyLevel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>verifyLevel</code> <a class="xref" href="YooAsset.EVerifyLevel.html">EVerifyLevel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_SetDefaultPackage_" data-uid="YooAsset.YooAssets.SetDefaultPackage*"></a>
+
+  <h3 id="YooAsset_YooAssets_SetDefaultPackage_YooAsset_ResourcePackage_" data-uid="YooAsset.YooAssets.SetDefaultPackage(YooAsset.ResourcePackage)">
+  SetDefaultPackage(ResourcePackage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置默认的资源包</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDefaultPackage(ResourcePackage package)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>package</code> <a class="xref" href="YooAsset.ResourcePackage.html">ResourcePackage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_SetDownloadSystemBreakpointResumeFileSize_" data-uid="YooAsset.YooAssets.SetDownloadSystemBreakpointResumeFileSize*"></a>
+
+  <h3 id="YooAsset_YooAssets_SetDownloadSystemBreakpointResumeFileSize_System_Int32_" data-uid="YooAsset.YooAssets.SetDownloadSystemBreakpointResumeFileSize(System.Int32)">
+  SetDownloadSystemBreakpointResumeFileSize(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置下载系统参数，启用断点续传功能文件的最小字节数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDownloadSystemBreakpointResumeFileSize(int fileBytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileBytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_SetDownloadSystemCertificateHandler_" data-uid="YooAsset.YooAssets.SetDownloadSystemCertificateHandler*"></a>
+
+  <h3 id="YooAsset_YooAssets_SetDownloadSystemCertificateHandler_UnityEngine_Networking_CertificateHandler_" data-uid="YooAsset.YooAssets.SetDownloadSystemCertificateHandler(UnityEngine.Networking.CertificateHandler)">
+  SetDownloadSystemCertificateHandler(CertificateHandler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置下载系统参数，自定义的证书认证实例</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDownloadSystemCertificateHandler(UnityEngine.Networking.CertificateHandler instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">CertificateHandler</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_SetDownloadSystemClearFileResponseCode_" data-uid="YooAsset.YooAssets.SetDownloadSystemClearFileResponseCode*"></a>
+
+  <h3 id="YooAsset_YooAssets_SetDownloadSystemClearFileResponseCode_System_Collections_Generic_List_System_Int64__" data-uid="YooAsset.YooAssets.SetDownloadSystemClearFileResponseCode(System.Collections.Generic.List{System.Int64})">
+  SetDownloadSystemClearFileResponseCode(List&lt;long&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置下载系统参数，下载失败后清理文件的HTTP错误码</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDownloadSystemClearFileResponseCode(List&lt;long&gt; codes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>codes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_SetDownloadSystemUnityWebRequest_" data-uid="YooAsset.YooAssets.SetDownloadSystemUnityWebRequest*"></a>
+
+  <h3 id="YooAsset_YooAssets_SetDownloadSystemUnityWebRequest_YooAsset_DownloadRequestDelegate_" data-uid="YooAsset.YooAssets.SetDownloadSystemUnityWebRequest(YooAsset.DownloadRequestDelegate)">
+  SetDownloadSystemUnityWebRequest(DownloadRequestDelegate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置下载系统参数，自定义下载请求</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDownloadSystemUnityWebRequest(DownloadRequestDelegate requestDelegate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requestDelegate</code> <a class="xref" href="YooAsset.DownloadRequestDelegate.html">DownloadRequestDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_SetOperationSystemMaxTimeSlice_" data-uid="YooAsset.YooAssets.SetOperationSystemMaxTimeSlice*"></a>
+
+  <h3 id="YooAsset_YooAssets_SetOperationSystemMaxTimeSlice_System_Int64_" data-uid="YooAsset.YooAssets.SetOperationSystemMaxTimeSlice(System.Int64)">
+  SetOperationSystemMaxTimeSlice(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置异步系统参数，每帧执行消耗的最大时间切片（单位：毫秒）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetOperationSystemMaxTimeSlice(long milliseconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>milliseconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_StartOperation_" data-uid="YooAsset.YooAssets.StartOperation*"></a>
+
+  <h3 id="YooAsset_YooAssets_StartOperation_YooAsset_GameAsyncOperation_" data-uid="YooAsset.YooAssets.StartOperation(YooAsset.GameAsyncOperation)">
+  StartOperation(GameAsyncOperation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>开启一个异步操作</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StartOperation(GameAsyncOperation operation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>operation</code> <a class="xref" href="YooAsset.GameAsyncOperation.html">GameAsyncOperation</a></dt>
+    <dd><p>异步操作对象</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_YooAssets_TryGetPackage_" data-uid="YooAsset.YooAssets.TryGetPackage*"></a>
+
+  <h3 id="YooAsset_YooAssets_TryGetPackage_System_String_" data-uid="YooAsset.YooAssets.TryGetPackage(System.String)">
+  TryGetPackage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>尝试获取资源包</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ResourcePackage TryGetPackage(string packageName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>packageName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源包名称</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.ResourcePackage.html">ResourcePackage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

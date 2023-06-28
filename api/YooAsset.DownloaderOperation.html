@@ -1,0 +1,602 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DownloaderOperation
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DownloaderOperation
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="YooAsset.DownloaderOperation">
+
+
+
+  <h1 id="YooAsset_DownloaderOperation" data-uid="YooAsset.DownloaderOperation" class="text-break">
+    Class DownloaderOperation
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="YooAsset.html">YooAsset</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class DownloaderOperation : AsyncOperationBase, IEnumerator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="YooAsset.AsyncOperationBase.html">AsyncOperationBase</a></div>
+      <div><span class="xref">DownloaderOperation</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="YooAsset.ResourceDownloaderOperation.html">ResourceDownloaderOperation</a></div>
+      <div><a class="xref" href="YooAsset.ResourceUnpackerOperation.html">ResourceUnpackerOperation</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="YooAsset.AsyncOperationBase.html#YooAsset_AsyncOperationBase_Status">AsyncOperationBase.Status</a>
+    </div>
+    <div>
+      <a class="xref" href="YooAsset.AsyncOperationBase.html#YooAsset_AsyncOperationBase_Error">AsyncOperationBase.Error</a>
+    </div>
+    <div>
+      <a class="xref" href="YooAsset.AsyncOperationBase.html#YooAsset_AsyncOperationBase_Progress">AsyncOperationBase.Progress</a>
+    </div>
+    <div>
+      <a class="xref" href="YooAsset.AsyncOperationBase.html#YooAsset_AsyncOperationBase_IsDone">AsyncOperationBase.IsDone</a>
+    </div>
+    <div>
+      <a class="xref" href="YooAsset.AsyncOperationBase.html#YooAsset_AsyncOperationBase_Completed">AsyncOperationBase.Completed</a>
+    </div>
+    <div>
+      <a class="xref" href="YooAsset.AsyncOperationBase.html#YooAsset_AsyncOperationBase_Task">AsyncOperationBase.Task</a>
+    </div>
+    <div>
+      <a class="xref" href="YooAsset.AsyncOperationBase.html#YooAsset_AsyncOperationBase_ClearCompletedCallback">AsyncOperationBase.ClearCompletedCallback()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="YooAsset_DownloaderOperation_CurrentDownloadBytes_" data-uid="YooAsset.DownloaderOperation.CurrentDownloadBytes*"></a>
+
+  <h3 id="YooAsset_DownloaderOperation_CurrentDownloadBytes" data-uid="YooAsset.DownloaderOperation.CurrentDownloadBytes">
+  CurrentDownloadBytes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前已经完成的下载总大小</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long CurrentDownloadBytes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="YooAsset_DownloaderOperation_CurrentDownloadCount_" data-uid="YooAsset.DownloaderOperation.CurrentDownloadCount*"></a>
+
+  <h3 id="YooAsset_DownloaderOperation_CurrentDownloadCount" data-uid="YooAsset.DownloaderOperation.CurrentDownloadCount">
+  CurrentDownloadCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>当前已经完成的下载总数量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentDownloadCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="YooAsset_DownloaderOperation_OnDownloadErrorCallback_" data-uid="YooAsset.DownloaderOperation.OnDownloadErrorCallback*"></a>
+
+  <h3 id="YooAsset_DownloaderOperation_OnDownloadErrorCallback" data-uid="YooAsset.DownloaderOperation.OnDownloadErrorCallback">
+  OnDownloadErrorCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>当某个文件下载失败</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DownloaderOperation.OnDownloadError OnDownloadErrorCallback { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.DownloaderOperation.html">DownloaderOperation</a>.<a class="xref" href="YooAsset.DownloaderOperation.OnDownloadError.html">OnDownloadError</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="YooAsset_DownloaderOperation_OnDownloadOverCallback_" data-uid="YooAsset.DownloaderOperation.OnDownloadOverCallback*"></a>
+
+  <h3 id="YooAsset_DownloaderOperation_OnDownloadOverCallback" data-uid="YooAsset.DownloaderOperation.OnDownloadOverCallback">
+  OnDownloadOverCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>当下载器结束（无论成功或失败）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DownloaderOperation.OnDownloadOver OnDownloadOverCallback { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.DownloaderOperation.html">DownloaderOperation</a>.<a class="xref" href="YooAsset.DownloaderOperation.OnDownloadOver.html">OnDownloadOver</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="YooAsset_DownloaderOperation_OnDownloadProgressCallback_" data-uid="YooAsset.DownloaderOperation.OnDownloadProgressCallback*"></a>
+
+  <h3 id="YooAsset_DownloaderOperation_OnDownloadProgressCallback" data-uid="YooAsset.DownloaderOperation.OnDownloadProgressCallback">
+  OnDownloadProgressCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>当下载进度发生变化</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DownloaderOperation.OnDownloadProgress OnDownloadProgressCallback { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.DownloaderOperation.html">DownloaderOperation</a>.<a class="xref" href="YooAsset.DownloaderOperation.OnDownloadProgress.html">OnDownloadProgress</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="YooAsset_DownloaderOperation_OnStartDownloadFileCallback_" data-uid="YooAsset.DownloaderOperation.OnStartDownloadFileCallback*"></a>
+
+  <h3 id="YooAsset_DownloaderOperation_OnStartDownloadFileCallback" data-uid="YooAsset.DownloaderOperation.OnStartDownloadFileCallback">
+  OnStartDownloadFileCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>当开始下载某个文件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DownloaderOperation.OnStartDownloadFile OnStartDownloadFileCallback { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YooAsset.DownloaderOperation.html">DownloaderOperation</a>.<a class="xref" href="YooAsset.DownloaderOperation.OnStartDownloadFile.html">OnStartDownloadFile</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="YooAsset_DownloaderOperation_TotalDownloadBytes_" data-uid="YooAsset.DownloaderOperation.TotalDownloadBytes*"></a>
+
+  <h3 id="YooAsset_DownloaderOperation_TotalDownloadBytes" data-uid="YooAsset.DownloaderOperation.TotalDownloadBytes">
+  TotalDownloadBytes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>统计的下载文件的总大小</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long TotalDownloadBytes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="YooAsset_DownloaderOperation_TotalDownloadCount_" data-uid="YooAsset.DownloaderOperation.TotalDownloadCount*"></a>
+
+  <h3 id="YooAsset_DownloaderOperation_TotalDownloadCount" data-uid="YooAsset.DownloaderOperation.TotalDownloadCount">
+  TotalDownloadCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>统计的下载文件总数量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalDownloadCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="YooAsset_DownloaderOperation_BeginDownload_" data-uid="YooAsset.DownloaderOperation.BeginDownload*"></a>
+
+  <h3 id="YooAsset_DownloaderOperation_BeginDownload" data-uid="YooAsset.DownloaderOperation.BeginDownload">
+  BeginDownload()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>开始下载</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginDownload()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_DownloaderOperation_CancelDownload_" data-uid="YooAsset.DownloaderOperation.CancelDownload*"></a>
+
+  <h3 id="YooAsset_DownloaderOperation_CancelDownload" data-uid="YooAsset.DownloaderOperation.CancelDownload">
+  CancelDownload()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>取消下载</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelDownload()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_DownloaderOperation_PauseDownload_" data-uid="YooAsset.DownloaderOperation.PauseDownload*"></a>
+
+  <h3 id="YooAsset_DownloaderOperation_PauseDownload" data-uid="YooAsset.DownloaderOperation.PauseDownload">
+  PauseDownload()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>暂停下载</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PauseDownload()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_DownloaderOperation_ResumeDownload_" data-uid="YooAsset.DownloaderOperation.ResumeDownload*"></a>
+
+  <h3 id="YooAsset_DownloaderOperation_ResumeDownload" data-uid="YooAsset.DownloaderOperation.ResumeDownload">
+  ResumeDownload()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>恢复下载</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResumeDownload()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

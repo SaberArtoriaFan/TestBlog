@@ -1,0 +1,1112 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TriggerPassiveSkill
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TriggerPassiveSkill
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.Unit.TriggerPassiveSkill">
+
+
+
+  <h1 id="XianXia_Unit_TriggerPassiveSkill" data-uid="XianXia.Unit.TriggerPassiveSkill" class="text-break">
+    Class TriggerPassiveSkill
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a>.<a class="xref" href="XianXia.Unit.html">Unit</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class TriggerPassiveSkill : PassiveSkill, IComponentBase, IAllowOwnNum, IRealName</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="XianXia.Unit.SkillBase.html">SkillBase</a></div>
+      <div><a class="xref" href="XianXia.Unit.PassiveSkill.html">PassiveSkill</a></div>
+      <div><span class="xref">TriggerPassiveSkill</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Saber.ECS.IComponentBase.html">IComponentBase</a></div>
+      <div><a class="xref" href="XianXia.Unit.IAllowOwnNum.html">IAllowOwnNum</a></div>
+      <div><a class="xref" href="XianXia.Unit.IRealName.html">IRealName</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="XianXia.Unit.AttackPassiveSkill.html">AttackPassiveSkill</a></div>
+      <div><a class="xref" href="XianXia.Unit.DamageTriggerPassiveSkill.html">DamageTriggerPassiveSkill</a></div>
+      <div><a class="xref" href="XianXia.Unit.TimeTriggerPassiveSkill.html">TimeTriggerPassiveSkill</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="XianXia.Unit.PassiveSkill.html#XianXia_Unit_PassiveSkill_ownerTalentOrgan">PassiveSkill.ownerTalentOrgan</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.SkillBase.html#XianXia_Unit_SkillBase_RealName">SkillBase.RealName</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.SkillBase.html#XianXia_Unit_SkillBase_SkillDescription">SkillBase.SkillDescription</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.SkillBase.html#XianXia_Unit_SkillBase_SkillId">SkillBase.SkillId</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.SkillBase.html#XianXia_Unit_SkillBase_SkillIcon">SkillBase.SkillIcon</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.SkillBase.html#XianXia_Unit_SkillBase_ComponentType">SkillBase.ComponentType</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.SkillBase.html#XianXia_Unit_SkillBase_Enable">SkillBase.Enable</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.SkillBase.html#XianXia_Unit_SkillBase_Owner">SkillBase.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.SkillBase.html#XianXia_Unit_SkillBase_AllowOwnMaxNum">SkillBase.AllowOwnMaxNum</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.SkillBase.html#XianXia_Unit_SkillBase_SkillSystem">SkillBase.SkillSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.SkillBase.html#XianXia_Unit_SkillBase_skillOrgan">SkillBase.skillOrgan</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.SkillBase.html#XianXia_Unit_SkillBase_skillId">SkillBase.skillId</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_bodySystem" data-uid="XianXia.Unit.TriggerPassiveSkill.bodySystem">
+  bodySystem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UnitBodySystem bodySystem</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Unit.UnitBodySystem.html">UnitBodySystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_cd" data-uid="XianXia.Unit.TriggerPassiveSkill.cd">
+  cd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int cd</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_count" data-uid="XianXia.Unit.TriggerPassiveSkill.count">
+  count
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int count</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_currCount" data-uid="XianXia.Unit.TriggerPassiveSkill.currCount">
+  currCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int currCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_effectNum" data-uid="XianXia.Unit.TriggerPassiveSkill.effectNum">
+  effectNum
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>����ȡ��������</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int effectNum</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_eventSystem" data-uid="XianXia.Unit.TriggerPassiveSkill.eventSystem">
+  eventSystem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EventSystem eventSystem</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.ECS.EventSystem.html">EventSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_findID" data-uid="XianXia.Unit.TriggerPassiveSkill.findID">
+  findID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int findID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_isCded" data-uid="XianXia.Unit.TriggerPassiveSkill.isCded">
+  isCded
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isCded</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_isCountSkill" data-uid="XianXia.Unit.TriggerPassiveSkill.isCountSkill">
+  isCountSkill
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isCountSkill</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_isRateSkill" data-uid="XianXia.Unit.TriggerPassiveSkill.isRateSkill">
+  isRateSkill
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isRateSkill</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_lifeCount" data-uid="XianXia.Unit.TriggerPassiveSkill.lifeCount">
+  lifeCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int lifeCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_mainSystem" data-uid="XianXia.Unit.TriggerPassiveSkill.mainSystem">
+  mainSystem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UnitMainSystem mainSystem</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Unit.UnitMainSystem.html">UnitMainSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_rate" data-uid="XianXia.Unit.TriggerPassiveSkill.rate">
+  rate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float rate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_skillEffectEventDict" data-uid="XianXia.Unit.TriggerPassiveSkill.skillEffectEventDict">
+  skillEffectEventDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;SkillUtility.SkillEffectEvent, (float, float)&gt; skillEffectEventDict</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="XianXia.Unit.SkillUtility.html">SkillUtility</a>.<a class="xref" href="XianXia.Unit.SkillUtility.SkillEffectEvent.html">SkillEffectEvent</a>, (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>)&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_targetType" data-uid="XianXia.Unit.TriggerPassiveSkill.targetType">
+  targetType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TargetType targetType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Unit.TargetType.html">TargetType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_timerManagerSystem" data-uid="XianXia.Unit.TriggerPassiveSkill.timerManagerSystem">
+  timerManagerSystem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TimerManagerSystem timerManagerSystem</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.ECS.TimerManagerSystem.html">TimerManagerSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_Unit_TriggerPassiveSkill_AcquireSkill_" data-uid="XianXia.Unit.TriggerPassiveSkill.AcquireSkill*"></a>
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_AcquireSkill" data-uid="XianXia.Unit.TriggerPassiveSkill.AcquireSkill">
+  AcquireSkill()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获得技能时被调用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AcquireSkill()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_TriggerPassiveSkill_Destory_" data-uid="XianXia.Unit.TriggerPassiveSkill.Destory*"></a>
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_Destory" data-uid="XianXia.Unit.TriggerPassiveSkill.Destory">
+  Destory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>销毁时被调用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Destory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_TriggerPassiveSkill_EffectTrigger_" data-uid="XianXia.Unit.TriggerPassiveSkill.EffectTrigger*"></a>
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_EffectTrigger_System_Collections_Generic_List_UnitBase__XianXia_Unit_OrganBase_XianXia_Unit_OrganBase_XianXia_Unit_Damage_" data-uid="XianXia.Unit.TriggerPassiveSkill.EffectTrigger(System.Collections.Generic.List{UnitBase},XianXia.Unit.OrganBase,XianXia.Unit.OrganBase,XianXia.Unit.Damage)">
+  EffectTrigger(List&lt;UnitBase&gt;, OrganBase, OrganBase, Damage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void EffectTrigger(List&lt;UnitBase&gt; targets, OrganBase self, OrganBase other, Damage d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targets</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnitBase.html">UnitBase</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>self</code> <a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></dt>
+    <dd></dd>
+    <dt><code>other</code> <a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="XianXia.Unit.Damage.html">Damage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_TriggerPassiveSkill_FindTarget_" data-uid="XianXia.Unit.TriggerPassiveSkill.FindTarget*"></a>
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_FindTarget_XianXia_Unit_TargetType_" data-uid="XianXia.Unit.TriggerPassiveSkill.FindTarget(XianXia.Unit.TargetType)">
+  FindTarget(TargetType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual List&lt;UnitBase&gt; FindTarget(TargetType targetType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetType</code> <a class="xref" href="XianXia.Unit.TargetType.html">TargetType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnitBase.html">UnitBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_TriggerPassiveSkill_Init_" data-uid="XianXia.Unit.TriggerPassiveSkill.Init*"></a>
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_Init_Saber_ECS_IContainerEntity_" data-uid="XianXia.Unit.TriggerPassiveSkill.Init(Saber.ECS.IContainerEntity)">
+  Init(IContainerEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Init(IContainerEntity owner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="Saber.ECS.IContainerEntity.html">IContainerEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_TriggerPassiveSkill_InitData_" data-uid="XianXia.Unit.TriggerPassiveSkill.InitData*"></a>
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_InitData_SkillPassive_" data-uid="XianXia.Unit.TriggerPassiveSkill.InitData(SkillPassive)">
+  InitData(SkillPassive)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void InitData(SkillPassive sp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sp</code> <span class="xref">SkillPassive</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_TriggerPassiveSkill_LostSkill_" data-uid="XianXia.Unit.TriggerPassiveSkill.LostSkill*"></a>
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_LostSkill" data-uid="XianXia.Unit.TriggerPassiveSkill.LostSkill">
+  LostSkill()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>失去技能时被调用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LostSkill()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_TriggerPassiveSkill_NoVaildFindID_" data-uid="XianXia.Unit.TriggerPassiveSkill.NoVaildFindID*"></a>
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_NoVaildFindID_XianXia_Unit_OrganBase_XianXia_Unit_OrganBase_XianXia_Unit_Damage_" data-uid="XianXia.Unit.TriggerPassiveSkill.NoVaildFindID(XianXia.Unit.OrganBase,XianXia.Unit.OrganBase,XianXia.Unit.Damage)">
+  NoVaildFindID(OrganBase, OrganBase, Damage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract List&lt;UnitBase&gt; NoVaildFindID(OrganBase self, OrganBase other, Damage d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>self</code> <a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></dt>
+    <dd></dd>
+    <dt><code>other</code> <a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="XianXia.Unit.Damage.html">Damage</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnitBase.html">UnitBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_TriggerPassiveSkill_Trigger_" data-uid="XianXia.Unit.TriggerPassiveSkill.Trigger*"></a>
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_Trigger_XianXia_Unit_OrganBase_XianXia_Unit_OrganBase_XianXia_Unit_Damage_" data-uid="XianXia.Unit.TriggerPassiveSkill.Trigger(XianXia.Unit.OrganBase,XianXia.Unit.OrganBase,XianXia.Unit.Damage)">
+  Trigger(OrganBase, OrganBase, Damage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Trigger(OrganBase self, OrganBase other, Damage d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>self</code> <a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></dt>
+    <dd></dd>
+    <dt><code>other</code> <a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="XianXia.Unit.Damage.html">Damage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_TriggerPassiveSkill_TriggerAfterEvent_" data-uid="XianXia.Unit.TriggerPassiveSkill.TriggerAfterEvent*"></a>
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_TriggerAfterEvent_System_Collections_Generic_List_UnitBase__XianXia_Unit_OrganBase_XianXia_Unit_OrganBase_XianXia_Unit_Damage_" data-uid="XianXia.Unit.TriggerPassiveSkill.TriggerAfterEvent(System.Collections.Generic.List{UnitBase},XianXia.Unit.OrganBase,XianXia.Unit.OrganBase,XianXia.Unit.Damage)">
+  TriggerAfterEvent(List&lt;UnitBase&gt;, OrganBase, OrganBase, Damage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void TriggerAfterEvent(List&lt;UnitBase&gt; enemies, OrganBase other, OrganBase self, Damage d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enemies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnitBase.html">UnitBase</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>other</code> <a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></dt>
+    <dd></dd>
+    <dt><code>self</code> <a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="XianXia.Unit.Damage.html">Damage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_TriggerPassiveSkill_TriggerBeforeEvent_" data-uid="XianXia.Unit.TriggerPassiveSkill.TriggerBeforeEvent*"></a>
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_TriggerBeforeEvent_System_Collections_Generic_List_UnitBase__XianXia_Unit_OrganBase_XianXia_Unit_OrganBase_XianXia_Unit_Damage_" data-uid="XianXia.Unit.TriggerPassiveSkill.TriggerBeforeEvent(System.Collections.Generic.List{UnitBase},XianXia.Unit.OrganBase,XianXia.Unit.OrganBase,XianXia.Unit.Damage)">
+  TriggerBeforeEvent(List&lt;UnitBase&gt;, OrganBase, OrganBase, Damage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void TriggerBeforeEvent(List&lt;UnitBase&gt; enemies, OrganBase other, OrganBase self, Damage d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enemies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnitBase.html">UnitBase</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>other</code> <a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></dt>
+    <dd></dd>
+    <dt><code>self</code> <a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="XianXia.Unit.Damage.html">Damage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_TriggerPassiveSkill_TrrigerCondition_" data-uid="XianXia.Unit.TriggerPassiveSkill.TrrigerCondition*"></a>
+
+  <h3 id="XianXia_Unit_TriggerPassiveSkill_TrrigerCondition_XianXia_Unit_OrganBase_XianXia_Unit_OrganBase_XianXia_Unit_Damage_" data-uid="XianXia.Unit.TriggerPassiveSkill.TrrigerCondition(XianXia.Unit.OrganBase,XianXia.Unit.OrganBase,XianXia.Unit.Damage)">
+  TrrigerCondition(OrganBase, OrganBase, Damage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool TrrigerCondition(OrganBase self, OrganBase other, Damage d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>self</code> <a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></dt>
+    <dd></dd>
+    <dt><code>other</code> <a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></dt>
+    <dd></dd>
+    <dt><code>d</code> <a class="xref" href="XianXia.Unit.Damage.html">Damage</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

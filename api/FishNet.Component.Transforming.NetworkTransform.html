@@ -1,0 +1,1107 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NetworkTransform
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NetworkTransform
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FishNet.Component.Transforming.NetworkTransform">
+
+
+
+  <h1 id="FishNet_Component_Transforming_NetworkTransform" data-uid="FishNet.Component.Transforming.NetworkTransform" class="text-break">
+    Class NetworkTransform
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FishNet.html">FishNet</a>.<a class="xref" href="FishNet.Component.html">Component</a>.<a class="xref" href="FishNet.Component.Transforming.html">Transforming</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class NetworkTransform : NetworkBehaviour, MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FishNet.Object.NetworkBehaviour.html">NetworkBehaviour</a></div>
+      <div><span class="xref">NetworkTransform</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">MonoBehaviour</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_OnStartServerCalled">NetworkBehaviour.OnStartServerCalled</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_OnStartClientCalled">NetworkBehaviour.OnStartClientCalled</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_OnStartNetwork">NetworkBehaviour.OnStartNetwork()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_OnStopNetwork">NetworkBehaviour.OnStopNetwork()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_OnDespawnServer_FishNet_Connection_NetworkConnection_">NetworkBehaviour.OnDespawnServer(NetworkConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_IsSpawned">NetworkBehaviour.IsSpawned</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_ComponentIndex">NetworkBehaviour.ComponentIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_NetworkObject">NetworkBehaviour.NetworkObject</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_CanLog_FishNet_Managing_Logging_LoggingType_">NetworkBehaviour.CanLog(LoggingType)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_GetLastReconcileTick">NetworkBehaviour.GetLastReconcileTick()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_GetLastReplicateTick">NetworkBehaviour.GetLastReplicateTick()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_IsReconciling">NetworkBehaviour.IsReconciling</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_ClearReplicateCache_System_Boolean_">NetworkBehaviour.ClearReplicateCache(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_ClearReplicateCache">NetworkBehaviour.ClearReplicateCache()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Replicate_ExitEarly_A_Internal_System_Boolean_System_Boolean_">NetworkBehaviour.Replicate_ExitEarly_A_Internal(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_ClearQueue_Server_Internal__1_System_Collections_Generic_Queue___0__">NetworkBehaviour.ClearQueue_Server_Internal&lt;T&gt;(Queue&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Replicate_Server_Internal__1_FishNet_Object_Prediction_Delegating_ReplicateUserLogicDelegate___0__System_Collections_Generic_Queue___0__FishNet_Transporting_Channel_">NetworkBehaviour.Replicate_Server_Internal&lt;T&gt;(ReplicateUserLogicDelegate&lt;T&gt;, Queue&lt;T&gt;, Channel)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Replicate_Client_Internal__1_FishNet_Object_Prediction_Delegating_ReplicateUserLogicDelegate___0__System_UInt32_System_Collections_Generic_List___0____0_FishNet_Transporting_Channel_">NetworkBehaviour.Replicate_Client_Internal&lt;T&gt;(ReplicateUserLogicDelegate&lt;T&gt;, uint, List&lt;T&gt;, T, Channel)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Replicate_Reader_Internal__1_FishNet_Serializing_PooledReader_FishNet_Connection_NetworkConnection___0___System_Collections_Generic_Queue___0__FishNet_Transporting_Channel_">NetworkBehaviour.Replicate_Reader_Internal&lt;T&gt;(PooledReader, NetworkConnection, T[], Queue&lt;T&gt;, Channel)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Reconcile_ExitEarly_A_Internal_System_Boolean_FishNet_Transporting_Channel__">NetworkBehaviour.Reconcile_ExitEarly_A_Internal(bool, out Channel)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Reconcile_Server_Internal__1_System_UInt32___0_FishNet_Transporting_Channel_">NetworkBehaviour.Reconcile_Server_Internal&lt;T&gt;(uint, T, Channel)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Reconcile_Client_Internal__2_FishNet_Object_Prediction_Delegating_ReconcileUserLogicDelegate___0__FishNet_Object_Prediction_Delegating_ReplicateUserLogicDelegate___1__System_Collections_Generic_List___1____0_FishNet_Transporting_Channel_">NetworkBehaviour.Reconcile_Client_Internal&lt;T, T2&gt;(ReconcileUserLogicDelegate&lt;T&gt;, ReplicateUserLogicDelegate&lt;T2&gt;, List&lt;T2&gt;, T, Channel)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Reconcile_Reader_Internal__1_FishNet_Serializing_PooledReader___0__FishNet_Transporting_Channel_">NetworkBehaviour.Reconcile_Reader_Internal&lt;T&gt;(PooledReader, ref T, Channel)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_IsDeinitializing">NetworkBehaviour.IsDeinitializing</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_NetworkManager">NetworkBehaviour.NetworkManager</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_ServerManager">NetworkBehaviour.ServerManager</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_ClientManager">NetworkBehaviour.ClientManager</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_ObserverManager">NetworkBehaviour.ObserverManager</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_TransportManager">NetworkBehaviour.TransportManager</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_TimeManager">NetworkBehaviour.TimeManager</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_SceneManager">NetworkBehaviour.SceneManager</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_PredictionManager">NetworkBehaviour.PredictionManager</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_RollbackManager">NetworkBehaviour.RollbackManager</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_NetworkObserver">NetworkBehaviour.NetworkObserver</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_IsClient">NetworkBehaviour.IsClient</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_IsClientOnly">NetworkBehaviour.IsClientOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_IsServer">NetworkBehaviour.IsServer</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_IsServerOnly">NetworkBehaviour.IsServerOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_IsHost">NetworkBehaviour.IsHost</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_IsOffline">NetworkBehaviour.IsOffline</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Observers">NetworkBehaviour.Observers</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_IsOwner">NetworkBehaviour.IsOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Owner">NetworkBehaviour.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_OwnerId">NetworkBehaviour.OwnerId</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_ObjectId">NetworkBehaviour.ObjectId</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_LocalConnection">NetworkBehaviour.LocalConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_OwnerMatches_FishNet_Connection_NetworkConnection_">NetworkBehaviour.OwnerMatches(NetworkConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Despawn_GameObject_System_Nullable_FishNet_Object_DespawnType__">NetworkBehaviour.Despawn(GameObject, DespawnType?)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Despawn_FishNet_Object_NetworkObject_System_Nullable_FishNet_Object_DespawnType__">NetworkBehaviour.Despawn(NetworkObject, DespawnType?)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Despawn_System_Nullable_FishNet_Object_DespawnType__">NetworkBehaviour.Despawn(DespawnType?)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Spawn_GameObject_FishNet_Connection_NetworkConnection_">NetworkBehaviour.Spawn(GameObject, NetworkConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_Spawn_FishNet_Object_NetworkObject_FishNet_Connection_NetworkConnection_">NetworkBehaviour.Spawn(NetworkObject, NetworkConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_RemoveOwnership">NetworkBehaviour.RemoveOwnership()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_GiveOwnership_FishNet_Connection_NetworkConnection_">NetworkBehaviour.GiveOwnership(NetworkConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_RegisterInvokeOnInstance__1_System_Action_UnityEngine_Component__">NetworkBehaviour.RegisterInvokeOnInstance&lt;T&gt;(Action&lt;UnityEngine.Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_UnregisterInvokeOnInstance__1_System_Action_UnityEngine_Component__">NetworkBehaviour.UnregisterInvokeOnInstance&lt;T&gt;(Action&lt;UnityEngine.Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_GetInstance__1">NetworkBehaviour.GetInstance&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_RegisterInstance__1___0_System_Boolean_">NetworkBehaviour.RegisterInstance&lt;T&gt;(T, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_UnregisterInstance__1">NetworkBehaviour.UnregisterInstance&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_ClearBuffedRpcs">NetworkBehaviour.ClearBuffedRpcs()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_SendServerRpc_Internal_System_UInt32_FishNet_Serializing_PooledWriter_FishNet_Transporting_Channel_">NetworkBehaviour.SendServerRpc_Internal(uint, PooledWriter, Channel)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_SendObserversRpc_Internal_System_UInt32_FishNet_Serializing_PooledWriter_FishNet_Transporting_Channel_System_Boolean_System_Boolean_System_Boolean_">NetworkBehaviour.SendObserversRpc_Internal(uint, PooledWriter, Channel, bool, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.NetworkBehaviour.html#FishNet_Object_NetworkBehaviour_SendTargetRpc_Internal_System_UInt32_FishNet_Serializing_PooledWriter_FishNet_Transporting_Channel_FishNet_Connection_NetworkConnection_System_Boolean_System_Boolean_">NetworkBehaviour.SendTargetRpc_Internal(uint, PooledWriter, Channel, NetworkConnection, bool, bool)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_MAX_INTERPOLATION" data-uid="FishNet.Component.Transforming.NetworkTransform.MAX_INTERPOLATION">
+  MAX_INTERPOLATION
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum possible interpolation value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const ushort MAX_INTERPOLATION = 250</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_TakenOwnership_" data-uid="FishNet.Component.Transforming.NetworkTransform.TakenOwnership*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_TakenOwnership" data-uid="FishNet.Component.Transforming.NetworkTransform.TakenOwnership">
+  TakenOwnership
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if the local client used TakeOwnership and is awaiting an ownership change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TakenOwnership { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_ForceSend_" data-uid="FishNet.Component.Transforming.NetworkTransform.ForceSend*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_ForceSend" data-uid="FishNet.Component.Transforming.NetworkTransform.ForceSend">
+  ForceSend()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets last sent information to force a resend of current values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceSend()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_GetSendToOwner_" data-uid="FishNet.Component.Transforming.NetworkTransform.GetSendToOwner*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_GetSendToOwner" data-uid="FishNet.Component.Transforming.NetworkTransform.GetSendToOwner">
+  GetSendToOwner()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets SendToOwner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSendToOwner()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_OnOwnershipClient_" data-uid="FishNet.Component.Transforming.NetworkTransform.OnOwnershipClient*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_OnOwnershipClient_FishNet_Connection_NetworkConnection_" data-uid="FishNet.Component.Transforming.NetworkTransform.OnOwnershipClient(FishNet.Connection.NetworkConnection)">
+  OnOwnershipClient(NetworkConnection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called on the client after gaining or losing ownership.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnOwnershipClient(NetworkConnection prevOwner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prevOwner</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Previous owner of this object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_OnOwnershipServer_" data-uid="FishNet.Component.Transforming.NetworkTransform.OnOwnershipServer*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_OnOwnershipServer_FishNet_Connection_NetworkConnection_" data-uid="FishNet.Component.Transforming.NetworkTransform.OnOwnershipServer(FishNet.Connection.NetworkConnection)">
+  OnOwnershipServer(NetworkConnection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called on the server after ownership has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnOwnershipServer(NetworkConnection prevOwner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prevOwner</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Previous owner of this object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_OnSpawnServer_" data-uid="FishNet.Component.Transforming.NetworkTransform.OnSpawnServer*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_OnSpawnServer_FishNet_Connection_NetworkConnection_" data-uid="FishNet.Component.Transforming.NetworkTransform.OnSpawnServer(FishNet.Connection.NetworkConnection)">
+  OnSpawnServer(NetworkConnection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called on the server after a spawn message for this object has been sent to clients.
+Useful for sending remote calls or data to clients.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnSpawnServer(NetworkConnection connection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connection</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Connection the object is being spawned for.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_OnStartClient_" data-uid="FishNet.Component.Transforming.NetworkTransform.OnStartClient*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_OnStartClient" data-uid="FishNet.Component.Transforming.NetworkTransform.OnStartClient">
+  OnStartClient()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called on the client after initializing this object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnStartClient()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_OnStartServer_" data-uid="FishNet.Component.Transforming.NetworkTransform.OnStartServer*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_OnStartServer" data-uid="FishNet.Component.Transforming.NetworkTransform.OnStartServer">
+  OnStartServer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called on the server after initializing this object.
+SyncTypes modified before or during this method will be sent to clients in the spawn message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnStartServer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_OnStopClient_" data-uid="FishNet.Component.Transforming.NetworkTransform.OnStopClient*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_OnStopClient" data-uid="FishNet.Component.Transforming.NetworkTransform.OnStopClient">
+  OnStopClient()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called on the client before deinitializing this object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnStopClient()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_OnStopServer_" data-uid="FishNet.Component.Transforming.NetworkTransform.OnStopServer*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_OnStopServer" data-uid="FishNet.Component.Transforming.NetworkTransform.OnStopServer">
+  OnStopServer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called on the server before deinitializing this object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnStopServer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_SetInterval_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetInterval*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_SetInterval_System_Byte_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetInterval(System.Byte)">
+  SetInterval(byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the interval value over the network.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInterval(byte value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>New interval.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_SetPositionSnapping_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetPositionSnapping*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_SetPositionSnapping_FishNet_Component_Transforming_NetworkTransform_SnappedAxes_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetPositionSnapping(FishNet.Component.Transforming.NetworkTransform.SnappedAxes)">
+  SetPositionSnapping(SnappedAxes)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets which Position axes to snap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPositionSnapping(NetworkTransform.SnappedAxes axes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>axes</code> <a class="xref" href="FishNet.Component.Transforming.NetworkTransform.html">NetworkTransform</a>.<a class="xref" href="FishNet.Component.Transforming.NetworkTransform.SnappedAxes.html">SnappedAxes</a></dt>
+    <dd><p>Axes to snap.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_SetRotationSnapping_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetRotationSnapping*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_SetRotationSnapping_FishNet_Component_Transforming_NetworkTransform_SnappedAxes_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetRotationSnapping(FishNet.Component.Transforming.NetworkTransform.SnappedAxes)">
+  SetRotationSnapping(SnappedAxes)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets which Scale axes to snap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRotationSnapping(NetworkTransform.SnappedAxes axes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>axes</code> <a class="xref" href="FishNet.Component.Transforming.NetworkTransform.html">NetworkTransform</a>.<a class="xref" href="FishNet.Component.Transforming.NetworkTransform.SnappedAxes.html">SnappedAxes</a></dt>
+    <dd><p>Axes to snap.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_SetScaleSnapping_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetScaleSnapping*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_SetScaleSnapping_FishNet_Component_Transforming_NetworkTransform_SnappedAxes_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetScaleSnapping(FishNet.Component.Transforming.NetworkTransform.SnappedAxes)">
+  SetScaleSnapping(SnappedAxes)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets which Scale axes to snap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScaleSnapping(NetworkTransform.SnappedAxes axes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>axes</code> <a class="xref" href="FishNet.Component.Transforming.NetworkTransform.html">NetworkTransform</a>.<a class="xref" href="FishNet.Component.Transforming.NetworkTransform.SnappedAxes.html">SnappedAxes</a></dt>
+    <dd><p>Axes to snap.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_SetSendToOwner_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetSendToOwner*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_SetSendToOwner_System_Boolean_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetSendToOwner(System.Boolean)">
+  SetSendToOwner(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets SendToOwner. Only the server may call this method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSendToOwner(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>New value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_SetSynchronizePosition_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetSynchronizePosition*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_SetSynchronizePosition_System_Boolean_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetSynchronizePosition(System.Boolean)">
+  SetSynchronizePosition(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets if to synchronize position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSynchronizePosition(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>New value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_SetSynchronizeRotation_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetSynchronizeRotation*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_SetSynchronizeRotation_System_Boolean_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetSynchronizeRotation(System.Boolean)">
+  SetSynchronizeRotation(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets if to synchronize rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSynchronizeRotation(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>New value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_SetSynchronizeScale_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetSynchronizeScale*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_SetSynchronizeScale_System_Boolean_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetSynchronizeScale(System.Boolean)">
+  SetSynchronizeScale(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets if to synchronize scale.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSynchronizeScale(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>New value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Transforming_NetworkTransform_SetSynchronizedProperties_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetSynchronizedProperties*"></a>
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_SetSynchronizedProperties_FishNet_Component_Transforming_SynchronizedProperty_" data-uid="FishNet.Component.Transforming.NetworkTransform.SetSynchronizedProperties(FishNet.Component.Transforming.SynchronizedProperty)">
+  SetSynchronizedProperties(SynchronizedProperty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates which properties are synchronized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSynchronizedProperties(SynchronizedProperty value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="FishNet.Component.Transforming.SynchronizedProperty.html">SynchronizedProperty</a></dt>
+    <dd><p>Properties to synchronize.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_OnDataReceived" data-uid="FishNet.Component.Transforming.NetworkTransform.OnDataReceived">
+  OnDataReceived
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when new data is received. Previous and next data are provided. Next data may be manipulated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event NetworkTransform.DataReceivedChanged OnDataReceived</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Component.Transforming.NetworkTransform.html">NetworkTransform</a>.<a class="xref" href="FishNet.Component.Transforming.NetworkTransform.DataReceivedChanged.html">DataReceivedChanged</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_OnInterpolationComplete" data-uid="FishNet.Component.Transforming.NetworkTransform.OnInterpolationComplete">
+  OnInterpolationComplete
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the transform has reached it's goal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnInterpolationComplete</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Component_Transforming_NetworkTransform_OnNextGoal" data-uid="FishNet.Component.Transforming.NetworkTransform.OnNextGoal">
+  OnNextGoal
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when GoalData is updated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;NetworkTransform.GoalData&gt; OnNextGoal</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Component.Transforming.NetworkTransform.html">NetworkTransform</a>.<a class="xref" href="FishNet.Component.Transforming.NetworkTransform.GoalData.html">GoalData</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

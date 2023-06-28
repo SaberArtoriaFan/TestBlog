@@ -1,0 +1,1189 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SkeletonUtility
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SkeletonUtility
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.Unity.SkeletonUtility">
+
+
+
+  <h1 id="Spine_Unity_SkeletonUtility" data-uid="Spine.Unity.SkeletonUtility" class="text-break">
+    Class SkeletonUtility
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a>.<a class="xref" href="Spine.Unity.html">Unity</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SkeletonUtility : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SkeletonUtility</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Spine_Unity_SkeletonUtility_boneComponents" data-uid="Spine.Unity.SkeletonUtility.boneComponents">
+  boneComponents
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public List&lt;SkeletonUtilityBone&gt; boneComponents</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Spine.Unity.SkeletonUtilityBone.html">SkeletonUtilityBone</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonUtility_boneRoot" data-uid="Spine.Unity.SkeletonUtility.boneRoot">
+  boneRoot
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform boneRoot</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonUtility_constraintComponents" data-uid="Spine.Unity.SkeletonUtility.constraintComponents">
+  constraintComponents
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public List&lt;SkeletonUtilityConstraint&gt; constraintComponents</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Spine.Unity.SkeletonUtilityConstraint.html">SkeletonUtilityConstraint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonUtility_flipBy180DegreeRotation" data-uid="Spine.Unity.SkeletonUtility.flipBy180DegreeRotation">
+  flipBy180DegreeRotation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If true, <a class="xref" href="Spine.Skeleton.html#Spine_Skeleton_ScaleX">ScaleX</a> and <a class="xref" href="Spine.Skeleton.html#Spine_Skeleton_ScaleY">ScaleY</a> are followed
+by 180 degree rotation. If false, negative Transform scale is used.
+Note that using negative scale is consistent with previous behaviour (hence the default),
+however causes serious problems with rigidbodies and physics. Therefore, it is recommended to
+enable this parameter where possible. When creating hinge chains for a chain of skeleton bones
+via <a class="xref" href="Spine.Unity.SkeletonUtilityBone.html">SkeletonUtilityBone</a>, it is mandatory to have <code>flipBy180DegreeRotation</code> enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool flipBy180DegreeRotation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonUtility_skeletonAnimation" data-uid="Spine.Unity.SkeletonUtility.skeletonAnimation">
+  skeletonAnimation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public ISkeletonAnimation skeletonAnimation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.ISkeletonAnimation.html">ISkeletonAnimation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonUtility_skeletonGraphic" data-uid="Spine.Unity.SkeletonUtility.skeletonGraphic">
+  skeletonGraphic
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkeletonGraphic skeletonGraphic</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.SkeletonGraphic.html">SkeletonGraphic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonUtility_skeletonRenderer" data-uid="Spine.Unity.SkeletonUtility.skeletonRenderer">
+  skeletonRenderer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkeletonRenderer skeletonRenderer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.SkeletonRenderer.html">SkeletonRenderer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Spine_Unity_SkeletonUtility_IsValid_" data-uid="Spine.Unity.SkeletonUtility.IsValid*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_IsValid" data-uid="Spine.Unity.SkeletonUtility.IsValid">
+  IsValid
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_PositionScale_" data-uid="Spine.Unity.SkeletonUtility.PositionScale*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_PositionScale" data-uid="Spine.Unity.SkeletonUtility.PositionScale">
+  PositionScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PositionScale { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_Skeleton_" data-uid="Spine.Unity.SkeletonUtility.Skeleton*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_Skeleton" data-uid="Spine.Unity.SkeletonUtility.Skeleton">
+  Skeleton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Skeleton Skeleton { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Skeleton.html">Skeleton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_SkeletonComponent_" data-uid="Spine.Unity.SkeletonUtility.SkeletonComponent*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_SkeletonComponent" data-uid="Spine.Unity.SkeletonUtility.SkeletonComponent">
+  SkeletonComponent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISkeletonComponent SkeletonComponent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.ISkeletonComponent.html">ISkeletonComponent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_Unity_SkeletonUtility_AddBoneRigidbody2D_" data-uid="Spine.Unity.SkeletonUtility.AddBoneRigidbody2D*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_AddBoneRigidbody2D_GameObject_System_Boolean_System_Single_" data-uid="Spine.Unity.SkeletonUtility.AddBoneRigidbody2D(GameObject,System.Boolean,System.Single)">
+  AddBoneRigidbody2D(GameObject, bool, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Rigidbody2D AddBoneRigidbody2D(GameObject gameObject, bool isKinematic = true, float gravityScale = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+    <dt><code>isKinematic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>gravityScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rigidbody2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_AddBoundingBoxAsComponent_" data-uid="Spine.Unity.SkeletonUtility.AddBoundingBoxAsComponent*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_AddBoundingBoxAsComponent_Spine_BoundingBoxAttachment_Spine_Slot_GameObject_System_Boolean_" data-uid="Spine.Unity.SkeletonUtility.AddBoundingBoxAsComponent(Spine.BoundingBoxAttachment,Spine.Slot,GameObject,System.Boolean)">
+  AddBoundingBoxAsComponent(BoundingBoxAttachment, Slot, GameObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PolygonCollider2D AddBoundingBoxAsComponent(BoundingBoxAttachment box, Slot slot, GameObject gameObject, bool isTrigger = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>box</code> <a class="xref" href="Spine.BoundingBoxAttachment.html">BoundingBoxAttachment</a></dt>
+    <dd></dd>
+    <dt><code>slot</code> <a class="xref" href="Spine.Slot.html">Slot</a></dt>
+    <dd></dd>
+    <dt><code>gameObject</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+    <dt><code>isTrigger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PolygonCollider2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_AddBoundingBoxGameObject_" data-uid="Spine.Unity.SkeletonUtility.AddBoundingBoxGameObject*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_AddBoundingBoxGameObject_Spine_Skeleton_System_String_System_String_System_String_Transform_System_Boolean_" data-uid="Spine.Unity.SkeletonUtility.AddBoundingBoxGameObject(Spine.Skeleton,System.String,System.String,System.String,Transform,System.Boolean)">
+  AddBoundingBoxGameObject(Skeleton, string, string, string, Transform, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PolygonCollider2D AddBoundingBoxGameObject(Skeleton skeleton, string skinName, string slotName, string attachmentName, Transform parent, bool isTrigger = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skeleton</code> <a class="xref" href="Spine.Skeleton.html">Skeleton</a></dt>
+    <dd></dd>
+    <dt><code>skinName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>slotName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>attachmentName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parent</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>isTrigger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PolygonCollider2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_AddBoundingBoxGameObject_" data-uid="Spine.Unity.SkeletonUtility.AddBoundingBoxGameObject*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_AddBoundingBoxGameObject_System_String_Spine_BoundingBoxAttachment_Spine_Slot_Transform_System_Boolean_" data-uid="Spine.Unity.SkeletonUtility.AddBoundingBoxGameObject(System.String,Spine.BoundingBoxAttachment,Spine.Slot,Transform,System.Boolean)">
+  AddBoundingBoxGameObject(string, BoundingBoxAttachment, Slot, Transform, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PolygonCollider2D AddBoundingBoxGameObject(string name, BoundingBoxAttachment box, Slot slot, Transform parent, bool isTrigger = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>box</code> <a class="xref" href="Spine.BoundingBoxAttachment.html">BoundingBoxAttachment</a></dt>
+    <dd></dd>
+    <dt><code>slot</code> <a class="xref" href="Spine.Slot.html">Slot</a></dt>
+    <dd></dd>
+    <dt><code>parent</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>isTrigger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PolygonCollider2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_CollectBones_" data-uid="Spine.Unity.SkeletonUtility.CollectBones*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_CollectBones" data-uid="Spine.Unity.SkeletonUtility.CollectBones">
+  CollectBones()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CollectBones()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_GetBoneRoot_" data-uid="Spine.Unity.SkeletonUtility.GetBoneRoot*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_GetBoneRoot" data-uid="Spine.Unity.SkeletonUtility.GetBoneRoot">
+  GetBoneRoot()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform GetBoneRoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_GetBoundingBoxBounds_" data-uid="Spine.Unity.SkeletonUtility.GetBoundingBoxBounds*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_GetBoundingBoxBounds_Spine_BoundingBoxAttachment_System_Single_" data-uid="Spine.Unity.SkeletonUtility.GetBoundingBoxBounds(Spine.BoundingBoxAttachment,System.Single)">
+  GetBoundingBoxBounds(BoundingBoxAttachment, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Bounds GetBoundingBoxBounds(BoundingBoxAttachment boundingBox, float depth = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boundingBox</code> <a class="xref" href="Spine.BoundingBoxAttachment.html">BoundingBoxAttachment</a></dt>
+    <dd></dd>
+    <dt><code>depth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Bounds</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_RegisterBone_" data-uid="Spine.Unity.SkeletonUtility.RegisterBone*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_RegisterBone_Spine_Unity_SkeletonUtilityBone_" data-uid="Spine.Unity.SkeletonUtility.RegisterBone(Spine.Unity.SkeletonUtilityBone)">
+  RegisterBone(SkeletonUtilityBone)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterBone(SkeletonUtilityBone bone)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bone</code> <a class="xref" href="Spine.Unity.SkeletonUtilityBone.html">SkeletonUtilityBone</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_RegisterConstraint_" data-uid="Spine.Unity.SkeletonUtility.RegisterConstraint*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_RegisterConstraint_Spine_Unity_SkeletonUtilityConstraint_" data-uid="Spine.Unity.SkeletonUtility.RegisterConstraint(Spine.Unity.SkeletonUtilityConstraint)">
+  RegisterConstraint(SkeletonUtilityConstraint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterConstraint(SkeletonUtilityConstraint constraint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>constraint</code> <a class="xref" href="Spine.Unity.SkeletonUtilityConstraint.html">SkeletonUtilityConstraint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_ResubscribeEvents_" data-uid="Spine.Unity.SkeletonUtility.ResubscribeEvents*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_ResubscribeEvents" data-uid="Spine.Unity.SkeletonUtility.ResubscribeEvents">
+  ResubscribeEvents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResubscribeEvents()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_SetColliderPointsLocal_" data-uid="Spine.Unity.SkeletonUtility.SetColliderPointsLocal*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_SetColliderPointsLocal_PolygonCollider2D_Spine_Slot_Spine_BoundingBoxAttachment_System_Single_" data-uid="Spine.Unity.SkeletonUtility.SetColliderPointsLocal(PolygonCollider2D,Spine.Slot,Spine.BoundingBoxAttachment,System.Single)">
+  SetColliderPointsLocal(PolygonCollider2D, Slot, BoundingBoxAttachment, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetColliderPointsLocal(PolygonCollider2D collider, Slot slot, BoundingBoxAttachment box, float scale = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>collider</code> <span class="xref">PolygonCollider2D</span></dt>
+    <dd></dd>
+    <dt><code>slot</code> <a class="xref" href="Spine.Slot.html">Slot</a></dt>
+    <dd></dd>
+    <dt><code>box</code> <a class="xref" href="Spine.BoundingBoxAttachment.html">BoundingBoxAttachment</a></dt>
+    <dd></dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_SpawnBone_" data-uid="Spine.Unity.SkeletonUtility.SpawnBone*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_SpawnBone_Spine_Bone_Transform_Spine_Unity_SkeletonUtilityBone_Mode_System_Boolean_System_Boolean_System_Boolean_" data-uid="Spine.Unity.SkeletonUtility.SpawnBone(Spine.Bone,Transform,Spine.Unity.SkeletonUtilityBone.Mode,System.Boolean,System.Boolean,System.Boolean)">
+  SpawnBone(Bone, Transform, Mode, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject SpawnBone(Bone bone, Transform parent, SkeletonUtilityBone.Mode mode, bool pos, bool rot, bool sca)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bone</code> <a class="xref" href="Spine.Bone.html">Bone</a></dt>
+    <dd></dd>
+    <dt><code>parent</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>mode</code> <a class="xref" href="Spine.Unity.SkeletonUtilityBone.html">SkeletonUtilityBone</a>.<a class="xref" href="Spine.Unity.SkeletonUtilityBone.Mode.html">Mode</a></dt>
+    <dd></dd>
+    <dt><code>pos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>rot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>sca</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_SpawnBoneRecursively_" data-uid="Spine.Unity.SkeletonUtility.SpawnBoneRecursively*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_SpawnBoneRecursively_Spine_Bone_Transform_Spine_Unity_SkeletonUtilityBone_Mode_System_Boolean_System_Boolean_System_Boolean_" data-uid="Spine.Unity.SkeletonUtility.SpawnBoneRecursively(Spine.Bone,Transform,Spine.Unity.SkeletonUtilityBone.Mode,System.Boolean,System.Boolean,System.Boolean)">
+  SpawnBoneRecursively(Bone, Transform, Mode, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject SpawnBoneRecursively(Bone bone, Transform parent, SkeletonUtilityBone.Mode mode, bool pos, bool rot, bool sca)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bone</code> <a class="xref" href="Spine.Bone.html">Bone</a></dt>
+    <dd></dd>
+    <dt><code>parent</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>mode</code> <a class="xref" href="Spine.Unity.SkeletonUtilityBone.html">SkeletonUtilityBone</a>.<a class="xref" href="Spine.Unity.SkeletonUtilityBone.Mode.html">Mode</a></dt>
+    <dd></dd>
+    <dt><code>pos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>rot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>sca</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_SpawnHierarchy_" data-uid="Spine.Unity.SkeletonUtility.SpawnHierarchy*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_SpawnHierarchy_Spine_Unity_SkeletonUtilityBone_Mode_System_Boolean_System_Boolean_System_Boolean_" data-uid="Spine.Unity.SkeletonUtility.SpawnHierarchy(Spine.Unity.SkeletonUtilityBone.Mode,System.Boolean,System.Boolean,System.Boolean)">
+  SpawnHierarchy(Mode, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject SpawnHierarchy(SkeletonUtilityBone.Mode mode, bool pos, bool rot, bool sca)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="Spine.Unity.SkeletonUtilityBone.html">SkeletonUtilityBone</a>.<a class="xref" href="Spine.Unity.SkeletonUtilityBone.Mode.html">Mode</a></dt>
+    <dd></dd>
+    <dt><code>pos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>rot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>sca</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_SpawnRoot_" data-uid="Spine.Unity.SkeletonUtility.SpawnRoot*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_SpawnRoot_Spine_Unity_SkeletonUtilityBone_Mode_System_Boolean_System_Boolean_System_Boolean_" data-uid="Spine.Unity.SkeletonUtility.SpawnRoot(Spine.Unity.SkeletonUtilityBone.Mode,System.Boolean,System.Boolean,System.Boolean)">
+  SpawnRoot(Mode, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject SpawnRoot(SkeletonUtilityBone.Mode mode, bool pos, bool rot, bool sca)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="Spine.Unity.SkeletonUtilityBone.html">SkeletonUtilityBone</a>.<a class="xref" href="Spine.Unity.SkeletonUtilityBone.Mode.html">Mode</a></dt>
+    <dd></dd>
+    <dt><code>pos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>rot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>sca</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_UnregisterBone_" data-uid="Spine.Unity.SkeletonUtility.UnregisterBone*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_UnregisterBone_Spine_Unity_SkeletonUtilityBone_" data-uid="Spine.Unity.SkeletonUtility.UnregisterBone(Spine.Unity.SkeletonUtilityBone)">
+  UnregisterBone(SkeletonUtilityBone)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterBone(SkeletonUtilityBone bone)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bone</code> <a class="xref" href="Spine.Unity.SkeletonUtilityBone.html">SkeletonUtilityBone</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonUtility_UnregisterConstraint_" data-uid="Spine.Unity.SkeletonUtility.UnregisterConstraint*"></a>
+
+  <h3 id="Spine_Unity_SkeletonUtility_UnregisterConstraint_Spine_Unity_SkeletonUtilityConstraint_" data-uid="Spine.Unity.SkeletonUtility.UnregisterConstraint(Spine.Unity.SkeletonUtilityConstraint)">
+  UnregisterConstraint(SkeletonUtilityConstraint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterConstraint(SkeletonUtilityConstraint constraint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>constraint</code> <a class="xref" href="Spine.Unity.SkeletonUtilityConstraint.html">SkeletonUtilityConstraint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Spine_Unity_SkeletonUtility_OnReset" data-uid="Spine.Unity.SkeletonUtility.OnReset">
+  OnReset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SkeletonUtility.SkeletonUtilityDelegate OnReset</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.SkeletonUtility.html">SkeletonUtility</a>.<a class="xref" href="Spine.Unity.SkeletonUtility.SkeletonUtilityDelegate.html">SkeletonUtilityDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,815 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class JSONNumber
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class JSONNumber
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SimpleJSON.JSONNumber">
+
+
+
+  <h1 id="SimpleJSON_JSONNumber" data-uid="SimpleJSON.JSONNumber" class="text-break">
+    Class JSONNumber
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SimpleJSON.html">SimpleJSON</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class JSONNumber : JSONNode</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></div>
+      <div><span class="xref">JSONNumber</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_forceASCII">JSONNode.forceASCII</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_longAsString">JSONNode.longAsString</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_allowLineComments">JSONNode.allowLineComments</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_Item_System_Int32_">JSONNode.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_Item_System_String_">JSONNode.this[string]</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_Count">JSONNode.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_IsString">JSONNode.IsString</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_IsBoolean">JSONNode.IsBoolean</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_IsNull">JSONNode.IsNull</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_IsArray">JSONNode.IsArray</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_IsObject">JSONNode.IsObject</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_Inline">JSONNode.Inline</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_Add_System_String_SimpleJSON_JSONNode_">JSONNode.Add(string, JSONNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_Add_SimpleJSON_JSONNode_">JSONNode.Add(JSONNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_Remove_System_String_">JSONNode.Remove(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_Remove_System_Int32_">JSONNode.Remove(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_Remove_SimpleJSON_JSONNode_">JSONNode.Remove(JSONNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_Children">JSONNode.Children</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_DeepChildren">JSONNode.DeepChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_HasKey_System_String_">JSONNode.HasKey(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_GetValueOrDefault_System_String_SimpleJSON_JSONNode_">JSONNode.GetValueOrDefault(string, JSONNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_ToString">JSONNode.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_ToString_System_Int32_">JSONNode.ToString(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_Linq">JSONNode.Linq</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_Keys">JSONNode.Keys</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_Values">JSONNode.Values</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsInt">JSONNode.AsInt</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsFloat">JSONNode.AsFloat</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsBool">JSONNode.AsBool</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsArray">JSONNode.AsArray</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsObject">JSONNode.AsObject</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_Parse_System_String_">JSONNode.Parse(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_SaveToBinaryStream_System_IO_Stream_">JSONNode.SaveToBinaryStream(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_SaveToCompressedStream_System_IO_Stream_">JSONNode.SaveToCompressedStream(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_SaveToCompressedFile_System_String_">JSONNode.SaveToCompressedFile(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_SaveToCompressedBase64">JSONNode.SaveToCompressedBase64()</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_SaveToBinaryFile_System_String_">JSONNode.SaveToBinaryFile(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_SaveToBinaryBase64">JSONNode.SaveToBinaryBase64()</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_DeserializeBinary_System_IO_BinaryReader_">JSONNode.DeserializeBinary(BinaryReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_LoadFromCompressedFile_System_String_">JSONNode.LoadFromCompressedFile(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_LoadFromCompressedStream_System_IO_Stream_">JSONNode.LoadFromCompressedStream(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_LoadFromCompressedBase64_System_String_">JSONNode.LoadFromCompressedBase64(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_LoadFromBinaryStream_System_IO_Stream_">JSONNode.LoadFromBinaryStream(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_LoadFromBinaryFile_System_String_">JSONNode.LoadFromBinaryFile(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_LoadFromBinaryBase64_System_String_">JSONNode.LoadFromBinaryBase64(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsDecimal">JSONNode.AsDecimal</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsChar">JSONNode.AsChar</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsUInt">JSONNode.AsUInt</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsByte">JSONNode.AsByte</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsSByte">JSONNode.AsSByte</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsShort">JSONNode.AsShort</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsUShort">JSONNode.AsUShort</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsDateTime">JSONNode.AsDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsTimeSpan">JSONNode.AsTimeSpan</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsGuid">JSONNode.AsGuid</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsByteArray">JSONNode.AsByteArray</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsByteList">JSONNode.AsByteList</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsStringArray">JSONNode.AsStringArray</a>
+    </div>
+    <div>
+      <a class="xref" href="SimpleJSON.JSONNode.html#SimpleJSON_JSONNode_AsStringList">JSONNode.AsStringList</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SimpleJSON_JSONNumber__ctor_" data-uid="SimpleJSON.JSONNumber.#ctor*"></a>
+
+  <h3 id="SimpleJSON_JSONNumber__ctor_System_Double_" data-uid="SimpleJSON.JSONNumber.#ctor(System.Double)">
+  JSONNumber(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JSONNumber(double aData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNumber__ctor_" data-uid="SimpleJSON.JSONNumber.#ctor*"></a>
+
+  <h3 id="SimpleJSON_JSONNumber__ctor_System_String_" data-uid="SimpleJSON.JSONNumber.#ctor(System.String)">
+  JSONNumber(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JSONNumber(string aData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SimpleJSON_JSONNumber_AsDouble_" data-uid="SimpleJSON.JSONNumber.AsDouble*"></a>
+
+  <h3 id="SimpleJSON_JSONNumber_AsDouble" data-uid="SimpleJSON.JSONNumber.AsDouble">
+  AsDouble
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override double AsDouble { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNumber_AsLong_" data-uid="SimpleJSON.JSONNumber.AsLong*"></a>
+
+  <h3 id="SimpleJSON_JSONNumber_AsLong" data-uid="SimpleJSON.JSONNumber.AsLong">
+  AsLong
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override long AsLong { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNumber_AsULong_" data-uid="SimpleJSON.JSONNumber.AsULong*"></a>
+
+  <h3 id="SimpleJSON_JSONNumber_AsULong" data-uid="SimpleJSON.JSONNumber.AsULong">
+  AsULong
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ulong AsULong { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNumber_IsNumber_" data-uid="SimpleJSON.JSONNumber.IsNumber*"></a>
+
+  <h3 id="SimpleJSON_JSONNumber_IsNumber" data-uid="SimpleJSON.JSONNumber.IsNumber">
+  IsNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNumber_Tag_" data-uid="SimpleJSON.JSONNumber.Tag*"></a>
+
+  <h3 id="SimpleJSON_JSONNumber_Tag" data-uid="SimpleJSON.JSONNumber.Tag">
+  Tag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override JSONNodeType Tag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNodeType.html">JSONNodeType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNumber_Value_" data-uid="SimpleJSON.JSONNumber.Value*"></a>
+
+  <h3 id="SimpleJSON_JSONNumber_Value" data-uid="SimpleJSON.JSONNumber.Value">
+  Value
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Value { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SimpleJSON_JSONNumber_Clear_" data-uid="SimpleJSON.JSONNumber.Clear*"></a>
+
+  <h3 id="SimpleJSON_JSONNumber_Clear" data-uid="SimpleJSON.JSONNumber.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNumber_Clone_" data-uid="SimpleJSON.JSONNumber.Clone*"></a>
+
+  <h3 id="SimpleJSON_JSONNumber_Clone" data-uid="SimpleJSON.JSONNumber.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override JSONNode Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNumber_Equals_" data-uid="SimpleJSON.JSONNumber.Equals*"></a>
+
+  <h3 id="SimpleJSON_JSONNumber_Equals_System_Object_" data-uid="SimpleJSON.JSONNumber.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNumber_GetEnumerator_" data-uid="SimpleJSON.JSONNumber.GetEnumerator*"></a>
+
+  <h3 id="SimpleJSON_JSONNumber_GetEnumerator" data-uid="SimpleJSON.JSONNumber.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override JSONNode.Enumerator GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a>.<a class="xref" href="SimpleJSON.JSONNode.Enumerator.html">Enumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNumber_GetHashCode_" data-uid="SimpleJSON.JSONNumber.GetHashCode*"></a>
+
+  <h3 id="SimpleJSON_JSONNumber_GetHashCode" data-uid="SimpleJSON.JSONNumber.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNumber_SerializeBinary_" data-uid="SimpleJSON.JSONNumber.SerializeBinary*"></a>
+
+  <h3 id="SimpleJSON_JSONNumber_SerializeBinary_System_IO_BinaryWriter_" data-uid="SimpleJSON.JSONNumber.SerializeBinary(System.IO.BinaryWriter)">
+  SerializeBinary(BinaryWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SerializeBinary(BinaryWriter aWriter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aWriter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

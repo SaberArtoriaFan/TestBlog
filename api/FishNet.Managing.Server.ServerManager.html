@@ -1,0 +1,1525 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ServerManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ServerManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FishNet.Managing.Server.ServerManager">
+
+
+
+  <h1 id="FishNet_Managing_Server_ServerManager" data-uid="FishNet.Managing.Server.ServerManager" class="text-break">
+    Class ServerManager
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FishNet.html">FishNet</a>.<a class="xref" href="FishNet.Managing.html">Managing</a>.<a class="xref" href="FishNet.Managing.Server.html">Server</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>A container for server data and actions.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ServerManager : MonoBehaviour, MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ServerManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">MonoBehaviour</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Clients" data-uid="FishNet.Managing.Server.ServerManager.Clients">
+  Clients
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Authenticated and non-authenticated connected clients.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, NetworkConnection&gt; Clients</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FishNet_Managing_Server_ServerManager_Authenticator_" data-uid="FishNet.Managing.Server.ServerManager.Authenticator*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Authenticator" data-uid="FishNet.Managing.Server.ServerManager.Authenticator">
+  Authenticator
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Authenticator for this ServerManager. May be null if not using authentication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GetAuthenticator and SetAuthenticator.&quot;)]
+public Authenticator Authenticator { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Authenticating.Authenticator.html">Authenticator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_NetworkManager_" data-uid="FishNet.Managing.Server.ServerManager.NetworkManager*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_NetworkManager" data-uid="FishNet.Managing.Server.ServerManager.NetworkManager">
+  NetworkManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>NetworkManager for server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkManager NetworkManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_Objects_" data-uid="FishNet.Managing.Server.ServerManager.Objects*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Objects" data-uid="FishNet.Managing.Server.ServerManager.Objects">
+  Objects
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handling and information for objects on the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServerObjects Objects { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Server.ServerObjects.html">ServerObjects</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_Started_" data-uid="FishNet.Managing.Server.ServerManager.Started*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Started" data-uid="FishNet.Managing.Server.ServerManager.Started">
+  Started
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if the server connection has started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Started { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FishNet_Managing_Server_ServerManager_AnyServerStarted_" data-uid="FishNet.Managing.Server.ServerManager.AnyServerStarted*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_AnyServerStarted_System_Nullable_System_Int32__" data-uid="FishNet.Managing.Server.ServerManager.AnyServerStarted(System.Nullable{System.Int32})">
+  AnyServerStarted(int?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if any server socket is in the started state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AnyServerStarted(int? excludedIndex = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>excludedIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>When set the transport on this index will be ignored. This value is only used with Multipass.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_BroadcastExcept_" data-uid="FishNet.Managing.Server.ServerManager.BroadcastExcept*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_BroadcastExcept__1_FishNet_Connection_NetworkConnection___0_System_Boolean_FishNet_Transporting_Channel_" data-uid="FishNet.Managing.Server.ServerManager.BroadcastExcept``1(FishNet.Connection.NetworkConnection,``0,System.Boolean,FishNet.Transporting.Channel)">
+  BroadcastExcept&lt;T&gt;(NetworkConnection, T, bool, Channel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a broadcast to all connections except excluded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BroadcastExcept&lt;T&gt;(NetworkConnection excludedConnection, T message, bool requireAuthenticated = true, Channel channel = Channel.Reliable) where T : struct, IBroadcast</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>excludedConnection</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Connection to exclude.</p>
+</dd>
+    <dt><code>message</code> <span class="xref">T</span></dt>
+    <dd><p>Broadcast data being sent; for example: an instance of your broadcast type.</p>
+</dd>
+    <dt><code>requireAuthenticated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the clients must be authenticated for this broadcast to send.</p>
+</dd>
+    <dt><code>channel</code> <a class="xref" href="FishNet.Transporting.Channel.html">Channel</a></dt>
+    <dd><p>Channel to send on.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of broadcast to send.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_BroadcastExcept_" data-uid="FishNet.Managing.Server.ServerManager.BroadcastExcept*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_BroadcastExcept__1_System_Collections_Generic_HashSet_FishNet_Connection_NetworkConnection__FishNet_Connection_NetworkConnection___0_System_Boolean_FishNet_Transporting_Channel_" data-uid="FishNet.Managing.Server.ServerManager.BroadcastExcept``1(System.Collections.Generic.HashSet{FishNet.Connection.NetworkConnection},FishNet.Connection.NetworkConnection,``0,System.Boolean,FishNet.Transporting.Channel)">
+  BroadcastExcept&lt;T&gt;(HashSet&lt;NetworkConnection&gt;, NetworkConnection, T, bool, Channel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a broadcast to connections except excluded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BroadcastExcept&lt;T&gt;(HashSet&lt;NetworkConnection&gt; connections, NetworkConnection excludedConnection, T message, bool requireAuthenticated = true, Channel channel = Channel.Reliable) where T : struct, IBroadcast</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connections</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;</dt>
+    <dd><p>Connections to send to.</p>
+</dd>
+    <dt><code>excludedConnection</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Connection to exclude.</p>
+</dd>
+    <dt><code>message</code> <span class="xref">T</span></dt>
+    <dd><p>Broadcast data being sent; for example: an instance of your broadcast type.</p>
+</dd>
+    <dt><code>requireAuthenticated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the clients must be authenticated for this broadcast to send.</p>
+</dd>
+    <dt><code>channel</code> <a class="xref" href="FishNet.Transporting.Channel.html">Channel</a></dt>
+    <dd><p>Channel to send on.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of broadcast to send.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_BroadcastExcept_" data-uid="FishNet.Managing.Server.ServerManager.BroadcastExcept*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_BroadcastExcept__1_System_Collections_Generic_HashSet_FishNet_Connection_NetworkConnection__System_Collections_Generic_HashSet_FishNet_Connection_NetworkConnection____0_System_Boolean_FishNet_Transporting_Channel_" data-uid="FishNet.Managing.Server.ServerManager.BroadcastExcept``1(System.Collections.Generic.HashSet{FishNet.Connection.NetworkConnection},System.Collections.Generic.HashSet{FishNet.Connection.NetworkConnection},``0,System.Boolean,FishNet.Transporting.Channel)">
+  BroadcastExcept&lt;T&gt;(HashSet&lt;NetworkConnection&gt;, HashSet&lt;NetworkConnection&gt;, T, bool, Channel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a broadcast to connections except excluded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BroadcastExcept&lt;T&gt;(HashSet&lt;NetworkConnection&gt; connections, HashSet&lt;NetworkConnection&gt; excludedConnections, T message, bool requireAuthenticated = true, Channel channel = Channel.Reliable) where T : struct, IBroadcast</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connections</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;</dt>
+    <dd><p>Connections to send to.</p>
+</dd>
+    <dt><code>excludedConnections</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;</dt>
+    <dd><p>Connections to exclude.</p>
+</dd>
+    <dt><code>message</code> <span class="xref">T</span></dt>
+    <dd><p>Broadcast data being sent; for example: an instance of your broadcast type.</p>
+</dd>
+    <dt><code>requireAuthenticated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the clients must be authenticated for this broadcast to send.</p>
+</dd>
+    <dt><code>channel</code> <a class="xref" href="FishNet.Transporting.Channel.html">Channel</a></dt>
+    <dd><p>Channel to send on.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of broadcast to send.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_BroadcastExcept_" data-uid="FishNet.Managing.Server.ServerManager.BroadcastExcept*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_BroadcastExcept__1_System_Collections_Generic_HashSet_FishNet_Connection_NetworkConnection____0_System_Boolean_FishNet_Transporting_Channel_" data-uid="FishNet.Managing.Server.ServerManager.BroadcastExcept``1(System.Collections.Generic.HashSet{FishNet.Connection.NetworkConnection},``0,System.Boolean,FishNet.Transporting.Channel)">
+  BroadcastExcept&lt;T&gt;(HashSet&lt;NetworkConnection&gt;, T, bool, Channel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a broadcast to all connections except excluded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BroadcastExcept&lt;T&gt;(HashSet&lt;NetworkConnection&gt; excludedConnections, T message, bool requireAuthenticated = true, Channel channel = Channel.Reliable) where T : struct, IBroadcast</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>excludedConnections</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;</dt>
+    <dd><p>Connections to send to.</p>
+</dd>
+    <dt><code>message</code> <span class="xref">T</span></dt>
+    <dd><p>Broadcast data being sent; for example: an instance of your broadcast type.</p>
+</dd>
+    <dt><code>requireAuthenticated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the clients must be authenticated for this broadcast to send.</p>
+</dd>
+    <dt><code>channel</code> <a class="xref" href="FishNet.Transporting.Channel.html">Channel</a></dt>
+    <dd><p>Channel to send on.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of broadcast to send.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_Broadcast_" data-uid="FishNet.Managing.Server.ServerManager.Broadcast*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Broadcast__1_FishNet_Connection_NetworkConnection___0_System_Boolean_FishNet_Transporting_Channel_" data-uid="FishNet.Managing.Server.ServerManager.Broadcast``1(FishNet.Connection.NetworkConnection,``0,System.Boolean,FishNet.Transporting.Channel)">
+  Broadcast&lt;T&gt;(NetworkConnection, T, bool, Channel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a broadcast to a connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Broadcast&lt;T&gt;(NetworkConnection connection, T message, bool requireAuthenticated = true, Channel channel = Channel.Reliable) where T : struct, IBroadcast</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connection</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Connection to send to.</p>
+</dd>
+    <dt><code>message</code> <span class="xref">T</span></dt>
+    <dd><p>Broadcast data being sent; for example: an instance of your broadcast type.</p>
+</dd>
+    <dt><code>requireAuthenticated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the client must be authenticated for this broadcast to send.</p>
+</dd>
+    <dt><code>channel</code> <a class="xref" href="FishNet.Transporting.Channel.html">Channel</a></dt>
+    <dd><p>Channel to send on.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of broadcast to send.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_Broadcast_" data-uid="FishNet.Managing.Server.ServerManager.Broadcast*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Broadcast__1_FishNet_Object_NetworkObject___0_System_Boolean_FishNet_Transporting_Channel_" data-uid="FishNet.Managing.Server.ServerManager.Broadcast``1(FishNet.Object.NetworkObject,``0,System.Boolean,FishNet.Transporting.Channel)">
+  Broadcast&lt;T&gt;(NetworkObject, T, bool, Channel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a broadcast to observers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Broadcast&lt;T&gt;(NetworkObject networkObject, T message, bool requireAuthenticated = true, Channel channel = Channel.Reliable) where T : struct, IBroadcast</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkObject</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd><p>NetworkObject to use Observers from.</p>
+</dd>
+    <dt><code>message</code> <span class="xref">T</span></dt>
+    <dd><p>Broadcast data being sent; for example: an instance of your broadcast type.</p>
+</dd>
+    <dt><code>requireAuthenticated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the clients must be authenticated for this broadcast to send.</p>
+</dd>
+    <dt><code>channel</code> <a class="xref" href="FishNet.Transporting.Channel.html">Channel</a></dt>
+    <dd><p>Channel to send on.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of broadcast to send.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_Broadcast_" data-uid="FishNet.Managing.Server.ServerManager.Broadcast*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Broadcast__1_System_Collections_Generic_HashSet_FishNet_Connection_NetworkConnection____0_System_Boolean_FishNet_Transporting_Channel_" data-uid="FishNet.Managing.Server.ServerManager.Broadcast``1(System.Collections.Generic.HashSet{FishNet.Connection.NetworkConnection},``0,System.Boolean,FishNet.Transporting.Channel)">
+  Broadcast&lt;T&gt;(HashSet&lt;NetworkConnection&gt;, T, bool, Channel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a broadcast to connections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Broadcast&lt;T&gt;(HashSet&lt;NetworkConnection&gt; connections, T message, bool requireAuthenticated = true, Channel channel = Channel.Reliable) where T : struct, IBroadcast</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connections</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;</dt>
+    <dd><p>Connections to send to.</p>
+</dd>
+    <dt><code>message</code> <span class="xref">T</span></dt>
+    <dd><p>Broadcast data being sent; for example: an instance of your broadcast type.</p>
+</dd>
+    <dt><code>requireAuthenticated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the clients must be authenticated for this broadcast to send.</p>
+</dd>
+    <dt><code>channel</code> <a class="xref" href="FishNet.Transporting.Channel.html">Channel</a></dt>
+    <dd><p>Channel to send on.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of broadcast to send.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_Broadcast_" data-uid="FishNet.Managing.Server.ServerManager.Broadcast*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Broadcast__1___0_System_Boolean_FishNet_Transporting_Channel_" data-uid="FishNet.Managing.Server.ServerManager.Broadcast``1(``0,System.Boolean,FishNet.Transporting.Channel)">
+  Broadcast&lt;T&gt;(T, bool, Channel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends a broadcast to all clients.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Broadcast&lt;T&gt;(T message, bool requireAuthenticated = true, Channel channel = Channel.Reliable) where T : struct, IBroadcast</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <span class="xref">T</span></dt>
+    <dd><p>Broadcast data being sent; for example: an instance of your broadcast type.</p>
+</dd>
+    <dt><code>requireAuthenticated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the clients must be authenticated for this broadcast to send.</p>
+</dd>
+    <dt><code>channel</code> <a class="xref" href="FishNet.Transporting.Channel.html">Channel</a></dt>
+    <dd><p>Channel to send on.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of broadcast to send.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_Despawn_" data-uid="FishNet.Managing.Server.ServerManager.Despawn*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Despawn_FishNet_Object_NetworkObject_System_Nullable_FishNet_Object_DespawnType__" data-uid="FishNet.Managing.Server.ServerManager.Despawn(FishNet.Object.NetworkObject,System.Nullable{FishNet.Object.DespawnType})">
+  Despawn(NetworkObject, DespawnType?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Despawns an object over the network. Can only be called on the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Despawn(NetworkObject networkObject, DespawnType? despawnType = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkObject</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd><p>NetworkObject instance to despawn.</p>
+</dd>
+    <dt><code>despawnType</code> <a class="xref" href="FishNet.Object.DespawnType.html">DespawnType</a>?</dt>
+    <dd><p>Despawn override type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_Despawn_" data-uid="FishNet.Managing.Server.ServerManager.Despawn*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Despawn_GameObject_System_Nullable_FishNet_Object_DespawnType__" data-uid="FishNet.Managing.Server.ServerManager.Despawn(GameObject,System.Nullable{FishNet.Object.DespawnType})">
+  Despawn(GameObject, DespawnType?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Despawns an object over the network. Can only be called on the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Despawn(GameObject go, DespawnType? despawnType = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>go</code> <span class="xref">GameObject</span></dt>
+    <dd><p>GameObject instance to despawn.</p>
+</dd>
+    <dt><code>despawnType</code> <a class="xref" href="FishNet.Object.DespawnType.html">DespawnType</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_GetAuthenticator_" data-uid="FishNet.Managing.Server.ServerManager.GetAuthenticator*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_GetAuthenticator" data-uid="FishNet.Managing.Server.ServerManager.GetAuthenticator">
+  GetAuthenticator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Authenticator for this manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Authenticator GetAuthenticator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Authenticating.Authenticator.html">Authenticator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_GetStartOnHeadless_" data-uid="FishNet.Managing.Server.ServerManager.GetStartOnHeadless*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_GetStartOnHeadless" data-uid="FishNet.Managing.Server.ServerManager.GetStartOnHeadless">
+  GetStartOnHeadless()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets StartOnHeadless value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetStartOnHeadless()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_Kick_" data-uid="FishNet.Managing.Server.ServerManager.Kick*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Kick_FishNet_Connection_NetworkConnection_FishNet_Managing_Server_KickReason_FishNet_Managing_Logging_LoggingType_System_String_" data-uid="FishNet.Managing.Server.ServerManager.Kick(FishNet.Connection.NetworkConnection,FishNet.Managing.Server.KickReason,FishNet.Managing.Logging.LoggingType,System.String)">
+  Kick(NetworkConnection, KickReason, LoggingType, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Kicks a connection immediately while invoking OnClientKick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Kick(NetworkConnection conn, KickReason kickReason, LoggingType loggingType = LoggingType.Common, string log = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conn</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Client to kick.</p>
+</dd>
+    <dt><code>kickReason</code> <a class="xref" href="FishNet.Managing.Server.KickReason.html">KickReason</a></dt>
+    <dd><p>Reason client is being kicked.</p>
+</dd>
+    <dt><code>loggingType</code> <a class="xref" href="FishNet.Managing.Logging.LoggingType.html">LoggingType</a></dt>
+    <dd><p>How to print logging as.</p>
+</dd>
+    <dt><code>log</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional message to be debug logged.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_Kick_" data-uid="FishNet.Managing.Server.ServerManager.Kick*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Kick_FishNet_Connection_NetworkConnection_FishNet_Serializing_Reader_FishNet_Managing_Server_KickReason_FishNet_Managing_Logging_LoggingType_System_String_" data-uid="FishNet.Managing.Server.ServerManager.Kick(FishNet.Connection.NetworkConnection,FishNet.Serializing.Reader,FishNet.Managing.Server.KickReason,FishNet.Managing.Logging.LoggingType,System.String)">
+  Kick(NetworkConnection, Reader, KickReason, LoggingType, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Kicks a connection immediately while invoking OnClientKick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Kick(NetworkConnection conn, Reader reader, KickReason kickReason, LoggingType loggingType = LoggingType.Common, string log = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conn</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Client to kick.</p>
+</dd>
+    <dt><code>reader</code> <a class="xref" href="FishNet.Serializing.Reader.html">Reader</a></dt>
+    <dd><p>Reader to clear before kicking.</p>
+</dd>
+    <dt><code>kickReason</code> <a class="xref" href="FishNet.Managing.Server.KickReason.html">KickReason</a></dt>
+    <dd><p>Reason client is being kicked.</p>
+</dd>
+    <dt><code>loggingType</code> <a class="xref" href="FishNet.Managing.Logging.LoggingType.html">LoggingType</a></dt>
+    <dd><p>How to print logging as.</p>
+</dd>
+    <dt><code>log</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional message to be debug logged.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_Kick_" data-uid="FishNet.Managing.Server.ServerManager.Kick*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Kick_System_Int32_FishNet_Managing_Server_KickReason_FishNet_Managing_Logging_LoggingType_System_String_" data-uid="FishNet.Managing.Server.ServerManager.Kick(System.Int32,FishNet.Managing.Server.KickReason,FishNet.Managing.Logging.LoggingType,System.String)">
+  Kick(int, KickReason, LoggingType, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Kicks a connection immediately while invoking OnClientKick.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Kick(int clientId, KickReason kickReason, LoggingType loggingType = LoggingType.Common, string log = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clientId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>ClientId to kick.</p>
+</dd>
+    <dt><code>kickReason</code> <a class="xref" href="FishNet.Managing.Server.KickReason.html">KickReason</a></dt>
+    <dd><p>Reason client is being kicked.</p>
+</dd>
+    <dt><code>loggingType</code> <a class="xref" href="FishNet.Managing.Logging.LoggingType.html">LoggingType</a></dt>
+    <dd><p>How to print logging as.</p>
+</dd>
+    <dt><code>log</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional message to be debug logged.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_OneServerStarted_" data-uid="FishNet.Managing.Server.ServerManager.OneServerStarted*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_OneServerStarted" data-uid="FishNet.Managing.Server.ServerManager.OneServerStarted">
+  OneServerStarted()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if only one server is started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OneServerStarted()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_RegisterBroadcast_" data-uid="FishNet.Managing.Server.ServerManager.RegisterBroadcast*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_RegisterBroadcast__1_System_Action_FishNet_Connection_NetworkConnection___0__System_Boolean_" data-uid="FishNet.Managing.Server.ServerManager.RegisterBroadcast``1(System.Action{FishNet.Connection.NetworkConnection,``0},System.Boolean)">
+  RegisterBroadcast&lt;T&gt;(Action&lt;NetworkConnection, T&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Registers a method to call when a Broadcast arrives.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterBroadcast&lt;T&gt;(Action&lt;NetworkConnection, T&gt; handler, bool requireAuthentication = true) where T : struct, IBroadcast</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>, T&gt;</dt>
+    <dd><p>Method to call.</p>
+</dd>
+    <dt><code>requireAuthentication</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the client must be authenticated for the method to call.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of broadcast being registered.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_SetAuthenticator_" data-uid="FishNet.Managing.Server.ServerManager.SetAuthenticator*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_SetAuthenticator_FishNet_Authenticating_Authenticator_" data-uid="FishNet.Managing.Server.ServerManager.SetAuthenticator(FishNet.Authenticating.Authenticator)">
+  SetAuthenticator(Authenticator)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the Authenticator for this manager, and initializes it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAuthenticator(Authenticator value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="FishNet.Authenticating.Authenticator.html">Authenticator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_SetStartOnHeadless_" data-uid="FishNet.Managing.Server.ServerManager.SetStartOnHeadless*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_SetStartOnHeadless_System_Boolean_" data-uid="FishNet.Managing.Server.ServerManager.SetStartOnHeadless(System.Boolean)">
+  SetStartOnHeadless(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets StartOnHeadless value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStartOnHeadless(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>New value to use.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_Spawn_" data-uid="FishNet.Managing.Server.ServerManager.Spawn*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Spawn_FishNet_Object_NetworkObject_FishNet_Connection_NetworkConnection_" data-uid="FishNet.Managing.Server.ServerManager.Spawn(FishNet.Object.NetworkObject,FishNet.Connection.NetworkConnection)">
+  Spawn(NetworkObject, NetworkConnection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Spawns an object over the network. Can only be called on the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Spawn(NetworkObject nob, NetworkConnection ownerConnection = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nob</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd><p>MetworkObject instance to spawn.</p>
+</dd>
+    <dt><code>ownerConnection</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Connection to give ownership to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_Spawn_" data-uid="FishNet.Managing.Server.ServerManager.Spawn*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_Spawn_GameObject_FishNet_Connection_NetworkConnection_" data-uid="FishNet.Managing.Server.ServerManager.Spawn(GameObject,FishNet.Connection.NetworkConnection)">
+  Spawn(GameObject, NetworkConnection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Spawns an object over the network. Can only be called on the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Spawn(GameObject go, NetworkConnection ownerConnection = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>go</code> <span class="xref">GameObject</span></dt>
+    <dd><p>GameObject instance to spawn.</p>
+</dd>
+    <dt><code>ownerConnection</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Connection to give ownership to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_StartConnection_" data-uid="FishNet.Managing.Server.ServerManager.StartConnection*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_StartConnection" data-uid="FishNet.Managing.Server.ServerManager.StartConnection">
+  StartConnection()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts the local server connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartConnection()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_StartConnection_" data-uid="FishNet.Managing.Server.ServerManager.StartConnection*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_StartConnection_System_UInt16_" data-uid="FishNet.Managing.Server.ServerManager.StartConnection(System.UInt16)">
+  StartConnection(ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts the local server using port.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartConnection(ushort port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>Port to start on.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_StopConnection_" data-uid="FishNet.Managing.Server.ServerManager.StopConnection*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_StopConnection_System_Boolean_" data-uid="FishNet.Managing.Server.ServerManager.StopConnection(System.Boolean)">
+  StopConnection(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops the local server connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StopConnection(bool sendDisconnectMessage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sendDisconnectMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to send a disconnect message to all clients first.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerManager_UnregisterBroadcast_" data-uid="FishNet.Managing.Server.ServerManager.UnregisterBroadcast*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerManager_UnregisterBroadcast__1_System_Action_FishNet_Connection_NetworkConnection___0__" data-uid="FishNet.Managing.Server.ServerManager.UnregisterBroadcast``1(System.Action{FishNet.Connection.NetworkConnection,``0})">
+  UnregisterBroadcast&lt;T&gt;(Action&lt;NetworkConnection, T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unregisters a method call from a Broadcast type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterBroadcast&lt;T&gt;(Action&lt;NetworkConnection, T&gt; handler) where T : struct, IBroadcast</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>, T&gt;</dt>
+    <dd><p>Method to unregister.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of broadcast being unregistered.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="FishNet_Managing_Server_ServerManager_OnAuthenticationResult" data-uid="FishNet.Managing.Server.ServerManager.OnAuthenticationResult">
+  OnAuthenticationResult
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when authenticator has concluded a result for a connection. Boolean is true if authentication passed, false if failed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;NetworkConnection, bool&gt; OnAuthenticationResult</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Server_ServerManager_OnClientKick" data-uid="FishNet.Managing.Server.ServerManager.OnClientKick">
+  OnClientKick
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a client is removed from the server using Kick. This is invoked before the client is disconnected.
+NetworkConnection when available, clientId, and KickReason are provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;NetworkConnection, int, KickReason&gt; OnClientKick</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-3">Action</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="FishNet.Managing.Server.KickReason.html">KickReason</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Server_ServerManager_OnRemoteConnectionState" data-uid="FishNet.Managing.Server.ServerManager.OnRemoteConnectionState">
+  OnRemoteConnectionState
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a remote client state changes with the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;NetworkConnection, RemoteConnectionStateArgs&gt; OnRemoteConnectionState</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>, <a class="xref" href="FishNet.Transporting.RemoteConnectionStateArgs.html">RemoteConnectionStateArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Server_ServerManager_OnServerConnectionState" data-uid="FishNet.Managing.Server.ServerManager.OnServerConnectionState">
+  OnServerConnectionState
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called after the local server connection state changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;ServerConnectionStateArgs&gt; OnServerConnectionState</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Transporting.ServerConnectionStateArgs.html">ServerConnectionStateArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,530 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class VertexAttachment
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VertexAttachment
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.VertexAttachment">
+
+
+
+  <h1 id="Spine_VertexAttachment" data-uid="Spine.VertexAttachment" class="text-break">
+    Class VertexAttachment
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><blockquote>
+<p>An attachment with vertices that are transformed by one or more bones and can be deformed by a slot's
+<a class="xref" href="Spine.Slot.html#Spine_Slot_Deform">Deform</a>.</p>
+</blockquote>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class VertexAttachment : Attachment</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Spine.Attachment.html">Attachment</a></div>
+      <div><span class="xref">VertexAttachment</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Spine.BoundingBoxAttachment.html">BoundingBoxAttachment</a></div>
+      <div><a class="xref" href="Spine.ClippingAttachment.html">ClippingAttachment</a></div>
+      <div><a class="xref" href="Spine.MeshAttachment.html">MeshAttachment</a></div>
+      <div><a class="xref" href="Spine.PathAttachment.html">PathAttachment</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Spine.Attachment.html#Spine_Attachment_Name">Attachment.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Attachment.html#Spine_Attachment_ToString">Attachment.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Attachment.html#Spine_Attachment_Copy">Attachment.Copy()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Spine.SpineSkeletonExtensions.html#Spine_SpineSkeletonExtensions_IsRenderable_Spine_Attachment_">SpineSkeletonExtensions.IsRenderable(Attachment)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.html#Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetCopy_Spine_Attachment_System_Boolean_">AttachmentCloneExtensions.GetCopy(Attachment, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.html#Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetRemappedClone_Spine_Attachment_Spine_AtlasRegion_System_Boolean_System_Boolean_System_Single_">AttachmentCloneExtensions.GetRemappedClone(Attachment, AtlasRegion, bool, bool, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.html#Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetRemappedClone_Spine_Attachment_Sprite_Material_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">AttachmentCloneExtensions.GetRemappedClone(Attachment, Sprite, Material, bool, bool, bool, bool, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.html#Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_Spine_Attachment_">AttachmentRegionExtensions.GetRegion(Attachment)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.html#Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_Spine_Attachment_Spine_AtlasRegion_System_Boolean_">AttachmentRegionExtensions.SetRegion(Attachment, AtlasRegion, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.SkeletonExtensions.html#Spine_Unity_SkeletonExtensions_GetMaterial_Spine_Attachment_">SkeletonExtensions.GetMaterial(Attachment)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.SpineSkeletonExtensions.html#Spine_SpineSkeletonExtensions_IsWeighted_Spine_VertexAttachment_">SpineSkeletonExtensions.IsWeighted(VertexAttachment)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.SkeletonExtensions.html#Spine_Unity_SkeletonExtensions_GetLocalVertices_Spine_VertexAttachment_Spine_Slot_Vector2___">SkeletonExtensions.GetLocalVertices(VertexAttachment, Slot, Vector2[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.SkeletonExtensions.html#Spine_Unity_SkeletonExtensions_GetWorldVertices_Spine_VertexAttachment_Spine_Slot_Vector2___">SkeletonExtensions.GetWorldVertices(VertexAttachment, Slot, Vector2[])</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Spine_VertexAttachment__ctor_" data-uid="Spine.VertexAttachment.#ctor*"></a>
+
+  <h3 id="Spine_VertexAttachment__ctor_System_String_" data-uid="Spine.VertexAttachment.#ctor(System.String)">
+  VertexAttachment(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VertexAttachment(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Spine_VertexAttachment_Bones_" data-uid="Spine.VertexAttachment.Bones*"></a>
+
+  <h3 id="Spine_VertexAttachment_Bones" data-uid="Spine.VertexAttachment.Bones">
+  Bones
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] Bones { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_VertexAttachment_DeformAttachment_" data-uid="Spine.VertexAttachment.DeformAttachment*"></a>
+
+  <h3 id="Spine_VertexAttachment_DeformAttachment" data-uid="Spine.VertexAttachment.DeformAttachment">
+  DeformAttachment
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deform keys for the deform attachment are also applied to this attachment.
+May be null if no deform keys should be applied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VertexAttachment DeformAttachment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.VertexAttachment.html">VertexAttachment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_VertexAttachment_Id_" data-uid="Spine.VertexAttachment.Id*"></a>
+
+  <h3 id="Spine_VertexAttachment_Id" data-uid="Spine.VertexAttachment.Id">
+  Id
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a unique ID for this attachment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Id { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_VertexAttachment_Vertices_" data-uid="Spine.VertexAttachment.Vertices*"></a>
+
+  <h3 id="Spine_VertexAttachment_Vertices" data-uid="Spine.VertexAttachment.Vertices">
+  Vertices
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] Vertices { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_VertexAttachment_WorldVerticesLength_" data-uid="Spine.VertexAttachment.WorldVerticesLength*"></a>
+
+  <h3 id="Spine_VertexAttachment_WorldVerticesLength" data-uid="Spine.VertexAttachment.WorldVerticesLength">
+  WorldVerticesLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WorldVerticesLength { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_VertexAttachment_ComputeWorldVertices_" data-uid="Spine.VertexAttachment.ComputeWorldVertices*"></a>
+
+  <h3 id="Spine_VertexAttachment_ComputeWorldVertices_Spine_Slot_System_Int32_System_Int32_System_Single___System_Int32_System_Int32_" data-uid="Spine.VertexAttachment.ComputeWorldVertices(Spine.Slot,System.Int32,System.Int32,System.Single[],System.Int32,System.Int32)">
+  ComputeWorldVertices(Slot, int, int, float[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transforms the attachment's local <a class="xref" href="Spine.VertexAttachment.html#Spine_VertexAttachment_Vertices">Vertices</a> to world coordinates. If the slot's <a class="xref" href="Spine.Slot.html#Spine_Slot_Deform">Deform</a> is
+not empty, it is used to deform the vertices.</p>
+<p></p>
+See <a href="http://esotericsoftware.com/spine-runtime-skeletons#World-transforms">World transforms</a> in the Spine
+Runtimes Guide.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ComputeWorldVertices(Slot slot, int start, int count, float[] worldVertices, int offset, int stride = 2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slot</code> <a class="xref" href="Spine.Slot.html">Slot</a></dt>
+    <dd></dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the first <a class="xref" href="Spine.VertexAttachment.html#Spine_VertexAttachment_Vertices">Vertices</a> value to transform. Each vertex has 2 values, x and y.</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of world vertex values to output. Must be less than or equal to <a class="xref" href="Spine.VertexAttachment.html#Spine_VertexAttachment_WorldVerticesLength">WorldVerticesLength</a> - start.</p>
+</dd>
+    <dt><code>worldVertices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p>The output world vertices. Must have a length greater than or equal to <code class="paramref">offset</code> + <code class="paramref">count</code>.</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The <code class="paramref">worldVertices</code> index to begin writing values.</p>
+</dd>
+    <dt><code>stride</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of <code class="paramref">worldVertices</code> entries between the value pairs written.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_VertexAttachment_ComputeWorldVertices_" data-uid="Spine.VertexAttachment.ComputeWorldVertices*"></a>
+
+  <h3 id="Spine_VertexAttachment_ComputeWorldVertices_Spine_Slot_System_Single___" data-uid="Spine.VertexAttachment.ComputeWorldVertices(Spine.Slot,System.Single[])">
+  ComputeWorldVertices(Slot, float[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ComputeWorldVertices(Slot slot, float[] worldVertices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slot</code> <a class="xref" href="Spine.Slot.html">Slot</a></dt>
+    <dd></dd>
+    <dt><code>worldVertices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

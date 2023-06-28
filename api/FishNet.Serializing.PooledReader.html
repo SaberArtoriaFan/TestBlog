@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PooledReader
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PooledReader
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FishNet.Serializing.PooledReader">
+
+
+
+  <h1 id="FishNet_Serializing_PooledReader" data-uid="FishNet.Serializing.PooledReader" class="text-break">
+    Class PooledReader
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FishNet.html">FishNet</a>.<a class="xref" href="FishNet.Serializing.html">Serializing</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Reader which is reused to save on garbage collection and performance.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class PooledReader : Reader, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FishNet.Serializing.Reader.html">Reader</a></div>
+      <div><span class="xref">PooledReader</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_Capacity">Reader.Capacity</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_NetworkManager">Reader.NetworkManager</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_Offset">Reader.Offset</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_Position">Reader.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_Length">Reader.Length</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_Remaining">Reader.Remaining</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_NetworkConnection">Reader.NetworkConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ToString">Reader.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadDictionary__2">Reader.ReadDictionary&lt;TKey, TValue&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadDictionaryAllocated__2">Reader.ReadDictionaryAllocated&lt;TKey, TValue&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_Skip_System_Int32_">Reader.Skip(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_Clear">Reader.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_GetArraySegmentBuffer">Reader.GetArraySegmentBuffer()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_GetByteBuffer">Reader.GetByteBuffer()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_GetByteBufferAllocated">Reader.GetByteBufferAllocated()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_BlockCopy_System_Byte____System_Int32_System_Int32_">Reader.BlockCopy(ref byte[], int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadByte">Reader.ReadByte()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadBytes_System_Byte____System_Int32_">Reader.ReadBytes(ref byte[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadArraySegment_System_Int32_">Reader.ReadArraySegment(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadSByte">Reader.ReadSByte()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadChar">Reader.ReadChar()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadBoolean">Reader.ReadBoolean()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadUInt16">Reader.ReadUInt16()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadInt16">Reader.ReadInt16()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadUInt32_FishNet_Serializing_AutoPackType_">Reader.ReadUInt32(AutoPackType)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadInt32_FishNet_Serializing_AutoPackType_">Reader.ReadInt32(AutoPackType)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadInt64_FishNet_Serializing_AutoPackType_">Reader.ReadInt64(AutoPackType)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadUInt64_FishNet_Serializing_AutoPackType_">Reader.ReadUInt64(AutoPackType)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadSingle_FishNet_Serializing_AutoPackType_">Reader.ReadSingle(AutoPackType)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadDouble">Reader.ReadDouble()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadDecimal">Reader.ReadDecimal()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadString">Reader.ReadString()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadBytesAndSizeAllocated">Reader.ReadBytesAndSizeAllocated()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadBytesAndSize_System_Byte____">Reader.ReadBytesAndSize(ref byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadArraySegmentAndSize">Reader.ReadArraySegmentAndSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadVector2">Reader.ReadVector2()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadVector3">Reader.ReadVector3()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadVector4">Reader.ReadVector4()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadVector2Int_FishNet_Serializing_AutoPackType_">Reader.ReadVector2Int(AutoPackType)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadVector3Int_FishNet_Serializing_AutoPackType_">Reader.ReadVector3Int(AutoPackType)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadColor_FishNet_Serializing_AutoPackType_">Reader.ReadColor(AutoPackType)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadColor32">Reader.ReadColor32()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadQuaternion_FishNet_Serializing_AutoPackType_">Reader.ReadQuaternion(AutoPackType)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadRect">Reader.ReadRect()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadPlane">Reader.ReadPlane()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadRay">Reader.ReadRay()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadRay2D">Reader.ReadRay2D()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadMatrix4x4">Reader.ReadMatrix4x4()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadBytesAllocated_System_Int32_">Reader.ReadBytesAllocated(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadGuid">Reader.ReadGuid()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadGameObject">Reader.ReadGameObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadTransform">Reader.ReadTransform()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadNetworkObject">Reader.ReadNetworkObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadNetworkObject_System_Int32__">Reader.ReadNetworkObject(out int)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadNetworkObjectId">Reader.ReadNetworkObjectId()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadNetworkBehaviour_System_Int32__System_Byte__">Reader.ReadNetworkBehaviour(out int, out byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadNetworkBehaviour">Reader.ReadNetworkBehaviour()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadDateTime">Reader.ReadDateTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadChannel">Reader.ReadChannel()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadNetworkConnectionId">Reader.ReadNetworkConnectionId()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadNetworkConnection">Reader.ReadNetworkConnection()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ZigZagDecode_System_UInt64_">Reader.ZigZagDecode(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadPackedWhole">Reader.ReadPackedWhole()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadListCacheAllocated__1">Reader.ReadListCacheAllocated&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadListCache__1_FishNet_Utility_Performance_ListCache___0___">Reader.ReadListCache&lt;T&gt;(ref ListCache&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadListAllocated__1">Reader.ReadListAllocated&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadList__1_System_Collections_Generic_List___0___System_Boolean_">Reader.ReadList&lt;T&gt;(ref List&lt;T&gt;, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadArrayAllocated__1">Reader.ReadArrayAllocated&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_ReadArray__1___0____">Reader.ReadArray&lt;T&gt;(ref T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Serializing.Reader.html#FishNet_Serializing_Reader_Read__1">Reader.Read&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="FishNet.Managing.Timing.PreciseTickSerializer.html#FishNet_Managing_Timing_PreciseTickSerializer_ReadPreciseTick_FishNet_Serializing_Reader_">PreciseTickSerializer.ReadPreciseTick(Reader)</a>
+  </div>
+  <div>
+      <a class="xref" href="RigidbodyStateSerializers.html#RigidbodyStateSerializers.ReadRigidbody2DState(FishNet.Serializing.Reader)">RigidbodyStateSerializers.ReadRigidbody2DState(Reader)</a>
+  </div>
+  <div>
+      <a class="xref" href="RigidbodyStateSerializers.html#RigidbodyStateSerializers.ReadRigidbodyState(FishNet.Serializing.Reader)">RigidbodyStateSerializers.ReadRigidbodyState(Reader)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FishNet_Serializing_PooledReader_Dispose_" data-uid="FishNet.Serializing.PooledReader.Dispose*"></a>
+
+  <h3 id="FishNet_Serializing_PooledReader_Dispose" data-uid="FishNet.Serializing.PooledReader.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,983 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BodyOrgan
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BodyOrgan
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.Unit.BodyOrgan">
+
+
+
+  <h1 id="XianXia_Unit_BodyOrgan" data-uid="XianXia.Unit.BodyOrgan" class="text-break">
+    Class BodyOrgan
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a>.<a class="xref" href="XianXia.Unit.html">Unit</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BodyOrgan : OrganBase, IBodyOrgan, IComponentBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Saber.ECS.ComponentBase.html">ComponentBase</a></div>
+      <div><a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></div>
+      <div><span class="xref">BodyOrgan</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="XianXia.Unit.IBodyOrgan.html">IBodyOrgan</a></div>
+      <div><a class="xref" href="Saber.ECS.IComponentBase.html">IComponentBase</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="XianXia.Unit.OrganBase.html#XianXia_Unit_OrganBase_ComponentType">OrganBase.ComponentType</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.OrganBase.html#XianXia_Unit_OrganBase_OwnerUnit">OrganBase.OwnerUnit</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.OrganBase.html#XianXia_Unit_OrganBase_InitComponent_Saber_ECS_IContainerEntity_">OrganBase.InitComponent(IContainerEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Owner">ComponentBase.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Enable">ComponentBase.Enable</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Alive">ComponentBase.Alive</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_SetEnable_System_Boolean_">ComponentBase.SetEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_SetComponentEnable_System_Boolean_">ComponentBase.SetComponentEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_ClearEnable">ComponentBase.ClearEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Init_Saber_ECS_IContainerEntity_">ComponentBase.Init(IContainerEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="XianXia_Unit_BodyOrgan__ctor_" data-uid="XianXia.Unit.BodyOrgan.#ctor*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan__ctor" data-uid="XianXia.Unit.BodyOrgan.#ctor">
+  BodyOrgan()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyOrgan()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="XianXia_Unit_BodyOrgan_ownerPlayer" data-uid="XianXia.Unit.BodyOrgan.ownerPlayer">
+  ownerPlayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PlayerMemeber ownerPlayer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.Camp.PlayerMemeber.html">PlayerMemeber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="XianXia_Unit_BodyOrgan_CharacterFSM_" data-uid="XianXia.Unit.BodyOrgan.CharacterFSM*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_CharacterFSM" data-uid="XianXia.Unit.BodyOrgan.CharacterFSM">
+  CharacterFSM
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharacterFSM CharacterFSM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CharacterFSM.html">CharacterFSM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_ClothesSpineID_" data-uid="XianXia.Unit.BodyOrgan.ClothesSpineID*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_ClothesSpineID" data-uid="XianXia.Unit.BodyOrgan.ClothesSpineID">
+  ClothesSpineID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ClothesSpineID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_DeadTime_" data-uid="XianXia.Unit.BodyOrgan.DeadTime*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_DeadTime" data-uid="XianXia.Unit.BodyOrgan.DeadTime">
+  DeadTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DeadTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_Def_" data-uid="XianXia.Unit.BodyOrgan.Def*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_Def" data-uid="XianXia.Unit.BodyOrgan.Def">
+  Def
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Def { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_Evade_" data-uid="XianXia.Unit.BodyOrgan.Evade*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_Evade" data-uid="XianXia.Unit.BodyOrgan.Evade">
+  Evade
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Evade { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_Ex_Evade_" data-uid="XianXia.Unit.BodyOrgan.Ex_Evade*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_Ex_Evade" data-uid="XianXia.Unit.BodyOrgan.Ex_Evade">
+  Ex_Evade
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Ex_Evade { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_Ex_def_" data-uid="XianXia.Unit.BodyOrgan.Ex_def*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_Ex_def" data-uid="XianXia.Unit.BodyOrgan.Ex_def">
+  Ex_def
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Ex_def { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_Ex_health_Max_" data-uid="XianXia.Unit.BodyOrgan.Ex_health_Max*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_Ex_health_Max" data-uid="XianXia.Unit.BodyOrgan.Ex_health_Max">
+  Ex_health_Max
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Ex_health_Max { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_Health_Curr_" data-uid="XianXia.Unit.BodyOrgan.Health_Curr*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_Health_Curr" data-uid="XianXia.Unit.BodyOrgan.Health_Curr">
+  Health_Curr
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Health_Curr { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_Health_Max_" data-uid="XianXia.Unit.BodyOrgan.Health_Max*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_Health_Max" data-uid="XianXia.Unit.BodyOrgan.Health_Max">
+  Health_Max
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Health_Max { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_ModelName_" data-uid="XianXia.Unit.BodyOrgan.ModelName*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_ModelName" data-uid="XianXia.Unit.BodyOrgan.ModelName">
+  ModelName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ModelName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_ModelTR_" data-uid="XianXia.Unit.BodyOrgan.ModelTR*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_ModelTR" data-uid="XianXia.Unit.BodyOrgan.ModelTR">
+  ModelTR
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform ModelTR { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_Or_Evade_" data-uid="XianXia.Unit.BodyOrgan.Or_Evade*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_Or_Evade" data-uid="XianXia.Unit.BodyOrgan.Or_Evade">
+  Or_Evade
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Or_Evade { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_Origin_def_" data-uid="XianXia.Unit.BodyOrgan.Origin_def*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_Origin_def" data-uid="XianXia.Unit.BodyOrgan.Origin_def">
+  Origin_def
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Origin_def { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_Origin_health_Max_" data-uid="XianXia.Unit.BodyOrgan.Origin_health_Max*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_Origin_health_Max" data-uid="XianXia.Unit.BodyOrgan.Origin_health_Max">
+  Origin_health_Max
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Origin_health_Max { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_OwnerPlayer_" data-uid="XianXia.Unit.BodyOrgan.OwnerPlayer*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_OwnerPlayer" data-uid="XianXia.Unit.BodyOrgan.OwnerPlayer">
+  OwnerPlayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerMemeber OwnerPlayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.Camp.PlayerMemeber.html">PlayerMemeber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_PartBodyDict_" data-uid="XianXia.Unit.BodyOrgan.PartBodyDict*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_PartBodyDict" data-uid="XianXia.Unit.BodyOrgan.PartBodyDict">
+  PartBodyDict
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, Transform&gt; PartBodyDict { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <span class="xref">Transform</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_PosID_" data-uid="XianXia.Unit.BodyOrgan.PosID*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_PosID" data-uid="XianXia.Unit.BodyOrgan.PosID">
+  PosID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte PosID { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_UnitAlive_" data-uid="XianXia.Unit.BodyOrgan.UnitAlive*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_UnitAlive" data-uid="XianXia.Unit.BodyOrgan.UnitAlive">
+  UnitAlive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UnitAlive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_componentType_" data-uid="XianXia.Unit.BodyOrgan.componentType*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_componentType" data-uid="XianXia.Unit.BodyOrgan.componentType">
+  componentType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ComponentType componentType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.ECS.ComponentType.html">ComponentType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_Unit_BodyOrgan_Destory_" data-uid="XianXia.Unit.BodyOrgan.Destory*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_Destory" data-uid="XianXia.Unit.BodyOrgan.Destory">
+  Destory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Destory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_InitComponent_" data-uid="XianXia.Unit.BodyOrgan.InitComponent*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_InitComponent_Saber_ECS_EntityBase_" data-uid="XianXia.Unit.BodyOrgan.InitComponent(Saber.ECS.EntityBase)">
+  InitComponent(EntityBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InitComponent(EntityBase unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <a class="xref" href="Saber.ECS.EntityBase.html">EntityBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BodyOrgan_SetClothSpineID_" data-uid="XianXia.Unit.BodyOrgan.SetClothSpineID*"></a>
+
+  <h3 id="XianXia_Unit_BodyOrgan_SetClothSpineID_System_Int32_" data-uid="XianXia.Unit.BodyOrgan.SetClothSpineID(System.Int32)">
+  SetClothSpineID(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClothSpineID(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,647 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MagicOrgan
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MagicOrgan
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.Unit.MagicOrgan">
+
+
+
+  <h1 id="XianXia_Unit_MagicOrgan" data-uid="XianXia.Unit.MagicOrgan" class="text-break">
+    Class MagicOrgan
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a>.<a class="xref" href="XianXia.Unit.html">Unit</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MagicOrgan : StatusOrganBase&lt;ActiveSkill&gt;, IComponentBase, IContainerEntity</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Saber.ECS.ComponentBase.html">ComponentBase</a></div>
+      <div><a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></div>
+      <div><a class="xref" href="XianXia.Unit.StatusOrganBase-1.html">StatusOrganBase</a>&lt;<a class="xref" href="XianXia.Unit.ActiveSkill.html">ActiveSkill</a>&gt;</div>
+      <div><span class="xref">MagicOrgan</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Saber.ECS.IComponentBase.html">IComponentBase</a></div>
+      <div><a class="xref" href="Saber.ECS.IContainerEntity.html">IContainerEntity</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="XianXia.Unit.StatusOrganBase-1.html#XianXia_Unit_StatusOrganBase_1_StatusList">StatusOrganBase&lt;ActiveSkill&gt;.StatusList</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.StatusOrganBase-1.html#XianXia_Unit_StatusOrganBase_1_StatusNumDict">StatusOrganBase&lt;ActiveSkill&gt;.StatusNumDict</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.OrganBase.html#XianXia_Unit_OrganBase_ComponentType">OrganBase.ComponentType</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.OrganBase.html#XianXia_Unit_OrganBase_OwnerUnit">OrganBase.OwnerUnit</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.OrganBase.html#XianXia_Unit_OrganBase_InitComponent_Saber_ECS_IContainerEntity_">OrganBase.InitComponent(IContainerEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Owner">ComponentBase.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Enable">ComponentBase.Enable</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Alive">ComponentBase.Alive</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_SetEnable_System_Boolean_">ComponentBase.SetEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_SetComponentEnable_System_Boolean_">ComponentBase.SetComponentEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_ClearEnable">ComponentBase.ClearEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Init_Saber_ECS_IContainerEntity_">ComponentBase.Init(IContainerEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="XianXia_Unit_MagicOrgan_AnimationLong_" data-uid="XianXia.Unit.MagicOrgan.AnimationLong*"></a>
+
+  <h3 id="XianXia_Unit_MagicOrgan_AnimationLong" data-uid="XianXia.Unit.MagicOrgan.AnimationLong">
+  AnimationLong
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimationLong { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_MagicOrgan_CharacterFSM_" data-uid="XianXia.Unit.MagicOrgan.CharacterFSM*"></a>
+
+  <h3 id="XianXia_Unit_MagicOrgan_CharacterFSM" data-uid="XianXia.Unit.MagicOrgan.CharacterFSM">
+  CharacterFSM
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharacterFSM CharacterFSM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CharacterFSM.html">CharacterFSM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_MagicOrgan_HasSkill_" data-uid="XianXia.Unit.MagicOrgan.HasSkill*"></a>
+
+  <h3 id="XianXia_Unit_MagicOrgan_HasSkill" data-uid="XianXia.Unit.MagicOrgan.HasSkill">
+  HasSkill
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSkill { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_MagicOrgan_MagicPoint_Attack_" data-uid="XianXia.Unit.MagicOrgan.MagicPoint_Attack*"></a>
+
+  <h3 id="XianXia_Unit_MagicOrgan_MagicPoint_Attack" data-uid="XianXia.Unit.MagicOrgan.MagicPoint_Attack">
+  MagicPoint_Attack
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MagicPoint_Attack { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_MagicOrgan_MagicPoint_Curr_" data-uid="XianXia.Unit.MagicOrgan.MagicPoint_Curr*"></a>
+
+  <h3 id="XianXia_Unit_MagicOrgan_MagicPoint_Curr" data-uid="XianXia.Unit.MagicOrgan.MagicPoint_Curr">
+  MagicPoint_Curr
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MagicPoint_Curr { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_MagicOrgan_MagicPoint_Damaged_" data-uid="XianXia.Unit.MagicOrgan.MagicPoint_Damaged*"></a>
+
+  <h3 id="XianXia_Unit_MagicOrgan_MagicPoint_Damaged" data-uid="XianXia.Unit.MagicOrgan.MagicPoint_Damaged">
+  MagicPoint_Damaged
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MagicPoint_Damaged { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_MagicOrgan_MagicPoint_Max_" data-uid="XianXia.Unit.MagicOrgan.MagicPoint_Max*"></a>
+
+  <h3 id="XianXia_Unit_MagicOrgan_MagicPoint_Max" data-uid="XianXia.Unit.MagicOrgan.MagicPoint_Max">
+  MagicPoint_Max
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MagicPoint_Max { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_MagicOrgan_NextMagicPoint_" data-uid="XianXia.Unit.MagicOrgan.NextMagicPoint*"></a>
+
+  <h3 id="XianXia_Unit_MagicOrgan_NextMagicPoint" data-uid="XianXia.Unit.MagicOrgan.NextMagicPoint">
+  NextMagicPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NextMagicPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_MagicOrgan_ReadyToSpell_" data-uid="XianXia.Unit.MagicOrgan.ReadyToSpell*"></a>
+
+  <h3 id="XianXia_Unit_MagicOrgan_ReadyToSpell" data-uid="XianXia.Unit.MagicOrgan.ReadyToSpell">
+  ReadyToSpell
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReadyToSpell { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_MagicOrgan_componentType_" data-uid="XianXia.Unit.MagicOrgan.componentType*"></a>
+
+  <h3 id="XianXia_Unit_MagicOrgan_componentType" data-uid="XianXia.Unit.MagicOrgan.componentType">
+  componentType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ComponentType componentType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.ECS.ComponentType.html">ComponentType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_Unit_MagicOrgan_Destory_" data-uid="XianXia.Unit.MagicOrgan.Destory*"></a>
+
+  <h3 id="XianXia_Unit_MagicOrgan_Destory" data-uid="XianXia.Unit.MagicOrgan.Destory">
+  Destory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Destory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_MagicOrgan_GetActiveSkillName_" data-uid="XianXia.Unit.MagicOrgan.GetActiveSkillName*"></a>
+
+  <h3 id="XianXia_Unit_MagicOrgan_GetActiveSkillName" data-uid="XianXia.Unit.MagicOrgan.GetActiveSkillName">
+  GetActiveSkillName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetActiveSkillName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_MagicOrgan_InitComponent_" data-uid="XianXia.Unit.MagicOrgan.InitComponent*"></a>
+
+  <h3 id="XianXia_Unit_MagicOrgan_InitComponent_Saber_ECS_EntityBase_" data-uid="XianXia.Unit.MagicOrgan.InitComponent(Saber.ECS.EntityBase)">
+  InitComponent(EntityBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InitComponent(EntityBase owner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="Saber.ECS.EntityBase.html">EntityBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_MagicOrgan_SetAnimationFinishTime_" data-uid="XianXia.Unit.MagicOrgan.SetAnimationFinishTime*"></a>
+
+  <h3 id="XianXia_Unit_MagicOrgan_SetAnimationFinishTime_System_Int32_" data-uid="XianXia.Unit.MagicOrgan.SetAnimationFinishTime(System.Int32)">
+  SetAnimationFinishTime(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAnimationFinishTime(int hash)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hash</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

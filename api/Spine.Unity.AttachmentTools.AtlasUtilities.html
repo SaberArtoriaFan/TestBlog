@@ -1,0 +1,890 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AtlasUtilities
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AtlasUtilities
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.Unity.AttachmentTools.AtlasUtilities">
+
+
+
+  <h1 id="Spine_Unity_AttachmentTools_AtlasUtilities" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities" class="text-break">
+    Class AtlasUtilities
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a>.<a class="xref" href="Spine.Unity.html">Unity</a>.<a class="xref" href="Spine.Unity.AttachmentTools.html">AttachmentTools</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AtlasUtilities</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AtlasUtilities</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_ClearCache_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ClearCache*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_ClearCache" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ClearCache">
+  ClearCache()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Frees up textures cached by repacking and remapping operations.</p>
+<p>Calling <a class="xref" href="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.html#Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetRemappedClone_Spine_Attachment_Sprite_Material_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">GetRemappedClone(Attachment, Sprite, Material, bool, bool, bool, bool, bool)</a> with parameter <code>premultiplyAlpha=true</code>,
+<a class="xref" href="Spine.Unity.AttachmentTools.AtlasUtilities.html#Spine_Unity_AttachmentTools_AtlasUtilities_GetRepackedAttachments_System_Collections_Generic_List_Spine_Attachment__System_Collections_Generic_List_Spine_Attachment__Material_Material__Texture2D__System_Int32_System_Int32_TextureFormat_System_Boolean_System_String_System_Boolean_System_Boolean_">GetRepackedAttachments(List&lt;Attachment&gt;, List&lt;Attachment&gt;, Material, out Material, out Texture2D, int, int, TextureFormat, bool, string, bool, bool)</a> or <a class="xref" href="Spine.Unity.AttachmentTools.AtlasUtilities.html#Spine_Unity_AttachmentTools_AtlasUtilities_GetRepackedSkin_Spine_Skin_System_String_Material_Material__Texture2D__System_Int32_System_Int32_TextureFormat_System_Boolean_System_Boolean_System_Boolean_System_Int32___Texture2D___TextureFormat___System_Boolean___">GetRepackedSkin(Skin, string, Material, out Material, out Texture2D, int, int, TextureFormat, bool, bool, bool, int[], Texture2D[], TextureFormat[], bool[])</a> will cache textures for later re-use,
+which might steadily increase the texture memory footprint when used excessively.
+You can clear this Texture cache by calling <a class="xref" href="Spine.Unity.AttachmentTools.AtlasUtilities.html#Spine_Unity_AttachmentTools_AtlasUtilities_ClearCache">ClearCache()</a>.
+You may also want to call <code>Resources.UnloadUnusedAssets()</code> after that. Be aware that while this cleanup
+frees up memory, it is also a costly operation and will likely cause a spike in the framerate.
+Thus it is recommended to perform costly repacking and cleanup operations after e.g. a character customization
+screen has been exited, and if required additionally after a certain number of <code>GetRemappedClone()</code> calls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearCache()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_GetRepackedAttachments_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.GetRepackedAttachments*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_GetRepackedAttachments_System_Collections_Generic_List_Spine_Attachment__System_Collections_Generic_List_Spine_Attachment__Material_Material__Texture2D__System_Int32_System_Int32_TextureFormat_System_Boolean_System_String_System_Boolean_System_Boolean_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.GetRepackedAttachments(System.Collections.Generic.List{Spine.Attachment},System.Collections.Generic.List{Spine.Attachment},Material,Material@,Texture2D@,System.Int32,System.Int32,TextureFormat,System.Boolean,System.String,System.Boolean,System.Boolean)">
+  GetRepackedAttachments(List&lt;Attachment&gt;, List&lt;Attachment&gt;, Material, out Material, out Texture2D, int, int, TextureFormat, bool, string, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fills the outputAttachments list with new attachment objects based on the attachments in sourceAttachments,
+but mapped to a new single texture using the same material.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetRepackedAttachments(List&lt;Attachment&gt; sourceAttachments, List&lt;Attachment&gt; outputAttachments, Material materialPropertySource, out Material outputMaterial, out Texture2D outputTexture, int maxAtlasSize = 1024, int padding = 2, TextureFormat textureFormat = null, bool mipmaps = false, string newAssetName = &quot;Repacked Attachments&quot;, bool clearCache = false, bool useOriginalNonrenderables = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceAttachments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Spine.Attachment.html">Attachment</a>&gt;</dt>
+    <dd><p>The list of attachments to be repacked.</p>
+</dd>
+    <dt><code>outputAttachments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Spine.Attachment.html">Attachment</a>&gt;</dt>
+    <dd><p>The List(Attachment) to populate with the newly created Attachment objects.</p>
+</dd>
+    <dt><code>materialPropertySource</code> <span class="xref">Material</span></dt>
+    <dd><p>May be null. If no Material property source is provided, no special</p>
+</dd>
+    <dt><code>outputMaterial</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+    <dt><code>outputTexture</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+    <dt><code>maxAtlasSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>padding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>textureFormat</code> <span class="xref">TextureFormat</span></dt>
+    <dd></dd>
+    <dt><code>mipmaps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>newAssetName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>clearCache</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When set to <code>true</code>, <a class="xref" href="Spine.Unity.AttachmentTools.AtlasUtilities.html#Spine_Unity_AttachmentTools_AtlasUtilities_ClearCache">ClearCache()</a> is called after
+repacking to clear the texture cache. See remarks for additional info.</p>
+</dd>
+    <dt><code>useOriginalNonrenderables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Spine_Unity_AttachmentTools_AtlasUtilities_GetRepackedAttachments_System_Collections_Generic_List_Spine_Attachment__System_Collections_Generic_List_Spine_Attachment__Material_Material__Texture2D__System_Int32_System_Int32_TextureFormat_System_Boolean_System_String_System_Boolean_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Returned <code>Material</code> and <code>Texture</code> behave like <code>new Texture2D()</code>, thus you need to call <code>Destroy()</code>
+to free resources.
+This method caches necessary Texture copies for later re-use, which might steadily increase the texture memory
+footprint when used excessively. Set <code class="paramref">clearCache</code> to <code>true</code>
+or call <a class="xref" href="Spine.Unity.AttachmentTools.AtlasUtilities.html#Spine_Unity_AttachmentTools_AtlasUtilities_ClearCache">ClearCache()</a> to clear this texture cache.
+You may want to call <code>Resources.UnloadUnusedAssets()</code> after that.</p>
+</div>
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_GetRepackedSkin_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.GetRepackedSkin*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_GetRepackedSkin_Spine_Skin_System_String_Material_Material__Texture2D__System_Int32_System_Int32_TextureFormat_System_Boolean_System_Boolean_System_Boolean_System_Int32___Texture2D___TextureFormat___System_Boolean___" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.GetRepackedSkin(Spine.Skin,System.String,Material,Material@,Texture2D@,System.Int32,System.Int32,TextureFormat,System.Boolean,System.Boolean,System.Boolean,System.Int32[],Texture2D[],TextureFormat[],System.Boolean[])">
+  GetRepackedSkin(Skin, string, Material, out Material, out Texture2D, int, int, TextureFormat, bool, bool, bool, int[], Texture2D[], TextureFormat[], bool[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and populates a duplicate skin with cloned attachments that are backed by a new packed texture atlas
+comprised of all the regions from the original skin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Skin GetRepackedSkin(this Skin o, string newName, Material materialPropertySource, out Material outputMaterial, out Texture2D outputTexture, int maxAtlasSize = 1024, int padding = 2, TextureFormat textureFormat = null, bool mipmaps = false, bool useOriginalNonrenderables = true, bool clearCache = false, int[] additionalTexturePropertyIDsToCopy = null, Texture2D[] additionalOutputTextures = null, TextureFormat[] additionalTextureFormats = null, bool[] additionalTextureIsLinear = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+    <dt><code>newName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>materialPropertySource</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+    <dt><code>outputMaterial</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+    <dt><code>outputTexture</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+    <dt><code>maxAtlasSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>padding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>textureFormat</code> <span class="xref">TextureFormat</span></dt>
+    <dd></dd>
+    <dt><code>mipmaps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>useOriginalNonrenderables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>clearCache</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When set to <code>true</code>, <a class="xref" href="Spine.Unity.AttachmentTools.AtlasUtilities.html#Spine_Unity_AttachmentTools_AtlasUtilities_ClearCache">ClearCache()</a> is called after
+repacking to clear the texture cache. See remarks for additional info.</p>
+</dd>
+    <dt><code>additionalTexturePropertyIDsToCopy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>Optional additional textures (such as normal maps) to copy while repacking.
+To copy e.g. the main texture and normal maps, pass 'new int[] { Shader.PropertyToID(&quot;_BumpMap&quot;) }' at this parameter.</p>
+</dd>
+    <dt><code>additionalOutputTextures</code> <span class="xref">Texture2D</span>[]</dt>
+    <dd><p>When <code>additionalTexturePropertyIDsToCopy</code> is non-null,
+this array will be filled with the resulting repacked texture for every property,
+just as the main repacked texture is assigned to <code>outputTexture</code>.</p>
+</dd>
+    <dt><code>additionalTextureFormats</code> <span class="xref">TextureFormat</span>[]</dt>
+    <dd><p>When <code>additionalTexturePropertyIDsToCopy</code> is non-null,
+this array will be used as <code>TextureFormat</code> at the Texture at the respective property.
+When <code>additionalTextureFormats</code> is <code>null</code> or when its array size is smaller,
+<code>textureFormat</code> is used where there exists no corresponding array item.</p>
+</dd>
+    <dt><code>additionalTextureIsLinear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</dt>
+    <dd><p>When <code>additionalTexturePropertyIDsToCopy</code> is non-null,
+this array will be used to determine whether <code>linear</code> or <code>sRGB</code> color space is used at the
+Texture at the respective property. When <code>additionalTextureIsLinear</code> is <code>null</code>, <code>linear</code> color space
+is assumed at every additional Texture element.
+When e.g. packing the main texture and normal maps, pass 'new bool[] { true }' at this parameter, because normal maps use
+linear color space.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Spine_Unity_AttachmentTools_AtlasUtilities_GetRepackedSkin_Spine_Skin_System_String_Material_Material__Texture2D__System_Int32_System_Int32_TextureFormat_System_Boolean_System_Boolean_System_Boolean_System_Int32___Texture2D___TextureFormat___System_Boolean____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>GetRepackedSkin is an expensive operation, preferably call it at level load time.
+No Spine.Atlas object is created so there is no way to find AtlasRegions except through the Attachments using them.
+Returned <code>Material</code> and <code>Texture</code> behave like <code>new Texture2D()</code>, thus you need to call <code>Destroy()</code>
+to free resources.
+This method caches necessary Texture copies for later re-use, which might steadily increase the texture memory
+footprint when used excessively. Set <code class="paramref">clearCache</code> to <code>true</code>
+or call <a class="xref" href="Spine.Unity.AttachmentTools.AtlasUtilities.html#Spine_Unity_AttachmentTools_AtlasUtilities_ClearCache">ClearCache()</a> to clear this texture cache.
+You may want to call <code>Resources.UnloadUnusedAssets()</code> after that.</p>
+</div>
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_GetRepackedSkin_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.GetRepackedSkin*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_GetRepackedSkin_Spine_Skin_System_String_Shader_Material__Texture2D__System_Int32_System_Int32_TextureFormat_System_Boolean_Material_System_Boolean_System_Boolean_System_Int32___Texture2D___TextureFormat___System_Boolean___" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.GetRepackedSkin(Spine.Skin,System.String,Shader,Material@,Texture2D@,System.Int32,System.Int32,TextureFormat,System.Boolean,Material,System.Boolean,System.Boolean,System.Int32[],Texture2D[],TextureFormat[],System.Boolean[])">
+  GetRepackedSkin(Skin, string, Shader, out Material, out Texture2D, int, int, TextureFormat, bool, Material, bool, bool, int[], Texture2D[], TextureFormat[], bool[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and populates a duplicate skin with cloned attachments that are backed by a new packed texture atlas
+comprised of all the regions from the original skin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Skin GetRepackedSkin(this Skin o, string newName, Shader shader, out Material outputMaterial, out Texture2D outputTexture, int maxAtlasSize = 1024, int padding = 2, TextureFormat textureFormat = null, bool mipmaps = false, Material materialPropertySource = null, bool clearCache = false, bool useOriginalNonrenderables = true, int[] additionalTexturePropertyIDsToCopy = null, Texture2D[] additionalOutputTextures = null, TextureFormat[] additionalTextureFormats = null, bool[] additionalTextureIsLinear = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+    <dt><code>newName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>shader</code> <span class="xref">Shader</span></dt>
+    <dd></dd>
+    <dt><code>outputMaterial</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+    <dt><code>outputTexture</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+    <dt><code>maxAtlasSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>padding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>textureFormat</code> <span class="xref">TextureFormat</span></dt>
+    <dd></dd>
+    <dt><code>mipmaps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>materialPropertySource</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+    <dt><code>clearCache</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>useOriginalNonrenderables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>additionalTexturePropertyIDsToCopy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+    <dt><code>additionalOutputTextures</code> <span class="xref">Texture2D</span>[]</dt>
+    <dd></dd>
+    <dt><code>additionalTextureFormats</code> <span class="xref">TextureFormat</span>[]</dt>
+    <dd></dd>
+    <dt><code>additionalTextureIsLinear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegion_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegion*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegion_Sprite_Material_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegion(Sprite,Material)">
+  ToAtlasRegion(Sprite, Material)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a Spine.AtlasRegion from a UnityEngine.Sprite. This creates a new AtlasPage object for every AtlasRegion you create. You can centralize Material control by creating a shared atlas page using Material.ToSpineAtlasPage and using the sprite.ToAtlasRegion(AtlasPage) overload.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasRegion ToAtlasRegion(this Sprite s, Material material)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+    <dt><code>material</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegion_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegion*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegion_Sprite_Spine_AtlasPage_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegion(Sprite,Spine.AtlasPage)">
+  ToAtlasRegion(Sprite, AtlasPage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a Spine.AtlasRegion from a UnityEngine.Sprite.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasRegion ToAtlasRegion(this Sprite s, AtlasPage page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+    <dt><code>page</code> <a class="xref" href="Spine.AtlasPage.html">AtlasPage</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegion_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegion*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegion_Texture2D_Material_System_Single_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegion(Texture2D,Material,System.Single)">
+  ToAtlasRegion(Texture2D, Material, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasRegion ToAtlasRegion(this Texture2D t, Material materialPropertySource, float scale = 0.01)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+    <dt><code>materialPropertySource</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegion_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegion*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegion_Texture2D_Shader_System_Single_Material_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegion(Texture2D,Shader,System.Single,Material)">
+  ToAtlasRegion(Texture2D, Shader, float, Material)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasRegion ToAtlasRegion(this Texture2D t, Shader shader, float scale = 0.01, Material materialPropertySource = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+    <dt><code>shader</code> <span class="xref">Shader</span></dt>
+    <dd></dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>materialPropertySource</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegionPMAClone_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegionPMAClone*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegionPMAClone_Sprite_Material_TextureFormat_System_Boolean_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegionPMAClone(Sprite,Material,TextureFormat,System.Boolean)">
+  ToAtlasRegionPMAClone(Sprite, Material, TextureFormat, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasRegion ToAtlasRegionPMAClone(this Sprite s, Material materialPropertySource, TextureFormat textureFormat = null, bool mipmaps = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+    <dt><code>materialPropertySource</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+    <dt><code>textureFormat</code> <span class="xref">TextureFormat</span></dt>
+    <dd></dd>
+    <dt><code>mipmaps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegionPMAClone_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegionPMAClone*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegionPMAClone_Sprite_Shader_TextureFormat_System_Boolean_Material_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegionPMAClone(Sprite,Shader,TextureFormat,System.Boolean,Material)">
+  ToAtlasRegionPMAClone(Sprite, Shader, TextureFormat, bool, Material)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a Spine.AtlasRegion that uses a premultiplied alpha duplicate of the Sprite's texture data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasRegion ToAtlasRegionPMAClone(this Sprite s, Shader shader, TextureFormat textureFormat = null, bool mipmaps = false, Material materialPropertySource = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+    <dt><code>shader</code> <span class="xref">Shader</span></dt>
+    <dd></dd>
+    <dt><code>textureFormat</code> <span class="xref">TextureFormat</span></dt>
+    <dd></dd>
+    <dt><code>mipmaps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>materialPropertySource</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegionPMAClone_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegionPMAClone*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegionPMAClone_Texture2D_Material_TextureFormat_System_Boolean_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegionPMAClone(Texture2D,Material,TextureFormat,System.Boolean)">
+  ToAtlasRegionPMAClone(Texture2D, Material, TextureFormat, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a Spine.AtlasRegion that uses a premultiplied alpha duplicate of the Sprite's texture data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasRegion ToAtlasRegionPMAClone(this Texture2D t, Material materialPropertySource, TextureFormat textureFormat = null, bool mipmaps = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+    <dt><code>materialPropertySource</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+    <dt><code>textureFormat</code> <span class="xref">TextureFormat</span></dt>
+    <dd></dd>
+    <dt><code>mipmaps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegionPMAClone_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegionPMAClone*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_ToAtlasRegionPMAClone_Texture2D_Shader_TextureFormat_System_Boolean_Material_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToAtlasRegionPMAClone(Texture2D,Shader,TextureFormat,System.Boolean,Material)">
+  ToAtlasRegionPMAClone(Texture2D, Shader, TextureFormat, bool, Material)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a Spine.AtlasRegion that uses a premultiplied alpha duplicate of the Sprite's texture data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasRegion ToAtlasRegionPMAClone(this Texture2D t, Shader shader, TextureFormat textureFormat = null, bool mipmaps = false, Material materialPropertySource = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+    <dt><code>shader</code> <span class="xref">Shader</span></dt>
+    <dd></dd>
+    <dt><code>textureFormat</code> <span class="xref">TextureFormat</span></dt>
+    <dd></dd>
+    <dt><code>mipmaps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>materialPropertySource</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_ToSpineAtlasPage_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToSpineAtlasPage*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_ToSpineAtlasPage_Material_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToSpineAtlasPage(Material)">
+  ToSpineAtlasPage(Material)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new Spine.AtlasPage from a UnityEngine.Material. If the material has a preassigned texture, the page width and height will be set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasPage ToSpineAtlasPage(this Material m)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AtlasPage.html">AtlasPage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_ToSprite_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToSprite*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_ToSprite_Spine_AtlasRegion_System_Single_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToSprite(Spine.AtlasRegion,System.Single)">
+  ToSprite(AtlasRegion, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Sprite ToSprite(this AtlasRegion ar, float pixelsPerUnit = 100)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ar</code> <a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+    <dt><code>pixelsPerUnit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Sprite</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AtlasUtilities_ToTexture_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToTexture*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AtlasUtilities_ToTexture_Spine_AtlasRegion_TextureFormat_System_Boolean_System_Int32_System_Boolean_System_Boolean_" data-uid="Spine.Unity.AttachmentTools.AtlasUtilities.ToTexture(Spine.AtlasRegion,TextureFormat,System.Boolean,System.Int32,System.Boolean,System.Boolean)">
+  ToTexture(AtlasRegion, TextureFormat, bool, int, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new Texture2D object based on an AtlasRegion.
+If applyImmediately is true, Texture2D.Apply is called immediately after the Texture2D is filled with data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D ToTexture(this AtlasRegion ar, TextureFormat textureFormat = null, bool mipmaps = false, int texturePropertyId = 0, bool linear = false, bool applyPMA = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ar</code> <a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+    <dt><code>textureFormat</code> <span class="xref">TextureFormat</span></dt>
+    <dd></dd>
+    <dt><code>mipmaps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>texturePropertyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>linear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>applyPMA</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

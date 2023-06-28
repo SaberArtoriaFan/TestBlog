@@ -1,0 +1,948 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ServerObjects
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ServerObjects
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FishNet.Managing.Server.ServerObjects">
+
+
+
+  <h1 id="FishNet_Managing_Server_ServerObjects" data-uid="FishNet.Managing.Server.ServerObjects" class="text-break">
+    Class ServerObjects
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FishNet.html">FishNet</a>.<a class="xref" href="FishNet.Managing.html">Managing</a>.<a class="xref" href="FishNet.Managing.Server.html">Server</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Handles objects and information about objects for the server. See ManagedObjects for inherited options.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ServerObjects : ManagedObjects</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FishNet.Managing.Object.ManagedObjects.html">ManagedObjects</a></div>
+      <div><span class="xref">ServerObjects</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_Spawned">ManagedObjects.Spawned</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_NetworkManager">ManagedObjects.NetworkManager</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_SceneObjects">ManagedObjects.SceneObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_Initialize_FishNet_Managing_NetworkManager_">ManagedObjects.Initialize(NetworkManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_UpdateNetworkBehavioursForSceneObject_FishNet_Object_NetworkObject_System_Boolean_">ManagedObjects.UpdateNetworkBehavioursForSceneObject(NetworkObject, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_InitializePrefab_FishNet_Object_NetworkObject_System_Int32_System_Nullable_System_UInt16__">ManagedObjects.InitializePrefab(NetworkObject, int, ushort?)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_AddToSceneObjects_FishNet_Object_NetworkObject_">ManagedObjects.AddToSceneObjects(NetworkObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_RemoveFromSceneObjects_FishNet_Object_NetworkObject_">ManagedObjects.RemoveFromSceneObjects(NetworkObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_RemoveFromSceneObjects_System_UInt64_">ManagedObjects.RemoveFromSceneObjects(ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_GetSpawnedNetworkObject_System_Int32_">ManagedObjects.GetSpawnedNetworkObject(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_SkipDataLength_System_UInt16_FishNet_Serializing_PooledReader_System_Int32_System_Int32_">ManagedObjects.SkipDataLength(ushort, PooledReader, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_ReadTransformProperties_FishNet_Serializing_Reader_System_Nullable_Vector3___System_Nullable_Quaternion___System_Nullable_Vector3___">ManagedObjects.ReadTransformProperties(Reader, out Vector3?, out Quaternion?, out Vector3?)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_WriteChangedTransformProperties_FishNet_Object_NetworkObject_System_Boolean_System_Boolean_FishNet_Serializing_Writer_">ManagedObjects.WriteChangedTransformProperties(NetworkObject, bool, bool, Writer)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_WriteDespawn_FishNet_Object_NetworkObject_FishNet_Object_DespawnType_FishNet_Serializing_Writer_">ManagedObjects.WriteDespawn(NetworkObject, DespawnType, Writer)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_CanPredictedSpawn_FishNet_Object_NetworkObject_FishNet_Connection_NetworkConnection_FishNet_Connection_NetworkConnection_System_Boolean_FishNet_Serializing_Reader_">ManagedObjects.CanPredictedSpawn(NetworkObject, NetworkConnection, NetworkConnection, bool, Reader)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Managing.Object.ManagedObjects.html#FishNet_Managing_Object_ManagedObjects_CanPredictedDespawn_FishNet_Object_NetworkObject_FishNet_Connection_NetworkConnection_System_Boolean_FishNet_Serializing_Reader_">ManagedObjects.CanPredictedDespawn(NetworkObject, NetworkConnection, bool, Reader)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_AddTimedNetworkObserver_" data-uid="FishNet.Managing.Server.ServerObjects.AddTimedNetworkObserver*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_AddTimedNetworkObserver_FishNet_Object_NetworkObject_" data-uid="FishNet.Managing.Server.ServerObjects.AddTimedNetworkObserver(FishNet.Object.NetworkObject)">
+  AddTimedNetworkObserver(NetworkObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates that a networkObserver component should be updated regularly. This is done automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTimedNetworkObserver(NetworkObject networkObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkObject</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd><p>NetworkObject to be updated.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_GetNextNetworkObjectId_" data-uid="FishNet.Managing.Server.ServerObjects.GetNextNetworkObjectId*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_GetNextNetworkObjectId_System_Boolean_" data-uid="FishNet.Managing.Server.ServerObjects.GetNextNetworkObjectId(System.Boolean)">
+  GetNextNetworkObjectId(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the next ObjectId to use for NetworkObjects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int GetNextNetworkObjectId(bool errorCheck = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>errorCheck</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RebuildObservers_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RebuildObservers" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers">
+  RebuildObservers()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds observers on all NetworkObjects for all connections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildObservers()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RebuildObservers_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RebuildObservers_FishNet_Connection_NetworkConnection_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers(FishNet.Connection.NetworkConnection)">
+  RebuildObservers(NetworkConnection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds observers on all NetworkObjects for a connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildObservers(NetworkConnection connection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connection</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RebuildObservers_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RebuildObservers_FishNet_Connection_NetworkConnection___" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers(FishNet.Connection.NetworkConnection[])">
+  RebuildObservers(NetworkConnection[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds observers on all objects for connections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildObservers(NetworkConnection[] connections)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connections</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RebuildObservers_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RebuildObservers_FishNet_Object_NetworkObject_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers(FishNet.Object.NetworkObject)">
+  RebuildObservers(NetworkObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds observers for all connections for a NetworkObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildObservers(NetworkObject nob)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nob</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RebuildObservers_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RebuildObservers_FishNet_Object_NetworkObject_FishNet_Connection_NetworkConnection___" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers(FishNet.Object.NetworkObject,FishNet.Connection.NetworkConnection[])">
+  RebuildObservers(NetworkObject, NetworkConnection[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds observers for connections on NetworkObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildObservers(NetworkObject networkObject, NetworkConnection[] connections)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkObject</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+    <dt><code>connections</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RebuildObservers_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RebuildObservers_FishNet_Object_NetworkObject_System_Collections_Generic_List_FishNet_Connection_NetworkConnection__" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers(FishNet.Object.NetworkObject,System.Collections.Generic.List{FishNet.Connection.NetworkConnection})">
+  RebuildObservers(NetworkObject, List&lt;NetworkConnection&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds observers for connections on NetworkObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildObservers(NetworkObject networkObject, List&lt;NetworkConnection&gt; connections)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkObject</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+    <dt><code>connections</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RebuildObservers_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RebuildObservers_FishNet_Object_NetworkObject___" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers(FishNet.Object.NetworkObject[])">
+  RebuildObservers(NetworkObject[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds observers on NetworkObjects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildObservers(NetworkObject[] nobs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nobs</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RebuildObservers_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RebuildObservers_FishNet_Utility_Performance_ListCache_FishNet_Connection_NetworkConnection__" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers(FishNet.Utility.Performance.ListCache{FishNet.Connection.NetworkConnection})">
+  RebuildObservers(ListCache&lt;NetworkConnection&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds observers on all objects for a connections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildObservers(ListCache&lt;NetworkConnection&gt; connections)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connections</code> <a class="xref" href="FishNet.Utility.Performance.ListCache-1.html">ListCache</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RebuildObservers_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RebuildObservers_FishNet_Utility_Performance_ListCache_FishNet_Object_NetworkObject__" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers(FishNet.Utility.Performance.ListCache{FishNet.Object.NetworkObject})">
+  RebuildObservers(ListCache&lt;NetworkObject&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds observers on NetworkObjects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildObservers(ListCache&lt;NetworkObject&gt; nobs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nobs</code> <a class="xref" href="FishNet.Utility.Performance.ListCache-1.html">ListCache</a>&lt;<a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RebuildObservers_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RebuildObservers_FishNet_Utility_Performance_ListCache_FishNet_Object_NetworkObject__FishNet_Connection_NetworkConnection_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers(FishNet.Utility.Performance.ListCache{FishNet.Object.NetworkObject},FishNet.Connection.NetworkConnection)">
+  RebuildObservers(ListCache&lt;NetworkObject&gt;, NetworkConnection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds observers on NetworkObjects for connections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildObservers(ListCache&lt;NetworkObject&gt; nobs, NetworkConnection conn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nobs</code> <a class="xref" href="FishNet.Utility.Performance.ListCache-1.html">ListCache</a>&lt;<a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>conn</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RebuildObservers_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RebuildObservers_FishNet_Utility_Performance_ListCache_FishNet_Object_NetworkObject__FishNet_Utility_Performance_ListCache_FishNet_Connection_NetworkConnection__" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers(FishNet.Utility.Performance.ListCache{FishNet.Object.NetworkObject},FishNet.Utility.Performance.ListCache{FishNet.Connection.NetworkConnection})">
+  RebuildObservers(ListCache&lt;NetworkObject&gt;, ListCache&lt;NetworkConnection&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds observers on NetworkObjects for connections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildObservers(ListCache&lt;NetworkObject&gt; nobs, ListCache&lt;NetworkConnection&gt; conns)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nobs</code> <a class="xref" href="FishNet.Utility.Performance.ListCache-1.html">ListCache</a>&lt;<a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>conns</code> <a class="xref" href="FishNet.Utility.Performance.ListCache-1.html">ListCache</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RebuildObservers_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RebuildObservers_System_Collections_Generic_IEnumerable_FishNet_Object_NetworkObject__FishNet_Connection_NetworkConnection_System_Int32_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers(System.Collections.Generic.IEnumerable{FishNet.Object.NetworkObject},FishNet.Connection.NetworkConnection,System.Int32)">
+  RebuildObservers(IEnumerable&lt;NetworkObject&gt;, NetworkConnection, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds observers for a connection on NetworkObjects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildObservers(IEnumerable&lt;NetworkObject&gt; nobs, NetworkConnection connection, int count = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nobs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a>&gt;</dt>
+    <dd><p>NetworkObjects to rebuild.</p>
+</dd>
+    <dt><code>connection</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Connection to rebuild for.</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of iterations to perform collection. Entire collection is iterated when value is -1.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RebuildObservers_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RebuildObservers_System_Collections_Generic_List_FishNet_Connection_NetworkConnection__" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers(System.Collections.Generic.List{FishNet.Connection.NetworkConnection})">
+  RebuildObservers(List&lt;NetworkConnection&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds observers on all objects for connections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildObservers(List&lt;NetworkConnection&gt; connections)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connections</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RebuildObservers_" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RebuildObservers_System_Collections_Generic_List_FishNet_Object_NetworkObject__" data-uid="FishNet.Managing.Server.ServerObjects.RebuildObservers(System.Collections.Generic.List{FishNet.Object.NetworkObject})">
+  RebuildObservers(List&lt;NetworkObject&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds observers on NetworkObjects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RebuildObservers(List&lt;NetworkObject&gt; nobs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nobs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RecentlyDespawned_" data-uid="FishNet.Managing.Server.ServerObjects.RecentlyDespawned*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RecentlyDespawned_System_Int32_System_UInt32_" data-uid="FishNet.Managing.Server.ServerObjects.RecentlyDespawned(System.Int32,System.UInt32)">
+  RecentlyDespawned(int, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns if an objectId was recently despawned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RecentlyDespawned(int objectId, uint ticks)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>ObjectId to check.</p>
+</dd>
+    <dt><code>ticks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd><p>Passed ticks to be within to be considered recently despawned.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if an objectId was despawned with specified number of ticks.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_RemoveTimedNetworkObserver_" data-uid="FishNet.Managing.Server.ServerObjects.RemoveTimedNetworkObserver*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_RemoveTimedNetworkObserver_FishNet_Object_NetworkObject_" data-uid="FishNet.Managing.Server.ServerObjects.RemoveTimedNetworkObserver(FishNet.Object.NetworkObject)">
+  RemoveTimedNetworkObserver(NetworkObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates that a networkObserver component no longer needs to be updated regularly. This is done automatically.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTimedNetworkObserver(NetworkObject networkObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkObject</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd><p>NetworkObject to be updated.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_SceneManager_sceneLoaded_" data-uid="FishNet.Managing.Server.ServerObjects.SceneManager_sceneLoaded*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_SceneManager_sceneLoaded_Scene_LoadSceneMode_" data-uid="FishNet.Managing.Server.ServerObjects.SceneManager_sceneLoaded(Scene,LoadSceneMode)">
+  SceneManager_sceneLoaded(Scene, LoadSceneMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a scene loads on the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SceneManager_sceneLoaded(Scene s, LoadSceneMode arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <span class="xref">Scene</span></dt>
+    <dd></dd>
+    <dt><code>arg1</code> <span class="xref">LoadSceneMode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Server_ServerObjects_SetupSceneObjects_" data-uid="FishNet.Managing.Server.ServerObjects.SetupSceneObjects*"></a>
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_SetupSceneObjects" data-uid="FishNet.Managing.Server.ServerObjects.SetupSceneObjects">
+  SetupSceneObjects()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Setup all NetworkObjects in scenes. Should only be called when server is active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetupSceneObjects()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="FishNet_Managing_Server_ServerObjects_OnPreDestroyClientObjects" data-uid="FishNet.Managing.Server.ServerObjects.OnPreDestroyClientObjects">
+  OnPreDestroyClientObjects
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called right before client objects are destroyed when a client disconnects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;NetworkConnection&gt; OnPreDestroyClientObjects</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1178 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ShiftShape
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ShiftShape
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="cfg.shiftShape.ShiftShape">
+
+
+
+  <h1 id="cfg_shiftShape_ShiftShape" data-uid="cfg.shiftShape.ShiftShape" class="text-break">
+    Class ShiftShape
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="cfg.html">cfg</a>.<a class="xref" href="cfg.shiftShape.html">shiftShape</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ShiftShape : BeanBase, ITypeId</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Bright.Config.BeanBase.html">BeanBase</a></div>
+      <div><span class="xref">ShiftShape</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Bright.Serialization.ITypeId.html">ITypeId</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="cfg_shiftShape_ShiftShape__ctor_" data-uid="cfg.shiftShape.ShiftShape.#ctor*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape__ctor_SimpleJSON_JSONNode_" data-uid="cfg.shiftShape.ShiftShape.#ctor(SimpleJSON.JSONNode)">
+  ShiftShape(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShiftShape(JSONNode _json)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_json</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape__ctor_" data-uid="cfg.shiftShape.ShiftShape.#ctor*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape__ctor_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Byte_System_Byte_System_Int32_System_Byte_System_Int32_System_Int32___System_Int32_System_Int32_System_Int32_System_Int32_System_String_System_String_System_String_System_String_" data-uid="cfg.shiftShape.ShiftShape.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Byte,System.Byte,System.Int32,System.Byte,System.Int32,System.Int32[],System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+  ShiftShape(int, int, int, int, int, int, int, byte, byte, int, byte, int, int[], int, int, int, int, string, string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShiftShape(int shapeshift_id, int shapeshift_health, int shapeshift_attack, int shapeshift_defence, int shapeshift_attackrange, int hero_alertdistance, int shapeshift_attackspeed, byte shapeshift_hitrate, byte shapeshift_evade, int shapeshift_movementspeed, byte shapeshift_criticalchance, int shapeshift_criticaldamage, int[] shapeshift_skill, int hero_mp, int attack_mp, int attacked_mp, int shapeshift_strongskill, string hero_prefab, string hero_mod, string projectile_prefab, string hero_sound)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shapeshift_id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>shapeshift_health</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>shapeshift_attack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>shapeshift_defence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>shapeshift_attackrange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>hero_alertdistance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>shapeshift_attackspeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>shapeshift_hitrate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>shapeshift_evade</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>shapeshift_movementspeed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>shapeshift_criticalchance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>shapeshift_criticaldamage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>shapeshift_skill</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+    <dt><code>hero_mp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>attack_mp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>attacked_mp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>shapeshift_strongskill</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>hero_prefab</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>hero_mod</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>projectile_prefab</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>hero_sound</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="cfg_shiftShape_ShiftShape___ID__" data-uid="cfg.shiftShape.ShiftShape.__ID__">
+  __ID__
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int __ID__ = 1104227694</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="cfg_shiftShape_ShiftShape_AttackMp_" data-uid="cfg.shiftShape.ShiftShape.AttackMp*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_AttackMp" data-uid="cfg.shiftShape.ShiftShape.AttackMp">
+  AttackMp
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>攻击回蓝量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AttackMp { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_AttackedMp_" data-uid="cfg.shiftShape.ShiftShape.AttackedMp*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_AttackedMp" data-uid="cfg.shiftShape.ShiftShape.AttackedMp">
+  AttackedMp
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>受击回蓝量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AttackedMp { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_HeroAlertdistance_" data-uid="cfg.shiftShape.ShiftShape.HeroAlertdistance*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_HeroAlertdistance" data-uid="cfg.shiftShape.ShiftShape.HeroAlertdistance">
+  HeroAlertdistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>警戒距离</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HeroAlertdistance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_HeroMod_" data-uid="cfg.shiftShape.ShiftShape.HeroMod*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_HeroMod" data-uid="cfg.shiftShape.ShiftShape.HeroMod">
+  HeroMod
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>战斗动画模组</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HeroMod { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_HeroMp_" data-uid="cfg.shiftShape.ShiftShape.HeroMp*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_HeroMp" data-uid="cfg.shiftShape.ShiftShape.HeroMp">
+  HeroMp
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>英雄蓝量值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HeroMp { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_HeroPrefab_" data-uid="cfg.shiftShape.ShiftShape.HeroPrefab*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_HeroPrefab" data-uid="cfg.shiftShape.ShiftShape.HeroPrefab">
+  HeroPrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>变身预制体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HeroPrefab { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_HeroSound_" data-uid="cfg.shiftShape.ShiftShape.HeroSound*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_HeroSound" data-uid="cfg.shiftShape.ShiftShape.HeroSound">
+  HeroSound
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>台词</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HeroSound { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ProjectilePrefab_" data-uid="cfg.shiftShape.ShiftShape.ProjectilePrefab*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ProjectilePrefab" data-uid="cfg.shiftShape.ShiftShape.ProjectilePrefab">
+  ProjectilePrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>弹道预制体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ProjectilePrefab { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ShapeshiftAttack_" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftAttack*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ShapeshiftAttack" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftAttack">
+  ShapeshiftAttack
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>攻击力</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ShapeshiftAttack { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ShapeshiftAttackrange_" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftAttackrange*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ShapeshiftAttackrange" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftAttackrange">
+  ShapeshiftAttackrange
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>攻击距离</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ShapeshiftAttackrange { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ShapeshiftAttackspeed_" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftAttackspeed*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ShapeshiftAttackspeed" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftAttackspeed">
+  ShapeshiftAttackspeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>攻击速度</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ShapeshiftAttackspeed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ShapeshiftCriticalchance_" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftCriticalchance*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ShapeshiftCriticalchance" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftCriticalchance">
+  ShapeshiftCriticalchance
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>暴击率</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte ShapeshiftCriticalchance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ShapeshiftCriticaldamage_" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftCriticaldamage*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ShapeshiftCriticaldamage" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftCriticaldamage">
+  ShapeshiftCriticaldamage
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>暴击伤害</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ShapeshiftCriticaldamage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ShapeshiftDefence_" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftDefence*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ShapeshiftDefence" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftDefence">
+  ShapeshiftDefence
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>防御力</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ShapeshiftDefence { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ShapeshiftEvade_" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftEvade*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ShapeshiftEvade" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftEvade">
+  ShapeshiftEvade
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>闪避率</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte ShapeshiftEvade { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ShapeshiftHealth_" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftHealth*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ShapeshiftHealth" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftHealth">
+  ShapeshiftHealth
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>血量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ShapeshiftHealth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ShapeshiftHitrate_" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftHitrate*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ShapeshiftHitrate" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftHitrate">
+  ShapeshiftHitrate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>命中率</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte ShapeshiftHitrate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ShapeshiftId_" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftId*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ShapeshiftId" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftId">
+  ShapeshiftId
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>序号</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ShapeshiftId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ShapeshiftMovementspeed_" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftMovementspeed*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ShapeshiftMovementspeed" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftMovementspeed">
+  ShapeshiftMovementspeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>移动速度</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ShapeshiftMovementspeed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ShapeshiftSkill_" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftSkill*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ShapeshiftSkill" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftSkill">
+  ShapeshiftSkill
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>技能1（小技能）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] ShapeshiftSkill { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ShapeshiftStrongskill_" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftStrongskill*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ShapeshiftStrongskill" data-uid="cfg.shiftShape.ShiftShape.ShapeshiftStrongskill">
+  ShapeshiftStrongskill
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>技能2（大招）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ShapeshiftStrongskill { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="cfg_shiftShape_ShiftShape_DeserializeShiftShape_" data-uid="cfg.shiftShape.ShiftShape.DeserializeShiftShape*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_DeserializeShiftShape_SimpleJSON_JSONNode_" data-uid="cfg.shiftShape.ShiftShape.DeserializeShiftShape(SimpleJSON.JSONNode)">
+  DeserializeShiftShape(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ShiftShape DeserializeShiftShape(JSONNode _json)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_json</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="cfg.shiftShape.ShiftShape.html">ShiftShape</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_GetTypeId_" data-uid="cfg.shiftShape.ShiftShape.GetTypeId*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_GetTypeId" data-uid="cfg.shiftShape.ShiftShape.GetTypeId">
+  GetTypeId()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetTypeId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_Resolve_" data-uid="cfg.shiftShape.ShiftShape.Resolve*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_Resolve_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="cfg.shiftShape.ShiftShape.Resolve(System.Collections.Generic.Dictionary{System.String,System.Object})">
+  Resolve(Dictionary&lt;string, object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resolve(Dictionary&lt;string, object&gt; _tables)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_tables</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_ToString_" data-uid="cfg.shiftShape.ShiftShape.ToString*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_ToString" data-uid="cfg.shiftShape.ShiftShape.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that represents the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="cfg_shiftShape_ShiftShape_TranslateText_" data-uid="cfg.shiftShape.ShiftShape.TranslateText*"></a>
+
+  <h3 id="cfg_shiftShape_ShiftShape_TranslateText_System_Func_System_String_System_String_System_String__" data-uid="cfg.shiftShape.ShiftShape.TranslateText(System.Func{System.String,System.String,System.String})">
+  TranslateText(Func&lt;string, string, string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TranslateText(Func&lt;string, string, string&gt; translator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>translator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

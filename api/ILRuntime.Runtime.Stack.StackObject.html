@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct StackObject
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct StackObject
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ILRuntime.Runtime.Stack.StackObject">
+
+
+
+  <h1 id="ILRuntime_Runtime_Stack_StackObject" data-uid="ILRuntime.Runtime.Stack.StackObject" class="text-break">
+    Struct StackObject
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ILRuntime.html">ILRuntime</a>.<a class="xref" href="ILRuntime.Runtime.html">Runtime</a>.<a class="xref" href="ILRuntime.Runtime.Stack.html">Stack</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct StackObject</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="ILRuntime_Runtime_Stack_StackObject_Null" data-uid="ILRuntime.Runtime.Stack.StackObject.Null">
+  Null
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StackObject Null</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="ILRuntime_Runtime_Stack_StackObject_ObjectType" data-uid="ILRuntime.Runtime.Stack.StackObject.ObjectType">
+  ObjectType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectTypes ObjectType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Stack.ObjectTypes.html">ObjectTypes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="ILRuntime_Runtime_Stack_StackObject_Value" data-uid="ILRuntime.Runtime.Stack.StackObject.Value">
+  Value
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Value</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="ILRuntime_Runtime_Stack_StackObject_ValueLow" data-uid="ILRuntime.Runtime.Stack.StackObject.ValueLow">
+  ValueLow
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ValueLow</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ILRuntime_Runtime_Stack_StackObject_Initialized_" data-uid="ILRuntime.Runtime.Stack.StackObject.Initialized*"></a>
+
+  <h3 id="ILRuntime_Runtime_Stack_StackObject_Initialized_ILRuntime_Runtime_Stack_StackObject__ILRuntime_CLR_TypeSystem_IType_" data-uid="ILRuntime.Runtime.Stack.StackObject.Initialized(ILRuntime.Runtime.Stack.StackObject*,ILRuntime.CLR.TypeSystem.IType)">
+  Initialized(StackObject*, IType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Initialized(StackObject* esp, IType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Stack_StackObject_Initialized_" data-uid="ILRuntime.Runtime.Stack.StackObject.Initialized*"></a>
+
+  <h3 id="ILRuntime_Runtime_Stack_StackObject_Initialized_ILRuntime_Runtime_Stack_StackObject__System_Int32_ILRuntime_CLR_TypeSystem_IType_ILRuntime_Other_UncheckedList_System_Object__" data-uid="ILRuntime.Runtime.Stack.StackObject.Initialized(ILRuntime.Runtime.Stack.StackObject@,System.Int32,ILRuntime.CLR.TypeSystem.IType,ILRuntime.Other.UncheckedList{System.Object})">
+  Initialized(ref StackObject, int, IType, UncheckedList&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Initialized(ref StackObject esp, int idx, IType fieldType, UncheckedList&lt;object&gt; mStack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a></dt>
+    <dd></dd>
+    <dt><code>idx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>fieldType</code> <a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="ILRuntime.Other.UncheckedList-1.html">UncheckedList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Stack_StackObject_ToObject_" data-uid="ILRuntime.Runtime.Stack.StackObject.ToObject*"></a>
+
+  <h3 id="ILRuntime_Runtime_Stack_StackObject_ToObject_ILRuntime_Runtime_Stack_StackObject__ILRuntime_Runtime_Enviorment_AppDomain_ILRuntime_Other_UncheckedList_System_Object__" data-uid="ILRuntime.Runtime.Stack.StackObject.ToObject(ILRuntime.Runtime.Stack.StackObject*,ILRuntime.Runtime.Enviorment.AppDomain,ILRuntime.Other.UncheckedList{System.Object})">
+  ToObject(StackObject*, AppDomain, UncheckedList&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object ToObject(StackObject* esp, AppDomain appdomain, UncheckedList&lt;object&gt; mStack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>appdomain</code> <a class="xref" href="ILRuntime.Runtime.Enviorment.AppDomain.html">AppDomain</a></dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="ILRuntime.Other.UncheckedList-1.html">UncheckedList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Stack_StackObject_ToObject_" data-uid="ILRuntime.Runtime.Stack.StackObject.ToObject*"></a>
+
+  <h3 id="ILRuntime_Runtime_Stack_StackObject_ToObject_ILRuntime_Runtime_Stack_StackObject__ILRuntime_Runtime_Enviorment_AppDomain_System_Collections_Generic_IList_System_Object__" data-uid="ILRuntime.Runtime.Stack.StackObject.ToObject(ILRuntime.Runtime.Stack.StackObject*,ILRuntime.Runtime.Enviorment.AppDomain,System.Collections.Generic.IList{System.Object})">
+  ToObject(StackObject*, AppDomain, IList&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static object ToObject(StackObject* esp, AppDomain appdomain, IList&lt;object&gt; mStack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>appdomain</code> <a class="xref" href="ILRuntime.Runtime.Enviorment.AppDomain.html">AppDomain</a></dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="ILRuntime_Runtime_Stack_StackObject_op_Equality_" data-uid="ILRuntime.Runtime.Stack.StackObject.op_Equality*"></a>
+
+  <h3 id="ILRuntime_Runtime_Stack_StackObject_op_Equality_ILRuntime_Runtime_Stack_StackObject_ILRuntime_Runtime_Stack_StackObject_" data-uid="ILRuntime.Runtime.Stack.StackObject.op_Equality(ILRuntime.Runtime.Stack.StackObject,ILRuntime.Runtime.Stack.StackObject)">
+  operator ==(StackObject, StackObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(StackObject a, StackObject b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Stack_StackObject_op_Inequality_" data-uid="ILRuntime.Runtime.Stack.StackObject.op_Inequality*"></a>
+
+  <h3 id="ILRuntime_Runtime_Stack_StackObject_op_Inequality_ILRuntime_Runtime_Stack_StackObject_ILRuntime_Runtime_Stack_StackObject_" data-uid="ILRuntime.Runtime.Stack.StackObject.op_Inequality(ILRuntime.Runtime.Stack.StackObject,ILRuntime.Runtime.Stack.StackObject)">
+  operator !=(StackObject, StackObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(StackObject a, StackObject b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

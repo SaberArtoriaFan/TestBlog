@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DeformTimeline
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DeformTimeline
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.DeformTimeline">
+
+
+
+  <h1 id="Spine_DeformTimeline" data-uid="Spine.DeformTimeline" class="text-break">
+    Class DeformTimeline
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Changes a slot's <a class="xref" href="Spine.Slot.html#Spine_Slot_Deform">Deform</a> to deform a <a class="xref" href="Spine.VertexAttachment.html">VertexAttachment</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DeformTimeline : CurveTimeline, Timeline, ISlotTimeline</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Spine.CurveTimeline.html">CurveTimeline</a></div>
+      <div><span class="xref">DeformTimeline</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Spine.Timeline.html">Timeline</a></div>
+      <div><a class="xref" href="Spine.ISlotTimeline.html">ISlotTimeline</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Spine.CurveTimeline.html#Spine_CurveTimeline_LINEAR">CurveTimeline.LINEAR</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.CurveTimeline.html#Spine_CurveTimeline_STEPPED">CurveTimeline.STEPPED</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.CurveTimeline.html#Spine_CurveTimeline_BEZIER">CurveTimeline.BEZIER</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.CurveTimeline.html#Spine_CurveTimeline_BEZIER_SIZE">CurveTimeline.BEZIER_SIZE</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.CurveTimeline.html#Spine_CurveTimeline_FrameCount">CurveTimeline.FrameCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.CurveTimeline.html#Spine_CurveTimeline_SetLinear_System_Int32_">CurveTimeline.SetLinear(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.CurveTimeline.html#Spine_CurveTimeline_SetStepped_System_Int32_">CurveTimeline.SetStepped(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.CurveTimeline.html#Spine_CurveTimeline_GetCurveType_System_Int32_">CurveTimeline.GetCurveType(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.CurveTimeline.html#Spine_CurveTimeline_SetCurve_System_Int32_System_Single_System_Single_System_Single_System_Single_">CurveTimeline.SetCurve(int, float, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.CurveTimeline.html#Spine_CurveTimeline_GetCurvePercent_System_Int32_System_Single_">CurveTimeline.GetCurvePercent(int, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Spine_DeformTimeline__ctor_" data-uid="Spine.DeformTimeline.#ctor*"></a>
+
+  <h3 id="Spine_DeformTimeline__ctor_System_Int32_" data-uid="Spine.DeformTimeline.#ctor(System.Int32)">
+  DeformTimeline(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeformTimeline(int frameCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frameCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Spine_DeformTimeline_Attachment_" data-uid="Spine.DeformTimeline.Attachment*"></a>
+
+  <h3 id="Spine_DeformTimeline_Attachment" data-uid="Spine.DeformTimeline.Attachment">
+  Attachment
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The attachment that will be deformed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VertexAttachment Attachment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.VertexAttachment.html">VertexAttachment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_DeformTimeline_Frames_" data-uid="Spine.DeformTimeline.Frames*"></a>
+
+  <h3 id="Spine_DeformTimeline_Frames" data-uid="Spine.DeformTimeline.Frames">
+  Frames
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The time in seconds for each key frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] Frames { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_DeformTimeline_PropertyId_" data-uid="Spine.DeformTimeline.PropertyId*"></a>
+
+  <h3 id="Spine_DeformTimeline_PropertyId" data-uid="Spine.DeformTimeline.PropertyId">
+  PropertyId
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Uniquely encodes both the type of this timeline and the skeleton property that it affects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int PropertyId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_DeformTimeline_SlotIndex_" data-uid="Spine.DeformTimeline.SlotIndex*"></a>
+
+  <h3 id="Spine_DeformTimeline_SlotIndex" data-uid="Spine.DeformTimeline.SlotIndex">
+  SlotIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The index of the slot in <a class="xref" href="Spine.Skeleton.html#Spine_Skeleton_Slots">Slots</a> that will be changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SlotIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_DeformTimeline_Vertices_" data-uid="Spine.DeformTimeline.Vertices*"></a>
+
+  <h3 id="Spine_DeformTimeline_Vertices" data-uid="Spine.DeformTimeline.Vertices">
+  Vertices
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The vertices for each key frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[][] Vertices { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[][]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_DeformTimeline_Apply_" data-uid="Spine.DeformTimeline.Apply*"></a>
+
+  <h3 id="Spine_DeformTimeline_Apply_Spine_Skeleton_System_Single_System_Single_Spine_ExposedList_Spine_Event__System_Single_Spine_MixBlend_Spine_MixDirection_" data-uid="Spine.DeformTimeline.Apply(Spine.Skeleton,System.Single,System.Single,Spine.ExposedList{Spine.Event},System.Single,Spine.MixBlend,Spine.MixDirection)">
+  Apply(Skeleton, float, float, ExposedList&lt;Event&gt;, float, MixBlend, MixDirection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Apply(Skeleton skeleton, float lastTime, float time, ExposedList&lt;Event&gt; firedEvents, float alpha, MixBlend blend, MixDirection direction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skeleton</code> <a class="xref" href="Spine.Skeleton.html">Skeleton</a></dt>
+    <dd></dd>
+    <dt><code>lastTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>firedEvents</code> <a class="xref" href="Spine.ExposedList-1.html">ExposedList</a>&lt;<a class="xref" href="Spine.Event.html">Event</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>alpha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>blend</code> <a class="xref" href="Spine.MixBlend.html">MixBlend</a></dt>
+    <dd></dd>
+    <dt><code>direction</code> <a class="xref" href="Spine.MixDirection.html">MixDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_DeformTimeline_SetFrame_" data-uid="Spine.DeformTimeline.SetFrame*"></a>
+
+  <h3 id="Spine_DeformTimeline_SetFrame_System_Int32_System_Single_System_Single___" data-uid="Spine.DeformTimeline.SetFrame(System.Int32,System.Single,System.Single[])">
+  SetFrame(int, float, float[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the time in seconds and the vertices for the specified key frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFrame(int frameIndex, float time, float[] vertices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frameIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>vertices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p>Vertex positions for an unweighted VertexAttachment, or deform offsets if it has weights.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

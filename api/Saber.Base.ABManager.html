@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ABManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ABManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Saber.Base.ABManager">
+
+
+
+  <h1 id="Saber_Base_ABManager" data-uid="Saber.Base.ABManager" class="text-break">
+    Class ABManager
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Saber.html">Saber</a>.<a class="xref" href="Saber.Base.html">Base</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>AB包管理器 全局唯一 使用单例模式</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ABManager : AutoSingleton&lt;ABManager&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Singleton-1.html">Singleton</a>&lt;<a class="xref" href="Saber.Base.ABManager.html">ABManager</a>&gt;</div>
+      <div><a class="xref" href="AutoSingleton-1.html">AutoSingleton</a>&lt;<a class="xref" href="Saber.Base.ABManager.html">ABManager</a>&gt;</div>
+      <div><span class="xref">ABManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="AutoSingleton-1.html#AutoSingleton`1.Instance">AutoSingleton&lt;ABManager&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.instance">Singleton&lt;ABManager&gt;.instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.Awake">Singleton&lt;ABManager&gt;.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.IsInitialized">Singleton&lt;ABManager&gt;.IsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.OnDestroy">Singleton&lt;ABManager&gt;.OnDestroy()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Saber_Base_ABManager_Init_" data-uid="Saber.Base.ABManager.Init*"></a>
+
+  <h3 id="Saber_Base_ABManager_Init" data-uid="Saber.Base.ABManager.Init">
+  Init()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Init()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Saber_Base_ABManager_LoadABPackage_" data-uid="Saber.Base.ABManager.LoadABPackage*"></a>
+
+  <h3 id="Saber_Base_ABManager_LoadABPackage_System_String_" data-uid="Saber.Base.ABManager.LoadABPackage(System.String)">
+  LoadABPackage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetBundle LoadABPackage(string abName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AssetBundle</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Saber_Base_ABManager_LoadResource_" data-uid="Saber.Base.ABManager.LoadResource*"></a>
+
+  <h3 id="Saber_Base_ABManager_LoadResource_System_String_System_String_" data-uid="Saber.Base.ABManager.LoadResource(System.String,System.String)">
+  LoadResource(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Object LoadResource(string abName, string resName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>resName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Object</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Saber_Base_ABManager_LoadResource_" data-uid="Saber.Base.ABManager.LoadResource*"></a>
+
+  <h3 id="Saber_Base_ABManager_LoadResource_System_String_System_String_System_Type_" data-uid="Saber.Base.ABManager.LoadResource(System.String,System.String,System.Type)">
+  LoadResource(string, string, Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Object LoadResource(string abName, string resName, Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>resName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Object</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Saber_Base_ABManager_LoadResourceAsync_" data-uid="Saber.Base.ABManager.LoadResourceAsync*"></a>
+
+  <h3 id="Saber_Base_ABManager_LoadResourceAsync_System_String_System_String_System_Action_Object__" data-uid="Saber.Base.ABManager.LoadResourceAsync(System.String,System.String,System.Action{Object})">
+  LoadResourceAsync(string, string, Action&lt;Object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>提供异步加载----注意 这里加载AB包是同步加载，只是加载资源是异步</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadResourceAsync(string abName, string resName, Action&lt;Object&gt; finishLoadObjectHandler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ab包名称</p>
+</dd>
+    <dt><code>resName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源名称</p>
+</dd>
+    <dt><code>finishLoadObjectHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Object</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Saber_Base_ABManager_LoadResourceAsync_" data-uid="Saber.Base.ABManager.LoadResourceAsync*"></a>
+
+  <h3 id="Saber_Base_ABManager_LoadResourceAsync_System_String_System_String_System_Type_System_Action_Object__" data-uid="Saber.Base.ABManager.LoadResourceAsync(System.String,System.String,System.Type,System.Action{Object})">
+  LoadResourceAsync(string, string, Type, Action&lt;Object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadResourceAsync(string abName, string resName, Type type, Action&lt;Object&gt; finishLoadObjectHandler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>resName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>finishLoadObjectHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Object</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Saber_Base_ABManager_LoadResourceAsync_" data-uid="Saber.Base.ABManager.LoadResourceAsync*"></a>
+
+  <h3 id="Saber_Base_ABManager_LoadResourceAsync__1_System_String_System_String_System_Action_Object__" data-uid="Saber.Base.ABManager.LoadResourceAsync``1(System.String,System.String,System.Action{Object})">
+  LoadResourceAsync&lt;T&gt;(string, string, Action&lt;Object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadResourceAsync&lt;T&gt;(string abName, string resName, Action&lt;Object&gt; finishLoadObjectHandler) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>resName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>finishLoadObjectHandler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">Object</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Saber_Base_ABManager_LoadResource_" data-uid="Saber.Base.ABManager.LoadResource*"></a>
+
+  <h3 id="Saber_Base_ABManager_LoadResource__1_System_String_System_String_" data-uid="Saber.Base.ABManager.LoadResource``1(System.String,System.String)">
+  LoadResource&lt;T&gt;(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>同步加载资源---泛型加载 简单直观 无需显示转换</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T LoadResource&lt;T&gt;(string abName, string resName) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ab包的名称</p>
+</dd>
+    <dt><code>resName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>资源名称</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Saber_Base_ABManager_UnLoad_" data-uid="Saber.Base.ABManager.UnLoad*"></a>
+
+  <h3 id="Saber_Base_ABManager_UnLoad_System_String_" data-uid="Saber.Base.ABManager.UnLoad(System.String)">
+  UnLoad(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnLoad(string abName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>abName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Saber_Base_ABManager_UnLoadAll_" data-uid="Saber.Base.ABManager.UnLoadAll*"></a>
+
+  <h3 id="Saber_Base_ABManager_UnLoadAll" data-uid="Saber.Base.ABManager.UnLoadAll">
+  UnLoadAll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnLoadAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

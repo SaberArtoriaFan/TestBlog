@@ -1,0 +1,1613 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Skeleton
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Skeleton
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.Skeleton">
+
+
+
+  <h1 id="Spine_Skeleton" data-uid="Spine.Skeleton" class="text-break">
+    Class Skeleton
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Skeleton</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Skeleton</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Spine.SpineSkeletonExtensions.html#Spine_SpineSkeletonExtensions_SetDrawOrderToSetupPose_Spine_Skeleton_">SpineSkeletonExtensions.SetDrawOrderToSetupPose(Skeleton)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.SpineSkeletonExtensions.html#Spine_SpineSkeletonExtensions_SetSlotAttachmentsToSetupPose_Spine_Skeleton_">SpineSkeletonExtensions.SetSlotAttachmentsToSetupPose(Skeleton)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.SpineSkeletonExtensions.html#Spine_SpineSkeletonExtensions_SetSlotAttachmentToSetupPose_Spine_Skeleton_System_Int32_">SpineSkeletonExtensions.SetSlotAttachmentToSetupPose(Skeleton, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.SkinUtilities.html#Spine_Unity_AttachmentTools_SkinUtilities_GetClonedSkin_Spine_Skeleton_System_String_System_Boolean_System_Boolean_System_Boolean_">SkinUtilities.GetClonedSkin(Skeleton, string, bool, bool, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.AttachmentTools.SkinUtilities.html#Spine_Unity_AttachmentTools_SkinUtilities_UnshareSkin_Spine_Skeleton_System_Boolean_System_Boolean_Spine_AnimationState_">SkinUtilities.UnshareSkin(Skeleton, bool, bool, AnimationState)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.SkeletonExtensions.html#Spine_Unity_SkeletonExtensions_GetColor_Spine_Skeleton_">SkeletonExtensions.GetColor(Skeleton)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.SkeletonExtensions.html#Spine_Unity_SkeletonExtensions_GetLocalScale_Spine_Skeleton_">SkeletonExtensions.GetLocalScale(Skeleton)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.SkeletonExtensions.html#Spine_Unity_SkeletonExtensions_SetColor_Spine_Skeleton_Color_">SkeletonExtensions.SetColor(Skeleton, Color)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.SkeletonExtensions.html#Spine_Unity_SkeletonExtensions_SetColor_Spine_Skeleton_Color32_">SkeletonExtensions.SetColor(Skeleton, Color32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Unity.SkeletonExtensions.html#Spine_Unity_SkeletonExtensions_SetLocalScale_Spine_Skeleton_Vector2_">SkeletonExtensions.SetLocalScale(Skeleton, Vector2)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Spine_Skeleton__ctor_" data-uid="Spine.Skeleton.#ctor*"></a>
+
+  <h3 id="Spine_Skeleton__ctor_Spine_SkeletonData_" data-uid="Spine.Skeleton.#ctor(Spine.SkeletonData)">
+  Skeleton(SkeletonData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Skeleton(SkeletonData data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="Spine.SkeletonData.html">SkeletonData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Spine_Skeleton_A_" data-uid="Spine.Skeleton.A*"></a>
+
+  <h3 id="Spine_Skeleton_A" data-uid="Spine.Skeleton.A">
+  A
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float A { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_B_" data-uid="Spine.Skeleton.B*"></a>
+
+  <h3 id="Spine_Skeleton_B" data-uid="Spine.Skeleton.B">
+  B
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float B { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_Bones_" data-uid="Spine.Skeleton.Bones*"></a>
+
+  <h3 id="Spine_Skeleton_Bones" data-uid="Spine.Skeleton.Bones">
+  Bones
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExposedList&lt;Bone&gt; Bones { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.ExposedList-1.html">ExposedList</a>&lt;<a class="xref" href="Spine.Bone.html">Bone</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_Data_" data-uid="Spine.Skeleton.Data*"></a>
+
+  <h3 id="Spine_Skeleton_Data" data-uid="Spine.Skeleton.Data">
+  Data
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkeletonData Data { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.SkeletonData.html">SkeletonData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_DrawOrder_" data-uid="Spine.Skeleton.DrawOrder*"></a>
+
+  <h3 id="Spine_Skeleton_DrawOrder" data-uid="Spine.Skeleton.DrawOrder">
+  DrawOrder
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExposedList&lt;Slot&gt; DrawOrder { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.ExposedList-1.html">ExposedList</a>&lt;<a class="xref" href="Spine.Slot.html">Slot</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_FlipX_" data-uid="Spine.Skeleton.FlipX*"></a>
+
+  <h3 id="Spine_Skeleton_FlipX" data-uid="Spine.Skeleton.FlipX">
+  FlipX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ScaleX instead. FlipX is when ScaleX is negative.&quot;)]
+public bool FlipX { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_FlipY_" data-uid="Spine.Skeleton.FlipY*"></a>
+
+  <h3 id="Spine_Skeleton_FlipY" data-uid="Spine.Skeleton.FlipY">
+  FlipY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ScaleY instead. FlipY is when ScaleY is negative.&quot;)]
+public bool FlipY { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_G_" data-uid="Spine.Skeleton.G*"></a>
+
+  <h3 id="Spine_Skeleton_G" data-uid="Spine.Skeleton.G">
+  G
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float G { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_IkConstraints_" data-uid="Spine.Skeleton.IkConstraints*"></a>
+
+  <h3 id="Spine_Skeleton_IkConstraints" data-uid="Spine.Skeleton.IkConstraints">
+  IkConstraints
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExposedList&lt;IkConstraint&gt; IkConstraints { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.ExposedList-1.html">ExposedList</a>&lt;<a class="xref" href="Spine.IkConstraint.html">IkConstraint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_PathConstraints_" data-uid="Spine.Skeleton.PathConstraints*"></a>
+
+  <h3 id="Spine_Skeleton_PathConstraints" data-uid="Spine.Skeleton.PathConstraints">
+  PathConstraints
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExposedList&lt;PathConstraint&gt; PathConstraints { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.ExposedList-1.html">ExposedList</a>&lt;<a class="xref" href="Spine.PathConstraint.html">PathConstraint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_R_" data-uid="Spine.Skeleton.R*"></a>
+
+  <h3 id="Spine_Skeleton_R" data-uid="Spine.Skeleton.R">
+  R
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float R { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_RootBone_" data-uid="Spine.Skeleton.RootBone*"></a>
+
+  <h3 id="Spine_Skeleton_RootBone" data-uid="Spine.Skeleton.RootBone">
+  RootBone
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bone RootBone { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Bone.html">Bone</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_ScaleX_" data-uid="Spine.Skeleton.ScaleX*"></a>
+
+  <h3 id="Spine_Skeleton_ScaleX" data-uid="Spine.Skeleton.ScaleX">
+  ScaleX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ScaleX { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_ScaleY_" data-uid="Spine.Skeleton.ScaleY*"></a>
+
+  <h3 id="Spine_Skeleton_ScaleY" data-uid="Spine.Skeleton.ScaleY">
+  ScaleY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ScaleY { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_Skin_" data-uid="Spine.Skeleton.Skin*"></a>
+
+  <h3 id="Spine_Skeleton_Skin" data-uid="Spine.Skeleton.Skin">
+  Skin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Skin Skin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_Slots_" data-uid="Spine.Skeleton.Slots*"></a>
+
+  <h3 id="Spine_Skeleton_Slots" data-uid="Spine.Skeleton.Slots">
+  Slots
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExposedList&lt;Slot&gt; Slots { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.ExposedList-1.html">ExposedList</a>&lt;<a class="xref" href="Spine.Slot.html">Slot</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_Time_" data-uid="Spine.Skeleton.Time*"></a>
+
+  <h3 id="Spine_Skeleton_Time" data-uid="Spine.Skeleton.Time">
+  Time
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Time { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_TransformConstraints_" data-uid="Spine.Skeleton.TransformConstraints*"></a>
+
+  <h3 id="Spine_Skeleton_TransformConstraints" data-uid="Spine.Skeleton.TransformConstraints">
+  TransformConstraints
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExposedList&lt;TransformConstraint&gt; TransformConstraints { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.ExposedList-1.html">ExposedList</a>&lt;<a class="xref" href="Spine.TransformConstraint.html">TransformConstraint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_UpdateCacheList_" data-uid="Spine.Skeleton.UpdateCacheList*"></a>
+
+  <h3 id="Spine_Skeleton_UpdateCacheList" data-uid="Spine.Skeleton.UpdateCacheList">
+  UpdateCacheList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExposedList&lt;IUpdatable&gt; UpdateCacheList { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.ExposedList-1.html">ExposedList</a>&lt;<a class="xref" href="Spine.IUpdatable.html">IUpdatable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_X_" data-uid="Spine.Skeleton.X*"></a>
+
+  <h3 id="Spine_Skeleton_X" data-uid="Spine.Skeleton.X">
+  X
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float X { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_Y_" data-uid="Spine.Skeleton.Y*"></a>
+
+  <h3 id="Spine_Skeleton_Y" data-uid="Spine.Skeleton.Y">
+  Y
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Y { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_Skeleton_FindBone_" data-uid="Spine.Skeleton.FindBone*"></a>
+
+  <h3 id="Spine_Skeleton_FindBone_System_String_" data-uid="Spine.Skeleton.FindBone(System.String)">
+  FindBone(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bone FindBone(string boneName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boneName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Bone.html">Bone</a></dt>
+    <dd><p>May be null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_FindBoneIndex_" data-uid="Spine.Skeleton.FindBoneIndex*"></a>
+
+  <h3 id="Spine_Skeleton_FindBoneIndex_System_String_" data-uid="Spine.Skeleton.FindBoneIndex(System.String)">
+  FindBoneIndex(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindBoneIndex(string boneName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boneName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>-1 if the bone was not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_FindIkConstraint_" data-uid="Spine.Skeleton.FindIkConstraint*"></a>
+
+  <h3 id="Spine_Skeleton_FindIkConstraint_System_String_" data-uid="Spine.Skeleton.FindIkConstraint(System.String)">
+  FindIkConstraint(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IkConstraint FindIkConstraint(string constraintName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>constraintName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.IkConstraint.html">IkConstraint</a></dt>
+    <dd><p>May be null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_FindPathConstraint_" data-uid="Spine.Skeleton.FindPathConstraint*"></a>
+
+  <h3 id="Spine_Skeleton_FindPathConstraint_System_String_" data-uid="Spine.Skeleton.FindPathConstraint(System.String)">
+  FindPathConstraint(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PathConstraint FindPathConstraint(string constraintName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>constraintName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.PathConstraint.html">PathConstraint</a></dt>
+    <dd><p>May be null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_FindSlot_" data-uid="Spine.Skeleton.FindSlot*"></a>
+
+  <h3 id="Spine_Skeleton_FindSlot_System_String_" data-uid="Spine.Skeleton.FindSlot(System.String)">
+  FindSlot(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Slot FindSlot(string slotName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Slot.html">Slot</a></dt>
+    <dd><p>May be null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_FindSlotIndex_" data-uid="Spine.Skeleton.FindSlotIndex*"></a>
+
+  <h3 id="Spine_Skeleton_FindSlotIndex_System_String_" data-uid="Spine.Skeleton.FindSlotIndex(System.String)">
+  FindSlotIndex(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindSlotIndex(string slotName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>-1 if the bone was not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_FindTransformConstraint_" data-uid="Spine.Skeleton.FindTransformConstraint*"></a>
+
+  <h3 id="Spine_Skeleton_FindTransformConstraint_System_String_" data-uid="Spine.Skeleton.FindTransformConstraint(System.String)">
+  FindTransformConstraint(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransformConstraint FindTransformConstraint(string constraintName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>constraintName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.TransformConstraint.html">TransformConstraint</a></dt>
+    <dd><p>May be null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_GetAttachment_" data-uid="Spine.Skeleton.GetAttachment*"></a>
+
+  <h3 id="Spine_Skeleton_GetAttachment_System_Int32_System_String_" data-uid="Spine.Skeleton.GetAttachment(System.Int32,System.String)">
+  GetAttachment(int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds an attachment by looking in the skin and skeletonData.defaultSkin using the slot index and attachment name.First the skin is checked and if the attachment was not found, the default skin is checked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Attachment GetAttachment(int slotIndex, string attachmentName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>attachmentName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Attachment.html">Attachment</a></dt>
+    <dd><p>May be null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_GetAttachment_" data-uid="Spine.Skeleton.GetAttachment*"></a>
+
+  <h3 id="Spine_Skeleton_GetAttachment_System_String_System_String_" data-uid="Spine.Skeleton.GetAttachment(System.String,System.String)">
+  GetAttachment(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds an attachment by looking in the {@link #skin} and {@link SkeletonData#defaultSkin} using the slot name and attachment name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Attachment GetAttachment(string slotName, string attachmentName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>attachmentName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Attachment.html">Attachment</a></dt>
+    <dd><p>May be null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_GetBounds_" data-uid="Spine.Skeleton.GetBounds*"></a>
+
+  <h3 id="Spine_Skeleton_GetBounds_System_Single__System_Single__System_Single__System_Single__System_Single____" data-uid="Spine.Skeleton.GetBounds(System.Single@,System.Single@,System.Single@,System.Single@,System.Single[]@)">
+  GetBounds(out float, out float, out float, out float, ref float[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the axis aligned bounding box (AABB) of the region and mesh attachments for the current pose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetBounds(out float x, out float y, out float width, out float height, ref float[] vertexBuffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The horizontal distance between the skeleton origin and the left side of the AABB.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The vertical distance between the skeleton origin and the bottom side of the AABB.</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The width of the AABB</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The height of the AABB.</p>
+</dd>
+    <dt><code>vertexBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p>Reference to hold a float[]. May be a null reference. This method will assign it a new float[] with the appropriate size as needed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_SetAttachment_" data-uid="Spine.Skeleton.SetAttachment*"></a>
+
+  <h3 id="Spine_Skeleton_SetAttachment_System_String_System_String_" data-uid="Spine.Skeleton.SetAttachment(System.String,System.String)">
+  SetAttachment(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A convenience method to set an attachment by finding the slot with FindSlot, finding the attachment with GetAttachment, then setting the slot's slot.Attachment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAttachment(string slotName, string attachmentName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>slotName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>attachmentName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>May be null to clear the slot's attachment.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_SetBonesToSetupPose_" data-uid="Spine.Skeleton.SetBonesToSetupPose*"></a>
+
+  <h3 id="Spine_Skeleton_SetBonesToSetupPose" data-uid="Spine.Skeleton.SetBonesToSetupPose">
+  SetBonesToSetupPose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the bones and constraints to their setup pose values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBonesToSetupPose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_SetSkin_" data-uid="Spine.Skeleton.SetSkin*"></a>
+
+  <h3 id="Spine_Skeleton_SetSkin_Spine_Skin_" data-uid="Spine.Skeleton.SetSkin(Spine.Skin)">
+  SetSkin(Skin)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the skin used to look up attachments before looking in the <a class="xref" href="Spine.SkeletonData.html#Spine_SkeletonData_DefaultSkin">DefaultSkin</a>. If the
+skin is changed, <a class="xref" href="Spine.Skeleton.html#Spine_Skeleton_UpdateCache">UpdateCache()</a> is called.
+</p>
+<p>Attachments from the new skin are attached if the corresponding attachment from the old skin was attached.
+If there was no old skin, each slot's setup mode attachment is attached from the new skin.
+</p>
+<p>After changing the skin, the visible attachments can be reset to those attached in the setup pose by calling
+<a class="xref" href="Spine.Skeleton.html#Spine_Skeleton_SetSlotsToSetupPose">SetSlotsToSetupPose()</a>.
+Also, often <a class="xref" href="Spine.AnimationState.html#Spine_AnimationState_Apply_Spine_Skeleton_">Apply(Skeleton)</a> is called before the next time the
+skeleton is rendered to allow any attachment keys in the current animation(s) to hide or show attachments from the new skin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSkin(Skin newSkin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newSkin</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd><p>May be null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_SetSkin_" data-uid="Spine.Skeleton.SetSkin*"></a>
+
+  <h3 id="Spine_Skeleton_SetSkin_System_String_" data-uid="Spine.Skeleton.SetSkin(System.String)">
+  SetSkin(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a skin by name (see SetSkin).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSkin(string skinName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skinName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_SetSlotsToSetupPose_" data-uid="Spine.Skeleton.SetSlotsToSetupPose*"></a>
+
+  <h3 id="Spine_Skeleton_SetSlotsToSetupPose" data-uid="Spine.Skeleton.SetSlotsToSetupPose">
+  SetSlotsToSetupPose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSlotsToSetupPose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_SetToSetupPose_" data-uid="Spine.Skeleton.SetToSetupPose*"></a>
+
+  <h3 id="Spine_Skeleton_SetToSetupPose" data-uid="Spine.Skeleton.SetToSetupPose">
+  SetToSetupPose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the bones, constraints, and slots to their setup pose values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetToSetupPose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_Update_" data-uid="Spine.Skeleton.Update*"></a>
+
+  <h3 id="Spine_Skeleton_Update_System_Single_" data-uid="Spine.Skeleton.Update(System.Single)">
+  Update(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update(float delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_UpdateCache_" data-uid="Spine.Skeleton.UpdateCache*"></a>
+
+  <h3 id="Spine_Skeleton_UpdateCache" data-uid="Spine.Skeleton.UpdateCache">
+  UpdateCache()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Caches information about bones and constraints. Must be called if the <a class="xref" href="Spine.Skeleton.html#Spine_Skeleton_Skin">Skin</a> is modified or if bones, constraints, or
+constraints, or weighted path attachments are added or removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateCache()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_UpdateWorldTransform_" data-uid="Spine.Skeleton.UpdateWorldTransform*"></a>
+
+  <h3 id="Spine_Skeleton_UpdateWorldTransform" data-uid="Spine.Skeleton.UpdateWorldTransform">
+  UpdateWorldTransform()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the world transform for each bone and applies constraints.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateWorldTransform()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Skeleton_UpdateWorldTransform_" data-uid="Spine.Skeleton.UpdateWorldTransform*"></a>
+
+  <h3 id="Spine_Skeleton_UpdateWorldTransform_Spine_Bone_" data-uid="Spine.Skeleton.UpdateWorldTransform(Spine.Bone)">
+  UpdateWorldTransform(Bone)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Temporarily sets the root bone as a child of the specified bone, then updates the world transform for each bone and applies
+all constraints.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateWorldTransform(Bone parent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <a class="xref" href="Spine.Bone.html">Bone</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

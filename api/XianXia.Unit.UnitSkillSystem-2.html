@@ -1,0 +1,640 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UnitSkillSystem&lt;T, T1&gt;
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UnitSkillSystem&lt;T, T1&gt;
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.Unit.UnitSkillSystem`2">
+
+
+
+  <h1 id="XianXia_Unit_UnitSkillSystem_2" data-uid="XianXia.Unit.UnitSkillSystem`2" class="text-break">
+    Class UnitSkillSystem&lt;T, T1&gt;
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a>.<a class="xref" href="XianXia.Unit.html">Unit</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class UnitSkillSystem&lt;T, T1&gt; : NormalSystemBase&lt;T&gt;, IMono where T : StatusOrganBase&lt;T1&gt;, new() where T1 : SkillBase, new()</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>T1</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Saber.ECS.SystemStone.html">SystemStone</a></div>
+      <div><a class="xref" href="Saber.ECS.SystemBase-1.html">SystemBase</a>&lt;T&gt;</div>
+      <div><a class="xref" href="Saber.ECS.SlightSystemBase-2.html">SlightSystemBase</a>&lt;T, <a class="xref" href="Saber.ECS.EntityBase.html">EntityBase</a>&gt;</div>
+      <div><a class="xref" href="Saber.ECS.NormalSystemBase-1.html">NormalSystemBase</a>&lt;T&gt;</div>
+      <div><span class="xref">UnitSkillSystem&lt;T, T1&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Saber.ECS.IMono.html">IMono</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="XianXia.Unit.UnitSpellSystem.html">UnitSpellSystem</a></div>
+      <div><a class="xref" href="XianXia.Unit.UnitTalentSystem.html">UnitTalentSystem</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_allComponents">SlightSystemBase&lt;T, EntityBase&gt;.allComponents</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_objectPool">SlightSystemBase&lt;T, EntityBase&gt;.objectPool</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_IsSpwanSystem">SlightSystemBase&lt;T, EntityBase&gt;.IsSpwanSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_Spawn">SlightSystemBase&lt;T, EntityBase&gt;.Spawn()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_InitAfterSpawn__0_">SlightSystemBase&lt;T, EntityBase&gt;.InitAfterSpawn(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_InitializeBeforeRecycle__0_">SlightSystemBase&lt;T, EntityBase&gt;.InitializeBeforeRecycle(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_SpawnComponent__1_">SlightSystemBase&lt;T, EntityBase&gt;.SpawnComponent(EntityBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_DestoryComponent__0_">SlightSystemBase&lt;T, EntityBase&gt;.DestoryComponent(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_Awake_Saber_ECS_WorldBase_">SlightSystemBase&lt;T, EntityBase&gt;.Awake(WorldBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemBase-1.html#Saber_ECS_SystemBase_1_ModelType">SystemBase&lt;T&gt;.ModelType</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_world">SystemStone.world</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_IsSpwanSystem">SystemStone.IsSpwanSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_enable">SystemStone.enable</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_World">SystemStone.World</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_Enable">SystemStone.Enable</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_SetEnable_System_Boolean_">SystemStone.SetEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_Awake_Saber_ECS_WorldBase_">SystemStone.Awake(WorldBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_OnDestory">SystemStone.OnDestory()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_LateUpdate">SystemStone.LateUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_Update">SystemStone.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_FixedUpdate">SystemStone.FixedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_OnDrawGizmos">SystemStone.OnDrawGizmos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_OnDrawGizmosSelected">SystemStone.OnDrawGizmosSelected()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_StartAfterNetwork">SystemStone.StartAfterNetwork()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_Reset">SystemStone.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="XianXia_Unit_UnitSkillSystem_2_skillSystem" data-uid="XianXia.Unit.UnitSkillSystem`2.skillSystem">
+  skillSystem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SkillSystemBase&lt;T1&gt; skillSystem</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Unit.SkillSystemBase-1.html">SkillSystemBase</a>&lt;T1&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_Unit_UnitSkillSystem_2_GainSkill_" data-uid="XianXia.Unit.UnitSkillSystem`2.GainSkill*"></a>
+
+  <h3 id="XianXia_Unit_UnitSkillSystem_2_GainSkill__0_System_Int32_" data-uid="XianXia.Unit.UnitSkillSystem`2.GainSkill(`0,System.Int32)">
+  GainSkill(T, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T1 GainSkill(T t, int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T1</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitSkillSystem_2_GainSkill_" data-uid="XianXia.Unit.UnitSkillSystem`2.GainSkill*"></a>
+
+  <h3 id="XianXia_Unit_UnitSkillSystem_2_GainSkill__0__1_" data-uid="XianXia.Unit.UnitSkillSystem`2.GainSkill(`0,`1)">
+  GainSkill(T, T1)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GainSkill(T t, T1 skill)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>skill</code> <span class="xref">T1</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitSkillSystem_2_GainSkillAfter_" data-uid="XianXia.Unit.UnitSkillSystem`2.GainSkillAfter*"></a>
+
+  <h3 id="XianXia_Unit_UnitSkillSystem_2_GainSkillAfter__1__0_System_Object_" data-uid="XianXia.Unit.UnitSkillSystem`2.GainSkillAfter(`1,`0,System.Object)">
+  GainSkillAfter(T1, T, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void GainSkillAfter(T1 s, T organ, object data = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <span class="xref">T1</span></dt>
+    <dd></dd>
+    <dt><code>organ</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitSkillSystem_2_GainSkillBefore_" data-uid="XianXia.Unit.UnitSkillSystem`2.GainSkillBefore*"></a>
+
+  <h3 id="XianXia_Unit_UnitSkillSystem_2_GainSkillBefore_System_Int32_System_Object__" data-uid="XianXia.Unit.UnitSkillSystem`2.GainSkillBefore(System.Int32,System.Object@)">
+  GainSkillBefore(int, out object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract string GainSkillBefore(int id, out object data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitSkillSystem_2_GainSkill_" data-uid="XianXia.Unit.UnitSkillSystem`2.GainSkill*"></a>
+
+  <h3 id="XianXia_Unit_UnitSkillSystem_2_GainSkill__1__0_" data-uid="XianXia.Unit.UnitSkillSystem`2.GainSkill``1(`0)">
+  GainSkill&lt;T2&gt;(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GainSkill&lt;T2&gt;(T t) where T2 : T1, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T2</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitSkillSystem_2_InitializeBeforeRecycle_" data-uid="XianXia.Unit.UnitSkillSystem`2.InitializeBeforeRecycle*"></a>
+
+  <h3 id="XianXia_Unit_UnitSkillSystem_2_InitializeBeforeRecycle__0_" data-uid="XianXia.Unit.UnitSkillSystem`2.InitializeBeforeRecycle(`0)">
+  InitializeBeforeRecycle(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InitializeBeforeRecycle(T t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitSkillSystem_2_LostSkill_" data-uid="XianXia.Unit.UnitSkillSystem`2.LostSkill*"></a>
+
+  <h3 id="XianXia_Unit_UnitSkillSystem_2_LostSkill__1_" data-uid="XianXia.Unit.UnitSkillSystem`2.LostSkill(`1)">
+  LostSkill(T1)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LostSkill(T1 skill)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skill</code> <span class="xref">T1</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitSkillSystem_2_LostSkill_" data-uid="XianXia.Unit.UnitSkillSystem`2.LostSkill*"></a>
+
+  <h3 id="XianXia_Unit_UnitSkillSystem_2_LostSkill__1_System_String_XianXia_Unit_StatusOrganBase___0__" data-uid="XianXia.Unit.UnitSkillSystem`2.LostSkill``1(System.String,XianXia.Unit.StatusOrganBase{``0})">
+  LostSkill&lt;T2&gt;(string, StatusOrganBase&lt;T2&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LostSkill&lt;T2&gt;(string skill, StatusOrganBase&lt;T2&gt; bar) where T2 : SkillBase</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skill</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>bar</code> <a class="xref" href="XianXia.Unit.StatusOrganBase-1.html">StatusOrganBase</a>&lt;T2&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T2</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitSkillSystem_2_SortFristSkill_" data-uid="XianXia.Unit.UnitSkillSystem`2.SortFristSkill*"></a>
+
+  <h3 id="XianXia_Unit_UnitSkillSystem_2_SortFristSkill__0__1_" data-uid="XianXia.Unit.UnitSkillSystem`2.SortFristSkill(`0,`1)">
+  SortFristSkill(T, T1)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SortFristSkill(T t, T1 skill)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>skill</code> <span class="xref">T1</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitSkillSystem_2_Start_" data-uid="XianXia.Unit.UnitSkillSystem`2.Start*"></a>
+
+  <h3 id="XianXia_Unit_UnitSkillSystem_2_Start" data-uid="XianXia.Unit.UnitSkillSystem`2.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

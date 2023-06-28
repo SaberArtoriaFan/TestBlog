@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AttachmentCloneExtensions
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AttachmentCloneExtensions
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.Unity.AttachmentTools.AttachmentCloneExtensions">
+
+
+
+  <h1 id="Spine_Unity_AttachmentTools_AttachmentCloneExtensions" data-uid="Spine.Unity.AttachmentTools.AttachmentCloneExtensions" class="text-break">
+    Class AttachmentCloneExtensions
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a>.<a class="xref" href="Spine.Unity.html">Unity</a>.<a class="xref" href="Spine.Unity.AttachmentTools.html">AttachmentTools</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AttachmentCloneExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AttachmentCloneExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetCopy_" data-uid="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.GetCopy*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetCopy_Spine_Attachment_System_Boolean_" data-uid="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.GetCopy(Spine.Attachment,System.Boolean)">
+  GetCopy(Attachment, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clones the attachment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Attachment GetCopy(this Attachment o, bool cloneMeshesAsLinked)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="Spine.Attachment.html">Attachment</a></dt>
+    <dd></dd>
+    <dt><code>cloneMeshesAsLinked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Attachment.html">Attachment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetLinkedMesh_" data-uid="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.GetLinkedMesh*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetLinkedMesh_Spine_MeshAttachment_Sprite_Material_" data-uid="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.GetLinkedMesh(Spine.MeshAttachment,Sprite,Material)">
+  GetLinkedMesh(MeshAttachment, Sprite, Material)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a new linked mesh linked to this MeshAttachment. It will be mapped to an AtlasRegion generated from a Sprite. The AtlasRegion will be mapped to a new Material based on the shader.
+For better caching and batching, use GetLinkedMesh(string, AtlasRegion, bool)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MeshAttachment GetLinkedMesh(this MeshAttachment o, Sprite sprite, Material materialPropertySource)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="Spine.MeshAttachment.html">MeshAttachment</a></dt>
+    <dd></dd>
+    <dt><code>sprite</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+    <dt><code>materialPropertySource</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.MeshAttachment.html">MeshAttachment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetLinkedMesh_" data-uid="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.GetLinkedMesh*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetLinkedMesh_Spine_MeshAttachment_Sprite_Shader_Material_" data-uid="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.GetLinkedMesh(Spine.MeshAttachment,Sprite,Shader,Material)">
+  GetLinkedMesh(MeshAttachment, Sprite, Shader, Material)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a new linked mesh linked to this MeshAttachment. It will be mapped to an AtlasRegion generated from a Sprite. The AtlasRegion will be mapped to a new Material based on the shader.
+For better caching and batching, use GetLinkedMesh(string, AtlasRegion, bool)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MeshAttachment GetLinkedMesh(this MeshAttachment o, Sprite sprite, Shader shader, Material materialPropertySource = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="Spine.MeshAttachment.html">MeshAttachment</a></dt>
+    <dd></dd>
+    <dt><code>sprite</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+    <dt><code>shader</code> <span class="xref">Shader</span></dt>
+    <dd></dd>
+    <dt><code>materialPropertySource</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.MeshAttachment.html">MeshAttachment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetLinkedMesh_" data-uid="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.GetLinkedMesh*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetLinkedMesh_Spine_MeshAttachment_System_String_Spine_AtlasRegion_" data-uid="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.GetLinkedMesh(Spine.MeshAttachment,System.String,Spine.AtlasRegion)">
+  GetLinkedMesh(MeshAttachment, string, AtlasRegion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a new linked mesh linked to this MeshAttachment. It will be mapped to the AtlasRegion provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MeshAttachment GetLinkedMesh(this MeshAttachment o, string newLinkedMeshName, AtlasRegion region)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="Spine.MeshAttachment.html">MeshAttachment</a></dt>
+    <dd></dd>
+    <dt><code>newLinkedMeshName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>region</code> <a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.MeshAttachment.html">MeshAttachment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetRemappedClone_" data-uid="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.GetRemappedClone*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetRemappedClone_Spine_Attachment_Spine_AtlasRegion_System_Boolean_System_Boolean_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.GetRemappedClone(Spine.Attachment,Spine.AtlasRegion,System.Boolean,System.Boolean,System.Single)">
+  GetRemappedClone(Attachment, AtlasRegion, bool, bool, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a clone of the attachment remapped with an atlasRegion image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Attachment GetRemappedClone(this Attachment o, AtlasRegion atlasRegion, bool cloneMeshAsLinked = true, bool useOriginalRegionSize = false, float scale = 0.01)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="Spine.Attachment.html">Attachment</a></dt>
+    <dd><p>The original attachment.</p>
+</dd>
+    <dt><code>atlasRegion</code> <a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd><p>Atlas region.</p>
+</dd>
+    <dt><code>cloneMeshAsLinked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If <code>true</code> MeshAttachments will be cloned as linked meshes and will inherit animation from the original attachment.</p>
+</dd>
+    <dt><code>useOriginalRegionSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If <code>true</code> the size of the original attachment will be followed, instead of using the Sprite size.</p>
+</dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Unity units per pixel scale used to scale the atlas region size when not using the original region size.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Attachment.html">Attachment</a></dt>
+    <dd><p>The remapped clone.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetRemappedClone_" data-uid="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.GetRemappedClone*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetRemappedClone_Spine_Attachment_Sprite_Material_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.GetRemappedClone(Spine.Attachment,Sprite,Material,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+  GetRemappedClone(Attachment, Sprite, Material, bool, bool, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a clone of the attachment remapped with a sprite image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Attachment GetRemappedClone(this Attachment o, Sprite sprite, Material sourceMaterial, bool premultiplyAlpha = true, bool cloneMeshAsLinked = true, bool useOriginalRegionSize = false, bool pivotShiftsMeshUVCoords = true, bool useOriginalRegionScale = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>o</code> <a class="xref" href="Spine.Attachment.html">Attachment</a></dt>
+    <dd><p>The original attachment.</p>
+</dd>
+    <dt><code>sprite</code> <span class="xref">Sprite</span></dt>
+    <dd><p>The sprite whose texture to use.</p>
+</dd>
+    <dt><code>sourceMaterial</code> <span class="xref">Material</span></dt>
+    <dd><p>The source material used to copy the shader and material properties from.</p>
+</dd>
+    <dt><code>premultiplyAlpha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If <code>true</code>, a premultiply alpha clone of the original texture will be created.
+See remarks below for additional info.</p>
+</dd>
+    <dt><code>cloneMeshAsLinked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If <code>true</code> MeshAttachments will be cloned as linked meshes and will inherit animation from the original attachment.</p>
+</dd>
+    <dt><code>useOriginalRegionSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If <code>true</code> the size of the original attachment will be followed, instead of using the Sprite size.</p>
+</dd>
+    <dt><code>pivotShiftsMeshUVCoords</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If <code>true</code> and the original Attachment is a MeshAttachment, then
+a non-central sprite pivot will shift uv coords in the opposite direction. Vertices will not be offset in
+any case when the original Attachment is a MeshAttachment.</p>
+</dd>
+    <dt><code>useOriginalRegionScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If <code>true</code> and the original Attachment is a RegionAttachment, then
+the original region's scale value is used instead of the Sprite's pixels per unit property. Since uniform scale is used,
+x scale of the original attachment (width scale) is used, scale in y direction (height scale) is ignored.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Attachment.html">Attachment</a></dt>
+    <dd><p>The remapped clone.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetRemappedClone_Spine_Attachment_Sprite_Material_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When parameter <code>premultiplyAlpha</code> is set to <code>true</code>, a premultiply alpha clone of the
+original texture will be created. Additionally, this PMA Texture clone is cached for later re-use,
+which might steadily increase the Texture memory footprint when used excessively.
+See <a class="xref" href="Spine.Unity.AttachmentTools.AtlasUtilities.html#Spine_Unity_AttachmentTools_AtlasUtilities_ClearCache">ClearCache()</a> on how to clear these cached textures.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

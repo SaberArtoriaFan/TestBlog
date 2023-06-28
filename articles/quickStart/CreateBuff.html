@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>如何创建一个新Buff </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="如何创建一个新Buff ">
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../public/main.js'
+    import { init } from './../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="如何创建一个新buff">如何创建一个新Buff</h1>
+
+<h2 id="1创建一个固有buff">1.创建一个固有Buff</h2>
+<p>如果是固有Buff则一定要写在<strong>XianXia.Unit.BuffDictionary</strong>类中，并继承自<strong>InherentBuff</strong>类。\</p>
+<h3 id="11与excel交互">1.1与Excel交互</h3>
+<pre><code class="lang-CSharp">        public virtual void InitData(BuffData buffData)
+        {
+            DispelPriority = BuffUtility.CalculateBuffDisperseType(buffData.EffectDisperseType);
+            RealName = buffData.BuffName;
+            IsDeBuff = buffData.BuffType == 1 ? false : true;
+            effectName = buffData.EffectPrefab;
+            effectOffectPos = buffData.EffectLocation;
+        }
+</code></pre>
+<p><strong>InitData</strong>可以在此函数中获取一些Buff的信息来自Excel表格
+<strong>注意</strong>：固有Buff名称一定要与Excel表格中的名称相对应</p>
+<h3 id="12如何创建特效">1.2如何创建特效</h3>
+<pre><code class="lang-CSharp">	//告知客户端谁加特效，加的部位在哪，以及特效名称；返回得到的时特效的Key
+                key = BuffUtility.LoadEffectForUnit(statusBar.OwnerUnit, effectName, effectOffectPos);
+</code></pre>
+<h3 id="13如何回收特效">1.3如何回收特效</h3>
+<p><strong>InherentBuff</strong>类中会在<strong>OnExitEvent</strong>事件中回收key的特效，如果有多个特效，则自行回收</p>
+<h2 id="2如何创建一个buff不依赖于excel">2.如何创建一个buff不依赖于Excel</h2>
+<pre><code class="lang-CSharp">                        buffSystem.AddBuff(&quot;Summon&quot;, unit.FindOrganInBody&lt;StatusOrgan&gt;(ComponentType.statusHeart),ownerMagicOrgan.OwnerUnit,
+                          null,
+                          null,
+                          buffEndAction,
+                          (int)v.liveTime,
+                          false);
+</code></pre>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

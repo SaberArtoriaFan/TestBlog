@@ -1,0 +1,552 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace Spine
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace Spine
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine">
+
+  <h1 id="Spine" data-uid="Spine" class="text-break">Namespace Spine
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Animation.html">Animation</a></dt>
+      <dd><p>A simple container for a list of timelines and a name.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.AnimationState.html">AnimationState</a></dt>
+      <dd><p>
+Applies animations over time, queues animations for later playback, mixes (crossfading) between animations, and applies
+multiple animations on top of each other (layering).</p>
+<p>
+See <a href="http://esotericsoftware.com/spine-applying-animations/">Applying Animations</a> in the Spine Runtimes Guide.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.AnimationStateData.html">AnimationStateData</a></dt>
+      <dd><p>Stores mix (crossfade) durations to be applied when AnimationState animations are changed.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.AnimationStateData.AnimationPairComparer.html">AnimationStateData.AnimationPairComparer</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Atlas.html">Atlas</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.AtlasAttachmentLoader.html">AtlasAttachmentLoader</a></dt>
+      <dd><p>An AttachmentLoader that configures attachments using texture regions from an Atlas.
+See <a href="http://esotericsoftware.com/spine-loading-skeleton-data#JSON-and-binary-data">Loading Skeleton Data</a> in the Spine Runtimes Guide.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.AtlasPage.html">AtlasPage</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Attachment.html">Attachment</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.AttachmentTimeline.html">AttachmentTimeline</a></dt>
+      <dd><p>Changes a slot's <a class="xref" href="Spine.Slot.html#Spine_Slot_Attachment">Attachment</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Bone.html">Bone</a></dt>
+      <dd><p>Stores a bone's current pose.</p>
+<p>
+A bone has a local transform which is used to compute its world transform. A bone also has an applied transform, which is a
+local transform that can be applied to compute the world transform. The local transform and applied transform may differ if a
+constraint or application code modifies the world transform after it was computed from the local transform.
+</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.BoneData.html">BoneData</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.BoundingBoxAttachment.html">BoundingBoxAttachment</a></dt>
+      <dd><p>Attachment that has a polygon for bounds checking.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.ClippingAttachment.html">ClippingAttachment</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.ColorTimeline.html">ColorTimeline</a></dt>
+      <dd><p>Changes a slot's <see cref="!:Slot.Color"></see>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.ConstraintData.html">ConstraintData</a></dt>
+      <dd><p>The base class for all constraint datas.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.CurveTimeline.html">CurveTimeline</a></dt>
+      <dd><p>The base class for timelines that use interpolation between key frame values.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.DeformTimeline.html">DeformTimeline</a></dt>
+      <dd><p>Changes a slot's <a class="xref" href="Spine.Slot.html#Spine_Slot_Deform">Deform</a> to deform a <a class="xref" href="Spine.VertexAttachment.html">VertexAttachment</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.DrawOrderTimeline.html">DrawOrderTimeline</a></dt>
+      <dd><p>Changes a skeleton's <a class="xref" href="Spine.Skeleton.html#Spine_Skeleton_DrawOrder">DrawOrder</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Event.html">Event</a></dt>
+      <dd><p>Stores the current pose values for an Event.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.EventData.html">EventData</a></dt>
+      <dd><p>Stores the setup pose values for an Event.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.EventTimeline.html">EventTimeline</a></dt>
+      <dd><p>Fires an <a class="xref" href="Spine.Event.html">Event</a> when specific animation times are reached.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.ExposedList-1.html">ExposedList&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.IInterpolation.html">IInterpolation</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.IkConstraint.html">IkConstraint</a></dt>
+      <dd><p>
+Stores the current pose for an IK constraint. An IK constraint adjusts the rotation of 1 or 2 constrained bones so the tip of
+the last bone is as close to the target bone as possible.</p>
+<p>
+See <a href="http://esotericsoftware.com/spine-ik-constraints">IK constraints</a> in the Spine User Guide.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.IkConstraintData.html">IkConstraintData</a></dt>
+      <dd><p>Stores the setup pose for an IkConstraint.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.IkConstraintTimeline.html">IkConstraintTimeline</a></dt>
+      <dd><p>Changes an IK constraint's <a class="xref" href="Spine.IkConstraint.html#Spine_IkConstraint_Mix">Mix</a>, <a class="xref" href="Spine.IkConstraint.html#Spine_IkConstraint_Softness">Softness</a>,
+<a class="xref" href="Spine.IkConstraint.html#Spine_IkConstraint_BendDirection">BendDirection</a>, <a class="xref" href="Spine.IkConstraint.html#Spine_IkConstraint_Stretch">Stretch</a>, and <a class="xref" href="Spine.IkConstraint.html#Spine_IkConstraint_Compress">Compress</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Json.html">Json</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.MathUtils.html">MathUtils</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.MeshAttachment.html">MeshAttachment</a></dt>
+      <dd><p>Attachment that displays a texture region using a mesh.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.PathAttachment.html">PathAttachment</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.PathConstraint.html">PathConstraint</a></dt>
+      <dd><p>
+Stores the current pose for a path constraint. A path constraint adjusts the rotation, translation, and scale of the
+constrained bones so they follow a {@link PathAttachment}.</p>
+<p>
+See <a href="http://esotericsoftware.com/spine-path-constraints">Path constraints</a> in the Spine User Guide.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.PathConstraintData.html">PathConstraintData</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.PathConstraintMixTimeline.html">PathConstraintMixTimeline</a></dt>
+      <dd><p>Changes a path constraint's mixes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.PathConstraintPositionTimeline.html">PathConstraintPositionTimeline</a></dt>
+      <dd><p>Changes a path constraint's <a class="xref" href="Spine.PathConstraint.html#Spine_PathConstraint_Position">Position</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.PathConstraintSpacingTimeline.html">PathConstraintSpacingTimeline</a></dt>
+      <dd><p>Changes a path constraint's <a class="xref" href="Spine.PathConstraint.html#Spine_PathConstraint_Spacing">Spacing</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.PointAttachment.html">PointAttachment</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Polygon.html">Polygon</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Pool-1.html">Pool&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Pow.html">Pow</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.PowOut.html">PowOut</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></dt>
+      <dd><p>Attachment that displays a texture region.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.RotateTimeline.html">RotateTimeline</a></dt>
+      <dd><p>Changes a bone's local <a class="xref" href="Spine.Bone.html#Spine_Bone_Rotation">Rotation</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.ScaleTimeline.html">ScaleTimeline</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.ShearTimeline.html">ShearTimeline</a></dt>
+      <dd><p>Changes a bone's local <a class="xref" href="Spine.Bone.html#Spine_Bone_ShearX">ShearX</a> and <a class="xref" href="Spine.Bone.html#Spine_Bone_ShearY">ShearY</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Skeleton.html">Skeleton</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.SkeletonBinary.html">SkeletonBinary</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.SkeletonBounds.html">SkeletonBounds</a></dt>
+      <dd><p>Collects each BoundingBoxAttachment that is visible and computes the world vertices for its polygon.
+The polygon vertices are provided along with convenience methods for doing hit detection.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.SkeletonClipping.html">SkeletonClipping</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.SkeletonData.html">SkeletonData</a></dt>
+      <dd><p>Stores the setup pose and all of the stateless data for a skeleton.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.SkeletonJson.html">SkeletonJson</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Skin.html">Skin</a></dt>
+      <dd><p>Stores attachments by slot index and attachment name.
+<p>See SkeletonData <a class="xref" href="Spine.SkeletonData.html#Spine_SkeletonData_DefaultSkin">DefaultSkin</a>, Skeleton <a class="xref" href="Spine.Skeleton.html#Spine_Skeleton_Skin">Skin</a>, and
+<a href="http://esotericsoftware.com/spine-runtime-skins">Runtime skins</a> in the Spine Runtimes Guide.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Slot.html">Slot</a></dt>
+      <dd><p>Stores a slot's current pose. Slots organize attachments for {@link Skeleton#drawOrder} purposes and provide a place to store
+state for an attachment.State cannot be stored in an attachment itself because attachments are stateless and may be shared
+across multiple skeletons.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.SlotData.html">SlotData</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.SpineSkeletonExtensions.html">SpineSkeletonExtensions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.TrackEntry.html">TrackEntry</a></dt>
+      <dd><p>
+Stores settings and other state for the playback of an animation on an <a class="xref" href="Spine.AnimationState.html">AnimationState</a> track.</p>
+<p>
+References to a track entry must not be kept after the <see cref="!:AnimationStateListener.Dispose(TrackEntry)"></see> event occurs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.TransformConstraint.html">TransformConstraint</a></dt>
+      <dd><p>
+Stores the current pose for a transform constraint. A transform constraint adjusts the world transform of the constrained
+bones to match that of the target bone.</p>
+<p>
+See <a href="http://esotericsoftware.com/spine-transform-constraints">Transform constraints</a> in the Spine User Guide.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.TransformConstraintData.html">TransformConstraintData</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.TransformConstraintTimeline.html">TransformConstraintTimeline</a></dt>
+      <dd><p>Changes a transform constraint's mixes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.TranslateTimeline.html">TranslateTimeline</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Triangulator.html">Triangulator</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.TwoColorTimeline.html">TwoColorTimeline</a></dt>
+      <dd><p>Changes a slot's <see cref="!:Slot.Color"></see> and <see cref="!:Slot.DarkColor"></see> for two color tinting.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.VertexAttachment.html">VertexAttachment</a></dt>
+      <dd><blockquote>
+<p>An attachment with vertices that are transformed by one or more bones and can be deformed by a slot's
+<a class="xref" href="Spine.Slot.html#Spine_Slot_Deform">Deform</a>.</p>
+</blockquote>
+</dd>
+    </dl>
+    <h3 id="structs">
+Structs
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.AnimationStateData.AnimationPair.html">AnimationStateData.AnimationPair</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.BoneMatrix.html">BoneMatrix</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.ExposedList-1.Enumerator.html">ExposedList&lt;T&gt;.Enumerator</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Skin.SkinEntry.html">Skin.SkinEntry</a></dt>
+      <dd><p>Stores an entry in the skin consisting of the slot index, name, and attachment.</p>
+</dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.AttachmentLoader.html">AttachmentLoader</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.IBoneTimeline.html">IBoneTimeline</a></dt>
+      <dd><p>An interface for timelines which change the property of a bone.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.IHasRendererObject.html">IHasRendererObject</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.ISlotTimeline.html">ISlotTimeline</a></dt>
+      <dd><p>An interface for timelines which change the property of a slot.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.IUpdatable.html">IUpdatable</a></dt>
+      <dd><p>The interface for items updated by <a class="xref" href="Spine.Skeleton.html#Spine_Skeleton_UpdateWorldTransform">UpdateWorldTransform()</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Pool-1.IPoolable.html">Pool&lt;T&gt;.IPoolable</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.TextureLoader.html">TextureLoader</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Timeline.html">Timeline</a></dt>
+      <dd><p>The interface for all timelines.</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.AttachmentType.html">AttachmentType</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.BlendMode.html">BlendMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.Format.html">Format</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.MixBlend.html">MixBlend</a></dt>
+      <dd><p>Controls how a timeline is mixed with the setup or current pose.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.MixDirection.html">MixDirection</a></dt>
+      <dd><p>Indicates whether a timeline's <pre><code class="lang-csharp">alpha</code></pre> is mixing out over time toward 0 (the setup or current pose value) or
+mixing in toward 1 (the timeline's value).
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.PositionMode.html">PositionMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.RotateMode.html">RotateMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.SpacingMode.html">SpacingMode</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.TextureFilter.html">TextureFilter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.TextureWrap.html">TextureWrap</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.TransformMode.html">TransformMode</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="delegates">
+Delegates
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.AnimationState.TrackEntryDelegate.html">AnimationState.TrackEntryDelegate</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Spine.AnimationState.TrackEntryEventDelegate.html">AnimationState.TrackEntryEventDelegate</a></dt>
+      <dd></dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

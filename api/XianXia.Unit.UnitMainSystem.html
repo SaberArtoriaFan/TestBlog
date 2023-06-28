@@ -1,0 +1,1325 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UnitMainSystem
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UnitMainSystem
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.Unit.UnitMainSystem">
+
+
+
+  <h1 id="XianXia_Unit_UnitMainSystem" data-uid="XianXia.Unit.UnitMainSystem" class="text-break">
+    Class UnitMainSystem
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a>.<a class="xref" href="XianXia.Unit.html">Unit</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UnitMainSystem : SingletonSystemBase&lt;UnitMainManagerModel&gt;, IMono</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Saber.ECS.SystemStone.html">SystemStone</a></div>
+      <div><a class="xref" href="Saber.ECS.SystemBase-1.html">SystemBase</a>&lt;<a class="xref" href="XianXia.Unit.UnitMainManagerModel.html">UnitMainManagerModel</a>&gt;</div>
+      <div><a class="xref" href="Saber.ECS.SingletonSystemBase-1.html">SingletonSystemBase</a>&lt;<a class="xref" href="XianXia.Unit.UnitMainManagerModel.html">UnitMainManagerModel</a>&gt;</div>
+      <div><span class="xref">UnitMainSystem</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Saber.ECS.IMono.html">IMono</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Saber.ECS.SingletonSystemBase-1.html#Saber_ECS_SingletonSystemBase_1_instance">SingletonSystemBase&lt;UnitMainManagerModel&gt;.instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemBase-1.html#Saber_ECS_SystemBase_1_ModelType">SystemBase&lt;UnitMainManagerModel&gt;.ModelType</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_world">SystemStone.world</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_IsSpwanSystem">SystemStone.IsSpwanSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_enable">SystemStone.enable</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_World">SystemStone.World</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_Enable">SystemStone.Enable</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_SetEnable_System_Boolean_">SystemStone.SetEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_Awake_Saber_ECS_WorldBase_">SystemStone.Awake(WorldBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_OnDestory">SystemStone.OnDestory()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_LateUpdate">SystemStone.LateUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_FixedUpdate">SystemStone.FixedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_OnDrawGizmos">SystemStone.OnDrawGizmos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_OnDrawGizmosSelected">SystemStone.OnDrawGizmosSelected()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_StartAfterNetwork">SystemStone.StartAfterNetwork()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="XianXia_Unit_UnitMainSystem__ctor_" data-uid="XianXia.Unit.UnitMainSystem.#ctor*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem__ctor" data-uid="XianXia.Unit.UnitMainSystem.#ctor">
+  UnitMainSystem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnitMainSystem()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_Unit_UnitMainSystem_ActionPriorityLevel_" data-uid="XianXia.Unit.UnitMainSystem.ActionPriorityLevel*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_ActionPriorityLevel_FSM_State_" data-uid="XianXia.Unit.UnitMainSystem.ActionPriorityLevel(FSM_State)">
+  ActionPriorityLevel(FSM_State)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>比较行动优先级，战立或移动（可以被立即打断）返回True，否则false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ActionPriorityLevel(FSM_State f2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>f2</code> <a class="xref" href="FSM_State.html">FSM_State</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_AddUnitToPos_" data-uid="XianXia.Unit.UnitMainSystem.AddUnitToPos*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_AddUnitToPos_UnitBase_XianXia_Terrain_Node_" data-uid="XianXia.Unit.UnitMainSystem.AddUnitToPos(UnitBase,XianXia.Terrain.Node)">
+  AddUnitToPos(UnitBase, Node)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将目标单位加至目标Node</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddUnitToPos(UnitBase unit, Node gridItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+    <dt><code>gridItem</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_CorrectionPosition_" data-uid="XianXia.Unit.UnitMainSystem.CorrectionPosition*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_CorrectionPosition_UnitBase_" data-uid="XianXia.Unit.UnitMainSystem.CorrectionPosition(UnitBase)">
+  CorrectionPosition(UnitBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>修正位置，由于计算可能出现误差，固需要此函数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CorrectionPosition(UnitBase unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_GetAllActioningUnits_" data-uid="XianXia.Unit.UnitMainSystem.GetAllActioningUnits*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_GetAllActioningUnits" data-uid="XianXia.Unit.UnitMainSystem.GetAllActioningUnits">
+  GetAllActioningUnits()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取所有正在攻击和施法的单位</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAllActioningUnits()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_GetAllOfMine_" data-uid="XianXia.Unit.UnitMainSystem.GetAllOfMine*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_GetAllOfMine_Saber_Camp_PlayerMemeber_" data-uid="XianXia.Unit.UnitMainSystem.GetAllOfMine(Saber.Camp.PlayerMemeber)">
+  GetAllOfMine(PlayerMemeber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取属于某个玩家的所有单位</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnitBase[] GetAllOfMine(PlayerMemeber player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Saber.Camp.PlayerMemeber.html">PlayerMemeber</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnitBase.html">UnitBase</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_GetAllUnits_" data-uid="XianXia.Unit.UnitMainSystem.GetAllUnits*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_GetAllUnits" data-uid="XianXia.Unit.UnitMainSystem.GetAllUnits">
+  GetAllUnits()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取当前游戏存活的所有玩家的所有单位</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnitBase[] GetAllUnits()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnitBase.html">UnitBase</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_GetDistanceOfTwoUnits_" data-uid="XianXia.Unit.UnitMainSystem.GetDistanceOfTwoUnits*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_GetDistanceOfTwoUnits_UnitBase_UnitBase_" data-uid="XianXia.Unit.UnitMainSystem.GetDistanceOfTwoUnits(UnitBase,UnitBase)">
+  GetDistanceOfTwoUnits(UnitBase, UnitBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>计算两个单位之间的距离
+依据是这两个单位的格子，而不是gameobject之间的距离</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetDistanceOfTwoUnits(UnitBase a, UnitBase b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_GetGridItemByUnit_" data-uid="XianXia.Unit.UnitMainSystem.GetGridItemByUnit*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_GetGridItemByUnit_UnitBase_" data-uid="XianXia.Unit.UnitMainSystem.GetGridItemByUnit(UnitBase)">
+  GetGridItemByUnit(UnitBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据单位获取格子</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node GetGridItemByUnit(UnitBase unitBase)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unitBase</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd><p>空则返回null</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_GetNumberUnitOfMine_" data-uid="XianXia.Unit.UnitMainSystem.GetNumberUnitOfMine*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_GetNumberUnitOfMine_Saber_Camp_PlayerMemeber_" data-uid="XianXia.Unit.UnitMainSystem.GetNumberUnitOfMine(Saber.Camp.PlayerMemeber)">
+  GetNumberUnitOfMine(PlayerMemeber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取属于某个玩家的所有单位的数量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumberUnitOfMine(PlayerMemeber player)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Saber.Camp.PlayerMemeber.html">PlayerMemeber</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_GetPosByUnit_" data-uid="XianXia.Unit.UnitMainSystem.GetPosByUnit*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_GetPosByUnit_UnitBase_" data-uid="XianXia.Unit.UnitMainSystem.GetPosByUnit(UnitBase)">
+  GetPosByUnit(UnitBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据单位获取格子，再根据格子获取世界坐标</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetPosByUnit(UnitBase unitBase)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unitBase</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd><p>格子为空则返回（0，0，-1000）</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_GetUnitAction_" data-uid="XianXia.Unit.UnitMainSystem.GetUnitAction*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_GetUnitAction_UnitBase_" data-uid="XianXia.Unit.UnitMainSystem.GetUnitAction(UnitBase)">
+  GetUnitAction(UnitBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取目标当前行动类型</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FSM_State GetUnitAction(UnitBase unitBase)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unitBase</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FSM_State.html">FSM_State</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_GetUnitByCondition_" data-uid="XianXia.Unit.UnitMainSystem.GetUnitByCondition*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_GetUnitByCondition_Saber_Camp_PlayerMemeber_XianXia_Unit_TargetType_" data-uid="XianXia.Unit.UnitMainSystem.GetUnitByCondition(Saber.Camp.PlayerMemeber,XianXia.Unit.TargetType)">
+  GetUnitByCondition(PlayerMemeber, TargetType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取和某个玩家符合某种关系的所有单位</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnitBase[] GetUnitByCondition(PlayerMemeber player, TargetType targetType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Saber.Camp.PlayerMemeber.html">PlayerMemeber</a></dt>
+    <dd></dd>
+    <dt><code>targetType</code> <a class="xref" href="XianXia.Unit.TargetType.html">TargetType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnitBase.html">UnitBase</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_GetUnitByGridItem_" data-uid="XianXia.Unit.UnitMainSystem.GetUnitByGridItem*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_GetUnitByGridItem_XianXia_Terrain_Node_" data-uid="XianXia.Unit.UnitMainSystem.GetUnitByGridItem(XianXia.Terrain.Node)">
+  GetUnitByGridItem(Node)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据格子返回单位</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnitBase GetUnitByGridItem(Node gridItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gridItem</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd><p>空则null</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_GetUnitCountByCondition_" data-uid="XianXia.Unit.UnitMainSystem.GetUnitCountByCondition*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_GetUnitCountByCondition_Saber_Camp_PlayerMemeber_XianXia_Unit_TargetType_" data-uid="XianXia.Unit.UnitMainSystem.GetUnitCountByCondition(Saber.Camp.PlayerMemeber,XianXia.Unit.TargetType)">
+  GetUnitCountByCondition(PlayerMemeber, TargetType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取和某个玩家符合某种关系的所有单位的数量</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetUnitCountByCondition(PlayerMemeber player, TargetType targetType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>player</code> <a class="xref" href="Saber.Camp.PlayerMemeber.html">PlayerMemeber</a></dt>
+    <dd></dd>
+    <dt><code>targetType</code> <a class="xref" href="XianXia.Unit.TargetType.html">TargetType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_RegisterUnitModel_" data-uid="XianXia.Unit.UnitMainSystem.RegisterUnitModel*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_RegisterUnitModel_XianXia_Unit_UnitModel_" data-uid="XianXia.Unit.UnitMainSystem.RegisterUnitModel(XianXia.Unit.UnitModel)">
+  RegisterUnitModel(UnitModel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>注册单位模型，key是ModelName</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnitModel RegisterUnitModel(UnitModel unitModel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unitModel</code> <a class="xref" href="XianXia.Unit.UnitModel.html">UnitModel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Unit.UnitModel.html">UnitModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_RemoveUnitFromGame_" data-uid="XianXia.Unit.UnitMainSystem.RemoveUnitFromGame*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_RemoveUnitFromGame_UnitBase_System_Single_" data-uid="XianXia.Unit.UnitMainSystem.RemoveUnitFromGame(UnitBase,System.Single)">
+  RemoveUnitFromGame(UnitBase, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将单位从游戏中移除，并在一定延迟后销毁</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnitFromGame(UnitBase unitBase, float delay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unitBase</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+    <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_RemoveUnitFromPos_" data-uid="XianXia.Unit.UnitMainSystem.RemoveUnitFromPos*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_RemoveUnitFromPos_UnitBase_" data-uid="XianXia.Unit.UnitMainSystem.RemoveUnitFromPos(UnitBase)">
+  RemoveUnitFromPos(UnitBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>把目标单位移出Node</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnitFromPos(UnitBase unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_Reset_" data-uid="XianXia.Unit.UnitMainSystem.Reset*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_Reset" data-uid="XianXia.Unit.UnitMainSystem.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>在切换至下一波战斗时被调用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_Start_" data-uid="XianXia.Unit.UnitMainSystem.Start*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_Start" data-uid="XianXia.Unit.UnitMainSystem.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_SwapnUnitInPos_" data-uid="XianXia.Unit.UnitMainSystem.SwapnUnitInPos*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_SwapnUnitInPos_XianXia_Unit_UnitModel_GameObject_Saber_Camp_PlayerEnum_Vector2Int_System_Action_UnitBase__" data-uid="XianXia.Unit.UnitMainSystem.SwapnUnitInPos(XianXia.Unit.UnitModel,GameObject,Saber.Camp.PlayerEnum,Vector2Int,System.Action{UnitBase})">
+  SwapnUnitInPos(UnitModel, GameObject, PlayerEnum, Vector2Int, Action&lt;UnitBase&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据指定单位数据模型和指定GameObject载体，指定所属玩家，在地图中的指定点位生成单位</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwapnUnitInPos(UnitModel unitModel, GameObject go, PlayerEnum playerEnum, Vector2Int pos, Action&lt;UnitBase&gt; finishAction = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unitModel</code> <a class="xref" href="XianXia.Unit.UnitModel.html">UnitModel</a></dt>
+    <dd><p>单位数据模型</p>
+</dd>
+    <dt><code>go</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+    <dt><code>playerEnum</code> <a class="xref" href="Saber.Camp.PlayerEnum.html">PlayerEnum</a></dt>
+    <dd></dd>
+    <dt><code>pos</code> <span class="xref">Vector2Int</span></dt>
+    <dd><p>该点不是实际世界坐标，而是A星地图中的点位坐标</p>
+</dd>
+    <dt><code>finishAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="UnitBase.html">UnitBase</a>&gt;</dt>
+    <dd><p>生成完毕后可以触发的句柄，在这里可以给单位一些初始效果，比如给召唤物生成后添加Buff</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_TargetFiltration_" data-uid="XianXia.Unit.UnitMainSystem.TargetFiltration*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_TargetFiltration_XianXia_Terrain_Node_XianXia_Terrain_Node_XianXia_Unit_TargetType_" data-uid="XianXia.Unit.UnitMainSystem.TargetFiltration(XianXia.Terrain.Node,XianXia.Terrain.Node,XianXia.Unit.TargetType)">
+  TargetFiltration(Node, Node, TargetType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>判断两个Node的关系
+本质是判断两个Node上的Unit的关系</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TargetFiltration(Node nodeA, Node nodeB, TargetType targetType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nodeA</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>nodeB</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>targetType</code> <a class="xref" href="XianXia.Unit.TargetType.html">TargetType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True表示满足该关系，否则不满足</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_Test_SwapnUnit_" data-uid="XianXia.Unit.UnitMainSystem.Test_SwapnUnit*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_Test_SwapnUnit_XianXia_Unit_TestUnitModel_System_Action_UnitBase__" data-uid="XianXia.Unit.UnitMainSystem.Test_SwapnUnit(XianXia.Unit.TestUnitModel,System.Action{UnitBase})">
+  Test_SwapnUnit(TestUnitModel, Action&lt;UnitBase&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>测试用的，现在已经废弃</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Test_SwapnUnit(TestUnitModel testUnitModel, Action&lt;UnitBase&gt; finishAction = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>testUnitModel</code> <a class="xref" href="XianXia.Unit.TestUnitModel.html">TestUnitModel</a></dt>
+    <dd></dd>
+    <dt><code>finishAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="UnitBase.html">UnitBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_TryGetUnitModel_" data-uid="XianXia.Unit.UnitMainSystem.TryGetUnitModel*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_TryGetUnitModel_System_String_XianXia_Unit_UnitModel__" data-uid="XianXia.Unit.UnitMainSystem.TryGetUnitModel(System.String,XianXia.Unit.UnitModel@)">
+  TryGetUnitModel(string, out UnitModel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>根据Key获取已经存过的单位资料模型信息</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetUnitModel(string key, out UnitModel res)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>res</code> <a class="xref" href="XianXia.Unit.UnitModel.html">UnitModel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_UnitBreakAction_" data-uid="XianXia.Unit.UnitMainSystem.UnitBreakAction*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_UnitBreakAction_UnitBase_FSM_State_" data-uid="XianXia.Unit.UnitMainSystem.UnitBreakAction(UnitBase,FSM_State)">
+  UnitBreakAction(UnitBase, FSM_State)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>立即停止该单位的指定类型行动
+包括动画
+停止后默认回到Idle动画</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnitBreakAction(UnitBase unit, FSM_State breakActionType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+    <dt><code>breakActionType</code> <a class="xref" href="FSM_State.html">FSM_State</a></dt>
+    <dd><p>max代表不论当前行动是什么一律停止</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_UnitStopAction_" data-uid="XianXia.Unit.UnitMainSystem.UnitStopAction*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_UnitStopAction_UnitBase_" data-uid="XianXia.Unit.UnitMainSystem.UnitStopAction(UnitBase)">
+  UnitStopAction(UnitBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>停止单位行动
+不包括动画
+并允许目标开启寻路</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnitStopAction(UnitBase unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_UnitTakeAction_" data-uid="XianXia.Unit.UnitMainSystem.UnitTakeAction*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_UnitTakeAction_UnitBase_FSM_State_System_Collections_IEnumerator_UnitBase_" data-uid="XianXia.Unit.UnitMainSystem.UnitTakeAction(UnitBase,FSM_State,System.Collections.IEnumerator,UnitBase)">
+  UnitTakeAction(UnitBase, FSM_State, IEnumerator, UnitBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>单位采取行动</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnitTakeAction(UnitBase unit, FSM_State fSM_State, IEnumerator coroutine, UnitBase target = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+    <dt><code>fSM_State</code> <a class="xref" href="FSM_State.html">FSM_State</a></dt>
+    <dd><p>行动类型</p>
+</dd>
+    <dt><code>coroutine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd><p>要记录的协程</p>
+</dd>
+    <dt><code>target</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd><p>行动单位移动跟随目标设置为该单位</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_Update_" data-uid="XianXia.Unit.UnitMainSystem.Update*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_Update" data-uid="XianXia.Unit.UnitMainSystem.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>所有生成单位的行动都被规定在系统运行周期中执行
+否则可能会出问题</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_UpdateDynamicObstacle_" data-uid="XianXia.Unit.UnitMainSystem.UpdateDynamicObstacle*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_UpdateDynamicObstacle_XianXia_Terrain_Node_System_Boolean_" data-uid="XianXia.Unit.UnitMainSystem.UpdateDynamicObstacle(XianXia.Terrain.Node,System.Boolean)">
+  UpdateDynamicObstacle(Node, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>暂时没用</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateDynamicObstacle(Node gridItem, bool isAdd = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gridItem</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>isAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitMainSystem_UpdateDynamicObstacleReal_" data-uid="XianXia.Unit.UnitMainSystem.UpdateDynamicObstacleReal*"></a>
+
+  <h3 id="XianXia_Unit_UnitMainSystem_UpdateDynamicObstacleReal_XianXia_Terrain_Node_System_Boolean_" data-uid="XianXia.Unit.UnitMainSystem.UpdateDynamicObstacleReal(XianXia.Terrain.Node,System.Boolean)">
+  UpdateDynamicObstacleReal(Node, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>将目标Node加入动态障碍Hash表中进行计算</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateDynamicObstacleReal(Node gridItem, bool isAdd = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gridItem</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>isAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="XianXia_Unit_UnitMainSystem_OnPlayerFailEvent" data-uid="XianXia.Unit.UnitMainSystem.OnPlayerFailEvent">
+  OnPlayerFailEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>该事件绑定了指定玩家失败事件，由该玩家所有单位阵亡时触发</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;PlayerMemeber&gt; OnPlayerFailEvent</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Saber.Camp.PlayerMemeber.html">PlayerMemeber</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

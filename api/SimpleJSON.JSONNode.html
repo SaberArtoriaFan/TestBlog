@@ -1,0 +1,4558 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class JSONNode
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class JSONNode
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SimpleJSON.JSONNode">
+
+
+
+  <h1 id="SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode" class="text-break">
+    Class JSONNode
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="SimpleJSON.html">SimpleJSON</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class JSONNode</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">JSONNode</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="SimpleJSON.JSONArray.html">JSONArray</a></div>
+      <div><a class="xref" href="SimpleJSON.JSONBool.html">JSONBool</a></div>
+      <div><a class="xref" href="SimpleJSON.JSONNull.html">JSONNull</a></div>
+      <div><a class="xref" href="SimpleJSON.JSONNumber.html">JSONNumber</a></div>
+      <div><a class="xref" href="SimpleJSON.JSONObject.html">JSONObject</a></div>
+      <div><a class="xref" href="SimpleJSON.JSONString.html">JSONString</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="SimpleJSON_JSONNode_allowLineComments" data-uid="SimpleJSON.JSONNode.allowLineComments">
+  allowLineComments
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool allowLineComments</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SimpleJSON_JSONNode_forceASCII" data-uid="SimpleJSON.JSONNode.forceASCII">
+  forceASCII
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool forceASCII</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SimpleJSON_JSONNode_longAsString" data-uid="SimpleJSON.JSONNode.longAsString">
+  longAsString
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool longAsString</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SimpleJSON_JSONNode_AsArray_" data-uid="SimpleJSON.JSONNode.AsArray*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsArray" data-uid="SimpleJSON.JSONNode.AsArray">
+  AsArray
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual JSONArray AsArray { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONArray.html">JSONArray</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsBool_" data-uid="SimpleJSON.JSONNode.AsBool*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsBool" data-uid="SimpleJSON.JSONNode.AsBool">
+  AsBool
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AsBool { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsByte_" data-uid="SimpleJSON.JSONNode.AsByte*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsByte" data-uid="SimpleJSON.JSONNode.AsByte">
+  AsByte
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte AsByte { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsByteArray_" data-uid="SimpleJSON.JSONNode.AsByteArray*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsByteArray" data-uid="SimpleJSON.JSONNode.AsByteArray">
+  AsByteArray
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] AsByteArray { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsByteList_" data-uid="SimpleJSON.JSONNode.AsByteList*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsByteList" data-uid="SimpleJSON.JSONNode.AsByteList">
+  AsByteList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual List&lt;byte&gt; AsByteList { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsChar_" data-uid="SimpleJSON.JSONNode.AsChar*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsChar" data-uid="SimpleJSON.JSONNode.AsChar">
+  AsChar
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual char AsChar { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsDateTime_" data-uid="SimpleJSON.JSONNode.AsDateTime*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsDateTime" data-uid="SimpleJSON.JSONNode.AsDateTime">
+  AsDateTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DateTime AsDateTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsDecimal_" data-uid="SimpleJSON.JSONNode.AsDecimal*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsDecimal" data-uid="SimpleJSON.JSONNode.AsDecimal">
+  AsDecimal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual decimal AsDecimal { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsDouble_" data-uid="SimpleJSON.JSONNode.AsDouble*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsDouble" data-uid="SimpleJSON.JSONNode.AsDouble">
+  AsDouble
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual double AsDouble { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsFloat_" data-uid="SimpleJSON.JSONNode.AsFloat*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsFloat" data-uid="SimpleJSON.JSONNode.AsFloat">
+  AsFloat
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float AsFloat { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsGuid_" data-uid="SimpleJSON.JSONNode.AsGuid*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsGuid" data-uid="SimpleJSON.JSONNode.AsGuid">
+  AsGuid
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Guid AsGuid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsInt_" data-uid="SimpleJSON.JSONNode.AsInt*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsInt" data-uid="SimpleJSON.JSONNode.AsInt">
+  AsInt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int AsInt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsLong_" data-uid="SimpleJSON.JSONNode.AsLong*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsLong" data-uid="SimpleJSON.JSONNode.AsLong">
+  AsLong
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual long AsLong { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsObject_" data-uid="SimpleJSON.JSONNode.AsObject*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsObject" data-uid="SimpleJSON.JSONNode.AsObject">
+  AsObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual JSONObject AsObject { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONObject.html">JSONObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsSByte_" data-uid="SimpleJSON.JSONNode.AsSByte*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsSByte" data-uid="SimpleJSON.JSONNode.AsSByte">
+  AsSByte
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual sbyte AsSByte { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsShort_" data-uid="SimpleJSON.JSONNode.AsShort*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsShort" data-uid="SimpleJSON.JSONNode.AsShort">
+  AsShort
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual short AsShort { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsStringArray_" data-uid="SimpleJSON.JSONNode.AsStringArray*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsStringArray" data-uid="SimpleJSON.JSONNode.AsStringArray">
+  AsStringArray
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string[] AsStringArray { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsStringList_" data-uid="SimpleJSON.JSONNode.AsStringList*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsStringList" data-uid="SimpleJSON.JSONNode.AsStringList">
+  AsStringList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual List&lt;string&gt; AsStringList { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsTimeSpan_" data-uid="SimpleJSON.JSONNode.AsTimeSpan*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsTimeSpan" data-uid="SimpleJSON.JSONNode.AsTimeSpan">
+  AsTimeSpan
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TimeSpan AsTimeSpan { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsUInt_" data-uid="SimpleJSON.JSONNode.AsUInt*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsUInt" data-uid="SimpleJSON.JSONNode.AsUInt">
+  AsUInt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual uint AsUInt { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsULong_" data-uid="SimpleJSON.JSONNode.AsULong*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsULong" data-uid="SimpleJSON.JSONNode.AsULong">
+  AsULong
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ulong AsULong { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_AsUShort_" data-uid="SimpleJSON.JSONNode.AsUShort*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_AsUShort" data-uid="SimpleJSON.JSONNode.AsUShort">
+  AsUShort
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ushort AsUShort { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Children_" data-uid="SimpleJSON.JSONNode.Children*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Children" data-uid="SimpleJSON.JSONNode.Children">
+  Children
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;JSONNode&gt; Children { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Count_" data-uid="SimpleJSON.JSONNode.Count*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Count" data-uid="SimpleJSON.JSONNode.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_DeepChildren_" data-uid="SimpleJSON.JSONNode.DeepChildren*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_DeepChildren" data-uid="SimpleJSON.JSONNode.DeepChildren">
+  DeepChildren
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;JSONNode&gt; DeepChildren { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Inline_" data-uid="SimpleJSON.JSONNode.Inline*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Inline" data-uid="SimpleJSON.JSONNode.Inline">
+  Inline
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Inline { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_IsArray_" data-uid="SimpleJSON.JSONNode.IsArray*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_IsArray" data-uid="SimpleJSON.JSONNode.IsArray">
+  IsArray
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsArray { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_IsBoolean_" data-uid="SimpleJSON.JSONNode.IsBoolean*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_IsBoolean" data-uid="SimpleJSON.JSONNode.IsBoolean">
+  IsBoolean
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsBoolean { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_IsNull_" data-uid="SimpleJSON.JSONNode.IsNull*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_IsNull" data-uid="SimpleJSON.JSONNode.IsNull">
+  IsNull
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsNull { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_IsNumber_" data-uid="SimpleJSON.JSONNode.IsNumber*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_IsNumber" data-uid="SimpleJSON.JSONNode.IsNumber">
+  IsNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_IsObject_" data-uid="SimpleJSON.JSONNode.IsObject*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_IsObject" data-uid="SimpleJSON.JSONNode.IsObject">
+  IsObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsObject { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_IsString_" data-uid="SimpleJSON.JSONNode.IsString*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_IsString" data-uid="SimpleJSON.JSONNode.IsString">
+  IsString
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsString { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Item_" data-uid="SimpleJSON.JSONNode.Item*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Item_System_Int32_" data-uid="SimpleJSON.JSONNode.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual JSONNode this[int aIndex] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Item_" data-uid="SimpleJSON.JSONNode.Item*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Item_System_String_" data-uid="SimpleJSON.JSONNode.Item(System.String)">
+  this[string]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual JSONNode this[string aKey] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Keys_" data-uid="SimpleJSON.JSONNode.Keys*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Keys" data-uid="SimpleJSON.JSONNode.Keys">
+  Keys
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JSONNode.KeyEnumerator Keys { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a>.<a class="xref" href="SimpleJSON.JSONNode.KeyEnumerator.html">KeyEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Linq_" data-uid="SimpleJSON.JSONNode.Linq*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Linq" data-uid="SimpleJSON.JSONNode.Linq">
+  Linq
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValuePair&lt;string, JSONNode&gt;&gt; Linq { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Tag_" data-uid="SimpleJSON.JSONNode.Tag*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Tag" data-uid="SimpleJSON.JSONNode.Tag">
+  Tag
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract JSONNodeType Tag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNodeType.html">JSONNodeType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Value_" data-uid="SimpleJSON.JSONNode.Value*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Value" data-uid="SimpleJSON.JSONNode.Value">
+  Value
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Value { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Values_" data-uid="SimpleJSON.JSONNode.Values*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Values" data-uid="SimpleJSON.JSONNode.Values">
+  Values
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JSONNode.ValueEnumerator Values { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a>.<a class="xref" href="SimpleJSON.JSONNode.ValueEnumerator.html">ValueEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SimpleJSON_JSONNode_Add_" data-uid="SimpleJSON.JSONNode.Add*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Add_SimpleJSON_JSONNode_" data-uid="SimpleJSON.JSONNode.Add(SimpleJSON.JSONNode)">
+  Add(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Add(JSONNode aItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aItem</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Add_" data-uid="SimpleJSON.JSONNode.Add*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Add_System_String_SimpleJSON_JSONNode_" data-uid="SimpleJSON.JSONNode.Add(System.String,SimpleJSON.JSONNode)">
+  Add(string, JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Add(string aKey, JSONNode aItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>aItem</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Clear_" data-uid="SimpleJSON.JSONNode.Clear*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Clear" data-uid="SimpleJSON.JSONNode.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Clone_" data-uid="SimpleJSON.JSONNode.Clone*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Clone" data-uid="SimpleJSON.JSONNode.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual JSONNode Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_DeserializeBinary_" data-uid="SimpleJSON.JSONNode.DeserializeBinary*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_DeserializeBinary_System_IO_BinaryReader_" data-uid="SimpleJSON.JSONNode.DeserializeBinary(System.IO.BinaryReader)">
+  DeserializeBinary(BinaryReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JSONNode DeserializeBinary(BinaryReader aReader)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aReader</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binaryreader">BinaryReader</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Equals_" data-uid="SimpleJSON.JSONNode.Equals*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Equals_System_Object_" data-uid="SimpleJSON.JSONNode.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_GetEnumerator_" data-uid="SimpleJSON.JSONNode.GetEnumerator*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_GetEnumerator" data-uid="SimpleJSON.JSONNode.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract JSONNode.Enumerator GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a>.<a class="xref" href="SimpleJSON.JSONNode.Enumerator.html">Enumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_GetHashCode_" data-uid="SimpleJSON.JSONNode.GetHashCode*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_GetHashCode" data-uid="SimpleJSON.JSONNode.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_GetValueOrDefault_" data-uid="SimpleJSON.JSONNode.GetValueOrDefault*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_GetValueOrDefault_System_String_SimpleJSON_JSONNode_" data-uid="SimpleJSON.JSONNode.GetValueOrDefault(System.String,SimpleJSON.JSONNode)">
+  GetValueOrDefault(string, JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual JSONNode GetValueOrDefault(string aKey, JSONNode aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>aDefault</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_HasKey_" data-uid="SimpleJSON.JSONNode.HasKey*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_HasKey_System_String_" data-uid="SimpleJSON.JSONNode.HasKey(System.String)">
+  HasKey(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HasKey(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_LoadFromBinaryBase64_" data-uid="SimpleJSON.JSONNode.LoadFromBinaryBase64*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_LoadFromBinaryBase64_System_String_" data-uid="SimpleJSON.JSONNode.LoadFromBinaryBase64(System.String)">
+  LoadFromBinaryBase64(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JSONNode LoadFromBinaryBase64(string aBase64)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aBase64</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_LoadFromBinaryFile_" data-uid="SimpleJSON.JSONNode.LoadFromBinaryFile*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_LoadFromBinaryFile_System_String_" data-uid="SimpleJSON.JSONNode.LoadFromBinaryFile(System.String)">
+  LoadFromBinaryFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JSONNode LoadFromBinaryFile(string aFileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_LoadFromBinaryStream_" data-uid="SimpleJSON.JSONNode.LoadFromBinaryStream*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_LoadFromBinaryStream_System_IO_Stream_" data-uid="SimpleJSON.JSONNode.LoadFromBinaryStream(System.IO.Stream)">
+  LoadFromBinaryStream(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JSONNode LoadFromBinaryStream(Stream aData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_LoadFromCompressedBase64_" data-uid="SimpleJSON.JSONNode.LoadFromCompressedBase64*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_LoadFromCompressedBase64_System_String_" data-uid="SimpleJSON.JSONNode.LoadFromCompressedBase64(System.String)">
+  LoadFromCompressedBase64(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JSONNode LoadFromCompressedBase64(string aBase64)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aBase64</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_LoadFromCompressedFile_" data-uid="SimpleJSON.JSONNode.LoadFromCompressedFile*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_LoadFromCompressedFile_System_String_" data-uid="SimpleJSON.JSONNode.LoadFromCompressedFile(System.String)">
+  LoadFromCompressedFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JSONNode LoadFromCompressedFile(string aFileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_LoadFromCompressedStream_" data-uid="SimpleJSON.JSONNode.LoadFromCompressedStream*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_LoadFromCompressedStream_System_IO_Stream_" data-uid="SimpleJSON.JSONNode.LoadFromCompressedStream(System.IO.Stream)">
+  LoadFromCompressedStream(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JSONNode LoadFromCompressedStream(Stream aData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Parse_" data-uid="SimpleJSON.JSONNode.Parse*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Parse_System_String_" data-uid="SimpleJSON.JSONNode.Parse(System.String)">
+  Parse(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JSONNode Parse(string aJSON)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aJSON</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Remove_" data-uid="SimpleJSON.JSONNode.Remove*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Remove_SimpleJSON_JSONNode_" data-uid="SimpleJSON.JSONNode.Remove(SimpleJSON.JSONNode)">
+  Remove(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual JSONNode Remove(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Remove_" data-uid="SimpleJSON.JSONNode.Remove*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Remove_System_Int32_" data-uid="SimpleJSON.JSONNode.Remove(System.Int32)">
+  Remove(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual JSONNode Remove(int aIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_Remove_" data-uid="SimpleJSON.JSONNode.Remove*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_Remove_System_String_" data-uid="SimpleJSON.JSONNode.Remove(System.String)">
+  Remove(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual JSONNode Remove(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_SaveToBinaryBase64_" data-uid="SimpleJSON.JSONNode.SaveToBinaryBase64*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_SaveToBinaryBase64" data-uid="SimpleJSON.JSONNode.SaveToBinaryBase64">
+  SaveToBinaryBase64()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SaveToBinaryBase64()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_SaveToBinaryFile_" data-uid="SimpleJSON.JSONNode.SaveToBinaryFile*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_SaveToBinaryFile_System_String_" data-uid="SimpleJSON.JSONNode.SaveToBinaryFile(System.String)">
+  SaveToBinaryFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveToBinaryFile(string aFileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_SaveToBinaryStream_" data-uid="SimpleJSON.JSONNode.SaveToBinaryStream*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_SaveToBinaryStream_System_IO_Stream_" data-uid="SimpleJSON.JSONNode.SaveToBinaryStream(System.IO.Stream)">
+  SaveToBinaryStream(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveToBinaryStream(Stream aData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_SaveToCompressedBase64_" data-uid="SimpleJSON.JSONNode.SaveToCompressedBase64*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_SaveToCompressedBase64" data-uid="SimpleJSON.JSONNode.SaveToCompressedBase64">
+  SaveToCompressedBase64()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SaveToCompressedBase64()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_SaveToCompressedFile_" data-uid="SimpleJSON.JSONNode.SaveToCompressedFile*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_SaveToCompressedFile_System_String_" data-uid="SimpleJSON.JSONNode.SaveToCompressedFile(System.String)">
+  SaveToCompressedFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveToCompressedFile(string aFileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_SaveToCompressedStream_" data-uid="SimpleJSON.JSONNode.SaveToCompressedStream*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_SaveToCompressedStream_System_IO_Stream_" data-uid="SimpleJSON.JSONNode.SaveToCompressedStream(System.IO.Stream)">
+  SaveToCompressedStream(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveToCompressedStream(Stream aData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_SerializeBinary_" data-uid="SimpleJSON.JSONNode.SerializeBinary*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_SerializeBinary_System_IO_BinaryWriter_" data-uid="SimpleJSON.JSONNode.SerializeBinary(System.IO.BinaryWriter)">
+  SerializeBinary(BinaryWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SerializeBinary(BinaryWriter aWriter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aWriter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_ToString_" data-uid="SimpleJSON.JSONNode.ToString*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_ToString" data-uid="SimpleJSON.JSONNode.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that represents the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_ToString_" data-uid="SimpleJSON.JSONNode.ToString*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_ToString_System_Int32_" data-uid="SimpleJSON.JSONNode.ToString(System.Int32)">
+  ToString(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ToString(int aIndent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aIndent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="SimpleJSON_JSONNode_op_Equality_" data-uid="SimpleJSON.JSONNode.op_Equality*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Equality_SimpleJSON_JSONNode_System_Object_" data-uid="SimpleJSON.JSONNode.op_Equality(SimpleJSON.JSONNode,System.Object)">
+  operator ==(JSONNode, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(JSONNode a, object b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Boolean" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Boolean">
+  implicit operator bool(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator bool(JSONNode d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Byte" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Byte">
+  implicit operator byte(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator byte(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Byte__" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Byte[]">
+  implicit operator byte[](JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator byte[](JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Char" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Char">
+  implicit operator char(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator char(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Collections_Generic_List_System_Byte_" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Collections.Generic.List{System.Byte}">
+  implicit operator List&lt;byte&gt;(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator List&lt;byte&gt;(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Collections_Generic_List_System_String_" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Collections.Generic.List{System.String}">
+  implicit operator List&lt;string&gt;(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator List&lt;string&gt;(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_DateTime" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.DateTime">
+  implicit operator DateTime(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator DateTime(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Decimal" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Decimal">
+  implicit operator decimal(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator decimal(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Double" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Double">
+  implicit operator double(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator double(JSONNode d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Guid" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Guid">
+  implicit operator Guid(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Guid(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Int16" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Int16">
+  implicit operator short(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator short(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Int32" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Int32">
+  implicit operator int(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator int(JSONNode d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Int64" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Int64">
+  implicit operator long(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator long(JSONNode d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Nullable_System_Boolean_" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Nullable{System.Boolean}">
+  implicit operator bool?(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator bool?(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Nullable_System_Double_" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Nullable{System.Double}">
+  implicit operator double?(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator double?(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Nullable_System_Int16_" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Nullable{System.Int16}">
+  implicit operator short?(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator short?(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Nullable_System_Int32_" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Nullable{System.Int32}">
+  implicit operator int?(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator int?(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Nullable_System_Int64_" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Nullable{System.Int64}">
+  implicit operator long?(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator long?(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Nullable_System_Single_" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Nullable{System.Single}">
+  implicit operator float?(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator float?(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_SByte" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.SByte">
+  implicit operator sbyte(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator sbyte(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_Single" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.Single">
+  implicit operator float(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator float(JSONNode d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_String" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.String">
+  implicit operator string(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator string(JSONNode d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_String__" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.String[]">
+  implicit operator string[](JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator string[](JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_TimeSpan" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.TimeSpan">
+  implicit operator TimeSpan(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator TimeSpan(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_UInt16" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.UInt16">
+  implicit operator ushort(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator ushort(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_UInt32" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.UInt32">
+  implicit operator uint(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator uint(JSONNode aNode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNode</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_SimpleJSON_JSONNode__System_UInt64" data-uid="SimpleJSON.JSONNode.op_Implicit(SimpleJSON.JSONNode)~System.UInt64">
+  implicit operator ulong(JSONNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator ulong(JSONNode d)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>d</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Boolean__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Boolean)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(bool b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Byte__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Byte)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(byte aByte)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aByte</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Byte____SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Byte[])~SimpleJSON.JSONNode">
+  implicit operator JSONNode(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(byte[] aByteArray)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aByteArray</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Char__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Char)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(char)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(char aChar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aChar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Collections_Generic_KeyValuePair_System_String_SimpleJSON_JSONNode___SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Collections.Generic.KeyValuePair{System.String,SimpleJSON.JSONNode})~SimpleJSON.JSONNode">
+  implicit operator JSONNode(KeyValuePair&lt;string, JSONNode&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(KeyValuePair&lt;string, JSONNode&gt; aKeyValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKeyValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Collections_Generic_List_System_Byte___SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Collections.Generic.List{System.Byte})~SimpleJSON.JSONNode">
+  implicit operator JSONNode(List&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(List&lt;byte&gt; aByteList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aByteList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Collections_Generic_List_System_String___SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Collections.Generic.List{System.String})~SimpleJSON.JSONNode">
+  implicit operator JSONNode(List&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(List&lt;string&gt; aStringList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStringList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_DateTime__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.DateTime)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(DateTime aDateTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aDateTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Decimal__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Decimal)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(decimal)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(decimal aDecimal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aDecimal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Double__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Double)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(double n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Guid__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Guid)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(Guid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(Guid aGuid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aGuid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Int16__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Int16)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(short aShort)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aShort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Int32__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Int32)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(int n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Int64__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Int64)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(long n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Nullable_System_Boolean___SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Nullable{System.Boolean})~SimpleJSON.JSONNode">
+  implicit operator JSONNode(bool?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(bool? aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Nullable_System_Double___SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Nullable{System.Double})~SimpleJSON.JSONNode">
+  implicit operator JSONNode(double?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(double? aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Nullable_System_Int16___SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Nullable{System.Int16})~SimpleJSON.JSONNode">
+  implicit operator JSONNode(short?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(short? aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Nullable_System_Int32___SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Nullable{System.Int32})~SimpleJSON.JSONNode">
+  implicit operator JSONNode(int?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(int? aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Nullable_System_Int64___SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Nullable{System.Int64})~SimpleJSON.JSONNode">
+  implicit operator JSONNode(long?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(long? aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Nullable_System_Single___SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Nullable{System.Single})~SimpleJSON.JSONNode">
+  implicit operator JSONNode(float?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(float? aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_SByte__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.SByte)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(sbyte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(sbyte aSByte)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aSByte</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_Single__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.Single)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(float n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_String__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.String)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(string s)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_String____SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.String[])~SimpleJSON.JSONNode">
+  implicit operator JSONNode(string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(string[] aStringArray)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aStringArray</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_TimeSpan__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.TimeSpan)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(TimeSpan)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(TimeSpan aTimeSpan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aTimeSpan</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_UInt16__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.UInt16)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(ushort aUShort)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aUShort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_UInt32__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.UInt32)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(uint aUInt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aUInt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Implicit_" data-uid="SimpleJSON.JSONNode.op_Implicit*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Implicit_System_UInt64__SimpleJSON_JSONNode" data-uid="SimpleJSON.JSONNode.op_Implicit(System.UInt64)~SimpleJSON.JSONNode">
+  implicit operator JSONNode(ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator JSONNode(ulong n)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>n</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SimpleJSON_JSONNode_op_Inequality_" data-uid="SimpleJSON.JSONNode.op_Inequality*"></a>
+
+  <h3 id="SimpleJSON_JSONNode_op_Inequality_SimpleJSON_JSONNode_System_Object_" data-uid="SimpleJSON.JSONNode.op_Inequality(SimpleJSON.JSONNode,System.Object)">
+  operator !=(JSONNode, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(JSONNode a, object b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="SimpleJSON.JSONNode.html">JSONNode</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

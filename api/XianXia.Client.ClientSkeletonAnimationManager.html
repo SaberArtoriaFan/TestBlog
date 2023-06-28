@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ClientSkeletonAnimationManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ClientSkeletonAnimationManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.Client.ClientSkeletonAnimationManager">
+
+
+
+  <h1 id="XianXia_Client_ClientSkeletonAnimationManager" data-uid="XianXia.Client.ClientSkeletonAnimationManager" class="text-break">
+    Class ClientSkeletonAnimationManager
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a>.<a class="xref" href="XianXia.Client.html">Client</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ClientSkeletonAnimationManager : AutoSingleton&lt;ClientSkeletonAnimationManager&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Singleton-1.html">Singleton</a>&lt;<a class="xref" href="XianXia.Client.ClientSkeletonAnimationManager.html">ClientSkeletonAnimationManager</a>&gt;</div>
+      <div><a class="xref" href="AutoSingleton-1.html">AutoSingleton</a>&lt;<a class="xref" href="XianXia.Client.ClientSkeletonAnimationManager.html">ClientSkeletonAnimationManager</a>&gt;</div>
+      <div><span class="xref">ClientSkeletonAnimationManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="AutoSingleton-1.html#AutoSingleton`1.Instance">AutoSingleton&lt;ClientSkeletonAnimationManager&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.instance">Singleton&lt;ClientSkeletonAnimationManager&gt;.instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.IsInitialized">Singleton&lt;ClientSkeletonAnimationManager&gt;.IsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.Init">Singleton&lt;ClientSkeletonAnimationManager&gt;.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.OnDestroy">Singleton&lt;ClientSkeletonAnimationManager&gt;.OnDestroy()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_Client_ClientSkeletonAnimationManager_Awake_" data-uid="XianXia.Client.ClientSkeletonAnimationManager.Awake*"></a>
+
+  <h3 id="XianXia_Client_ClientSkeletonAnimationManager_Awake" data-uid="XianXia.Client.ClientSkeletonAnimationManager.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_ClientSkeletonAnimationManager_RegisterCondition_" data-uid="XianXia.Client.ClientSkeletonAnimationManager.RegisterCondition*"></a>
+
+  <h3 id="XianXia_Client_ClientSkeletonAnimationManager_RegisterCondition_System_ValueTuple_XianXia_Spine_Animation_XianXia_Spine_Animation__XianXia_Spine_Animation_" data-uid="XianXia.Client.ClientSkeletonAnimationManager.RegisterCondition(System.ValueTuple{XianXia.Spine.Animation,XianXia.Spine.Animation},XianXia.Spine.Animation)">
+  RegisterCondition((Animation, Animation), Animation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterCondition((Animation, Animation) fromTo, Animation transition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromTo</code> (<span class="xref">Animation</span>, <span class="xref">Animation</span>)</dt>
+    <dd></dd>
+    <dt><code>transition</code> <span class="xref">Animation</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_ClientSkeletonAnimationManager_TryGetCondition_" data-uid="XianXia.Client.ClientSkeletonAnimationManager.TryGetCondition*"></a>
+
+  <h3 id="XianXia_Client_ClientSkeletonAnimationManager_TryGetCondition_System_ValueTuple_XianXia_Spine_Animation_XianXia_Spine_Animation__" data-uid="XianXia.Client.ClientSkeletonAnimationManager.TryGetCondition(System.ValueTuple{XianXia.Spine.Animation,XianXia.Spine.Animation})">
+  TryGetCondition((Animation, Animation))
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Animation TryGetCondition((Animation, Animation) fromTo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromTo</code> (<span class="xref">Animation</span>, <span class="xref">Animation</span>)</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Animation</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

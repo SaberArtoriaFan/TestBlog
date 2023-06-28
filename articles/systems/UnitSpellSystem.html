@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>UnitSpellSystem </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="UnitSpellSystem ">
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../public/main.js'
+    import { init } from './../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="unitspellsystem">UnitSpellSystem</h1>
+
+<p>施法系统，管理单位的<strong>施法行为</strong>以及<strong>MagicOrgan</strong>的生成与销毁</p>
+<h2 id="1施法限制">1.施法限制</h2>
+<p>1.1<strong>限制</strong>
+最多只能有一个主动技能，如果超过一个则只会施放第一个<br>
+1.2<strong>条件</strong><br>
+满蓝，且满足某种技能自身限制</p>
+<h2 id="2寻找施放对象">2.寻找施放对象</h2>
+<p>系统自带施法寻找对象规则为就近，允许<strong>ActiveSkill</strong>实现<strong>ISelectTargetSkill</strong>接口，定制自己的寻敌规则</p>
+<pre><code class="lang-CSharp">    internal interface ISelectTargetSkill
+    {
+        Node FindTarget();
+
+    }
+</code></pre>
+<h2 id="3施法顺序">3.施法顺序</h2>
+<p>1.判断是否被眩晕<br>
+2.判断是否被沉默<br>
+3.判断技能是否符合施放条件（满蓝，未CD之类）<br>
+4.判断是否需要施放对象，如果需要则判断是否有合适施放对象<br>
+5.清空法力值并不允许法力值增加（在施法过程中）<br>
+6.触发<strong>施法之前</strong>事件</p>
+<pre><code class="lang-CSharp">            //触发施法前事件
+            UnitSpellBefore.Trigger(ID_SpellBefore,spellBrain, activeSkill);
+</code></pre>
+<p>7.判断是否需要播放动画，如果需要则播放并等待播放结束<br>
+8.施法<br>
+9.允许法力值增加<br>
+10.触发<strong>施法之后</strong>事件</p>
+<pre><code class="lang-CSharp">            //触发施法结束事件
+            UnitSpellAfter.Trigger(ID_SpellAfter,spellBrain, activeSkill);
+</code></pre>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

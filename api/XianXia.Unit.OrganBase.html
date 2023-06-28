@@ -1,0 +1,423 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class OrganBase
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class OrganBase
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.Unit.OrganBase">
+
+
+
+  <h1 id="XianXia_Unit_OrganBase" data-uid="XianXia.Unit.OrganBase" class="text-break">
+    Class OrganBase
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a>.<a class="xref" href="XianXia.Unit.html">Unit</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class OrganBase : ComponentBase, IComponentBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Saber.ECS.ComponentBase.html">ComponentBase</a></div>
+      <div><span class="xref">OrganBase</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Saber.ECS.IComponentBase.html">IComponentBase</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="XianXia.Unit.AttackOrgan.html">AttackOrgan</a></div>
+      <div><a class="xref" href="XianXia.Unit.BodyOrgan.html">BodyOrgan</a></div>
+      <div><a class="xref" href="XianXia.Unit.LegOrgan.html">LegOrgan</a></div>
+      <div><a class="xref" href="XianXia.Unit.StatusOrganBase-1.html">StatusOrganBase&lt;T&gt;</a></div>
+      <div><a class="xref" href="XianXia.Unit.UIShowOrgan.html">UIShowOrgan</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Owner">ComponentBase.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Enable">ComponentBase.Enable</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Alive">ComponentBase.Alive</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_SetEnable_System_Boolean_">ComponentBase.SetEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_SetComponentEnable_System_Boolean_">ComponentBase.SetComponentEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_ClearEnable">ComponentBase.ClearEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Init_Saber_ECS_IContainerEntity_">ComponentBase.Init(IContainerEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="XianXia_Unit_OrganBase__ctor_" data-uid="XianXia.Unit.OrganBase.#ctor*"></a>
+
+  <h3 id="XianXia_Unit_OrganBase__ctor" data-uid="XianXia.Unit.OrganBase.#ctor">
+  OrganBase()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrganBase()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="XianXia_Unit_OrganBase_ComponentType_" data-uid="XianXia.Unit.OrganBase.ComponentType*"></a>
+
+  <h3 id="XianXia_Unit_OrganBase_ComponentType" data-uid="XianXia.Unit.OrganBase.ComponentType">
+  ComponentType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ComponentType ComponentType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.ECS.ComponentType.html">ComponentType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_OrganBase_OwnerUnit_" data-uid="XianXia.Unit.OrganBase.OwnerUnit*"></a>
+
+  <h3 id="XianXia_Unit_OrganBase_OwnerUnit" data-uid="XianXia.Unit.OrganBase.OwnerUnit">
+  OwnerUnit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnitBase OwnerUnit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_OrganBase_componentType_" data-uid="XianXia.Unit.OrganBase.componentType*"></a>
+
+  <h3 id="XianXia_Unit_OrganBase_componentType" data-uid="XianXia.Unit.OrganBase.componentType">
+  componentType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract ComponentType componentType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.ECS.ComponentType.html">ComponentType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_Unit_OrganBase_Destory_" data-uid="XianXia.Unit.OrganBase.Destory*"></a>
+
+  <h3 id="XianXia_Unit_OrganBase_Destory" data-uid="XianXia.Unit.OrganBase.Destory">
+  Destory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Destory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_OrganBase_InitComponent_" data-uid="XianXia.Unit.OrganBase.InitComponent*"></a>
+
+  <h3 id="XianXia_Unit_OrganBase_InitComponent_Saber_ECS_EntityBase_" data-uid="XianXia.Unit.OrganBase.InitComponent(Saber.ECS.EntityBase)">
+  InitComponent(EntityBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitComponent(EntityBase unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>unit</code> <a class="xref" href="Saber.ECS.EntityBase.html">EntityBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_OrganBase_InitComponent_" data-uid="XianXia.Unit.OrganBase.InitComponent*"></a>
+
+  <h3 id="XianXia_Unit_OrganBase_InitComponent_Saber_ECS_IContainerEntity_" data-uid="XianXia.Unit.OrganBase.InitComponent(Saber.ECS.IContainerEntity)">
+  InitComponent(IContainerEntity)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>�����ӵ�Entityʱ����
+��������һЩ����</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InitComponent(IContainerEntity owner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="Saber.ECS.IContainerEntity.html">IContainerEntity</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

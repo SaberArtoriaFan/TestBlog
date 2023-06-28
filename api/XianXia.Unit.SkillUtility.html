@@ -1,0 +1,894 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SkillUtility
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SkillUtility
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.Unit.SkillUtility">
+
+
+
+  <h1 id="XianXia_Unit_SkillUtility" data-uid="XianXia.Unit.SkillUtility" class="text-break">
+    Class SkillUtility
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a>.<a class="xref" href="XianXia.Unit.html">Unit</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SkillUtility : AutoSingleton&lt;SkillUtility&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Singleton-1.html">Singleton</a>&lt;<a class="xref" href="XianXia.Unit.SkillUtility.html">SkillUtility</a>&gt;</div>
+      <div><a class="xref" href="AutoSingleton-1.html">AutoSingleton</a>&lt;<a class="xref" href="XianXia.Unit.SkillUtility.html">SkillUtility</a>&gt;</div>
+      <div><span class="xref">SkillUtility</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="AutoSingleton-1.html#AutoSingleton`1.Instance">AutoSingleton&lt;SkillUtility&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.instance">Singleton&lt;SkillUtility&gt;.instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.Awake">Singleton&lt;SkillUtility&gt;.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.IsInitialized">Singleton&lt;SkillUtility&gt;.IsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.Init">Singleton&lt;SkillUtility&gt;.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.OnDestroy">Singleton&lt;SkillUtility&gt;.OnDestroy()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="XianXia_Unit_SkillUtility_MonsterStartNode_" data-uid="XianXia.Unit.SkillUtility.MonsterStartNode*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_MonsterStartNode" data-uid="XianXia.Unit.SkillUtility.MonsterStartNode">
+  MonsterStartNode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node MonsterStartNode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_PlayerStartNode_" data-uid="XianXia.Unit.SkillUtility.PlayerStartNode*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_PlayerStartNode" data-uid="XianXia.Unit.SkillUtility.PlayerStartNode">
+  PlayerStartNode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node PlayerStartNode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_World_" data-uid="XianXia.Unit.SkillUtility.World*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_World" data-uid="XianXia.Unit.SkillUtility.World">
+  World
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WorldBase World { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.ECS.WorldBase.html">WorldBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_Unit_SkillUtility_CalculateLifeTime_" data-uid="XianXia.Unit.SkillUtility.CalculateLifeTime*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_CalculateLifeTime_System_Int32_" data-uid="XianXia.Unit.SkillUtility.CalculateLifeTime(System.Int32)">
+  CalculateLifeTime(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CalculateLifeTime(int num)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>num</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_CalculateTargetObject_" data-uid="XianXia.Unit.SkillUtility.CalculateTargetObject*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_CalculateTargetObject_System_Int32_" data-uid="XianXia.Unit.SkillUtility.CalculateTargetObject(System.Int32)">
+  CalculateTargetObject(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TargetType CalculateTargetObject(int num)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>num</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Unit.TargetType.html">TargetType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_FindUnit_CurrAttack_" data-uid="XianXia.Unit.SkillUtility.FindUnit_CurrAttack*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_FindUnit_CurrAttack_XianXia_Unit_TargetType_XianXia_Unit_UnitAttackSystem_UnitBase_" data-uid="XianXia.Unit.SkillUtility.FindUnit_CurrAttack(XianXia.Unit.TargetType,XianXia.Unit.UnitAttackSystem,UnitBase)">
+  FindUnit_CurrAttack(TargetType, UnitAttackSystem, UnitBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;UnitBase&gt; FindUnit_CurrAttack(TargetType targetType, UnitAttackSystem attackSystem, UnitBase unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetType</code> <a class="xref" href="XianXia.Unit.TargetType.html">TargetType</a></dt>
+    <dd></dd>
+    <dt><code>attackSystem</code> <a class="xref" href="XianXia.Unit.UnitAttackSystem.html">UnitAttackSystem</a></dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnitBase.html">UnitBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_FindUnit_Random_" data-uid="XianXia.Unit.SkillUtility.FindUnit_Random*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_FindUnit_Random_Saber_Camp_PlayerMemeber_XianXia_Unit_TargetType_System_Int32_System_Boolean_UnitBase_System_Single_" data-uid="XianXia.Unit.SkillUtility.FindUnit_Random(Saber.Camp.PlayerMemeber,XianXia.Unit.TargetType,System.Int32,System.Boolean,UnitBase,System.Single)">
+  FindUnit_Random(PlayerMemeber, TargetType, int, bool, UnitBase, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;UnitBase&gt; FindUnit_Random(PlayerMemeber playerMemeber, TargetType targetType, int num, bool isFiltInvincible, UnitBase unit = null, float minDis = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>playerMemeber</code> <a class="xref" href="Saber.Camp.PlayerMemeber.html">PlayerMemeber</a></dt>
+    <dd></dd>
+    <dt><code>targetType</code> <a class="xref" href="XianXia.Unit.TargetType.html">TargetType</a></dt>
+    <dd></dd>
+    <dt><code>num</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>isFiltInvincible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+    <dt><code>minDis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnitBase.html">UnitBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_GetFindTargetsFunc_" data-uid="XianXia.Unit.SkillUtility.GetFindTargetsFunc*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_GetFindTargetsFunc_System_Int32_XianXia_Unit_TargetType_UnitBase_System_Int32_System_Single_" data-uid="XianXia.Unit.SkillUtility.GetFindTargetsFunc(System.Int32,XianXia.Unit.TargetType,UnitBase,System.Int32,System.Single)">
+  GetFindTargetsFunc(int, TargetType, UnitBase, int, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;UnitBase&gt; GetFindTargetsFunc(int id, TargetType targetType, UnitBase u, int effectNum, float spellRange = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>targetType</code> <a class="xref" href="XianXia.Unit.TargetType.html">TargetType</a></dt>
+    <dd></dd>
+    <dt><code>u</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+    <dt><code>effectNum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>spellRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnitBase.html">UnitBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_GetNodesForConditionOfCenter_" data-uid="XianXia.Unit.SkillUtility.GetNodesForConditionOfCenter*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_GetNodesForConditionOfCenter_XianXia_Unit_MagicOrgan_XianXia_Terrain_Node_XianXia_Unit_TargetType_System_Single_" data-uid="XianXia.Unit.SkillUtility.GetNodesForConditionOfCenter(XianXia.Unit.MagicOrgan,XianXia.Terrain.Node,XianXia.Unit.TargetType,System.Single)">
+  GetNodesForConditionOfCenter(MagicOrgan, Node, TargetType, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Node&gt; GetNodesForConditionOfCenter(MagicOrgan m, Node target, TargetType targetType, float influenceRange)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m</code> <a class="xref" href="XianXia.Unit.MagicOrgan.html">MagicOrgan</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>targetType</code> <a class="xref" href="XianXia.Unit.TargetType.html">TargetType</a></dt>
+    <dd></dd>
+    <dt><code>influenceRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="XianXia.Terrain.Node.html">Node</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_GetShiftShapeModel_" data-uid="XianXia.Unit.SkillUtility.GetShiftShapeModel*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_GetShiftShapeModel_System_Int32_" data-uid="XianXia.Unit.SkillUtility.GetShiftShapeModel(System.Int32)">
+  GetShiftShapeModel(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ShiftShape GetShiftShapeModel(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ShiftShape</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_GetSkillAction_" data-uid="XianXia.Unit.SkillUtility.GetSkillAction*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_GetSkillAction_System_Int32_" data-uid="XianXia.Unit.SkillUtility.GetSkillAction(System.Int32)">
+  GetSkillAction(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SkillUtility.SkillEffectEvent GetSkillAction(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Unit.SkillUtility.html">SkillUtility</a>.<a class="xref" href="XianXia.Unit.SkillUtility.SkillEffectEvent.html">SkillEffectEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_GetSkillResouceNameById_" data-uid="XianXia.Unit.SkillUtility.GetSkillResouceNameById*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_GetSkillResouceNameById_System_Int32_System_Boolean_" data-uid="XianXia.Unit.SkillUtility.GetSkillResouceNameById(System.Int32,System.Boolean)">
+  GetSkillResouceNameById(int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSkillResouceNameById(int id, bool isActive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>isActive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_GetSummonData_" data-uid="XianXia.Unit.SkillUtility.GetSummonData*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_GetSummonData_System_Int32_System_Int32_System_Single_" data-uid="XianXia.Unit.SkillUtility.GetSummonData(System.Int32,System.Int32,System.Single)">
+  GetSummonData(int, int, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SummonSkill.Summon GetSummonData(int id, int num, float liveTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>num</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>liveTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Unit.SummonSkill.html">SummonSkill</a>.<a class="xref" href="XianXia.Unit.SummonSkill.Summon.html">Summon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_GetSummonedModel_" data-uid="XianXia.Unit.SkillUtility.GetSummonedModel*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_GetSummonedModel_Summoned_" data-uid="XianXia.Unit.SkillUtility.GetSummonedModel(Summoned)">
+  GetSummonedModel(Summoned)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnitModel GetSummonedModel(Summoned summon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>summon</code> <span class="xref">Summoned</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Unit.UnitModel.html">UnitModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_IsValidFindID_" data-uid="XianXia.Unit.SkillUtility.IsValidFindID*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_IsValidFindID_System_Int32_" data-uid="XianXia.Unit.SkillUtility.IsValidFindID(System.Int32)">
+  IsValidFindID(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidFindID(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_KillSummon_" data-uid="XianXia.Unit.SkillUtility.KillSummon*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_KillSummon_XianXia_Unit_SummonSkill_Summon_UnitBase_" data-uid="XianXia.Unit.SkillUtility.KillSummon(XianXia.Unit.SummonSkill.Summon,UnitBase)">
+  KillSummon(Summon, UnitBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void KillSummon(SummonSkill.Summon summon, UnitBase unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>summon</code> <a class="xref" href="XianXia.Unit.SummonSkill.html">SummonSkill</a>.<a class="xref" href="XianXia.Unit.SummonSkill.Summon.html">Summon</a></dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_ScreeningUnit_Distance_" data-uid="XianXia.Unit.SkillUtility.ScreeningUnit_Distance*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_ScreeningUnit_Distance_UnitBase___System_Int32_UnitBase_System_Boolean_System_Single_" data-uid="XianXia.Unit.SkillUtility.ScreeningUnit_Distance(UnitBase[],System.Int32,UnitBase,System.Boolean,System.Single)">
+  ScreeningUnit_Distance(UnitBase[], int, UnitBase, bool, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;UnitBase&gt; ScreeningUnit_Distance(UnitBase[] res, int effectNum, UnitBase unit, bool isFiltInvincible, float minDis = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>res</code> <a class="xref" href="UnitBase.html">UnitBase</a>[]</dt>
+    <dd></dd>
+    <dt><code>effectNum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+    <dt><code>isFiltInvincible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>minDis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnitBase.html">UnitBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_ScreeningUnit_Smart_" data-uid="XianXia.Unit.SkillUtility.ScreeningUnit_Smart*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_ScreeningUnit_Smart_UnitBase___System_Int32_UnitBase_XianXia_Unit_TargetType_System_Boolean_System_Single_" data-uid="XianXia.Unit.SkillUtility.ScreeningUnit_Smart(UnitBase[],System.Int32,UnitBase,XianXia.Unit.TargetType,System.Boolean,System.Single)">
+  ScreeningUnit_Smart(UnitBase[], int, UnitBase, TargetType, bool, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;UnitBase&gt; ScreeningUnit_Smart(UnitBase[] res, int effectNum, UnitBase unit, TargetType targetType, bool isFiltInvincible, float minDis = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>res</code> <a class="xref" href="UnitBase.html">UnitBase</a>[]</dt>
+    <dd></dd>
+    <dt><code>effectNum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+    <dt><code>targetType</code> <a class="xref" href="XianXia.Unit.TargetType.html">TargetType</a></dt>
+    <dd></dd>
+    <dt><code>isFiltInvincible</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>minDis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnitBase.html">UnitBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_SkillUtility_ShowRisingSpace_" data-uid="XianXia.Unit.SkillUtility.ShowRisingSpace*"></a>
+
+  <h3 id="XianXia_Unit_SkillUtility_ShowRisingSpace_System_String_Vector3_Vector3_Color_System_Int32_TMPro_FontStyles_" data-uid="XianXia.Unit.SkillUtility.ShowRisingSpace(System.String,Vector3,Vector3,Color,System.Int32,TMPro.FontStyles)">
+  ShowRisingSpace(string, Vector3, Vector3, Color, int, FontStyles)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ShowRisingSpace(string message, Vector3 pos, Vector3 dir, Color color, int size = 48, TMPro.FontStyles fontStyles = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>pos</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>dir</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>color</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>fontStyles</code> <span class="xref">FontStyles</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

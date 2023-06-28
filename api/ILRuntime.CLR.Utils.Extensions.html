@@ -1,0 +1,652 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Extensions
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Extensions
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ILRuntime.CLR.Utils.Extensions">
+
+
+
+  <h1 id="ILRuntime_CLR_Utils_Extensions" data-uid="ILRuntime.CLR.Utils.Extensions" class="text-break">
+    Class Extensions
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ILRuntime.html">ILRuntime</a>.<a class="xref" href="ILRuntime.CLR.html">CLR</a>.<a class="xref" href="ILRuntime.CLR.Utils.html">Utils</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Extensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Extensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="ILRuntime_CLR_Utils_Extensions_EmptyParamList" data-uid="ILRuntime.CLR.Utils.Extensions.EmptyParamList">
+  EmptyParamList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;IType&gt; EmptyParamList</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ILRuntime_CLR_Utils_Extensions_CheckCLRTypes_" data-uid="ILRuntime.CLR.Utils.Extensions.CheckCLRTypes*"></a>
+
+  <h3 id="ILRuntime_CLR_Utils_Extensions_CheckCLRTypes_System_Type_System_Object_" data-uid="ILRuntime.CLR.Utils.Extensions.CheckCLRTypes(System.Type,System.Object)">
+  CheckCLRTypes(Type, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object CheckCLRTypes(this Type pt, object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Utils_Extensions_CheckCLRTypes_" data-uid="ILRuntime.CLR.Utils.Extensions.CheckCLRTypes*"></a>
+
+  <h3 id="ILRuntime_CLR_Utils_Extensions_CheckCLRTypes_System_Type_System_Object_ILRuntime_CLR_Utils_Extensions_TypeFlags_" data-uid="ILRuntime.CLR.Utils.Extensions.CheckCLRTypes(System.Type,System.Object,ILRuntime.CLR.Utils.Extensions.TypeFlags)">
+  CheckCLRTypes(Type, object, TypeFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object CheckCLRTypes(this Type pt, object obj, Extensions.TypeFlags typeFlags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>typeFlags</code> <a class="xref" href="ILRuntime.CLR.Utils.Extensions.html">Extensions</a>.<a class="xref" href="ILRuntime.CLR.Utils.Extensions.TypeFlags.html">TypeFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Utils_Extensions_CheckMethodParams_" data-uid="ILRuntime.CLR.Utils.Extensions.CheckMethodParams*"></a>
+
+  <h3 id="ILRuntime_CLR_Utils_Extensions_CheckMethodParams_System_Reflection_MethodInfo_System_Reflection_ParameterInfo___" data-uid="ILRuntime.CLR.Utils.Extensions.CheckMethodParams(System.Reflection.MethodInfo,System.Reflection.ParameterInfo[])">
+  CheckMethodParams(MethodInfo, ParameterInfo[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckMethodParams(this MethodInfo m, ParameterInfo[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo">ParameterInfo</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Utils_Extensions_CheckMethodParams_" data-uid="ILRuntime.CLR.Utils.Extensions.CheckMethodParams*"></a>
+
+  <h3 id="ILRuntime_CLR_Utils_Extensions_CheckMethodParams_System_Reflection_MethodInfo_System_Type___" data-uid="ILRuntime.CLR.Utils.Extensions.CheckMethodParams(System.Reflection.MethodInfo,System.Type[])">
+  CheckMethodParams(MethodInfo, Type[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckMethodParams(this MethodInfo m, Type[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Utils_Extensions_FastIsByRef_" data-uid="ILRuntime.CLR.Utils.Extensions.FastIsByRef*"></a>
+
+  <h3 id="ILRuntime_CLR_Utils_Extensions_FastIsByRef_System_Type_" data-uid="ILRuntime.CLR.Utils.Extensions.FastIsByRef(System.Type)">
+  FastIsByRef(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FastIsByRef(this Type pt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Utils_Extensions_FastIsEnum_" data-uid="ILRuntime.CLR.Utils.Extensions.FastIsEnum*"></a>
+
+  <h3 id="ILRuntime_CLR_Utils_Extensions_FastIsEnum_System_Type_" data-uid="ILRuntime.CLR.Utils.Extensions.FastIsEnum(System.Type)">
+  FastIsEnum(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FastIsEnum(this Type pt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Utils_Extensions_FastIsPrimitive_" data-uid="ILRuntime.CLR.Utils.Extensions.FastIsPrimitive*"></a>
+
+  <h3 id="ILRuntime_CLR_Utils_Extensions_FastIsPrimitive_System_Type_" data-uid="ILRuntime.CLR.Utils.Extensions.FastIsPrimitive(System.Type)">
+  FastIsPrimitive(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FastIsPrimitive(this Type pt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Utils_Extensions_FastIsValueType_" data-uid="ILRuntime.CLR.Utils.Extensions.FastIsValueType*"></a>
+
+  <h3 id="ILRuntime_CLR_Utils_Extensions_FastIsValueType_System_Type_" data-uid="ILRuntime.CLR.Utils.Extensions.FastIsValueType(System.Type)">
+  FastIsValueType(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FastIsValueType(this Type pt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Utils_Extensions_GetParamList_" data-uid="ILRuntime.CLR.Utils.Extensions.GetParamList*"></a>
+
+  <h3 id="ILRuntime_CLR_Utils_Extensions_GetParamList_MethodReference_ILRuntime_Runtime_Enviorment_AppDomain_ILRuntime_CLR_TypeSystem_IType_ILRuntime_CLR_Method_IMethod_ILRuntime_CLR_TypeSystem_IType___" data-uid="ILRuntime.CLR.Utils.Extensions.GetParamList(MethodReference,ILRuntime.Runtime.Enviorment.AppDomain,ILRuntime.CLR.TypeSystem.IType,ILRuntime.CLR.Method.IMethod,ILRuntime.CLR.TypeSystem.IType[])">
+  GetParamList(MethodReference, AppDomain, IType, IMethod, IType[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;IType&gt; GetParamList(this MethodReference def, AppDomain appdomain, IType contextType, IMethod contextMethod, IType[] genericArguments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>def</code> <span class="xref">MethodReference</span></dt>
+    <dd></dd>
+    <dt><code>appdomain</code> <a class="xref" href="ILRuntime.Runtime.Enviorment.AppDomain.html">AppDomain</a></dt>
+    <dd></dd>
+    <dt><code>contextType</code> <a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+    <dt><code>contextMethod</code> <a class="xref" href="ILRuntime.CLR.Method.IMethod.html">IMethod</a></dt>
+    <dd></dd>
+    <dt><code>genericArguments</code> <a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Utils_Extensions_GetTypeFlags_" data-uid="ILRuntime.CLR.Utils.Extensions.GetTypeFlags*"></a>
+
+  <h3 id="ILRuntime_CLR_Utils_Extensions_GetTypeFlags_System_Type_" data-uid="ILRuntime.CLR.Utils.Extensions.GetTypeFlags(System.Type)">
+  GetTypeFlags(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Extensions.TypeFlags GetTypeFlags(this Type pt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.Utils.Extensions.html">Extensions</a>.<a class="xref" href="ILRuntime.CLR.Utils.Extensions.TypeFlags.html">TypeFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Utils_Extensions_GetTypeFlagsRecursive_" data-uid="ILRuntime.CLR.Utils.Extensions.GetTypeFlagsRecursive*"></a>
+
+  <h3 id="ILRuntime_CLR_Utils_Extensions_GetTypeFlagsRecursive_System_Type_" data-uid="ILRuntime.CLR.Utils.Extensions.GetTypeFlagsRecursive(System.Type)">
+  GetTypeFlagsRecursive(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Extensions.TypeFlags GetTypeFlagsRecursive(this Type pt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.Utils.Extensions.html">Extensions</a>.<a class="xref" href="ILRuntime.CLR.Utils.Extensions.TypeFlags.html">TypeFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Utils_Extensions_UnWrapper_" data-uid="ILRuntime.CLR.Utils.Extensions.UnWrapper*"></a>
+
+  <h3 id="ILRuntime_CLR_Utils_Extensions_UnWrapper_System_Type_" data-uid="ILRuntime.CLR.Utils.Extensions.UnWrapper(System.Type)">
+  UnWrapper(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type UnWrapper(this Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

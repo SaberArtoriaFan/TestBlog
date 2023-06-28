@@ -1,0 +1,2924 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NetDataReader
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NetDataReader
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="LiteNetLib.Utils.NetDataReader">
+
+
+
+  <h1 id="LiteNetLib_Utils_NetDataReader" data-uid="LiteNetLib.Utils.NetDataReader" class="text-break">
+    Class NetDataReader
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LiteNetLib.html">LiteNetLib</a>.<a class="xref" href="LiteNetLib.Utils.html">Utils</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NetDataReader</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">NetDataReader</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="LiteNetLib.NetPacketReader.html">NetPacketReader</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="LiteNetLib_Utils_NetDataReader__ctor_" data-uid="LiteNetLib.Utils.NetDataReader.#ctor*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader__ctor" data-uid="LiteNetLib.Utils.NetDataReader.#ctor">
+  NetDataReader()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetDataReader()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader__ctor_" data-uid="LiteNetLib.Utils.NetDataReader.#ctor*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader__ctor_LiteNetLib_Utils_NetDataWriter_" data-uid="LiteNetLib.Utils.NetDataReader.#ctor(LiteNetLib.Utils.NetDataWriter)">
+  NetDataReader(NetDataWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetDataReader(NetDataWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader__ctor_" data-uid="LiteNetLib.Utils.NetDataReader.#ctor*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader__ctor_System_Byte___" data-uid="LiteNetLib.Utils.NetDataReader.#ctor(System.Byte[])">
+  NetDataReader(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetDataReader(byte[] source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader__ctor_" data-uid="LiteNetLib.Utils.NetDataReader.#ctor*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader__ctor_System_Byte___System_Int32_System_Int32_" data-uid="LiteNetLib.Utils.NetDataReader.#ctor(System.Byte[],System.Int32,System.Int32)">
+  NetDataReader(byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetDataReader(byte[] source, int offset, int maxSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>maxSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="LiteNetLib_Utils_NetDataReader__data" data-uid="LiteNetLib.Utils.NetDataReader._data">
+  _data
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected byte[] _data</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_Utils_NetDataReader__dataSize" data-uid="LiteNetLib.Utils.NetDataReader._dataSize">
+  _dataSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _dataSize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_Utils_NetDataReader__position" data-uid="LiteNetLib.Utils.NetDataReader._position">
+  _position
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int _position</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_AvailableBytes_" data-uid="LiteNetLib.Utils.NetDataReader.AvailableBytes*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_AvailableBytes" data-uid="LiteNetLib.Utils.NetDataReader.AvailableBytes">
+  AvailableBytes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AvailableBytes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_EndOfData_" data-uid="LiteNetLib.Utils.NetDataReader.EndOfData*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_EndOfData" data-uid="LiteNetLib.Utils.NetDataReader.EndOfData">
+  EndOfData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EndOfData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_IsNull_" data-uid="LiteNetLib.Utils.NetDataReader.IsNull*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_IsNull" data-uid="LiteNetLib.Utils.NetDataReader.IsNull">
+  IsNull
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNull { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_Position_" data-uid="LiteNetLib.Utils.NetDataReader.Position*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_Position" data-uid="LiteNetLib.Utils.NetDataReader.Position">
+  Position
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Position { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_RawData_" data-uid="LiteNetLib.Utils.NetDataReader.RawData*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_RawData" data-uid="LiteNetLib.Utils.NetDataReader.RawData">
+  RawData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] RawData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_RawDataSize_" data-uid="LiteNetLib.Utils.NetDataReader.RawDataSize*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_RawDataSize" data-uid="LiteNetLib.Utils.NetDataReader.RawDataSize">
+  RawDataSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RawDataSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_UserDataOffset_" data-uid="LiteNetLib.Utils.NetDataReader.UserDataOffset*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_UserDataOffset" data-uid="LiteNetLib.Utils.NetDataReader.UserDataOffset">
+  UserDataOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UserDataOffset { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_UserDataSize_" data-uid="LiteNetLib.Utils.NetDataReader.UserDataSize*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_UserDataSize" data-uid="LiteNetLib.Utils.NetDataReader.UserDataSize">
+  UserDataSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UserDataSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_Clear_" data-uid="LiteNetLib.Utils.NetDataReader.Clear*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_Clear" data-uid="LiteNetLib.Utils.NetDataReader.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetBool_" data-uid="LiteNetLib.Utils.NetDataReader.GetBool*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetBool" data-uid="LiteNetLib.Utils.NetDataReader.GetBool">
+  GetBool()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBool()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetBoolArray_" data-uid="LiteNetLib.Utils.NetDataReader.GetBoolArray*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetBoolArray" data-uid="LiteNetLib.Utils.NetDataReader.GetBoolArray">
+  GetBoolArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool[] GetBoolArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetByte_" data-uid="LiteNetLib.Utils.NetDataReader.GetByte*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetByte" data-uid="LiteNetLib.Utils.NetDataReader.GetByte">
+  GetByte()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte GetByte()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetBytes_" data-uid="LiteNetLib.Utils.NetDataReader.GetBytes*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetBytes_System_Byte___System_Int32_" data-uid="LiteNetLib.Utils.NetDataReader.GetBytes(System.Byte[],System.Int32)">
+  GetBytes(byte[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetBytes(byte[] destination, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetBytes_" data-uid="LiteNetLib.Utils.NetDataReader.GetBytes*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetBytes_System_Byte___System_Int32_System_Int32_" data-uid="LiteNetLib.Utils.NetDataReader.GetBytes(System.Byte[],System.Int32,System.Int32)">
+  GetBytes(byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetBytes(byte[] destination, int start, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>destination</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetBytesSegment_" data-uid="LiteNetLib.Utils.NetDataReader.GetBytesSegment*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetBytesSegment_System_Int32_" data-uid="LiteNetLib.Utils.NetDataReader.GetBytesSegment(System.Int32)">
+  GetBytesSegment(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArraySegment&lt;byte&gt; GetBytesSegment(int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetBytesWithLength_" data-uid="LiteNetLib.Utils.NetDataReader.GetBytesWithLength*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetBytesWithLength" data-uid="LiteNetLib.Utils.NetDataReader.GetBytesWithLength">
+  GetBytesWithLength()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetBytesWithLength()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetChar_" data-uid="LiteNetLib.Utils.NetDataReader.GetChar*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetChar" data-uid="LiteNetLib.Utils.NetDataReader.GetChar">
+  GetChar()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char GetChar()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetDouble_" data-uid="LiteNetLib.Utils.NetDataReader.GetDouble*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetDouble" data-uid="LiteNetLib.Utils.NetDataReader.GetDouble">
+  GetDouble()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDouble()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetDoubleArray_" data-uid="LiteNetLib.Utils.NetDataReader.GetDoubleArray*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetDoubleArray" data-uid="LiteNetLib.Utils.NetDataReader.GetDoubleArray">
+  GetDoubleArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[] GetDoubleArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetFloat_" data-uid="LiteNetLib.Utils.NetDataReader.GetFloat*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetFloat" data-uid="LiteNetLib.Utils.NetDataReader.GetFloat">
+  GetFloat()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFloat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetFloatArray_" data-uid="LiteNetLib.Utils.NetDataReader.GetFloatArray*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetFloatArray" data-uid="LiteNetLib.Utils.NetDataReader.GetFloatArray">
+  GetFloatArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] GetFloatArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetInt_" data-uid="LiteNetLib.Utils.NetDataReader.GetInt*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetInt" data-uid="LiteNetLib.Utils.NetDataReader.GetInt">
+  GetInt()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInt()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetIntArray_" data-uid="LiteNetLib.Utils.NetDataReader.GetIntArray*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetIntArray" data-uid="LiteNetLib.Utils.NetDataReader.GetIntArray">
+  GetIntArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] GetIntArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetLong_" data-uid="LiteNetLib.Utils.NetDataReader.GetLong*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetLong" data-uid="LiteNetLib.Utils.NetDataReader.GetLong">
+  GetLong()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetLong()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetLongArray_" data-uid="LiteNetLib.Utils.NetDataReader.GetLongArray*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetLongArray" data-uid="LiteNetLib.Utils.NetDataReader.GetLongArray">
+  GetLongArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long[] GetLongArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetNetEndPoint_" data-uid="LiteNetLib.Utils.NetDataReader.GetNetEndPoint*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetNetEndPoint" data-uid="LiteNetLib.Utils.NetDataReader.GetNetEndPoint">
+  GetNetEndPoint()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPEndPoint GetNetEndPoint()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipendpoint">IPEndPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetRemainingBytes_" data-uid="LiteNetLib.Utils.NetDataReader.GetRemainingBytes*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetRemainingBytes" data-uid="LiteNetLib.Utils.NetDataReader.GetRemainingBytes">
+  GetRemainingBytes()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetRemainingBytes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetRemainingBytesSegment_" data-uid="LiteNetLib.Utils.NetDataReader.GetRemainingBytesSegment*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetRemainingBytesSegment" data-uid="LiteNetLib.Utils.NetDataReader.GetRemainingBytesSegment">
+  GetRemainingBytesSegment()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArraySegment&lt;byte&gt; GetRemainingBytesSegment()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetSByte_" data-uid="LiteNetLib.Utils.NetDataReader.GetSByte*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetSByte" data-uid="LiteNetLib.Utils.NetDataReader.GetSByte">
+  GetSByte()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sbyte GetSByte()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetSBytesWithLength_" data-uid="LiteNetLib.Utils.NetDataReader.GetSBytesWithLength*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetSBytesWithLength" data-uid="LiteNetLib.Utils.NetDataReader.GetSBytesWithLength">
+  GetSBytesWithLength()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sbyte[] GetSBytesWithLength()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetShort_" data-uid="LiteNetLib.Utils.NetDataReader.GetShort*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetShort" data-uid="LiteNetLib.Utils.NetDataReader.GetShort">
+  GetShort()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetShort()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetShortArray_" data-uid="LiteNetLib.Utils.NetDataReader.GetShortArray*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetShortArray" data-uid="LiteNetLib.Utils.NetDataReader.GetShortArray">
+  GetShortArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short[] GetShortArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetString_" data-uid="LiteNetLib.Utils.NetDataReader.GetString*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetString" data-uid="LiteNetLib.Utils.NetDataReader.GetString">
+  GetString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetString_" data-uid="LiteNetLib.Utils.NetDataReader.GetString*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetString_System_Int32_" data-uid="LiteNetLib.Utils.NetDataReader.GetString(System.Int32)">
+  GetString(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Note that &quot;maxLength&quot; only limits the number of characters in a string, not its size in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetString(int maxLength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>&quot;string.Empty&quot; if value &gt; &quot;maxLength&quot;</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetStringArray_" data-uid="LiteNetLib.Utils.NetDataReader.GetStringArray*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetStringArray" data-uid="LiteNetLib.Utils.NetDataReader.GetStringArray">
+  GetStringArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] GetStringArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetStringArray_" data-uid="LiteNetLib.Utils.NetDataReader.GetStringArray*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetStringArray_System_Int32_" data-uid="LiteNetLib.Utils.NetDataReader.GetStringArray(System.Int32)">
+  GetStringArray(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] GetStringArray(int maxStringLength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxStringLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetUInt_" data-uid="LiteNetLib.Utils.NetDataReader.GetUInt*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetUInt" data-uid="LiteNetLib.Utils.NetDataReader.GetUInt">
+  GetUInt()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetUInt()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetUIntArray_" data-uid="LiteNetLib.Utils.NetDataReader.GetUIntArray*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetUIntArray" data-uid="LiteNetLib.Utils.NetDataReader.GetUIntArray">
+  GetUIntArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint[] GetUIntArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetULong_" data-uid="LiteNetLib.Utils.NetDataReader.GetULong*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetULong" data-uid="LiteNetLib.Utils.NetDataReader.GetULong">
+  GetULong()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong GetULong()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetULongArray_" data-uid="LiteNetLib.Utils.NetDataReader.GetULongArray*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetULongArray" data-uid="LiteNetLib.Utils.NetDataReader.GetULongArray">
+  GetULongArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong[] GetULongArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetUShort_" data-uid="LiteNetLib.Utils.NetDataReader.GetUShort*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetUShort" data-uid="LiteNetLib.Utils.NetDataReader.GetUShort">
+  GetUShort()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort GetUShort()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_GetUShortArray_" data-uid="LiteNetLib.Utils.NetDataReader.GetUShortArray*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_GetUShortArray" data-uid="LiteNetLib.Utils.NetDataReader.GetUShortArray">
+  GetUShortArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort[] GetUShortArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_Get_" data-uid="LiteNetLib.Utils.NetDataReader.Get*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_Get__1" data-uid="LiteNetLib.Utils.NetDataReader.Get``1">
+  Get&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;() where T : INetSerializable, new()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_PeekBool_" data-uid="LiteNetLib.Utils.NetDataReader.PeekBool*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_PeekBool" data-uid="LiteNetLib.Utils.NetDataReader.PeekBool">
+  PeekBool()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PeekBool()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_PeekByte_" data-uid="LiteNetLib.Utils.NetDataReader.PeekByte*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_PeekByte" data-uid="LiteNetLib.Utils.NetDataReader.PeekByte">
+  PeekByte()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte PeekByte()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_PeekChar_" data-uid="LiteNetLib.Utils.NetDataReader.PeekChar*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_PeekChar" data-uid="LiteNetLib.Utils.NetDataReader.PeekChar">
+  PeekChar()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char PeekChar()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_PeekDouble_" data-uid="LiteNetLib.Utils.NetDataReader.PeekDouble*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_PeekDouble" data-uid="LiteNetLib.Utils.NetDataReader.PeekDouble">
+  PeekDouble()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double PeekDouble()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_PeekFloat_" data-uid="LiteNetLib.Utils.NetDataReader.PeekFloat*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_PeekFloat" data-uid="LiteNetLib.Utils.NetDataReader.PeekFloat">
+  PeekFloat()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PeekFloat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_PeekInt_" data-uid="LiteNetLib.Utils.NetDataReader.PeekInt*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_PeekInt" data-uid="LiteNetLib.Utils.NetDataReader.PeekInt">
+  PeekInt()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PeekInt()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_PeekLong_" data-uid="LiteNetLib.Utils.NetDataReader.PeekLong*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_PeekLong" data-uid="LiteNetLib.Utils.NetDataReader.PeekLong">
+  PeekLong()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long PeekLong()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_PeekSByte_" data-uid="LiteNetLib.Utils.NetDataReader.PeekSByte*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_PeekSByte" data-uid="LiteNetLib.Utils.NetDataReader.PeekSByte">
+  PeekSByte()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sbyte PeekSByte()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_PeekShort_" data-uid="LiteNetLib.Utils.NetDataReader.PeekShort*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_PeekShort" data-uid="LiteNetLib.Utils.NetDataReader.PeekShort">
+  PeekShort()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short PeekShort()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_PeekString_" data-uid="LiteNetLib.Utils.NetDataReader.PeekString*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_PeekString" data-uid="LiteNetLib.Utils.NetDataReader.PeekString">
+  PeekString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PeekString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_PeekString_" data-uid="LiteNetLib.Utils.NetDataReader.PeekString*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_PeekString_System_Int32_" data-uid="LiteNetLib.Utils.NetDataReader.PeekString(System.Int32)">
+  PeekString(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PeekString(int maxLength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_PeekUInt_" data-uid="LiteNetLib.Utils.NetDataReader.PeekUInt*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_PeekUInt" data-uid="LiteNetLib.Utils.NetDataReader.PeekUInt">
+  PeekUInt()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint PeekUInt()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_PeekULong_" data-uid="LiteNetLib.Utils.NetDataReader.PeekULong*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_PeekULong" data-uid="LiteNetLib.Utils.NetDataReader.PeekULong">
+  PeekULong()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong PeekULong()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_PeekUShort_" data-uid="LiteNetLib.Utils.NetDataReader.PeekUShort*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_PeekUShort" data-uid="LiteNetLib.Utils.NetDataReader.PeekUShort">
+  PeekUShort()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort PeekUShort()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_SetPosition_" data-uid="LiteNetLib.Utils.NetDataReader.SetPosition*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_SetPosition_System_Int32_" data-uid="LiteNetLib.Utils.NetDataReader.SetPosition(System.Int32)">
+  SetPosition(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPosition(int position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_SetSource_" data-uid="LiteNetLib.Utils.NetDataReader.SetSource*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_SetSource_LiteNetLib_Utils_NetDataWriter_" data-uid="LiteNetLib.Utils.NetDataReader.SetSource(LiteNetLib.Utils.NetDataWriter)">
+  SetSource(NetDataWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSource(NetDataWriter dataWriter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dataWriter</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_SetSource_" data-uid="LiteNetLib.Utils.NetDataReader.SetSource*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_SetSource_System_Byte___" data-uid="LiteNetLib.Utils.NetDataReader.SetSource(System.Byte[])">
+  SetSource(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSource(byte[] source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_SetSource_" data-uid="LiteNetLib.Utils.NetDataReader.SetSource*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_SetSource_System_Byte___System_Int32_System_Int32_" data-uid="LiteNetLib.Utils.NetDataReader.SetSource(System.Byte[],System.Int32,System.Int32)">
+  SetSource(byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSource(byte[] source, int offset, int maxSize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>maxSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_SkipBytes_" data-uid="LiteNetLib.Utils.NetDataReader.SkipBytes*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_SkipBytes_System_Int32_" data-uid="LiteNetLib.Utils.NetDataReader.SkipBytes(System.Int32)">
+  SkipBytes(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SkipBytes(int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetBool_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetBool*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetBool_System_Boolean__" data-uid="LiteNetLib.Utils.NetDataReader.TryGetBool(System.Boolean@)">
+  TryGetBool(out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetBool(out bool result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetByte_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetByte*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetByte_System_Byte__" data-uid="LiteNetLib.Utils.NetDataReader.TryGetByte(System.Byte@)">
+  TryGetByte(out byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetByte(out byte result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetBytesWithLength_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetBytesWithLength*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetBytesWithLength_System_Byte____" data-uid="LiteNetLib.Utils.NetDataReader.TryGetBytesWithLength(System.Byte[]@)">
+  TryGetBytesWithLength(out byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetBytesWithLength(out byte[] result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetChar_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetChar*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetChar_System_Char__" data-uid="LiteNetLib.Utils.NetDataReader.TryGetChar(System.Char@)">
+  TryGetChar(out char)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetChar(out char result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetDouble_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetDouble*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetDouble_System_Double__" data-uid="LiteNetLib.Utils.NetDataReader.TryGetDouble(System.Double@)">
+  TryGetDouble(out double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetDouble(out double result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetFloat_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetFloat*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetFloat_System_Single__" data-uid="LiteNetLib.Utils.NetDataReader.TryGetFloat(System.Single@)">
+  TryGetFloat(out float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetFloat(out float result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetInt_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetInt*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetInt_System_Int32__" data-uid="LiteNetLib.Utils.NetDataReader.TryGetInt(System.Int32@)">
+  TryGetInt(out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetInt(out int result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetLong_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetLong*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetLong_System_Int64__" data-uid="LiteNetLib.Utils.NetDataReader.TryGetLong(System.Int64@)">
+  TryGetLong(out long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetLong(out long result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetSByte_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetSByte*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetSByte_System_SByte__" data-uid="LiteNetLib.Utils.NetDataReader.TryGetSByte(System.SByte@)">
+  TryGetSByte(out sbyte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetSByte(out sbyte result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetShort_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetShort*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetShort_System_Int16__" data-uid="LiteNetLib.Utils.NetDataReader.TryGetShort(System.Int16@)">
+  TryGetShort(out short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetShort(out short result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetString_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetString*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetString_System_String__" data-uid="LiteNetLib.Utils.NetDataReader.TryGetString(System.String@)">
+  TryGetString(out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetString(out string result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetStringArray_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetStringArray*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetStringArray_System_String____" data-uid="LiteNetLib.Utils.NetDataReader.TryGetStringArray(System.String[]@)">
+  TryGetStringArray(out string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetStringArray(out string[] result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetUInt_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetUInt*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetUInt_System_UInt32__" data-uid="LiteNetLib.Utils.NetDataReader.TryGetUInt(System.UInt32@)">
+  TryGetUInt(out uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetUInt(out uint result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetULong_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetULong*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetULong_System_UInt64__" data-uid="LiteNetLib.Utils.NetDataReader.TryGetULong(System.UInt64@)">
+  TryGetULong(out ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetULong(out ulong result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetDataReader_TryGetUShort_" data-uid="LiteNetLib.Utils.NetDataReader.TryGetUShort*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetDataReader_TryGetUShort_System_UInt16__" data-uid="LiteNetLib.Utils.NetDataReader.TryGetUShort(System.UInt16@)">
+  TryGetUShort(out ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetUShort(out ushort result)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>result</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

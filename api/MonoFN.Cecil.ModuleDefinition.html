@@ -1,0 +1,3227 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ModuleDefinition
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ModuleDefinition
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MonoFN.Cecil.ModuleDefinition">
+
+
+
+  <h1 id="MonoFN_Cecil_ModuleDefinition" data-uid="MonoFN.Cecil.ModuleDefinition" class="text-break">
+    Class ModuleDefinition
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MonoFN.html">MonoFN</a>.<a class="xref" href="MonoFN.Cecil.html">Cecil</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ModuleDefinition : ModuleReference, IMetadataScope, ICustomAttributeProvider, ICustomDebugInformationProvider, IMetadataTokenProvider, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MonoFN.Cecil.ModuleReference.html">ModuleReference</a></div>
+      <div><span class="xref">ModuleDefinition</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="MonoFN.Cecil.IMetadataScope.html">IMetadataScope</a></div>
+      <div><a class="xref" href="MonoFN.Cecil.ICustomAttributeProvider.html">ICustomAttributeProvider</a></div>
+      <div><a class="xref" href="MonoFN.Cecil.Cil.ICustomDebugInformationProvider.html">ICustomDebugInformationProvider</a></div>
+      <div><a class="xref" href="MonoFN.Cecil.IMetadataTokenProvider.html">IMetadataTokenProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MonoFN.Cecil.ModuleReference.html#MonoFN_Cecil_ModuleReference_Name">ModuleReference.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoFN.Cecil.ModuleReference.html#MonoFN_Cecil_ModuleReference_MetadataToken">ModuleReference.MetadataToken</a>
+    </div>
+    <div>
+      <a class="xref" href="MonoFN.Cecil.ModuleReference.html#MonoFN_Cecil_ModuleReference_ToString">ModuleReference.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="FishNet.CodeGenerating.Helping.Extension.ModuleDefinitionExtensions.html#FishNet_CodeGenerating_Helping_Extension_ModuleDefinitionExtensions_GetClass_MonoFN_Cecil_ModuleDefinition_System_String_System_String_">ModuleDefinitionExtensions.GetClass(ModuleDefinition, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="FishNet.CodeGenerating.Helping.Extension.ModuleDefinitionExtensions.html#FishNet_CodeGenerating_Helping_Extension_ModuleDefinitionExtensions_ImportReference_MonoFN_Cecil_ModuleDefinition_System_Linq_Expressions_Expression_System_Action__">ModuleDefinitionExtensions.ImportReference(ModuleDefinition, Expression&lt;Action&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FishNet.CodeGenerating.Helping.Extension.ModuleDefinitionExtensions.html#FishNet_CodeGenerating_Helping_Extension_ModuleDefinitionExtensions_ImportReference_MonoFN_Cecil_ModuleDefinition_System_Linq_Expressions_LambdaExpression_">ModuleDefinitionExtensions.ImportReference(ModuleDefinition, LambdaExpression)</a>
+  </div>
+  <div>
+      <a class="xref" href="FishNet.CodeGenerating.Helping.Extension.ModuleDefinitionExtensions.html#FishNet_CodeGenerating_Helping_Extension_ModuleDefinitionExtensions_ImportReference__1_MonoFN_Cecil_ModuleDefinition_System_Linq_Expressions_Expression_System_Action___0___">ModuleDefinitionExtensions.ImportReference&lt;T&gt;(ModuleDefinition, Expression&lt;Action&lt;T&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Architecture_" data-uid="MonoFN.Cecil.ModuleDefinition.Architecture*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Architecture" data-uid="MonoFN.Cecil.ModuleDefinition.Architecture">
+  Architecture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TargetArchitecture Architecture { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.TargetArchitecture.html">TargetArchitecture</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Assembly_" data-uid="MonoFN.Cecil.ModuleDefinition.Assembly*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Assembly" data-uid="MonoFN.Cecil.ModuleDefinition.Assembly">
+  Assembly
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssemblyDefinition Assembly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.AssemblyDefinition.html">AssemblyDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_AssemblyReferences_" data-uid="MonoFN.Cecil.ModuleDefinition.AssemblyReferences*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_AssemblyReferences" data-uid="MonoFN.Cecil.ModuleDefinition.AssemblyReferences">
+  AssemblyReferences
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;AssemblyNameReference&gt; AssemblyReferences { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Collections.Generic.Collection-1.html">Collection</a>&lt;<a class="xref" href="MonoFN.Cecil.AssemblyNameReference.html">AssemblyNameReference</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_AssemblyResolver_" data-uid="MonoFN.Cecil.ModuleDefinition.AssemblyResolver*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_AssemblyResolver" data-uid="MonoFN.Cecil.ModuleDefinition.AssemblyResolver">
+  AssemblyResolver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAssemblyResolver AssemblyResolver { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.IAssemblyResolver.html">IAssemblyResolver</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Attributes_" data-uid="MonoFN.Cecil.ModuleDefinition.Attributes*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Attributes" data-uid="MonoFN.Cecil.ModuleDefinition.Attributes">
+  Attributes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleAttributes Attributes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.ModuleAttributes.html">ModuleAttributes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Characteristics_" data-uid="MonoFN.Cecil.ModuleDefinition.Characteristics*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Characteristics" data-uid="MonoFN.Cecil.ModuleDefinition.Characteristics">
+  Characteristics
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleCharacteristics Characteristics { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.ModuleCharacteristics.html">ModuleCharacteristics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_CustomAttributes_" data-uid="MonoFN.Cecil.ModuleDefinition.CustomAttributes*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_CustomAttributes" data-uid="MonoFN.Cecil.ModuleDefinition.CustomAttributes">
+  CustomAttributes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;CustomAttribute&gt; CustomAttributes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Collections.Generic.Collection-1.html">Collection</a>&lt;<a class="xref" href="MonoFN.Cecil.CustomAttribute.html">CustomAttribute</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_CustomDebugInformations_" data-uid="MonoFN.Cecil.ModuleDefinition.CustomDebugInformations*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_CustomDebugInformations" data-uid="MonoFN.Cecil.ModuleDefinition.CustomDebugInformations">
+  CustomDebugInformations
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;CustomDebugInformation&gt; CustomDebugInformations { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Collections.Generic.Collection-1.html">Collection</a>&lt;<a class="xref" href="MonoFN.Cecil.Cil.CustomDebugInformation.html">CustomDebugInformation</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_EntryPoint_" data-uid="MonoFN.Cecil.ModuleDefinition.EntryPoint*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_EntryPoint" data-uid="MonoFN.Cecil.ModuleDefinition.EntryPoint">
+  EntryPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodDefinition EntryPoint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.MethodDefinition.html">MethodDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ExportedTypes_" data-uid="MonoFN.Cecil.ModuleDefinition.ExportedTypes*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ExportedTypes" data-uid="MonoFN.Cecil.ModuleDefinition.ExportedTypes">
+  ExportedTypes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;ExportedType&gt; ExportedTypes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Collections.Generic.Collection-1.html">Collection</a>&lt;<a class="xref" href="MonoFN.Cecil.ExportedType.html">ExportedType</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_FileName_" data-uid="MonoFN.Cecil.ModuleDefinition.FileName*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_FileName" data-uid="MonoFN.Cecil.ModuleDefinition.FileName">
+  FileName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FileName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_FullyQualifiedName_" data-uid="MonoFN.Cecil.ModuleDefinition.FullyQualifiedName*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_FullyQualifiedName" data-uid="MonoFN.Cecil.ModuleDefinition.FullyQualifiedName">
+  FullyQualifiedName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use FileName&quot;)]
+public string FullyQualifiedName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_HasAssemblyReferences_" data-uid="MonoFN.Cecil.ModuleDefinition.HasAssemblyReferences*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_HasAssemblyReferences" data-uid="MonoFN.Cecil.ModuleDefinition.HasAssemblyReferences">
+  HasAssemblyReferences
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAssemblyReferences { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_HasCustomAttributes_" data-uid="MonoFN.Cecil.ModuleDefinition.HasCustomAttributes*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_HasCustomAttributes" data-uid="MonoFN.Cecil.ModuleDefinition.HasCustomAttributes">
+  HasCustomAttributes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasCustomAttributes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_HasCustomDebugInformations_" data-uid="MonoFN.Cecil.ModuleDefinition.HasCustomDebugInformations*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_HasCustomDebugInformations" data-uid="MonoFN.Cecil.ModuleDefinition.HasCustomDebugInformations">
+  HasCustomDebugInformations
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasCustomDebugInformations { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_HasDebugHeader_" data-uid="MonoFN.Cecil.ModuleDefinition.HasDebugHeader*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_HasDebugHeader" data-uid="MonoFN.Cecil.ModuleDefinition.HasDebugHeader">
+  HasDebugHeader
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasDebugHeader { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_HasExportedTypes_" data-uid="MonoFN.Cecil.ModuleDefinition.HasExportedTypes*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_HasExportedTypes" data-uid="MonoFN.Cecil.ModuleDefinition.HasExportedTypes">
+  HasExportedTypes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasExportedTypes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_HasModuleReferences_" data-uid="MonoFN.Cecil.ModuleDefinition.HasModuleReferences*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_HasModuleReferences" data-uid="MonoFN.Cecil.ModuleDefinition.HasModuleReferences">
+  HasModuleReferences
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasModuleReferences { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_HasResources_" data-uid="MonoFN.Cecil.ModuleDefinition.HasResources*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_HasResources" data-uid="MonoFN.Cecil.ModuleDefinition.HasResources">
+  HasResources
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasResources { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_HasSymbols_" data-uid="MonoFN.Cecil.ModuleDefinition.HasSymbols*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_HasSymbols" data-uid="MonoFN.Cecil.ModuleDefinition.HasSymbols">
+  HasSymbols
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasSymbols { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_HasTypes_" data-uid="MonoFN.Cecil.ModuleDefinition.HasTypes*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_HasTypes" data-uid="MonoFN.Cecil.ModuleDefinition.HasTypes">
+  HasTypes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasTypes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_IsMain_" data-uid="MonoFN.Cecil.ModuleDefinition.IsMain*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_IsMain" data-uid="MonoFN.Cecil.ModuleDefinition.IsMain">
+  IsMain
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMain { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Kind_" data-uid="MonoFN.Cecil.ModuleDefinition.Kind*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Kind" data-uid="MonoFN.Cecil.ModuleDefinition.Kind">
+  Kind
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleKind Kind { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.ModuleKind.html">ModuleKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_MetadataKind_" data-uid="MonoFN.Cecil.ModuleDefinition.MetadataKind*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_MetadataKind" data-uid="MonoFN.Cecil.ModuleDefinition.MetadataKind">
+  MetadataKind
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetadataKind MetadataKind { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.MetadataKind.html">MetadataKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_MetadataResolver_" data-uid="MonoFN.Cecil.ModuleDefinition.MetadataResolver*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_MetadataResolver" data-uid="MonoFN.Cecil.ModuleDefinition.MetadataResolver">
+  MetadataResolver
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMetadataResolver MetadataResolver { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.IMetadataResolver.html">IMetadataResolver</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_MetadataScopeType_" data-uid="MonoFN.Cecil.ModuleDefinition.MetadataScopeType*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_MetadataScopeType" data-uid="MonoFN.Cecil.ModuleDefinition.MetadataScopeType">
+  MetadataScopeType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override MetadataScopeType MetadataScopeType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.MetadataScopeType.html">MetadataScopeType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ModuleReferences_" data-uid="MonoFN.Cecil.ModuleDefinition.ModuleReferences*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ModuleReferences" data-uid="MonoFN.Cecil.ModuleDefinition.ModuleReferences">
+  ModuleReferences
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;ModuleReference&gt; ModuleReferences { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Collections.Generic.Collection-1.html">Collection</a>&lt;<a class="xref" href="MonoFN.Cecil.ModuleReference.html">ModuleReference</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Mvid_" data-uid="MonoFN.Cecil.ModuleDefinition.Mvid*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Mvid" data-uid="MonoFN.Cecil.ModuleDefinition.Mvid">
+  Mvid
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid Mvid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Resources_" data-uid="MonoFN.Cecil.ModuleDefinition.Resources*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Resources" data-uid="MonoFN.Cecil.ModuleDefinition.Resources">
+  Resources
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;Resource&gt; Resources { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Collections.Generic.Collection-1.html">Collection</a>&lt;<a class="xref" href="MonoFN.Cecil.Resource.html">Resource</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Runtime_" data-uid="MonoFN.Cecil.ModuleDefinition.Runtime*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Runtime" data-uid="MonoFN.Cecil.ModuleDefinition.Runtime">
+  Runtime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TargetRuntime Runtime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.TargetRuntime.html">TargetRuntime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_RuntimeVersion_" data-uid="MonoFN.Cecil.ModuleDefinition.RuntimeVersion*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_RuntimeVersion" data-uid="MonoFN.Cecil.ModuleDefinition.RuntimeVersion">
+  RuntimeVersion
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RuntimeVersion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_SymbolReader_" data-uid="MonoFN.Cecil.ModuleDefinition.SymbolReader*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_SymbolReader" data-uid="MonoFN.Cecil.ModuleDefinition.SymbolReader">
+  SymbolReader
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISymbolReader SymbolReader { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.Cil.ISymbolReader.html">ISymbolReader</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_TypeSystem_" data-uid="MonoFN.Cecil.ModuleDefinition.TypeSystem*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_TypeSystem" data-uid="MonoFN.Cecil.ModuleDefinition.TypeSystem">
+  TypeSystem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeSystem TypeSystem { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.TypeSystem.html">TypeSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Types_" data-uid="MonoFN.Cecil.ModuleDefinition.Types*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Types" data-uid="MonoFN.Cecil.ModuleDefinition.Types">
+  Types
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;TypeDefinition&gt; Types { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Collections.Generic.Collection-1.html">Collection</a>&lt;<a class="xref" href="MonoFN.Cecil.TypeDefinition.html">TypeDefinition</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_CreateModule_" data-uid="MonoFN.Cecil.ModuleDefinition.CreateModule*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_CreateModule_System_String_MonoFN_Cecil_ModuleKind_" data-uid="MonoFN.Cecil.ModuleDefinition.CreateModule(System.String,MonoFN.Cecil.ModuleKind)">
+  CreateModule(string, ModuleKind)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModuleDefinition CreateModule(string name, ModuleKind kind)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>kind</code> <a class="xref" href="MonoFN.Cecil.ModuleKind.html">ModuleKind</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.ModuleDefinition.html">ModuleDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_CreateModule_" data-uid="MonoFN.Cecil.ModuleDefinition.CreateModule*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_CreateModule_System_String_MonoFN_Cecil_ModuleParameters_" data-uid="MonoFN.Cecil.ModuleDefinition.CreateModule(System.String,MonoFN.Cecil.ModuleParameters)">
+  CreateModule(string, ModuleParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModuleDefinition CreateModule(string name, ModuleParameters parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="MonoFN.Cecil.ModuleParameters.html">ModuleParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.ModuleDefinition.html">ModuleDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Dispose_" data-uid="MonoFN.Cecil.ModuleDefinition.Dispose*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Dispose" data-uid="MonoFN.Cecil.ModuleDefinition.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_GetCustomAttributes_" data-uid="MonoFN.Cecil.ModuleDefinition.GetCustomAttributes*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_GetCustomAttributes" data-uid="MonoFN.Cecil.ModuleDefinition.GetCustomAttributes">
+  GetCustomAttributes()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;CustomAttribute&gt; GetCustomAttributes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="MonoFN.Cecil.CustomAttribute.html">CustomAttribute</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_GetDebugHeader_" data-uid="MonoFN.Cecil.ModuleDefinition.GetDebugHeader*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_GetDebugHeader" data-uid="MonoFN.Cecil.ModuleDefinition.GetDebugHeader">
+  GetDebugHeader()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageDebugHeader GetDebugHeader()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.Cil.ImageDebugHeader.html">ImageDebugHeader</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_GetMemberReferences_" data-uid="MonoFN.Cecil.ModuleDefinition.GetMemberReferences*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_GetMemberReferences" data-uid="MonoFN.Cecil.ModuleDefinition.GetMemberReferences">
+  GetMemberReferences()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;MemberReference&gt; GetMemberReferences()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="MonoFN.Cecil.MemberReference.html">MemberReference</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_GetType_" data-uid="MonoFN.Cecil.ModuleDefinition.GetType*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_GetType_System_String_" data-uid="MonoFN.Cecil.ModuleDefinition.GetType(System.String)">
+  GetType(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeDefinition GetType(string fullName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.TypeDefinition.html">TypeDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_GetType_" data-uid="MonoFN.Cecil.ModuleDefinition.GetType*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_GetType_System_String_System_Boolean_" data-uid="MonoFN.Cecil.ModuleDefinition.GetType(System.String,System.Boolean)">
+  GetType(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeReference GetType(string fullName, bool runtimeName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>runtimeName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_GetType_" data-uid="MonoFN.Cecil.ModuleDefinition.GetType*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_GetType_System_String_System_String_" data-uid="MonoFN.Cecil.ModuleDefinition.GetType(System.String,System.String)">
+  GetType(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeDefinition GetType(string @namespace, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>namespace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.TypeDefinition.html">TypeDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_GetTypeReferences_" data-uid="MonoFN.Cecil.ModuleDefinition.GetTypeReferences*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_GetTypeReferences" data-uid="MonoFN.Cecil.ModuleDefinition.GetTypeReferences">
+  GetTypeReferences()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TypeReference&gt; GetTypeReferences()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_GetTypes_" data-uid="MonoFN.Cecil.ModuleDefinition.GetTypes*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_GetTypes" data-uid="MonoFN.Cecil.ModuleDefinition.GetTypes">
+  GetTypes()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TypeDefinition&gt; GetTypes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="MonoFN.Cecil.TypeDefinition.html">TypeDefinition</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_HasTypeReference_" data-uid="MonoFN.Cecil.ModuleDefinition.HasTypeReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_HasTypeReference_System_String_" data-uid="MonoFN.Cecil.ModuleDefinition.HasTypeReference(System.String)">
+  HasTypeReference(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasTypeReference(string fullName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_HasTypeReference_" data-uid="MonoFN.Cecil.ModuleDefinition.HasTypeReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_HasTypeReference_System_String_System_String_" data-uid="MonoFN.Cecil.ModuleDefinition.HasTypeReference(System.String,System.String)">
+  HasTypeReference(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasTypeReference(string scope, string fullName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scope</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>fullName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ImmediateRead_" data-uid="MonoFN.Cecil.ModuleDefinition.ImmediateRead*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ImmediateRead" data-uid="MonoFN.Cecil.ModuleDefinition.ImmediateRead">
+  ImmediateRead()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ImmediateRead()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Import_" data-uid="MonoFN.Cecil.ModuleDefinition.Import*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Import_MonoFN_Cecil_FieldReference_" data-uid="MonoFN.Cecil.ModuleDefinition.Import(MonoFN.Cecil.FieldReference)">
+  Import(FieldReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ImportReference&quot;, false)]
+public FieldReference Import(FieldReference field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="MonoFN.Cecil.FieldReference.html">FieldReference</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.FieldReference.html">FieldReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Import_" data-uid="MonoFN.Cecil.ModuleDefinition.Import*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Import_MonoFN_Cecil_FieldReference_MonoFN_Cecil_IGenericParameterProvider_" data-uid="MonoFN.Cecil.ModuleDefinition.Import(MonoFN.Cecil.FieldReference,MonoFN.Cecil.IGenericParameterProvider)">
+  Import(FieldReference, IGenericParameterProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ImportReference&quot;, false)]
+public FieldReference Import(FieldReference field, IGenericParameterProvider context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="MonoFN.Cecil.FieldReference.html">FieldReference</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="MonoFN.Cecil.IGenericParameterProvider.html">IGenericParameterProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.FieldReference.html">FieldReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Import_" data-uid="MonoFN.Cecil.ModuleDefinition.Import*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Import_MonoFN_Cecil_MethodReference_" data-uid="MonoFN.Cecil.ModuleDefinition.Import(MonoFN.Cecil.MethodReference)">
+  Import(MethodReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ImportReference&quot;, false)]
+public MethodReference Import(MethodReference method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="MonoFN.Cecil.MethodReference.html">MethodReference</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.MethodReference.html">MethodReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Import_" data-uid="MonoFN.Cecil.ModuleDefinition.Import*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Import_MonoFN_Cecil_MethodReference_MonoFN_Cecil_IGenericParameterProvider_" data-uid="MonoFN.Cecil.ModuleDefinition.Import(MonoFN.Cecil.MethodReference,MonoFN.Cecil.IGenericParameterProvider)">
+  Import(MethodReference, IGenericParameterProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ImportReference&quot;, false)]
+public MethodReference Import(MethodReference method, IGenericParameterProvider context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="MonoFN.Cecil.MethodReference.html">MethodReference</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="MonoFN.Cecil.IGenericParameterProvider.html">IGenericParameterProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.MethodReference.html">MethodReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Import_" data-uid="MonoFN.Cecil.ModuleDefinition.Import*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Import_MonoFN_Cecil_TypeReference_" data-uid="MonoFN.Cecil.ModuleDefinition.Import(MonoFN.Cecil.TypeReference)">
+  Import(TypeReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ImportReference&quot;, false)]
+public TypeReference Import(TypeReference type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Import_" data-uid="MonoFN.Cecil.ModuleDefinition.Import*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Import_MonoFN_Cecil_TypeReference_MonoFN_Cecil_IGenericParameterProvider_" data-uid="MonoFN.Cecil.ModuleDefinition.Import(MonoFN.Cecil.TypeReference,MonoFN.Cecil.IGenericParameterProvider)">
+  Import(TypeReference, IGenericParameterProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ImportReference&quot;, false)]
+public TypeReference Import(TypeReference type, IGenericParameterProvider context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="MonoFN.Cecil.IGenericParameterProvider.html">IGenericParameterProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Import_" data-uid="MonoFN.Cecil.ModuleDefinition.Import*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Import_System_Reflection_FieldInfo_" data-uid="MonoFN.Cecil.ModuleDefinition.Import(System.Reflection.FieldInfo)">
+  Import(FieldInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ImportReference&quot;, false)]
+public FieldReference Import(FieldInfo field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo">FieldInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.FieldReference.html">FieldReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Import_" data-uid="MonoFN.Cecil.ModuleDefinition.Import*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Import_System_Reflection_FieldInfo_MonoFN_Cecil_IGenericParameterProvider_" data-uid="MonoFN.Cecil.ModuleDefinition.Import(System.Reflection.FieldInfo,MonoFN.Cecil.IGenericParameterProvider)">
+  Import(FieldInfo, IGenericParameterProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ImportReference&quot;, false)]
+public FieldReference Import(FieldInfo field, IGenericParameterProvider context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo">FieldInfo</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="MonoFN.Cecil.IGenericParameterProvider.html">IGenericParameterProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.FieldReference.html">FieldReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Import_" data-uid="MonoFN.Cecil.ModuleDefinition.Import*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Import_System_Reflection_MethodBase_" data-uid="MonoFN.Cecil.ModuleDefinition.Import(System.Reflection.MethodBase)">
+  Import(MethodBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ImportReference&quot;, false)]
+public MethodReference Import(MethodBase method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodbase">MethodBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.MethodReference.html">MethodReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Import_" data-uid="MonoFN.Cecil.ModuleDefinition.Import*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Import_System_Reflection_MethodBase_MonoFN_Cecil_IGenericParameterProvider_" data-uid="MonoFN.Cecil.ModuleDefinition.Import(System.Reflection.MethodBase,MonoFN.Cecil.IGenericParameterProvider)">
+  Import(MethodBase, IGenericParameterProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ImportReference&quot;, false)]
+public MethodReference Import(MethodBase method, IGenericParameterProvider context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodbase">MethodBase</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="MonoFN.Cecil.IGenericParameterProvider.html">IGenericParameterProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.MethodReference.html">MethodReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Import_" data-uid="MonoFN.Cecil.ModuleDefinition.Import*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Import_System_Type_" data-uid="MonoFN.Cecil.ModuleDefinition.Import(System.Type)">
+  Import(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ImportReference&quot;, false)]
+public TypeReference Import(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Import_" data-uid="MonoFN.Cecil.ModuleDefinition.Import*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Import_System_Type_MonoFN_Cecil_IGenericParameterProvider_" data-uid="MonoFN.Cecil.ModuleDefinition.Import(System.Type,MonoFN.Cecil.IGenericParameterProvider)">
+  Import(Type, IGenericParameterProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ImportReference&quot;, false)]
+public TypeReference Import(Type type, IGenericParameterProvider context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="MonoFN.Cecil.IGenericParameterProvider.html">IGenericParameterProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ImportReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ImportReference_MonoFN_Cecil_FieldReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference(MonoFN.Cecil.FieldReference)">
+  ImportReference(FieldReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FieldReference ImportReference(FieldReference field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="MonoFN.Cecil.FieldReference.html">FieldReference</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.FieldReference.html">FieldReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ImportReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ImportReference_MonoFN_Cecil_FieldReference_MonoFN_Cecil_IGenericParameterProvider_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference(MonoFN.Cecil.FieldReference,MonoFN.Cecil.IGenericParameterProvider)">
+  ImportReference(FieldReference, IGenericParameterProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FieldReference ImportReference(FieldReference field, IGenericParameterProvider context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="MonoFN.Cecil.FieldReference.html">FieldReference</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="MonoFN.Cecil.IGenericParameterProvider.html">IGenericParameterProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.FieldReference.html">FieldReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ImportReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ImportReference_MonoFN_Cecil_MethodReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference(MonoFN.Cecil.MethodReference)">
+  ImportReference(MethodReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodReference ImportReference(MethodReference method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="MonoFN.Cecil.MethodReference.html">MethodReference</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.MethodReference.html">MethodReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ImportReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ImportReference_MonoFN_Cecil_MethodReference_MonoFN_Cecil_IGenericParameterProvider_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference(MonoFN.Cecil.MethodReference,MonoFN.Cecil.IGenericParameterProvider)">
+  ImportReference(MethodReference, IGenericParameterProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodReference ImportReference(MethodReference method, IGenericParameterProvider context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="MonoFN.Cecil.MethodReference.html">MethodReference</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="MonoFN.Cecil.IGenericParameterProvider.html">IGenericParameterProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.MethodReference.html">MethodReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ImportReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ImportReference_MonoFN_Cecil_TypeReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference(MonoFN.Cecil.TypeReference)">
+  ImportReference(TypeReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeReference ImportReference(TypeReference type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ImportReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ImportReference_MonoFN_Cecil_TypeReference_MonoFN_Cecil_IGenericParameterProvider_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference(MonoFN.Cecil.TypeReference,MonoFN.Cecil.IGenericParameterProvider)">
+  ImportReference(TypeReference, IGenericParameterProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeReference ImportReference(TypeReference type, IGenericParameterProvider context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="MonoFN.Cecil.IGenericParameterProvider.html">IGenericParameterProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ImportReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ImportReference_System_Reflection_FieldInfo_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference(System.Reflection.FieldInfo)">
+  ImportReference(FieldInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FieldReference ImportReference(FieldInfo field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo">FieldInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.FieldReference.html">FieldReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ImportReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ImportReference_System_Reflection_FieldInfo_MonoFN_Cecil_IGenericParameterProvider_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference(System.Reflection.FieldInfo,MonoFN.Cecil.IGenericParameterProvider)">
+  ImportReference(FieldInfo, IGenericParameterProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FieldReference ImportReference(FieldInfo field, IGenericParameterProvider context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>field</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.fieldinfo">FieldInfo</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="MonoFN.Cecil.IGenericParameterProvider.html">IGenericParameterProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.FieldReference.html">FieldReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ImportReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ImportReference_System_Reflection_MethodBase_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference(System.Reflection.MethodBase)">
+  ImportReference(MethodBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodReference ImportReference(MethodBase method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodbase">MethodBase</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.MethodReference.html">MethodReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ImportReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ImportReference_System_Reflection_MethodBase_MonoFN_Cecil_IGenericParameterProvider_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference(System.Reflection.MethodBase,MonoFN.Cecil.IGenericParameterProvider)">
+  ImportReference(MethodBase, IGenericParameterProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodReference ImportReference(MethodBase method, IGenericParameterProvider context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodbase">MethodBase</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="MonoFN.Cecil.IGenericParameterProvider.html">IGenericParameterProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.MethodReference.html">MethodReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ImportReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ImportReference_System_Type_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference(System.Type)">
+  ImportReference(Type)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeReference ImportReference(Type type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ImportReference_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ImportReference_System_Type_MonoFN_Cecil_IGenericParameterProvider_" data-uid="MonoFN.Cecil.ModuleDefinition.ImportReference(System.Type,MonoFN.Cecil.IGenericParameterProvider)">
+  ImportReference(Type, IGenericParameterProvider)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TypeReference ImportReference(Type type, IGenericParameterProvider context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="MonoFN.Cecil.IGenericParameterProvider.html">IGenericParameterProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_LookupToken_" data-uid="MonoFN.Cecil.ModuleDefinition.LookupToken*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_LookupToken_MonoFN_Cecil_MetadataToken_" data-uid="MonoFN.Cecil.ModuleDefinition.LookupToken(MonoFN.Cecil.MetadataToken)">
+  LookupToken(MetadataToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMetadataTokenProvider LookupToken(MetadataToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="MonoFN.Cecil.MetadataToken.html">MetadataToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.IMetadataTokenProvider.html">IMetadataTokenProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_LookupToken_" data-uid="MonoFN.Cecil.ModuleDefinition.LookupToken*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_LookupToken_System_Int32_" data-uid="MonoFN.Cecil.ModuleDefinition.LookupToken(System.Int32)">
+  LookupToken(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMetadataTokenProvider LookupToken(int token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.IMetadataTokenProvider.html">IMetadataTokenProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ReadModule_" data-uid="MonoFN.Cecil.ModuleDefinition.ReadModule*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ReadModule_System_IO_Stream_" data-uid="MonoFN.Cecil.ModuleDefinition.ReadModule(System.IO.Stream)">
+  ReadModule(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModuleDefinition ReadModule(Stream stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.ModuleDefinition.html">ModuleDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ReadModule_" data-uid="MonoFN.Cecil.ModuleDefinition.ReadModule*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ReadModule_System_IO_Stream_MonoFN_Cecil_ReaderParameters_" data-uid="MonoFN.Cecil.ModuleDefinition.ReadModule(System.IO.Stream,MonoFN.Cecil.ReaderParameters)">
+  ReadModule(Stream, ReaderParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModuleDefinition ReadModule(Stream stream, ReaderParameters parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="MonoFN.Cecil.ReaderParameters.html">ReaderParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.ModuleDefinition.html">ModuleDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ReadModule_" data-uid="MonoFN.Cecil.ModuleDefinition.ReadModule*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ReadModule_System_String_" data-uid="MonoFN.Cecil.ModuleDefinition.ReadModule(System.String)">
+  ReadModule(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModuleDefinition ReadModule(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.ModuleDefinition.html">ModuleDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ReadModule_" data-uid="MonoFN.Cecil.ModuleDefinition.ReadModule*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ReadModule_System_String_MonoFN_Cecil_ReaderParameters_" data-uid="MonoFN.Cecil.ModuleDefinition.ReadModule(System.String,MonoFN.Cecil.ReaderParameters)">
+  ReadModule(string, ReaderParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModuleDefinition ReadModule(string fileName, ReaderParameters parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="MonoFN.Cecil.ReaderParameters.html">ReaderParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoFN.Cecil.ModuleDefinition.html">ModuleDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ReadSymbols_" data-uid="MonoFN.Cecil.ModuleDefinition.ReadSymbols*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ReadSymbols" data-uid="MonoFN.Cecil.ModuleDefinition.ReadSymbols">
+  ReadSymbols()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadSymbols()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ReadSymbols_" data-uid="MonoFN.Cecil.ModuleDefinition.ReadSymbols*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ReadSymbols_MonoFN_Cecil_Cil_ISymbolReader_" data-uid="MonoFN.Cecil.ModuleDefinition.ReadSymbols(MonoFN.Cecil.Cil.ISymbolReader)">
+  ReadSymbols(ISymbolReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadSymbols(ISymbolReader reader)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reader</code> <a class="xref" href="MonoFN.Cecil.Cil.ISymbolReader.html">ISymbolReader</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_ReadSymbols_" data-uid="MonoFN.Cecil.ModuleDefinition.ReadSymbols*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_ReadSymbols_MonoFN_Cecil_Cil_ISymbolReader_System_Boolean_" data-uid="MonoFN.Cecil.ModuleDefinition.ReadSymbols(MonoFN.Cecil.Cil.ISymbolReader,System.Boolean)">
+  ReadSymbols(ISymbolReader, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadSymbols(ISymbolReader reader, bool throwIfSymbolsAreNotMaching)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reader</code> <a class="xref" href="MonoFN.Cecil.Cil.ISymbolReader.html">ISymbolReader</a></dt>
+    <dd></dd>
+    <dt><code>throwIfSymbolsAreNotMaching</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_TryGetTypeReference_" data-uid="MonoFN.Cecil.ModuleDefinition.TryGetTypeReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_TryGetTypeReference_System_String_MonoFN_Cecil_TypeReference__" data-uid="MonoFN.Cecil.ModuleDefinition.TryGetTypeReference(System.String,MonoFN.Cecil.TypeReference@)">
+  TryGetTypeReference(string, out TypeReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetTypeReference(string fullName, out TypeReference type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_TryGetTypeReference_" data-uid="MonoFN.Cecil.ModuleDefinition.TryGetTypeReference*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_TryGetTypeReference_System_String_System_String_MonoFN_Cecil_TypeReference__" data-uid="MonoFN.Cecil.ModuleDefinition.TryGetTypeReference(System.String,System.String,MonoFN.Cecil.TypeReference@)">
+  TryGetTypeReference(string, string, out TypeReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetTypeReference(string scope, string fullName, out TypeReference type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scope</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>fullName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="MonoFN.Cecil.TypeReference.html">TypeReference</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Write_" data-uid="MonoFN.Cecil.ModuleDefinition.Write*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Write" data-uid="MonoFN.Cecil.ModuleDefinition.Write">
+  Write()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Write_" data-uid="MonoFN.Cecil.ModuleDefinition.Write*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Write_MonoFN_Cecil_WriterParameters_" data-uid="MonoFN.Cecil.ModuleDefinition.Write(MonoFN.Cecil.WriterParameters)">
+  Write(WriterParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(WriterParameters parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameters</code> <a class="xref" href="MonoFN.Cecil.WriterParameters.html">WriterParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Write_" data-uid="MonoFN.Cecil.ModuleDefinition.Write*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Write_System_IO_Stream_" data-uid="MonoFN.Cecil.ModuleDefinition.Write(System.IO.Stream)">
+  Write(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Stream stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Write_" data-uid="MonoFN.Cecil.ModuleDefinition.Write*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Write_System_IO_Stream_MonoFN_Cecil_WriterParameters_" data-uid="MonoFN.Cecil.ModuleDefinition.Write(System.IO.Stream,MonoFN.Cecil.WriterParameters)">
+  Write(Stream, WriterParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Stream stream, WriterParameters parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="MonoFN.Cecil.WriterParameters.html">WriterParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Write_" data-uid="MonoFN.Cecil.ModuleDefinition.Write*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Write_System_String_" data-uid="MonoFN.Cecil.ModuleDefinition.Write(System.String)">
+  Write(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(string fileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MonoFN_Cecil_ModuleDefinition_Write_" data-uid="MonoFN.Cecil.ModuleDefinition.Write*"></a>
+
+  <h3 id="MonoFN_Cecil_ModuleDefinition_Write_System_String_MonoFN_Cecil_WriterParameters_" data-uid="MonoFN.Cecil.ModuleDefinition.Write(System.String,MonoFN.Cecil.WriterParameters)">
+  Write(string, WriterParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(string fileName, WriterParameters parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>parameters</code> <a class="xref" href="MonoFN.Cecil.WriterParameters.html">WriterParameters</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

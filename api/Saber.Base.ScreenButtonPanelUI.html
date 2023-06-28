@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ScreenButtonPanelUI
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ScreenButtonPanelUI
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Saber.Base.ScreenButtonPanelUI">
+
+
+
+  <h1 id="Saber_Base_ScreenButtonPanelUI" data-uid="Saber.Base.ScreenButtonPanelUI" class="text-break">
+    Class ScreenButtonPanelUI
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Saber.html">Saber</a>.<a class="xref" href="Saber.Base.html">Base</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ScreenButtonPanelUI : UIBase&lt;ScreenButtonPanelUI&gt;, IUIBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="UIBase-1.html">UIBase</a>&lt;<a class="xref" href="Saber.Base.ScreenButtonPanelUI.html">ScreenButtonPanelUI</a>&gt;</div>
+      <div><span class="xref">ScreenButtonPanelUI</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="IUIBase.html">IUIBase</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.Name">UIBase&lt;ScreenButtonPanelUI&gt;.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.BackGround">UIBase&lt;ScreenButtonPanelUI&gt;.BackGround</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.GetWedgateGameObject(System.String)">UIBase&lt;ScreenButtonPanelUI&gt;.GetWedgateGameObject(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.GetUIBehavior(System.String)">UIBase&lt;ScreenButtonPanelUI&gt;.GetUIBehavior(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.GetUISubManager(System.String)">UIBase&lt;ScreenButtonPanelUI&gt;.GetUISubManager(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.SetSelfActive(System.String,System.Boolean)">UIBase&lt;ScreenButtonPanelUI&gt;.SetSelfActive(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.SetPivot(System.String,System.Int32,System.Int32)">UIBase&lt;ScreenButtonPanelUI&gt;.SetPivot(string, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangePosition(System.String,Vector3,System.Boolean)">UIBase&lt;ScreenButtonPanelUI&gt;.ChangePosition(string, Vector3, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeRectSize(System.String,System.Single,System.Single)">UIBase&lt;ScreenButtonPanelUI&gt;.ChangeRectSize(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.IsButtonActive(System.String)">UIBase&lt;ScreenButtonPanelUI&gt;.IsButtonActive(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ClearButtonAllListeners(System.String)">UIBase&lt;ScreenButtonPanelUI&gt;.ClearButtonAllListeners(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.SetImageSprite(System.String,Sprite)">UIBase&lt;ScreenButtonPanelUI&gt;.SetImageSprite(string, Sprite)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.GetImageOriginSprite(System.String)">UIBase&lt;ScreenButtonPanelUI&gt;.GetImageOriginSprite(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeImageCrossFade(System.String,System.Single,System.Single)">UIBase&lt;ScreenButtonPanelUI&gt;.ChangeImageCrossFade(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.SetButtonActive(System.String,System.Boolean)">UIBase&lt;ScreenButtonPanelUI&gt;.SetButtonActive(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddButtonLister(System.String,UnityAction)">UIBase&lt;ScreenButtonPanelUI&gt;.AddButtonLister(string, UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddButtonLister(System.String,System.String,UnityAction)">UIBase&lt;ScreenButtonPanelUI&gt;.AddButtonLister(string, string, UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddScrollBarValueChanged(System.String,UnityAction{System.Single})">UIBase&lt;ScreenButtonPanelUI&gt;.AddScrollBarValueChanged(string, UnityAction&lt;float&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddDragInterface(System.String,UnityAction{BaseEventData})">UIBase&lt;ScreenButtonPanelUI&gt;.AddDragInterface(string, UnityAction&lt;BaseEventData&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddEndDragInterface(System.String,UnityAction{BaseEventData})">UIBase&lt;ScreenButtonPanelUI&gt;.AddEndDragInterface(string, UnityAction&lt;BaseEventData&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddInputFieldonEndEditLister(System.String,UnityAction{System.String})">UIBase&lt;ScreenButtonPanelUI&gt;.AddInputFieldonEndEditLister(string, UnityAction&lt;string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeInputFieldText(System.String,System.String)">UIBase&lt;ScreenButtonPanelUI&gt;.ChangeInputFieldText(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.GetInputFieldText(System.String)">UIBase&lt;ScreenButtonPanelUI&gt;.GetInputFieldText(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddInputFieldonEndEditLister(System.String,System.String,UnityAction{System.String})">UIBase&lt;ScreenButtonPanelUI&gt;.AddInputFieldonEndEditLister(string, string, UnityAction&lt;string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeText(System.String,System.String)">UIBase&lt;ScreenButtonPanelUI&gt;.ChangeText(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeText(System.String,System.String,System.Single,System.Single)">UIBase&lt;ScreenButtonPanelUI&gt;.ChangeText(string, string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeImageWidth(System.String,System.Single)">UIBase&lt;ScreenButtonPanelUI&gt;.ChangeImageWidth(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeImageFillAmount(System.String,System.Single)">UIBase&lt;ScreenButtonPanelUI&gt;.ChangeImageFillAmount(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeScrollBarValue(System.String,System.Single)">UIBase&lt;ScreenButtonPanelUI&gt;.ChangeScrollBarValue(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddImageFillAmount(System.String,System.Single)">UIBase&lt;ScreenButtonPanelUI&gt;.AddImageFillAmount(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.Open">UIBase&lt;ScreenButtonPanelUI&gt;.Open()</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.Close">UIBase&lt;ScreenButtonPanelUI&gt;.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.Start">UIBase&lt;ScreenButtonPanelUI&gt;.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.Destroy">UIBase&lt;ScreenButtonPanelUI&gt;.Destroy()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Saber_Base_ScreenButtonPanelUI_FinishAll_" data-uid="Saber.Base.ScreenButtonPanelUI.FinishAll*"></a>
+
+  <h3 id="Saber_Base_ScreenButtonPanelUI_FinishAll" data-uid="Saber.Base.ScreenButtonPanelUI.FinishAll">
+  FinishAll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FinishAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Saber_Base_ScreenButtonPanelUI_FinishShowScreenButton_" data-uid="Saber.Base.ScreenButtonPanelUI.FinishShowScreenButton*"></a>
+
+  <h3 id="Saber_Base_ScreenButtonPanelUI_FinishShowScreenButton_System_Int32_" data-uid="Saber.Base.ScreenButtonPanelUI.FinishShowScreenButton(System.Int32)">
+  FinishShowScreenButton(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FinishShowScreenButton(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Saber_Base_ScreenButtonPanelUI_Init_" data-uid="Saber.Base.ScreenButtonPanelUI.Init*"></a>
+
+  <h3 id="Saber_Base_ScreenButtonPanelUI_Init" data-uid="Saber.Base.ScreenButtonPanelUI.Init">
+  Init()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Init()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Saber_Base_ScreenButtonPanelUI_ShowScreenButton_" data-uid="Saber.Base.ScreenButtonPanelUI.ShowScreenButton*"></a>
+
+  <h3 id="Saber_Base_ScreenButtonPanelUI_ShowScreenButton_System_String_System_Action_Vector3_System_Single_System_Boolean_" data-uid="Saber.Base.ScreenButtonPanelUI.ShowScreenButton(System.String,System.Action,Vector3,System.Single,System.Boolean)">
+  ShowScreenButton(string, Action, Vector3, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ShowScreenButton(string s, Action buttonAction, Vector3 worldPos, float width = 80, bool isOnce = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>buttonAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>worldPos</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>isOnce</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

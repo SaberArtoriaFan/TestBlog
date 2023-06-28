@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>UnitAttackSystem </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="UnitAttackSystem ">
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../public/main.js'
+    import { init } from './../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="unitattacksystem">UnitAttackSystem</h1>
+
+<p>攻击系统，负责管理单位的攻击行为实现，以及<strong>AttackOrgan</strong>的生成与销毁</p>
+<h2 id="1寻敌规则">1.寻敌规则</h2>
+<p>攻击系统寻找敌人的规则是，优先攻击现在正在攻击的敌人，如果他不出意外（死亡，无敌等）或者不在警戒范围（WarningRange）之内了，则会开启寻敌寻找警戒范围内最近的敌人。</p>
+<h2 id="2两种攻击方式">2.两种攻击方式</h2>
+<h3 id="21近战与远程的区别依据">2.1近战与远程的区别依据</h3>
+<p>是否有弹道投射物（Projectile）以及不为空</p>
+<h3 id="22二者区别">2.2二者区别</h3>
+<p>近战：伤害即时触发，播放动画的指定节点<br>
+远程：伤害跟随弹道抵达触发，播放动画的指定节点触发行为为：创建弹道并设置轨迹</p>
+<h2 id="3伤害计算流程">3.伤害计算流程</h2>
+<p>1.判断命中<br>
+2.触发<strong>攻击之前</strong>事件</p>
+<pre><code class="lang-CSharp">                UnitAttackBefore.Trigger(ID_AttackBefore, attackOrgan, enemyBody, damage);
+</code></pre>
+<p>3.判断暴击<br>
+4.判断造成伤害百分比<br>
+5.播放动画并等待动画结束<br>
+6.判断是否触发<strong>攻击之后</strong>事件</p>
+<pre><code class="lang-CSharp">            if (isHitrated)
+                UnitAttackAfter.Trigger(ID_AttackAfter, attackOrgan, enemyBody, damage);
+</code></pre>
+<p>7.结束攻击</p>
+<h2 id="4注册事件">4.注册事件</h2>
+<pre><code class="lang-CSharp">        SaberEvent&lt;AttackOrgan, BodyOrgan,Damage&gt; UnitAttackBefore;
+        SaberEvent&lt;AttackOrgan, BodyOrgan, Damage&gt; UnitAttackAfter;
+</code></pre>
+<p><strong>注意</strong>：无法使单位攻击友军单位，如果有该需求考虑修改</p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

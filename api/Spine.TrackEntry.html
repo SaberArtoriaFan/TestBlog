@@ -1,0 +1,1293 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TrackEntry
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TrackEntry
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.TrackEntry">
+
+
+
+  <h1 id="Spine_TrackEntry" data-uid="Spine.TrackEntry" class="text-break">
+    Class TrackEntry
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>
+Stores settings and other state for the playback of an animation on an <a class="xref" href="Spine.AnimationState.html">AnimationState</a> track.</p>
+<p>
+References to a track entry must not be kept after the <see cref="!:AnimationStateListener.Dispose(TrackEntry)"></see> event occurs.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TrackEntry : Pool&lt;TrackEntry&gt;.IPoolable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TrackEntry</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Spine.Pool-1.html">Pool</a>&lt;<a class="xref" href="Spine.TrackEntry.html">TrackEntry</a>&gt;.<a class="xref" href="Spine.Pool{Spine.TrackEntry}.IPoolable.html">IPoolable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Spine.SpineSkeletonExtensions.html#Spine_SpineSkeletonExtensions_AllowImmediateQueue_Spine_TrackEntry_">SpineSkeletonExtensions.AllowImmediateQueue(TrackEntry)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Spine_TrackEntry_Alpha_" data-uid="Spine.TrackEntry.Alpha*"></a>
+
+  <h3 id="Spine_TrackEntry_Alpha" data-uid="Spine.TrackEntry.Alpha">
+  Alpha
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Alpha { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_Animation_" data-uid="Spine.TrackEntry.Animation*"></a>
+
+  <h3 id="Spine_TrackEntry_Animation" data-uid="Spine.TrackEntry.Animation">
+  Animation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The animation to apply for this track entry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Animation Animation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Animation.html">Animation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_AnimationEnd_" data-uid="Spine.TrackEntry.AnimationEnd*"></a>
+
+  <h3 id="Spine_TrackEntry_AnimationEnd" data-uid="Spine.TrackEntry.AnimationEnd">
+  AnimationEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Seconds for the last frame of this animation. Non-looping animations won't play past this time. Looping animations will
+loop back to <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_AnimationStart">AnimationStart</a> at this time. Defaults to the animation <a class="xref" href="Spine.Animation.html#Spine_Animation_Duration">Duration</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimationEnd { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_AnimationLast_" data-uid="Spine.TrackEntry.AnimationLast*"></a>
+
+  <h3 id="Spine_TrackEntry_AnimationLast" data-uid="Spine.TrackEntry.AnimationLast">
+  AnimationLast
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The time in seconds this animation was last applied. Some timelines use this for one-time triggers. Eg, when this
+animation is applied, event timelines will fire all events between the <pre><code class="lang-csharp">AnimationLast</code></pre> time (exclusive) and
+<pre><code class="lang-csharp">AnimationTime</code></pre> (inclusive). Defaults to -1 to ensure triggers on frame 0 happen the first time this animation
+<p>is applied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimationLast { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_AnimationStart_" data-uid="Spine.TrackEntry.AnimationStart*"></a>
+
+  <h3 id="Spine_TrackEntry_AnimationStart" data-uid="Spine.TrackEntry.AnimationStart">
+  AnimationStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimationStart { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_AnimationTime_" data-uid="Spine.TrackEntry.AnimationTime*"></a>
+
+  <h3 id="Spine_TrackEntry_AnimationTime" data-uid="Spine.TrackEntry.AnimationTime">
+  AnimationTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Uses <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_TrackTime">TrackTime</a> to compute the <pre><code class="lang-csharp">AnimationTime</code></pre>, which is between <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_AnimationStart">AnimationStart</a>
+and <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_AnimationEnd">AnimationEnd</a>. When the <pre><code class="lang-csharp">TrackTime</code></pre> is 0, the <pre><code class="lang-csharp">AnimationTime</code></pre> is equal to the
+<pre><code class="lang-csharp">AnimationStart</code></pre> time.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimationTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_AttachmentThreshold_" data-uid="Spine.TrackEntry.AttachmentThreshold*"></a>
+
+  <h3 id="Spine_TrackEntry_AttachmentThreshold" data-uid="Spine.TrackEntry.AttachmentThreshold">
+  AttachmentThreshold
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When the mix percentage (<a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_MixTime">MixTime</a> / <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_MixDuration">MixDuration</a>) is less than the</p>
+<pre><code class="lang-csharp">AttachmentThreshold</code></pre>, attachment timelines are applied while this animation is being mixed out. Defaults to
+<p>0, so attachment timelines are not applied while this animation is being mixed out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AttachmentThreshold { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_Delay_" data-uid="Spine.TrackEntry.Delay*"></a>
+
+  <h3 id="Spine_TrackEntry_Delay" data-uid="Spine.TrackEntry.Delay">
+  Delay
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+Seconds to postpone playing the animation. When this track entry is the current track entry, <pre><code class="lang-csharp">Delay</code></pre>
+postpones incrementing the <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_TrackTime">TrackTime</a>. When this track entry is queued, <pre><code class="lang-csharp">Delay</code></pre> is the time from
+the start of the previous animation to when this track entry will become the current track entry (ie when the previous
+track entry <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_TrackTime">TrackTime</a> &gt;= this track entry's <pre><code class="lang-csharp">Delay</code></pre>).
+<p>
+<a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_TimeScale">TimeScale</a> affects the delay.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Delay { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_DrawOrderThreshold_" data-uid="Spine.TrackEntry.DrawOrderThreshold*"></a>
+
+  <h3 id="Spine_TrackEntry_DrawOrderThreshold" data-uid="Spine.TrackEntry.DrawOrderThreshold">
+  DrawOrderThreshold
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When the mix percentage (<a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_MixTime">MixTime</a> / <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_MixDuration">MixDuration</a>) is less than the</p>
+<pre><code class="lang-csharp">DrawOrderThreshold</code></pre>, draw order timelines are applied while this animation is being mixed out. Defaults to 0,
+<p>so draw order timelines are not applied while this animation is being mixed out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DrawOrderThreshold { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_EventThreshold_" data-uid="Spine.TrackEntry.EventThreshold*"></a>
+
+  <h3 id="Spine_TrackEntry_EventThreshold" data-uid="Spine.TrackEntry.EventThreshold">
+  EventThreshold
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When the mix percentage (<a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_MixTime">MixTime</a> / <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_MixDuration">MixDuration</a>) is less than the</p>
+<pre><code class="lang-csharp">EventThreshold</code></pre>, event timelines are applied while this animation is being mixed out. Defaults to 0, so event
+<p>timelines are not applied while this animation is being mixed out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float EventThreshold { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_HoldPrevious_" data-uid="Spine.TrackEntry.HoldPrevious*"></a>
+
+  <h3 id="Spine_TrackEntry_HoldPrevious" data-uid="Spine.TrackEntry.HoldPrevious">
+  HoldPrevious
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+If true, when mixing from the previous animation to this animation, the previous animation is applied as normal instead
+of being mixed out.</p>
+<p>
+When mixing between animations that key the same property, if a lower track also keys that property then the value will
+briefly dip toward the lower track value during the mix. This happens because the first animation mixes from 100% to 0%
+while the second animation mixes from 0% to 100%. Setting <pre><code class="lang-csharp">HoldPrevious</code></pre> to true applies the first animation
+at 100% during the mix so the lower track value is overwritten. Such dipping does not occur on the lowest track which
+keys the property, only when a higher track also keys the property.
+<p>
+Snapping will occur if <pre><code class="lang-csharp">HoldPrevious</code></pre> is true and this animation does not key all the same properties as the
+previous animation.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HoldPrevious { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_IsComplete_" data-uid="Spine.TrackEntry.IsComplete*"></a>
+
+  <h3 id="Spine_TrackEntry_IsComplete" data-uid="Spine.TrackEntry.IsComplete">
+  IsComplete
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if at least one loop has been completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsComplete { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_Complete">Complete</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="Spine_TrackEntry_Loop_" data-uid="Spine.TrackEntry.Loop*"></a>
+
+  <h3 id="Spine_TrackEntry_Loop" data-uid="Spine.TrackEntry.Loop">
+  Loop
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If true, the animation will repeat. If false it will not, instead its last frame is applied if played beyond its
+duration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Loop { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_MixBlend_" data-uid="Spine.TrackEntry.MixBlend*"></a>
+
+  <h3 id="Spine_TrackEntry_MixBlend" data-uid="Spine.TrackEntry.MixBlend">
+  MixBlend
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+Controls how properties keyed in the animation are mixed with lower tracks. Defaults to <a class="xref" href="Spine.MixBlend.html#Spine_MixBlend_Replace">Replace</a>, which
+replaces the values from the lower tracks with the animation values. <a class="xref" href="Spine.MixBlend.html#Spine_MixBlend_Add">Add</a> adds the animation values to
+the values from the lower tracks.</p>
+<p>
+ The <pre><code class="lang-csharp">MixBlend</code></pre> can be set for a new track entry only before <a class="xref" href="Spine.AnimationState.html#Spine_AnimationState_Apply_Spine_Skeleton_">Apply(Skeleton)</a> is first
+ called.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixBlend MixBlend { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.MixBlend.html">MixBlend</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_MixDuration_" data-uid="Spine.TrackEntry.MixDuration*"></a>
+
+  <h3 id="Spine_TrackEntry_MixDuration" data-uid="Spine.TrackEntry.MixDuration">
+  MixDuration
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+Seconds for mixing from the previous animation to this animation. Defaults to the value provided by AnimationStateData
+<a class="xref" href="Spine.AnimationStateData.html#Spine_AnimationStateData_GetMix_Spine_Animation_Spine_Animation_">GetMix(Animation, Animation)</a> based on the animation before this animation (if any).</p>
+<p>
+The <pre><code class="lang-csharp">MixDuration</code></pre> can be set manually rather than use the value from
+<a class="xref" href="Spine.AnimationStateData.html#Spine_AnimationStateData_GetMix_Spine_Animation_Spine_Animation_">GetMix(Animation, Animation)</a>. In that case, the <pre><code class="lang-csharp">MixDuration</code></pre> can be set for a new
+ track entry only before <a class="xref" href="Spine.AnimationState.html#Spine_AnimationState_Update_System_Single_">Update(float)</a> is first called.
+ <p>
+ When using <a class="xref" href="Spine.AnimationState.html#Spine_AnimationState_AddAnimation_System_Int32_Spine_Animation_System_Boolean_System_Single_">AddAnimation(int, Animation, bool, float)</a> with a <pre><code class="lang-csharp">Delay</code></pre> &lt;= 0, note the
+ <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_Delay">Delay</a> is set using the mix duration from the <a class="xref" href="Spine.AnimationStateData.html">AnimationStateData</a>, not a mix duration set
+ afterward.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MixDuration { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_MixTime_" data-uid="Spine.TrackEntry.MixTime*"></a>
+
+  <h3 id="Spine_TrackEntry_MixTime" data-uid="Spine.TrackEntry.MixTime">
+  MixTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Seconds from 0 to the <a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_MixDuration">MixDuration</a> when mixing from the previous animation to this animation. May be
+slightly more than <pre><code class="lang-csharp">MixDuration</code></pre> when the mix is complete.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MixTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_MixingFrom_" data-uid="Spine.TrackEntry.MixingFrom*"></a>
+
+  <h3 id="Spine_TrackEntry_MixingFrom" data-uid="Spine.TrackEntry.MixingFrom">
+  MixingFrom
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The track entry for the previous animation when mixing from the previous animation to this animation, or null if no
+mixing is currently occuring. When mixing from multiple animations, <pre><code class="lang-csharp">MixingFrom</code></pre> makes up a linked list.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackEntry MixingFrom { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.TrackEntry.html">TrackEntry</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_MixingTo_" data-uid="Spine.TrackEntry.MixingTo*"></a>
+
+  <h3 id="Spine_TrackEntry_MixingTo" data-uid="Spine.TrackEntry.MixingTo">
+  MixingTo
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The track entry for the next animation when mixing from this animation to the next animation, or null if no mixing is
+currently occuring. When mixing to multiple animations, <pre><code class="lang-csharp">MixingTo</code></pre> makes up a linked list.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackEntry MixingTo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.TrackEntry.html">TrackEntry</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_Next_" data-uid="Spine.TrackEntry.Next*"></a>
+
+  <h3 id="Spine_TrackEntry_Next" data-uid="Spine.TrackEntry.Next">
+  Next
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The animation queued to start after this animation, or null. <pre><code class="lang-csharp">Next</code></pre> makes up a linked list.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrackEntry Next { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.TrackEntry.html">TrackEntry</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_TimeScale_" data-uid="Spine.TrackEntry.TimeScale*"></a>
+
+  <h3 id="Spine_TrackEntry_TimeScale" data-uid="Spine.TrackEntry.TimeScale">
+  TimeScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TimeScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_TrackEnd_" data-uid="Spine.TrackEntry.TrackEnd*"></a>
+
+  <h3 id="Spine_TrackEntry_TrackEnd" data-uid="Spine.TrackEntry.TrackEnd">
+  TrackEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+The track time in seconds when this animation will be removed from the track. Defaults to the highest possible float
+value, meaning the animation will be applied until a new animation is set or the track is cleared. If the track end time
+is reached, no other animations are queued for playback, and mixing from any previous animations is complete, then the
+properties keyed by the animation are set to the setup pose and the track is cleared.</p>
+<p>
+It may be desired to use <a class="xref" href="Spine.AnimationState.html#Spine_AnimationState_AddEmptyAnimation_System_Int32_System_Single_System_Single_">AddEmptyAnimation(int, float, float)</a>  rather than have the animation
+abruptly cease being applied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TrackEnd { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_TrackIndex_" data-uid="Spine.TrackEntry.TrackIndex*"></a>
+
+  <h3 id="Spine_TrackEntry_TrackIndex" data-uid="Spine.TrackEntry.TrackIndex">
+  TrackIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The index of the track where this entry is either current or queued.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TrackIndex { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="Spine.AnimationState.html#Spine.AnimationState.GetCurrent(System.Int32)">GetCurrent</a>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>)</div>
+    </dd>
+  </dl>
+
+
+  <a id="Spine_TrackEntry_TrackTime_" data-uid="Spine.TrackEntry.TrackTime*"></a>
+
+  <h3 id="Spine_TrackEntry_TrackTime" data-uid="Spine.TrackEntry.TrackTime">
+  TrackTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Current time in seconds this track entry has been the current track entry. The track time determines
+<a class="xref" href="Spine.TrackEntry.html#Spine_TrackEntry_AnimationTime">AnimationTime</a>. The track time can be set to start the animation at a time other than 0, without affecting
+looping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TrackTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_TrackEntry_Reset_" data-uid="Spine.TrackEntry.Reset*"></a>
+
+  <h3 id="Spine_TrackEntry_Reset" data-uid="Spine.TrackEntry.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_ResetRotationDirections_" data-uid="Spine.TrackEntry.ResetRotationDirections*"></a>
+
+  <h3 id="Spine_TrackEntry_ResetRotationDirections" data-uid="Spine.TrackEntry.ResetRotationDirections">
+  ResetRotationDirections()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>
+Resets the rotation directions for mixing this entry's rotate timelines. This can be useful to avoid bones rotating the
+long way around when using <a class="xref" href="Spine.TrackEntry.html#Spine.TrackEntry.alpha">alpha</a> and starting animations on other tracks.</p>
+<p>
+Mixing with <a class="xref" href="Spine.MixBlend.html#Spine_MixBlend_Replace">Replace</a> involves finding a rotation between two others, which has two possible solutions:
+the short way or the long way around. The two rotations likely change over time, so which direction is the short or long
+way also changes. If the short way was always chosen, bones would flip to the other side when that direction became the
+long way. TrackEntry chooses the short way the first time it is applied and remembers that direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetRotationDirections()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_TrackEntry_ToString_" data-uid="Spine.TrackEntry.ToString*"></a>
+
+  <h3 id="Spine_TrackEntry_ToString" data-uid="Spine.TrackEntry.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that represents the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Spine_TrackEntry_Complete" data-uid="Spine.TrackEntry.Complete">
+  Complete
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AnimationState.TrackEntryDelegate Complete</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AnimationState.html">AnimationState</a>.<a class="xref" href="Spine.AnimationState.TrackEntryDelegate.html">TrackEntryDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Spine_TrackEntry_Dispose" data-uid="Spine.TrackEntry.Dispose">
+  Dispose
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AnimationState.TrackEntryDelegate Dispose</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AnimationState.html">AnimationState</a>.<a class="xref" href="Spine.AnimationState.TrackEntryDelegate.html">TrackEntryDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Spine_TrackEntry_End" data-uid="Spine.TrackEntry.End">
+  End
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AnimationState.TrackEntryDelegate End</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AnimationState.html">AnimationState</a>.<a class="xref" href="Spine.AnimationState.TrackEntryDelegate.html">TrackEntryDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Spine_TrackEntry_Event" data-uid="Spine.TrackEntry.Event">
+  Event
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AnimationState.TrackEntryEventDelegate Event</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AnimationState.html">AnimationState</a>.<a class="xref" href="Spine.AnimationState.TrackEntryEventDelegate.html">TrackEntryEventDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Spine_TrackEntry_Interrupt" data-uid="Spine.TrackEntry.Interrupt">
+  Interrupt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AnimationState.TrackEntryDelegate Interrupt</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AnimationState.html">AnimationState</a>.<a class="xref" href="Spine.AnimationState.TrackEntryDelegate.html">TrackEntryDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Spine_TrackEntry_Start" data-uid="Spine.TrackEntry.Start">
+  Start
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event AnimationState.TrackEntryDelegate Start</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AnimationState.html">AnimationState</a>.<a class="xref" href="Spine.AnimationState.TrackEntryDelegate.html">TrackEntryDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

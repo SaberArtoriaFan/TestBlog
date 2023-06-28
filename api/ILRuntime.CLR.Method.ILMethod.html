@@ -1,0 +1,1466 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ILMethod
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ILMethod
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ILRuntime.CLR.Method.ILMethod">
+
+
+
+  <h1 id="ILRuntime_CLR_Method_ILMethod" data-uid="ILRuntime.CLR.Method.ILMethod" class="text-break">
+    Class ILMethod
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ILRuntime.html">ILRuntime</a>.<a class="xref" href="ILRuntime.CLR.html">CLR</a>.<a class="xref" href="ILRuntime.CLR.Method.html">Method</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ILMethod : IMethod</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ILMethod</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="ILRuntime.CLR.Method.IMethod.html">IMethod</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.CLR.Method.IMethodExtensions.html#ILRuntime_CLR_Method_IMethodExtensions_IsExtendMethod_ILRuntime_CLR_Method_ILMethod_">IMethodExtensions.IsExtendMethod(ILMethod)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod__ctor_" data-uid="ILRuntime.CLR.Method.ILMethod.#ctor*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod__ctor_MethodDefinition_ILRuntime_CLR_TypeSystem_ILType_ILRuntime_Runtime_Enviorment_AppDomain_System_Int32_" data-uid="ILRuntime.CLR.Method.ILMethod.#ctor(MethodDefinition,ILRuntime.CLR.TypeSystem.ILType,ILRuntime.Runtime.Enviorment.AppDomain,System.Int32)">
+  ILMethod(MethodDefinition, ILType, AppDomain, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILMethod(MethodDefinition def, ILType type, AppDomain domain, int flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>def</code> <span class="xref">MethodDefinition</span></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="ILRuntime.CLR.TypeSystem.ILType.html">ILType</a></dt>
+    <dd></dd>
+    <dt><code>domain</code> <a class="xref" href="ILRuntime.Runtime.Enviorment.AppDomain.html">AppDomain</a></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_AppDomain_" data-uid="ILRuntime.CLR.Method.ILMethod.AppDomain*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_AppDomain" data-uid="ILRuntime.CLR.Method.ILMethod.AppDomain">
+  AppDomain
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppDomain AppDomain { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Enviorment.AppDomain.html">AppDomain</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_Compiling_" data-uid="ILRuntime.CLR.Method.ILMethod.Compiling*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_Compiling" data-uid="ILRuntime.CLR.Method.ILMethod.Compiling">
+  Compiling
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Compiling { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_DeclearingType_" data-uid="ILRuntime.CLR.Method.ILMethod.DeclearingType*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_DeclearingType" data-uid="ILRuntime.CLR.Method.ILMethod.DeclearingType">
+  DeclearingType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType DeclearingType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_Definition_" data-uid="ILRuntime.CLR.Method.ILMethod.Definition*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_Definition" data-uid="ILRuntime.CLR.Method.ILMethod.Definition">
+  Definition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodDefinition Definition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">MethodDefinition</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_EventFieldIndex_" data-uid="ILRuntime.CLR.Method.ILMethod.EventFieldIndex*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_EventFieldIndex" data-uid="ILRuntime.CLR.Method.ILMethod.EventFieldIndex">
+  EventFieldIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int EventFieldIndex { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_GenericArguments_" data-uid="ILRuntime.CLR.Method.ILMethod.GenericArguments*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_GenericArguments" data-uid="ILRuntime.CLR.Method.ILMethod.GenericArguments">
+  GenericArguments
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyValuePair&lt;string, IType&gt;[] GenericArguments { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a>&gt;[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_GenericArugmentsArray_" data-uid="ILRuntime.CLR.Method.ILMethod.GenericArugmentsArray*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_GenericArugmentsArray" data-uid="ILRuntime.CLR.Method.ILMethod.GenericArugmentsArray">
+  GenericArugmentsArray
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType[] GenericArugmentsArray { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_GenericDefinition_" data-uid="ILRuntime.CLR.Method.ILMethod.GenericDefinition*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_GenericDefinition" data-uid="ILRuntime.CLR.Method.ILMethod.GenericDefinition">
+  GenericDefinition
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILMethod GenericDefinition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.Method.ILMethod.html">ILMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_GenericParameterCount_" data-uid="ILRuntime.CLR.Method.ILMethod.GenericParameterCount*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_GenericParameterCount" data-uid="ILRuntime.CLR.Method.ILMethod.GenericParameterCount">
+  GenericParameterCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GenericParameterCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_HasBody_" data-uid="ILRuntime.CLR.Method.ILMethod.HasBody*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_HasBody" data-uid="ILRuntime.CLR.Method.ILMethod.HasBody">
+  HasBody
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasBody { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_HasThis_" data-uid="ILRuntime.CLR.Method.ILMethod.HasThis*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_HasThis" data-uid="ILRuntime.CLR.Method.ILMethod.HasThis">
+  HasThis
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasThis { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_IsConstructor_" data-uid="ILRuntime.CLR.Method.ILMethod.IsConstructor*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_IsConstructor" data-uid="ILRuntime.CLR.Method.ILMethod.IsConstructor">
+  IsConstructor
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsConstructor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_IsDelegateInvoke_" data-uid="ILRuntime.CLR.Method.ILMethod.IsDelegateInvoke*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_IsDelegateInvoke" data-uid="ILRuntime.CLR.Method.ILMethod.IsDelegateInvoke">
+  IsDelegateInvoke
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDelegateInvoke { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_IsEventAdd_" data-uid="ILRuntime.CLR.Method.ILMethod.IsEventAdd*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_IsEventAdd" data-uid="ILRuntime.CLR.Method.ILMethod.IsEventAdd">
+  IsEventAdd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEventAdd { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_IsEventRemove_" data-uid="ILRuntime.CLR.Method.ILMethod.IsEventRemove*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_IsEventRemove" data-uid="ILRuntime.CLR.Method.ILMethod.IsEventRemove">
+  IsEventRemove
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEventRemove { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_IsExtend_" data-uid="ILRuntime.CLR.Method.ILMethod.IsExtend*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_IsExtend" data-uid="ILRuntime.CLR.Method.ILMethod.IsExtend">
+  IsExtend
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsExtend { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_IsGenericInstance_" data-uid="ILRuntime.CLR.Method.ILMethod.IsGenericInstance*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_IsGenericInstance" data-uid="ILRuntime.CLR.Method.ILMethod.IsGenericInstance">
+  IsGenericInstance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGenericInstance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_IsRegisterBodyReady_" data-uid="ILRuntime.CLR.Method.ILMethod.IsRegisterBodyReady*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_IsRegisterBodyReady" data-uid="ILRuntime.CLR.Method.ILMethod.IsRegisterBodyReady">
+  IsRegisterBodyReady
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRegisterBodyReady { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_IsStatic_" data-uid="ILRuntime.CLR.Method.ILMethod.IsStatic*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_IsStatic" data-uid="ILRuntime.CLR.Method.ILMethod.IsStatic">
+  IsStatic
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_IsVirtual_" data-uid="ILRuntime.CLR.Method.ILMethod.IsVirtual*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_IsVirtual" data-uid="ILRuntime.CLR.Method.ILMethod.IsVirtual">
+  IsVirtual
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVirtual { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_JumpTables_" data-uid="ILRuntime.CLR.Method.ILMethod.JumpTables*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_JumpTables" data-uid="ILRuntime.CLR.Method.ILMethod.JumpTables">
+  JumpTables
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, int[]&gt; JumpTables { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_JumpTablesRegister_" data-uid="ILRuntime.CLR.Method.ILMethod.JumpTablesRegister*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_JumpTablesRegister" data-uid="ILRuntime.CLR.Method.ILMethod.JumpTablesRegister">
+  JumpTablesRegister
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, int[]&gt; JumpTablesRegister { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_LocalVariableCount_" data-uid="ILRuntime.CLR.Method.ILMethod.LocalVariableCount*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_LocalVariableCount" data-uid="ILRuntime.CLR.Method.ILMethod.LocalVariableCount">
+  LocalVariableCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LocalVariableCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_Name_" data-uid="ILRuntime.CLR.Method.ILMethod.Name*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_Name" data-uid="ILRuntime.CLR.Method.ILMethod.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_ParameterCount_" data-uid="ILRuntime.CLR.Method.ILMethod.ParameterCount*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_ParameterCount" data-uid="ILRuntime.CLR.Method.ILMethod.ParameterCount">
+  ParameterCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ParameterCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_Parameters_" data-uid="ILRuntime.CLR.Method.ILMethod.Parameters*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_Parameters" data-uid="ILRuntime.CLR.Method.ILMethod.Parameters">
+  Parameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IType&gt; Parameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_ReflectionConstructorInfo_" data-uid="ILRuntime.CLR.Method.ILMethod.ReflectionConstructorInfo*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_ReflectionConstructorInfo" data-uid="ILRuntime.CLR.Method.ILMethod.ReflectionConstructorInfo">
+  ReflectionConstructorInfo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConstructorInfo ReflectionConstructorInfo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.constructorinfo">ConstructorInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_ReflectionMethodInfo_" data-uid="ILRuntime.CLR.Method.ILMethod.ReflectionMethodInfo*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_ReflectionMethodInfo" data-uid="ILRuntime.CLR.Method.ILMethod.ReflectionMethodInfo">
+  ReflectionMethodInfo
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MethodInfo ReflectionMethodInfo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_ReturnType_" data-uid="ILRuntime.CLR.Method.ILMethod.ReturnType*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_ReturnType" data-uid="ILRuntime.CLR.Method.ILMethod.ReturnType">
+  ReturnType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType ReturnType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_ShouldUseRegisterVM_" data-uid="ILRuntime.CLR.Method.ILMethod.ShouldUseRegisterVM*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_ShouldUseRegisterVM" data-uid="ILRuntime.CLR.Method.ILMethod.ShouldUseRegisterVM">
+  ShouldUseRegisterVM
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShouldUseRegisterVM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_StackRegisterCount_" data-uid="ILRuntime.CLR.Method.ILMethod.StackRegisterCount*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_StackRegisterCount" data-uid="ILRuntime.CLR.Method.ILMethod.StackRegisterCount">
+  StackRegisterCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int StackRegisterCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_Variables_" data-uid="ILRuntime.CLR.Method.ILMethod.Variables*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_Variables" data-uid="ILRuntime.CLR.Method.ILMethod.Variables">
+  Variables
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mono.Collections.Generic.Collection&lt;Mono.Cecil.Cil.VariableDefinition&gt; Variables { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Collection</span>&lt;<span class="xref">VariableDefinition</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_FindGenericArgument_" data-uid="ILRuntime.CLR.Method.ILMethod.FindGenericArgument*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_FindGenericArgument_System_String_" data-uid="ILRuntime.CLR.Method.ILMethod.FindGenericArgument(System.String)">
+  FindGenericArgument(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType FindGenericArgument(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_FixRegisterVMSymbol_" data-uid="ILRuntime.CLR.Method.ILMethod.FixRegisterVMSymbol*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_FixRegisterVMSymbol" data-uid="ILRuntime.CLR.Method.ILMethod.FixRegisterVMSymbol">
+  FixRegisterVMSymbol()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FixRegisterVMSymbol()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_GetHashCode_" data-uid="ILRuntime.CLR.Method.ILMethod.GetHashCode*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_GetHashCode" data-uid="ILRuntime.CLR.Method.ILMethod.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_MakeGenericMethod_" data-uid="ILRuntime.CLR.Method.ILMethod.MakeGenericMethod*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_MakeGenericMethod_ILRuntime_CLR_TypeSystem_IType___" data-uid="ILRuntime.CLR.Method.ILMethod.MakeGenericMethod(ILRuntime.CLR.TypeSystem.IType[])">
+  MakeGenericMethod(IType[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMethod MakeGenericMethod(IType[] genericArguments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>genericArguments</code> <a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.Method.IMethod.html">IMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_Prewarm_" data-uid="ILRuntime.CLR.Method.ILMethod.Prewarm*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_Prewarm_System_Boolean_" data-uid="ILRuntime.CLR.Method.ILMethod.Prewarm(System.Boolean)">
+  Prewarm(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Prewarm(bool recursive)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>recursive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_SetEventAddOrRemove_" data-uid="ILRuntime.CLR.Method.ILMethod.SetEventAddOrRemove*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_SetEventAddOrRemove_System_Boolean_System_Boolean_System_Int32_" data-uid="ILRuntime.CLR.Method.ILMethod.SetEventAddOrRemove(System.Boolean,System.Boolean,System.Int32)">
+  SetEventAddOrRemove(bool, bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEventAddOrRemove(bool isEventAdd, bool isEventRemove, int fieldIdx)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isEventAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isEventRemove</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>fieldIdx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_CLR_Method_ILMethod_ToString_" data-uid="ILRuntime.CLR.Method.ILMethod.ToString*"></a>
+
+  <h3 id="ILRuntime_CLR_Method_ILMethod_ToString" data-uid="ILRuntime.CLR.Method.ILMethod.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that represents the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

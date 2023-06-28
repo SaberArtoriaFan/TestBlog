@@ -1,0 +1,782 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AttachmentRegionExtensions
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AttachmentRegionExtensions
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions">
+
+
+
+  <h1 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions" class="text-break">
+    Class AttachmentRegionExtensions
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a>.<a class="xref" href="Spine.Unity.html">Unity</a>.<a class="xref" href="Spine.Unity.AttachmentTools.html">AttachmentTools</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AttachmentRegionExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AttachmentRegionExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_Spine_Attachment_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion(Spine.Attachment)">
+  GetRegion(Attachment)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tries to get the region (image) of a renderable attachment. If the attachment is not renderable, it returns null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasRegion GetRegion(this Attachment attachment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attachment</code> <a class="xref" href="Spine.Attachment.html">Attachment</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_Spine_MeshAttachment_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion(Spine.MeshAttachment)">
+  GetRegion(MeshAttachment)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the region (image) of a MeshAttachment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasRegion GetRegion(this MeshAttachment meshAttachment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>meshAttachment</code> <a class="xref" href="Spine.MeshAttachment.html">MeshAttachment</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_GetRegion_Spine_RegionAttachment_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.GetRegion(Spine.RegionAttachment)">
+  GetRegion(RegionAttachment)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the region (image) of a RegionAttachment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasRegion GetRegion(this RegionAttachment regionAttachment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>regionAttachment</code> <a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetPositionOffset_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetPositionOffset*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetPositionOffset_Spine_RegionAttachment_System_Single_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetPositionOffset(Spine.RegionAttachment,System.Single,System.Single)">
+  SetPositionOffset(RegionAttachment, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the position offset. Call regionAttachment.UpdateOffset to apply the change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPositionOffset(this RegionAttachment regionAttachment, float x, float y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>regionAttachment</code> <a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetPositionOffset_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetPositionOffset*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetPositionOffset_Spine_RegionAttachment_Vector2_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetPositionOffset(Spine.RegionAttachment,Vector2)">
+  SetPositionOffset(RegionAttachment, Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the position offset. Call regionAttachment.UpdateOffset to apply the change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetPositionOffset(this RegionAttachment regionAttachment, Vector2 offset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>regionAttachment</code> <a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></dt>
+    <dd></dd>
+    <dt><code>offset</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_Spine_Attachment_Spine_AtlasRegion_System_Boolean_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion(Spine.Attachment,Spine.AtlasRegion,System.Boolean)">
+  SetRegion(Attachment, AtlasRegion, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tries to set the region (image) of a renderable attachment. If the attachment is not renderable, nothing is applied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRegion(this Attachment attachment, AtlasRegion region, bool updateOffset = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attachment</code> <a class="xref" href="Spine.Attachment.html">Attachment</a></dt>
+    <dd></dd>
+    <dt><code>region</code> <a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+    <dt><code>updateOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_Spine_MeshAttachment_Spine_AtlasRegion_System_Boolean_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion(Spine.MeshAttachment,Spine.AtlasRegion,System.Boolean)">
+  SetRegion(MeshAttachment, AtlasRegion, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the region (image) of a MeshAttachment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRegion(this MeshAttachment attachment, AtlasRegion region, bool updateUVs = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attachment</code> <a class="xref" href="Spine.MeshAttachment.html">MeshAttachment</a></dt>
+    <dd></dd>
+    <dt><code>region</code> <a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+    <dt><code>updateUVs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRegion_Spine_RegionAttachment_Spine_AtlasRegion_System_Boolean_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRegion(Spine.RegionAttachment,Spine.AtlasRegion,System.Boolean)">
+  SetRegion(RegionAttachment, AtlasRegion, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the region (image) of a RegionAttachment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRegion(this RegionAttachment attachment, AtlasRegion region, bool updateOffset = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attachment</code> <a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></dt>
+    <dd></dd>
+    <dt><code>region</code> <a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+    <dt><code>updateOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRotation_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRotation*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetRotation_Spine_RegionAttachment_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetRotation(Spine.RegionAttachment,System.Single)">
+  SetRotation(RegionAttachment, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the rotation. Call regionAttachment.UpdateOffset to apply the change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetRotation(this RegionAttachment regionAttachment, float rotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>regionAttachment</code> <a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetScale_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetScale*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetScale_Spine_RegionAttachment_System_Single_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetScale(Spine.RegionAttachment,System.Single,System.Single)">
+  SetScale(RegionAttachment, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the scale. Call regionAttachment.UpdateOffset to apply the change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetScale(this RegionAttachment regionAttachment, float x, float y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>regionAttachment</code> <a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetScale_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetScale*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_SetScale_Spine_RegionAttachment_Vector2_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.SetScale(Spine.RegionAttachment,Vector2)">
+  SetScale(RegionAttachment, Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the scale. Call regionAttachment.UpdateOffset to apply the change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetScale(this RegionAttachment regionAttachment, Vector2 scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>regionAttachment</code> <a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></dt>
+    <dd></dd>
+    <dt><code>scale</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_Spine_AtlasRegion_System_String_System_Single_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment(Spine.AtlasRegion,System.String,System.Single,System.Single)">
+  ToRegionAttachment(AtlasRegion, string, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new RegionAttachment from a given AtlasRegion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RegionAttachment ToRegionAttachment(this AtlasRegion region, string attachmentName, float scale = 0.01, float rotation = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>region</code> <a class="xref" href="Spine.AtlasRegion.html">AtlasRegion</a></dt>
+    <dd></dd>
+    <dt><code>attachmentName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_Sprite_Material_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment(Sprite,Material,System.Single)">
+  ToRegionAttachment(Sprite, Material, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a RegionAttachment based on a sprite. This method creates a real, usable AtlasRegion. That AtlasRegion uses a new AtlasPage with the Material provided.///</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RegionAttachment ToRegionAttachment(this Sprite sprite, Material material, float rotation = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sprite</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+    <dt><code>material</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachment_Sprite_Spine_AtlasPage_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachment(Sprite,Spine.AtlasPage,System.Single)">
+  ToRegionAttachment(Sprite, AtlasPage, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a RegionAttachment based on a sprite. This method creates a real, usable AtlasRegion. That AtlasRegion uses the AtlasPage provided.///</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RegionAttachment ToRegionAttachment(this Sprite sprite, AtlasPage page, float rotation = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sprite</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+    <dt><code>page</code> <a class="xref" href="Spine.AtlasPage.html">AtlasPage</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachmentPMAClone_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachmentPMAClone*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachmentPMAClone_Sprite_Material_TextureFormat_System_Boolean_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachmentPMAClone(Sprite,Material,TextureFormat,System.Boolean,System.Single)">
+  ToRegionAttachmentPMAClone(Sprite, Material, TextureFormat, bool, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RegionAttachment ToRegionAttachmentPMAClone(this Sprite sprite, Material materialPropertySource, TextureFormat textureFormat = null, bool mipmaps = false, float rotation = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sprite</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+    <dt><code>materialPropertySource</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+    <dt><code>textureFormat</code> <span class="xref">TextureFormat</span></dt>
+    <dd></dd>
+    <dt><code>mipmaps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachmentPMAClone_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachmentPMAClone*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachmentPMAClone_Sprite_Shader_TextureFormat_System_Boolean_Material_System_Single_" data-uid="Spine.Unity.AttachmentTools.AttachmentRegionExtensions.ToRegionAttachmentPMAClone(Sprite,Shader,TextureFormat,System.Boolean,Material,System.Single)">
+  ToRegionAttachmentPMAClone(Sprite, Shader, TextureFormat, bool, Material, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a Spine.AtlasRegion that uses a premultiplied alpha duplicate texture of the Sprite's texture data.
+Returns a RegionAttachment that uses it. Use this if you plan to use a premultiply alpha shader such as &quot;Spine/Skeleton&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RegionAttachment ToRegionAttachmentPMAClone(this Sprite sprite, Shader shader, TextureFormat textureFormat = null, bool mipmaps = false, Material materialPropertySource = null, float rotation = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sprite</code> <span class="xref">Sprite</span></dt>
+    <dd></dd>
+    <dt><code>shader</code> <span class="xref">Shader</span></dt>
+    <dd></dd>
+    <dt><code>textureFormat</code> <span class="xref">TextureFormat</span></dt>
+    <dd></dd>
+    <dt><code>mipmaps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>materialPropertySource</code> <span class="xref">Material</span></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Spine_Unity_AttachmentTools_AttachmentRegionExtensions_ToRegionAttachmentPMAClone_Sprite_Shader_TextureFormat_System_Boolean_Material_System_Single__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The duplicate texture is cached for later re-use. See documentation of
+<a class="xref" href="Spine.Unity.AttachmentTools.AttachmentCloneExtensions.html#Spine_Unity_AttachmentTools_AttachmentCloneExtensions_GetRemappedClone_Spine_Attachment_Sprite_Material_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">GetRemappedClone(Attachment, Sprite, Material, bool, bool, bool, bool, bool)</a> for additional details.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

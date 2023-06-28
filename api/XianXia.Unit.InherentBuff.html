@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class InherentBuff
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class InherentBuff
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.Unit.InherentBuff">
+
+
+
+  <h1 id="XianXia_Unit_InherentBuff" data-uid="XianXia.Unit.InherentBuff" class="text-break">
+    Class InherentBuff
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a>.<a class="xref" href="XianXia.Unit.html">Unit</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class InherentBuff : Buff, IComponentBase, IAllowOwnNum, IRealName</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="XianXia.Unit.Buff.html">Buff</a></div>
+      <div><span class="xref">InherentBuff</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Saber.ECS.IComponentBase.html">IComponentBase</a></div>
+      <div><a class="xref" href="XianXia.Unit.IAllowOwnNum.html">IAllowOwnNum</a></div>
+      <div><a class="xref" href="XianXia.Unit.IRealName.html">IRealName</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="XianXia.Unit.AddMoveSpeed.html">AddMoveSpeed</a></div>
+      <div><a class="xref" href="XianXia.Unit.BuffDictionary.AddAttack.html">BuffDictionary.AddAttack</a></div>
+      <div><a class="xref" href="XianXia.Unit.BuffDictionary.AddAttackSpeed.html">BuffDictionary.AddAttackSpeed</a></div>
+      <div><a class="xref" href="XianXia.Unit.BuffDictionary.AddDefence.html">BuffDictionary.AddDefence</a></div>
+      <div><a class="xref" href="XianXia.Unit.BuffDictionary.Disarm.html">BuffDictionary.Disarm</a></div>
+      <div><a class="xref" href="XianXia.Unit.BuffDictionary.Dizziness.html">BuffDictionary.Dizziness</a></div>
+      <div><a class="xref" href="XianXia.Unit.BuffDictionary.Enwind.html">BuffDictionary.Enwind</a></div>
+      <div><a class="xref" href="XianXia.Unit.BuffDictionary.Fetter.html">BuffDictionary.Fetter</a></div>
+      <div><a class="xref" href="XianXia.Unit.BuffDictionary.Frozen.html">BuffDictionary.Frozen</a></div>
+      <div><a class="xref" href="XianXia.Unit.BuffDictionary.Invincible.html">BuffDictionary.Invincible</a></div>
+      <div><a class="xref" href="XianXia.Unit.BuffDictionary.ReduceAttack.html">BuffDictionary.ReduceAttack</a></div>
+      <div><a class="xref" href="XianXia.Unit.BuffDictionary.ReduceAttackSpeed.html">BuffDictionary.ReduceAttackSpeed</a></div>
+      <div><a class="xref" href="XianXia.Unit.BuffDictionary.ReduceDefence.html">BuffDictionary.ReduceDefence</a></div>
+      <div><a class="xref" href="XianXia.Unit.BuffDictionary.Slient.html">BuffDictionary.Slient</a></div>
+      <div><a class="xref" href="XianXia.Unit.ReduceMoveSpeed.html">ReduceMoveSpeed</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_IsCanDisperse_XianXia_Unit_BuffPriorityType_XianXia_Unit_BuffPriorityType_">Buff.IsCanDisperse(BuffPriorityType, BuffPriorityType)</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_isOver">Buff.isOver</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_statusBar">Buff.statusBar</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_effectName">Buff.effectName</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_effectOffectPos">Buff.effectOffectPos</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_enable">Buff.enable</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_AllowOwnMaxNum">Buff.AllowOwnMaxNum</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_Curr_ContinueRoundNum">Buff.Curr_ContinueRoundNum</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_BuffIcon">Buff.BuffIcon</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_BuffId">Buff.BuffId</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_BuffDescription">Buff.BuffDescription</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_IsDeBuff">Buff.IsDeBuff</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_DispelPriority">Buff.DispelPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_BuffShowName">Buff.BuffShowName</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_RealName">Buff.RealName</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_IsForever">Buff.IsForever</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_Enable">Buff.Enable</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_Owner">Buff.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_ComponentType">Buff.ComponentType</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_Source">Buff.Source</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_Init_Saber_ECS_IContainerEntity_">Buff.Init(IContainerEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.Buff.html#XianXia_Unit_Buff_ClearEnable">Buff.ClearEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="XianXia_Unit_InherentBuff_effectValue" data-uid="XianXia.Unit.InherentBuff.effectValue">
+  effectValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float effectValue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Unit_InherentBuff_key" data-uid="XianXia.Unit.InherentBuff.key">
+  key
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string key</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_Unit_InherentBuff_ClearBuffEffect_" data-uid="XianXia.Unit.InherentBuff.ClearBuffEffect*"></a>
+
+  <h3 id="XianXia_Unit_InherentBuff_ClearBuffEffect" data-uid="XianXia.Unit.InherentBuff.ClearBuffEffect">
+  ClearBuffEffect()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ClearBuffEffect()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_InherentBuff_Destory_" data-uid="XianXia.Unit.InherentBuff.Destory*"></a>
+
+  <h3 id="XianXia_Unit_InherentBuff_Destory" data-uid="XianXia.Unit.InherentBuff.Destory">
+  Destory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Destory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_InherentBuff_InitData_" data-uid="XianXia.Unit.InherentBuff.InitData*"></a>
+
+  <h3 id="XianXia_Unit_InherentBuff_InitData_BuffData_" data-uid="XianXia.Unit.InherentBuff.InitData(BuffData)">
+  InitData(BuffData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitData(BuffData buffData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffData</code> <span class="xref">BuffData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_InherentBuff_InitParameter_" data-uid="XianXia.Unit.InherentBuff.InitParameter*"></a>
+
+  <h3 id="XianXia_Unit_InherentBuff_InitParameter_System_Single_XianXia_Unit_StatusOrgan_UnitBase_" data-uid="XianXia.Unit.InherentBuff.InitParameter(System.Single,XianXia.Unit.StatusOrgan,UnitBase)">
+  InitParameter(float, StatusOrgan, UnitBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitParameter(float val, StatusOrgan statusOrgan, UnitBase source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>statusOrgan</code> <a class="xref" href="XianXia.Unit.StatusOrgan.html">StatusOrgan</a></dt>
+    <dd></dd>
+    <dt><code>source</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_InherentBuff_OnEnterEvent_" data-uid="XianXia.Unit.InherentBuff.OnEnterEvent*"></a>
+
+  <h3 id="XianXia_Unit_InherentBuff_OnEnterEvent" data-uid="XianXia.Unit.InherentBuff.OnEnterEvent">
+  OnEnterEvent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnEnterEvent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_InherentBuff_OnExitEvent_" data-uid="XianXia.Unit.InherentBuff.OnExitEvent*"></a>
+
+  <h3 id="XianXia_Unit_InherentBuff_OnExitEvent" data-uid="XianXia.Unit.InherentBuff.OnExitEvent">
+  OnExitEvent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnExitEvent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_InherentBuff_OnUpdateEvent_" data-uid="XianXia.Unit.InherentBuff.OnUpdateEvent*"></a>
+
+  <h3 id="XianXia_Unit_InherentBuff_OnUpdateEvent" data-uid="XianXia.Unit.InherentBuff.OnUpdateEvent">
+  OnUpdateEvent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnUpdateEvent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

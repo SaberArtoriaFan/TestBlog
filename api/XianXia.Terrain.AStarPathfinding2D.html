@@ -1,0 +1,1740 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AStarPathfinding2D
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AStarPathfinding2D
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.Terrain.AStarPathfinding2D">
+
+
+
+  <h1 id="XianXia_Terrain_AStarPathfinding2D" data-uid="XianXia.Terrain.AStarPathfinding2D" class="text-break">
+    Class AStarPathfinding2D
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a>.<a class="xref" href="XianXia.Terrain.html">Terrain</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AStarPathfinding2D : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AStarPathfinding2D</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_ConnectedCost" data-uid="XianXia.Terrain.AStarPathfinding2D.ConnectedCost">
+  ConnectedCost
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ConnectedCost</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_DiagonalCost" data-uid="XianXia.Terrain.AStarPathfinding2D.DiagonalCost">
+  DiagonalCost
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DiagonalCost</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_MapHeight" data-uid="XianXia.Terrain.AStarPathfinding2D.MapHeight">
+  MapHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MapHeight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_MapWidth" data-uid="XianXia.Terrain.AStarPathfinding2D.MapWidth">
+  MapWidth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MapWidth</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_NodeHalfSize" data-uid="XianXia.Terrain.AStarPathfinding2D.NodeHalfSize">
+  NodeHalfSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float NodeHalfSize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_NodeSize" data-uid="XianXia.Terrain.AStarPathfinding2D.NodeSize">
+  NodeSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float NodeSize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_ShowGrid" data-uid="XianXia.Terrain.AStarPathfinding2D.ShowGrid">
+  ShowGrid
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowGrid</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_allNodeArray" data-uid="XianXia.Terrain.AStarPathfinding2D.allNodeArray">
+  allNodeArray
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node[] allNodeArray</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Terrain.Node.html">Node</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_startPos" data-uid="XianXia.Terrain.AStarPathfinding2D.startPos">
+  startPos
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 startPos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_MapX_" data-uid="XianXia.Terrain.AStarPathfinding2D.MapX*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_MapX" data-uid="XianXia.Terrain.AStarPathfinding2D.MapX">
+  MapX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MapX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_MapY_" data-uid="XianXia.Terrain.AStarPathfinding2D.MapY*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_MapY" data-uid="XianXia.Terrain.AStarPathfinding2D.MapY">
+  MapY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MapY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_DeletePosFromFlowField_" data-uid="XianXia.Terrain.AStarPathfinding2D.DeletePosFromFlowField*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_DeletePosFromFlowField_XianXia_Terrain_Node_System_Single_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.DeletePosFromFlowField(XianXia.Terrain.Node,System.Single,XianXia.Terrain.AStarPathfinding2D)">
+  DeletePosFromFlowField(Node, float, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeletePosFromFlowField(Node node, float f, AStarPathfinding2D map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>f</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_FindClosestNodeByDir_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindClosestNodeByDir*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_FindClosestNodeByDir_Vector2Int_Vector2Int_System_Single_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindClosestNodeByDir(Vector2Int,Vector2Int,System.Single,XianXia.Terrain.AStarPathfinding2D)">
+  FindClosestNodeByDir(Vector2Int, Vector2Int, float, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node FindClosestNodeByDir(Vector2Int node, Vector2Int dir, float range, AStarPathfinding2D map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>dir</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>range</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_FindClosestNodeByDir_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindClosestNodeByDir*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_FindClosestNodeByDir_XianXia_Terrain_Node_Vector2Int_System_Single_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindClosestNodeByDir(XianXia.Terrain.Node,Vector2Int,System.Single,XianXia.Terrain.AStarPathfinding2D)">
+  FindClosestNodeByDir(Node, Vector2Int, float, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node FindClosestNodeByDir(Node node, Vector2Int dir, float range, AStarPathfinding2D map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>dir</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>range</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_FindNearestNode_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindNearestNode*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_FindNearestNode_XianXia_Terrain_Node_System_Single_System_Int32_System_Func_XianXia_Terrain_Node_XianXia_Terrain_Node_System_Boolean__XianXia_Terrain_AStarPathfinding2D_System_Boolean_System_Boolean_System_Boolean_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindNearestNode(XianXia.Terrain.Node,System.Single,System.Int32,System.Func{XianXia.Terrain.Node,XianXia.Terrain.Node,System.Boolean},XianXia.Terrain.AStarPathfinding2D,System.Boolean,System.Boolean,System.Boolean)">
+  FindNearestNode(Node, float, int, Func&lt;Node, Node, bool&gt;, AStarPathfinding2D, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Node&gt; FindNearestNode(Node center, float range, int num, Func&lt;Node, Node, bool&gt; test, AStarPathfinding2D map, bool isTerrainObstale, bool isUnitObstale, bool containsSelf = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>range</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>num</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>test</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="XianXia.Terrain.Node.html">Node</a>, <a class="xref" href="XianXia.Terrain.Node.html">Node</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+    <dt><code>isTerrainObstale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isUnitObstale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>containsSelf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="XianXia.Terrain.Node.html">Node</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_FindNearestNode_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindNearestNode*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_FindNearestNode_XianXia_Terrain_Node_XianXia_Terrain_Node_XianXia_Terrain_AStarPathfinding2D_System_Boolean_System_Single_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindNearestNode(XianXia.Terrain.Node,XianXia.Terrain.Node,XianXia.Terrain.AStarPathfinding2D,System.Boolean,System.Single)">
+  FindNearestNode(Node, Node, AStarPathfinding2D, bool, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>��������յ��Ƿ�ɴ�ģ���������ȫ������</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node FindNearestNode(Node center, Node target, AStarPathfinding2D map, bool isUpDowmFrist = false, float range = 3.4028235E+38)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+    <dt><code>isUpDowmFrist</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>range</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_FindNearestNodeInAttackRange_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindNearestNodeInAttackRange*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_FindNearestNodeInAttackRange_XianXia_Terrain_Node_System_Single_System_Func_XianXia_Terrain_Node_XianXia_Terrain_Node_System_Boolean__XianXia_Terrain_AStarPathfinding2D_System_Boolean_System_Boolean_System_Boolean_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindNearestNodeInAttackRange(XianXia.Terrain.Node,System.Single,System.Func{XianXia.Terrain.Node,XianXia.Terrain.Node,System.Boolean},XianXia.Terrain.AStarPathfinding2D,System.Boolean,System.Boolean,System.Boolean)">
+  FindNearestNodeInAttackRange(Node, float, Func&lt;Node, Node, bool&gt;, AStarPathfinding2D, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>���ϸ�����Ψһ��ͬ����range��ʾx�����</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node FindNearestNodeInAttackRange(Node center, float range, Func&lt;Node, Node, bool&gt; test, AStarPathfinding2D map, bool isTerrainObstale, bool isUnitObstale, bool containsSelf = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>range</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>test</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="XianXia.Terrain.Node.html">Node</a>, <a class="xref" href="XianXia.Terrain.Node.html">Node</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+    <dt><code>isTerrainObstale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isUnitObstale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>containsSelf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_FindTargetInRange_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindTargetInRange*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_FindTargetInRange_XianXia_Terrain_Node_System_Single_System_Func_XianXia_Terrain_Node_XianXia_Terrain_Node_System_Boolean__System_Func_XianXia_Terrain_Node_XianXia_Terrain_Node_System_Int32__XianXia_Terrain_AStarPathfinding2D_System_Boolean_System_Boolean_System_Boolean_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindTargetInRange(XianXia.Terrain.Node,System.Single,System.Func{XianXia.Terrain.Node,XianXia.Terrain.Node,System.Boolean},System.Func{XianXia.Terrain.Node,XianXia.Terrain.Node,System.Int32},XianXia.Terrain.AStarPathfinding2D,System.Boolean,System.Boolean,System.Boolean)">
+  FindTargetInRange(Node, float, Func&lt;Node, Node, bool&gt;, Func&lt;Node, Node, int&gt;, AStarPathfinding2D, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node FindTargetInRange(Node center, float range, Func&lt;Node, Node, bool&gt; filtration, Func&lt;Node, Node, int&gt; sortFunc, AStarPathfinding2D map, bool isTerrainObstale, bool isUnitObstale, bool containsSelf = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>range</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>filtration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="XianXia.Terrain.Node.html">Node</a>, <a class="xref" href="XianXia.Terrain.Node.html">Node</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>sortFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="XianXia.Terrain.Node.html">Node</a>, <a class="xref" href="XianXia.Terrain.Node.html">Node</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+    <dt><code>isTerrainObstale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isUnitObstale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>containsSelf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_FindTargetsInRange_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindTargetsInRange*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_FindTargetsInRange_XianXia_Terrain_Node_System_Single_System_Func_XianXia_Terrain_Node_XianXia_Terrain_Node_System_Boolean__XianXia_Terrain_AStarPathfinding2D_System_Boolean_System_Boolean_System_Boolean_System_Int32_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindTargetsInRange(XianXia.Terrain.Node,System.Single,System.Func{XianXia.Terrain.Node,XianXia.Terrain.Node,System.Boolean},XianXia.Terrain.AStarPathfinding2D,System.Boolean,System.Boolean,System.Boolean,System.Int32)">
+  FindTargetsInRange(Node, float, Func&lt;Node, Node, bool&gt;, AStarPathfinding2D, bool, bool, bool, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Node&gt; FindTargetsInRange(Node center, float range, Func&lt;Node, Node, bool&gt; test, AStarPathfinding2D map, bool isTerrainObstale, bool isUnitObstale, bool containsSelf = true, int num = -1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>center</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>range</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>test</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="XianXia.Terrain.Node.html">Node</a>, <a class="xref" href="XianXia.Terrain.Node.html">Node</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+    <dt><code>isTerrainObstale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isUnitObstale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>containsSelf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>num</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="XianXia.Terrain.Node.html">Node</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_FindingPath_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindingPath*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_FindingPath_Vector3_Vector3_XianXia_Terrain_AStarPathfinding2D_XianXia_Terrain_IDynamicObstacle_System_Collections_Generic_Queue_System_Single___XianXia_GridType_System_Single_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindingPath(Vector3,Vector3,XianXia.Terrain.AStarPathfinding2D,XianXia.Terrain.IDynamicObstacle,System.Collections.Generic.Queue{System.Single}@,XianXia.GridType,System.Single)">
+  FindingPath(Vector3, Vector3, AStarPathfinding2D, IDynamicObstacle, out Queue&lt;float&gt;, GridType, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Vector2Int&gt; FindingPath(Vector3 startPos, Vector3 endPos, AStarPathfinding2D map, IDynamicObstacle unit, out Queue&lt;float&gt; pathG, GridType gridType = GridType.Ground, float stopRange = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startPos</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>endPos</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="XianXia.Terrain.IDynamicObstacle.html">IDynamicObstacle</a></dt>
+    <dd></dd>
+    <dt><code>pathG</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.queue-1">Queue</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>gridType</code> <a class="xref" href="XianXia.GridType.html">GridType</a></dt>
+    <dd></dd>
+    <dt><code>stopRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Vector2Int</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_FindingPathWorldPos_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindingPathWorldPos*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_FindingPathWorldPos_Vector3_Vector3_XianXia_Terrain_AStarPathfinding2D_XianXia_Terrain_IDynamicObstacle_System_Collections_Generic_Queue_System_Single___XianXia_GridType_System_Single_" data-uid="XianXia.Terrain.AStarPathfinding2D.FindingPathWorldPos(Vector3,Vector3,XianXia.Terrain.AStarPathfinding2D,XianXia.Terrain.IDynamicObstacle,System.Collections.Generic.Queue{System.Single}@,XianXia.GridType,System.Single)">
+  FindingPathWorldPos(Vector3, Vector3, AStarPathfinding2D, IDynamicObstacle, out Queue&lt;float&gt;, GridType, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Vector3&gt; FindingPathWorldPos(Vector3 startPos, Vector3 endPos, AStarPathfinding2D map, IDynamicObstacle unit, out Queue&lt;float&gt; pathG, GridType gridType = GridType.Ground, float stopRange = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startPos</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>endPos</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="XianXia.Terrain.IDynamicObstacle.html">IDynamicObstacle</a></dt>
+    <dd></dd>
+    <dt><code>pathG</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.queue-1">Queue</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>gridType</code> <a class="xref" href="XianXia.GridType.html">GridType</a></dt>
+    <dd></dd>
+    <dt><code>stopRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Vector3</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_GetDistance_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetDistance*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_GetDistance_System_Int32_System_Int32_System_Int32_System_Int32_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetDistance(System.Int32,System.Int32,System.Int32,System.Int32,XianXia.Terrain.AStarPathfinding2D)">
+  GetDistance(int, int, int, int, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetDistance(int x1, int y1, int x2, int y2, AStarPathfinding2D map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>x2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_GetDistance_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetDistance*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_GetDistance_XianXia_Terrain_Node_XianXia_Terrain_Node_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetDistance(XianXia.Terrain.Node,XianXia.Terrain.Node,XianXia.Terrain.AStarPathfinding2D)">
+  GetDistance(Node, Node, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetDistance(Node a, Node b, AStarPathfinding2D map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_GetNode_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetNode*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_GetNode_System_Int32_System_Int32_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetNode(System.Int32,System.Int32,XianXia.Terrain.AStarPathfinding2D)">
+  GetNode(int, int, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetNode(int x, int y, AStarPathfinding2D aStarPathfinding2D)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>aStarPathfinding2D</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_GetNode_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetNode*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_GetNode_Vector2Int_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetNode(Vector2Int,XianXia.Terrain.AStarPathfinding2D)">
+  GetNode(Vector2Int, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetNode(Vector2Int pos, AStarPathfinding2D aStarPathfinding2D)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>aStarPathfinding2D</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_GetNodeWorldPositionV2_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetNodeWorldPositionV2*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_GetNodeWorldPositionV2_Vector2Int_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetNodeWorldPositionV2(Vector2Int,XianXia.Terrain.AStarPathfinding2D)">
+  GetNodeWorldPositionV2(Vector2Int, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetNodeWorldPositionV2(Vector2Int pos, AStarPathfinding2D aStarPathfinding2D)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>aStarPathfinding2D</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_GetNodeWorldPositionV3_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetNodeWorldPositionV3*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_GetNodeWorldPositionV3_Vector2Int_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetNodeWorldPositionV3(Vector2Int,XianXia.Terrain.AStarPathfinding2D)">
+  GetNodeWorldPositionV3(Vector2Int, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 GetNodeWorldPositionV3(Vector2Int pos, AStarPathfinding2D aStarPathfinding2D)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>aStarPathfinding2D</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_GetWorldPositionNode_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetWorldPositionNode*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_GetWorldPositionNode_Vector3_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetWorldPositionNode(Vector3,XianXia.Terrain.AStarPathfinding2D)">
+  GetWorldPositionNode(Vector3, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Node GetWorldPositionNode(Vector3 pos, AStarPathfinding2D aStarPathfinding2D)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>aStarPathfinding2D</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Terrain.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_GetWorldPositionNodePos_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetWorldPositionNodePos*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_GetWorldPositionNodePos_Vector3_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.GetWorldPositionNodePos(Vector3,XianXia.Terrain.AStarPathfinding2D)">
+  GetWorldPositionNodePos(Vector3, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2Int GetWorldPositionNodePos(Vector3 pos, AStarPathfinding2D aStarPathfinding2D)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>aStarPathfinding2D</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_InitDynamicObstacle_" data-uid="XianXia.Terrain.AStarPathfinding2D.InitDynamicObstacle*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_InitDynamicObstacle" data-uid="XianXia.Terrain.AStarPathfinding2D.InitDynamicObstacle">
+  InitDynamicObstacle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InitDynamicObstacle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_InitFixedObstacle_" data-uid="XianXia.Terrain.AStarPathfinding2D.InitFixedObstacle*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_InitFixedObstacle" data-uid="XianXia.Terrain.AStarPathfinding2D.InitFixedObstacle">
+  InitFixedObstacle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InitFixedObstacle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_IsPathValid_" data-uid="XianXia.Terrain.AStarPathfinding2D.IsPathValid*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_IsPathValid_Vector2Int_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.IsPathValid(Vector2Int,XianXia.Terrain.AStarPathfinding2D)">
+  IsPathValid(Vector2Int, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static bool IsPathValid(Vector2Int target, AStarPathfinding2D map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_IsPathValid_" data-uid="XianXia.Terrain.AStarPathfinding2D.IsPathValid*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_IsPathValid_Vector3_Vector3_XianXia_Terrain_AStarPathfinding2D_System_Boolean_" data-uid="XianXia.Terrain.AStarPathfinding2D.IsPathValid(Vector3,Vector3,XianXia.Terrain.AStarPathfinding2D,System.Boolean)">
+  IsPathValid(Vector3, Vector3, AStarPathfinding2D, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static bool IsPathValid(Vector3 from, Vector3 to, AStarPathfinding2D map, bool containsSelf = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>to</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+    <dt><code>containsSelf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_IsPosValid_" data-uid="XianXia.Terrain.AStarPathfinding2D.IsPosValid*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_IsPosValid_System_Int32_System_Int32_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.IsPosValid(System.Int32,System.Int32,XianXia.Terrain.AStarPathfinding2D)">
+  IsPosValid(int, int, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPosValid(int x, int y, AStarPathfinding2D aStarPathfinding2D)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>aStarPathfinding2D</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_IsTerrainable_" data-uid="XianXia.Terrain.AStarPathfinding2D.IsTerrainable*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_IsTerrainable_Vector2Int_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.IsTerrainable(Vector2Int,XianXia.Terrain.AStarPathfinding2D)">
+  IsTerrainable(Vector2Int, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTerrainable(Vector2Int pos, AStarPathfinding2D aStarPathfinding2D)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>aStarPathfinding2D</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_IsUnitable_" data-uid="XianXia.Terrain.AStarPathfinding2D.IsUnitable*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_IsUnitable_Vector2Int_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.IsUnitable(Vector2Int,XianXia.Terrain.AStarPathfinding2D)">
+  IsUnitable(Vector2Int, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsUnitable(Vector2Int pos, AStarPathfinding2D aStarPathfinding2D)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>aStarPathfinding2D</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_IsWalkable_" data-uid="XianXia.Terrain.AStarPathfinding2D.IsWalkable*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_IsWalkable_Vector2Int_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.IsWalkable(Vector2Int,XianXia.Terrain.AStarPathfinding2D)">
+  IsWalkable(Vector2Int, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsWalkable(Vector2Int pos, AStarPathfinding2D aStarPathfinding2D)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>aStarPathfinding2D</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_IsWalkable_" data-uid="XianXia.Terrain.AStarPathfinding2D.IsWalkable*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_IsWalkable_Vector3_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.IsWalkable(Vector3,XianXia.Terrain.AStarPathfinding2D)">
+  IsWalkable(Vector3, AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsWalkable(Vector3 pos, AStarPathfinding2D aStarPathfinding2D)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>aStarPathfinding2D</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_MapReset_" data-uid="XianXia.Terrain.AStarPathfinding2D.MapReset*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_MapReset" data-uid="XianXia.Terrain.AStarPathfinding2D.MapReset">
+  MapReset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MapReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_UpdateDynamicObstacle_" data-uid="XianXia.Terrain.AStarPathfinding2D.UpdateDynamicObstacle*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_UpdateDynamicObstacle_Transform_XianXia_Terrain_AStarPathfinding2D_System_Boolean_" data-uid="XianXia.Terrain.AStarPathfinding2D.UpdateDynamicObstacle(Transform,XianXia.Terrain.AStarPathfinding2D,System.Boolean)">
+  UpdateDynamicObstacle(Transform, AStarPathfinding2D, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UpdateDynamicObstacle(Transform tr, AStarPathfinding2D map, bool isAdd = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tr</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+    <dt><code>isAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_UpdateDynamicObstacle_" data-uid="XianXia.Terrain.AStarPathfinding2D.UpdateDynamicObstacle*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_UpdateDynamicObstacle_Vector2Int_XianXia_Terrain_AStarPathfinding2D_System_Boolean_" data-uid="XianXia.Terrain.AStarPathfinding2D.UpdateDynamicObstacle(Vector2Int,XianXia.Terrain.AStarPathfinding2D,System.Boolean)">
+  UpdateDynamicObstacle(Vector2Int, AStarPathfinding2D, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UpdateDynamicObstacle(Vector2Int pos, AStarPathfinding2D map, bool isAdd = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+    <dt><code>isAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_UpdateDynamicObstacleList_" data-uid="XianXia.Terrain.AStarPathfinding2D.UpdateDynamicObstacleList*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_UpdateDynamicObstacleList_XianXia_Terrain_AStarPathfinding2D_" data-uid="XianXia.Terrain.AStarPathfinding2D.UpdateDynamicObstacleList(XianXia.Terrain.AStarPathfinding2D)">
+  UpdateDynamicObstacleList(AStarPathfinding2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UpdateDynamicObstacleList(AStarPathfinding2D map)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map</code> <a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Terrain_AStarPathfinding2D_UseDir_" data-uid="XianXia.Terrain.AStarPathfinding2D.UseDir*"></a>
+
+  <h3 id="XianXia_Terrain_AStarPathfinding2D_UseDir" data-uid="XianXia.Terrain.AStarPathfinding2D.UseDir">
+  UseDir()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[][] UseDir()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[][]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

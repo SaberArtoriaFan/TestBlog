@@ -1,0 +1,689 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ILRuntimeParameterInfo
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ILRuntimeParameterInfo
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo">
+
+
+
+  <h1 id="ILRuntime_Reflection_ILRuntimeParameterInfo" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo" class="text-break">
+    Class ILRuntimeParameterInfo
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ILRuntime.html">ILRuntime</a>.<a class="xref" href="ILRuntime.Reflection.html">Reflection</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ILRuntimeParameterInfo : ParameterInfo, ICustomAttributeProvider, IObjectReference</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo">ParameterInfo</a></div>
+      <div><span class="xref">ILRuntimeParameterInfo</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.icustomattributeprovider">ICustomAttributeProvider</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iobjectreference">IObjectReference</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.attrsimpl">ParameterInfo.AttrsImpl</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.classimpl">ParameterInfo.ClassImpl</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.defaultvalueimpl">ParameterInfo.DefaultValueImpl</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.memberimpl">ParameterInfo.MemberImpl</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.nameimpl">ParameterInfo.NameImpl</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.positionimpl">ParameterInfo.PositionImpl</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.getcustomattributesdata">ParameterInfo.GetCustomAttributesData()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.getoptionalcustommodifiers">ParameterInfo.GetOptionalCustomModifiers()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.getrealobject">ParameterInfo.GetRealObject(StreamingContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.getrequiredcustommodifiers">ParameterInfo.GetRequiredCustomModifiers()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.attributes">ParameterInfo.Attributes</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.customattributes">ParameterInfo.CustomAttributes</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.isin">ParameterInfo.IsIn</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.islcid">ParameterInfo.IsLcid</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.isoptional">ParameterInfo.IsOptional</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.isout">ParameterInfo.IsOut</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.isretval">ParameterInfo.IsRetval</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.member">ParameterInfo.Member</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.name">ParameterInfo.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.parametertype">ParameterInfo.ParameterType</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo.position">ParameterInfo.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="ILRuntime_Reflection_ILRuntimeParameterInfo__ctor_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.#ctor*"></a>
+
+  <h3 id="ILRuntime_Reflection_ILRuntimeParameterInfo__ctor_Mono_Cecil_ParameterDefinition_ILRuntime_CLR_TypeSystem_IType_System_Reflection_MemberInfo_ILRuntime_Runtime_Enviorment_AppDomain_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.#ctor(Mono.Cecil.ParameterDefinition,ILRuntime.CLR.TypeSystem.IType,System.Reflection.MemberInfo,ILRuntime.Runtime.Enviorment.AppDomain)">
+  ILRuntimeParameterInfo(ParameterDefinition, IType, MemberInfo, AppDomain)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILRuntimeParameterInfo(Mono.Cecil.ParameterDefinition definition, IType type, MemberInfo member, AppDomain appdomain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>definition</code> <span class="xref">ParameterDefinition</span></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+    <dt><code>member</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></dt>
+    <dd></dd>
+    <dt><code>appdomain</code> <a class="xref" href="ILRuntime.Runtime.Enviorment.AppDomain.html">AppDomain</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ILRuntime_Reflection_ILRuntimeParameterInfo_AppDomain_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.AppDomain*"></a>
+
+  <h3 id="ILRuntime_Reflection_ILRuntimeParameterInfo_AppDomain" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.AppDomain">
+  AppDomain
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppDomain AppDomain { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Enviorment.AppDomain.html">AppDomain</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Reflection_ILRuntimeParameterInfo_DefaultValue_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.DefaultValue*"></a>
+
+  <h3 id="ILRuntime_Reflection_ILRuntimeParameterInfo_DefaultValue" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.DefaultValue">
+  DefaultValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating the default value if the parameter has a default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object DefaultValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The default value of the parameter, or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dbnull.value">Value</a> if the parameter has no default value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Reflection_ILRuntimeParameterInfo_HasDefaultValue_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.HasDefaultValue*"></a>
+
+  <h3 id="ILRuntime_Reflection_ILRuntimeParameterInfo_HasDefaultValue" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.HasDefaultValue">
+  HasDefaultValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value that indicates whether this parameter has a default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasDefaultValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this parameter has a default value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Reflection_ILRuntimeParameterInfo_IType_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.IType*"></a>
+
+  <h3 id="ILRuntime_Reflection_ILRuntimeParameterInfo_IType" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.IType">
+  IType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType IType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Reflection_ILRuntimeParameterInfo_MetadataToken_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.MetadataToken*"></a>
+
+  <h3 id="ILRuntime_Reflection_ILRuntimeParameterInfo_MetadataToken" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.MetadataToken">
+  MetadataToken
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value that identifies this parameter in metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int MetadataToken { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A value which, in combination with the module, uniquely identifies this parameter in metadata.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Reflection_ILRuntimeParameterInfo_RawDefaultValue_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.RawDefaultValue*"></a>
+
+  <h3 id="ILRuntime_Reflection_ILRuntimeParameterInfo_RawDefaultValue" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.RawDefaultValue">
+  RawDefaultValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating the default value if the parameter has a default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object RawDefaultValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The default value of the parameter, or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dbnull.value">Value</a> if the parameter has no default value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ILRuntime_Reflection_ILRuntimeParameterInfo_GetCustomAttributes_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.GetCustomAttributes*"></a>
+
+  <h3 id="ILRuntime_Reflection_ILRuntimeParameterInfo_GetCustomAttributes_System_Boolean_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.GetCustomAttributes(System.Boolean)">
+  GetCustomAttributes(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all the custom attributes defined on this parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object[] GetCustomAttributes(bool inherit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inherit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>This argument is ignored for objects of this type.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>An array that contains all the custom attributes applied to this parameter.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.typeloadexception">TypeLoadException</a></dt>
+    <dd><p>A custom attribute type could not be loaded.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ILRuntime_Reflection_ILRuntimeParameterInfo_GetCustomAttributes_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.GetCustomAttributes*"></a>
+
+  <h3 id="ILRuntime_Reflection_ILRuntimeParameterInfo_GetCustomAttributes_System_Type_System_Boolean_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.GetCustomAttributes(System.Type,System.Boolean)">
+  GetCustomAttributes(Type, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the custom attributes of the specified type or its derived types that are applied to this parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object[] GetCustomAttributes(Type attributeType, bool inherit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The custom attributes identified by type.</p>
+</dd>
+    <dt><code>inherit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>This argument is ignored for objects of this type.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>An array that contains the custom attributes of the specified type or its derived types.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>The type must be a type provided by the underlying runtime system.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">attributeType</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.typeloadexception">TypeLoadException</a></dt>
+    <dd><p>A custom attribute type could not be loaded.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ILRuntime_Reflection_ILRuntimeParameterInfo_IsDefined_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.IsDefined*"></a>
+
+  <h3 id="ILRuntime_Reflection_ILRuntimeParameterInfo_IsDefined_System_Type_System_Boolean_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.IsDefined(System.Type,System.Boolean)">
+  IsDefined(Type, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the custom attribute of the specified type or its derived types is applied to this parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsDefined(Type attributeType, bool inherit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributeType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>The <code>Type</code> object to search for.</p>
+</dd>
+    <dt><code>inherit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>This argument is ignored for objects of this type.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if one or more instances of <code class="paramref">attributeType</code> or its derived types are applied to this parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">attributeType</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">attributeType</code> is not a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a> object supplied by the common language runtime.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ILRuntime_Reflection_ILRuntimeParameterInfo_ToString_" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.ToString*"></a>
+
+  <h3 id="ILRuntime_Reflection_ILRuntimeParameterInfo_ToString" data-uid="ILRuntime.Reflection.ILRuntimeParameterInfo.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the parameter type and name represented as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing the type and the name of the parameter.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

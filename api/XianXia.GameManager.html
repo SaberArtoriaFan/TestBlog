@@ -1,0 +1,733 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GameManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GameManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.GameManager">
+
+
+
+  <h1 id="XianXia_GameManager" data-uid="XianXia.GameManager" class="text-break">
+    Class GameManager
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GameManager : GameManagerBase, IStartAfterNetwork</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Singleton-1.html">Singleton</a>&lt;<a class="xref" href="Saber.ECS.GameManagerBase.html">GameManagerBase</a>&gt;</div>
+      <div><a class="xref" href="Saber.ECS.GameManagerBase.html">GameManagerBase</a></div>
+      <div><span class="xref">GameManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="IStartAfterNetwork.html">IStartAfterNetwork</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Saber.ECS.GameManagerBase.html#Saber_ECS_GameManagerBase_world">GameManagerBase.world</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.GameManagerBase.html#Saber_ECS_GameManagerBase_isPasuedWhenFinishGame">GameManagerBase.isPasuedWhenFinishGame</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.GameManagerBase.html#Saber_ECS_GameManagerBase_gameStatus">GameManagerBase.gameStatus</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.GameManagerBase.html#Saber_ECS_GameManagerBase_gameResult">GameManagerBase.gameResult</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.GameManagerBase.html#Saber_ECS_GameManagerBase_OnGameOverEvent">GameManagerBase.OnGameOverEvent</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.GameManagerBase.html#Saber_ECS_GameManagerBase__GameStatus">GameManagerBase._GameStatus</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.GameManagerBase.html#Saber_ECS_GameManagerBase__GameResult">GameManagerBase._GameResult</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.GameManagerBase.html#Saber_ECS_GameManagerBase_World">GameManagerBase.World</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.GameManagerBase.html#Saber_ECS_GameManagerBase_ChangeGameStatus_Saber_ECS_GameStatus_">GameManagerBase.ChangeGameStatus(GameStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.GameManagerBase.html#Saber_ECS_GameManagerBase_FindSystem__1">GameManagerBase.FindSystem&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.GameManagerBase.html#Saber_ECS_GameManagerBase_FindSystemByComponent__1">GameManagerBase.FindSystemByComponent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.GameManagerBase.html#Saber_ECS_GameManagerBase_FindSystemByComponent__1___0_">GameManagerBase.FindSystemByComponent&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.GameManagerBase.html#Saber_ECS_GameManagerBase_DesotryComponent__1___0_">GameManagerBase.DesotryComponent&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.instance">Singleton&lt;GameManagerBase&gt;.instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.Instance">Singleton&lt;GameManagerBase&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.Awake">Singleton&lt;GameManagerBase&gt;.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.IsInitialized">Singleton&lt;GameManagerBase&gt;.IsInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.Init">Singleton&lt;GameManagerBase&gt;.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="Singleton-1.html#Singleton`1.OnDestroy">Singleton&lt;GameManagerBase&gt;.OnDestroy()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="XianXia_GameManager_EastCamp_" data-uid="XianXia.GameManager.EastCamp*"></a>
+
+  <h3 id="XianXia_GameManager_EastCamp" data-uid="XianXia.GameManager.EastCamp">
+  EastCamp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camp EastCamp { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.Camp.Camp.html">Camp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_EastPlayer_" data-uid="XianXia.GameManager.EastPlayer*"></a>
+
+  <h3 id="XianXia_GameManager_EastPlayer" data-uid="XianXia.GameManager.EastPlayer">
+  EastPlayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerMemeber EastPlayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.Camp.PlayerMemeber.html">PlayerMemeber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_GameType_" data-uid="XianXia.GameManager.GameType*"></a>
+
+  <h3 id="XianXia_GameManager_GameType" data-uid="XianXia.GameManager.GameType">
+  GameType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameType GameType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Unit.GameType.html">GameType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_HostileCamp_" data-uid="XianXia.GameManager.HostileCamp*"></a>
+
+  <h3 id="XianXia_GameManager_HostileCamp" data-uid="XianXia.GameManager.HostileCamp">
+  HostileCamp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camp HostileCamp { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.Camp.Camp.html">Camp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_HostilePlayer_" data-uid="XianXia.GameManager.HostilePlayer*"></a>
+
+  <h3 id="XianXia_GameManager_HostilePlayer" data-uid="XianXia.GameManager.HostilePlayer">
+  HostilePlayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerMemeber HostilePlayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.Camp.PlayerMemeber.html">PlayerMemeber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_MainMap_" data-uid="XianXia.GameManager.MainMap*"></a>
+
+  <h3 id="XianXia_GameManager_MainMap" data-uid="XianXia.GameManager.MainMap">
+  MainMap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AStarPathfinding2D MainMap { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Terrain.AStarPathfinding2D.html">AStarPathfinding2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_MainWorld_" data-uid="XianXia.GameManager.MainWorld*"></a>
+
+  <h3 id="XianXia_GameManager_MainWorld" data-uid="XianXia.GameManager.MainWorld">
+  MainWorld
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WorldBase MainWorld { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.ECS.WorldBase.html">WorldBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_MyPlayerEnum_" data-uid="XianXia.GameManager.MyPlayerEnum*"></a>
+
+  <h3 id="XianXia_GameManager_MyPlayerEnum" data-uid="XianXia.GameManager.MyPlayerEnum">
+  MyPlayerEnum
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerEnum MyPlayerEnum { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.Camp.PlayerEnum.html">PlayerEnum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_NeutralCamp_" data-uid="XianXia.GameManager.NeutralCamp*"></a>
+
+  <h3 id="XianXia_GameManager_NeutralCamp" data-uid="XianXia.GameManager.NeutralCamp">
+  NeutralCamp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camp NeutralCamp { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.Camp.Camp.html">Camp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_NeutralPlayer_" data-uid="XianXia.GameManager.NeutralPlayer*"></a>
+
+  <h3 id="XianXia_GameManager_NeutralPlayer" data-uid="XianXia.GameManager.NeutralPlayer">
+  NeutralPlayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerMemeber NeutralPlayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.Camp.PlayerMemeber.html">PlayerMemeber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_NewInstance_" data-uid="XianXia.GameManager.NewInstance*"></a>
+
+  <h3 id="XianXia_GameManager_NewInstance" data-uid="XianXia.GameManager.NewInstance">
+  NewInstance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameManager NewInstance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.GameManager.html">GameManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_Player1_" data-uid="XianXia.GameManager.Player1*"></a>
+
+  <h3 id="XianXia_GameManager_Player1" data-uid="XianXia.GameManager.Player1">
+  Player1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerMemeber Player1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.Camp.PlayerMemeber.html">PlayerMemeber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_PlayerCamp1_" data-uid="XianXia.GameManager.PlayerCamp1*"></a>
+
+  <h3 id="XianXia_GameManager_PlayerCamp1" data-uid="XianXia.GameManager.PlayerCamp1">
+  PlayerCamp1
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camp PlayerCamp1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.Camp.Camp.html">Camp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_GameManager_IsNotTimeToFinishGame_" data-uid="XianXia.GameManager.IsNotTimeToFinishGame*"></a>
+
+  <h3 id="XianXia_GameManager_IsNotTimeToFinishGame" data-uid="XianXia.GameManager.IsNotTimeToFinishGame">
+  IsNotTimeToFinishGame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsNotTimeToFinishGame()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_SetGameResult_" data-uid="XianXia.GameManager.SetGameResult*"></a>
+
+  <h3 id="XianXia_GameManager_SetGameResult" data-uid="XianXia.GameManager.SetGameResult">
+  SetGameResult()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override GameResult SetGameResult()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.ECS.GameResult.html">GameResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_Start_" data-uid="XianXia.GameManager.Start*"></a>
+
+  <h3 id="XianXia_GameManager_Start" data-uid="XianXia.GameManager.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_GameManager_StartAfterNetwork_" data-uid="XianXia.GameManager.StartAfterNetwork*"></a>
+
+  <h3 id="XianXia_GameManager_StartAfterNetwork" data-uid="XianXia.GameManager.StartAfterNetwork">
+  StartAfterNetwork()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartAfterNetwork()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

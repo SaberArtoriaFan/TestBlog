@@ -1,0 +1,1605 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CrossBindingAdaptor
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CrossBindingAdaptor
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor">
+
+
+
+  <h1 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor" class="text-break">
+    Class CrossBindingAdaptor
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ILRuntime.html">ILRuntime</a>.<a class="xref" href="ILRuntime.Runtime.html">Runtime</a>.<a class="xref" href="ILRuntime.Runtime.Enviorment.html">Enviorment</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>This interface is used for inheritance and implementation of CLR Types or interfaces</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CrossBindingAdaptor : IType</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CrossBindingAdaptor</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="ILRuntime.Runtime.Adapters.AttributeAdapter.html">AttributeAdapter</a></div>
+      <div><a class="xref" href="JEngine.Core.DO_NOT_USE.ClassBindNonMonoBehaviourAdapter.html">ClassBindNonMonoBehaviourAdapter</a></div>
+      <div><a class="xref" href="ProjectAdapter.ExampleAPIAdapter.html">ExampleAPIAdapter</a></div>
+      <div><a class="xref" href="ProjectAdapter.GenericExampleAdapter1.html">GenericExampleAdapter1</a></div>
+      <div><a class="xref" href="ProjectAdapter.GenericExampleAdapter2.html">GenericExampleAdapter2</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_AdaptorType_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.AdaptorType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_AdaptorType" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.AdaptorType">
+  AdaptorType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Type AdaptorType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_AppDomain_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.AppDomain*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_AppDomain" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.AppDomain">
+  AppDomain
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppDomain AppDomain { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Enviorment.AppDomain.html">AppDomain</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_ArrayRank_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.ArrayRank*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_ArrayRank" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.ArrayRank">
+  ArrayRank
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ArrayRank { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_ArrayType_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.ArrayType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_ArrayType" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.ArrayType">
+  ArrayType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType ArrayType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_BaseCLRType_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.BaseCLRType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_BaseCLRType" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.BaseCLRType">
+  BaseCLRType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This returns the CLR type to be inherited or CLR interface to be implemented</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Type BaseCLRType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_BaseCLRTypes_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.BaseCLRTypes*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_BaseCLRTypes" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.BaseCLRTypes">
+  BaseCLRTypes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If this Adaptor is capable to impelement multuple interfaces, use this Property, AND BaseCLRType should return null</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Type[] BaseCLRTypes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_BaseType_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.BaseType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_BaseType" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.BaseType">
+  BaseType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType BaseType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_ByRefType_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.ByRefType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_ByRefType" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.ByRefType">
+  ByRefType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType ByRefType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_DefaultObject_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.DefaultObject*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_DefaultObject" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.DefaultObject">
+  DefaultObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StackObject DefaultObject { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_ElementType_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.ElementType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_ElementType" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.ElementType">
+  ElementType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType ElementType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_FullName_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.FullName*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_FullName" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.FullName">
+  FullName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FullName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GenericArguments_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GenericArguments*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GenericArguments" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GenericArguments">
+  GenericArguments
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyValuePair&lt;string, IType&gt;[] GenericArguments { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a>&gt;[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_HasGenericParameter_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.HasGenericParameter*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_HasGenericParameter" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.HasGenericParameter">
+  HasGenericParameter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasGenericParameter { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_Implements_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.Implements*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_Implements" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.Implements">
+  Implements
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType[] Implements { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsArray_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsArray*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsArray" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsArray">
+  IsArray
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsArray { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsByRef_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsByRef*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsByRef" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsByRef">
+  IsByRef
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsByRef { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsDelegate_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsDelegate*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsDelegate" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsDelegate">
+  IsDelegate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDelegate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsEnum_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsEnum*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsEnum" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsEnum">
+  IsEnum
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnum { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsGenericInstance_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsGenericInstance*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsGenericInstance" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsGenericInstance">
+  IsGenericInstance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGenericInstance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsGenericParameter_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsGenericParameter*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsGenericParameter" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsGenericParameter">
+  IsGenericParameter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGenericParameter { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsInterface_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsInterface*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsInterface" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsInterface">
+  IsInterface
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsPrimitive_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsPrimitive*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsPrimitive" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsPrimitive">
+  IsPrimitive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPrimitive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsValueType_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsValueType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_IsValueType" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.IsValueType">
+  IsValueType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValueType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_Name_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.Name*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_Name" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_ReflectionType_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.ReflectionType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_ReflectionType" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.ReflectionType">
+  ReflectionType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type ReflectionType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_TotalFieldCount_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.TotalFieldCount*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_TotalFieldCount" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.TotalFieldCount">
+  TotalFieldCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalFieldCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_TypeForCLR_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.TypeForCLR*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_TypeForCLR" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.TypeForCLR">
+  TypeForCLR
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type TypeForCLR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_TypeIndex_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.TypeIndex*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_TypeIndex" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.TypeIndex">
+  TypeIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TypeIndex { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_CanAssignTo_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.CanAssignTo*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_CanAssignTo_ILRuntime_CLR_TypeSystem_IType_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.CanAssignTo(ILRuntime.CLR.TypeSystem.IType)">
+  CanAssignTo(IType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanAssignTo(IType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_CreateCLRInstance_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.CreateCLRInstance*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_CreateCLRInstance_ILRuntime_Runtime_Enviorment_AppDomain_ILRuntime_Runtime_Intepreter_ILTypeInstance_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.CreateCLRInstance(ILRuntime.Runtime.Enviorment.AppDomain,ILRuntime.Runtime.Intepreter.ILTypeInstance)">
+  CreateCLRInstance(AppDomain, ILTypeInstance)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract object CreateCLRInstance(AppDomain appdomain, ILTypeInstance instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>appdomain</code> <a class="xref" href="ILRuntime.Runtime.Enviorment.AppDomain.html">AppDomain</a></dt>
+    <dd></dd>
+    <dt><code>instance</code> <a class="xref" href="ILRuntime.Runtime.Intepreter.ILTypeInstance.html">ILTypeInstance</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_FindGenericArgument_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.FindGenericArgument*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_FindGenericArgument_System_String_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.FindGenericArgument(System.String)">
+  FindGenericArgument(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType FindGenericArgument(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GetConstructor_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GetConstructor*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GetConstructor_System_Collections_Generic_List_ILRuntime_CLR_TypeSystem_IType__" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GetConstructor(System.Collections.Generic.List{ILRuntime.CLR.TypeSystem.IType})">
+  GetConstructor(List&lt;IType&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMethod GetConstructor(List&lt;IType&gt; param)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>param</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.Method.IMethod.html">IMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GetFieldIndex_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GetFieldIndex*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GetFieldIndex_System_Object_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GetFieldIndex(System.Object)">
+  GetFieldIndex(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFieldIndex(object token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GetMethod_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GetMethod*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GetMethod_System_String_System_Collections_Generic_List_ILRuntime_CLR_TypeSystem_IType__ILRuntime_CLR_TypeSystem_IType___ILRuntime_CLR_TypeSystem_IType_System_Boolean_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GetMethod(System.String,System.Collections.Generic.List{ILRuntime.CLR.TypeSystem.IType},ILRuntime.CLR.TypeSystem.IType[],ILRuntime.CLR.TypeSystem.IType,System.Boolean)">
+  GetMethod(string, List&lt;IType&gt;, IType[], IType, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get a specified Method in this type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMethod GetMethod(string name, List&lt;IType&gt; param, IType[] genericArguments, IType returnType = null, bool declaredOnly = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the Type</p>
+</dd>
+    <dt><code>param</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a>&gt;</dt>
+    <dd><p>List of parameter's types</p>
+</dd>
+    <dt><code>genericArguments</code> <a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a>[]</dt>
+    <dd><p>List of Generic Arguments</p>
+</dd>
+    <dt><code>returnType</code> <a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd><p>Return Type</p>
+</dd>
+    <dt><code>declaredOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to search the methods decleared in this type only, false to search base types.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.Method.IMethod.html">IMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GetMethod_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GetMethod*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GetMethod_System_String_System_Int32_System_Boolean_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GetMethod(System.String,System.Int32,System.Boolean)">
+  GetMethod(string, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get a specified Method in this type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMethod GetMethod(string name, int paramCount, bool declaredOnly = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the Type</p>
+</dd>
+    <dt><code>paramCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Parameter count</p>
+</dd>
+    <dt><code>declaredOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to search the methods decleared in this type only, false to search base types.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.Method.IMethod.html">IMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GetMethods_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GetMethods*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GetMethods" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GetMethods">
+  GetMethods()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IMethod&gt; GetMethods()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="ILRuntime.CLR.Method.IMethod.html">IMethod</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GetValueTypeSize_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GetValueTypeSize*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GetValueTypeSize_System_Int32__System_Int32__" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GetValueTypeSize(System.Int32@,System.Int32@)">
+  GetValueTypeSize(out int, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetValueTypeSize(out int fieldCout, out int managedCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fieldCout</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>managedCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GetVirtualMethod_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GetVirtualMethod*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_GetVirtualMethod_ILRuntime_CLR_Method_IMethod_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.GetVirtualMethod(ILRuntime.CLR.Method.IMethod)">
+  GetVirtualMethod(IMethod)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMethod GetVirtualMethod(IMethod method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="ILRuntime.CLR.Method.IMethod.html">IMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.Method.IMethod.html">IMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_MakeArrayType_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.MakeArrayType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_MakeArrayType_System_Int32_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.MakeArrayType(System.Int32)">
+  MakeArrayType(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType MakeArrayType(int rank)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rank</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_MakeByRefType_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.MakeByRefType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_MakeByRefType" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.MakeByRefType">
+  MakeByRefType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType MakeByRefType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_MakeGenericInstance_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.MakeGenericInstance*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_MakeGenericInstance_System_Collections_Generic_KeyValuePair_System_String_ILRuntime_CLR_TypeSystem_IType____" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.MakeGenericInstance(System.Collections.Generic.KeyValuePair{System.String,ILRuntime.CLR.TypeSystem.IType}[])">
+  MakeGenericInstance(KeyValuePair&lt;string, IType&gt;[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType MakeGenericInstance(KeyValuePair&lt;string, IType&gt;[] genericArguments)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>genericArguments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a>&gt;[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_ResolveGenericType_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.ResolveGenericType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Enviorment_CrossBindingAdaptor_ResolveGenericType_ILRuntime_CLR_TypeSystem_IType_" data-uid="ILRuntime.Runtime.Enviorment.CrossBindingAdaptor.ResolveGenericType(ILRuntime.CLR.TypeSystem.IType)">
+  ResolveGenericType(IType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IType ResolveGenericType(IType contextType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>contextType</code> <a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

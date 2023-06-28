@@ -1,0 +1,799 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AssetUtility
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AssetUtility
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.Unity.Editor.AssetUtility">
+
+
+
+  <h1 id="Spine_Unity_Editor_AssetUtility" data-uid="Spine.Unity.Editor.AssetUtility" class="text-break">
+    Class AssetUtility
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a>.<a class="xref" href="Spine.Unity.html">Unity</a>.<a class="xref" href="Spine.Unity.Editor.html">Editor</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AssetUtility</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">AssetUtility</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_AtlasSuffix" data-uid="Spine.Unity.Editor.AssetUtility.AtlasSuffix">
+  AtlasSuffix
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AtlasSuffix = &quot;_Atlas&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_SkeletonDataSuffix" data-uid="Spine.Unity.Editor.AssetUtility.SkeletonDataSuffix">
+  SkeletonDataSuffix
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string SkeletonDataSuffix = &quot;_SkeletonData&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_SpriteAtlasSuffix" data-uid="Spine.Unity.Editor.AssetUtility.SpriteAtlasSuffix">
+  SpriteAtlasSuffix
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string SpriteAtlasSuffix = &quot;_SpriteAtlas&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_assetsImportedInWrongState" data-uid="Spine.Unity.Editor.AssetUtility.assetsImportedInWrongState">
+  assetsImportedInWrongState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HashSet&lt;string&gt; assetsImportedInWrongState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_protectFromStackGarbageCollection" data-uid="Spine.Unity.Editor.AssetUtility.protectFromStackGarbageCollection">
+  protectFromStackGarbageCollection
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly List&lt;ScriptableObject&gt; protectFromStackGarbageCollection</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ScriptableObject</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_Unity_Editor_AssetUtility_AdjustSpriteAtlasSettings_" data-uid="Spine.Unity.Editor.AssetUtility.AdjustSpriteAtlasSettings*"></a>
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_AdjustSpriteAtlasSettings_UnityEngine_U2D_SpriteAtlas_" data-uid="Spine.Unity.Editor.AssetUtility.AdjustSpriteAtlasSettings(UnityEngine.U2D.SpriteAtlas)">
+  AdjustSpriteAtlasSettings(SpriteAtlas)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AdjustSpriteAtlasSettings(UnityEngine.U2D.SpriteAtlas spriteAtlas)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spriteAtlas</code> <span class="xref">SpriteAtlas</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_AssetUtility_BrowseAtlasDialog_" data-uid="Spine.Unity.Editor.AssetUtility.BrowseAtlasDialog*"></a>
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_BrowseAtlasDialog_System_String_" data-uid="Spine.Unity.Editor.AssetUtility.BrowseAtlasDialog(System.String)">
+  BrowseAtlasDialog(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasAssetBase BrowseAtlasDialog(string dirPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dirPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.AtlasAssetBase.html">AtlasAssetBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_AssetUtility_CheckForValidSkeletonData_" data-uid="Spine.Unity.Editor.AssetUtility.CheckForValidSkeletonData*"></a>
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_CheckForValidSkeletonData_System_String_" data-uid="Spine.Unity.Editor.AssetUtility.CheckForValidSkeletonData(System.String)">
+  CheckForValidSkeletonData(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckForValidSkeletonData(string skeletonJSONPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skeletonJSONPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_AssetUtility_GeneratePngFromSpriteAtlas_" data-uid="Spine.Unity.Editor.AssetUtility.GeneratePngFromSpriteAtlas*"></a>
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_GeneratePngFromSpriteAtlas_UnityEngine_U2D_SpriteAtlas_System_String__" data-uid="Spine.Unity.Editor.AssetUtility.GeneratePngFromSpriteAtlas(UnityEngine.U2D.SpriteAtlas,System.String@)">
+  GeneratePngFromSpriteAtlas(SpriteAtlas, out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GeneratePngFromSpriteAtlas(UnityEngine.U2D.SpriteAtlas spriteAtlas, out string texturePath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spriteAtlas</code> <span class="xref">SpriteAtlas</span></dt>
+    <dd></dd>
+    <dt><code>texturePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_AssetUtility_GetPathSafeName_" data-uid="Spine.Unity.Editor.AssetUtility.GetPathSafeName*"></a>
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_GetPathSafeName_System_String_" data-uid="Spine.Unity.Editor.AssetUtility.GetPathSafeName(System.String)">
+  GetPathSafeName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPathSafeName(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_AssetUtility_GetRequiredAtlasRegions_" data-uid="Spine.Unity.Editor.AssetUtility.GetRequiredAtlasRegions*"></a>
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_GetRequiredAtlasRegions_System_String_" data-uid="Spine.Unity.Editor.AssetUtility.GetRequiredAtlasRegions(System.String)">
+  GetRequiredAtlasRegions(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;string&gt; GetRequiredAtlasRegions(string skeletonDataPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skeletonDataPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_AssetUtility_HandleOnPostprocessAllAssets_" data-uid="Spine.Unity.Editor.AssetUtility.HandleOnPostprocessAllAssets*"></a>
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_HandleOnPostprocessAllAssets_System_String___System_Collections_Generic_List_System_String__" data-uid="Spine.Unity.Editor.AssetUtility.HandleOnPostprocessAllAssets(System.String[],System.Collections.Generic.List{System.String})">
+  HandleOnPostprocessAllAssets(string[], List&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void HandleOnPostprocessAllAssets(string[] imported, List&lt;string&gt; texturesWithoutMetaFile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>imported</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>texturesWithoutMetaFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_AssetUtility_ImportSpineContent_" data-uid="Spine.Unity.Editor.AssetUtility.ImportSpineContent*"></a>
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_ImportSpineContent_System_String___System_Collections_Generic_List_System_String__System_Boolean_" data-uid="Spine.Unity.Editor.AssetUtility.ImportSpineContent(System.String[],System.Collections.Generic.List{System.String},System.Boolean)">
+  ImportSpineContent(string[], List&lt;string&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ImportSpineContent(string[] imported, List&lt;string&gt; texturesWithoutMetaFile, bool reimport = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>imported</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>texturesWithoutMetaFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>reimport</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_AssetUtility_IngestSpriteAtlas_" data-uid="Spine.Unity.Editor.AssetUtility.IngestSpriteAtlas*"></a>
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_IngestSpriteAtlas_UnityEngine_U2D_SpriteAtlas_System_Collections_Generic_List_System_String__" data-uid="Spine.Unity.Editor.AssetUtility.IngestSpriteAtlas(UnityEngine.U2D.SpriteAtlas,System.Collections.Generic.List{System.String})">
+  IngestSpriteAtlas(SpriteAtlas, List&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AtlasAssetBase IngestSpriteAtlas(UnityEngine.U2D.SpriteAtlas spriteAtlas, List&lt;string&gt; texturesWithoutMetaFile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spriteAtlas</code> <span class="xref">SpriteAtlas</span></dt>
+    <dd></dd>
+    <dt><code>texturesWithoutMetaFile</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.AtlasAssetBase.html">AtlasAssetBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_AssetUtility_IsSpineData_" data-uid="Spine.Unity.Editor.AssetUtility.IsSpineData*"></a>
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_IsSpineData_TextAsset_Spine_Unity_SkeletonDataCompatibility_CompatibilityProblemInfo__System_String__" data-uid="Spine.Unity.Editor.AssetUtility.IsSpineData(TextAsset,Spine.Unity.SkeletonDataCompatibility.CompatibilityProblemInfo@,System.String@)">
+  IsSpineData(TextAsset, out CompatibilityProblemInfo, ref string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSpineData(TextAsset asset, out SkeletonDataCompatibility.CompatibilityProblemInfo compatibilityProblemInfo, ref string problemDescription)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>asset</code> <span class="xref">TextAsset</span></dt>
+    <dd></dd>
+    <dt><code>compatibilityProblemInfo</code> <a class="xref" href="Spine.Unity.SkeletonDataCompatibility.html">SkeletonDataCompatibility</a>.<a class="xref" href="Spine.Unity.SkeletonDataCompatibility.CompatibilityProblemInfo.html">CompatibilityProblemInfo</a></dt>
+    <dd></dd>
+    <dt><code>problemDescription</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_AssetUtility_MultiAtlasDialog_" data-uid="Spine.Unity.Editor.AssetUtility.MultiAtlasDialog*"></a>
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_MultiAtlasDialog_System_Collections_Generic_List_System_String__System_String_System_String_" data-uid="Spine.Unity.Editor.AssetUtility.MultiAtlasDialog(System.Collections.Generic.List{System.String},System.String,System.String)">
+  MultiAtlasDialog(List&lt;string&gt;, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;AtlasAssetBase&gt; MultiAtlasDialog(List&lt;string&gt; requiredPaths, string initialDirectory, string filename = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>requiredPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>initialDirectory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>filename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Spine.Unity.AtlasAssetBase.html">AtlasAssetBase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_AssetUtility_SkeletonImportDialog_" data-uid="Spine.Unity.Editor.AssetUtility.SkeletonImportDialog*"></a>
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_SkeletonImportDialog_System_String_System_Collections_Generic_List_Spine_Unity_AtlasAssetBase__System_Collections_Generic_List_System_String__System_Boolean__" data-uid="Spine.Unity.Editor.AssetUtility.SkeletonImportDialog(System.String,System.Collections.Generic.List{Spine.Unity.AtlasAssetBase},System.Collections.Generic.List{System.String},System.Boolean@)">
+  SkeletonImportDialog(string, List&lt;AtlasAssetBase&gt;, List&lt;string&gt;, ref bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SkeletonImportDialog(string skeletonPath, List&lt;AtlasAssetBase&gt; localAtlases, List&lt;string&gt; requiredPaths, ref bool abortSkeletonImport)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skeletonPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>localAtlases</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Spine.Unity.AtlasAssetBase.html">AtlasAssetBase</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>requiredPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>abortSkeletonImport</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_AssetUtility_SpriteAtlasSettingsNeedAdjustment_" data-uid="Spine.Unity.Editor.AssetUtility.SpriteAtlasSettingsNeedAdjustment*"></a>
+
+  <h3 id="Spine_Unity_Editor_AssetUtility_SpriteAtlasSettingsNeedAdjustment_UnityEngine_U2D_SpriteAtlas_" data-uid="Spine.Unity.Editor.AssetUtility.SpriteAtlasSettingsNeedAdjustment(UnityEngine.U2D.SpriteAtlas)">
+  SpriteAtlasSettingsNeedAdjustment(SpriteAtlas)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SpriteAtlasSettingsNeedAdjustment(UnityEngine.U2D.SpriteAtlas spriteAtlas)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spriteAtlas</code> <span class="xref">SpriteAtlas</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1087 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MatchCondition
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MatchCondition
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FishNet.Component.Observing.MatchCondition">
+
+
+
+  <h1 id="FishNet_Component_Observing_MatchCondition" data-uid="FishNet.Component.Observing.MatchCondition" class="text-break">
+    Class MatchCondition
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FishNet.html">FishNet</a>.<a class="xref" href="FishNet.Component.html">Component</a>.<a class="xref" href="FishNet.Component.Observing.html">Observing</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>When this observer condition is placed on an object, a client must be within the same match to view the object.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MatchCondition : ObserverCondition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FishNet.Observing.ObserverCondition.html">ObserverCondition</a></div>
+      <div><span class="xref">MatchCondition</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FishNet.Observing.ObserverCondition.html#FishNet_Observing_ObserverCondition_NetworkObject">ObserverCondition.NetworkObject</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Observing.ObserverCondition.html#FishNet_Observing_ObserverCondition_GetIsEnabled">ObserverCondition.GetIsEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Observing.ObserverCondition.html#FishNet_Observing_ObserverCondition_SetIsEnabled_System_Boolean_">ObserverCondition.SetIsEnabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Observing.ObserverCondition.html#FishNet_Observing_ObserverCondition_InitializeOnce_FishNet_Object_NetworkObject_">ObserverCondition.InitializeOnce(NetworkObject)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_ConnectionMatch_" data-uid="FishNet.Component.Observing.MatchCondition.ConnectionMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_ConnectionMatch" data-uid="FishNet.Component.Observing.MatchCondition.ConnectionMatch">
+  ConnectionMatch
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Match a connection is in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyDictionary&lt;NetworkConnection, int&gt; ConnectionMatch { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_MatchConnections_" data-uid="FishNet.Component.Observing.MatchCondition.MatchConnections*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_MatchConnections" data-uid="FishNet.Component.Observing.MatchCondition.MatchConnections">
+  MatchConnections
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Matches and connections in each match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyDictionary&lt;int, HashSet&lt;NetworkConnection&gt;&gt; MatchConnections { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_MatchObjects_" data-uid="FishNet.Component.Observing.MatchCondition.MatchObjects*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_MatchObjects" data-uid="FishNet.Component.Observing.MatchCondition.MatchObjects">
+  MatchObjects
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Matches and connections in each match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyDictionary&lt;int, HashSet&lt;NetworkObject&gt;&gt; MatchObjects { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_ObjectMatch_" data-uid="FishNet.Component.Observing.MatchCondition.ObjectMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_ObjectMatch" data-uid="FishNet.Component.Observing.MatchCondition.ObjectMatch">
+  ObjectMatch
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Match a connection is in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyDictionary&lt;NetworkObject, int&gt; ObjectMatch { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_AddToMatch_" data-uid="FishNet.Component.Observing.MatchCondition.AddToMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_AddToMatch_System_Int32_FishNet_Connection_NetworkConnection_FishNet_Managing_NetworkManager_System_Boolean_" data-uid="FishNet.Component.Observing.MatchCondition.AddToMatch(System.Int32,FishNet.Connection.NetworkConnection,FishNet.Managing.NetworkManager,System.Boolean)">
+  AddToMatch(int, NetworkConnection, NetworkManager, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a connection to a match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddToMatch(int match, NetworkConnection conn, NetworkManager manager = null, bool replaceMatch = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Match to add conn to.</p>
+</dd>
+    <dt><code>conn</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Connection to add to match.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+    <dt><code>replaceMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to replace other matches with the new match.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_AddToMatch_" data-uid="FishNet.Component.Observing.MatchCondition.AddToMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_AddToMatch_System_Int32_FishNet_Connection_NetworkConnection___FishNet_Managing_NetworkManager_System_Boolean_" data-uid="FishNet.Component.Observing.MatchCondition.AddToMatch(System.Int32,FishNet.Connection.NetworkConnection[],FishNet.Managing.NetworkManager,System.Boolean)">
+  AddToMatch(int, NetworkConnection[], NetworkManager, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds connections to a match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddToMatch(int match, NetworkConnection[] conns, NetworkManager manager = null, bool replaceMatch = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Match to add conns to.</p>
+</dd>
+    <dt><code>conns</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>[]</dt>
+    <dd><p>Connections to add to match.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+    <dt><code>replaceMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to replace other matches with the new match.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_AddToMatch_" data-uid="FishNet.Component.Observing.MatchCondition.AddToMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_AddToMatch_System_Int32_FishNet_Object_NetworkObject_FishNet_Managing_NetworkManager_System_Boolean_" data-uid="FishNet.Component.Observing.MatchCondition.AddToMatch(System.Int32,FishNet.Object.NetworkObject,FishNet.Managing.NetworkManager,System.Boolean)">
+  AddToMatch(int, NetworkObject, NetworkManager, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an object to a match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddToMatch(int match, NetworkObject nob, NetworkManager manager = null, bool replaceMatch = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Match to add conn to.</p>
+</dd>
+    <dt><code>nob</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd><p>Connection to add to match.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+    <dt><code>replaceMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to replace other matches with the new match.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_AddToMatch_" data-uid="FishNet.Component.Observing.MatchCondition.AddToMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_AddToMatch_System_Int32_FishNet_Object_NetworkObject___FishNet_Managing_NetworkManager_System_Boolean_" data-uid="FishNet.Component.Observing.MatchCondition.AddToMatch(System.Int32,FishNet.Object.NetworkObject[],FishNet.Managing.NetworkManager,System.Boolean)">
+  AddToMatch(int, NetworkObject[], NetworkManager, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds objects to a match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddToMatch(int match, NetworkObject[] nobs, NetworkManager manager = null, bool replaceMatch = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Match to add conns to.</p>
+</dd>
+    <dt><code>nobs</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a>[]</dt>
+    <dd><p>Connections to add to match.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+    <dt><code>replaceMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to replace other matches with the new match.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_AddToMatch_" data-uid="FishNet.Component.Observing.MatchCondition.AddToMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_AddToMatch_System_Int32_System_Collections_Generic_List_FishNet_Connection_NetworkConnection__FishNet_Managing_NetworkManager_System_Boolean_" data-uid="FishNet.Component.Observing.MatchCondition.AddToMatch(System.Int32,System.Collections.Generic.List{FishNet.Connection.NetworkConnection},FishNet.Managing.NetworkManager,System.Boolean)">
+  AddToMatch(int, List&lt;NetworkConnection&gt;, NetworkManager, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds connections to a match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddToMatch(int match, List&lt;NetworkConnection&gt; conns, NetworkManager manager = null, bool replaceMatch = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Match to add conns to.</p>
+</dd>
+    <dt><code>conns</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;</dt>
+    <dd><p>Connections to add to match.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+    <dt><code>replaceMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to replace other matches with the new match.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_AddToMatch_" data-uid="FishNet.Component.Observing.MatchCondition.AddToMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_AddToMatch_System_Int32_System_Collections_Generic_List_FishNet_Object_NetworkObject__FishNet_Managing_NetworkManager_System_Boolean_" data-uid="FishNet.Component.Observing.MatchCondition.AddToMatch(System.Int32,System.Collections.Generic.List{FishNet.Object.NetworkObject},FishNet.Managing.NetworkManager,System.Boolean)">
+  AddToMatch(int, List&lt;NetworkObject&gt;, NetworkManager, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds objects to a match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddToMatch(int match, List&lt;NetworkObject&gt; nobs, NetworkManager manager = null, bool replaceMatch = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Match to add conns to.</p>
+</dd>
+    <dt><code>nobs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a>&gt;</dt>
+    <dd><p>Connections to add to match.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+    <dt><code>replaceMatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to replace other matches with the new match.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_Clone_" data-uid="FishNet.Component.Observing.MatchCondition.Clone*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_Clone" data-uid="FishNet.Component.Observing.MatchCondition.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clones referenced ObserverCondition. This must be populated with your conditions settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ObserverCondition Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Observing.ObserverCondition.html">ObserverCondition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_ConditionConstructor_" data-uid="FishNet.Component.Observing.MatchCondition.ConditionConstructor*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_ConditionConstructor" data-uid="FishNet.Component.Observing.MatchCondition.ConditionConstructor">
+  ConditionConstructor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConditionConstructor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_ConditionMet_" data-uid="FishNet.Component.Observing.MatchCondition.ConditionMet*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_ConditionMet_FishNet_Connection_NetworkConnection_System_Boolean_System_Boolean__" data-uid="FishNet.Component.Observing.MatchCondition.ConditionMet(FishNet.Connection.NetworkConnection,System.Boolean,System.Boolean@)">
+  ConditionMet(NetworkConnection, bool, out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns if the object which this condition resides should be visible to connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ConditionMet(NetworkConnection connection, bool alreadyAdded, out bool notProcessed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connection</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Connection which the condition is being checked for.</p>
+</dd>
+    <dt><code>alreadyAdded</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>notProcessed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the condition was not processed. This can be used to skip processing for performance. While output as true this condition result assumes the previous ConditionMet value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_FishNet_Connection_NetworkConnection_FishNet_Managing_NetworkManager_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch(FishNet.Connection.NetworkConnection,FishNet.Managing.NetworkManager)">
+  RemoveFromMatch(NetworkConnection, NetworkManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a connection from all matches.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveFromMatch(NetworkConnection conn, NetworkManager manager)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conn</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>NetworkConnection to remove.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_FishNet_Object_NetworkObject_FishNet_Managing_NetworkManager_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch(FishNet.Object.NetworkObject,FishNet.Managing.NetworkManager)">
+  RemoveFromMatch(NetworkObject, NetworkManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes nob from all matches.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveFromMatch(NetworkObject nob, NetworkManager manager = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nob</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd><p>NetworkObject to remove.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_FishNet_Object_NetworkObject___FishNet_Managing_NetworkManager_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch(FishNet.Object.NetworkObject[],FishNet.Managing.NetworkManager)">
+  RemoveFromMatch(NetworkObject[], NetworkManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a network object from all matches.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveFromMatch(NetworkObject[] nobs, NetworkManager manager = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nobs</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a>[]</dt>
+    <dd><p>NetworkObjects to remove.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_System_Collections_Generic_List_FishNet_Object_NetworkObject__FishNet_Managing_NetworkManager_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch(System.Collections.Generic.List{FishNet.Object.NetworkObject},FishNet.Managing.NetworkManager)">
+  RemoveFromMatch(List&lt;NetworkObject&gt;, NetworkManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes network objects from all matches.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveFromMatch(List&lt;NetworkObject&gt; nobs, NetworkManager manager = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nobs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a>&gt;</dt>
+    <dd><p>NetworkObjects to remove.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_System_Int32_FishNet_Connection_NetworkConnection_FishNet_Managing_NetworkManager_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch(System.Int32,FishNet.Connection.NetworkConnection,FishNet.Managing.NetworkManager)">
+  RemoveFromMatch(int, NetworkConnection, NetworkManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a connection from a match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveFromMatch(int match, NetworkConnection conn, NetworkManager manager)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Match to remove conn from.</p>
+</dd>
+    <dt><code>conn</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Connection to remove from match.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_System_Int32_FishNet_Connection_NetworkConnection___FishNet_Managing_NetworkManager_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch(System.Int32,FishNet.Connection.NetworkConnection[],FishNet.Managing.NetworkManager)">
+  RemoveFromMatch(int, NetworkConnection[], NetworkManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes connections from a match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveFromMatch(int match, NetworkConnection[] conns, NetworkManager manager)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Match to remove conns from.</p>
+</dd>
+    <dt><code>conns</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>[]</dt>
+    <dd><p>Connections to remove from match.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_System_Int32_FishNet_Object_NetworkObject_FishNet_Managing_NetworkManager_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch(System.Int32,FishNet.Object.NetworkObject,FishNet.Managing.NetworkManager)">
+  RemoveFromMatch(int, NetworkObject, NetworkManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a network object from a match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveFromMatch(int match, NetworkObject nob, NetworkManager manager = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Match to remove conn from.</p>
+</dd>
+    <dt><code>nob</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd><p>NetworkObject to remove from match.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_System_Int32_FishNet_Object_NetworkObject___FishNet_Managing_NetworkManager_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch(System.Int32,FishNet.Object.NetworkObject[],FishNet.Managing.NetworkManager)">
+  RemoveFromMatch(int, NetworkObject[], NetworkManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes network objects from a match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveFromMatch(int match, NetworkObject[] nobs, NetworkManager manager = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Match to remove conns from.</p>
+</dd>
+    <dt><code>nobs</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a>[]</dt>
+    <dd><p>NetworkObjects to remove from match.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_System_Int32_System_Collections_Generic_List_FishNet_Connection_NetworkConnection__FishNet_Managing_NetworkManager_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch(System.Int32,System.Collections.Generic.List{FishNet.Connection.NetworkConnection},FishNet.Managing.NetworkManager)">
+  RemoveFromMatch(int, List&lt;NetworkConnection&gt;, NetworkManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes connections from a match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveFromMatch(int match, List&lt;NetworkConnection&gt; conns, NetworkManager manager)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Match to remove conns from.</p>
+</dd>
+    <dt><code>conns</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;</dt>
+    <dd><p>Connections to remove from match.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_RemoveFromMatch_System_Int32_System_Collections_Generic_List_FishNet_Object_NetworkObject__FishNet_Managing_NetworkManager_" data-uid="FishNet.Component.Observing.MatchCondition.RemoveFromMatch(System.Int32,System.Collections.Generic.List{FishNet.Object.NetworkObject},FishNet.Managing.NetworkManager)">
+  RemoveFromMatch(int, List&lt;NetworkObject&gt;, NetworkManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes network objects from a match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveFromMatch(int match, List&lt;NetworkObject&gt; nobs, NetworkManager manager = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Match to remove conns from.</p>
+</dd>
+    <dt><code>nobs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a>&gt;</dt>
+    <dd><p>NetworkObjects to remove from match.</p>
+</dd>
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd><p>NetworkManager to rebuild observers on. If null InstanceFinder.NetworkManager will be used.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Component_Observing_MatchCondition_Timed_" data-uid="FishNet.Component.Observing.MatchCondition.Timed*"></a>
+
+  <h3 id="FishNet_Component_Observing_MatchCondition_Timed" data-uid="FishNet.Component.Observing.MatchCondition.Timed">
+  Timed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if the condition requires regular updates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Timed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

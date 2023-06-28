@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ItemHintUI
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ItemHintUI
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Saber.Base.ItemHintUI">
+
+
+
+  <h1 id="Saber_Base_ItemHintUI" data-uid="Saber.Base.ItemHintUI" class="text-break">
+    Class ItemHintUI
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Saber.html">Saber</a>.<a class="xref" href="Saber.Base.html">Base</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ItemHintUI : UIBase&lt;ItemHintUI&gt;, IUIBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="UIBase-1.html">UIBase</a>&lt;<a class="xref" href="Saber.Base.ItemHintUI.html">ItemHintUI</a>&gt;</div>
+      <div><span class="xref">ItemHintUI</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="IUIBase.html">IUIBase</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.Name">UIBase&lt;ItemHintUI&gt;.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.GetWedgateGameObject(System.String)">UIBase&lt;ItemHintUI&gt;.GetWedgateGameObject(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.GetUIBehavior(System.String)">UIBase&lt;ItemHintUI&gt;.GetUIBehavior(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.GetUISubManager(System.String)">UIBase&lt;ItemHintUI&gt;.GetUISubManager(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.SetSelfActive(System.String,System.Boolean)">UIBase&lt;ItemHintUI&gt;.SetSelfActive(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.SetPivot(System.String,System.Int32,System.Int32)">UIBase&lt;ItemHintUI&gt;.SetPivot(string, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangePosition(System.String,Vector3,System.Boolean)">UIBase&lt;ItemHintUI&gt;.ChangePosition(string, Vector3, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeRectSize(System.String,System.Single,System.Single)">UIBase&lt;ItemHintUI&gt;.ChangeRectSize(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.IsButtonActive(System.String)">UIBase&lt;ItemHintUI&gt;.IsButtonActive(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ClearButtonAllListeners(System.String)">UIBase&lt;ItemHintUI&gt;.ClearButtonAllListeners(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.SetImageSprite(System.String,Sprite)">UIBase&lt;ItemHintUI&gt;.SetImageSprite(string, Sprite)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.GetImageOriginSprite(System.String)">UIBase&lt;ItemHintUI&gt;.GetImageOriginSprite(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeImageCrossFade(System.String,System.Single,System.Single)">UIBase&lt;ItemHintUI&gt;.ChangeImageCrossFade(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.SetButtonActive(System.String,System.Boolean)">UIBase&lt;ItemHintUI&gt;.SetButtonActive(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddButtonLister(System.String,UnityAction)">UIBase&lt;ItemHintUI&gt;.AddButtonLister(string, UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddButtonLister(System.String,System.String,UnityAction)">UIBase&lt;ItemHintUI&gt;.AddButtonLister(string, string, UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddScrollBarValueChanged(System.String,UnityAction{System.Single})">UIBase&lt;ItemHintUI&gt;.AddScrollBarValueChanged(string, UnityAction&lt;float&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddDragInterface(System.String,UnityAction{BaseEventData})">UIBase&lt;ItemHintUI&gt;.AddDragInterface(string, UnityAction&lt;BaseEventData&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddEndDragInterface(System.String,UnityAction{BaseEventData})">UIBase&lt;ItemHintUI&gt;.AddEndDragInterface(string, UnityAction&lt;BaseEventData&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddInputFieldonEndEditLister(System.String,UnityAction{System.String})">UIBase&lt;ItemHintUI&gt;.AddInputFieldonEndEditLister(string, UnityAction&lt;string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeInputFieldText(System.String,System.String)">UIBase&lt;ItemHintUI&gt;.ChangeInputFieldText(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.GetInputFieldText(System.String)">UIBase&lt;ItemHintUI&gt;.GetInputFieldText(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddInputFieldonEndEditLister(System.String,System.String,UnityAction{System.String})">UIBase&lt;ItemHintUI&gt;.AddInputFieldonEndEditLister(string, string, UnityAction&lt;string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeText(System.String,System.String)">UIBase&lt;ItemHintUI&gt;.ChangeText(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeText(System.String,System.String,System.Single,System.Single)">UIBase&lt;ItemHintUI&gt;.ChangeText(string, string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeImageWidth(System.String,System.Single)">UIBase&lt;ItemHintUI&gt;.ChangeImageWidth(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeImageFillAmount(System.String,System.Single)">UIBase&lt;ItemHintUI&gt;.ChangeImageFillAmount(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.ChangeScrollBarValue(System.String,System.Single)">UIBase&lt;ItemHintUI&gt;.ChangeScrollBarValue(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.AddImageFillAmount(System.String,System.Single)">UIBase&lt;ItemHintUI&gt;.AddImageFillAmount(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.Open">UIBase&lt;ItemHintUI&gt;.Open()</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.Close">UIBase&lt;ItemHintUI&gt;.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.Start">UIBase&lt;ItemHintUI&gt;.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.Init">UIBase&lt;ItemHintUI&gt;.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="UIBase-1.html#UIBase`1.Destroy">UIBase&lt;ItemHintUI&gt;.Destroy()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Saber_Base_ItemHintUI_bg" data-uid="Saber.Base.ItemHintUI.bg">
+  bg
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject bg</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Saber_Base_ItemHintUI_BackGround_" data-uid="Saber.Base.ItemHintUI.BackGround*"></a>
+
+  <h3 id="Saber_Base_ItemHintUI_BackGround" data-uid="Saber.Base.ItemHintUI.BackGround">
+  BackGround
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override GameObject BackGround { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Saber_Base_ItemHintUI_FinishShowTips_" data-uid="Saber.Base.ItemHintUI.FinishShowTips*"></a>
+
+  <h3 id="Saber_Base_ItemHintUI_FinishShowTips" data-uid="Saber.Base.ItemHintUI.FinishShowTips">
+  FinishShowTips()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FinishShowTips()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Saber_Base_ItemHintUI_ShowTips_" data-uid="Saber.Base.ItemHintUI.ShowTips*"></a>
+
+  <h3 id="Saber_Base_ItemHintUI_ShowTips_Vector3_System_String_System_Single_System_Boolean_" data-uid="Saber.Base.ItemHintUI.ShowTips(Vector3,System.String,System.Single,System.Boolean)">
+  ShowTips(Vector3, string, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ShowTips(Vector3 pos, string content, float width, bool isUp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>isUp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Saber_Base_ItemHintUI_StartShowTips_" data-uid="Saber.Base.ItemHintUI.StartShowTips*"></a>
+
+  <h3 id="Saber_Base_ItemHintUI_StartShowTips_System_String_System_Single_System_Boolean_Vector3_" data-uid="Saber.Base.ItemHintUI.StartShowTips(System.String,System.Single,System.Boolean,Vector3)">
+  StartShowTips(string, float, bool, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartShowTips(string content, float width, bool isUp, Vector3 pos = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>content</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>isUp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>pos</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

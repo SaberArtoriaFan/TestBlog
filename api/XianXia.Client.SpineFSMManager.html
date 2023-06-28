@@ -1,0 +1,660 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SpineFSMManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SpineFSMManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.Client.SpineFSMManager">
+
+
+
+  <h1 id="XianXia_Client_SpineFSMManager" data-uid="XianXia.Client.SpineFSMManager" class="text-break">
+    Class SpineFSMManager
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a>.<a class="xref" href="XianXia.Client.html">Client</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SpineFSMManager : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SpineFSMManager</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="XianXia_Client_SpineFSMManager_Animator_" data-uid="XianXia.Client.SpineFSMManager.Animator*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_Animator" data-uid="XianXia.Client.SpineFSMManager.Animator">
+  Animator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Animator Animator { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Animator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_SpineFSMManager_CurrentState_" data-uid="XianXia.Client.SpineFSMManager.CurrentState*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_CurrentState" data-uid="XianXia.Client.SpineFSMManager.CurrentState">
+  CurrentState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FSM_State CurrentState { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FSM_State.html">FSM_State</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_SpineFSMManager_isCanMove_" data-uid="XianXia.Client.SpineFSMManager.isCanMove*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_isCanMove" data-uid="XianXia.Client.SpineFSMManager.isCanMove">
+  isCanMove
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isCanMove { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_Client_SpineFSMManager_AddState_" data-uid="XianXia.Client.SpineFSMManager.AddState*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_AddState_FSM_FSMBase_" data-uid="XianXia.Client.SpineFSMManager.AddState(FSM.FSMBase)">
+  AddState(FSMBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddState(FSMBase fSMBase)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fSMBase</code> <a class="xref" href="FSM.FSMBase.html">FSMBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_SpineFSMManager_Awake_" data-uid="XianXia.Client.SpineFSMManager.Awake*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_Awake" data-uid="XianXia.Client.SpineFSMManager.Awake">
+  Awake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_SpineFSMManager_ChangeAnimator_" data-uid="XianXia.Client.SpineFSMManager.ChangeAnimator*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_ChangeAnimator_Animator_" data-uid="XianXia.Client.SpineFSMManager.ChangeAnimator(Animator)">
+  ChangeAnimator(Animator)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeAnimator(Animator animator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>animator</code> <span class="xref">Animator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_SpineFSMManager_FindFSMState_" data-uid="XianXia.Client.SpineFSMManager.FindFSMState*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_FindFSMState_FSM_State_" data-uid="XianXia.Client.SpineFSMManager.FindFSMState(FSM_State)">
+  FindFSMState(FSM_State)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FSMBase FindFSMState(FSM_State fSM_State)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fSM_State</code> <a class="xref" href="FSM_State.html">FSM_State</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FSM.FSMBase.html">FSMBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_SpineFSMManager_Init_" data-uid="XianXia.Client.SpineFSMManager.Init*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_Init" data-uid="XianXia.Client.SpineFSMManager.Init">
+  Init()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>��ʼ����֮��Ϊ��ͬ���ж���ʼ����ͬ��״̬��</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Init()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_SpineFSMManager_OnDestroy_" data-uid="XianXia.Client.SpineFSMManager.OnDestroy*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_OnDestroy" data-uid="XianXia.Client.SpineFSMManager.OnDestroy">
+  OnDestroy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_SpineFSMManager_RemoveState_" data-uid="XianXia.Client.SpineFSMManager.RemoveState*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_RemoveState_FSM_State_" data-uid="XianXia.Client.SpineFSMManager.RemoveState(FSM_State)">
+  RemoveState(FSM_State)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveState(FSM_State fSM_State)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fSM_State</code> <a class="xref" href="FSM_State.html">FSM_State</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_SpineFSMManager_SendX_" data-uid="XianXia.Client.SpineFSMManager.SendX*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_SendX_System_Single_" data-uid="XianXia.Client.SpineFSMManager.SendX(System.Single)">
+  SendX(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendX(float _x)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_SpineFSMManager_SendXY_" data-uid="XianXia.Client.SpineFSMManager.SendXY*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_SendXY_System_Single_System_Single_" data-uid="XianXia.Client.SpineFSMManager.SendXY(System.Single,System.Single)">
+  SendXY(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendXY(float _x, float _y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>_y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_SpineFSMManager_SendY_" data-uid="XianXia.Client.SpineFSMManager.SendY*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_SendY_System_Single_" data-uid="XianXia.Client.SpineFSMManager.SendY(System.Single)">
+  SendY(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendY(float _y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>_y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_SpineFSMManager_SetCurrentState_" data-uid="XianXia.Client.SpineFSMManager.SetCurrentState*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_SetCurrentState_FSM_State_" data-uid="XianXia.Client.SpineFSMManager.SetCurrentState(FSM_State)">
+  SetCurrentState(FSM_State)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetCurrentState(FSM_State state)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="FSM_State.html">FSM_State</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_SpineFSMManager_Update_" data-uid="XianXia.Client.SpineFSMManager.Update*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_Update" data-uid="XianXia.Client.SpineFSMManager.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Client_SpineFSMManager_UpdateFsm_" data-uid="XianXia.Client.SpineFSMManager.UpdateFsm*"></a>
+
+  <h3 id="XianXia_Client_SpineFSMManager_UpdateFsm" data-uid="XianXia.Client.SpineFSMManager.UpdateFsm">
+  UpdateFsm()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateFsm()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="XianXia_Client_SpineFSMManager_FSM_StateChange" data-uid="XianXia.Client.SpineFSMManager.FSM_StateChange">
+  FSM_StateChange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action FSM_StateChange</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

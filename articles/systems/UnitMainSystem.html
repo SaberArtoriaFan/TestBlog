@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>UnitMainSystem </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="UnitMainSystem ">
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../public/main.js'
+    import { init } from './../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="unitmainsystem">UnitMainSystem</h1>
+
+<p>主要系统，负责单位的生成、销毁、位置记录、所属玩家记录、单位资料model记录、单位所处行动记录等</p>
+<h2 id="1生成与销毁">1.生成与销毁</h2>
+<h3 id="11生成">1.1生成</h3>
+<p>本系统的生成并不是立即生成，而是会将需要生成的单位加入队列中，在延迟至多一帧后于<strong>Update</strong>中生成</p>
+<pre><code class="lang-CSharp">        public void SwapnUnitInPos(UnitModel unitModel, GameObject go,PlayerEnum playerEnum,Vector2Int pos, Action&lt;UnitBase&gt; finishAction = null)
+
+        private UnitBase SwapnUnitReal(UnitModel testUnitModel,GameObject model,PlayerEnum playerEnum)
+</code></pre>
+<p>由传入的UnitModel<strong>资料</strong>，GameObject<strong>载体</strong>，PlayerEnum<strong>玩家</strong>，根据在地图中的指定<strong>点位</strong>Pos，生成映射到世界坐标相应位置，并在生成后调用传入的finishAction<strong>生成后事件</strong></p>
+<h3 id="12销毁">1.2销毁</h3>
+<p>销毁也不是同步销毁，而是立刻将目标身上的Entity销毁，以及将Component们回收，在一定延迟后再销毁其载体GameObject。</p>
+<pre><code class="lang-CSharp">        public void RemoveUnitFromGame(UnitBase unitBase, float delay)
+</code></pre>
+<h2 id="2位置记录">2.位置记录</h2>
+<p>MainSystem维护着两个Dictionary</p>
+<pre><code class="lang-CSharp">        Dictionary&lt;UnitBase, Node&gt; unitPosDict;
+        Dictionary&lt;Node, UnitBase&gt; posUnitDict;
+</code></pre>
+<p>这两个字典中记录了单位所站Node，以及Node所属单位。并且维持着与AstarMap的联系，所有有单位占据的Node都被传入AstarMap的DynamicObstacle表中</p>
+<pre><code class="lang-CSharp">        public void UpdateDynamicObstacleReal(Node gridItem, bool isAdd = true)
+        {
+            if (gridItem == null) return;
+            // 将目标Node加入动态障碍Hash表中进行计算
+            AStarPathfinding2D.UpdateDynamicObstacle(gridItem.Position, instance.GridMap, isAdd);
+        }
+</code></pre>
+<h2 id="3所属玩家记录">3.所属玩家记录</h2>
+<pre><code class="lang-CSharp">        Dictionary&lt;PlayerMemeber, List&lt;UnitBase&gt;&gt; playersUnitsDict = new Dictionary&lt;PlayerMemeber, List&lt;UnitBase&gt;&gt;();
+</code></pre>
+<p>并提供了相应的接口，以供获取某位玩家的所有单位，或者是符合条件的单位</p>
+<h2 id="4单位资料model记录">4.单位资料model记录</h2>
+<p>维护了一个Key为HeroLevelID，Value为UnitModel的字典，以便后续生成或查询，而不是每次都从<strong>LubanMgr</strong>总字典中查询</p>
+<h2 id="5单位所处行动记录">5.单位所处行动记录</h2>
+<pre><code class="lang-CSharp">        Dictionary&lt;UnitBase,(FSM_State, Coroutine)&gt; unitCoroutinesDict;
+</code></pre>
+<p>存储了单位，行动枚举以及行动的协程；并提供了开始行动，停止行动，打断行动等接口</p>
+<pre><code class="lang-CSharp">        public void UnitTakeAction(UnitBase unit,FSM_State fSM_State,IEnumerator coroutine,UnitBase target=null)
+
+        /// 立即停止该单位的指定类型行动
+        /// 包括动画
+        /// 停止后默认回到Idle动画
+        public void UnitBreakAction(UnitBase unit,FSM_State breakActionType)
+
+        /// 停止单位行动
+        /// 不包括动画
+        /// 并允许目标开启寻路
+        public void UnitStopAction(UnitBase unit)
+
+</code></pre>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

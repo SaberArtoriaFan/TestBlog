@@ -1,0 +1,1429 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Transport
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Transport
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FishNet.Transporting.Transport">
+
+
+
+  <h1 id="FishNet_Transporting_Transport" data-uid="FishNet.Transporting.Transport" class="text-break">
+    Class Transport
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FishNet.html">FishNet</a>.<a class="xref" href="FishNet.Transporting.html">Transporting</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Processes connection states, and data sent to and from a socket.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Transport : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Transport</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="FishNet.Transporting.Multipass.Multipass.html">Multipass</a></div>
+      <div><a class="xref" href="FishNet.Transporting.Tugboat.Tugboat.html">Tugboat</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FishNet_Transporting_Transport_Index_" data-uid="FishNet.Transporting.Transport.Index*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_Index" data-uid="FishNet.Transporting.Transport.Index">
+  Index
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Index this transport belongs to when using multiple transports at once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Index { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_NetworkManager_" data-uid="FishNet.Transporting.Transport.NetworkManager*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_NetworkManager" data-uid="FishNet.Transporting.Transport.NetworkManager">
+  NetworkManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>NetworkManager for this transport.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkManager NetworkManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FishNet_Transporting_Transport_GetClientAddress_" data-uid="FishNet.Transporting.Transport.GetClientAddress*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_GetClientAddress" data-uid="FishNet.Transporting.Transport.GetClientAddress">
+  GetClientAddress()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns which address the client will connect to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetClientAddress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_GetConnectionAddress_" data-uid="FishNet.Transporting.Transport.GetConnectionAddress*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_GetConnectionAddress_System_Int32_" data-uid="FishNet.Transporting.Transport.GetConnectionAddress(System.Int32)">
+  GetConnectionAddress(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the address of a remote connection Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string GetConnectionAddress(int connectionId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connectionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Connectionid to get the address for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_GetConnectionState_" data-uid="FishNet.Transporting.Transport.GetConnectionState*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_GetConnectionState_System_Boolean_" data-uid="FishNet.Transporting.Transport.GetConnectionState(System.Boolean)">
+  GetConnectionState(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current local ConnectionState.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract LocalConnectionState GetConnectionState(bool server)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>server</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if getting ConnectionState for the server.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Transporting.LocalConnectionState.html">LocalConnectionState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_GetConnectionState_" data-uid="FishNet.Transporting.Transport.GetConnectionState*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_GetConnectionState_System_Int32_" data-uid="FishNet.Transporting.Transport.GetConnectionState(System.Int32)">
+  GetConnectionState(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current ConnectionState of a client connected to the server. Can only be called on the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract RemoteConnectionState GetConnectionState(int connectionId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connectionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>ConnectionId to get ConnectionState for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Transporting.RemoteConnectionState.html">RemoteConnectionState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_GetMTU_" data-uid="FishNet.Transporting.Transport.GetMTU*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_GetMTU_System_Byte_" data-uid="FishNet.Transporting.Transport.GetMTU(System.Byte)">
+  GetMTU(byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the MTU for a channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int GetMTU(byte channel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>channel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>Channel to get MTU for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>MTU of channel.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_GetMaximumClients_" data-uid="FishNet.Transporting.Transport.GetMaximumClients*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_GetMaximumClients" data-uid="FishNet.Transporting.Transport.GetMaximumClients">
+  GetMaximumClients()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the maximum number of clients allowed to connect to the server. If the transport does not support this method the value -1 is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetMaximumClients()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Maximum clients transport allows.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_GetPort_" data-uid="FishNet.Transporting.Transport.GetPort*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_GetPort" data-uid="FishNet.Transporting.Transport.GetPort">
+  GetPort()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets which port to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ushort GetPort()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_GetServerBindAddress_" data-uid="FishNet.Transporting.Transport.GetServerBindAddress*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_GetServerBindAddress_FishNet_Transporting_IPAddressType_" data-uid="FishNet.Transporting.Transport.GetServerBindAddress(FishNet.Transporting.IPAddressType)">
+  GetServerBindAddress(IPAddressType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets which address the server will bind to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetServerBindAddress(IPAddressType addressType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>addressType</code> <a class="xref" href="FishNet.Transporting.IPAddressType.html">IPAddressType</a></dt>
+    <dd><p>Address type to return.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_GetTimeout_" data-uid="FishNet.Transporting.Transport.GetTimeout*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_GetTimeout_System_Boolean_" data-uid="FishNet.Transporting.Transport.GetTimeout(System.Boolean)">
+  GetTimeout(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets how long in seconds until either the server or client socket must go without data before being timed out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float GetTimeout(bool asServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>asServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to get the timeout for the server socket, false for the client socket.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_HandleClientConnectionState_" data-uid="FishNet.Transporting.Transport.HandleClientConnectionState*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_HandleClientConnectionState_FishNet_Transporting_ClientConnectionStateArgs_" data-uid="FishNet.Transporting.Transport.HandleClientConnectionState(FishNet.Transporting.ClientConnectionStateArgs)">
+  HandleClientConnectionState(ClientConnectionStateArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles a ConnectionStateArgs for the local client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void HandleClientConnectionState(ClientConnectionStateArgs connectionStateArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connectionStateArgs</code> <a class="xref" href="FishNet.Transporting.ClientConnectionStateArgs.html">ClientConnectionStateArgs</a></dt>
+    <dd><p>Data being handled.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_HandleClientReceivedDataArgs_" data-uid="FishNet.Transporting.Transport.HandleClientReceivedDataArgs*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_HandleClientReceivedDataArgs_FishNet_Transporting_ClientReceivedDataArgs_" data-uid="FishNet.Transporting.Transport.HandleClientReceivedDataArgs(FishNet.Transporting.ClientReceivedDataArgs)">
+  HandleClientReceivedDataArgs(ClientReceivedDataArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles a ClientReceivedDataArgs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void HandleClientReceivedDataArgs(ClientReceivedDataArgs receivedDataArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>receivedDataArgs</code> <a class="xref" href="FishNet.Transporting.ClientReceivedDataArgs.html">ClientReceivedDataArgs</a></dt>
+    <dd><p>Data being handled.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_HandleRemoteConnectionState_" data-uid="FishNet.Transporting.Transport.HandleRemoteConnectionState*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_HandleRemoteConnectionState_FishNet_Transporting_RemoteConnectionStateArgs_" data-uid="FishNet.Transporting.Transport.HandleRemoteConnectionState(FishNet.Transporting.RemoteConnectionStateArgs)">
+  HandleRemoteConnectionState(RemoteConnectionStateArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles a ConnectionStateArgs for a remote client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void HandleRemoteConnectionState(RemoteConnectionStateArgs connectionStateArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connectionStateArgs</code> <a class="xref" href="FishNet.Transporting.RemoteConnectionStateArgs.html">RemoteConnectionStateArgs</a></dt>
+    <dd><p>Data being handled.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_HandleServerConnectionState_" data-uid="FishNet.Transporting.Transport.HandleServerConnectionState*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_HandleServerConnectionState_FishNet_Transporting_ServerConnectionStateArgs_" data-uid="FishNet.Transporting.Transport.HandleServerConnectionState(FishNet.Transporting.ServerConnectionStateArgs)">
+  HandleServerConnectionState(ServerConnectionStateArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles a ConnectionStateArgs for the local server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void HandleServerConnectionState(ServerConnectionStateArgs connectionStateArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connectionStateArgs</code> <a class="xref" href="FishNet.Transporting.ServerConnectionStateArgs.html">ServerConnectionStateArgs</a></dt>
+    <dd><p>Data being handled.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_HandleServerReceivedDataArgs_" data-uid="FishNet.Transporting.Transport.HandleServerReceivedDataArgs*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_HandleServerReceivedDataArgs_FishNet_Transporting_ServerReceivedDataArgs_" data-uid="FishNet.Transporting.Transport.HandleServerReceivedDataArgs(FishNet.Transporting.ServerReceivedDataArgs)">
+  HandleServerReceivedDataArgs(ServerReceivedDataArgs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles a ServerReceivedDataArgs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void HandleServerReceivedDataArgs(ServerReceivedDataArgs receivedDataArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>receivedDataArgs</code> <a class="xref" href="FishNet.Transporting.ServerReceivedDataArgs.html">ServerReceivedDataArgs</a></dt>
+    <dd><p>Data being handled.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_Initialize_" data-uid="FishNet.Transporting.Transport.Initialize*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_Initialize_FishNet_Managing_NetworkManager_System_Int32_" data-uid="FishNet.Transporting.Transport.Initialize(FishNet.Managing.NetworkManager,System.Int32)">
+  Initialize(NetworkManager, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the transport. Use this instead of Awake.</p>
+<param name="transportIndex">Index this transport belongs to when using multiple transports at once.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize(NetworkManager networkManager, int transportIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>networkManager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd></dd>
+    <dt><code>transportIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_IsLocalTransport_" data-uid="FishNet.Transporting.Transport.IsLocalTransport*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_IsLocalTransport_System_Int32_" data-uid="FishNet.Transporting.Transport.IsLocalTransport(System.Int32)">
+  IsLocalTransport(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns if the transport is only run locally, offline.
+While true several security checks are disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsLocalTransport(int connectionid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connectionid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_IterateIncoming_" data-uid="FishNet.Transporting.Transport.IterateIncoming*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_IterateIncoming_System_Boolean_" data-uid="FishNet.Transporting.Transport.IterateIncoming(System.Boolean)">
+  IterateIncoming(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Processes data received by the socket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void IterateIncoming(bool server)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>server</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to process data received on the server.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_IterateOutgoing_" data-uid="FishNet.Transporting.Transport.IterateOutgoing*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_IterateOutgoing_System_Boolean_" data-uid="FishNet.Transporting.Transport.IterateOutgoing(System.Boolean)">
+  IterateOutgoing(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Processes data to be sent by the socket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void IterateOutgoing(bool server)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>server</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to process data received on the server.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_SendToClient_" data-uid="FishNet.Transporting.Transport.SendToClient*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_SendToClient_System_Byte_System_ArraySegment_System_Byte__System_Int32_" data-uid="FishNet.Transporting.Transport.SendToClient(System.Byte,System.ArraySegment{System.Byte},System.Int32)">
+  SendToClient(byte, ArraySegment&lt;byte&gt;, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends to a client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SendToClient(byte channelId, ArraySegment&lt;byte&gt; segment, int connectionId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>channelId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>Channel to use.</p>
+</dd>
+    <dt><code>segment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>Data to send.</p>
+</dd>
+    <dt><code>connectionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>ConnectionId to send to. When sending to clients can be used to specify which connection to send to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_SendToServer_" data-uid="FishNet.Transporting.Transport.SendToServer*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_SendToServer_System_Byte_System_ArraySegment_System_Byte__" data-uid="FishNet.Transporting.Transport.SendToServer(System.Byte,System.ArraySegment{System.Byte})">
+  SendToServer(byte, ArraySegment&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends to the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void SendToServer(byte channelId, ArraySegment&lt;byte&gt; segment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>channelId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>Channel to use.</p>
+</dd>
+    <dt><code>segment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>Data to send.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_SetClientAddress_" data-uid="FishNet.Transporting.Transport.SetClientAddress*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_SetClientAddress_System_String_" data-uid="FishNet.Transporting.Transport.SetClientAddress(System.String)">
+  SetClientAddress(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets which address the client will connect to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetClientAddress(string address)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>address</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Address client will connect to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_SetMaximumClients_" data-uid="FishNet.Transporting.Transport.SetMaximumClients*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_SetMaximumClients_System_Int32_" data-uid="FishNet.Transporting.Transport.SetMaximumClients(System.Int32)">
+  SetMaximumClients(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the maximum number of clients allowed to connect to the server. If applied at runtime and clients exceed this value existing clients will stay connected but new clients may not connect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetMaximumClients(int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Maximum clients to allow.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_SetPort_" data-uid="FishNet.Transporting.Transport.SetPort*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_SetPort_System_UInt16_" data-uid="FishNet.Transporting.Transport.SetPort(System.UInt16)">
+  SetPort(ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets which port to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetPort(ushort port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>Port to use.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_SetServerBindAddress_" data-uid="FishNet.Transporting.Transport.SetServerBindAddress*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_SetServerBindAddress_System_String_FishNet_Transporting_IPAddressType_" data-uid="FishNet.Transporting.Transport.SetServerBindAddress(System.String,FishNet.Transporting.IPAddressType)">
+  SetServerBindAddress(string, IPAddressType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets which address the server will bind to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetServerBindAddress(string address, IPAddressType addressType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>address</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Address server will bind to.</p>
+</dd>
+    <dt><code>addressType</code> <a class="xref" href="FishNet.Transporting.IPAddressType.html">IPAddressType</a></dt>
+    <dd><p>Address type to set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_SetTimeout_" data-uid="FishNet.Transporting.Transport.SetTimeout*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_SetTimeout_System_Single_System_Boolean_" data-uid="FishNet.Transporting.Transport.SetTimeout(System.Single,System.Boolean)">
+  SetTimeout(float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets how long in seconds until either the server or client socket must go without data before being timed out.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetTimeout(float value, bool asServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>asServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to set the timeout for the server socket, false for the client socket.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_Shutdown_" data-uid="FishNet.Transporting.Transport.Shutdown*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_Shutdown" data-uid="FishNet.Transporting.Transport.Shutdown">
+  Shutdown()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops both client and server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Shutdown()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_StartConnection_" data-uid="FishNet.Transporting.Transport.StartConnection*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_StartConnection_System_Boolean_" data-uid="FishNet.Transporting.Transport.StartConnection(System.Boolean)">
+  StartConnection(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts the local server or client using configured settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool StartConnection(bool server)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>server</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to start server.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_StopConnection_" data-uid="FishNet.Transporting.Transport.StopConnection*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_StopConnection_System_Boolean_" data-uid="FishNet.Transporting.Transport.StopConnection(System.Boolean)">
+  StopConnection(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops the local server or client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool StopConnection(bool server)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>server</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to stop server.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Transporting_Transport_StopConnection_" data-uid="FishNet.Transporting.Transport.StopConnection*"></a>
+
+  <h3 id="FishNet_Transporting_Transport_StopConnection_System_Int32_System_Boolean_" data-uid="FishNet.Transporting.Transport.StopConnection(System.Int32,System.Boolean)">
+  StopConnection(int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops a remote client from the server, disconnecting the client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool StopConnection(int connectionId, bool immediately)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connectionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>ConnectionId of the client to disconnect.</p>
+</dd>
+    <dt><code>immediately</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to abrutly stop the client socket. The technique used to accomplish immediate disconnects may vary depending on the transport.
+When not using immediate disconnects it's recommended to perform disconnects using the ServerManager rather than accessing the transport directly.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="FishNet_Transporting_Transport_OnClientConnectionState" data-uid="FishNet.Transporting.Transport.OnClientConnectionState">
+  OnClientConnectionState
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a connection state changes for the local client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract event Action&lt;ClientConnectionStateArgs&gt; OnClientConnectionState</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Transporting.ClientConnectionStateArgs.html">ClientConnectionStateArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Transporting_Transport_OnClientReceivedData" data-uid="FishNet.Transporting.Transport.OnClientReceivedData">
+  OnClientReceivedData
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the client receives data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract event Action&lt;ClientReceivedDataArgs&gt; OnClientReceivedData</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Transporting.ClientReceivedDataArgs.html">ClientReceivedDataArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Transporting_Transport_OnRemoteConnectionState" data-uid="FishNet.Transporting.Transport.OnRemoteConnectionState">
+  OnRemoteConnectionState
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a connection state changes for a remote client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract event Action&lt;RemoteConnectionStateArgs&gt; OnRemoteConnectionState</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Transporting.RemoteConnectionStateArgs.html">RemoteConnectionStateArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Transporting_Transport_OnServerConnectionState" data-uid="FishNet.Transporting.Transport.OnServerConnectionState">
+  OnServerConnectionState
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a connection state changes for the local server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract event Action&lt;ServerConnectionStateArgs&gt; OnServerConnectionState</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Transporting.ServerConnectionStateArgs.html">ServerConnectionStateArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Transporting_Transport_OnServerReceivedData" data-uid="FishNet.Transporting.Transport.OnServerReceivedData">
+  OnServerReceivedData
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the server receives data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract event Action&lt;ServerReceivedDataArgs&gt; OnServerReceivedData</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Transporting.ServerReceivedDataArgs.html">ServerReceivedDataArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

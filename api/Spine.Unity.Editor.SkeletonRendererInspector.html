@@ -1,0 +1,1969 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SkeletonRendererInspector
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SkeletonRendererInspector
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.Unity.Editor.SkeletonRendererInspector">
+
+
+
+  <h1 id="Spine_Unity_Editor_SkeletonRendererInspector" data-uid="Spine.Unity.Editor.SkeletonRendererInspector" class="text-break">
+    Class SkeletonRendererInspector
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a>.<a class="xref" href="Spine.Unity.html">Unity</a>.<a class="xref" href="Spine.Unity.Editor.html">Editor</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SkeletonRendererInspector : Editor</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SkeletonRendererInspector</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Spine.Unity.Editor.SkeletonAnimationInspector.html">SkeletonAnimationInspector</a></div>
+      <div><a class="xref" href="Spine.Unity.Editor.SkeletonMecanimInspector.html">SkeletonMecanimInspector</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_ClearMaterialButtonLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.ClearMaterialButtonLabel">
+  ClearMaterialButtonLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent ClearMaterialButtonLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_ClearStateOnDisableLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.ClearStateOnDisableLabel">
+  ClearStateOnDisableLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent ClearStateOnDisableLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_DeleteMaterialButtonLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.DeleteMaterialButtonLabel">
+  DeleteMaterialButtonLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent DeleteMaterialButtonLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_FixDrawOrderLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.FixDrawOrderLabel">
+  FixDrawOrderLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent FixDrawOrderLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_ImmubleTrianglesLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.ImmubleTrianglesLabel">
+  ImmubleTrianglesLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent ImmubleTrianglesLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_MaskInteractionLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.MaskInteractionLabel">
+  MaskInteractionLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent MaskInteractionLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsHeadingLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsHeadingLabel">
+  MaskMaterialsHeadingLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent MaskMaterialsHeadingLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsInsideLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsInsideLabel">
+  MaskMaterialsInsideLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent MaskMaterialsInsideLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsNoneLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsNoneLabel">
+  MaskMaterialsNoneLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent MaskMaterialsNoneLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsOutsideLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsOutsideLabel">
+  MaskMaterialsOutsideLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent MaskMaterialsOutsideLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_NormalsLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.NormalsLabel">
+  NormalsLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent NormalsLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_PMAVertexColorsLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.PMAVertexColorsLabel">
+  PMAVertexColorsLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent PMAVertexColorsLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_SetMaterialButtonLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SetMaterialButtonLabel">
+  SetMaterialButtonLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent SetMaterialButtonLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_SingleSubmeshLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SingleSubmeshLabel">
+  SingleSubmeshLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent SingleSubmeshLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_SkeletonDataAssetLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SkeletonDataAssetLabel">
+  SkeletonDataAssetLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent SkeletonDataAssetLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_SkeletonUtilityButtonContent" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SkeletonUtilityButtonContent">
+  SkeletonUtilityButtonContent
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent SkeletonUtilityButtonContent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_TangentsLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.TangentsLabel">
+  TangentsLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent TangentsLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_TintBlackLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.TintBlackLabel">
+  TintBlackLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent TintBlackLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_UpdateWhenInvisibleLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.UpdateWhenInvisibleLabel">
+  UpdateWhenInvisibleLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent UpdateWhenInvisibleLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_ZSpacingLabel" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.ZSpacingLabel">
+  ZSpacingLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GUIContent ZSpacingLabel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_advancedFoldout" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.advancedFoldout">
+  advancedFoldout
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool advancedFoldout</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_clearStateOnDisable" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.clearStateOnDisable">
+  clearStateOnDisable
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty clearStateOnDisable</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_deleteInsideMaskMaterialsQueued" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.deleteInsideMaskMaterialsQueued">
+  deleteInsideMaskMaterialsQueued
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool deleteInsideMaskMaterialsQueued</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_deleteOutsideMaskMaterialsQueued" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.deleteOutsideMaskMaterialsQueued">
+  deleteOutsideMaskMaterialsQueued
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool deleteOutsideMaskMaterialsQueued</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_fixDrawOrder" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.fixDrawOrder">
+  fixDrawOrder
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty fixDrawOrder</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_forceReloadQueued" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.forceReloadQueued">
+  forceReloadQueued
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool forceReloadQueued</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_immutableTriangles" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.immutableTriangles">
+  immutableTriangles
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty immutableTriangles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_initialFlipX" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.initialFlipX">
+  initialFlipX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty initialFlipX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_initialFlipY" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.initialFlipY">
+  initialFlipY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty initialFlipY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_initialSkinName" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.initialSkinName">
+  initialSkinName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty initialSkinName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_isInspectingPrefab" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.isInspectingPrefab">
+  isInspectingPrefab
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool isInspectingPrefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_maskInteraction" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.maskInteraction">
+  maskInteraction
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty maskInteraction</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_maskMaterialsInside" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.maskMaterialsInside">
+  maskMaterialsInside
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty maskMaterialsInside</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_maskMaterialsNone" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.maskMaterialsNone">
+  maskMaterialsNone
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty maskMaterialsNone</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_maskMaterialsOutside" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.maskMaterialsOutside">
+  maskMaterialsOutside
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty maskMaterialsOutside</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_normals" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.normals">
+  normals
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty normals</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_pmaVertexColors" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.pmaVertexColors">
+  pmaVertexColors
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty pmaVertexColors</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_separatorSlotNames" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.separatorSlotNames">
+  separatorSlotNames
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty separatorSlotNames</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_setInsideMaskMaterialsQueued" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.setInsideMaskMaterialsQueued">
+  setInsideMaskMaterialsQueued
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool setInsideMaskMaterialsQueued</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_setMaskNoneMaterialsQueued" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.setMaskNoneMaterialsQueued">
+  setMaskNoneMaterialsQueued
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool setMaskNoneMaterialsQueued</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_setOutsideMaskMaterialsQueued" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.setOutsideMaskMaterialsQueued">
+  setOutsideMaskMaterialsQueued
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool setOutsideMaskMaterialsQueued</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_singleSubmesh" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.singleSubmesh">
+  singleSubmesh
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty singleSubmesh</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_skeletonDataAsset" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.skeletonDataAsset">
+  skeletonDataAsset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty skeletonDataAsset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_sortingProperties" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.sortingProperties">
+  sortingProperties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SpineInspectorUtility.SerializedSortingProperties sortingProperties</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.Editor.SpineInspectorUtility.html">SpineInspectorUtility</a>.<a class="xref" href="Spine.Unity.Editor.SpineInspectorUtility.SerializedSortingProperties.html">SerializedSortingProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_tangents" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.tangents">
+  tangents
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty tangents</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_tintBlack" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.tintBlack">
+  tintBlack
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty tintBlack</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_updateWhenInvisible" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.updateWhenInvisible">
+  updateWhenInvisible
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty updateWhenInvisible</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_zSpacing" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.zSpacing">
+  zSpacing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializedProperty zSpacing</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_TargetIsValid_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.TargetIsValid*"></a>
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_TargetIsValid" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.TargetIsValid">
+  TargetIsValid
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TargetIsValid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_DrawInspectorGUI_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.DrawInspectorGUI*"></a>
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_DrawInspectorGUI_System_Boolean_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.DrawInspectorGUI(System.Boolean)">
+  DrawInspectorGUI(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DrawInspectorGUI(bool multi)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>multi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_GetSeparatorSlotNames_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.GetSeparatorSlotNames*"></a>
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_GetSeparatorSlotNames_Spine_Unity_SkeletonRenderer_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.GetSeparatorSlotNames(Spine.Unity.SkeletonRenderer)">
+  GetSeparatorSlotNames(SkeletonRenderer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetSeparatorSlotNames(SkeletonRenderer skeletonRenderer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skeletonRenderer</code> <a class="xref" href="Spine.Unity.SkeletonRenderer.html">SkeletonRenderer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsEditingField_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsEditingField*"></a>
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_MaskMaterialsEditingField_System_Boolean__System_Boolean__SerializedProperty_GUIContent_System_Boolean_System_Boolean_System_Boolean_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.MaskMaterialsEditingField(System.Boolean@,System.Boolean@,SerializedProperty,GUIContent,System.Boolean,System.Boolean,System.Boolean)">
+  MaskMaterialsEditingField(ref bool, ref bool, SerializedProperty, GUIContent, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MaskMaterialsEditingField(ref bool wasSetRequested, ref bool wasDeleteRequested, SerializedProperty maskMaterials, GUIContent label, bool differentMaskModesSelected, bool allowDelete, bool isActiveMaterial)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wasSetRequested</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>wasDeleteRequested</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>maskMaterials</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+    <dt><code>differentMaskModesSelected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>allowDelete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>isActiveMaterial</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_OnEnable_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.OnEnable*"></a>
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_OnEnable" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.OnEnable">
+  OnEnable()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_OnInspectorGUI_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.OnInspectorGUI*"></a>
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_OnInspectorGUI" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.OnInspectorGUI">
+  OnInspectorGUI()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnInspectorGUI()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_OnSceneGUI_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.OnSceneGUI*"></a>
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_OnSceneGUI" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.OnSceneGUI">
+  OnSceneGUI()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnSceneGUI()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_SeparatorsField_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SeparatorsField*"></a>
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_SeparatorsField_SerializedProperty_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SeparatorsField(SerializedProperty)">
+  SeparatorsField(SerializedProperty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SeparatorsField(SerializedProperty separatorSlotNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>separatorSlotNames</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_SetSeparatorSlotNames_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SetSeparatorSlotNames*"></a>
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_SetSeparatorSlotNames_Spine_Unity_SkeletonRenderer_System_String___" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SetSeparatorSlotNames(Spine.Unity.SkeletonRenderer,System.String[])">
+  SetSeparatorSlotNames(SkeletonRenderer, string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetSeparatorSlotNames(SkeletonRenderer skeletonRenderer, string[] newSlotNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skeletonRenderer</code> <a class="xref" href="Spine.Unity.SkeletonRenderer.html">SkeletonRenderer</a></dt>
+    <dd></dd>
+    <dt><code>newSlotNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_SkeletonRootMotionParameter_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SkeletonRootMotionParameter*"></a>
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_SkeletonRootMotionParameter" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SkeletonRootMotionParameter">
+  SkeletonRootMotionParameter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SkeletonRootMotionParameter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_Editor_SkeletonRendererInspector_SkeletonRootMotionParameter_" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SkeletonRootMotionParameter*"></a>
+
+  <h3 id="Spine_Unity_Editor_SkeletonRendererInspector_SkeletonRootMotionParameter_Object___" data-uid="Spine.Unity.Editor.SkeletonRendererInspector.SkeletonRootMotionParameter(Object[])">
+  SkeletonRootMotionParameter(Object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SkeletonRootMotionParameter(Object[] targets)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targets</code> <span class="xref">Object</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

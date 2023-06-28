@@ -1,0 +1,469 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UnitBodySystem
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UnitBodySystem
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.Unit.UnitBodySystem">
+
+
+
+  <h1 id="XianXia_Unit_UnitBodySystem" data-uid="XianXia.Unit.UnitBodySystem" class="text-break">
+    Class UnitBodySystem
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a>.<a class="xref" href="XianXia.Unit.html">Unit</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UnitBodySystem : NormalSystemBase&lt;BodyOrgan&gt;, IMono</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Saber.ECS.SystemStone.html">SystemStone</a></div>
+      <div><a class="xref" href="Saber.ECS.SystemBase-1.html">SystemBase</a>&lt;<a class="xref" href="XianXia.Unit.BodyOrgan.html">BodyOrgan</a>&gt;</div>
+      <div><a class="xref" href="Saber.ECS.SlightSystemBase-2.html">SlightSystemBase</a>&lt;<a class="xref" href="XianXia.Unit.BodyOrgan.html">BodyOrgan</a>, <a class="xref" href="Saber.ECS.EntityBase.html">EntityBase</a>&gt;</div>
+      <div><a class="xref" href="Saber.ECS.NormalSystemBase-1.html">NormalSystemBase</a>&lt;<a class="xref" href="XianXia.Unit.BodyOrgan.html">BodyOrgan</a>&gt;</div>
+      <div><span class="xref">UnitBodySystem</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Saber.ECS.IMono.html">IMono</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_allComponents">SlightSystemBase&lt;BodyOrgan, EntityBase&gt;.allComponents</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_objectPool">SlightSystemBase&lt;BodyOrgan, EntityBase&gt;.objectPool</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_IsSpwanSystem">SlightSystemBase&lt;BodyOrgan, EntityBase&gt;.IsSpwanSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_Spawn">SlightSystemBase&lt;BodyOrgan, EntityBase&gt;.Spawn()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_InitAfterSpawn__0_">SlightSystemBase&lt;BodyOrgan, EntityBase&gt;.InitAfterSpawn(BodyOrgan)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_InitializeBeforeRecycle__0_">SlightSystemBase&lt;BodyOrgan, EntityBase&gt;.InitializeBeforeRecycle(BodyOrgan)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_SpawnComponent__1_">SlightSystemBase&lt;BodyOrgan, EntityBase&gt;.SpawnComponent(EntityBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_DestoryComponent__0_">SlightSystemBase&lt;BodyOrgan, EntityBase&gt;.DestoryComponent(BodyOrgan)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_Awake_Saber_ECS_WorldBase_">SlightSystemBase&lt;BodyOrgan, EntityBase&gt;.Awake(WorldBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemBase-1.html#Saber_ECS_SystemBase_1_ModelType">SystemBase&lt;BodyOrgan&gt;.ModelType</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_world">SystemStone.world</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_IsSpwanSystem">SystemStone.IsSpwanSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_enable">SystemStone.enable</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_World">SystemStone.World</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_Enable">SystemStone.Enable</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_SetEnable_System_Boolean_">SystemStone.SetEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_OnDestory">SystemStone.OnDestory()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_LateUpdate">SystemStone.LateUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_FixedUpdate">SystemStone.FixedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_OnDrawGizmos">SystemStone.OnDrawGizmos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_OnDrawGizmosSelected">SystemStone.OnDrawGizmosSelected()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_StartAfterNetwork">SystemStone.StartAfterNetwork()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_Reset">SystemStone.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_Unit_UnitBodySystem_Awake_" data-uid="XianXia.Unit.UnitBodySystem.Awake*"></a>
+
+  <h3 id="XianXia_Unit_UnitBodySystem_Awake_Saber_ECS_WorldBase_" data-uid="XianXia.Unit.UnitBodySystem.Awake(Saber.ECS.WorldBase)">
+  Awake(WorldBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Awake(WorldBase world)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>world</code> <a class="xref" href="Saber.ECS.WorldBase.html">WorldBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitBodySystem_ReceiveDamage_" data-uid="XianXia.Unit.UnitBodySystem.ReceiveDamage*"></a>
+
+  <h3 id="XianXia_Unit_UnitBodySystem_ReceiveDamage_XianXia_Unit_BodyOrgan_XianXia_Unit_Damage_" data-uid="XianXia.Unit.UnitBodySystem.ReceiveDamage(XianXia.Unit.BodyOrgan,XianXia.Unit.Damage)">
+  ReceiveDamage(BodyOrgan, Damage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>所有造成伤害的接口</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReceiveDamage(BodyOrgan bodyOrgan, Damage damage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bodyOrgan</code> <a class="xref" href="XianXia.Unit.BodyOrgan.html">BodyOrgan</a></dt>
+    <dd></dd>
+    <dt><code>damage</code> <a class="xref" href="XianXia.Unit.Damage.html">Damage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitBodySystem_SetUnitPlayerColor_" data-uid="XianXia.Unit.UnitBodySystem.SetUnitPlayerColor*"></a>
+
+  <h3 id="XianXia_Unit_UnitBodySystem_SetUnitPlayerColor_XianXia_Unit_BodyOrgan_Saber_Camp_PlayerMemeber_" data-uid="XianXia.Unit.UnitBodySystem.SetUnitPlayerColor(XianXia.Unit.BodyOrgan,Saber.Camp.PlayerMemeber)">
+  SetUnitPlayerColor(BodyOrgan, PlayerMemeber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>设置玩家单位颜色</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUnitPlayerColor(BodyOrgan bodyOrgan, PlayerMemeber playerMemeber)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bodyOrgan</code> <a class="xref" href="XianXia.Unit.BodyOrgan.html">BodyOrgan</a></dt>
+    <dd></dd>
+    <dt><code>playerMemeber</code> <a class="xref" href="Saber.Camp.PlayerMemeber.html">PlayerMemeber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitBodySystem_Start_" data-uid="XianXia.Unit.UnitBodySystem.Start*"></a>
+
+  <h3 id="XianXia_Unit_UnitBodySystem_Start" data-uid="XianXia.Unit.UnitBodySystem.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitBodySystem_UnitDead_" data-uid="XianXia.Unit.UnitBodySystem.UnitDead*"></a>
+
+  <h3 id="XianXia_Unit_UnitBodySystem_UnitDead_XianXia_Unit_BodyOrgan_XianXia_Unit_Damage_" data-uid="XianXia.Unit.UnitBodySystem.UnitDead(XianXia.Unit.BodyOrgan,XianXia.Unit.Damage)">
+  UnitDead(BodyOrgan, Damage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>所有单位死亡接口
+直接被移除出游戏不是死亡</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnitDead(BodyOrgan bodyOrgan, Damage damage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bodyOrgan</code> <a class="xref" href="XianXia.Unit.BodyOrgan.html">BodyOrgan</a></dt>
+    <dd></dd>
+    <dt><code>damage</code> <a class="xref" href="XianXia.Unit.Damage.html">Damage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitBodySystem_UnitHeal_" data-uid="XianXia.Unit.UnitBodySystem.UnitHeal*"></a>
+
+  <h3 id="XianXia_Unit_UnitBodySystem_UnitHeal_XianXia_Unit_BodyOrgan_System_Int32_UnitBase_" data-uid="XianXia.Unit.UnitBodySystem.UnitHeal(XianXia.Unit.BodyOrgan,System.Int32,UnitBase)">
+  UnitHeal(BodyOrgan, int, UnitBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>所有单位获得治疗接口</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnitHeal(BodyOrgan bodyOrgan, int num, UnitBase source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bodyOrgan</code> <a class="xref" href="XianXia.Unit.BodyOrgan.html">BodyOrgan</a></dt>
+    <dd></dd>
+    <dt><code>num</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>source</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_UnitBodySystem_Update_" data-uid="XianXia.Unit.UnitBodySystem.Update*"></a>
+
+  <h3 id="XianXia_Unit_UnitBodySystem_Update" data-uid="XianXia.Unit.UnitBodySystem.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

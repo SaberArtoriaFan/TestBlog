@@ -1,0 +1,1420 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ILIntepreter
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ILIntepreter
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter">
+
+
+
+  <h1 id="ILRuntime_Runtime_Intepreter_ILIntepreter" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter" class="text-break">
+    Class ILIntepreter
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ILRuntime.html">ILRuntime</a>.<a class="xref" href="ILRuntime.Runtime.html">Runtime</a>.<a class="xref" href="ILRuntime.Runtime.Intepreter.html">Intepreter</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ILIntepreter</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ILIntepreter</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter__ctor_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.#ctor*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter__ctor_ILRuntime_Runtime_Enviorment_AppDomain_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.#ctor(ILRuntime.Runtime.Enviorment.AppDomain)">
+  ILIntepreter(AppDomain)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILIntepreter(AppDomain domain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>domain</code> <a class="xref" href="ILRuntime.Runtime.Enviorment.AppDomain.html">AppDomain</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_AppDomain_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.AppDomain*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_AppDomain" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.AppDomain">
+  AppDomain
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppDomain AppDomain { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Enviorment.AppDomain.html">AppDomain</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_CurrentStepType_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.CurrentStepType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_CurrentStepType" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.CurrentStepType">
+  CurrentStepType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StepTypes CurrentStepType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Debugger.StepTypes.html">StepTypes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_LastStepFrameBase_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.LastStepFrameBase*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_LastStepFrameBase" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.LastStepFrameBase">
+  LastStepFrameBase
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StackObject* LastStepFrameBase { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_LastStepInstructionIndex_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.LastStepInstructionIndex*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_LastStepInstructionIndex" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.LastStepInstructionIndex">
+  LastStepInstructionIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastStepInstructionIndex { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_ShouldBreak_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.ShouldBreak*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_ShouldBreak" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.ShouldBreak">
+  ShouldBreak
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShouldBreak { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_Add_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.Add*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_Add_ILRuntime_Runtime_Stack_StackObject__System_Int32_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.Add(ILRuntime.Runtime.Stack.StackObject*,System.Int32)">
+  Add(StackObject*, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StackObject* Add(StackObject* a, int b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_AllocValueType_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.AllocValueType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_AllocValueType_ILRuntime_Runtime_Stack_StackObject__ILRuntime_CLR_TypeSystem_IType_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.AllocValueType(ILRuntime.Runtime.Stack.StackObject*,ILRuntime.CLR.TypeSystem.IType)">
+  AllocValueType(StackObject*, IType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AllocValueType(StackObject* ptr, IType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ptr</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="ILRuntime.CLR.TypeSystem.IType.html">IType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_Break_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.Break*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_Break" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.Break">
+  Break()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Break()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_ClearDebugState_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.ClearDebugState*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_ClearDebugState" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.ClearDebugState">
+  ClearDebugState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearDebugState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_CopyStackValueType_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.CopyStackValueType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_CopyStackValueType_ILRuntime_Runtime_Stack_StackObject__ILRuntime_Runtime_Stack_StackObject__ILRuntime_Other_UncheckedList_System_Object__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.CopyStackValueType(ILRuntime.Runtime.Stack.StackObject*,ILRuntime.Runtime.Stack.StackObject*,ILRuntime.Other.UncheckedList{System.Object})">
+  CopyStackValueType(StackObject*, StackObject*, UncheckedList&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyStackValueType(StackObject* src, StackObject* dst, UncheckedList&lt;object&gt; mStack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>src</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>dst</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="ILRuntime.Other.UncheckedList-1.html">UncheckedList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_CopyStackValueType_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.CopyStackValueType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_CopyStackValueType_ILRuntime_Runtime_Stack_StackObject__ILRuntime_Runtime_Stack_StackObject__ILRuntime_Other_UncheckedList_System_Object__ILRuntime_Other_UncheckedList_System_Object__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.CopyStackValueType(ILRuntime.Runtime.Stack.StackObject*,ILRuntime.Runtime.Stack.StackObject*,ILRuntime.Other.UncheckedList{System.Object},ILRuntime.Other.UncheckedList{System.Object})">
+  CopyStackValueType(StackObject*, StackObject*, UncheckedList&lt;object&gt;, UncheckedList&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyStackValueType(StackObject* src, StackObject* dst, UncheckedList&lt;object&gt; mStack, UncheckedList&lt;object&gt; dstmStack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>src</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>dst</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="ILRuntime.Other.UncheckedList-1.html">UncheckedList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>dstmStack</code> <a class="xref" href="ILRuntime.Other.UncheckedList-1.html">UncheckedList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_CopyToStack_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.CopyToStack*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_CopyToStack_ILRuntime_Runtime_Stack_StackObject__ILRuntime_Runtime_Stack_StackObject__ILRuntime_Other_UncheckedList_System_Object__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.CopyToStack(ILRuntime.Runtime.Stack.StackObject*,ILRuntime.Runtime.Stack.StackObject*,ILRuntime.Other.UncheckedList{System.Object})">
+  CopyToStack(StackObject*, StackObject*, UncheckedList&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyToStack(StackObject* dst, StackObject* src, UncheckedList&lt;object&gt; mStack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dst</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="ILRuntime.Other.UncheckedList-1.html">UncheckedList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_Free_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.Free*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_Free_ILRuntime_Runtime_Stack_StackObject__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.Free(ILRuntime.Runtime.Stack.StackObject*)">
+  Free(StackObject*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Free(StackObject* esp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_FreeStackValueType_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.FreeStackValueType*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_FreeStackValueType_ILRuntime_Runtime_Stack_StackObject__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.FreeStackValueType(ILRuntime.Runtime.Stack.StackObject*)">
+  FreeStackValueType(StackObject*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreeStackValueType(StackObject* esp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_GetObjectAndResolveReference_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.GetObjectAndResolveReference*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_GetObjectAndResolveReference_ILRuntime_Runtime_Stack_StackObject__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.GetObjectAndResolveReference(ILRuntime.Runtime.Stack.StackObject*)">
+  GetObjectAndResolveReference(StackObject*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StackObject* GetObjectAndResolveReference(StackObject* esp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_Minus_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.Minus*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_Minus_ILRuntime_Runtime_Stack_StackObject__System_Int32_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.Minus(ILRuntime.Runtime.Stack.StackObject*,System.Int32)">
+  Minus(StackObject*, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StackObject* Minus(StackObject* a, int b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_PushNull_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.PushNull*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_PushNull_ILRuntime_Runtime_Stack_StackObject__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.PushNull(ILRuntime.Runtime.Stack.StackObject*)">
+  PushNull(StackObject*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StackObject* PushNull(StackObject* esp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_PushObject_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.PushObject*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_PushObject_ILRuntime_Runtime_Stack_StackObject__ILRuntime_Other_UncheckedList_System_Object__System_Object_System_Boolean_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.PushObject(ILRuntime.Runtime.Stack.StackObject*,ILRuntime.Other.UncheckedList{System.Object},System.Object,System.Boolean)">
+  PushObject(StackObject*, UncheckedList&lt;object&gt;, object, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StackObject* PushObject(StackObject* esp, UncheckedList&lt;object&gt; mStack, object obj, bool isBox = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="ILRuntime.Other.UncheckedList-1.html">UncheckedList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>isBox</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_PushObject_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.PushObject*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_PushObject_ILRuntime_Runtime_Stack_StackObject__System_Collections_Generic_IList_System_Object__System_Object_System_Boolean_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.PushObject(ILRuntime.Runtime.Stack.StackObject*,System.Collections.Generic.IList{System.Object},System.Object,System.Boolean)">
+  PushObject(StackObject*, IList&lt;object&gt;, object, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static StackObject* PushObject(StackObject* esp, IList&lt;object&gt; mStack, object obj, bool isBox = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>isBox</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_PushOne_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.PushOne*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_PushOne_ILRuntime_Runtime_Stack_StackObject__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.PushOne(ILRuntime.Runtime.Stack.StackObject*)">
+  PushOne(StackObject*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StackObject* PushOne(StackObject* esp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_PushZero_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.PushZero*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_PushZero_ILRuntime_Runtime_Stack_StackObject__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.PushZero(ILRuntime.Runtime.Stack.StackObject*)">
+  PushZero(StackObject*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StackObject* PushZero(StackObject* esp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_ResolveReference_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.ResolveReference*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_ResolveReference_ILRuntime_Runtime_Stack_StackObject__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.ResolveReference(ILRuntime.Runtime.Stack.StackObject*)">
+  ResolveReference(StackObject*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StackObject* ResolveReference(StackObject* esp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_Resume_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.Resume*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_Resume" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.Resume">
+  Resume()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resume()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_RetriveDouble_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.RetriveDouble*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_RetriveDouble_ILRuntime_Runtime_Stack_StackObject__ILRuntime_Other_UncheckedList_System_Object__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.RetriveDouble(ILRuntime.Runtime.Stack.StackObject*,ILRuntime.Other.UncheckedList{System.Object})">
+  RetriveDouble(StackObject*, UncheckedList&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double RetriveDouble(StackObject* esp, UncheckedList&lt;object&gt; mStack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="ILRuntime.Other.UncheckedList-1.html">UncheckedList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_RetriveFloat_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.RetriveFloat*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_RetriveFloat_ILRuntime_Runtime_Stack_StackObject__ILRuntime_Other_UncheckedList_System_Object__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.RetriveFloat(ILRuntime.Runtime.Stack.StackObject*,ILRuntime.Other.UncheckedList{System.Object})">
+  RetriveFloat(StackObject*, UncheckedList&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RetriveFloat(StackObject* esp, UncheckedList&lt;object&gt; mStack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="ILRuntime.Other.UncheckedList-1.html">UncheckedList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_RetriveInt32_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.RetriveInt32*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_RetriveInt32_ILRuntime_Runtime_Stack_StackObject__ILRuntime_Other_UncheckedList_System_Object__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.RetriveInt32(ILRuntime.Runtime.Stack.StackObject*,ILRuntime.Other.UncheckedList{System.Object})">
+  RetriveInt32(StackObject*, UncheckedList&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RetriveInt32(StackObject* esp, UncheckedList&lt;object&gt; mStack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="ILRuntime.Other.UncheckedList-1.html">UncheckedList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_RetriveInt64_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.RetriveInt64*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_RetriveInt64_ILRuntime_Runtime_Stack_StackObject__ILRuntime_Other_UncheckedList_System_Object__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.RetriveInt64(ILRuntime.Runtime.Stack.StackObject*,ILRuntime.Other.UncheckedList{System.Object})">
+  RetriveInt64(StackObject*, UncheckedList&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long RetriveInt64(StackObject* esp, UncheckedList&lt;object&gt; mStack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="ILRuntime.Other.UncheckedList-1.html">UncheckedList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_RetriveObject_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.RetriveObject*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_RetriveObject_ILRuntime_Runtime_Stack_StackObject__ILRuntime_Other_UncheckedList_System_Object__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.RetriveObject(ILRuntime.Runtime.Stack.StackObject*,ILRuntime.Other.UncheckedList{System.Object})">
+  RetriveObject(StackObject*, UncheckedList&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object RetriveObject(StackObject* esp, UncheckedList&lt;object&gt; mStack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="ILRuntime.Other.UncheckedList-1.html">UncheckedList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_RetriveObject_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.RetriveObject*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_RetriveObject_ILRuntime_Runtime_Stack_StackObject__System_Collections_Generic_IList_System_Object__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.RetriveObject(ILRuntime.Runtime.Stack.StackObject*,System.Collections.Generic.IList{System.Object})">
+  RetriveObject(StackObject*, IList&lt;object&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public object RetriveObject(StackObject* esp, IList&lt;object&gt; mStack)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_Run_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.Run*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_Run_ILRuntime_CLR_Method_ILMethod_System_Object_System_Object___" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.Run(ILRuntime.CLR.Method.ILMethod,System.Object,System.Object[])">
+  Run(ILMethod, object, object[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Run(ILMethod method, object instance, object[] p)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>method</code> <a class="xref" href="ILRuntime.CLR.Method.ILMethod.html">ILMethod</a></dt>
+    <dd></dd>
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>p</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_UnboxObject_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.UnboxObject*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_UnboxObject_ILRuntime_Runtime_Stack_StackObject__System_Object_ILRuntime_Other_UncheckedList_System_Object__ILRuntime_Runtime_Enviorment_AppDomain_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.UnboxObject(ILRuntime.Runtime.Stack.StackObject*,System.Object,ILRuntime.Other.UncheckedList{System.Object},ILRuntime.Runtime.Enviorment.AppDomain)">
+  UnboxObject(StackObject*, object, UncheckedList&lt;object&gt;, AppDomain)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnboxObject(StackObject* esp, object obj, UncheckedList&lt;object&gt; mStack = null, AppDomain domain = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="ILRuntime.Other.UncheckedList-1.html">UncheckedList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>domain</code> <a class="xref" href="ILRuntime.Runtime.Enviorment.AppDomain.html">AppDomain</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_UnboxObject_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.UnboxObject*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_UnboxObject_ILRuntime_Runtime_Stack_StackObject__System_Object_System_Collections_Generic_IList_System_Object__ILRuntime_Runtime_Enviorment_AppDomain_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.UnboxObject(ILRuntime.Runtime.Stack.StackObject*,System.Object,System.Collections.Generic.IList{System.Object},ILRuntime.Runtime.Enviorment.AppDomain)">
+  UnboxObject(StackObject*, object, IList&lt;object&gt;, AppDomain)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static void UnboxObject(StackObject* esp, object obj, IList&lt;object&gt; mStack = null, AppDomain domain = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>mStack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>domain</code> <a class="xref" href="ILRuntime.Runtime.Enviorment.AppDomain.html">AppDomain</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_WriteOne_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.WriteOne*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_WriteOne_ILRuntime_Runtime_Stack_StackObject__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.WriteOne(ILRuntime.Runtime.Stack.StackObject*)">
+  WriteOne(StackObject*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteOne(StackObject* esp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ILRuntime_Runtime_Intepreter_ILIntepreter_WriteZero_" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.WriteZero*"></a>
+
+  <h3 id="ILRuntime_Runtime_Intepreter_ILIntepreter_WriteZero_ILRuntime_Runtime_Stack_StackObject__" data-uid="ILRuntime.Runtime.Intepreter.ILIntepreter.WriteZero(ILRuntime.Runtime.Stack.StackObject*)">
+  WriteZero(StackObject*)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteZero(StackObject* esp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>esp</code> <a class="xref" href="ILRuntime.Runtime.Stack.StackObject.html">StackObject</a>*</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2309 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ReorderableList
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ReorderableList
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Malee.List.ReorderableList">
+
+
+
+  <h1 id="Malee_List_ReorderableList" data-uid="Malee.List.ReorderableList" class="text-break">
+    Class ReorderableList
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Malee.html">Malee</a>.<a class="xref" href="Malee.List.html">List</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ReorderableList</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ReorderableList</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Malee_List_ReorderableList__ctor_" data-uid="Malee.List.ReorderableList.#ctor*"></a>
+
+  <h3 id="Malee_List_ReorderableList__ctor_SerializedProperty_" data-uid="Malee.List.ReorderableList.#ctor(SerializedProperty)">
+  ReorderableList(SerializedProperty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReorderableList(SerializedProperty list)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList__ctor_" data-uid="Malee.List.ReorderableList.#ctor*"></a>
+
+  <h3 id="Malee_List_ReorderableList__ctor_SerializedProperty_System_Boolean_System_Boolean_System_Boolean_" data-uid="Malee.List.ReorderableList.#ctor(SerializedProperty,System.Boolean,System.Boolean,System.Boolean)">
+  ReorderableList(SerializedProperty, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReorderableList(SerializedProperty list, bool canAdd, bool canRemove, bool draggable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>canAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>canRemove</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>draggable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList__ctor_" data-uid="Malee.List.ReorderableList.#ctor*"></a>
+
+  <h3 id="Malee_List_ReorderableList__ctor_SerializedProperty_System_Boolean_System_Boolean_System_Boolean_Malee_List_ReorderableList_ElementDisplayType_System_String_System_String_Texture_" data-uid="Malee.List.ReorderableList.#ctor(SerializedProperty,System.Boolean,System.Boolean,System.Boolean,Malee.List.ReorderableList.ElementDisplayType,System.String,System.String,Texture)">
+  ReorderableList(SerializedProperty, bool, bool, bool, ElementDisplayType, string, string, Texture)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReorderableList(SerializedProperty list, bool canAdd, bool canRemove, bool draggable, ReorderableList.ElementDisplayType elementDisplayType, string elementNameProperty, string elementNameOverride, Texture elementIcon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>canAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>canRemove</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>draggable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>elementDisplayType</code> <a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.ElementDisplayType.html">ElementDisplayType</a></dt>
+    <dd></dd>
+    <dt><code>elementNameProperty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>elementNameOverride</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>elementIcon</code> <span class="xref">Texture</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList__ctor_" data-uid="Malee.List.ReorderableList.#ctor*"></a>
+
+  <h3 id="Malee_List_ReorderableList__ctor_SerializedProperty_System_Boolean_System_Boolean_System_Boolean_Malee_List_ReorderableList_ElementDisplayType_System_String_Texture_" data-uid="Malee.List.ReorderableList.#ctor(SerializedProperty,System.Boolean,System.Boolean,System.Boolean,Malee.List.ReorderableList.ElementDisplayType,System.String,Texture)">
+  ReorderableList(SerializedProperty, bool, bool, bool, ElementDisplayType, string, Texture)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReorderableList(SerializedProperty list, bool canAdd, bool canRemove, bool draggable, ReorderableList.ElementDisplayType elementDisplayType, string elementNameProperty, Texture elementIcon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+    <dt><code>canAdd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>canRemove</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>draggable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>elementDisplayType</code> <a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.ElementDisplayType.html">ElementDisplayType</a></dt>
+    <dd></dd>
+    <dt><code>elementNameProperty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>elementIcon</code> <span class="xref">Texture</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Malee_List_ReorderableList_canAdd" data-uid="Malee.List.ReorderableList.canAdd">
+  canAdd
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canAdd</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_canRemove" data-uid="Malee.List.ReorderableList.canRemove">
+  canRemove
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canRemove</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_draggable" data-uid="Malee.List.ReorderableList.draggable">
+  draggable
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool draggable</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_elementDisplayType" data-uid="Malee.List.ReorderableList.elementDisplayType">
+  elementDisplayType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReorderableList.ElementDisplayType elementDisplayType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.ElementDisplayType.html">ElementDisplayType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_elementIcon" data-uid="Malee.List.ReorderableList.elementIcon">
+  elementIcon
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture elementIcon</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_elementLabels" data-uid="Malee.List.ReorderableList.elementLabels">
+  elementLabels
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool elementLabels</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_elementNameOverride" data-uid="Malee.List.ReorderableList.elementNameOverride">
+  elementNameOverride
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string elementNameOverride</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_elementNameProperty" data-uid="Malee.List.ReorderableList.elementNameProperty">
+  elementNameProperty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string elementNameProperty</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_expandable" data-uid="Malee.List.ReorderableList.expandable">
+  expandable
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool expandable</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_footerHeight" data-uid="Malee.List.ReorderableList.footerHeight">
+  footerHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float footerHeight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_headerHeight" data-uid="Malee.List.ReorderableList.headerHeight">
+  headerHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float headerHeight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_label" data-uid="Malee.List.ReorderableList.label">
+  label
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GUIContent label</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_multipleSelection" data-uid="Malee.List.ReorderableList.multipleSelection">
+  multipleSelection
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool multipleSelection</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_paginationHeight" data-uid="Malee.List.ReorderableList.paginationHeight">
+  paginationHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float paginationHeight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_showDefaultBackground" data-uid="Malee.List.ReorderableList.showDefaultBackground">
+  showDefaultBackground
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool showDefaultBackground</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_slideEasing" data-uid="Malee.List.ReorderableList.slideEasing">
+  slideEasing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float slideEasing</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_sortable" data-uid="Malee.List.ReorderableList.sortable">
+  sortable
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool sortable</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_surrogate" data-uid="Malee.List.ReorderableList.surrogate">
+  surrogate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReorderableList.Surrogate surrogate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.Surrogate.html">Surrogate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_verticalSpacing" data-uid="Malee.List.ReorderableList.verticalSpacing">
+  verticalSpacing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float verticalSpacing</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Malee_List_ReorderableList_HasList_" data-uid="Malee.List.ReorderableList.HasList*"></a>
+
+  <h3 id="Malee_List_ReorderableList_HasList" data-uid="Malee.List.ReorderableList.HasList">
+  HasList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasList { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_Index_" data-uid="Malee.List.ReorderableList.Index*"></a>
+
+  <h3 id="Malee_List_ReorderableList_Index" data-uid="Malee.List.ReorderableList.Index">
+  Index
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Index { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_IsDragging_" data-uid="Malee.List.ReorderableList.IsDragging*"></a>
+
+  <h3 id="Malee_List_ReorderableList_IsDragging" data-uid="Malee.List.ReorderableList.IsDragging">
+  IsDragging
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDragging { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_Length_" data-uid="Malee.List.ReorderableList.Length*"></a>
+
+  <h3 id="Malee_List_ReorderableList_Length" data-uid="Malee.List.ReorderableList.Length">
+  Length
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Length { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_List_" data-uid="Malee.List.ReorderableList.List*"></a>
+
+  <h3 id="Malee_List_ReorderableList_List" data-uid="Malee.List.ReorderableList.List">
+  List
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SerializedProperty List { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_Selected_" data-uid="Malee.List.ReorderableList.Selected*"></a>
+
+  <h3 id="Malee_List_ReorderableList_Selected" data-uid="Malee.List.ReorderableList.Selected">
+  Selected
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] Selected { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_VisibleLength_" data-uid="Malee.List.ReorderableList.VisibleLength*"></a>
+
+  <h3 id="Malee_List_ReorderableList_VisibleLength" data-uid="Malee.List.ReorderableList.VisibleLength">
+  VisibleLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VisibleLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_pageSize_" data-uid="Malee.List.ReorderableList.pageSize*"></a>
+
+  <h3 id="Malee_List_ReorderableList_pageSize" data-uid="Malee.List.ReorderableList.pageSize">
+  pageSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int pageSize { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_paginate_" data-uid="Malee.List.ReorderableList.paginate*"></a>
+
+  <h3 id="Malee_List_ReorderableList_paginate" data-uid="Malee.List.ReorderableList.paginate">
+  paginate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool paginate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Malee_List_ReorderableList_AddItem_" data-uid="Malee.List.ReorderableList.AddItem*"></a>
+
+  <h3 id="Malee_List_ReorderableList_AddItem" data-uid="Malee.List.ReorderableList.AddItem">
+  AddItem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SerializedProperty AddItem()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_AddItem_" data-uid="Malee.List.ReorderableList.AddItem*"></a>
+
+  <h3 id="Malee_List_ReorderableList_AddItem__1___0_" data-uid="Malee.List.ReorderableList.AddItem``1(``0)">
+  AddItem&lt;T&gt;(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SerializedProperty AddItem&lt;T&gt;(T item) where T : Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_DoLayoutList_" data-uid="Malee.List.ReorderableList.DoLayoutList*"></a>
+
+  <h3 id="Malee_List_ReorderableList_DoLayoutList" data-uid="Malee.List.ReorderableList.DoLayoutList">
+  DoLayoutList()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoLayoutList()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_DoList_" data-uid="Malee.List.ReorderableList.DoList*"></a>
+
+  <h3 id="Malee_List_ReorderableList_DoList_Rect_GUIContent_" data-uid="Malee.List.ReorderableList.DoList(Rect,GUIContent)">
+  DoList(Rect, GUIContent)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoList(Rect rect, GUIContent label)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">Rect</span></dt>
+    <dd></dd>
+    <dt><code>label</code> <span class="xref">GUIContent</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_GetElementHeight_" data-uid="Malee.List.ReorderableList.GetElementHeight*"></a>
+
+  <h3 id="Malee_List_ReorderableList_GetElementHeight_System_Int32_" data-uid="Malee.List.ReorderableList.GetElementHeight(System.Int32)">
+  GetElementHeight(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetElementHeight(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_GetHeight_" data-uid="Malee.List.ReorderableList.GetHeight*"></a>
+
+  <h3 id="Malee_List_ReorderableList_GetHeight" data-uid="Malee.List.ReorderableList.GetHeight">
+  GetHeight()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetHeight()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_GetItem_" data-uid="Malee.List.ReorderableList.GetItem*"></a>
+
+  <h3 id="Malee_List_ReorderableList_GetItem_System_Int32_" data-uid="Malee.List.ReorderableList.GetItem(System.Int32)">
+  GetItem(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SerializedProperty GetItem(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_GetPage_" data-uid="Malee.List.ReorderableList.GetPage*"></a>
+
+  <h3 id="Malee_List_ReorderableList_GetPage_System_Int32_" data-uid="Malee.List.ReorderableList.GetPage(System.Int32)">
+  GetPage(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPage(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_GetPageByIndex_" data-uid="Malee.List.ReorderableList.GetPageByIndex*"></a>
+
+  <h3 id="Malee_List_ReorderableList_GetPageByIndex_System_Int32_" data-uid="Malee.List.ReorderableList.GetPageByIndex(System.Int32)">
+  GetPageByIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPageByIndex(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_GrabKeyboardFocus_" data-uid="Malee.List.ReorderableList.GrabKeyboardFocus*"></a>
+
+  <h3 id="Malee_List_ReorderableList_GrabKeyboardFocus" data-uid="Malee.List.ReorderableList.GrabKeyboardFocus">
+  GrabKeyboardFocus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GrabKeyboardFocus()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_HasKeyboardControl_" data-uid="Malee.List.ReorderableList.HasKeyboardControl*"></a>
+
+  <h3 id="Malee_List_ReorderableList_HasKeyboardControl" data-uid="Malee.List.ReorderableList.HasKeyboardControl">
+  HasKeyboardControl()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasKeyboardControl()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_IndexOf_" data-uid="Malee.List.ReorderableList.IndexOf*"></a>
+
+  <h3 id="Malee_List_ReorderableList_IndexOf_SerializedProperty_" data-uid="Malee.List.ReorderableList.IndexOf(SerializedProperty)">
+  IndexOf(SerializedProperty)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(SerializedProperty element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <span class="xref">SerializedProperty</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_ReleaseKeyboardFocus_" data-uid="Malee.List.ReorderableList.ReleaseKeyboardFocus*"></a>
+
+  <h3 id="Malee_List_ReorderableList_ReleaseKeyboardFocus" data-uid="Malee.List.ReorderableList.ReleaseKeyboardFocus">
+  ReleaseKeyboardFocus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseKeyboardFocus()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_Remove_" data-uid="Malee.List.ReorderableList.Remove*"></a>
+
+  <h3 id="Malee_List_ReorderableList_Remove_System_Int32___" data-uid="Malee.List.ReorderableList.Remove(System.Int32[])">
+  Remove(int[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(int[] selection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>selection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_RemoveItem_" data-uid="Malee.List.ReorderableList.RemoveItem*"></a>
+
+  <h3 id="Malee_List_ReorderableList_RemoveItem_System_Int32_" data-uid="Malee.List.ReorderableList.RemoveItem(System.Int32)">
+  RemoveItem(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveItem(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_SetPage_" data-uid="Malee.List.ReorderableList.SetPage*"></a>
+
+  <h3 id="Malee_List_ReorderableList_SetPage_System_Int32_" data-uid="Malee.List.ReorderableList.SetPage(System.Int32)">
+  SetPage(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPage(int page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Malee_List_ReorderableList_SetPageByIndex_" data-uid="Malee.List.ReorderableList.SetPageByIndex*"></a>
+
+  <h3 id="Malee_List_ReorderableList_SetPageByIndex_System_Int32_" data-uid="Malee.List.ReorderableList.SetPageByIndex(System.Int32)">
+  SetPageByIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPageByIndex(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Malee_List_ReorderableList_drawElementBackgroundCallback" data-uid="Malee.List.ReorderableList.drawElementBackgroundCallback">
+  drawElementBackgroundCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.DrawElementDelegate drawElementBackgroundCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.DrawElementDelegate.html">DrawElementDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_drawElementCallback" data-uid="Malee.List.ReorderableList.drawElementCallback">
+  drawElementCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.DrawElementDelegate drawElementCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.DrawElementDelegate.html">DrawElementDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_drawFooterCallback" data-uid="Malee.List.ReorderableList.drawFooterCallback">
+  drawFooterCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.DrawFooterDelegate drawFooterCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.DrawFooterDelegate.html">DrawFooterDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_drawHeaderCallback" data-uid="Malee.List.ReorderableList.drawHeaderCallback">
+  drawHeaderCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.DrawHeaderDelegate drawHeaderCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.DrawHeaderDelegate.html">DrawHeaderDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_getElementHeightCallback" data-uid="Malee.List.ReorderableList.getElementHeightCallback">
+  getElementHeightCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.GetElementHeightDelegate getElementHeightCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.GetElementHeightDelegate.html">GetElementHeightDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_getElementLabelCallback" data-uid="Malee.List.ReorderableList.getElementLabelCallback">
+  getElementLabelCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.GetElementLabelDelegate getElementLabelCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.GetElementLabelDelegate.html">GetElementLabelDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_getElementNameCallback" data-uid="Malee.List.ReorderableList.getElementNameCallback">
+  getElementNameCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.GetElementNameDelegate getElementNameCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.GetElementNameDelegate.html">GetElementNameDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_getElementsHeightCallback" data-uid="Malee.List.ReorderableList.getElementsHeightCallback">
+  getElementsHeightCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.GetElementsHeightDelegate getElementsHeightCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.GetElementsHeightDelegate.html">GetElementsHeightDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_onAddCallback" data-uid="Malee.List.ReorderableList.onAddCallback">
+  onAddCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.ActionDelegate onAddCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.ActionDelegate.html">ActionDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_onAddDropdownCallback" data-uid="Malee.List.ReorderableList.onAddDropdownCallback">
+  onAddDropdownCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.AddDropdownDelegate onAddDropdownCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.AddDropdownDelegate.html">AddDropdownDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_onAppendDragDropCallback" data-uid="Malee.List.ReorderableList.onAppendDragDropCallback">
+  onAppendDragDropCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.DragDropAppendDelegate onAppendDragDropCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.DragDropAppendDelegate.html">DragDropAppendDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_onCanRemoveCallback" data-uid="Malee.List.ReorderableList.onCanRemoveCallback">
+  onCanRemoveCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.ActionBoolDelegate onCanRemoveCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.ActionBoolDelegate.html">ActionBoolDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_onChangedCallback" data-uid="Malee.List.ReorderableList.onChangedCallback">
+  onChangedCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.ActionDelegate onChangedCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.ActionDelegate.html">ActionDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_onMouseUpCallback" data-uid="Malee.List.ReorderableList.onMouseUpCallback">
+  onMouseUpCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.ActionDelegate onMouseUpCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.ActionDelegate.html">ActionDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_onRemoveCallback" data-uid="Malee.List.ReorderableList.onRemoveCallback">
+  onRemoveCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.ActionDelegate onRemoveCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.ActionDelegate.html">ActionDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_onReorderCallback" data-uid="Malee.List.ReorderableList.onReorderCallback">
+  onReorderCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.ActionDelegate onReorderCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.ActionDelegate.html">ActionDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_onSelectCallback" data-uid="Malee.List.ReorderableList.onSelectCallback">
+  onSelectCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.ActionDelegate onSelectCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.ActionDelegate.html">ActionDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Malee_List_ReorderableList_onValidateDragAndDropCallback" data-uid="Malee.List.ReorderableList.onValidateDragAndDropCallback">
+  onValidateDragAndDropCallback
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ReorderableList.DragDropReferenceDelegate onValidateDragAndDropCallback</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Malee.List.ReorderableList.html">ReorderableList</a>.<a class="xref" href="Malee.List.ReorderableList.DragDropReferenceDelegate.html">DragDropReferenceDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

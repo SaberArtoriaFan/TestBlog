@@ -1,0 +1,1143 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SceneManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SceneManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FishNet.Managing.Scened.SceneManager">
+
+
+
+  <h1 id="FishNet_Managing_Scened_SceneManager" data-uid="FishNet.Managing.Scened.SceneManager" class="text-break">
+    Class SceneManager
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FishNet.html">FishNet</a>.<a class="xref" href="FishNet.Managing.html">Managing</a>.<a class="xref" href="FishNet.Managing.Scened.html">Scened</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Handles loading, unloading, and scene visibility for clients.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SceneManager : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SceneManager</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_SceneConnections_" data-uid="FishNet.Managing.Scened.SceneManager.SceneConnections*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_SceneConnections" data-uid="FishNet.Managing.Scened.SceneManager.SceneConnections">
+  SceneConnections
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Connections within each scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;Scene, HashSet&lt;NetworkConnection&gt;&gt; SceneConnections { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<span class="xref">Scene</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1">HashSet</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_AddConnectionToScene_" data-uid="FishNet.Managing.Scened.SceneManager.AddConnectionToScene*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_AddConnectionToScene_FishNet_Connection_NetworkConnection_Scene_" data-uid="FishNet.Managing.Scened.SceneManager.AddConnectionToScene(FishNet.Connection.NetworkConnection,Scene)">
+  AddConnectionToScene(NetworkConnection, Scene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a connection to a scene. This will always be called one connection at a time because connections are only added after they invidually validate loading the scene.
+Exposed for power users, use caution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddConnectionToScene(NetworkConnection conn, Scene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conn</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Connection to add.</p>
+</dd>
+    <dt><code>scene</code> <span class="xref">Scene</span></dt>
+    <dd><p>Scene to add the connection to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_AddOwnerToDefaultScene_" data-uid="FishNet.Managing.Scened.SceneManager.AddOwnerToDefaultScene*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_AddOwnerToDefaultScene_FishNet_Object_NetworkObject_" data-uid="FishNet.Managing.Scened.SceneManager.AddOwnerToDefaultScene(FishNet.Object.NetworkObject)">
+  AddOwnerToDefaultScene(NetworkObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the owner of nob to the gameObjects scene if there are no global scenes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOwnerToDefaultScene(NetworkObject nob)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nob</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_GetScene_" data-uid="FishNet.Managing.Scened.SceneManager.GetScene*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_GetScene_System_Int32_" data-uid="FishNet.Managing.Scened.SceneManager.GetScene(System.Int32)">
+  GetScene(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a scene by handle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Scene GetScene(int sceneHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneHandle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Scene</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_GetScene_" data-uid="FishNet.Managing.Scened.SceneManager.GetScene*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_GetScene_System_String_" data-uid="FishNet.Managing.Scened.SceneManager.GetScene(System.String)">
+  GetScene(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a scene by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Scene GetScene(string sceneName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Scene</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_GetSceneProcessor_" data-uid="FishNet.Managing.Scened.SceneManager.GetSceneProcessor*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_GetSceneProcessor" data-uid="FishNet.Managing.Scened.SceneManager.GetSceneProcessor">
+  GetSceneProcessor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Script to handle addressables loading and unloading. This field may be blank if addressables are not being used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneProcessorBase GetSceneProcessor()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Scened.SceneProcessorBase.html">SceneProcessorBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_LoadConnectionScenes_" data-uid="FishNet.Managing.Scened.SceneManager.LoadConnectionScenes*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_LoadConnectionScenes_FishNet_Connection_NetworkConnection_FishNet_Managing_Scened_SceneLoadData_" data-uid="FishNet.Managing.Scened.SceneManager.LoadConnectionScenes(FishNet.Connection.NetworkConnection,FishNet.Managing.Scened.SceneLoadData)">
+  LoadConnectionScenes(NetworkConnection, SceneLoadData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads scenes on server and tells connections to load them as well. Other connections will not load this scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadConnectionScenes(NetworkConnection conn, SceneLoadData sceneLoadData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conn</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Connections to load scenes for.</p>
+</dd>
+    <dt><code>sceneLoadData</code> <a class="xref" href="FishNet.Managing.Scened.SceneLoadData.html">SceneLoadData</a></dt>
+    <dd><p>Data about which scenes to load.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_LoadConnectionScenes_" data-uid="FishNet.Managing.Scened.SceneManager.LoadConnectionScenes*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_LoadConnectionScenes_FishNet_Connection_NetworkConnection___FishNet_Managing_Scened_SceneLoadData_" data-uid="FishNet.Managing.Scened.SceneManager.LoadConnectionScenes(FishNet.Connection.NetworkConnection[],FishNet.Managing.Scened.SceneLoadData)">
+  LoadConnectionScenes(NetworkConnection[], SceneLoadData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads scenes on server and tells connections to load them as well. Other connections will not load this scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadConnectionScenes(NetworkConnection[] conns, SceneLoadData sceneLoadData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conns</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>[]</dt>
+    <dd><p>Connections to load scenes for.</p>
+</dd>
+    <dt><code>sceneLoadData</code> <a class="xref" href="FishNet.Managing.Scened.SceneLoadData.html">SceneLoadData</a></dt>
+    <dd><p>Data about which scenes to load.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_LoadConnectionScenes_" data-uid="FishNet.Managing.Scened.SceneManager.LoadConnectionScenes*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_LoadConnectionScenes_FishNet_Managing_Scened_SceneLoadData_" data-uid="FishNet.Managing.Scened.SceneManager.LoadConnectionScenes(FishNet.Managing.Scened.SceneLoadData)">
+  LoadConnectionScenes(SceneLoadData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads scenes on server without telling clients to load the scenes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadConnectionScenes(SceneLoadData sceneLoadData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneLoadData</code> <a class="xref" href="FishNet.Managing.Scened.SceneLoadData.html">SceneLoadData</a></dt>
+    <dd><p>Data about which scenes to load.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_LoadGlobalScenes_" data-uid="FishNet.Managing.Scened.SceneManager.LoadGlobalScenes*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_LoadGlobalScenes_FishNet_Managing_Scened_SceneLoadData_" data-uid="FishNet.Managing.Scened.SceneManager.LoadGlobalScenes(FishNet.Managing.Scened.SceneLoadData)">
+  LoadGlobalScenes(SceneLoadData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads scenes on the server and for all clients. Future clients will automatically load these scenes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadGlobalScenes(SceneLoadData sceneLoadData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneLoadData</code> <a class="xref" href="FishNet.Managing.Scened.SceneLoadData.html">SceneLoadData</a></dt>
+    <dd><p>Data about which scenes to load.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_RemoveAllConnectionsFromScene_" data-uid="FishNet.Managing.Scened.SceneManager.RemoveAllConnectionsFromScene*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_RemoveAllConnectionsFromScene_Scene_" data-uid="FishNet.Managing.Scened.SceneManager.RemoveAllConnectionsFromScene(Scene)">
+  RemoveAllConnectionsFromScene(Scene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all connections from a scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAllConnectionsFromScene(Scene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <span class="xref">Scene</span></dt>
+    <dd><p>Scene to remove connections from.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_RemoveConnectionsFromNonGlobalScenes_" data-uid="FishNet.Managing.Scened.SceneManager.RemoveConnectionsFromNonGlobalScenes*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_RemoveConnectionsFromNonGlobalScenes_FishNet_Connection_NetworkConnection___" data-uid="FishNet.Managing.Scened.SceneManager.RemoveConnectionsFromNonGlobalScenes(FishNet.Connection.NetworkConnection[])">
+  RemoveConnectionsFromNonGlobalScenes(NetworkConnection[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes connections from any scene which is not global.
+Exposed for power users, use caution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveConnectionsFromNonGlobalScenes(NetworkConnection[] conns)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conns</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_RemoveConnectionsFromScene_" data-uid="FishNet.Managing.Scened.SceneManager.RemoveConnectionsFromScene*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_RemoveConnectionsFromScene_FishNet_Connection_NetworkConnection___Scene_" data-uid="FishNet.Managing.Scened.SceneManager.RemoveConnectionsFromScene(FishNet.Connection.NetworkConnection[],Scene)">
+  RemoveConnectionsFromScene(NetworkConnection[], Scene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes connections from specified scenes.
+Exposed for power users, use caution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveConnectionsFromScene(NetworkConnection[] conns, Scene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conns</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>[]</dt>
+    <dd><p>Connections to remove.</p>
+</dd>
+    <dt><code>scene</code> <span class="xref">Scene</span></dt>
+    <dd><p>Scene to remove from.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_SetSceneProcessor_" data-uid="FishNet.Managing.Scened.SceneManager.SetSceneProcessor*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_SetSceneProcessor_FishNet_Managing_Scened_SceneProcessorBase_" data-uid="FishNet.Managing.Scened.SceneManager.SetSceneProcessor(FishNet.Managing.Scened.SceneProcessorBase)">
+  SetSceneProcessor(SceneProcessorBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the SceneProcessor to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSceneProcessor(SceneProcessorBase value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="FishNet.Managing.Scened.SceneProcessorBase.html">SceneProcessorBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_UnloadConnectionScenes_" data-uid="FishNet.Managing.Scened.SceneManager.UnloadConnectionScenes*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_UnloadConnectionScenes_FishNet_Connection_NetworkConnection_FishNet_Managing_Scened_SceneUnloadData_" data-uid="FishNet.Managing.Scened.SceneManager.UnloadConnectionScenes(FishNet.Connection.NetworkConnection,FishNet.Managing.Scened.SceneUnloadData)">
+  UnloadConnectionScenes(NetworkConnection, SceneUnloadData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unloads scenes on server and tells a connection to unload them as well. Other connections will not unload this scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnloadConnectionScenes(NetworkConnection connection, SceneUnloadData sceneUnloadData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connection</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd><p>Connection to unload scenes for.</p>
+</dd>
+    <dt><code>sceneUnloadData</code> <a class="xref" href="FishNet.Managing.Scened.SceneUnloadData.html">SceneUnloadData</a></dt>
+    <dd><p>Data about which scenes to unload.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_UnloadConnectionScenes_" data-uid="FishNet.Managing.Scened.SceneManager.UnloadConnectionScenes*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_UnloadConnectionScenes_FishNet_Connection_NetworkConnection___FishNet_Managing_Scened_SceneUnloadData_" data-uid="FishNet.Managing.Scened.SceneManager.UnloadConnectionScenes(FishNet.Connection.NetworkConnection[],FishNet.Managing.Scened.SceneUnloadData)">
+  UnloadConnectionScenes(NetworkConnection[], SceneUnloadData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unloads scenes on server and tells connections to unload them as well. Other connections will not unload this scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnloadConnectionScenes(NetworkConnection[] connections, SceneUnloadData sceneUnloadData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connections</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>[]</dt>
+    <dd><p>Connections to unload scenes for.</p>
+</dd>
+    <dt><code>sceneUnloadData</code> <a class="xref" href="FishNet.Managing.Scened.SceneUnloadData.html">SceneUnloadData</a></dt>
+    <dd><p>Data about which scenes to unload.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_UnloadConnectionScenes_" data-uid="FishNet.Managing.Scened.SceneManager.UnloadConnectionScenes*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_UnloadConnectionScenes_FishNet_Managing_Scened_SceneUnloadData_" data-uid="FishNet.Managing.Scened.SceneManager.UnloadConnectionScenes(FishNet.Managing.Scened.SceneUnloadData)">
+  UnloadConnectionScenes(SceneUnloadData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unloads scenes on server without telling any connections to unload them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnloadConnectionScenes(SceneUnloadData sceneUnloadData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneUnloadData</code> <a class="xref" href="FishNet.Managing.Scened.SceneUnloadData.html">SceneUnloadData</a></dt>
+    <dd><p>Data about which scenes to unload.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneManager_UnloadGlobalScenes_" data-uid="FishNet.Managing.Scened.SceneManager.UnloadGlobalScenes*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_UnloadGlobalScenes_FishNet_Managing_Scened_SceneUnloadData_" data-uid="FishNet.Managing.Scened.SceneManager.UnloadGlobalScenes(FishNet.Managing.Scened.SceneUnloadData)">
+  UnloadGlobalScenes(SceneUnloadData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unloads scenes on the server and for all clients.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnloadGlobalScenes(SceneUnloadData sceneUnloadData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneUnloadData</code> <a class="xref" href="FishNet.Managing.Scened.SceneUnloadData.html">SceneUnloadData</a></dt>
+    <dd><p>Data about which scenes to unload.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_OnActiveSceneSet" data-uid="FishNet.Managing.Scened.SceneManager.OnActiveSceneSet">
+  OnActiveSceneSet
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called after the active scene has been set, immediately after scene loads. This will occur before NetworkBehaviour callbacks run for the scene's objects.
+The boolean will indicate if the scene set active was specified by the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;bool&gt; OnActiveSceneSet</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_OnClientLoadedStartScenes" data-uid="FishNet.Managing.Scened.SceneManager.OnClientLoadedStartScenes">
+  OnClientLoadedStartScenes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a client loads initial scenes after connecting. Boolean will be true if asServer. This will invoke even if the SceneManager is not used when the client completes fully connecting to the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;NetworkConnection, bool&gt; OnClientLoadedStartScenes</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_OnClientPresenceChangeEnd" data-uid="FishNet.Managing.Scened.SceneManager.OnClientPresenceChangeEnd">
+  OnClientPresenceChangeEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a client presence changes within a scene, after the server rebuilds observers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;ClientPresenceChangeEventArgs&gt; OnClientPresenceChangeEnd</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Managing.Scened.ClientPresenceChangeEventArgs.html">ClientPresenceChangeEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_OnClientPresenceChangeStart" data-uid="FishNet.Managing.Scened.SceneManager.OnClientPresenceChangeStart">
+  OnClientPresenceChangeStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a client presence changes within a scene, before the server rebuilds observers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;ClientPresenceChangeEventArgs&gt; OnClientPresenceChangeStart</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Managing.Scened.ClientPresenceChangeEventArgs.html">ClientPresenceChangeEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_OnLoadEnd" data-uid="FishNet.Managing.Scened.SceneManager.OnLoadEnd">
+  OnLoadEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a scene load ends.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;SceneLoadEndEventArgs&gt; OnLoadEnd</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Managing.Scened.SceneLoadEndEventArgs.html">SceneLoadEndEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_OnLoadPercentChange" data-uid="FishNet.Managing.Scened.SceneManager.OnLoadPercentChange">
+  OnLoadPercentChange
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when completion percentage changes while loading a scene. Value is between 0f and 1f, while 1f is 100% done. Can be used for custom progress bars when loading scenes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;SceneLoadPercentEventArgs&gt; OnLoadPercentChange</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Managing.Scened.SceneLoadPercentEventArgs.html">SceneLoadPercentEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_OnLoadStart" data-uid="FishNet.Managing.Scened.SceneManager.OnLoadStart">
+  OnLoadStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a scene load starts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;SceneLoadStartEventArgs&gt; OnLoadStart</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Managing.Scened.SceneLoadStartEventArgs.html">SceneLoadStartEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_OnQueueEnd" data-uid="FishNet.Managing.Scened.SceneManager.OnQueueEnd">
+  OnQueueEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the scene queue is emptied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnQueueEnd</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_OnQueueStart" data-uid="FishNet.Managing.Scened.SceneManager.OnQueueStart">
+  OnQueueStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a scene change queue has begun. This will only call if a scene has succesfully begun to load or unload. The queue may process any number of scene events. For example: if a scene is told to unload while a load is still in progress, then the unload will be placed in the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnQueueStart</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_OnUnloadEnd" data-uid="FishNet.Managing.Scened.SceneManager.OnUnloadEnd">
+  OnUnloadEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a scene unload ends.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;SceneUnloadEndEventArgs&gt; OnUnloadEnd</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Managing.Scened.SceneUnloadEndEventArgs.html">SceneUnloadEndEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Scened_SceneManager_OnUnloadStart" data-uid="FishNet.Managing.Scened.SceneManager.OnUnloadStart">
+  OnUnloadStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a scene unload starts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;SceneUnloadStartEventArgs&gt; OnUnloadStart</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="FishNet.Managing.Scened.SceneUnloadStartEventArgs.html">SceneUnloadStartEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

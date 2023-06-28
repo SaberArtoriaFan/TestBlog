@@ -1,0 +1,1086 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SceneLookupData
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SceneLookupData
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FishNet.Managing.Scened.SceneLookupData">
+
+
+
+  <h1 id="FishNet_Managing_Scened_SceneLookupData" data-uid="FishNet.Managing.Scened.SceneLookupData" class="text-break">
+    Class SceneLookupData
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FishNet.html">FishNet</a>.<a class="xref" href="FishNet.Managing.html">Managing</a>.<a class="xref" href="FishNet.Managing.Scened.html">Scened</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Data container for looking up, loading, or unloading a scene.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SceneLookupData</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SceneLookupData</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData__ctor_" data-uid="FishNet.Managing.Scened.SceneLookupData.#ctor*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData__ctor" data-uid="FishNet.Managing.Scened.SceneLookupData.#ctor">
+  SceneLookupData()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneLookupData()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData__ctor_" data-uid="FishNet.Managing.Scened.SceneLookupData.#ctor*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData__ctor_Scene_" data-uid="FishNet.Managing.Scened.SceneLookupData.#ctor(Scene)">
+  SceneLookupData(Scene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneLookupData(Scene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <span class="xref">Scene</span></dt>
+    <dd><p>Scene to generate from.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData__ctor_" data-uid="FishNet.Managing.Scened.SceneLookupData.#ctor*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData__ctor_System_Int32_" data-uid="FishNet.Managing.Scened.SceneLookupData.#ctor(System.Int32)">
+  SceneLookupData(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneLookupData(int handle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Scene handle to generate from.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData__ctor_" data-uid="FishNet.Managing.Scened.SceneLookupData.#ctor*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData__ctor_System_Int32_System_String_" data-uid="FishNet.Managing.Scened.SceneLookupData.#ctor(System.Int32,System.String)">
+  SceneLookupData(int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneLookupData(int handle, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Scene handle to generate from.</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name to generate from if handle is 0.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData__ctor_" data-uid="FishNet.Managing.Scened.SceneLookupData.#ctor*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData__ctor_System_String_" data-uid="FishNet.Managing.Scened.SceneLookupData.#ctor(System.String)">
+  SceneLookupData(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneLookupData(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Scene name to generate from.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_Handle" data-uid="FishNet.Managing.Scened.SceneLookupData.Handle">
+  Handle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handle of the scene. If value is 0, then handle is not used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Handle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_Name" data-uid="FishNet.Managing.Scened.SceneLookupData.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name of the scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_IsValid_" data-uid="FishNet.Managing.Scened.SceneLookupData.IsValid*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_IsValid" data-uid="FishNet.Managing.Scened.SceneLookupData.IsValid">
+  IsValid
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns if this data is valid for use.
+Being valid does not mean that the scene exist, rather that there is enough data to try and lookup a scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_NameOnly_" data-uid="FishNet.Managing.Scened.SceneLookupData.NameOnly*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_NameOnly" data-uid="FishNet.Managing.Scened.SceneLookupData.NameOnly">
+  NameOnly
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the scene name without a directory path should one exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NameOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_CreateData_" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_CreateData_Scene_" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData(Scene)">
+  CreateData(Scene)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a new SceneLookupData.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneLookupData CreateData(Scene scene)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scene</code> <span class="xref">Scene</span></dt>
+    <dd><p>Scene to create from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Scened.SceneLookupData.html">SceneLookupData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_CreateData_" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_CreateData_Scene___" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData(Scene[])">
+  CreateData(Scene[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a SceneLookupData collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneLookupData[] CreateData(Scene[] scenes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scenes</code> <span class="xref">Scene</span>[]</dt>
+    <dd><p>Scenes to create from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Scened.SceneLookupData.html">SceneLookupData</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_CreateData_" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_CreateData_System_Collections_Generic_List_Scene__" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData(System.Collections.Generic.List{Scene})">
+  CreateData(List&lt;Scene&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a SceneLookupData collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneLookupData[] CreateData(List&lt;Scene&gt; scenes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scenes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Scene</span>&gt;</dt>
+    <dd><p>Scenes to create from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Scened.SceneLookupData.html">SceneLookupData</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_CreateData_" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_CreateData_System_Collections_Generic_List_System_Int32__" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData(System.Collections.Generic.List{System.Int32})">
+  CreateData(List&lt;int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a SceneLookupData collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneLookupData[] CreateData(List&lt;int&gt; handles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>Scene handles to create from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Scened.SceneLookupData.html">SceneLookupData</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_CreateData_" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_CreateData_System_Collections_Generic_List_System_String__" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData(System.Collections.Generic.List{System.String})">
+  CreateData(List&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a SceneLookupData collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneLookupData[] CreateData(List&lt;string&gt; names)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>names</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Scene names to create from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Scened.SceneLookupData.html">SceneLookupData</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_CreateData_" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_CreateData_System_Int32_" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData(System.Int32)">
+  CreateData(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a new SceneLookupData.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneLookupData CreateData(int handle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Scened.SceneLookupData.html">SceneLookupData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_CreateData_" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_CreateData_System_Int32___" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData(System.Int32[])">
+  CreateData(int[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a SceneLookupData collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneLookupData[] CreateData(int[] handles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>Scene handles to create from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Scened.SceneLookupData.html">SceneLookupData</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_CreateData_" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_CreateData_System_String_" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData(System.String)">
+  CreateData(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a new SceneLookupData.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneLookupData CreateData(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Scened.SceneLookupData.html">SceneLookupData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_CreateData_" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_CreateData_System_String___" data-uid="FishNet.Managing.Scened.SceneLookupData.CreateData(System.String[])">
+  CreateData(string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a SceneLookupData collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SceneLookupData[] CreateData(string[] names)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>names</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Scene names to create from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Scened.SceneLookupData.html">SceneLookupData</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_Equals_" data-uid="FishNet.Managing.Scened.SceneLookupData.Equals*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_Equals_FishNet_Managing_Scened_SceneLookupData_" data-uid="FishNet.Managing.Scened.SceneLookupData.Equals(FishNet.Managing.Scened.SceneLookupData)">
+  Equals(SceneLookupData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(SceneLookupData sld)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sld</code> <a class="xref" href="FishNet.Managing.Scened.SceneLookupData.html">SceneLookupData</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_Equals_" data-uid="FishNet.Managing.Scened.SceneLookupData.Equals*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_Equals_System_Object_" data-uid="FishNet.Managing.Scened.SceneLookupData.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified object  is equal to the current object; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_GetHashCode_" data-uid="FishNet.Managing.Scened.SceneLookupData.GetHashCode*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_GetHashCode" data-uid="FishNet.Managing.Scened.SceneLookupData.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_GetScene_" data-uid="FishNet.Managing.Scened.SceneLookupData.GetScene*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_GetScene_System_Boolean__" data-uid="FishNet.Managing.Scened.SceneLookupData.GetScene(System.Boolean@)">
+  GetScene(out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the first scene found using Handle or Name, preferring Handle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scene GetScene(out bool foundByHandle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>foundByHandle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if scene was found by handle. Handle is always checked first.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Scene</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_ToString_" data-uid="FishNet.Managing.Scened.SceneLookupData.ToString*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_ToString" data-uid="FishNet.Managing.Scened.SceneLookupData.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that represents the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_op_Equality_" data-uid="FishNet.Managing.Scened.SceneLookupData.op_Equality*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_op_Equality_FishNet_Managing_Scened_SceneLookupData_FishNet_Managing_Scened_SceneLookupData_" data-uid="FishNet.Managing.Scened.SceneLookupData.op_Equality(FishNet.Managing.Scened.SceneLookupData,FishNet.Managing.Scened.SceneLookupData)">
+  operator ==(SceneLookupData, SceneLookupData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(SceneLookupData sldA, SceneLookupData sldB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sldA</code> <a class="xref" href="FishNet.Managing.Scened.SceneLookupData.html">SceneLookupData</a></dt>
+    <dd></dd>
+    <dt><code>sldB</code> <a class="xref" href="FishNet.Managing.Scened.SceneLookupData.html">SceneLookupData</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_Scened_SceneLookupData_op_Inequality_" data-uid="FishNet.Managing.Scened.SceneLookupData.op_Inequality*"></a>
+
+  <h3 id="FishNet_Managing_Scened_SceneLookupData_op_Inequality_FishNet_Managing_Scened_SceneLookupData_FishNet_Managing_Scened_SceneLookupData_" data-uid="FishNet.Managing.Scened.SceneLookupData.op_Inequality(FishNet.Managing.Scened.SceneLookupData,FishNet.Managing.Scened.SceneLookupData)">
+  operator !=(SceneLookupData, SceneLookupData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(SceneLookupData sldA, SceneLookupData sldB)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sldA</code> <a class="xref" href="FishNet.Managing.Scened.SceneLookupData.html">SceneLookupData</a></dt>
+    <dd></dd>
+    <dt><code>sldB</code> <a class="xref" href="FishNet.Managing.Scened.SceneLookupData.html">SceneLookupData</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

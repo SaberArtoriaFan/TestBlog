@@ -1,0 +1,865 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MeshGenerator
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MeshGenerator
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.Unity.MeshGenerator">
+
+
+
+  <h1 id="Spine_Unity_MeshGenerator" data-uid="Spine.Unity.MeshGenerator" class="text-break">
+    Class MeshGenerator
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a>.<a class="xref" href="Spine.Unity.html">Unity</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Holds several methods to prepare and generate a UnityEngine mesh based on a skeleton. Contains buffers needed to perform the operation, and serializes settings for mesh generation.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class MeshGenerator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MeshGenerator</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Spine_Unity_MeshGenerator__ctor_" data-uid="Spine.Unity.MeshGenerator.#ctor*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator__ctor" data-uid="Spine.Unity.MeshGenerator.#ctor">
+  MeshGenerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshGenerator()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Spine_Unity_MeshGenerator_settings" data-uid="Spine.Unity.MeshGenerator.settings">
+  settings
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshGenerator.Settings settings</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.MeshGenerator.html">MeshGenerator</a>.<a class="xref" href="Spine.Unity.MeshGenerator.Settings.html">Settings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Spine_Unity_MeshGenerator_Buffers_" data-uid="Spine.Unity.MeshGenerator.Buffers*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_Buffers" data-uid="Spine.Unity.MeshGenerator.Buffers">
+  Buffers
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A set of mesh arrays whose values are modifiable by the user. Modify these values before they are passed to the UnityEngine mesh object in order to see the effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MeshGeneratorBuffers Buffers { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.MeshGeneratorBuffers.html">MeshGeneratorBuffers</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_VertexCount_" data-uid="Spine.Unity.MeshGenerator.VertexCount*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_VertexCount" data-uid="Spine.Unity.MeshGenerator.VertexCount">
+  VertexCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VertexCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_Unity_MeshGenerator_AddSubmesh_" data-uid="Spine.Unity.MeshGenerator.AddSubmesh*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_AddSubmesh_Spine_Unity_SubmeshInstruction_System_Boolean_" data-uid="Spine.Unity.MeshGenerator.AddSubmesh(Spine.Unity.SubmeshInstruction,System.Boolean)">
+  AddSubmesh(SubmeshInstruction, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSubmesh(SubmeshInstruction instruction, bool updateTriangles = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instruction</code> <a class="xref" href="Spine.Unity.SubmeshInstruction.html">SubmeshInstruction</a></dt>
+    <dd></dd>
+    <dt><code>updateTriangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_Begin_" data-uid="Spine.Unity.MeshGenerator.Begin*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_Begin" data-uid="Spine.Unity.MeshGenerator.Begin">
+  Begin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Begin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_BuildMesh_" data-uid="Spine.Unity.MeshGenerator.BuildMesh*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_BuildMesh_Spine_Unity_SkeletonRendererInstruction_System_Boolean_" data-uid="Spine.Unity.MeshGenerator.BuildMesh(Spine.Unity.SkeletonRendererInstruction,System.Boolean)">
+  BuildMesh(SkeletonRendererInstruction, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BuildMesh(SkeletonRendererInstruction instruction, bool updateTriangles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instruction</code> <a class="xref" href="Spine.Unity.SkeletonRendererInstruction.html">SkeletonRendererInstruction</a></dt>
+    <dd></dd>
+    <dt><code>updateTriangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_BuildMeshWithArrays_" data-uid="Spine.Unity.MeshGenerator.BuildMeshWithArrays*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_BuildMeshWithArrays_Spine_Unity_SkeletonRendererInstruction_System_Boolean_" data-uid="Spine.Unity.MeshGenerator.BuildMeshWithArrays(Spine.Unity.SkeletonRendererInstruction,System.Boolean)">
+  BuildMeshWithArrays(SkeletonRendererInstruction, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BuildMeshWithArrays(SkeletonRendererInstruction instruction, bool updateTriangles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instruction</code> <a class="xref" href="Spine.Unity.SkeletonRendererInstruction.html">SkeletonRendererInstruction</a></dt>
+    <dd></dd>
+    <dt><code>updateTriangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_EnsureVertexCapacity_" data-uid="Spine.Unity.MeshGenerator.EnsureVertexCapacity*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_EnsureVertexCapacity_System_Int32_System_Boolean_System_Boolean_System_Boolean_" data-uid="Spine.Unity.MeshGenerator.EnsureVertexCapacity(System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+  EnsureVertexCapacity(int, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnsureVertexCapacity(int minimumVertexCount, bool inlcudeTintBlack = false, bool includeTangents = false, bool includeNormals = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>minimumVertexCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>inlcudeTintBlack</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>includeTangents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>includeNormals</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_FillLateVertexData_" data-uid="Spine.Unity.MeshGenerator.FillLateVertexData*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_FillLateVertexData_Mesh_" data-uid="Spine.Unity.MeshGenerator.FillLateVertexData(Mesh)">
+  FillLateVertexData(Mesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillLateVertexData(Mesh mesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mesh</code> <span class="xref">Mesh</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_FillMeshLocal_" data-uid="Spine.Unity.MeshGenerator.FillMeshLocal*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_FillMeshLocal_Mesh_Spine_MeshAttachment_Spine_SkeletonData_" data-uid="Spine.Unity.MeshGenerator.FillMeshLocal(Mesh,Spine.MeshAttachment,Spine.SkeletonData)">
+  FillMeshLocal(Mesh, MeshAttachment, SkeletonData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FillMeshLocal(Mesh mesh, MeshAttachment meshAttachment, SkeletonData skeletonData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mesh</code> <span class="xref">Mesh</span></dt>
+    <dd></dd>
+    <dt><code>meshAttachment</code> <a class="xref" href="Spine.MeshAttachment.html">MeshAttachment</a></dt>
+    <dd></dd>
+    <dt><code>skeletonData</code> <a class="xref" href="Spine.SkeletonData.html">SkeletonData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_FillMeshLocal_" data-uid="Spine.Unity.MeshGenerator.FillMeshLocal*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_FillMeshLocal_Mesh_Spine_RegionAttachment_" data-uid="Spine.Unity.MeshGenerator.FillMeshLocal(Mesh,Spine.RegionAttachment)">
+  FillMeshLocal(Mesh, RegionAttachment)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fills mesh vertex data to render a RegionAttachment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FillMeshLocal(Mesh mesh, RegionAttachment regionAttachment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mesh</code> <span class="xref">Mesh</span></dt>
+    <dd></dd>
+    <dt><code>regionAttachment</code> <a class="xref" href="Spine.RegionAttachment.html">RegionAttachment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_FillTriangles_" data-uid="Spine.Unity.MeshGenerator.FillTriangles*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_FillTriangles_Mesh_" data-uid="Spine.Unity.MeshGenerator.FillTriangles(Mesh)">
+  FillTriangles(Mesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillTriangles(Mesh mesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mesh</code> <span class="xref">Mesh</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_FillVertexData_" data-uid="Spine.Unity.MeshGenerator.FillVertexData*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_FillVertexData_Mesh_" data-uid="Spine.Unity.MeshGenerator.FillVertexData(Mesh)">
+  FillVertexData(Mesh)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillVertexData(Mesh mesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mesh</code> <span class="xref">Mesh</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_GenerateSingleSubmeshInstruction_" data-uid="Spine.Unity.MeshGenerator.GenerateSingleSubmeshInstruction*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_GenerateSingleSubmeshInstruction_Spine_Unity_SkeletonRendererInstruction_Spine_Skeleton_Material_" data-uid="Spine.Unity.MeshGenerator.GenerateSingleSubmeshInstruction(Spine.Unity.SkeletonRendererInstruction,Spine.Skeleton,Material)">
+  GenerateSingleSubmeshInstruction(SkeletonRendererInstruction, Skeleton, Material)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A specialized variant of <a class="xref" href="Spine.Unity.MeshGenerator.html#Spine_Unity_MeshGenerator_GenerateSkeletonRendererInstruction_Spine_Unity_SkeletonRendererInstruction_Spine_Skeleton_System_Collections_Generic_Dictionary_Spine_Slot_Material__System_Collections_Generic_List_Spine_Slot__System_Boolean_System_Boolean_">GenerateSkeletonRendererInstruction(SkeletonRendererInstruction, Skeleton, Dictionary&lt;Slot, Material&gt;, List&lt;Slot&gt;, bool, bool)</a>.
+Generates renderer instructions using a single submesh, using only a single material and texture.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GenerateSingleSubmeshInstruction(SkeletonRendererInstruction instructionOutput, Skeleton skeleton, Material material)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instructionOutput</code> <a class="xref" href="Spine.Unity.SkeletonRendererInstruction.html">SkeletonRendererInstruction</a></dt>
+    <dd><p>The resulting instructions.</p>
+</dd>
+    <dt><code>skeleton</code> <a class="xref" href="Spine.Skeleton.html">Skeleton</a></dt>
+    <dd><p>The skeleton to generate renderer instructions for.</p>
+</dd>
+    <dt><code>material</code> <span class="xref">Material</span></dt>
+    <dd><p>Material to be set at the renderer instruction. When null, the last attachment
+in the draw order list is assigned as the instruction's material.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_GenerateSkeletonRendererInstruction_" data-uid="Spine.Unity.MeshGenerator.GenerateSkeletonRendererInstruction*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_GenerateSkeletonRendererInstruction_Spine_Unity_SkeletonRendererInstruction_Spine_Skeleton_System_Collections_Generic_Dictionary_Spine_Slot_Material__System_Collections_Generic_List_Spine_Slot__System_Boolean_System_Boolean_" data-uid="Spine.Unity.MeshGenerator.GenerateSkeletonRendererInstruction(Spine.Unity.SkeletonRendererInstruction,Spine.Skeleton,System.Collections.Generic.Dictionary{Spine.Slot,Material},System.Collections.Generic.List{Spine.Slot},System.Boolean,System.Boolean)">
+  GenerateSkeletonRendererInstruction(SkeletonRendererInstruction, Skeleton, Dictionary&lt;Slot, Material&gt;, List&lt;Slot&gt;, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GenerateSkeletonRendererInstruction(SkeletonRendererInstruction instructionOutput, Skeleton skeleton, Dictionary&lt;Slot, Material&gt; customSlotMaterials, List&lt;Slot&gt; separatorSlots, bool generateMeshOverride, bool immutableTriangles = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instructionOutput</code> <a class="xref" href="Spine.Unity.SkeletonRendererInstruction.html">SkeletonRendererInstruction</a></dt>
+    <dd></dd>
+    <dt><code>skeleton</code> <a class="xref" href="Spine.Skeleton.html">Skeleton</a></dt>
+    <dd></dd>
+    <dt><code>customSlotMaterials</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="Spine.Slot.html">Slot</a>, <span class="xref">Material</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>separatorSlots</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Spine.Slot.html">Slot</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>generateMeshOverride</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>immutableTriangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_RequiresMultipleSubmeshesByDrawOrder_" data-uid="Spine.Unity.MeshGenerator.RequiresMultipleSubmeshesByDrawOrder*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_RequiresMultipleSubmeshesByDrawOrder_Spine_Skeleton_" data-uid="Spine.Unity.MeshGenerator.RequiresMultipleSubmeshesByDrawOrder(Spine.Skeleton)">
+  RequiresMultipleSubmeshesByDrawOrder(Skeleton)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RequiresMultipleSubmeshesByDrawOrder(Skeleton skeleton)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skeleton</code> <a class="xref" href="Spine.Skeleton.html">Skeleton</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_ScaleVertexData_" data-uid="Spine.Unity.MeshGenerator.ScaleVertexData*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_ScaleVertexData_System_Single_" data-uid="Spine.Unity.MeshGenerator.ScaleVertexData(System.Single)">
+  ScaleVertexData(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaleVertexData(float scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_TrimExcess_" data-uid="Spine.Unity.MeshGenerator.TrimExcess*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_TrimExcess" data-uid="Spine.Unity.MeshGenerator.TrimExcess">
+  TrimExcess()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Trims internal buffers to reduce the resulting mesh data stream size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TrimExcess()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_MeshGenerator_TryReplaceMaterials_" data-uid="Spine.Unity.MeshGenerator.TryReplaceMaterials*"></a>
+
+  <h3 id="Spine_Unity_MeshGenerator_TryReplaceMaterials_Spine_ExposedList_Spine_Unity_SubmeshInstruction__System_Collections_Generic_Dictionary_Material_Material__" data-uid="Spine.Unity.MeshGenerator.TryReplaceMaterials(Spine.ExposedList{Spine.Unity.SubmeshInstruction},System.Collections.Generic.Dictionary{Material,Material})">
+  TryReplaceMaterials(ExposedList&lt;SubmeshInstruction&gt;, Dictionary&lt;Material, Material&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TryReplaceMaterials(ExposedList&lt;SubmeshInstruction&gt; workingSubmeshInstructions, Dictionary&lt;Material, Material&gt; customMaterialOverride)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>workingSubmeshInstructions</code> <a class="xref" href="Spine.ExposedList-1.html">ExposedList</a>&lt;<a class="xref" href="Spine.Unity.SubmeshInstruction.html">SubmeshInstruction</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>customMaterialOverride</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<span class="xref">Material</span>, <span class="xref">Material</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

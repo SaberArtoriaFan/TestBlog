@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>如何创建一个新技能 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="如何创建一个新技能 ">
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../public/main.js'
+    import { init } from './../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="如何创建一个新技能">如何创建一个新技能</h1>
+
+<h2 id="1明确需求">1.明确需求</h2>
+<p>首先你需要知道你要制作的是一个怎样的技能，类型时<strong>主动</strong>还是<strong>被动</strong>；这决定你创建的类是基于<strong>ActiveSkill</strong>还是<strong>PassiveSkill</strong>；<br>
+如果是主动技能，那么他的<strong>目标类型</strong>为哪一种（<em>point</em>,<em>unit</em>,<em>immediate</em>）;<br>
+并且主要依据是那个<strong>事件接口</strong>，例如：一个<em>重击</em>被动技能，那么就是在对方受到技能拥有者攻击伤害后判定是否需要给他加一个<em>眩晕</em>Buff，那么需要调用绑定的事件接口就是<em>攻击之后</em></p>
+<pre><code class="lang-CSharp">            attackAfterEvent = eventSystem.GetEvent&lt;AttackOrgan, BodyOrgan, Damage&gt;(EventSystem.EventParameter.UnitAttackAfter);
+</code></pre>
+<p>给该事件绑定上你的函数</p>
+<pre><code class="lang-CSharp">            attackAfterEvent.AddAction(Trigger);
+</code></pre>
+<h2 id="2与excel连通">2.与Excel连通</h2>
+<p>首先将Excel中目标技能的<strong>技能资源名</strong>改成新技能的<strong>类名</strong><br>
+将你需要用到的参数设置正确，例如：施放对象，生效人数等<br>
+重写新技能中的<strong>InitData</strong>方法（记得保留base.）</p>
+<pre><code class="lang-CSharp">        public virtual void InitData(SkillActive skillActive)
+</code></pre>
+<p>获取你需要的数据，这样就实现了由Excel表控制一些参数的修改</p>
+<h2 id="3使用模板">3.使用模板</h2>
+<p>当然你也可以直接使用框架中封装好的一些模板，或者新增模板，例如：<strong>AttackAfterPassiveSkill</strong>，前文提到的<strong>重击</strong>被动技能，就可以直接在Excel表重击技能那一行中修改<strong>技能资源名</strong>为<strong>AttackAfterPassiveSkill</strong>即可。\</p>
+<p>更多请查看模板技能了解</p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1877 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NetworkManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NetworkManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FishNet.Managing.NetworkManager">
+
+
+
+  <h1 id="FishNet_Managing_NetworkManager" data-uid="FishNet.Managing.NetworkManager" class="text-break">
+    Class NetworkManager
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FishNet.html">FishNet</a>.<a class="xref" href="FishNet.Managing.html">Managing</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Acts as a container for all things related to your networking session.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class NetworkManager : MonoBehaviour, MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">NetworkManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">MonoBehaviour</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FishNet_Managing_NetworkManager_Authenticator_" data-uid="FishNet.Managing.NetworkManager.Authenticator*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_Authenticator" data-uid="FishNet.Managing.NetworkManager.Authenticator">
+  Authenticator
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Authenticator for this NetworkManager. May be null if no Authenticator is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ServerManager.GetAuthenticator or ServerManager.SetAuthenticator instead.&quot;)]
+public Authenticator Authenticator { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Authenticating.Authenticator.html">Authenticator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_ClientManager_" data-uid="FishNet.Managing.NetworkManager.ClientManager*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_ClientManager" data-uid="FishNet.Managing.NetworkManager.ClientManager">
+  ClientManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ClientManager for this NetworkManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClientManager ClientManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Client.ClientManager.html">ClientManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_DebugManager_" data-uid="FishNet.Managing.NetworkManager.DebugManager*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_DebugManager" data-uid="FishNet.Managing.NetworkManager.DebugManager">
+  DebugManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>DebugManager for this NetworkManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DebugManager DebugManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Debugging.DebugManager.html">DebugManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_EmptyConnection_" data-uid="FishNet.Managing.NetworkManager.EmptyConnection*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_EmptyConnection" data-uid="FishNet.Managing.NetworkManager.EmptyConnection">
+  EmptyConnection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>An empty connection reference. Used when a connection cannot be found to prevent object creation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static NetworkConnection EmptyConnection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_Initialized_" data-uid="FishNet.Managing.NetworkManager.Initialized*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_Initialized" data-uid="FishNet.Managing.NetworkManager.Initialized">
+  Initialized
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if this instance of the NetworkManager is initialized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Initialized { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_Instances_" data-uid="FishNet.Managing.NetworkManager.Instances*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_Instances" data-uid="FishNet.Managing.NetworkManager.Instances">
+  Instances
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Currently initialized NetworkManagers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;NetworkManager&gt; Instances { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_IsClient_" data-uid="FishNet.Managing.NetworkManager.IsClient*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_IsClient" data-uid="FishNet.Managing.NetworkManager.IsClient">
+  IsClient
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if the client is active and authenticated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsClient { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_IsClientOnly_" data-uid="FishNet.Managing.NetworkManager.IsClientOnly*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_IsClientOnly" data-uid="FishNet.Managing.NetworkManager.IsClientOnly">
+  IsClientOnly
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if only the client is active and authenticated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsClientOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_IsHost_" data-uid="FishNet.Managing.NetworkManager.IsHost*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_IsHost" data-uid="FishNet.Managing.NetworkManager.IsHost">
+  IsHost
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if client and server are active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHost { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_IsOffline_" data-uid="FishNet.Managing.NetworkManager.IsOffline*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_IsOffline" data-uid="FishNet.Managing.NetworkManager.IsOffline">
+  IsOffline
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if client nor server are active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOffline { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_IsServer_" data-uid="FishNet.Managing.NetworkManager.IsServer*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_IsServer" data-uid="FishNet.Managing.NetworkManager.IsServer">
+  IsServer
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if server is active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsServer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_IsServerOnly_" data-uid="FishNet.Managing.NetworkManager.IsServerOnly*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_IsServerOnly" data-uid="FishNet.Managing.NetworkManager.IsServerOnly">
+  IsServerOnly
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if only the server is active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsServerOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_ObserverManager_" data-uid="FishNet.Managing.NetworkManager.ObserverManager*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_ObserverManager" data-uid="FishNet.Managing.NetworkManager.ObserverManager">
+  ObserverManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ObserverManager for this NetworkManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObserverManager ObserverManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Observing.ObserverManager.html">ObserverManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_RollbackManager_" data-uid="FishNet.Managing.NetworkManager.RollbackManager*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_RollbackManager" data-uid="FishNet.Managing.NetworkManager.RollbackManager">
+  RollbackManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>RollbackManager for this NetworkManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RollbackManager RollbackManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Component.ColliderRollback.RollbackManager.html">RollbackManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_RuntimeSpawnablePrefabs_" data-uid="FishNet.Managing.NetworkManager.RuntimeSpawnablePrefabs*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_RuntimeSpawnablePrefabs" data-uid="FishNet.Managing.NetworkManager.RuntimeSpawnablePrefabs">
+  RuntimeSpawnablePrefabs
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Collection to use for spawnable objects added at runtime, such as addressables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;ushort, PrefabObjects&gt; RuntimeSpawnablePrefabs { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>, <a class="xref" href="FishNet.Managing.Object.PrefabObjects.html">PrefabObjects</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_SceneManager_" data-uid="FishNet.Managing.NetworkManager.SceneManager*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_SceneManager" data-uid="FishNet.Managing.NetworkManager.SceneManager">
+  SceneManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>SceneManager for this NetworkManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneManager SceneManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Scened.SceneManager.html">SceneManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_ServerManager_" data-uid="FishNet.Managing.NetworkManager.ServerManager*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_ServerManager" data-uid="FishNet.Managing.NetworkManager.ServerManager">
+  ServerManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ServerManager for this NetworkManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServerManager ServerManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Server.ServerManager.html">ServerManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_SpawnablePrefabs_" data-uid="FishNet.Managing.NetworkManager.SpawnablePrefabs*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_SpawnablePrefabs" data-uid="FishNet.Managing.NetworkManager.SpawnablePrefabs">
+  SpawnablePrefabs
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Collection to use for spawnable objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrefabObjects SpawnablePrefabs { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Object.PrefabObjects.html">PrefabObjects</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_StatisticsManager_" data-uid="FishNet.Managing.NetworkManager.StatisticsManager*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_StatisticsManager" data-uid="FishNet.Managing.NetworkManager.StatisticsManager">
+  StatisticsManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>StatisticsManager for this NetworkManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StatisticsManager StatisticsManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Statistic.StatisticsManager.html">StatisticsManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_TimeManager_" data-uid="FishNet.Managing.NetworkManager.TimeManager*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_TimeManager" data-uid="FishNet.Managing.NetworkManager.TimeManager">
+  TimeManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TimeManager for this NetworkManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeManager TimeManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Timing.TimeManager.html">TimeManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_TransportManager_" data-uid="FishNet.Managing.NetworkManager.TransportManager*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_TransportManager" data-uid="FishNet.Managing.NetworkManager.TransportManager">
+  TransportManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>TransportManager for this NetworkManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransportManager TransportManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Transporting.TransportManager.html">TransportManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FishNet_Managing_NetworkManager_CanLog_" data-uid="FishNet.Managing.NetworkManager.CanLog*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_CanLog_FishNet_Managing_Logging_LoggingType_" data-uid="FishNet.Managing.NetworkManager.CanLog(FishNet.Managing.Logging.LoggingType)">
+  CanLog(LoggingType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if can log for loggingType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanLog(LoggingType loggingType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>loggingType</code> <a class="xref" href="FishNet.Managing.Logging.LoggingType.html">LoggingType</a></dt>
+    <dd><p>Type of logging being filtered.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_GetInstance_" data-uid="FishNet.Managing.NetworkManager.GetInstance*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_GetInstance__1_System_Boolean_" data-uid="FishNet.Managing.NetworkManager.GetInstance``1(System.Boolean)">
+  GetInstance&lt;T&gt;(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns class of type if found within CodegenBase classes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetInstance&lt;T&gt;(bool warn = true) where T : UnityEngine.Component</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>warn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to warn if component is not registered.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_GetPooledInstantiated_" data-uid="FishNet.Managing.NetworkManager.GetPooledInstantiated*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_GetPooledInstantiated_FishNet_Object_NetworkObject_System_Boolean_" data-uid="FishNet.Managing.NetworkManager.GetPooledInstantiated(FishNet.Object.NetworkObject,System.Boolean)">
+  GetPooledInstantiated(NetworkObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an instantiated copy of prefab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkObject GetPooledInstantiated(NetworkObject prefab, bool asServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefab</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+    <dt><code>asServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_GetPooledInstantiated_" data-uid="FishNet.Managing.NetworkManager.GetPooledInstantiated*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_GetPooledInstantiated_FishNet_Object_NetworkObject_System_UInt16_System_Boolean_" data-uid="FishNet.Managing.NetworkManager.GetPooledInstantiated(FishNet.Object.NetworkObject,System.UInt16,System.Boolean)">
+  GetPooledInstantiated(NetworkObject, ushort, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an instantiated copy of prefab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkObject GetPooledInstantiated(NetworkObject prefab, ushort collectionId, bool asServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefab</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+    <dt><code>collectionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>asServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_GetPooledInstantiated_" data-uid="FishNet.Managing.NetworkManager.GetPooledInstantiated*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_GetPooledInstantiated_GameObject_System_Boolean_" data-uid="FishNet.Managing.NetworkManager.GetPooledInstantiated(GameObject,System.Boolean)">
+  GetPooledInstantiated(GameObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an instantiated copy of prefab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkObject GetPooledInstantiated(GameObject prefab, bool asServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefab</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+    <dt><code>asServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_GetPooledInstantiated_" data-uid="FishNet.Managing.NetworkManager.GetPooledInstantiated*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_GetPooledInstantiated_GameObject_System_UInt16_System_Boolean_" data-uid="FishNet.Managing.NetworkManager.GetPooledInstantiated(GameObject,System.UInt16,System.Boolean)">
+  GetPooledInstantiated(GameObject, ushort, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an instantiated copy of prefab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkObject GetPooledInstantiated(GameObject prefab, ushort collectionId, bool asServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefab</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+    <dt><code>collectionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>asServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_GetPooledInstantiated_" data-uid="FishNet.Managing.NetworkManager.GetPooledInstantiated*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_GetPooledInstantiated_System_Int32_System_Boolean_" data-uid="FishNet.Managing.NetworkManager.GetPooledInstantiated(System.Int32,System.Boolean)">
+  GetPooledInstantiated(int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an instantiated object that has prefabId.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkObject GetPooledInstantiated(int prefabId, bool asServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefabId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>asServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_GetPooledInstantiated_" data-uid="FishNet.Managing.NetworkManager.GetPooledInstantiated*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_GetPooledInstantiated_System_Int32_System_UInt16_System_Boolean_" data-uid="FishNet.Managing.NetworkManager.GetPooledInstantiated(System.Int32,System.UInt16,System.Boolean)">
+  GetPooledInstantiated(int, ushort, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an instantiated object that has prefabId.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkObject GetPooledInstantiated(int prefabId, ushort collectionId, bool asServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefabId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>collectionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+    <dt><code>asServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_GetPrefab_" data-uid="FishNet.Managing.NetworkManager.GetPrefab*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_GetPrefab_System_Int32_System_Boolean_" data-uid="FishNet.Managing.NetworkManager.GetPrefab(System.Int32,System.Boolean)">
+  GetPrefab(int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a prefab with prefabId.
+This method will bypass object pooling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkObject GetPrefab(int prefabId, bool asServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefabId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>PrefabId to get.</p>
+</dd>
+    <dt><code>asServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if getting the prefab asServer.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_GetPrefabIndex_" data-uid="FishNet.Managing.NetworkManager.GetPrefabIndex*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_GetPrefabIndex_GameObject_System_Boolean_" data-uid="FishNet.Managing.NetworkManager.GetPrefabIndex(GameObject,System.Boolean)">
+  GetPrefabIndex(GameObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the index a prefab uses. Can be used in conjuction with GetPrefab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPrefabIndex(GameObject prefab, bool asServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefab</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+    <dt><code>asServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if to get from the server collection.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Returns index if found, and -1 if not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_GetPrefabObjects_" data-uid="FishNet.Managing.NetworkManager.GetPrefabObjects*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_GetPrefabObjects__1_System_UInt16_System_Boolean_" data-uid="FishNet.Managing.NetworkManager.GetPrefabObjects``1(System.UInt16,System.Boolean)">
+  GetPrefabObjects&lt;T&gt;(ushort, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the PrefabObjects to use for spawnableCollectionId.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PrefabObjects GetPrefabObjects&lt;T&gt;(ushort spawnableCollectionId, bool createIfMissing) where T : PrefabObjects</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spawnableCollectionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>Id to use. 0 will return the configured SpawnablePrefabs.</p>
+</dd>
+    <dt><code>createIfMissing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to create and assign a PrefabObjects if missing for the collectionId.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.Object.PrefabObjects.html">PrefabObjects</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type of PrefabObjects to return. This is also used to create an instance of type when createIfMissing is true.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_HasInstance_" data-uid="FishNet.Managing.NetworkManager.HasInstance*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_HasInstance__1" data-uid="FishNet.Managing.NetworkManager.HasInstance``1">
+  HasInstance&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns if an instance exists for type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasInstance&lt;T&gt;() where T : UnityEngine.Component</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_Log_" data-uid="FishNet.Managing.NetworkManager.Log*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_Log_FishNet_Managing_Logging_LoggingType_System_String_" data-uid="FishNet.Managing.NetworkManager.Log(FishNet.Managing.Logging.LoggingType,System.String)">
+  Log(LoggingType, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs a log using the loggingType, should logging settings permit it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Log(LoggingType loggingType, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>loggingType</code> <a class="xref" href="FishNet.Managing.Logging.LoggingType.html">LoggingType</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_Log_" data-uid="FishNet.Managing.NetworkManager.Log*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_Log_System_String_" data-uid="FishNet.Managing.NetworkManager.Log(System.String)">
+  Log(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs a common log, should logging settings permit it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Log(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_LogError_" data-uid="FishNet.Managing.NetworkManager.LogError*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_LogError_System_String_" data-uid="FishNet.Managing.NetworkManager.LogError(System.String)">
+  LogError(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs an error log, should logging settings permit it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LogError(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_LogWarning_" data-uid="FishNet.Managing.NetworkManager.LogWarning*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_LogWarning_System_String_" data-uid="FishNet.Managing.NetworkManager.LogWarning(System.String)">
+  LogWarning(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs a warning log, should logging settings permit it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LogWarning(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_RegisterInstance_" data-uid="FishNet.Managing.NetworkManager.RegisterInstance*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_RegisterInstance__1___0_System_Boolean_" data-uid="FishNet.Managing.NetworkManager.RegisterInstance``1(``0,System.Boolean)">
+  RegisterInstance&lt;T&gt;(T, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Registers a new component to this NetworkManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterInstance&lt;T&gt;(T component, bool replace = true) where T : UnityEngine.Component</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>component</code> <span class="xref">T</span></dt>
+    <dd><p>Reference of the component being registered.</p>
+</dd>
+    <dt><code>replace</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to replace existing references.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type to register.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_RegisterInvokeOnInstance_" data-uid="FishNet.Managing.NetworkManager.RegisterInvokeOnInstance*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_RegisterInvokeOnInstance__1_System_Action_UnityEngine_Component__" data-uid="FishNet.Managing.NetworkManager.RegisterInvokeOnInstance``1(System.Action{UnityEngine.Component})">
+  RegisterInvokeOnInstance&lt;T&gt;(Action&lt;Component&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Invokes an action when a specified component becomes registered. Action will invoke immediately if already registered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterInvokeOnInstance&lt;T&gt;(Action&lt;UnityEngine.Component&gt; handler) where T : UnityEngine.Component</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">UnityEngine</span>.<span class="xref">Component</span>&gt;</dt>
+    <dd><p>Action to invoke.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Component type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_RemoveSpawnableCollection_" data-uid="FishNet.Managing.NetworkManager.RemoveSpawnableCollection*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_RemoveSpawnableCollection_System_UInt16_" data-uid="FishNet.Managing.NetworkManager.RemoveSpawnableCollection(System.UInt16)">
+  RemoveSpawnableCollection(ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the PrefabObjects collection from memory.
+This should only be called after you properly disposed of it's contents properly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveSpawnableCollection(ushort spawnableCollectionId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spawnableCollectionId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd><p>CollectionId to remove.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if collection was found and removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_StaticCanLog_" data-uid="FishNet.Managing.NetworkManager.StaticCanLog*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_StaticCanLog_FishNet_Managing_Logging_LoggingType_" data-uid="FishNet.Managing.NetworkManager.StaticCanLog(FishNet.Managing.Logging.LoggingType)">
+  StaticCanLog(LoggingType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if can log for loggingType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool StaticCanLog(LoggingType loggingType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>loggingType</code> <a class="xref" href="FishNet.Managing.Logging.LoggingType.html">LoggingType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_StaticLog_" data-uid="FishNet.Managing.NetworkManager.StaticLog*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_StaticLog_System_String_" data-uid="FishNet.Managing.NetworkManager.StaticLog(System.String)">
+  StaticLog(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs a common log, should logging settings permit it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StaticLog(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_StaticLogError_" data-uid="FishNet.Managing.NetworkManager.StaticLogError*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_StaticLogError_System_String_" data-uid="FishNet.Managing.NetworkManager.StaticLogError(System.String)">
+  StaticLogError(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs an error log, should logging settings permit it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StaticLogError(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_StaticLogWarning_" data-uid="FishNet.Managing.NetworkManager.StaticLogWarning*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_StaticLogWarning_System_String_" data-uid="FishNet.Managing.NetworkManager.StaticLogWarning(System.String)">
+  StaticLogWarning(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs a warning log, should logging settings permit it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StaticLogWarning(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_StorePooledInstantiated_" data-uid="FishNet.Managing.NetworkManager.StorePooledInstantiated*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_StorePooledInstantiated_FishNet_Object_NetworkObject_System_Boolean_" data-uid="FishNet.Managing.NetworkManager.StorePooledInstantiated(FishNet.Object.NetworkObject,System.Boolean)">
+  StorePooledInstantiated(NetworkObject, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores an instantied object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StorePooledInstantiated(NetworkObject instantiated, bool asServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instantiated</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd><p>Object which was instantiated.</p>
+</dd>
+    <dt><code>asServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to store for the server.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_StorePooledInstantiated_" data-uid="FishNet.Managing.NetworkManager.StorePooledInstantiated*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_StorePooledInstantiated_FishNet_Object_NetworkObject_System_Int32_System_Boolean_" data-uid="FishNet.Managing.NetworkManager.StorePooledInstantiated(FishNet.Object.NetworkObject,System.Int32,System.Boolean)">
+  StorePooledInstantiated(NetworkObject, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stores an instantiated object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use StorePooledInstantiated(NetworkObject, bool)&quot;)]
+public void StorePooledInstantiated(NetworkObject instantiated, int prefabId, bool asServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instantiated</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd><p>Object which was instantiated.</p>
+</dd>
+    <dt><code>prefabId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>asServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to store for the server.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_UnregisterInstance_" data-uid="FishNet.Managing.NetworkManager.UnregisterInstance*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_UnregisterInstance__1" data-uid="FishNet.Managing.NetworkManager.UnregisterInstance``1">
+  UnregisterInstance&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unregisters a component from this NetworkManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterInstance&lt;T&gt;() where T : UnityEngine.Component</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Type to unregister.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Managing_NetworkManager_UnregisterInvokeOnInstance_" data-uid="FishNet.Managing.NetworkManager.UnregisterInvokeOnInstance*"></a>
+
+  <h3 id="FishNet_Managing_NetworkManager_UnregisterInvokeOnInstance__1_System_Action_UnityEngine_Component__" data-uid="FishNet.Managing.NetworkManager.UnregisterInvokeOnInstance``1(System.Action{UnityEngine.Component})">
+  UnregisterInvokeOnInstance&lt;T&gt;(Action&lt;Component&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes an action to be invokes when a specified component becomes registered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterInvokeOnInstance&lt;T&gt;(Action&lt;UnityEngine.Component&gt; handler) where T : UnityEngine.Component</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handler</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">UnityEngine</span>.<span class="xref">Component</span>&gt;</dt>
+    <dd><p>Action to invoke.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Component type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

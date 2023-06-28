@@ -1,0 +1,1019 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class OrderedDictionary&lt;TKey, TValue&gt;
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class OrderedDictionary&lt;TKey, TValue&gt;
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.Collections.OrderedDictionary`2">
+
+
+
+  <h1 id="Spine_Collections_OrderedDictionary_2" data-uid="Spine.Collections.OrderedDictionary`2" class="text-break">
+    Class OrderedDictionary&lt;TKey, TValue&gt;
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a>.<a class="xref" href="Spine.Collections.html">Collections</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Represents a dictionary that tracks the order that items were added.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class OrderedDictionary&lt;TKey, TValue&gt; : IDictionary&lt;TKey, TValue&gt;, IList&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, ICollection&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TKey</code></dt>
+    <dd><p>The type of the dictionary keys.</p>
+</dd>
+    <dt><code>TValue</code></dt>
+    <dd><p>The type of the dictionary values.</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">OrderedDictionary&lt;TKey, TValue&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;TKey, TValue&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="FishNet.Utility.Extension.DictionaryFN.html#FishNet_Utility_Extension_DictionaryFN_TryGetValueIL2CPP__2_System_Collections_Generic_IDictionary___0___1____0___1__">DictionaryFN.TryGetValueIL2CPP&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, TKey, out TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Collections.CollectionExtensions.html#Spine_Collections_CollectionExtensions_ToOrderedDictionary__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IEqualityComparer___1__">CollectionExtensions.ToOrderedDictionary&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, IEqualityComparer&lt;TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Collections.CollectionExtensions.html#Spine_Collections_CollectionExtensions_ToOrderedDictionary__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__">CollectionExtensions.ToOrderedDictionary&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="FishNet.Utility.Extension.CollectionFN.html#FishNet_Utility_Extension_CollectionFN_Shuffle__1_System_Collections_Generic_IList___0__">CollectionFN.Shuffle&lt;T&gt;(IList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="Spine_Collections_OrderedDictionary_2_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This dictionary makes it possible to get the index of a key and a key based on an index.
+It can be costly to find the index of a key because it must be searched for linearly.
+It can be costly to insert a key/value pair because other key's indexes must be adjusted.
+It can be costly to remove a key/value pair because other keys' indexes must be adjusted.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Spine_Collections_OrderedDictionary_2__ctor_" data-uid="Spine.Collections.OrderedDictionary`2.#ctor*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2__ctor" data-uid="Spine.Collections.OrderedDictionary`2.#ctor">
+  OrderedDictionary()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of an OrderedDictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrderedDictionary()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2__ctor_" data-uid="Spine.Collections.OrderedDictionary`2.#ctor*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2__ctor_System_Collections_Generic_IEqualityComparer__0__" data-uid="Spine.Collections.OrderedDictionary`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})">
+  OrderedDictionary(IEqualityComparer&lt;TKey&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of an OrderedDictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrderedDictionary(IEqualityComparer&lt;TKey&gt; comparer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;TKey&gt;</dt>
+    <dd><p>The equality comparer to use to compare keys.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2__ctor_" data-uid="Spine.Collections.OrderedDictionary`2.#ctor*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2__ctor_System_Int32_" data-uid="Spine.Collections.OrderedDictionary`2.#ctor(System.Int32)">
+  OrderedDictionary(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of an OrderedDictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrderedDictionary(int capacity)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The initial capacity of the dictionary.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>The capacity is less than zero.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2__ctor_" data-uid="Spine.Collections.OrderedDictionary`2.#ctor*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2__ctor_System_Int32_System_Collections_Generic_IEqualityComparer__0__" data-uid="Spine.Collections.OrderedDictionary`2.#ctor(System.Int32,System.Collections.Generic.IEqualityComparer{`0})">
+  OrderedDictionary(int, IEqualityComparer&lt;TKey&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of an OrderedDictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrderedDictionary(int capacity, IEqualityComparer&lt;TKey&gt; comparer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>capacity</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The initial capacity of the dictionary.</p>
+</dd>
+    <dt><code>comparer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;TKey&gt;</dt>
+    <dd><p>The equality comparer to use to compare keys.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_Comparer_" data-uid="Spine.Collections.OrderedDictionary`2.Comparer*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_Comparer" data-uid="Spine.Collections.OrderedDictionary`2.Comparer">
+  Comparer
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the equality comparer used to compare keys.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEqualityComparer&lt;TKey&gt; Comparer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;TKey&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_Count_" data-uid="Spine.Collections.OrderedDictionary`2.Count*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_Count" data-uid="Spine.Collections.OrderedDictionary`2.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of key/value pairs in the dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_Item_" data-uid="Spine.Collections.OrderedDictionary`2.Item*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_Item_System_Int32_" data-uid="Spine.Collections.OrderedDictionary`2.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the value at the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TValue this[int index] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the value to get.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TValue</span></dt>
+    <dd><p>The value at the given index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>The index is negative -or- beyond the length of the dictionary.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_Item_" data-uid="Spine.Collections.OrderedDictionary`2.Item*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_Item__0_" data-uid="Spine.Collections.OrderedDictionary`2.Item(`0)">
+  this[TKey]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the value associated with the given key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TValue this[TKey key] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <span class="xref">TKey</span></dt>
+    <dd><p>The key to get the associated value by or to associate with the value.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TValue</span></dt>
+    <dd><p>The value associated with the given key.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The key is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
+    <dd><p>The key is not in the dictionary.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_Keys_" data-uid="Spine.Collections.OrderedDictionary`2.Keys*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_Keys" data-uid="Spine.Collections.OrderedDictionary`2.Keys">
+  Keys
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the keys in the dictionary in the order they were added.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrderedDictionary&lt;TKey, TValue&gt;.KeyCollection Keys { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Collections.OrderedDictionary-2.html">OrderedDictionary</a>&lt;TKey, TValue&gt;.<a class="xref" href="Spine.Collections.OrderedDictionary-2.KeyCollection.html">KeyCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_Values_" data-uid="Spine.Collections.OrderedDictionary`2.Values*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_Values" data-uid="Spine.Collections.OrderedDictionary`2.Values">
+  Values
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the values in the dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrderedDictionary&lt;TKey, TValue&gt;.ValueCollection Values { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Collections.OrderedDictionary-2.html">OrderedDictionary</a>&lt;TKey, TValue&gt;.<a class="xref" href="Spine.Collections.OrderedDictionary-2.ValueCollection.html">ValueCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_Add_" data-uid="Spine.Collections.OrderedDictionary`2.Add*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_Add__0__1_" data-uid="Spine.Collections.OrderedDictionary`2.Add(`0,`1)">
+  Add(TKey, TValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds the given key/value pair to the dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(TKey key, TValue value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <span class="xref">TKey</span></dt>
+    <dd><p>The key to add to the dictionary.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>The value to associated with the key.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>The given key already exists in the dictionary.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The key is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_Clear_" data-uid="Spine.Collections.OrderedDictionary`2.Clear*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_Clear" data-uid="Spine.Collections.OrderedDictionary`2.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all key/value pairs from the dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_ContainsKey_" data-uid="Spine.Collections.OrderedDictionary`2.ContainsKey*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_ContainsKey__0_" data-uid="Spine.Collections.OrderedDictionary`2.ContainsKey(`0)">
+  ContainsKey(TKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the given key exists in the dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsKey(TKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <span class="xref">TKey</span></dt>
+    <dd><p>The key to look for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the key exists in the dictionary; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The key is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_GetEnumerator_" data-uid="Spine.Collections.OrderedDictionary`2.GetEnumerator*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_GetEnumerator" data-uid="Spine.Collections.OrderedDictionary`2.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the key/value pairs in the dictionary in the order they were added.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;KeyValuePair&lt;TKey, TValue&gt;&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</dt>
+    <dd><p>An enumerator over the key/value pairs in the dictionary.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_GetKey_" data-uid="Spine.Collections.OrderedDictionary`2.GetKey*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_GetKey_System_Int32_" data-uid="Spine.Collections.OrderedDictionary`2.GetKey(System.Int32)">
+  GetKey(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the key at the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TKey GetKey(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the key to get.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TKey</span></dt>
+    <dd><p>The key at the given index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>The index is negative -or- larger than the number of keys.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_IndexOf_" data-uid="Spine.Collections.OrderedDictionary`2.IndexOf*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_IndexOf__0_" data-uid="Spine.Collections.OrderedDictionary`2.IndexOf(`0)">
+  IndexOf(TKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the index of the given key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(TKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <span class="xref">TKey</span></dt>
+    <dd><p>The key to get the index of.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the key in the dictionary -or- -1 if the key is not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="Spine_Collections_OrderedDictionary_2_IndexOf__0__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The operation runs in O(n).</p>
+</div>
+
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_Insert_" data-uid="Spine.Collections.OrderedDictionary`2.Insert*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_Insert_System_Int32__0__1_" data-uid="Spine.Collections.OrderedDictionary`2.Insert(System.Int32,`0,`1)">
+  Insert(int, TKey, TValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts the given key/value pair at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, TKey key, TValue value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index to insert the key/value pair.</p>
+</dd>
+    <dt><code>key</code> <span class="xref">TKey</span></dt>
+    <dd><p>The key to insert.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>The value to insert.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>The given key already exists in the dictionary.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The key is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>The index is negative -or- larger than the size of the dictionary.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_Remove_" data-uid="Spine.Collections.OrderedDictionary`2.Remove*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_Remove__0_" data-uid="Spine.Collections.OrderedDictionary`2.Remove(`0)">
+  Remove(TKey)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the key/value pair with the given key from the dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(TKey key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <span class="xref">TKey</span></dt>
+    <dd><p>The key of the pair to remove.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the key was found and the pair removed; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The key is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_RemoveAt_" data-uid="Spine.Collections.OrderedDictionary`2.RemoveAt*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_RemoveAt_System_Int32_" data-uid="Spine.Collections.OrderedDictionary`2.RemoveAt(System.Int32)">
+  RemoveAt(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the key/value pair at the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the key/value pair to remove.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>The index is negative -or- larger than the size of the dictionary.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Spine_Collections_OrderedDictionary_2_TryGetValue_" data-uid="Spine.Collections.OrderedDictionary`2.TryGetValue*"></a>
+
+  <h3 id="Spine_Collections_OrderedDictionary_2_TryGetValue__0__1__" data-uid="Spine.Collections.OrderedDictionary`2.TryGetValue(`0,`1@)">
+  TryGetValue(TKey, out TValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tries to get the value associated with the given key. If the key is not found,
+default(TValue) value is stored in the value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetValue(TKey key, out TValue value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <span class="xref">TKey</span></dt>
+    <dd><p>The key to get the value for.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">TValue</span></dt>
+    <dd><p>The value used to hold the results.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the key was found; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The key is null.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

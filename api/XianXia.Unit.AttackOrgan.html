@@ -1,0 +1,1228 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AttackOrgan
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AttackOrgan
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.Unit.AttackOrgan">
+
+
+
+  <h1 id="XianXia_Unit_AttackOrgan" data-uid="XianXia.Unit.AttackOrgan" class="text-break">
+    Class AttackOrgan
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a>.<a class="xref" href="XianXia.Unit.html">Unit</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AttackOrgan : OrganBase, IComponentBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Saber.ECS.ComponentBase.html">ComponentBase</a></div>
+      <div><a class="xref" href="XianXia.Unit.OrganBase.html">OrganBase</a></div>
+      <div><span class="xref">AttackOrgan</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Saber.ECS.IComponentBase.html">IComponentBase</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="XianXia.Unit.OrganBase.html#XianXia_Unit_OrganBase_ComponentType">OrganBase.ComponentType</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.OrganBase.html#XianXia_Unit_OrganBase_OwnerUnit">OrganBase.OwnerUnit</a>
+    </div>
+    <div>
+      <a class="xref" href="XianXia.Unit.OrganBase.html#XianXia_Unit_OrganBase_InitComponent_Saber_ECS_IContainerEntity_">OrganBase.InitComponent(IContainerEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Owner">ComponentBase.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Enable">ComponentBase.Enable</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Alive">ComponentBase.Alive</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_SetEnable_System_Boolean_">ComponentBase.SetEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_SetComponentEnable_System_Boolean_">ComponentBase.SetComponentEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_ClearEnable">ComponentBase.ClearEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.ComponentBase.html#Saber_ECS_ComponentBase_Init_Saber_ECS_IContainerEntity_">ComponentBase.Init(IContainerEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="XianXia_Unit_AttackOrgan_AttackActionOnce_" data-uid="XianXia.Unit.AttackOrgan.AttackActionOnce*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_AttackActionOnce" data-uid="XianXia.Unit.AttackOrgan.AttackActionOnce">
+  AttackActionOnce
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action AttackActionOnce { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_AttackAnimationLong_" data-uid="XianXia.Unit.AttackOrgan.AttackAnimationLong*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_AttackAnimationLong" data-uid="XianXia.Unit.AttackOrgan.AttackAnimationLong">
+  AttackAnimationLong
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AttackAnimationLong { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_AttackCriticalChance_" data-uid="XianXia.Unit.AttackOrgan.AttackCriticalChance*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_AttackCriticalChance" data-uid="XianXia.Unit.AttackOrgan.AttackCriticalChance">
+  AttackCriticalChance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AttackCriticalChance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_AttackCriticalDamage_" data-uid="XianXia.Unit.AttackOrgan.AttackCriticalDamage*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_AttackCriticalDamage" data-uid="XianXia.Unit.AttackOrgan.AttackCriticalDamage">
+  AttackCriticalDamage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AttackCriticalDamage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_AttackHitrate_" data-uid="XianXia.Unit.AttackOrgan.AttackHitrate*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_AttackHitrate" data-uid="XianXia.Unit.AttackOrgan.AttackHitrate">
+  AttackHitrate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AttackHitrate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_AttackRange_" data-uid="XianXia.Unit.AttackOrgan.AttackRange*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_AttackRange" data-uid="XianXia.Unit.AttackOrgan.AttackRange">
+  AttackRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AttackRange { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_AttackSpeed_" data-uid="XianXia.Unit.AttackOrgan.AttackSpeed*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_AttackSpeed" data-uid="XianXia.Unit.AttackOrgan.AttackSpeed">
+  AttackSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AttackSpeed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_AttackState_" data-uid="XianXia.Unit.AttackOrgan.AttackState*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_AttackState" data-uid="XianXia.Unit.AttackOrgan.AttackState">
+  AttackState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Attack AttackState { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FSM.Attack.html">Attack</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_AttackTime_" data-uid="XianXia.Unit.AttackOrgan.AttackTime*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_AttackTime" data-uid="XianXia.Unit.AttackOrgan.AttackTime">
+  AttackTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AttackTime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_AttackVal_" data-uid="XianXia.Unit.AttackOrgan.AttackVal*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_AttackVal" data-uid="XianXia.Unit.AttackOrgan.AttackVal">
+  AttackVal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AttackVal { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_CausedDamagePer_" data-uid="XianXia.Unit.AttackOrgan.CausedDamagePer*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_CausedDamagePer" data-uid="XianXia.Unit.AttackOrgan.CausedDamagePer">
+  CausedDamagePer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CausedDamagePer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_CharacterFSM_" data-uid="XianXia.Unit.AttackOrgan.CharacterFSM*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_CharacterFSM" data-uid="XianXia.Unit.AttackOrgan.CharacterFSM">
+  CharacterFSM
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharacterFSM CharacterFSM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CharacterFSM.html">CharacterFSM</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_Ex_AttackCriticalChance_" data-uid="XianXia.Unit.AttackOrgan.Ex_AttackCriticalChance*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_Ex_AttackCriticalChance" data-uid="XianXia.Unit.AttackOrgan.Ex_AttackCriticalChance">
+  Ex_AttackCriticalChance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Ex_AttackCriticalChance { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_Ex_AttackCriticalDamage_" data-uid="XianXia.Unit.AttackOrgan.Ex_AttackCriticalDamage*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_Ex_AttackCriticalDamage" data-uid="XianXia.Unit.AttackOrgan.Ex_AttackCriticalDamage">
+  Ex_AttackCriticalDamage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Ex_AttackCriticalDamage { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_Ex_AttackHitrate_" data-uid="XianXia.Unit.AttackOrgan.Ex_AttackHitrate*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_Ex_AttackHitrate" data-uid="XianXia.Unit.AttackOrgan.Ex_AttackHitrate">
+  Ex_AttackHitrate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Ex_AttackHitrate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_Ex_AttackRange_" data-uid="XianXia.Unit.AttackOrgan.Ex_AttackRange*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_Ex_AttackRange" data-uid="XianXia.Unit.AttackOrgan.Ex_AttackRange">
+  Ex_AttackRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Ex_AttackRange { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_Ex_CausedDamagePer_" data-uid="XianXia.Unit.AttackOrgan.Ex_CausedDamagePer*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_Ex_CausedDamagePer" data-uid="XianXia.Unit.AttackOrgan.Ex_CausedDamagePer">
+  Ex_CausedDamagePer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Ex_CausedDamagePer { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_Ex_attackSpeed_" data-uid="XianXia.Unit.AttackOrgan.Ex_attackSpeed*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_Ex_attackSpeed" data-uid="XianXia.Unit.AttackOrgan.Ex_attackSpeed">
+  Ex_attackSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Ex_attackSpeed { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_ExtraAttackVal_" data-uid="XianXia.Unit.AttackOrgan.ExtraAttackVal*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_ExtraAttackVal" data-uid="XianXia.Unit.AttackOrgan.ExtraAttackVal">
+  ExtraAttackVal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ExtraAttackVal { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_IsHasTrajectory_" data-uid="XianXia.Unit.AttackOrgan.IsHasTrajectory*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_IsHasTrajectory" data-uid="XianXia.Unit.AttackOrgan.IsHasTrajectory">
+  IsHasTrajectory
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHasTrajectory { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_Or_AttackCriticalChance_" data-uid="XianXia.Unit.AttackOrgan.Or_AttackCriticalChance*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_Or_AttackCriticalChance" data-uid="XianXia.Unit.AttackOrgan.Or_AttackCriticalChance">
+  Or_AttackCriticalChance
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Or_AttackCriticalChance { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_Or_AttackCriticalDamage_" data-uid="XianXia.Unit.AttackOrgan.Or_AttackCriticalDamage*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_Or_AttackCriticalDamage" data-uid="XianXia.Unit.AttackOrgan.Or_AttackCriticalDamage">
+  Or_AttackCriticalDamage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Or_AttackCriticalDamage { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_Or_AttackHitrate_" data-uid="XianXia.Unit.AttackOrgan.Or_AttackHitrate*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_Or_AttackHitrate" data-uid="XianXia.Unit.AttackOrgan.Or_AttackHitrate">
+  Or_AttackHitrate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Or_AttackHitrate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_Or_CausedDamagePer_" data-uid="XianXia.Unit.AttackOrgan.Or_CausedDamagePer*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_Or_CausedDamagePer" data-uid="XianXia.Unit.AttackOrgan.Or_CausedDamagePer">
+  Or_CausedDamagePer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Or_CausedDamagePer { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_OriginAttackVal_" data-uid="XianXia.Unit.AttackOrgan.OriginAttackVal*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_OriginAttackVal" data-uid="XianXia.Unit.AttackOrgan.OriginAttackVal">
+  OriginAttackVal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OriginAttackVal { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_Origin_AttackRange_" data-uid="XianXia.Unit.AttackOrgan.Origin_AttackRange*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_Origin_AttackRange" data-uid="XianXia.Unit.AttackOrgan.Origin_AttackRange">
+  Origin_AttackRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Origin_AttackRange { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_Origin_AttackSpeed_" data-uid="XianXia.Unit.AttackOrgan.Origin_AttackSpeed*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_Origin_AttackSpeed" data-uid="XianXia.Unit.AttackOrgan.Origin_AttackSpeed">
+  Origin_AttackSpeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Origin_AttackSpeed { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_Projectile_" data-uid="XianXia.Unit.AttackOrgan.Projectile*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_Projectile" data-uid="XianXia.Unit.AttackOrgan.Projectile">
+  Projectile
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Projectile Projectile { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Unit.Projectile.html">Projectile</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_ProjectileDropPoint_" data-uid="XianXia.Unit.AttackOrgan.ProjectileDropPoint*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_ProjectileDropPoint" data-uid="XianXia.Unit.AttackOrgan.ProjectileDropPoint">
+  ProjectileDropPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform ProjectileDropPoint { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_WarningRange_" data-uid="XianXia.Unit.AttackOrgan.WarningRange*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_WarningRange" data-uid="XianXia.Unit.AttackOrgan.WarningRange">
+  WarningRange
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WarningRange { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_componentType_" data-uid="XianXia.Unit.AttackOrgan.componentType*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_componentType" data-uid="XianXia.Unit.AttackOrgan.componentType">
+  componentType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override ComponentType componentType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Saber.ECS.ComponentType.html">ComponentType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_Unit_AttackOrgan_Destory_" data-uid="XianXia.Unit.AttackOrgan.Destory*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_Destory" data-uid="XianXia.Unit.AttackOrgan.Destory">
+  Destory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Destory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_AttackOrgan_InitComponent_" data-uid="XianXia.Unit.AttackOrgan.InitComponent*"></a>
+
+  <h3 id="XianXia_Unit_AttackOrgan_InitComponent_Saber_ECS_EntityBase_" data-uid="XianXia.Unit.AttackOrgan.InitComponent(Saber.ECS.EntityBase)">
+  InitComponent(EntityBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InitComponent(EntityBase owner)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>owner</code> <a class="xref" href="Saber.ECS.EntityBase.html">EntityBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

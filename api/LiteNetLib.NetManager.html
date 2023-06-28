@@ -1,0 +1,3556 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NetManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NetManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="LiteNetLib.NetManager">
+
+
+
+  <h1 id="LiteNetLib_NetManager" data-uid="LiteNetLib.NetManager" class="text-break">
+    Class NetManager
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LiteNetLib.html">LiteNetLib</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Main class for all network operations. Can be used as client and/or server.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NetManager : IEnumerable&lt;NetPeer&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">NetManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Spine.Collections.CollectionExtensions.html#Spine_Collections_CollectionExtensions_ToOrderedDictionary__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IEqualityComparer___1__">CollectionExtensions.ToOrderedDictionary&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, IEqualityComparer&lt;TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Spine.Collections.CollectionExtensions.html#Spine_Collections_CollectionExtensions_ToOrderedDictionary__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__">CollectionExtensions.ToOrderedDictionary&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="LiteNetLib_NetManager__ctor_" data-uid="LiteNetLib.NetManager.#ctor*"></a>
+
+  <h3 id="LiteNetLib_NetManager__ctor_LiteNetLib_INetEventListener_LiteNetLib_Layers_PacketLayerBase_" data-uid="LiteNetLib.NetManager.#ctor(LiteNetLib.INetEventListener,LiteNetLib.Layers.PacketLayerBase)">
+  NetManager(INetEventListener, PacketLayerBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>NetManager constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetManager(INetEventListener listener, PacketLayerBase extraPacketLayer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listener</code> <a class="xref" href="LiteNetLib.INetEventListener.html">INetEventListener</a></dt>
+    <dd><p>Network events listener (also can implement IDeliveryEventListener)</p>
+</dd>
+    <dt><code>extraPacketLayer</code> <a class="xref" href="LiteNetLib.Layers.PacketLayerBase.html">PacketLayerBase</a></dt>
+    <dd><p>Extra processing of packages, like CRC checksum or encryption. All connected NetManagers must have same layer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="LiteNetLib_NetManager_AllowPeerAddressChange" data-uid="LiteNetLib.NetManager.AllowPeerAddressChange">
+  AllowPeerAddressChange
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows peer change it's ip (lte to wifi, wifi to lte, etc). Use only on server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowPeerAddressChange</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_AutoRecycle" data-uid="LiteNetLib.NetManager.AutoRecycle">
+  AutoRecycle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Automatically recycle NetPacketReader after OnReceive event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoRecycle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_BroadcastReceiveEnabled" data-uid="LiteNetLib.NetManager.BroadcastReceiveEnabled">
+  BroadcastReceiveEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows receive broadcast packets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BroadcastReceiveEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_DisconnectOnUnreachable" data-uid="LiteNetLib.NetManager.DisconnectOnUnreachable">
+  DisconnectOnUnreachable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disconnect peers if HostUnreachable or NetworkUnreachable spawned (old behaviour 0.9.x was true)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DisconnectOnUnreachable</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_DisconnectTimeout" data-uid="LiteNetLib.NetManager.DisconnectTimeout">
+  DisconnectTimeout
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If NetManager doesn't receive any packet from remote peer during this time (in milliseconds) then connection will be closed
+(including library internal keepalive packets)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DisconnectTimeout</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_EnableStatistics" data-uid="LiteNetLib.NetManager.EnableStatistics">
+  EnableStatistics
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Toggles the collection of network statistics for the instance and all known peers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableStatistics</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_IPv6Mode" data-uid="LiteNetLib.NetManager.IPv6Mode">
+  IPv6Mode
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>IPv6 support</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPv6Mode IPv6Mode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.IPv6Mode.html">IPv6Mode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_IPv6Support" data-uid="LiteNetLib.NetManager.IPv6Support">
+  IPv6Support
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly bool IPv6Support</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_MaxConnectAttempts" data-uid="LiteNetLib.NetManager.MaxConnectAttempts">
+  MaxConnectAttempts
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum connection attempts before client stops and call disconnect event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxConnectAttempts</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_MaxPacketsReceivePerUpdate" data-uid="LiteNetLib.NetManager.MaxPacketsReceivePerUpdate">
+  MaxPacketsReceivePerUpdate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum packets count that will be processed in Manual PollEvents</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxPacketsReceivePerUpdate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_MtuOverride" data-uid="LiteNetLib.NetManager.MtuOverride">
+  MtuOverride
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Override MTU for all new peers registered in this NetManager, will ignores MTU Discovery!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MtuOverride</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_NatPunchEnabled" data-uid="LiteNetLib.NetManager.NatPunchEnabled">
+  NatPunchEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enable nat punch messages</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NatPunchEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_NatPunchModule" data-uid="LiteNetLib.NetManager.NatPunchModule">
+  NatPunchModule
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>NatPunchModule for NAT hole punching operations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly NatPunchModule NatPunchModule</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.NatPunchModule.html">NatPunchModule</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_PacketPoolSize" data-uid="LiteNetLib.NetManager.PacketPoolSize">
+  PacketPoolSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum packet pool size (increase if you have tons of packets sending)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PacketPoolSize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_PingInterval" data-uid="LiteNetLib.NetManager.PingInterval">
+  PingInterval
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Interval for latency detection and checking connection (in milliseconds)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PingInterval</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_ReconnectDelay" data-uid="LiteNetLib.NetManager.ReconnectDelay">
+  ReconnectDelay
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Delay between initial connection attempts (in milliseconds)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReconnectDelay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_ReuseAddress" data-uid="LiteNetLib.NetManager.ReuseAddress">
+  ReuseAddress
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables socket option &quot;ReuseAddress&quot; for specific purposes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReuseAddress</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_SimulateLatency" data-uid="LiteNetLib.NetManager.SimulateLatency">
+  SimulateLatency
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Simulate latency by holding packets for random time. (Works only in DEBUG mode)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SimulateLatency</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_SimulatePacketLoss" data-uid="LiteNetLib.NetManager.SimulatePacketLoss">
+  SimulatePacketLoss
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Simulate packet loss by dropping random amount of packets. (Works only in DEBUG mode)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SimulatePacketLoss</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_SimulationMaxLatency" data-uid="LiteNetLib.NetManager.SimulationMaxLatency">
+  SimulationMaxLatency
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum simulated latency (in milliseconds)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SimulationMaxLatency</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_SimulationMinLatency" data-uid="LiteNetLib.NetManager.SimulationMinLatency">
+  SimulationMinLatency
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Minimum simulated latency (in milliseconds)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SimulationMinLatency</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_SimulationPacketLossChance" data-uid="LiteNetLib.NetManager.SimulationPacketLossChance">
+  SimulationPacketLossChance
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Chance of packet loss when simulation enabled. value in percents (1 - 100).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SimulationPacketLossChance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_Statistics" data-uid="LiteNetLib.NetManager.Statistics">
+  Statistics
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Statistics of all connections</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly NetStatistics Statistics</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.NetStatistics.html">NetStatistics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_UnconnectedMessagesEnabled" data-uid="LiteNetLib.NetManager.UnconnectedMessagesEnabled">
+  UnconnectedMessagesEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enable messages receiving without connection. (with SendUnconnectedMessage method)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UnconnectedMessagesEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_UnsyncedDeliveryEvent" data-uid="LiteNetLib.NetManager.UnsyncedDeliveryEvent">
+  UnsyncedDeliveryEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If true - delivery event will be called from &quot;receive&quot; thread immediately otherwise on PollEvents call</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UnsyncedDeliveryEvent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_UnsyncedEvents" data-uid="LiteNetLib.NetManager.UnsyncedEvents">
+  UnsyncedEvents
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Events automatically will be called without PollEvents method from another thread</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UnsyncedEvents</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_UnsyncedReceiveEvent" data-uid="LiteNetLib.NetManager.UnsyncedReceiveEvent">
+  UnsyncedReceiveEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If true - receive event will be called from &quot;receive&quot; thread immediately otherwise on PollEvents call</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UnsyncedReceiveEvent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_UpdateTime" data-uid="LiteNetLib.NetManager.UpdateTime">
+  UpdateTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Library logic update and send period in milliseconds
+Lowest values in Windows doesn't change much because of Thread.Sleep precision
+To more frequent sends (or sends tied to your game logic) use <a class="xref" href="LiteNetLib.NetManager.html#LiteNetLib_NetManager_TriggerUpdate">TriggerUpdate()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpdateTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_UseNativeSockets" data-uid="LiteNetLib.NetManager.UseNativeSockets">
+  UseNativeSockets
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Experimental feature mostly for servers. Only for Windows/Linux
+use direct socket calls for send/receive to drastically increase speed and reduce GC pressure</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseNativeSockets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="LiteNetLib_NetManager_UseSafeMtu" data-uid="LiteNetLib.NetManager.UseSafeMtu">
+  UseSafeMtu
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets initial MTU to lowest possible value according to RFC1191 (576 bytes)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseSafeMtu</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="LiteNetLib_NetManager_ChannelsCount_" data-uid="LiteNetLib.NetManager.ChannelsCount*"></a>
+
+  <h3 id="LiteNetLib_NetManager_ChannelsCount" data-uid="LiteNetLib.NetManager.ChannelsCount">
+  ChannelsCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>QoS channel count per message type (value must be between 1 and 64 channels)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte ChannelsCount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_ConnectedPeerList_" data-uid="LiteNetLib.NetManager.ConnectedPeerList*"></a>
+
+  <h3 id="LiteNetLib_NetManager_ConnectedPeerList" data-uid="LiteNetLib.NetManager.ConnectedPeerList">
+  ConnectedPeerList
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns connected peers list (with internal cached list)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;NetPeer&gt; ConnectedPeerList { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_ConnectedPeersCount_" data-uid="LiteNetLib.NetManager.ConnectedPeersCount*"></a>
+
+  <h3 id="LiteNetLib_NetManager_ConnectedPeersCount" data-uid="LiteNetLib.NetManager.ConnectedPeersCount">
+  ConnectedPeersCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns connected peers count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ConnectedPeersCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_ExtraPacketSizeForLayer_" data-uid="LiteNetLib.NetManager.ExtraPacketSizeForLayer*"></a>
+
+  <h3 id="LiteNetLib_NetManager_ExtraPacketSizeForLayer" data-uid="LiteNetLib.NetManager.ExtraPacketSizeForLayer">
+  ExtraPacketSizeForLayer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ExtraPacketSizeForLayer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_FirstPeer_" data-uid="LiteNetLib.NetManager.FirstPeer*"></a>
+
+  <h3 id="LiteNetLib_NetManager_FirstPeer" data-uid="LiteNetLib.NetManager.FirstPeer">
+  FirstPeer
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>First peer. Useful for Client mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetPeer FirstPeer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_IsClient_" data-uid="LiteNetLib.NetManager.IsClient*"></a>
+
+  <h3 id="LiteNetLib_NetManager_IsClient" data-uid="LiteNetLib.NetManager.IsClient">
+  IsClient
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsClient { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_IsRunning_" data-uid="LiteNetLib.NetManager.IsRunning*"></a>
+
+  <h3 id="LiteNetLib_NetManager_IsRunning" data-uid="LiteNetLib.NetManager.IsRunning">
+  IsRunning
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if socket listening and update thread is running</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRunning { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_LocalPort_" data-uid="LiteNetLib.NetManager.LocalPort*"></a>
+
+  <h3 id="LiteNetLib_NetManager_LocalPort" data-uid="LiteNetLib.NetManager.LocalPort">
+  LocalPort
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Local EndPoint (host and port)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LocalPort { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_PoolCount_" data-uid="LiteNetLib.NetManager.PoolCount*"></a>
+
+  <h3 id="LiteNetLib_NetManager_PoolCount" data-uid="LiteNetLib.NetManager.PoolCount">
+  PoolCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PoolCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_Ttl_" data-uid="LiteNetLib.NetManager.Ttl*"></a>
+
+  <h3 id="LiteNetLib_NetManager_Ttl" data-uid="LiteNetLib.NetManager.Ttl">
+  Ttl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short Ttl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="LiteNetLib_NetManager_Connect_" data-uid="LiteNetLib.NetManager.Connect*"></a>
+
+  <h3 id="LiteNetLib_NetManager_Connect_System_Net_IPEndPoint_LiteNetLib_Utils_NetDataWriter_" data-uid="LiteNetLib.NetManager.Connect(System.Net.IPEndPoint,LiteNetLib.Utils.NetDataWriter)">
+  Connect(IPEndPoint, NetDataWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Connect to remote host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetPeer Connect(IPEndPoint target, NetDataWriter connectionData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipendpoint">IPEndPoint</a></dt>
+    <dd><p>Server end point (ip and port)</p>
+</dd>
+    <dt><code>connectionData</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd><p>Additional data for remote peer</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>New NetPeer if new connection, Old NetPeer if already connected, null peer if there is ConnectionRequest awaiting</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Manager is not running. Call <a class="xref" href="LiteNetLib.NetManager.html#LiteNetLib_NetManager_Start">Start()</a></p>
+</dd>
+  </dl>
+
+
+
+  <a id="LiteNetLib_NetManager_Connect_" data-uid="LiteNetLib.NetManager.Connect*"></a>
+
+  <h3 id="LiteNetLib_NetManager_Connect_System_Net_IPEndPoint_System_String_" data-uid="LiteNetLib.NetManager.Connect(System.Net.IPEndPoint,System.String)">
+  Connect(IPEndPoint, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Connect to remote host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetPeer Connect(IPEndPoint target, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipendpoint">IPEndPoint</a></dt>
+    <dd><p>Server end point (ip and port)</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Connection key</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>New NetPeer if new connection, Old NetPeer if already connected, null peer if there is ConnectionRequest awaiting</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Manager is not running. Call <a class="xref" href="LiteNetLib.NetManager.html#LiteNetLib_NetManager_Start">Start()</a></p>
+</dd>
+  </dl>
+
+
+
+  <a id="LiteNetLib_NetManager_Connect_" data-uid="LiteNetLib.NetManager.Connect*"></a>
+
+  <h3 id="LiteNetLib_NetManager_Connect_System_String_System_Int32_LiteNetLib_Utils_NetDataWriter_" data-uid="LiteNetLib.NetManager.Connect(System.String,System.Int32,LiteNetLib.Utils.NetDataWriter)">
+  Connect(string, int, NetDataWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Connect to remote host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetPeer Connect(string address, int port, NetDataWriter connectionData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>address</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Server IP or hostname</p>
+</dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Server Port</p>
+</dd>
+    <dt><code>connectionData</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd><p>Additional data for remote peer</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>New NetPeer if new connection, Old NetPeer if already connected, null peer if there is ConnectionRequest awaiting</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Manager is not running. Call <a class="xref" href="LiteNetLib.NetManager.html#LiteNetLib_NetManager_Start">Start()</a></p>
+</dd>
+  </dl>
+
+
+
+  <a id="LiteNetLib_NetManager_Connect_" data-uid="LiteNetLib.NetManager.Connect*"></a>
+
+  <h3 id="LiteNetLib_NetManager_Connect_System_String_System_Int32_System_String_" data-uid="LiteNetLib.NetManager.Connect(System.String,System.Int32,System.String)">
+  Connect(string, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Connect to remote host</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetPeer Connect(string address, int port, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>address</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Server IP or hostname</p>
+</dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Server Port</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Connection key</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>New NetPeer if new connection, Old NetPeer if already connected, null peer if there is ConnectionRequest awaiting</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Manager is not running. Call <a class="xref" href="LiteNetLib.NetManager.html#LiteNetLib_NetManager_Start">Start()</a></p>
+</dd>
+  </dl>
+
+
+
+  <a id="LiteNetLib_NetManager_CreateNtpRequest_" data-uid="LiteNetLib.NetManager.CreateNtpRequest*"></a>
+
+  <h3 id="LiteNetLib_NetManager_CreateNtpRequest_System_Net_IPEndPoint_" data-uid="LiteNetLib.NetManager.CreateNtpRequest(System.Net.IPEndPoint)">
+  CreateNtpRequest(IPEndPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create the requests for NTP server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateNtpRequest(IPEndPoint endPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>endPoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipendpoint">IPEndPoint</a></dt>
+    <dd><p>NTP Server address.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_CreateNtpRequest_" data-uid="LiteNetLib.NetManager.CreateNtpRequest*"></a>
+
+  <h3 id="LiteNetLib_NetManager_CreateNtpRequest_System_String_" data-uid="LiteNetLib.NetManager.CreateNtpRequest(System.String)">
+  CreateNtpRequest(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create the requests for NTP server (default port)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateNtpRequest(string ntpServerAddress)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ntpServerAddress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>NTP Server address.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_CreateNtpRequest_" data-uid="LiteNetLib.NetManager.CreateNtpRequest*"></a>
+
+  <h3 id="LiteNetLib_NetManager_CreateNtpRequest_System_String_System_Int32_" data-uid="LiteNetLib.NetManager.CreateNtpRequest(System.String,System.Int32)">
+  CreateNtpRequest(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create the requests for NTP server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateNtpRequest(string ntpServerAddress, int port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ntpServerAddress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>NTP Server address.</p>
+</dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>port</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_DisconnectAll_" data-uid="LiteNetLib.NetManager.DisconnectAll*"></a>
+
+  <h3 id="LiteNetLib_NetManager_DisconnectAll" data-uid="LiteNetLib.NetManager.DisconnectAll">
+  DisconnectAll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disconnect all peers without any additional data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisconnectAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_DisconnectAll_" data-uid="LiteNetLib.NetManager.DisconnectAll*"></a>
+
+  <h3 id="LiteNetLib_NetManager_DisconnectAll_System_Byte___System_Int32_System_Int32_" data-uid="LiteNetLib.NetManager.DisconnectAll(System.Byte[],System.Int32,System.Int32)">
+  DisconnectAll(byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disconnect all peers with shutdown message</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisconnectAll(byte[] data, int start, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Data to send (must be less or equal MTU)</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Data start</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Data count</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_DisconnectPeer_" data-uid="LiteNetLib.NetManager.DisconnectPeer*"></a>
+
+  <h3 id="LiteNetLib_NetManager_DisconnectPeer_LiteNetLib_NetPeer_" data-uid="LiteNetLib.NetManager.DisconnectPeer(LiteNetLib.NetPeer)">
+  DisconnectPeer(NetPeer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disconnect peer from server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisconnectPeer(NetPeer peer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>peer</code> <a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>peer to disconnect</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_DisconnectPeer_" data-uid="LiteNetLib.NetManager.DisconnectPeer*"></a>
+
+  <h3 id="LiteNetLib_NetManager_DisconnectPeer_LiteNetLib_NetPeer_LiteNetLib_Utils_NetDataWriter_" data-uid="LiteNetLib.NetManager.DisconnectPeer(LiteNetLib.NetPeer,LiteNetLib.Utils.NetDataWriter)">
+  DisconnectPeer(NetPeer, NetDataWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disconnect peer from server and send additional data (Size must be less or equal MTU - 8)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisconnectPeer(NetPeer peer, NetDataWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>peer</code> <a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>peer to disconnect</p>
+</dd>
+    <dt><code>writer</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd><p>additional data</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_DisconnectPeer_" data-uid="LiteNetLib.NetManager.DisconnectPeer*"></a>
+
+  <h3 id="LiteNetLib_NetManager_DisconnectPeer_LiteNetLib_NetPeer_System_Byte___" data-uid="LiteNetLib.NetManager.DisconnectPeer(LiteNetLib.NetPeer,System.Byte[])">
+  DisconnectPeer(NetPeer, byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disconnect peer from server and send additional data (Size must be less or equal MTU - 8)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisconnectPeer(NetPeer peer, byte[] data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>peer</code> <a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>peer to disconnect</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>additional data</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_DisconnectPeer_" data-uid="LiteNetLib.NetManager.DisconnectPeer*"></a>
+
+  <h3 id="LiteNetLib_NetManager_DisconnectPeer_LiteNetLib_NetPeer_System_Byte___System_Int32_System_Int32_" data-uid="LiteNetLib.NetManager.DisconnectPeer(LiteNetLib.NetPeer,System.Byte[],System.Int32,System.Int32)">
+  DisconnectPeer(NetPeer, byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disconnect peer from server and send additional data (Size must be less or equal MTU - 8)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisconnectPeer(NetPeer peer, byte[] data, int start, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>peer</code> <a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>peer to disconnect</p>
+</dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>additional data</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>data start</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>data length</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_DisconnectPeerForce_" data-uid="LiteNetLib.NetManager.DisconnectPeerForce*"></a>
+
+  <h3 id="LiteNetLib_NetManager_DisconnectPeerForce_LiteNetLib_NetPeer_" data-uid="LiteNetLib.NetManager.DisconnectPeerForce(LiteNetLib.NetPeer)">
+  DisconnectPeerForce(NetPeer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Immediately disconnect peer from server without additional data</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisconnectPeerForce(NetPeer peer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>peer</code> <a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>peer to disconnect</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_GetEnumerator_" data-uid="LiteNetLib.NetManager.GetEnumerator*"></a>
+
+  <h3 id="LiteNetLib_NetManager_GetEnumerator" data-uid="LiteNetLib.NetManager.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetManager.NetPeerEnumerator GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.NetManager.html">NetManager</a>.<a class="xref" href="LiteNetLib.NetManager.NetPeerEnumerator.html">NetPeerEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_GetPeerById_" data-uid="LiteNetLib.NetManager.GetPeerById*"></a>
+
+  <h3 id="LiteNetLib_NetManager_GetPeerById_System_Int32_" data-uid="LiteNetLib.NetManager.GetPeerById(System.Int32)">
+  GetPeerById(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets peer by peer id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetPeer GetPeerById(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>id of peer</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>Peer if peer with id exist, otherwise null</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_GetPeersCount_" data-uid="LiteNetLib.NetManager.GetPeersCount*"></a>
+
+  <h3 id="LiteNetLib_NetManager_GetPeersCount_LiteNetLib_ConnectionState_" data-uid="LiteNetLib.NetManager.GetPeersCount(LiteNetLib.ConnectionState)">
+  GetPeersCount(ConnectionState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return peers count with connection state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPeersCount(ConnectionState peerState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>peerState</code> <a class="xref" href="LiteNetLib.ConnectionState.html">ConnectionState</a></dt>
+    <dd><p>peer connection state (you can use as bit flags)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>peers count</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_GetPeersNonAlloc_" data-uid="LiteNetLib.NetManager.GetPeersNonAlloc*"></a>
+
+  <h3 id="LiteNetLib_NetManager_GetPeersNonAlloc_System_Collections_Generic_List_LiteNetLib_NetPeer__LiteNetLib_ConnectionState_" data-uid="LiteNetLib.NetManager.GetPeersNonAlloc(System.Collections.Generic.List{LiteNetLib.NetPeer},LiteNetLib.ConnectionState)">
+  GetPeersNonAlloc(List&lt;NetPeer&gt;, ConnectionState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get copy of peers (without allocations)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetPeersNonAlloc(List&lt;NetPeer&gt; peers, ConnectionState peerState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>peers</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a>&gt;</dt>
+    <dd><p>List that will contain result</p>
+</dd>
+    <dt><code>peerState</code> <a class="xref" href="LiteNetLib.ConnectionState.html">ConnectionState</a></dt>
+    <dd><p>State of peers</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_ManualUpdate_" data-uid="LiteNetLib.NetManager.ManualUpdate*"></a>
+
+  <h3 id="LiteNetLib_NetManager_ManualUpdate_System_Int32_" data-uid="LiteNetLib.NetManager.ManualUpdate(System.Int32)">
+  ManualUpdate(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Update and send logic. Use this only when NetManager started in manual mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ManualUpdate(int elapsedMilliseconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elapsedMilliseconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>elapsed milliseconds since last update call</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_PollEvents_" data-uid="LiteNetLib.NetManager.PollEvents*"></a>
+
+  <h3 id="LiteNetLib_NetManager_PollEvents" data-uid="LiteNetLib.NetManager.PollEvents">
+  PollEvents()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Receive all pending events. Call this in game update code
+In Manual mode it will call also socket Receive (which can be slow)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PollEvents()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendBroadcast_" data-uid="LiteNetLib.NetManager.SendBroadcast*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendBroadcast_LiteNetLib_Utils_NetDataWriter_System_Int32_" data-uid="LiteNetLib.NetManager.SendBroadcast(LiteNetLib.Utils.NetDataWriter,System.Int32)">
+  SendBroadcast(NetDataWriter, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SendBroadcast(NetDataWriter writer, int port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd></dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendBroadcast_" data-uid="LiteNetLib.NetManager.SendBroadcast*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendBroadcast_System_Byte___System_Int32_" data-uid="LiteNetLib.NetManager.SendBroadcast(System.Byte[],System.Int32)">
+  SendBroadcast(byte[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SendBroadcast(byte[] data, int port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendBroadcast_" data-uid="LiteNetLib.NetManager.SendBroadcast*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendBroadcast_System_Byte___System_Int32_System_Int32_System_Int32_" data-uid="LiteNetLib.NetManager.SendBroadcast(System.Byte[],System.Int32,System.Int32,System.Int32)">
+  SendBroadcast(byte[], int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SendBroadcast(byte[] data, int start, int length, int port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendToAll_" data-uid="LiteNetLib.NetManager.SendToAll*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendToAll_LiteNetLib_Utils_NetDataWriter_LiteNetLib_DeliveryMethod_" data-uid="LiteNetLib.NetManager.SendToAll(LiteNetLib.Utils.NetDataWriter,LiteNetLib.DeliveryMethod)">
+  SendToAll(NetDataWriter, DeliveryMethod)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send data to all connected peers (channel - 0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendToAll(NetDataWriter writer, DeliveryMethod options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd><p>DataWriter with data</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd><p>Send options (reliable, unreliable, etc.)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendToAll_" data-uid="LiteNetLib.NetManager.SendToAll*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendToAll_LiteNetLib_Utils_NetDataWriter_LiteNetLib_DeliveryMethod_LiteNetLib_NetPeer_" data-uid="LiteNetLib.NetManager.SendToAll(LiteNetLib.Utils.NetDataWriter,LiteNetLib.DeliveryMethod,LiteNetLib.NetPeer)">
+  SendToAll(NetDataWriter, DeliveryMethod, NetPeer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send data to all connected peers (channel - 0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendToAll(NetDataWriter writer, DeliveryMethod options, NetPeer excludePeer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd><p>DataWriter with data</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd><p>Send options (reliable, unreliable, etc.)</p>
+</dd>
+    <dt><code>excludePeer</code> <a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>Excluded peer</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendToAll_" data-uid="LiteNetLib.NetManager.SendToAll*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendToAll_LiteNetLib_Utils_NetDataWriter_System_Byte_LiteNetLib_DeliveryMethod_" data-uid="LiteNetLib.NetManager.SendToAll(LiteNetLib.Utils.NetDataWriter,System.Byte,LiteNetLib.DeliveryMethod)">
+  SendToAll(NetDataWriter, byte, DeliveryMethod)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send data to all connected peers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendToAll(NetDataWriter writer, byte channelNumber, DeliveryMethod options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd><p>DataWriter with data</p>
+</dd>
+    <dt><code>channelNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>Number of channel (from 0 to channelsCount - 1)</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd><p>Send options (reliable, unreliable, etc.)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendToAll_" data-uid="LiteNetLib.NetManager.SendToAll*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendToAll_LiteNetLib_Utils_NetDataWriter_System_Byte_LiteNetLib_DeliveryMethod_LiteNetLib_NetPeer_" data-uid="LiteNetLib.NetManager.SendToAll(LiteNetLib.Utils.NetDataWriter,System.Byte,LiteNetLib.DeliveryMethod,LiteNetLib.NetPeer)">
+  SendToAll(NetDataWriter, byte, DeliveryMethod, NetPeer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send data to all connected peers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendToAll(NetDataWriter writer, byte channelNumber, DeliveryMethod options, NetPeer excludePeer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd><p>DataWriter with data</p>
+</dd>
+    <dt><code>channelNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>Number of channel (from 0 to channelsCount - 1)</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd><p>Send options (reliable, unreliable, etc.)</p>
+</dd>
+    <dt><code>excludePeer</code> <a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>Excluded peer</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendToAll_" data-uid="LiteNetLib.NetManager.SendToAll*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendToAll_System_Byte___LiteNetLib_DeliveryMethod_" data-uid="LiteNetLib.NetManager.SendToAll(System.Byte[],LiteNetLib.DeliveryMethod)">
+  SendToAll(byte[], DeliveryMethod)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send data to all connected peers (channel - 0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendToAll(byte[] data, DeliveryMethod options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Data</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd><p>Send options (reliable, unreliable, etc.)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendToAll_" data-uid="LiteNetLib.NetManager.SendToAll*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendToAll_System_Byte___LiteNetLib_DeliveryMethod_LiteNetLib_NetPeer_" data-uid="LiteNetLib.NetManager.SendToAll(System.Byte[],LiteNetLib.DeliveryMethod,LiteNetLib.NetPeer)">
+  SendToAll(byte[], DeliveryMethod, NetPeer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send data to all connected peers (channel - 0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendToAll(byte[] data, DeliveryMethod options, NetPeer excludePeer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Data</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd><p>Send options (reliable, unreliable, etc.)</p>
+</dd>
+    <dt><code>excludePeer</code> <a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>Excluded peer</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendToAll_" data-uid="LiteNetLib.NetManager.SendToAll*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendToAll_System_Byte___System_Byte_LiteNetLib_DeliveryMethod_" data-uid="LiteNetLib.NetManager.SendToAll(System.Byte[],System.Byte,LiteNetLib.DeliveryMethod)">
+  SendToAll(byte[], byte, DeliveryMethod)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send data to all connected peers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendToAll(byte[] data, byte channelNumber, DeliveryMethod options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Data</p>
+</dd>
+    <dt><code>channelNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>Number of channel (from 0 to channelsCount - 1)</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd><p>Send options (reliable, unreliable, etc.)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendToAll_" data-uid="LiteNetLib.NetManager.SendToAll*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendToAll_System_Byte___System_Byte_LiteNetLib_DeliveryMethod_LiteNetLib_NetPeer_" data-uid="LiteNetLib.NetManager.SendToAll(System.Byte[],System.Byte,LiteNetLib.DeliveryMethod,LiteNetLib.NetPeer)">
+  SendToAll(byte[], byte, DeliveryMethod, NetPeer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send data to all connected peers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendToAll(byte[] data, byte channelNumber, DeliveryMethod options, NetPeer excludePeer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Data</p>
+</dd>
+    <dt><code>channelNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>Number of channel (from 0 to channelsCount - 1)</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd><p>Send options (reliable, unreliable, etc.)</p>
+</dd>
+    <dt><code>excludePeer</code> <a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>Excluded peer</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendToAll_" data-uid="LiteNetLib.NetManager.SendToAll*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendToAll_System_Byte___System_Int32_System_Int32_LiteNetLib_DeliveryMethod_" data-uid="LiteNetLib.NetManager.SendToAll(System.Byte[],System.Int32,System.Int32,LiteNetLib.DeliveryMethod)">
+  SendToAll(byte[], int, int, DeliveryMethod)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send data to all connected peers (channel - 0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendToAll(byte[] data, int start, int length, DeliveryMethod options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Data</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Start of data</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Length of data</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd><p>Send options (reliable, unreliable, etc.)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendToAll_" data-uid="LiteNetLib.NetManager.SendToAll*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendToAll_System_Byte___System_Int32_System_Int32_LiteNetLib_DeliveryMethod_LiteNetLib_NetPeer_" data-uid="LiteNetLib.NetManager.SendToAll(System.Byte[],System.Int32,System.Int32,LiteNetLib.DeliveryMethod,LiteNetLib.NetPeer)">
+  SendToAll(byte[], int, int, DeliveryMethod, NetPeer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send data to all connected peers (channel - 0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendToAll(byte[] data, int start, int length, DeliveryMethod options, NetPeer excludePeer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Data</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Start of data</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Length of data</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd><p>Send options (reliable, unreliable, etc.)</p>
+</dd>
+    <dt><code>excludePeer</code> <a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>Excluded peer</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendToAll_" data-uid="LiteNetLib.NetManager.SendToAll*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendToAll_System_Byte___System_Int32_System_Int32_System_Byte_LiteNetLib_DeliveryMethod_" data-uid="LiteNetLib.NetManager.SendToAll(System.Byte[],System.Int32,System.Int32,System.Byte,LiteNetLib.DeliveryMethod)">
+  SendToAll(byte[], int, int, byte, DeliveryMethod)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send data to all connected peers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendToAll(byte[] data, int start, int length, byte channelNumber, DeliveryMethod options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Data</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Start of data</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Length of data</p>
+</dd>
+    <dt><code>channelNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>Number of channel (from 0 to channelsCount - 1)</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd><p>Send options (reliable, unreliable, etc.)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendToAll_" data-uid="LiteNetLib.NetManager.SendToAll*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendToAll_System_Byte___System_Int32_System_Int32_System_Byte_LiteNetLib_DeliveryMethod_LiteNetLib_NetPeer_" data-uid="LiteNetLib.NetManager.SendToAll(System.Byte[],System.Int32,System.Int32,System.Byte,LiteNetLib.DeliveryMethod,LiteNetLib.NetPeer)">
+  SendToAll(byte[], int, int, byte, DeliveryMethod, NetPeer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send data to all connected peers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendToAll(byte[] data, int start, int length, byte channelNumber, DeliveryMethod options, NetPeer excludePeer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Data</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Start of data</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Length of data</p>
+</dd>
+    <dt><code>channelNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p>Number of channel (from 0 to channelsCount - 1)</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd><p>Send options (reliable, unreliable, etc.)</p>
+</dd>
+    <dt><code>excludePeer</code> <a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>Excluded peer</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendUnconnectedMessage_" data-uid="LiteNetLib.NetManager.SendUnconnectedMessage*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendUnconnectedMessage_LiteNetLib_Utils_NetDataWriter_System_Net_IPEndPoint_" data-uid="LiteNetLib.NetManager.SendUnconnectedMessage(LiteNetLib.Utils.NetDataWriter,System.Net.IPEndPoint)">
+  SendUnconnectedMessage(NetDataWriter, IPEndPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send message without connection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SendUnconnectedMessage(NetDataWriter writer, IPEndPoint remoteEndPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd><p>Data serializer</p>
+</dd>
+    <dt><code>remoteEndPoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipendpoint">IPEndPoint</a></dt>
+    <dd><p>Packet destination</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Operation result</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendUnconnectedMessage_" data-uid="LiteNetLib.NetManager.SendUnconnectedMessage*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendUnconnectedMessage_LiteNetLib_Utils_NetDataWriter_System_String_System_Int32_" data-uid="LiteNetLib.NetManager.SendUnconnectedMessage(LiteNetLib.Utils.NetDataWriter,System.String,System.Int32)">
+  SendUnconnectedMessage(NetDataWriter, string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send message without connection. WARNING This method allocates a new IPEndPoint object and
+synchronously makes a DNS request. If you're calling this method every frame it will be
+much faster to just cache the IPEndPoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SendUnconnectedMessage(NetDataWriter writer, string address, int port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd><p>Data serializer</p>
+</dd>
+    <dt><code>address</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Packet destination IP or hostname</p>
+</dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Packet destination port</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Operation result</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendUnconnectedMessage_" data-uid="LiteNetLib.NetManager.SendUnconnectedMessage*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendUnconnectedMessage_System_Byte___System_Int32_System_Int32_System_Net_IPEndPoint_" data-uid="LiteNetLib.NetManager.SendUnconnectedMessage(System.Byte[],System.Int32,System.Int32,System.Net.IPEndPoint)">
+  SendUnconnectedMessage(byte[], int, int, IPEndPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send message without connection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SendUnconnectedMessage(byte[] message, int start, int length, IPEndPoint remoteEndPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Raw data</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>data start</p>
+</dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>data length</p>
+</dd>
+    <dt><code>remoteEndPoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipendpoint">IPEndPoint</a></dt>
+    <dd><p>Packet destination</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Operation result</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SendUnconnectedMessage_" data-uid="LiteNetLib.NetManager.SendUnconnectedMessage*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SendUnconnectedMessage_System_Byte___System_Net_IPEndPoint_" data-uid="LiteNetLib.NetManager.SendUnconnectedMessage(System.Byte[],System.Net.IPEndPoint)">
+  SendUnconnectedMessage(byte[], IPEndPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Send message without connection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SendUnconnectedMessage(byte[] message, IPEndPoint remoteEndPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>Raw data</p>
+</dd>
+    <dt><code>remoteEndPoint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipendpoint">IPEndPoint</a></dt>
+    <dd><p>Packet destination</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Operation result</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_SocketActive_" data-uid="LiteNetLib.NetManager.SocketActive*"></a>
+
+  <h3 id="LiteNetLib_NetManager_SocketActive_System_Boolean_" data-uid="LiteNetLib.NetManager.SocketActive(System.Boolean)">
+  SocketActive(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SocketActive(bool ipv4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ipv4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_Start_" data-uid="LiteNetLib.NetManager.Start*"></a>
+
+  <h3 id="LiteNetLib_NetManager_Start" data-uid="LiteNetLib.NetManager.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Start logic thread and listening on available port</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Start()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_Start_" data-uid="LiteNetLib.NetManager.Start*"></a>
+
+  <h3 id="LiteNetLib_NetManager_Start_System_Int32_" data-uid="LiteNetLib.NetManager.Start(System.Int32)">
+  Start(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Start logic thread and listening on selected port</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Start(int port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>port to listen</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_Start_" data-uid="LiteNetLib.NetManager.Start*"></a>
+
+  <h3 id="LiteNetLib_NetManager_Start_System_Net_IPAddress_System_Net_IPAddress_System_Int32_" data-uid="LiteNetLib.NetManager.Start(System.Net.IPAddress,System.Net.IPAddress,System.Int32)">
+  Start(IPAddress, IPAddress, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Start logic thread and listening on selected port</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Start(IPAddress addressIPv4, IPAddress addressIPv6, int port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>addressIPv4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipaddress">IPAddress</a></dt>
+    <dd><p>bind to specific ipv4 address</p>
+</dd>
+    <dt><code>addressIPv6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipaddress">IPAddress</a></dt>
+    <dd><p>bind to specific ipv6 address</p>
+</dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>port to listen</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_Start_" data-uid="LiteNetLib.NetManager.Start*"></a>
+
+  <h3 id="LiteNetLib_NetManager_Start_System_Net_IPAddress_System_Net_IPAddress_System_Int32_System_Boolean_" data-uid="LiteNetLib.NetManager.Start(System.Net.IPAddress,System.Net.IPAddress,System.Int32,System.Boolean)">
+  Start(IPAddress, IPAddress, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Start logic thread and listening on selected port</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Start(IPAddress addressIPv4, IPAddress addressIPv6, int port, bool manualMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>addressIPv4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipaddress">IPAddress</a></dt>
+    <dd><p>bind to specific ipv4 address</p>
+</dd>
+    <dt><code>addressIPv6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipaddress">IPAddress</a></dt>
+    <dd><p>bind to specific ipv6 address</p>
+</dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>port to listen</p>
+</dd>
+    <dt><code>manualMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>mode of library</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_Start_" data-uid="LiteNetLib.NetManager.Start*"></a>
+
+  <h3 id="LiteNetLib_NetManager_Start_System_String_System_String_System_Int32_" data-uid="LiteNetLib.NetManager.Start(System.String,System.String,System.Int32)">
+  Start(string, string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Start logic thread and listening on selected port</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Start(string addressIPv4, string addressIPv6, int port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>addressIPv4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>bind to specific ipv4 address</p>
+</dd>
+    <dt><code>addressIPv6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>bind to specific ipv6 address</p>
+</dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>port to listen</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_StartInManualMode_" data-uid="LiteNetLib.NetManager.StartInManualMode*"></a>
+
+  <h3 id="LiteNetLib_NetManager_StartInManualMode_System_Int32_" data-uid="LiteNetLib.NetManager.StartInManualMode(System.Int32)">
+  StartInManualMode(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Start in manual mode and listening on selected port
+In this mode you should use ManualReceive (without PollEvents) for receive packets
+and ManualUpdate(...) for update and send packets
+This mode useful mostly for single-threaded servers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartInManualMode(int port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>port to listen</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_StartInManualMode_" data-uid="LiteNetLib.NetManager.StartInManualMode*"></a>
+
+  <h3 id="LiteNetLib_NetManager_StartInManualMode_System_Net_IPAddress_System_Net_IPAddress_System_Int32_" data-uid="LiteNetLib.NetManager.StartInManualMode(System.Net.IPAddress,System.Net.IPAddress,System.Int32)">
+  StartInManualMode(IPAddress, IPAddress, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Start in manual mode and listening on selected port
+In this mode you should use ManualReceive (without PollEvents) for receive packets
+and ManualUpdate(...) for update and send packets
+This mode useful mostly for single-threaded servers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartInManualMode(IPAddress addressIPv4, IPAddress addressIPv6, int port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>addressIPv4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipaddress">IPAddress</a></dt>
+    <dd><p>bind to specific ipv4 address</p>
+</dd>
+    <dt><code>addressIPv6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipaddress">IPAddress</a></dt>
+    <dd><p>bind to specific ipv6 address</p>
+</dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>port to listen</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_StartInManualMode_" data-uid="LiteNetLib.NetManager.StartInManualMode*"></a>
+
+  <h3 id="LiteNetLib_NetManager_StartInManualMode_System_String_System_String_System_Int32_" data-uid="LiteNetLib.NetManager.StartInManualMode(System.String,System.String,System.Int32)">
+  StartInManualMode(string, string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Start in manual mode and listening on selected port
+In this mode you should use ManualReceive (without PollEvents) for receive packets
+and ManualUpdate(...) for update and send packets
+This mode useful mostly for single-threaded servers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StartInManualMode(string addressIPv4, string addressIPv6, int port)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>addressIPv4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>bind to specific ipv4 address</p>
+</dd>
+    <dt><code>addressIPv6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>bind to specific ipv6 address</p>
+</dd>
+    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>port to listen</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_Stop_" data-uid="LiteNetLib.NetManager.Stop*"></a>
+
+  <h3 id="LiteNetLib_NetManager_Stop" data-uid="LiteNetLib.NetManager.Stop">
+  Stop()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Force closes connection and stop all threads.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_Stop_" data-uid="LiteNetLib.NetManager.Stop*"></a>
+
+  <h3 id="LiteNetLib_NetManager_Stop_System_Boolean_" data-uid="LiteNetLib.NetManager.Stop(System.Boolean)">
+  Stop(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Force closes connection and stop all threads.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop(bool sendDisconnectMessages)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sendDisconnectMessages</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Send disconnect messages</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_TriggerUpdate_" data-uid="LiteNetLib.NetManager.TriggerUpdate*"></a>
+
+  <h3 id="LiteNetLib_NetManager_TriggerUpdate" data-uid="LiteNetLib.NetManager.TriggerUpdate">
+  TriggerUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Triggers update and send logic immediately (works asynchronously)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_NetManager_TryGetPeerById_" data-uid="LiteNetLib.NetManager.TryGetPeerById*"></a>
+
+  <h3 id="LiteNetLib_NetManager_TryGetPeerById_System_Int32_LiteNetLib_NetPeer__" data-uid="LiteNetLib.NetManager.TryGetPeerById(System.Int32,LiteNetLib.NetPeer@)">
+  TryGetPeerById(int, out NetPeer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets peer by peer id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetPeerById(int id, out NetPeer peer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>id of peer</p>
+</dd>
+    <dt><code>peer</code> <a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd><p>resulting peer</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if peer with id exist, otherwise false</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BuffSystem
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BuffSystem
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="XianXia.Unit.BuffSystem">
+
+
+
+  <h1 id="XianXia_Unit_BuffSystem" data-uid="XianXia.Unit.BuffSystem" class="text-break">
+    Class BuffSystem
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="XianXia.html">XianXia</a>.<a class="xref" href="XianXia.Unit.html">Unit</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BuffSystem : SlightSystemBase&lt;Buff, StatusOrgan&gt;, IMono</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Saber.ECS.SystemStone.html">SystemStone</a></div>
+      <div><a class="xref" href="Saber.ECS.SystemBase-1.html">SystemBase</a>&lt;<a class="xref" href="XianXia.Unit.Buff.html">Buff</a>&gt;</div>
+      <div><a class="xref" href="Saber.ECS.SlightSystemBase-2.html">SlightSystemBase</a>&lt;<a class="xref" href="XianXia.Unit.Buff.html">Buff</a>, <a class="xref" href="XianXia.Unit.StatusOrgan.html">StatusOrgan</a>&gt;</div>
+      <div><span class="xref">BuffSystem</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Saber.ECS.IMono.html">IMono</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_allComponents">SlightSystemBase&lt;Buff, StatusOrgan&gt;.allComponents</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_objectPool">SlightSystemBase&lt;Buff, StatusOrgan&gt;.objectPool</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_IsSpwanSystem">SlightSystemBase&lt;Buff, StatusOrgan&gt;.IsSpwanSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_Spawn">SlightSystemBase&lt;Buff, StatusOrgan&gt;.Spawn()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_InitAfterSpawn__0_">SlightSystemBase&lt;Buff, StatusOrgan&gt;.InitAfterSpawn(Buff)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_InitializeBeforeRecycle__0_">SlightSystemBase&lt;Buff, StatusOrgan&gt;.InitializeBeforeRecycle(Buff)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_SpawnComponent__1_">SlightSystemBase&lt;Buff, StatusOrgan&gt;.SpawnComponent(StatusOrgan)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_DestoryComponent__0_">SlightSystemBase&lt;Buff, StatusOrgan&gt;.DestoryComponent(Buff)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SlightSystemBase-2.html#Saber_ECS_SlightSystemBase_2_Awake_Saber_ECS_WorldBase_">SlightSystemBase&lt;Buff, StatusOrgan&gt;.Awake(WorldBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemBase-1.html#Saber_ECS_SystemBase_1_ModelType">SystemBase&lt;Buff&gt;.ModelType</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_world">SystemStone.world</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_IsSpwanSystem">SystemStone.IsSpwanSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_enable">SystemStone.enable</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_World">SystemStone.World</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_Enable">SystemStone.Enable</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_SetEnable_System_Boolean_">SystemStone.SetEnable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_Awake_Saber_ECS_WorldBase_">SystemStone.Awake(WorldBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_OnDestory">SystemStone.OnDestory()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_LateUpdate">SystemStone.LateUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_Update">SystemStone.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_FixedUpdate">SystemStone.FixedUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_OnDrawGizmos">SystemStone.OnDrawGizmos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_OnDrawGizmosSelected">SystemStone.OnDrawGizmosSelected()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_StartAfterNetwork">SystemStone.StartAfterNetwork()</a>
+    </div>
+    <div>
+      <a class="xref" href="Saber.ECS.SystemStone.html#Saber_ECS_SystemStone_Reset">SystemStone.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="XianXia_Unit_BuffSystem_AddBuff_" data-uid="XianXia.Unit.BuffSystem.AddBuff*"></a>
+
+  <h3 id="XianXia_Unit_BuffSystem_AddBuff_System_String_XianXia_Unit_StatusOrgan_UnitBase_System_Action_XianXia_Unit_StatusOrgan__System_Action_XianXia_Unit_StatusOrgan__System_Action_XianXia_Unit_StatusOrgan__System_Int32_System_Boolean_" data-uid="XianXia.Unit.BuffSystem.AddBuff(System.String,XianXia.Unit.StatusOrgan,UnitBase,System.Action{XianXia.Unit.StatusOrgan},System.Action{XianXia.Unit.StatusOrgan},System.Action{XianXia.Unit.StatusOrgan},System.Int32,System.Boolean)">
+  AddBuff(string, StatusOrgan, UnitBase, Action&lt;StatusOrgan&gt;, Action&lt;StatusOrgan&gt;, Action&lt;StatusOrgan&gt;, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加特殊buff，并不是固有的，来自于Excel中的</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Buff AddBuff(string buffName, StatusOrgan target, UnitBase source, Action&lt;StatusOrgan&gt; enterAction, Action&lt;StatusOrgan&gt; updateAction, Action&lt;StatusOrgan&gt; endAction, int continueLong, bool isDebuff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="XianXia.Unit.StatusOrgan.html">StatusOrgan</a></dt>
+    <dd></dd>
+    <dt><code>source</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+    <dt><code>enterAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="XianXia.Unit.StatusOrgan.html">StatusOrgan</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>updateAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="XianXia.Unit.StatusOrgan.html">StatusOrgan</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>endAction</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="XianXia.Unit.StatusOrgan.html">StatusOrgan</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>continueLong</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>isDebuff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Unit.Buff.html">Buff</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BuffSystem_AddInherentBuff_" data-uid="XianXia.Unit.BuffSystem.AddInherentBuff*"></a>
+
+  <h3 id="XianXia_Unit_BuffSystem_AddInherentBuff_System_Int32_XianXia_Unit_StatusOrgan_UnitBase_System_Single_System_Int32_" data-uid="XianXia.Unit.BuffSystem.AddInherentBuff(System.Int32,XianXia.Unit.StatusOrgan,UnitBase,System.Single,System.Int32)">
+  AddInherentBuff(int, StatusOrgan, UnitBase, float, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>添加固有BUFF，来自Excel表，BuffDictionary中的</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InherentBuff AddInherentBuff(int id, StatusOrgan target, UnitBase source, float val, int continueLong)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>target</code> <a class="xref" href="XianXia.Unit.StatusOrgan.html">StatusOrgan</a></dt>
+    <dd></dd>
+    <dt><code>source</code> <a class="xref" href="UnitBase.html">UnitBase</a></dt>
+    <dd></dd>
+    <dt><code>val</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>continueLong</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XianXia.Unit.InherentBuff.html">InherentBuff</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BuffSystem_InitAfterSpawn_" data-uid="XianXia.Unit.BuffSystem.InitAfterSpawn*"></a>
+
+  <h3 id="XianXia_Unit_BuffSystem_InitAfterSpawn_XianXia_Unit_Buff_" data-uid="XianXia.Unit.BuffSystem.InitAfterSpawn(XianXia.Unit.Buff)">
+  InitAfterSpawn(Buff)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InitAfterSpawn(Buff t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="XianXia.Unit.Buff.html">Buff</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BuffSystem_InitBuff_" data-uid="XianXia.Unit.BuffSystem.InitBuff*"></a>
+
+  <h3 id="XianXia_Unit_BuffSystem_InitBuff" data-uid="XianXia.Unit.BuffSystem.InitBuff">
+  InitBuff()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void InitBuff()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BuffSystem_InitializeBeforeRecycle_" data-uid="XianXia.Unit.BuffSystem.InitializeBeforeRecycle*"></a>
+
+  <h3 id="XianXia_Unit_BuffSystem_InitializeBeforeRecycle_XianXia_Unit_Buff_" data-uid="XianXia.Unit.BuffSystem.InitializeBeforeRecycle(XianXia.Unit.Buff)">
+  InitializeBeforeRecycle(Buff)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void InitializeBeforeRecycle(Buff buff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buff</code> <a class="xref" href="XianXia.Unit.Buff.html">Buff</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BuffSystem_RemoveBuff_" data-uid="XianXia.Unit.BuffSystem.RemoveBuff*"></a>
+
+  <h3 id="XianXia_Unit_BuffSystem_RemoveBuff_XianXia_Unit_Buff_" data-uid="XianXia.Unit.BuffSystem.RemoveBuff(XianXia.Unit.Buff)">
+  RemoveBuff(Buff)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>移除Buff，会触发buff的退出事件</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveBuff(Buff buff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buff</code> <a class="xref" href="XianXia.Unit.Buff.html">Buff</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="XianXia_Unit_BuffSystem_Start_" data-uid="XianXia.Unit.BuffSystem.Start*"></a>
+
+  <h3 id="XianXia_Unit_BuffSystem_Start" data-uid="XianXia.Unit.BuffSystem.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

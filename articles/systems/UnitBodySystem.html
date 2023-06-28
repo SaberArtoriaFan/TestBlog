@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>UnitBodySystem </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="UnitBodySystem ">
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../../public/main.js'
+    import { init } from './../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="unitbodysystem">UnitBodySystem</h1>
+
+<p>躯干系统，管理接收<strong>伤害接口</strong>，<strong>治疗接口</strong>，<strong>死亡接口</strong>，以及<strong>BodyOrgan</strong>的生成与销毁</p>
+<h2 id="1主要对外接口">1.主要对外接口</h2>
+<pre><code class="lang-CSharp">        /// &lt;summary&gt;
+        /// 所有造成伤害的接口
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;bodyOrgan&quot;&gt;&lt;/param&gt;
+        /// &lt;param name=&quot;damage&quot;&gt;&lt;/param&gt;
+        public void ReceiveDamage(BodyOrgan bodyOrgan,Damage damage)
+
+        /// &lt;summary&gt;
+        /// 所有单位获得治疗接口
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;bodyOrgan&quot;&gt;&lt;/param&gt;
+        /// &lt;param name=&quot;num&quot;&gt;&lt;/param&gt;
+        /// &lt;param name=&quot;source&quot;&gt;&lt;/param&gt;
+        public void UnitHeal(BodyOrgan bodyOrgan,int num,UnitBase source)
+
+     /// &lt;summary&gt;
+        /// 所有单位死亡接口
+        /// 直接被移除出游戏不是死亡
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;bodyOrgan&quot;&gt;&lt;/param&gt;
+        /// &lt;param name=&quot;damage&quot;&gt;&lt;/param&gt;
+        public void UnitDead(BodyOrgan bodyOrgan, Damage damage)
+</code></pre>
+<h2 id="2受伤触发顺序">2.受伤触发顺序</h2>
+<p>1.判断伤害值是否合法（大于0），判断是否无敌<br>
+2.判断是否触发闪避<br>
+3.判断<strong>受伤之前</strong>事件</p>
+<pre><code class="lang-CSharp">            //触发造成伤害之前事件
+            UnitDamagedBefore.Trigger(ID_DamageBefore,bodyOrgan, damage);
+</code></pre>
+<p>4.判断是否是攻击伤害，是否需要计算护甲<br>
+5.血量扣除<br>
+6.触发<strong>受伤之后</strong>事件<br>
+7.判断是否死亡\</p>
+<h2 id="3注册事件">3.注册事件</h2>
+<pre><code class="lang-CSharp">       SaberEvent&lt;BodyOrgan, Damage&gt; UnitDamagedBefore;
+        SaberEvent&lt;BodyOrgan, Damage&gt; UnitDamagedAfter;
+        SaberEvent&lt;UnitBase&gt; UnitDeadAfter;
+        SaberEvent&lt;BodyOrgan, UnitBase&gt; UnitDeadBefore;
+</code></pre>
+<p><strong>注意</strong>：没做治疗事件接口</p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

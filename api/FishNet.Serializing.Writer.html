@@ -1,0 +1,2469 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Writer
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Writer
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FishNet.Serializing.Writer">
+
+
+
+  <h1 id="FishNet_Serializing_Writer" data-uid="FishNet.Serializing.Writer" class="text-break">
+    Class Writer
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FishNet.html">FishNet</a>.<a class="xref" href="FishNet.Serializing.html">Serializing</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Writes data to a buffer.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Writer</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Writer</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="FishNet.Serializing.PooledWriter.html">PooledWriter</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="FishNet.Managing.Timing.PreciseTickSerializer.html#FishNet_Managing_Timing_PreciseTickSerializer_WritePreciseTick_FishNet_Serializing_Writer_FishNet_Managing_Timing_PreciseTick_">PreciseTickSerializer.WritePreciseTick(Writer, PreciseTick)</a>
+  </div>
+  <div>
+      <a class="xref" href="RigidbodyStateSerializers.html#RigidbodyStateSerializers.WriteRigidbody2DState(FishNet.Serializing.Writer,FishNet.Component.Prediction.Rigidbody2DState)">RigidbodyStateSerializers.WriteRigidbody2DState(Writer, Rigidbody2DState)</a>
+  </div>
+  <div>
+      <a class="xref" href="RigidbodyStateSerializers.html#RigidbodyStateSerializers.WriteRigidbodyState(FishNet.Serializing.Writer,FishNet.Component.Prediction.RigidbodyState)">RigidbodyStateSerializers.WriteRigidbodyState(Writer, RigidbodyState)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="FishNet_Serializing_Writer_Length" data-uid="FishNet.Serializing.Writer.Length">
+  Length
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of bytes writen to the buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Length</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Serializing_Writer_NetworkManager" data-uid="FishNet.Serializing.Writer.NetworkManager">
+  NetworkManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>NetworkManager associated with this writer. May be null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkManager NetworkManager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Serializing_Writer_Position" data-uid="FishNet.Serializing.Writer.Position">
+  Position
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Current write position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Position</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="FishNet_Serializing_Writer_UNSET_COLLECTION_SIZE_VALUE" data-uid="FishNet.Serializing.Writer.UNSET_COLLECTION_SIZE_VALUE">
+  UNSET_COLLECTION_SIZE_VALUE
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Value used when a collection is unset, as in null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int UNSET_COLLECTION_SIZE_VALUE = -1</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FishNet_Serializing_Writer_Capacity_" data-uid="FishNet.Serializing.Writer.Capacity*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_Capacity" data-uid="FishNet.Serializing.Writer.Capacity">
+  Capacity
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Capacity of the buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Capacity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FishNet_Serializing_Writer_EnsureBufferCapacity_" data-uid="FishNet.Serializing.Writer.EnsureBufferCapacity*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_EnsureBufferCapacity_System_Int32_" data-uid="FishNet.Serializing.Writer.EnsureBufferCapacity(System.Int32)">
+  EnsureBufferCapacity(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures the buffer Capacity is of minimum count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnsureBufferCapacity(int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_EnsureBufferLength_" data-uid="FishNet.Serializing.Writer.EnsureBufferLength*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_EnsureBufferLength_System_Int32_" data-uid="FishNet.Serializing.Writer.EnsureBufferLength(System.Int32)">
+  EnsureBufferLength(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensure a number of bytes to be available in the buffer from current position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnsureBufferLength(int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_FastInsertByte_" data-uid="FishNet.Serializing.Writer.FastInsertByte*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_FastInsertByte_System_Byte_System_Int32_" data-uid="FishNet.Serializing.Writer.FastInsertByte(System.Byte,System.Int32)">
+  FastInsertByte(byte, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts value at index within the buffer.
+This method does not perform error checks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FastInsertByte(byte value, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_GetArraySegment_" data-uid="FishNet.Serializing.Writer.GetArraySegment*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_GetArraySegment" data-uid="FishNet.Serializing.Writer.GetArraySegment">
+  GetArraySegment()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the used portion of the buffer as an ArraySegment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArraySegment&lt;byte&gt; GetArraySegment()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_GetBuffer_" data-uid="FishNet.Serializing.Writer.GetBuffer*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_GetBuffer" data-uid="FishNet.Serializing.Writer.GetBuffer">
+  GetBuffer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the buffer. The returned value will be the full buffer, even if not all of it is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetBuffer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_Reserve_" data-uid="FishNet.Serializing.Writer.Reserve*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_Reserve_System_Int32_" data-uid="FishNet.Serializing.Writer.Reserve(System.Int32)">
+  Reserve(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reserves a number of bytes from current position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reserve(int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_Reset_" data-uid="FishNet.Serializing.Writer.Reset*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_Reset_FishNet_Managing_NetworkManager_" data-uid="FishNet.Serializing.Writer.Reset(FishNet.Managing.NetworkManager)">
+  Reset(NetworkManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the writer as though it was unused. Does not reset buffers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset(NetworkManager manager = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>manager</code> <a class="xref" href="FishNet.Managing.NetworkManager.html">NetworkManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteArraySegment_" data-uid="FishNet.Serializing.Writer.WriteArraySegment*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteArraySegment_System_ArraySegment_System_Byte__" data-uid="FishNet.Serializing.Writer.WriteArraySegment(System.ArraySegment{System.Byte})">
+  WriteArraySegment(ArraySegment&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes an ArraySegment without size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteArraySegment(ArraySegment&lt;byte&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteArraySegmentAndSize_" data-uid="FishNet.Serializing.Writer.WriteArraySegmentAndSize*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteArraySegmentAndSize_System_ArraySegment_System_Byte__" data-uid="FishNet.Serializing.Writer.WriteArraySegmentAndSize(System.ArraySegment{System.Byte})">
+  WriteArraySegmentAndSize(ArraySegment&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a byte ArraySegment and it's size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteArraySegmentAndSize(ArraySegment&lt;byte&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteArray_" data-uid="FishNet.Serializing.Writer.WriteArray*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteArray__1___0___" data-uid="FishNet.Serializing.Writer.WriteArray``1(``0[])">
+  WriteArray&lt;T&gt;(T[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes an array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteArray&lt;T&gt;(T[] value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> T[]</dt>
+    <dd><p>Collection to write.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteArray_" data-uid="FishNet.Serializing.Writer.WriteArray*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteArray__1___0___System_Int32_" data-uid="FishNet.Serializing.Writer.WriteArray``1(``0[],System.Int32)">
+  WriteArray&lt;T&gt;(T[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes an array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteArray&lt;T&gt;(T[] value, int offset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> T[]</dt>
+    <dd><p>Collection to write.</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Offset to begin at.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteArray_" data-uid="FishNet.Serializing.Writer.WriteArray*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteArray__1___0___System_Int32_System_Int32_" data-uid="FishNet.Serializing.Writer.WriteArray``1(``0[],System.Int32,System.Int32)">
+  WriteArray&lt;T&gt;(T[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes an array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteArray&lt;T&gt;(T[] value, int offset, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> T[]</dt>
+    <dd><p>Collection to write.</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Offset to begin at.</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Entries to write.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteBoolean_" data-uid="FishNet.Serializing.Writer.WriteBoolean*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteBoolean_System_Boolean_" data-uid="FishNet.Serializing.Writer.WriteBoolean(System.Boolean)">
+  WriteBoolean(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a boolean.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBoolean(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteByte_" data-uid="FishNet.Serializing.Writer.WriteByte*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteByte_System_Byte_" data-uid="FishNet.Serializing.Writer.WriteByte(System.Byte)">
+  WriteByte(byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a byte.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteByte(byte value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteBytes_" data-uid="FishNet.Serializing.Writer.WriteBytes*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteBytes_System_Byte___System_Int32_System_Int32_" data-uid="FishNet.Serializing.Writer.WriteBytes(System.Byte[],System.Int32,System.Int32)">
+  WriteBytes(byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBytes(byte[] value, int offset, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteBytesAndSize_" data-uid="FishNet.Serializing.Writer.WriteBytesAndSize*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteBytesAndSize_System_Byte___" data-uid="FishNet.Serializing.Writer.WriteBytesAndSize(System.Byte[])">
+  WriteBytesAndSize(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes all bytes in value and length of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBytesAndSize(byte[] value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteBytesAndSize_" data-uid="FishNet.Serializing.Writer.WriteBytesAndSize*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteBytesAndSize_System_Byte___System_Int32_System_Int32_" data-uid="FishNet.Serializing.Writer.WriteBytesAndSize(System.Byte[],System.Int32,System.Int32)">
+  WriteBytesAndSize(byte[], int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes bytes and length of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBytesAndSize(byte[] value, int offset, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteChannel_" data-uid="FishNet.Serializing.Writer.WriteChannel*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteChannel_FishNet_Transporting_Channel_" data-uid="FishNet.Serializing.Writer.WriteChannel(FishNet.Transporting.Channel)">
+  WriteChannel(Channel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a transport channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteChannel(Channel channel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>channel</code> <a class="xref" href="FishNet.Transporting.Channel.html">Channel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteChar_" data-uid="FishNet.Serializing.Writer.WriteChar*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteChar_System_Char_" data-uid="FishNet.Serializing.Writer.WriteChar(System.Char)">
+  WriteChar(char)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a char.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteChar(char value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteColor_" data-uid="FishNet.Serializing.Writer.WriteColor*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteColor_Color_FishNet_Serializing_AutoPackType_" data-uid="FishNet.Serializing.Writer.WriteColor(Color,FishNet.Serializing.AutoPackType)">
+  WriteColor(Color, AutoPackType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a Color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteColor(Color value, AutoPackType packType = AutoPackType.Packed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>packType</code> <a class="xref" href="FishNet.Serializing.AutoPackType.html">AutoPackType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteColor32_" data-uid="FishNet.Serializing.Writer.WriteColor32*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteColor32_Color32_" data-uid="FishNet.Serializing.Writer.WriteColor32(Color32)">
+  WriteColor32(Color32)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a Color32.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteColor32(Color32 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">Color32</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteDateTime_" data-uid="FishNet.Serializing.Writer.WriteDateTime*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteDateTime_System_DateTime_" data-uid="FishNet.Serializing.Writer.WriteDateTime(System.DateTime)">
+  WriteDateTime(DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a DateTime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteDateTime(DateTime dt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteDecimal_" data-uid="FishNet.Serializing.Writer.WriteDecimal*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteDecimal_System_Decimal_" data-uid="FishNet.Serializing.Writer.WriteDecimal(System.Decimal)">
+  WriteDecimal(decimal)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a decimal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteDecimal(decimal value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteDictionary_" data-uid="FishNet.Serializing.Writer.WriteDictionary*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteDictionary__2_System_Collections_Generic_Dictionary___0___1__" data-uid="FishNet.Serializing.Writer.WriteDictionary``2(System.Collections.Generic.Dictionary{``0,``1})">
+  WriteDictionary&lt;TKey, TValue&gt;(Dictionary&lt;TKey, TValue&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteDictionary&lt;TKey, TValue&gt;(Dictionary&lt;TKey, TValue&gt; dict)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dict</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;TKey, TValue&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TKey</code></dt>
+    <dd></dd>
+    <dt><code>TValue</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteDouble_" data-uid="FishNet.Serializing.Writer.WriteDouble*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteDouble_System_Double_" data-uid="FishNet.Serializing.Writer.WriteDouble(System.Double)">
+  WriteDouble(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a double.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteDouble(double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteGameObject_" data-uid="FishNet.Serializing.Writer.WriteGameObject*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteGameObject_GameObject_" data-uid="FishNet.Serializing.Writer.WriteGameObject(GameObject)">
+  WriteGameObject(GameObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a GameObject. GameObject must be spawned over the network already or be a prefab with a NetworkObject attached.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteGameObject(GameObject go)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>go</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteGuidAllocated_" data-uid="FishNet.Serializing.Writer.WriteGuidAllocated*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteGuidAllocated_System_Guid_" data-uid="FishNet.Serializing.Writer.WriteGuidAllocated(System.Guid)">
+  WriteGuidAllocated(Guid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a Guid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteGuidAllocated(Guid value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteInt16_" data-uid="FishNet.Serializing.Writer.WriteInt16*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteInt16_System_Int16_" data-uid="FishNet.Serializing.Writer.WriteInt16(System.Int16)">
+  WriteInt16(short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a int16.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteInt16(short value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteInt32_" data-uid="FishNet.Serializing.Writer.WriteInt32*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteInt32_System_Int32_FishNet_Serializing_AutoPackType_" data-uid="FishNet.Serializing.Writer.WriteInt32(System.Int32,FishNet.Serializing.AutoPackType)">
+  WriteInt32(int, AutoPackType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a int32.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteInt32(int value, AutoPackType packType = AutoPackType.Packed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>packType</code> <a class="xref" href="FishNet.Serializing.AutoPackType.html">AutoPackType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteInt64_" data-uid="FishNet.Serializing.Writer.WriteInt64*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteInt64_System_Int64_FishNet_Serializing_AutoPackType_" data-uid="FishNet.Serializing.Writer.WriteInt64(System.Int64,FishNet.Serializing.AutoPackType)">
+  WriteInt64(long, AutoPackType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes an int64.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteInt64(long value, AutoPackType packType = AutoPackType.Packed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>packType</code> <a class="xref" href="FishNet.Serializing.AutoPackType.html">AutoPackType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteListCache_" data-uid="FishNet.Serializing.Writer.WriteListCache*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteListCache__1_FishNet_Utility_Performance_ListCache___0__" data-uid="FishNet.Serializing.Writer.WriteListCache``1(FishNet.Utility.Performance.ListCache{``0})">
+  WriteListCache&lt;T&gt;(ListCache&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a ListCache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteListCache&lt;T&gt;(ListCache&lt;T&gt; lc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lc</code> <a class="xref" href="FishNet.Utility.Performance.ListCache-1.html">ListCache</a>&lt;T&gt;</dt>
+    <dd><p>ListCache to write.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteList_" data-uid="FishNet.Serializing.Writer.WriteList*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteList__1_System_Collections_Generic_List___0__" data-uid="FishNet.Serializing.Writer.WriteList``1(System.Collections.Generic.List{``0})">
+  WriteList&lt;T&gt;(List&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteList&lt;T&gt;(List&lt;T&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</dt>
+    <dd><p>Collection to write.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteList_" data-uid="FishNet.Serializing.Writer.WriteList*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteList__1_System_Collections_Generic_List___0__System_Int32_" data-uid="FishNet.Serializing.Writer.WriteList``1(System.Collections.Generic.List{``0},System.Int32)">
+  WriteList&lt;T&gt;(List&lt;T&gt;, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteList&lt;T&gt;(List&lt;T&gt; value, int offset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</dt>
+    <dd><p>Collection to write.</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Offset to begin at.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteList_" data-uid="FishNet.Serializing.Writer.WriteList*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteList__1_System_Collections_Generic_List___0__System_Int32_System_Int32_" data-uid="FishNet.Serializing.Writer.WriteList``1(System.Collections.Generic.List{``0},System.Int32,System.Int32)">
+  WriteList&lt;T&gt;(List&lt;T&gt;, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteList&lt;T&gt;(List&lt;T&gt; value, int offset, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</dt>
+    <dd><p>Collection to write.</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Offset to begin at.</p>
+</dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Entries to write.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteMatrix4x4_" data-uid="FishNet.Serializing.Writer.WriteMatrix4x4*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteMatrix4x4_Matrix4x4_" data-uid="FishNet.Serializing.Writer.WriteMatrix4x4(Matrix4x4)">
+  WriteMatrix4x4(Matrix4x4)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a Matrix4x4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteMatrix4x4(Matrix4x4 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">Matrix4x4</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteNetworkBehaviour_" data-uid="FishNet.Serializing.Writer.WriteNetworkBehaviour*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteNetworkBehaviour_FishNet_Object_NetworkBehaviour_" data-uid="FishNet.Serializing.Writer.WriteNetworkBehaviour(FishNet.Object.NetworkBehaviour)">
+  WriteNetworkBehaviour(NetworkBehaviour)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a NetworkBehaviour.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNetworkBehaviour(NetworkBehaviour nb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nb</code> <a class="xref" href="FishNet.Object.NetworkBehaviour.html">NetworkBehaviour</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteNetworkBehaviourId_" data-uid="FishNet.Serializing.Writer.WriteNetworkBehaviourId*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteNetworkBehaviourId_FishNet_Object_NetworkBehaviour_" data-uid="FishNet.Serializing.Writer.WriteNetworkBehaviourId(FishNet.Object.NetworkBehaviour)">
+  WriteNetworkBehaviourId(NetworkBehaviour)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a NetworkBehaviourId.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNetworkBehaviourId(NetworkBehaviour nb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nb</code> <a class="xref" href="FishNet.Object.NetworkBehaviour.html">NetworkBehaviour</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteNetworkConnection_" data-uid="FishNet.Serializing.Writer.WriteNetworkConnection*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteNetworkConnection_FishNet_Connection_NetworkConnection_" data-uid="FishNet.Serializing.Writer.WriteNetworkConnection(FishNet.Connection.NetworkConnection)">
+  WriteNetworkConnection(NetworkConnection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a NetworkConnection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNetworkConnection(NetworkConnection connection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connection</code> <a class="xref" href="FishNet.Connection.NetworkConnection.html">NetworkConnection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteNetworkConnectionId_" data-uid="FishNet.Serializing.Writer.WriteNetworkConnectionId*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteNetworkConnectionId_System_Int16_" data-uid="FishNet.Serializing.Writer.WriteNetworkConnectionId(System.Int16)">
+  WriteNetworkConnectionId(short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a short for a connectionId.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNetworkConnectionId(short id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteNetworkObject_" data-uid="FishNet.Serializing.Writer.WriteNetworkObject*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteNetworkObject_FishNet_Object_NetworkObject_" data-uid="FishNet.Serializing.Writer.WriteNetworkObject(FishNet.Object.NetworkObject)">
+  WriteNetworkObject(NetworkObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a NetworkObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNetworkObject(NetworkObject nob)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nob</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteNetworkObjectId_" data-uid="FishNet.Serializing.Writer.WriteNetworkObjectId*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteNetworkObjectId_FishNet_Object_NetworkObject_" data-uid="FishNet.Serializing.Writer.WriteNetworkObjectId(FishNet.Object.NetworkObject)">
+  WriteNetworkObjectId(NetworkObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a NetworkObject.ObjectId.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNetworkObjectId(NetworkObject nob)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nob</code> <a class="xref" href="FishNet.Object.NetworkObject.html">NetworkObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteNetworkObjectId_" data-uid="FishNet.Serializing.Writer.WriteNetworkObjectId*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteNetworkObjectId_System_Int32_" data-uid="FishNet.Serializing.Writer.WriteNetworkObjectId(System.Int32)">
+  WriteNetworkObjectId(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes an objectId.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNetworkObjectId(int objectId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WritePackedWhole_" data-uid="FishNet.Serializing.Writer.WritePackedWhole*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WritePackedWhole_System_UInt64_" data-uid="FishNet.Serializing.Writer.WritePackedWhole(System.UInt64)">
+  WritePackedWhole(ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a packed whole number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePackedWhole(ulong value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WritePlane_" data-uid="FishNet.Serializing.Writer.WritePlane*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WritePlane_Plane_" data-uid="FishNet.Serializing.Writer.WritePlane(Plane)">
+  WritePlane(Plane)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a plane.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePlane(Plane value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">Plane</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteQuaternion_" data-uid="FishNet.Serializing.Writer.WriteQuaternion*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteQuaternion_Quaternion_FishNet_Serializing_AutoPackType_" data-uid="FishNet.Serializing.Writer.WriteQuaternion(Quaternion,FishNet.Serializing.AutoPackType)">
+  WriteQuaternion(Quaternion, AutoPackType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a Quaternion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteQuaternion(Quaternion value, AutoPackType packType = AutoPackType.Packed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">Quaternion</span></dt>
+    <dd></dd>
+    <dt><code>packType</code> <a class="xref" href="FishNet.Serializing.AutoPackType.html">AutoPackType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteRay_" data-uid="FishNet.Serializing.Writer.WriteRay*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteRay_Ray_" data-uid="FishNet.Serializing.Writer.WriteRay(Ray)">
+  WriteRay(Ray)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a Ray.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteRay(Ray value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">Ray</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteRay2D_" data-uid="FishNet.Serializing.Writer.WriteRay2D*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteRay2D_Ray2D_" data-uid="FishNet.Serializing.Writer.WriteRay2D(Ray2D)">
+  WriteRay2D(Ray2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a Ray2D.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteRay2D(Ray2D value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">Ray2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteRect_" data-uid="FishNet.Serializing.Writer.WriteRect*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteRect_Rect_" data-uid="FishNet.Serializing.Writer.WriteRect(Rect)">
+  WriteRect(Rect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a rect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteRect(Rect value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">Rect</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteSByte_" data-uid="FishNet.Serializing.Writer.WriteSByte*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteSByte_System_SByte_" data-uid="FishNet.Serializing.Writer.WriteSByte(System.SByte)">
+  WriteSByte(sbyte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a sbyte.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteSByte(sbyte value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.sbyte">sbyte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteSingle_" data-uid="FishNet.Serializing.Writer.WriteSingle*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteSingle_System_Single_FishNet_Serializing_AutoPackType_" data-uid="FishNet.Serializing.Writer.WriteSingle(System.Single,FishNet.Serializing.AutoPackType)">
+  WriteSingle(float, AutoPackType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a single (float).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteSingle(float value, AutoPackType packType = AutoPackType.Unpacked)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>packType</code> <a class="xref" href="FishNet.Serializing.AutoPackType.html">AutoPackType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteString_" data-uid="FishNet.Serializing.Writer.WriteString*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteString_System_String_" data-uid="FishNet.Serializing.Writer.WriteString(System.String)">
+  WriteString(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteTransform_" data-uid="FishNet.Serializing.Writer.WriteTransform*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteTransform_Transform_" data-uid="FishNet.Serializing.Writer.WriteTransform(Transform)">
+  WriteTransform(Transform)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a Transform. Transform must be spawned over the network already or be a prefab with a NetworkObject attached.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteTransform(Transform t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteUInt16_" data-uid="FishNet.Serializing.Writer.WriteUInt16*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteUInt16_System_UInt16_" data-uid="FishNet.Serializing.Writer.WriteUInt16(System.UInt16)">
+  WriteUInt16(ushort)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a uint16.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteUInt16(ushort value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteUInt32_" data-uid="FishNet.Serializing.Writer.WriteUInt32*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteUInt32_System_UInt32_FishNet_Serializing_AutoPackType_" data-uid="FishNet.Serializing.Writer.WriteUInt32(System.UInt32,FishNet.Serializing.AutoPackType)">
+  WriteUInt32(uint, AutoPackType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a uint32.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteUInt32(uint value, AutoPackType packType = AutoPackType.Packed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>packType</code> <a class="xref" href="FishNet.Serializing.AutoPackType.html">AutoPackType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteUInt64_" data-uid="FishNet.Serializing.Writer.WriteUInt64*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteUInt64_System_UInt64_FishNet_Serializing_AutoPackType_" data-uid="FishNet.Serializing.Writer.WriteUInt64(System.UInt64,FishNet.Serializing.AutoPackType)">
+  WriteUInt64(ulong, AutoPackType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a uint64.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteUInt64(ulong value, AutoPackType packType = AutoPackType.Packed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+    <dt><code>packType</code> <a class="xref" href="FishNet.Serializing.AutoPackType.html">AutoPackType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteVector2_" data-uid="FishNet.Serializing.Writer.WriteVector2*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteVector2_Vector2_" data-uid="FishNet.Serializing.Writer.WriteVector2(Vector2)">
+  WriteVector2(Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a Vector2.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteVector2(Vector2 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteVector2Int_" data-uid="FishNet.Serializing.Writer.WriteVector2Int*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteVector2Int_Vector2Int_FishNet_Serializing_AutoPackType_" data-uid="FishNet.Serializing.Writer.WriteVector2Int(Vector2Int,FishNet.Serializing.AutoPackType)">
+  WriteVector2Int(Vector2Int, AutoPackType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a Vector2Int.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteVector2Int(Vector2Int value, AutoPackType packType = AutoPackType.Packed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">Vector2Int</span></dt>
+    <dd></dd>
+    <dt><code>packType</code> <a class="xref" href="FishNet.Serializing.AutoPackType.html">AutoPackType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteVector3_" data-uid="FishNet.Serializing.Writer.WriteVector3*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteVector3_Vector3_" data-uid="FishNet.Serializing.Writer.WriteVector3(Vector3)">
+  WriteVector3(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a Vector3</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteVector3(Vector3 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteVector3Int_" data-uid="FishNet.Serializing.Writer.WriteVector3Int*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteVector3Int_Vector3Int_FishNet_Serializing_AutoPackType_" data-uid="FishNet.Serializing.Writer.WriteVector3Int(Vector3Int,FishNet.Serializing.AutoPackType)">
+  WriteVector3Int(Vector3Int, AutoPackType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a Vector3Int.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteVector3Int(Vector3Int value, AutoPackType packType = AutoPackType.Packed)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">Vector3Int</span></dt>
+    <dd></dd>
+    <dt><code>packType</code> <a class="xref" href="FishNet.Serializing.AutoPackType.html">AutoPackType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_WriteVector4_" data-uid="FishNet.Serializing.Writer.WriteVector4*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_WriteVector4_Vector4_" data-uid="FishNet.Serializing.Writer.WriteVector4(Vector4)">
+  WriteVector4(Vector4)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes a Vector4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteVector4(Vector4 value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">Vector4</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_Write_" data-uid="FishNet.Serializing.Writer.Write*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_Write__1___0_" data-uid="FishNet.Serializing.Writer.Write``1(``0)">
+  Write&lt;T&gt;(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writers any supported type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write&lt;T&gt;(T value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Serializing_Writer_ZigZagEncode_" data-uid="FishNet.Serializing.Writer.ZigZagEncode*"></a>
+
+  <h3 id="FishNet_Serializing_Writer_ZigZagEncode_System_UInt64_" data-uid="FishNet.Serializing.Writer.ZigZagEncode(System.UInt64)">
+  ZigZagEncode(ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ZigZag encode an integer. Move the sign bit to the right.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong ZigZagEncode(ulong value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

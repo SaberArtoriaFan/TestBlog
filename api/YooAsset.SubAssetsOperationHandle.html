@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SubAssetsOperationHandle
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SubAssetsOperationHandle
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="YooAsset.SubAssetsOperationHandle">
+
+
+
+  <h1 id="YooAsset_SubAssetsOperationHandle" data-uid="YooAsset.SubAssetsOperationHandle" class="text-break">
+    Class SubAssetsOperationHandle
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="YooAsset.html">YooAsset</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SubAssetsOperationHandle : OperationHandleBase, IEnumerator, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="YooAsset.OperationHandleBase.html">OperationHandleBase</a></div>
+      <div><span class="xref">SubAssetsOperationHandle</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="YooAsset.OperationHandleBase.html#YooAsset_OperationHandleBase_GetAssetInfo">OperationHandleBase.GetAssetInfo()</a>
+    </div>
+    <div>
+      <a class="xref" href="YooAsset.OperationHandleBase.html#YooAsset_OperationHandleBase_GetDownloadReport">OperationHandleBase.GetDownloadReport()</a>
+    </div>
+    <div>
+      <a class="xref" href="YooAsset.OperationHandleBase.html#YooAsset_OperationHandleBase_Status">OperationHandleBase.Status</a>
+    </div>
+    <div>
+      <a class="xref" href="YooAsset.OperationHandleBase.html#YooAsset_OperationHandleBase_LastError">OperationHandleBase.LastError</a>
+    </div>
+    <div>
+      <a class="xref" href="YooAsset.OperationHandleBase.html#YooAsset_OperationHandleBase_Progress">OperationHandleBase.Progress</a>
+    </div>
+    <div>
+      <a class="xref" href="YooAsset.OperationHandleBase.html#YooAsset_OperationHandleBase_IsDone">OperationHandleBase.IsDone</a>
+    </div>
+    <div>
+      <a class="xref" href="YooAsset.OperationHandleBase.html#YooAsset_OperationHandleBase_IsValid">OperationHandleBase.IsValid</a>
+    </div>
+    <div>
+      <a class="xref" href="YooAsset.OperationHandleBase.html#YooAsset_OperationHandleBase_Task">OperationHandleBase.Task</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="YooAsset_SubAssetsOperationHandle_AllAssetObjects_" data-uid="YooAsset.SubAssetsOperationHandle.AllAssetObjects*"></a>
+
+  <h3 id="YooAsset_SubAssetsOperationHandle_AllAssetObjects" data-uid="YooAsset.SubAssetsOperationHandle.AllAssetObjects">
+  AllAssetObjects
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>子资源对象集合</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEngine.Object[] AllAssetObjects { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Object</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="YooAsset_SubAssetsOperationHandle_Dispose_" data-uid="YooAsset.SubAssetsOperationHandle.Dispose*"></a>
+
+  <h3 id="YooAsset_SubAssetsOperationHandle_Dispose" data-uid="YooAsset.SubAssetsOperationHandle.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>释放资源句柄</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_SubAssetsOperationHandle_GetSubAssetObject_" data-uid="YooAsset.SubAssetsOperationHandle.GetSubAssetObject*"></a>
+
+  <h3 id="YooAsset_SubAssetsOperationHandle_GetSubAssetObject__1_System_String_" data-uid="YooAsset.SubAssetsOperationHandle.GetSubAssetObject``1(System.String)">
+  GetSubAssetObject&lt;TObject&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取子资源对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TObject GetSubAssetObject&lt;TObject&gt;(string assetName) where TObject : UnityEngine.Object</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>assetName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>子资源对象名称</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TObject</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>子资源对象类型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_SubAssetsOperationHandle_GetSubAssetObjects_" data-uid="YooAsset.SubAssetsOperationHandle.GetSubAssetObjects*"></a>
+
+  <h3 id="YooAsset_SubAssetsOperationHandle_GetSubAssetObjects__1" data-uid="YooAsset.SubAssetsOperationHandle.GetSubAssetObjects``1">
+  GetSubAssetObjects&lt;TObject&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>获取所有的子资源对象集合</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TObject[] GetSubAssetObjects&lt;TObject&gt;() where TObject : UnityEngine.Object</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>TObject[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>子资源对象类型</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_SubAssetsOperationHandle_Release_" data-uid="YooAsset.SubAssetsOperationHandle.Release*"></a>
+
+  <h3 id="YooAsset_SubAssetsOperationHandle_Release" data-uid="YooAsset.SubAssetsOperationHandle.Release">
+  Release()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>释放资源句柄</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Release()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YooAsset_SubAssetsOperationHandle_WaitForAsyncComplete_" data-uid="YooAsset.SubAssetsOperationHandle.WaitForAsyncComplete*"></a>
+
+  <h3 id="YooAsset_SubAssetsOperationHandle_WaitForAsyncComplete" data-uid="YooAsset.SubAssetsOperationHandle.WaitForAsyncComplete">
+  WaitForAsyncComplete()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>等待异步执行完毕</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WaitForAsyncComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="YooAsset_SubAssetsOperationHandle_Completed" data-uid="YooAsset.SubAssetsOperationHandle.Completed">
+  Completed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>完成委托</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;SubAssetsOperationHandle&gt; Completed</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="YooAsset.SubAssetsOperationHandle.html">SubAssetsOperationHandle</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

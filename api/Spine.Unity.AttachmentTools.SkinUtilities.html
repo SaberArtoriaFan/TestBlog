@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SkinUtilities
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SkinUtilities
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.Unity.AttachmentTools.SkinUtilities">
+
+
+
+  <h1 id="Spine_Unity_AttachmentTools_SkinUtilities" data-uid="Spine.Unity.AttachmentTools.SkinUtilities" class="text-break">
+    Class SkinUtilities
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a>.<a class="xref" href="Spine.Unity.html">Unity</a>.<a class="xref" href="Spine.Unity.AttachmentTools.html">AttachmentTools</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SkinUtilities</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SkinUtilities</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_Unity_AttachmentTools_SkinUtilities_AddAttachments_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.AddAttachments*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_SkinUtilities_AddAttachments_Spine_Skin_Spine_Skin_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.AddAttachments(Spine.Skin,Spine.Skin)">
+  AddAttachments(Skin, Skin)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds skin items from another skin. For items that already exist, the previous values are replaced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddAttachments(this Skin skin, Skin otherSkin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skin</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+    <dt><code>otherSkin</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_SkinUtilities_Append_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.Append*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_SkinUtilities_Append_Spine_Skin_Spine_Skin_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.Append(Spine.Skin,Spine.Skin)">
+  Append(Skin, Skin)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Append(this Skin destination, Skin source)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>destination</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+    <dt><code>source</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_SkinUtilities_Clear_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.Clear*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_SkinUtilities_Clear_Spine_Skin_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.Clear(Spine.Skin)">
+  Clear(Skin)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Clear(this Skin skin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skin</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_SkinUtilities_CopyTo_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.CopyTo*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_SkinUtilities_CopyTo_Spine_Skin_Spine_Skin_System_Boolean_System_Boolean_System_Boolean_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.CopyTo(Spine.Skin,Spine.Skin,System.Boolean,System.Boolean,System.Boolean)">
+  CopyTo(Skin, Skin, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyTo(this Skin source, Skin destination, bool overwrite, bool cloneAttachments, bool cloneMeshesAsLinked = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>source</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+    <dt><code>destination</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+    <dt><code>overwrite</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>cloneAttachments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>cloneMeshesAsLinked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_SkinUtilities_GetAttachment_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.GetAttachment*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_SkinUtilities_GetAttachment_Spine_Skin_System_String_System_String_Spine_Skeleton_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.GetAttachment(Spine.Skin,System.String,System.String,Spine.Skeleton)">
+  GetAttachment(Skin, string, string, Skeleton)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an attachment from the skin for the specified slot index and name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Attachment GetAttachment(this Skin skin, string slotName, string keyName, Skeleton skeleton)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skin</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+    <dt><code>slotName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>keyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>skeleton</code> <a class="xref" href="Spine.Skeleton.html">Skeleton</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Attachment.html">Attachment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_SkinUtilities_GetClone_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.GetClone*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_SkinUtilities_GetClone_Spine_Skin_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.GetClone(Spine.Skin)">
+  GetClone(Skin)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a shallow copy of the skin. The cloned skin's attachments are shared with the original skin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Skin GetClone(this Skin original)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>original</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_SkinUtilities_GetClonedSkin_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.GetClonedSkin*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_SkinUtilities_GetClonedSkin_Spine_Skeleton_System_String_System_Boolean_System_Boolean_System_Boolean_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.GetClonedSkin(Spine.Skeleton,System.String,System.Boolean,System.Boolean,System.Boolean)">
+  GetClonedSkin(Skeleton, string, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Skin GetClonedSkin(this Skeleton skeleton, string newSkinName, bool includeDefaultSkin = false, bool cloneAttachments = false, bool cloneMeshesAsLinked = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skeleton</code> <a class="xref" href="Spine.Skeleton.html">Skeleton</a></dt>
+    <dd></dd>
+    <dt><code>newSkinName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>includeDefaultSkin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>cloneAttachments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>cloneMeshesAsLinked</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_SkinUtilities_RemoveAttachment_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.RemoveAttachment*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_SkinUtilities_RemoveAttachment_Spine_Skin_System_String_System_String_Spine_SkeletonData_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.RemoveAttachment(Spine.Skin,System.String,System.String,Spine.SkeletonData)">
+  RemoveAttachment(Skin, string, string, SkeletonData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveAttachment(this Skin skin, string slotName, string keyName, SkeletonData skeletonData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skin</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+    <dt><code>slotName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>keyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>skeletonData</code> <a class="xref" href="Spine.SkeletonData.html">SkeletonData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_SkinUtilities_SetAttachment_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.SetAttachment*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_SkinUtilities_SetAttachment_Spine_Skin_System_Int32_System_String_Spine_Attachment_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.SetAttachment(Spine.Skin,System.Int32,System.String,Spine.Attachment)">
+  SetAttachment(Skin, int, string, Attachment)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an attachment to the skin for the specified slot index and name. If the name already exists for the slot, the previous value is replaced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetAttachment(this Skin skin, int slotIndex, string keyName, Attachment attachment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skin</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+    <dt><code>slotIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>keyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>attachment</code> <a class="xref" href="Spine.Attachment.html">Attachment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_SkinUtilities_SetAttachment_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.SetAttachment*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_SkinUtilities_SetAttachment_Spine_Skin_System_String_System_String_Spine_Attachment_Spine_Skeleton_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.SetAttachment(Spine.Skin,System.String,System.String,Spine.Attachment,Spine.Skeleton)">
+  SetAttachment(Skin, string, string, Attachment, Skeleton)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an attachment to the skin for the specified slot index and name. If the name already exists for the slot, the previous value is replaced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetAttachment(this Skin skin, string slotName, string keyName, Attachment attachment, Skeleton skeleton)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skin</code> <a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+    <dt><code>slotName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>keyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>attachment</code> <a class="xref" href="Spine.Attachment.html">Attachment</a></dt>
+    <dd></dd>
+    <dt><code>skeleton</code> <a class="xref" href="Spine.Skeleton.html">Skeleton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_AttachmentTools_SkinUtilities_UnshareSkin_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.UnshareSkin*"></a>
+
+  <h3 id="Spine_Unity_AttachmentTools_SkinUtilities_UnshareSkin_Spine_Skeleton_System_Boolean_System_Boolean_Spine_AnimationState_" data-uid="Spine.Unity.AttachmentTools.SkinUtilities.UnshareSkin(Spine.Skeleton,System.Boolean,System.Boolean,Spine.AnimationState)">
+  UnshareSkin(Skeleton, bool, bool, AnimationState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convenience method for duplicating a skeleton's current active skin so changes to it will not affect other skeleton instances. .</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Skin UnshareSkin(this Skeleton skeleton, bool includeDefaultSkin, bool unshareAttachments, AnimationState state = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skeleton</code> <a class="xref" href="Spine.Skeleton.html">Skeleton</a></dt>
+    <dd></dd>
+    <dt><code>includeDefaultSkin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>unshareAttachments</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>state</code> <a class="xref" href="Spine.AnimationState.html">AnimationState</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Skin.html">Skin</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

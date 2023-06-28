@@ -1,0 +1,662 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SpineSpriteAtlasAsset
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SpineSpriteAtlasAsset
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.Unity.SpineSpriteAtlasAsset">
+
+
+
+  <h1 id="Spine_Unity_SpineSpriteAtlasAsset" data-uid="Spine.Unity.SpineSpriteAtlasAsset" class="text-break">
+    Class SpineSpriteAtlasAsset
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a>.<a class="xref" href="Spine.Unity.html">Unity</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>Loads and stores a Spine atlas and list of materials.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SpineSpriteAtlasAsset : AtlasAssetBase</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Spine.Unity.AtlasAssetBase.html">AtlasAssetBase</a></div>
+      <div><span class="xref">SpineSpriteAtlasAsset</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_atlas" data-uid="Spine.Unity.SpineSpriteAtlasAsset.atlas">
+  atlas
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Atlas atlas</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Atlas.html">Atlas</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_materials" data-uid="Spine.Unity.SpineSpriteAtlasAsset.materials">
+  materials
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Material[] materials</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Material</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_savedRegions" data-uid="Spine.Unity.SpineSpriteAtlasAsset.savedRegions">
+  savedRegions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SpineSpriteAtlasAsset.SavedRegionInfo[] savedRegions</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.SpineSpriteAtlasAsset.SavedRegionInfo.html">SavedRegionInfo</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_spriteAtlasFile" data-uid="Spine.Unity.SpineSpriteAtlasAsset.spriteAtlasFile">
+  spriteAtlasFile
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpriteAtlas spriteAtlasFile</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SpriteAtlas</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_updateRegionsInPlayMode" data-uid="Spine.Unity.SpineSpriteAtlasAsset.updateRegionsInPlayMode">
+  updateRegionsInPlayMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool updateRegionsInPlayMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Spine_Unity_SpineSpriteAtlasAsset_IsLoaded_" data-uid="Spine.Unity.SpineSpriteAtlasAsset.IsLoaded*"></a>
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_IsLoaded" data-uid="Spine.Unity.SpineSpriteAtlasAsset.IsLoaded">
+  IsLoaded
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsLoaded { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SpineSpriteAtlasAsset_MaterialCount_" data-uid="Spine.Unity.SpineSpriteAtlasAsset.MaterialCount*"></a>
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_MaterialCount" data-uid="Spine.Unity.SpineSpriteAtlasAsset.MaterialCount">
+  MaterialCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int MaterialCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SpineSpriteAtlasAsset_Materials_" data-uid="Spine.Unity.SpineSpriteAtlasAsset.Materials*"></a>
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_Materials" data-uid="Spine.Unity.SpineSpriteAtlasAsset.Materials">
+  Materials
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;Material&gt; Materials { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Material</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SpineSpriteAtlasAsset_PrimaryMaterial_" data-uid="Spine.Unity.SpineSpriteAtlasAsset.PrimaryMaterial*"></a>
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_PrimaryMaterial" data-uid="Spine.Unity.SpineSpriteAtlasAsset.PrimaryMaterial">
+  PrimaryMaterial
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Material PrimaryMaterial { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Material</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_Unity_SpineSpriteAtlasAsset_AccessPackedSprites_" data-uid="Spine.Unity.SpineSpriteAtlasAsset.AccessPackedSprites*"></a>
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_AccessPackedSprites_UnityEngine_U2D_SpriteAtlas_" data-uid="Spine.Unity.SpineSpriteAtlasAsset.AccessPackedSprites(UnityEngine.U2D.SpriteAtlas)">
+  AccessPackedSprites(SpriteAtlas)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Sprite[] AccessPackedSprites(UnityEngine.U2D.SpriteAtlas spriteAtlas)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spriteAtlas</code> <span class="xref">SpriteAtlas</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Sprite</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SpineSpriteAtlasAsset_AccessPackedTexture_" data-uid="Spine.Unity.SpineSpriteAtlasAsset.AccessPackedTexture*"></a>
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_AccessPackedTexture_Sprite___" data-uid="Spine.Unity.SpineSpriteAtlasAsset.AccessPackedTexture(Sprite[])">
+  AccessPackedTexture(Sprite[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D AccessPackedTexture(Sprite[] sprites)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sprites</code> <span class="xref">Sprite</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SpineSpriteAtlasAsset_AssignRegionsFromSavedRegions_" data-uid="Spine.Unity.SpineSpriteAtlasAsset.AssignRegionsFromSavedRegions*"></a>
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_AssignRegionsFromSavedRegions_Sprite___Spine_Atlas_" data-uid="Spine.Unity.SpineSpriteAtlasAsset.AssignRegionsFromSavedRegions(Sprite[],Spine.Atlas)">
+  AssignRegionsFromSavedRegions(Sprite[], Atlas)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AssignRegionsFromSavedRegions(Sprite[] sprites, Atlas usedAtlas)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sprites</code> <span class="xref">Sprite</span>[]</dt>
+    <dd></dd>
+    <dt><code>usedAtlas</code> <a class="xref" href="Spine.Atlas.html">Atlas</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SpineSpriteAtlasAsset_Clear_" data-uid="Spine.Unity.SpineSpriteAtlasAsset.Clear*"></a>
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_Clear" data-uid="Spine.Unity.SpineSpriteAtlasAsset.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SpineSpriteAtlasAsset_CreateRuntimeInstance_" data-uid="Spine.Unity.SpineSpriteAtlasAsset.CreateRuntimeInstance*"></a>
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_CreateRuntimeInstance_SpriteAtlas_Material___System_Boolean_" data-uid="Spine.Unity.SpineSpriteAtlasAsset.CreateRuntimeInstance(SpriteAtlas,Material[],System.Boolean)">
+  CreateRuntimeInstance(SpriteAtlas, Material[], bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a runtime AtlasAsset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SpineSpriteAtlasAsset CreateRuntimeInstance(SpriteAtlas spriteAtlasFile, Material[] materials, bool initialize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spriteAtlasFile</code> <span class="xref">SpriteAtlas</span></dt>
+    <dd></dd>
+    <dt><code>materials</code> <span class="xref">Material</span>[]</dt>
+    <dd></dd>
+    <dt><code>initialize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.SpineSpriteAtlasAsset.html">SpineSpriteAtlasAsset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SpineSpriteAtlasAsset_GetAtlas_" data-uid="Spine.Unity.SpineSpriteAtlasAsset.GetAtlas*"></a>
+
+  <h3 id="Spine_Unity_SpineSpriteAtlasAsset_GetAtlas" data-uid="Spine.Unity.SpineSpriteAtlasAsset.GetAtlas">
+  GetAtlas()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Atlas GetAtlas()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Atlas.html">Atlas</a></dt>
+    <dd><p>The atlas or null if it could not be loaded.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

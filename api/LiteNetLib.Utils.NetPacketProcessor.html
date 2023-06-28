@@ -1,0 +1,1249 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class NetPacketProcessor
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NetPacketProcessor
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="LiteNetLib.Utils.NetPacketProcessor">
+
+
+
+  <h1 id="LiteNetLib_Utils_NetPacketProcessor" data-uid="LiteNetLib.Utils.NetPacketProcessor" class="text-break">
+    Class NetPacketProcessor
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LiteNetLib.html">LiteNetLib</a>.<a class="xref" href="LiteNetLib.Utils.html">Utils</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NetPacketProcessor</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">NetPacketProcessor</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor__ctor_" data-uid="LiteNetLib.Utils.NetPacketProcessor.#ctor*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor__ctor" data-uid="LiteNetLib.Utils.NetPacketProcessor.#ctor">
+  NetPacketProcessor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetPacketProcessor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor__ctor_" data-uid="LiteNetLib.Utils.NetPacketProcessor.#ctor*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor__ctor_System_Int32_" data-uid="LiteNetLib.Utils.NetPacketProcessor.#ctor(System.Int32)">
+  NetPacketProcessor(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetPacketProcessor(int maxStringLength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxStringLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_GetCallbackFromData_" data-uid="LiteNetLib.Utils.NetPacketProcessor.GetCallbackFromData*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_GetCallbackFromData_LiteNetLib_Utils_NetDataReader_" data-uid="LiteNetLib.Utils.NetPacketProcessor.GetCallbackFromData(LiteNetLib.Utils.NetDataReader)">
+  GetCallbackFromData(NetDataReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual NetPacketProcessor.SubscribeDelegate GetCallbackFromData(NetDataReader reader)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reader</code> <a class="xref" href="LiteNetLib.Utils.NetDataReader.html">NetDataReader</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.Utils.NetPacketProcessor.html">NetPacketProcessor</a>.<a class="xref" href="LiteNetLib.Utils.NetPacketProcessor.SubscribeDelegate.html">SubscribeDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_GetHash_" data-uid="LiteNetLib.Utils.NetPacketProcessor.GetHash*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_GetHash__1" data-uid="LiteNetLib.Utils.NetPacketProcessor.GetHash``1">
+  GetHash&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual ulong GetHash&lt;T&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_ReadAllPackets_" data-uid="LiteNetLib.Utils.NetPacketProcessor.ReadAllPackets*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_ReadAllPackets_LiteNetLib_Utils_NetDataReader_" data-uid="LiteNetLib.Utils.NetPacketProcessor.ReadAllPackets(LiteNetLib.Utils.NetDataReader)">
+  ReadAllPackets(NetDataReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads all available data from NetDataReader and calls OnReceive delegates</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadAllPackets(NetDataReader reader)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reader</code> <a class="xref" href="LiteNetLib.Utils.NetDataReader.html">NetDataReader</a></dt>
+    <dd><p>NetDataReader with packets data</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_ReadAllPackets_" data-uid="LiteNetLib.Utils.NetPacketProcessor.ReadAllPackets*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_ReadAllPackets_LiteNetLib_Utils_NetDataReader_System_Object_" data-uid="LiteNetLib.Utils.NetPacketProcessor.ReadAllPackets(LiteNetLib.Utils.NetDataReader,System.Object)">
+  ReadAllPackets(NetDataReader, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads all available data from NetDataReader and calls OnReceive delegates</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadAllPackets(NetDataReader reader, object userData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reader</code> <a class="xref" href="LiteNetLib.Utils.NetDataReader.html">NetDataReader</a></dt>
+    <dd><p>NetDataReader with packets data</p>
+</dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Argument that passed to OnReceivedEvent</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.Utils.ParseException.html">ParseException</a></dt>
+    <dd><p>Malformed packet</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_ReadPacket_" data-uid="LiteNetLib.Utils.NetPacketProcessor.ReadPacket*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_ReadPacket_LiteNetLib_Utils_NetDataReader_" data-uid="LiteNetLib.Utils.NetPacketProcessor.ReadPacket(LiteNetLib.Utils.NetDataReader)">
+  ReadPacket(NetDataReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads one packet from NetDataReader and calls OnReceive delegate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadPacket(NetDataReader reader)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reader</code> <a class="xref" href="LiteNetLib.Utils.NetDataReader.html">NetDataReader</a></dt>
+    <dd><p>NetDataReader with packet</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.Utils.ParseException.html">ParseException</a></dt>
+    <dd><p>Malformed packet</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_ReadPacket_" data-uid="LiteNetLib.Utils.NetPacketProcessor.ReadPacket*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_ReadPacket_LiteNetLib_Utils_NetDataReader_System_Object_" data-uid="LiteNetLib.Utils.NetPacketProcessor.ReadPacket(LiteNetLib.Utils.NetDataReader,System.Object)">
+  ReadPacket(NetDataReader, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads one packet from NetDataReader and calls OnReceive delegate</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadPacket(NetDataReader reader, object userData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reader</code> <a class="xref" href="LiteNetLib.Utils.NetDataReader.html">NetDataReader</a></dt>
+    <dd><p>NetDataReader with packet</p>
+</dd>
+    <dt><code>userData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Argument that passed to OnReceivedEvent</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.Utils.ParseException.html">ParseException</a></dt>
+    <dd><p>Malformed packet</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_RegisterNestedType_" data-uid="LiteNetLib.Utils.NetPacketProcessor.RegisterNestedType*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_RegisterNestedType__1" data-uid="LiteNetLib.Utils.NetPacketProcessor.RegisterNestedType``1">
+  RegisterNestedType&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Register nested property type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterNestedType&lt;T&gt;() where T : struct, INetSerializable</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>INetSerializable structure</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_RegisterNestedType_" data-uid="LiteNetLib.Utils.NetPacketProcessor.RegisterNestedType*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_RegisterNestedType__1_System_Action_LiteNetLib_Utils_NetDataWriter___0__System_Func_LiteNetLib_Utils_NetDataReader___0__" data-uid="LiteNetLib.Utils.NetPacketProcessor.RegisterNestedType``1(System.Action{LiteNetLib.Utils.NetDataWriter,``0},System.Func{LiteNetLib.Utils.NetDataReader,``0})">
+  RegisterNestedType&lt;T&gt;(Action&lt;NetDataWriter, T&gt;, Func&lt;NetDataReader, T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Register nested property type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterNestedType&lt;T&gt;(Action&lt;NetDataWriter, T&gt; writeDelegate, Func&lt;NetDataReader, T&gt; readDelegate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writeDelegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a>, T&gt;</dt>
+    <dd></dd>
+    <dt><code>readDelegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="LiteNetLib.Utils.NetDataReader.html">NetDataReader</a>, T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_RegisterNestedType_" data-uid="LiteNetLib.Utils.NetPacketProcessor.RegisterNestedType*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_RegisterNestedType__1_System_Func___0__" data-uid="LiteNetLib.Utils.NetPacketProcessor.RegisterNestedType``1(System.Func{``0})">
+  RegisterNestedType&lt;T&gt;(Func&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Register nested property type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterNestedType&lt;T&gt;(Func&lt;T&gt; constructor) where T : class, INetSerializable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>constructor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>INetSerializable class</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_RemoveSubscription_" data-uid="LiteNetLib.Utils.NetPacketProcessor.RemoveSubscription*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_RemoveSubscription__1" data-uid="LiteNetLib.Utils.NetPacketProcessor.RemoveSubscription``1">
+  RemoveSubscription&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove any subscriptions by type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveSubscription&lt;T&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if remove is success</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Packet type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_SendNetSerializable_" data-uid="LiteNetLib.Utils.NetPacketProcessor.SendNetSerializable*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_SendNetSerializable__1_LiteNetLib_NetManager___0__LiteNetLib_DeliveryMethod_" data-uid="LiteNetLib.Utils.NetPacketProcessor.SendNetSerializable``1(LiteNetLib.NetManager,``0@,LiteNetLib.DeliveryMethod)">
+  SendNetSerializable&lt;T&gt;(NetManager, ref T, DeliveryMethod)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendNetSerializable&lt;T&gt;(NetManager manager, ref T packet, DeliveryMethod options) where T : INetSerializable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>manager</code> <a class="xref" href="LiteNetLib.NetManager.html">NetManager</a></dt>
+    <dd></dd>
+    <dt><code>packet</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_SendNetSerializable_" data-uid="LiteNetLib.Utils.NetPacketProcessor.SendNetSerializable*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_SendNetSerializable__1_LiteNetLib_NetPeer___0__LiteNetLib_DeliveryMethod_" data-uid="LiteNetLib.Utils.NetPacketProcessor.SendNetSerializable``1(LiteNetLib.NetPeer,``0@,LiteNetLib.DeliveryMethod)">
+  SendNetSerializable&lt;T&gt;(NetPeer, ref T, DeliveryMethod)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendNetSerializable&lt;T&gt;(NetPeer peer, ref T packet, DeliveryMethod options) where T : INetSerializable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>peer</code> <a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd></dd>
+    <dt><code>packet</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_Send_" data-uid="LiteNetLib.Utils.NetPacketProcessor.Send*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_Send__1_LiteNetLib_NetManager___0_LiteNetLib_DeliveryMethod_" data-uid="LiteNetLib.Utils.NetPacketProcessor.Send``1(LiteNetLib.NetManager,``0,LiteNetLib.DeliveryMethod)">
+  Send&lt;T&gt;(NetManager, T, DeliveryMethod)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send&lt;T&gt;(NetManager manager, T packet, DeliveryMethod options) where T : class, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>manager</code> <a class="xref" href="LiteNetLib.NetManager.html">NetManager</a></dt>
+    <dd></dd>
+    <dt><code>packet</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_Send_" data-uid="LiteNetLib.Utils.NetPacketProcessor.Send*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_Send__1_LiteNetLib_NetPeer___0_LiteNetLib_DeliveryMethod_" data-uid="LiteNetLib.Utils.NetPacketProcessor.Send``1(LiteNetLib.NetPeer,``0,LiteNetLib.DeliveryMethod)">
+  Send&lt;T&gt;(NetPeer, T, DeliveryMethod)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Send&lt;T&gt;(NetPeer peer, T packet, DeliveryMethod options) where T : class, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>peer</code> <a class="xref" href="LiteNetLib.NetPeer.html">NetPeer</a></dt>
+    <dd></dd>
+    <dt><code>packet</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="LiteNetLib.DeliveryMethod.html">DeliveryMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_SubscribeNetSerializable_" data-uid="LiteNetLib.Utils.NetPacketProcessor.SubscribeNetSerializable*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_SubscribeNetSerializable__1_System_Action___0__" data-uid="LiteNetLib.Utils.NetPacketProcessor.SubscribeNetSerializable``1(System.Action{``0})">
+  SubscribeNetSerializable&lt;T&gt;(Action&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubscribeNetSerializable&lt;T&gt;(Action&lt;T&gt; onReceive) where T : INetSerializable, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onReceive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_SubscribeNetSerializable_" data-uid="LiteNetLib.Utils.NetPacketProcessor.SubscribeNetSerializable*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_SubscribeNetSerializable__1_System_Action___0__System_Func___0__" data-uid="LiteNetLib.Utils.NetPacketProcessor.SubscribeNetSerializable``1(System.Action{``0},System.Func{``0})">
+  SubscribeNetSerializable&lt;T&gt;(Action&lt;T&gt;, Func&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubscribeNetSerializable&lt;T&gt;(Action&lt;T&gt; onReceive, Func&lt;T&gt; packetConstructor) where T : INetSerializable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onReceive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>packetConstructor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_SubscribeNetSerializable_" data-uid="LiteNetLib.Utils.NetPacketProcessor.SubscribeNetSerializable*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_SubscribeNetSerializable__2_System_Action___0___1__" data-uid="LiteNetLib.Utils.NetPacketProcessor.SubscribeNetSerializable``2(System.Action{``0,``1})">
+  SubscribeNetSerializable&lt;T, TUserData&gt;(Action&lt;T, TUserData&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubscribeNetSerializable&lt;T, TUserData&gt;(Action&lt;T, TUserData&gt; onReceive) where T : INetSerializable, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onReceive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;T, TUserData&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>TUserData</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_SubscribeNetSerializable_" data-uid="LiteNetLib.Utils.NetPacketProcessor.SubscribeNetSerializable*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_SubscribeNetSerializable__2_System_Action___0___1__System_Func___0__" data-uid="LiteNetLib.Utils.NetPacketProcessor.SubscribeNetSerializable``2(System.Action{``0,``1},System.Func{``0})">
+  SubscribeNetSerializable&lt;T, TUserData&gt;(Action&lt;T, TUserData&gt;, Func&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubscribeNetSerializable&lt;T, TUserData&gt;(Action&lt;T, TUserData&gt; onReceive, Func&lt;T&gt; packetConstructor) where T : INetSerializable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onReceive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;T, TUserData&gt;</dt>
+    <dd></dd>
+    <dt><code>packetConstructor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>TUserData</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_SubscribeReusable_" data-uid="LiteNetLib.Utils.NetPacketProcessor.SubscribeReusable*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_SubscribeReusable__1_System_Action___0__" data-uid="LiteNetLib.Utils.NetPacketProcessor.SubscribeReusable``1(System.Action{``0})">
+  SubscribeReusable&lt;T&gt;(Action&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Register and subscribe to packet receive event
+This method will overwrite last received packet class on receive (less garbage)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubscribeReusable&lt;T&gt;(Action&lt;T&gt; onReceive) where T : class, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onReceive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>event that will be called when packet deserialized with ReadPacket method</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.Utils.InvalidTypeException.html">InvalidTypeException</a></dt>
+    <dd><p><code class="typeparamref">T</code>'s fields are not supported, or it has no fields</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_SubscribeReusable_" data-uid="LiteNetLib.Utils.NetPacketProcessor.SubscribeReusable*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_SubscribeReusable__2_System_Action___0___1__" data-uid="LiteNetLib.Utils.NetPacketProcessor.SubscribeReusable``2(System.Action{``0,``1})">
+  SubscribeReusable&lt;T, TUserData&gt;(Action&lt;T, TUserData&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Register and subscribe to packet receive event
+This method will overwrite last received packet class on receive (less garbage)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubscribeReusable&lt;T, TUserData&gt;(Action&lt;T, TUserData&gt; onReceive) where T : class, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onReceive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;T, TUserData&gt;</dt>
+    <dd><p>event that will be called when packet deserialized with ReadPacket method</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>TUserData</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.Utils.InvalidTypeException.html">InvalidTypeException</a></dt>
+    <dd><p><code class="typeparamref">T</code>'s fields are not supported, or it has no fields</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_Subscribe_" data-uid="LiteNetLib.Utils.NetPacketProcessor.Subscribe*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_Subscribe__1_System_Action___0__System_Func___0__" data-uid="LiteNetLib.Utils.NetPacketProcessor.Subscribe``1(System.Action{``0},System.Func{``0})">
+  Subscribe&lt;T&gt;(Action&lt;T&gt;, Func&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Register and subscribe to packet receive event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Subscribe&lt;T&gt;(Action&lt;T&gt; onReceive, Func&lt;T&gt; packetConstructor) where T : class, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onReceive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;T&gt;</dt>
+    <dd><p>event that will be called when packet deserialized with ReadPacket method</p>
+</dd>
+    <dt><code>packetConstructor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd><p>Method that constructs packet instead of slow Activator.CreateInstance</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.Utils.InvalidTypeException.html">InvalidTypeException</a></dt>
+    <dd><p><code class="typeparamref">T</code>'s fields are not supported, or it has no fields</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_Subscribe_" data-uid="LiteNetLib.Utils.NetPacketProcessor.Subscribe*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_Subscribe__2_System_Action___0___1__System_Func___0__" data-uid="LiteNetLib.Utils.NetPacketProcessor.Subscribe``2(System.Action{``0,``1},System.Func{``0})">
+  Subscribe&lt;T, TUserData&gt;(Action&lt;T, TUserData&gt;, Func&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Register and subscribe to packet receive event (with userData)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Subscribe&lt;T, TUserData&gt;(Action&lt;T, TUserData&gt; onReceive, Func&lt;T&gt; packetConstructor) where T : class, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onReceive</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;T, TUserData&gt;</dt>
+    <dd><p>event that will be called when packet deserialized with ReadPacket method</p>
+</dd>
+    <dt><code>packetConstructor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd><p>Method that constructs packet instead of slow Activator.CreateInstance</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>TUserData</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LiteNetLib.Utils.InvalidTypeException.html">InvalidTypeException</a></dt>
+    <dd><p><code class="typeparamref">T</code>'s fields are not supported, or it has no fields</p>
+</dd>
+  </dl>
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_WriteHash_" data-uid="LiteNetLib.Utils.NetPacketProcessor.WriteHash*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_WriteHash__1_LiteNetLib_Utils_NetDataWriter_" data-uid="LiteNetLib.Utils.NetPacketProcessor.WriteHash``1(LiteNetLib.Utils.NetDataWriter)">
+  WriteHash&lt;T&gt;(NetDataWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void WriteHash&lt;T&gt;(NetDataWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_WriteNetSerializable_" data-uid="LiteNetLib.Utils.NetPacketProcessor.WriteNetSerializable*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_WriteNetSerializable__1_LiteNetLib_Utils_NetDataWriter___0__" data-uid="LiteNetLib.Utils.NetPacketProcessor.WriteNetSerializable``1(LiteNetLib.Utils.NetDataWriter,``0@)">
+  WriteNetSerializable&lt;T&gt;(NetDataWriter, ref T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNetSerializable&lt;T&gt;(NetDataWriter writer, ref T packet) where T : INetSerializable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd></dd>
+    <dt><code>packet</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LiteNetLib_Utils_NetPacketProcessor_Write_" data-uid="LiteNetLib.Utils.NetPacketProcessor.Write*"></a>
+
+  <h3 id="LiteNetLib_Utils_NetPacketProcessor_Write__1_LiteNetLib_Utils_NetDataWriter___0_" data-uid="LiteNetLib.Utils.NetPacketProcessor.Write``1(LiteNetLib.Utils.NetDataWriter,``0)">
+  Write&lt;T&gt;(NetDataWriter, T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write&lt;T&gt;(NetDataWriter writer, T packet) where T : class, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="LiteNetLib.Utils.NetDataWriter.html">NetDataWriter</a></dt>
+    <dd></dd>
+    <dt><code>packet</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

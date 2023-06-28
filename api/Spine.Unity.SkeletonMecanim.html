@@ -1,0 +1,744 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SkeletonMecanim
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SkeletonMecanim
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Spine.Unity.SkeletonMecanim">
+
+
+
+  <h1 id="Spine_Unity_SkeletonMecanim" data-uid="Spine.Unity.SkeletonMecanim" class="text-break">
+    Class SkeletonMecanim
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Spine.html">Spine</a>.<a class="xref" href="Spine.Unity.html">Unity</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SkeletonMecanim : SkeletonRenderer, ISkeletonComponent, IHasSkeletonDataAsset, ISkeletonAnimation</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Spine.Unity.SkeletonRenderer.html">SkeletonRenderer</a></div>
+      <div><span class="xref">SkeletonMecanim</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Spine.Unity.ISkeletonComponent.html">ISkeletonComponent</a></div>
+      <div><a class="xref" href="Spine.Unity.IHasSkeletonDataAsset.html">IHasSkeletonDataAsset</a></div>
+      <div><a class="xref" href="Spine.Unity.ISkeletonAnimation.html">ISkeletonAnimation</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_skeletonDataAsset">SkeletonRenderer.skeletonDataAsset</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_initialSkinName">SkeletonRenderer.initialSkinName</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_initialFlipX">SkeletonRenderer.initialFlipX</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_initialFlipY">SkeletonRenderer.initialFlipY</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_UpdateMode">SkeletonRenderer.UpdateMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_updateMode">SkeletonRenderer.updateMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_updateWhenInvisible">SkeletonRenderer.updateWhenInvisible</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_separatorSlotNames">SkeletonRenderer.separatorSlotNames</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_separatorSlots">SkeletonRenderer.separatorSlots</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_zSpacing">SkeletonRenderer.zSpacing</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_useClipping">SkeletonRenderer.useClipping</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_immutableTriangles">SkeletonRenderer.immutableTriangles</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_pmaVertexColors">SkeletonRenderer.pmaVertexColors</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_clearStateOnDisable">SkeletonRenderer.clearStateOnDisable</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_tintBlack">SkeletonRenderer.tintBlack</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_singleSubmesh">SkeletonRenderer.singleSubmesh</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_addNormals">SkeletonRenderer.addNormals</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_calculateTangents">SkeletonRenderer.calculateTangents</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_disableRenderingOnOverride">SkeletonRenderer.disableRenderingOnOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_GenerateMeshOverride">SkeletonRenderer.GenerateMeshOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_OnPostProcessVertices">SkeletonRenderer.OnPostProcessVertices</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_CustomMaterialOverride">SkeletonRenderer.CustomMaterialOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_CustomSlotMaterials">SkeletonRenderer.CustomSlotMaterials</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_valid">SkeletonRenderer.valid</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_skeleton">SkeletonRenderer.skeleton</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_Skeleton">SkeletonRenderer.Skeleton</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_OnRebuild">SkeletonRenderer.OnRebuild</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_OnMeshAndMaterialsUpdated">SkeletonRenderer.OnMeshAndMaterialsUpdated</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_SkeletonDataAsset">SkeletonRenderer.SkeletonDataAsset</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_NewSpineGameObject__1_Spine_Unity_SkeletonDataAsset_System_Boolean_">SkeletonRenderer.NewSpineGameObject&lt;T&gt;(SkeletonDataAsset, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_AddSpineComponent__1_GameObject_Spine_Unity_SkeletonDataAsset_System_Boolean_">SkeletonRenderer.AddSpineComponent&lt;T&gt;(GameObject, SkeletonDataAsset, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_SetMeshSettings_Spine_Unity_MeshGenerator_Settings_">SkeletonRenderer.SetMeshSettings(MeshGenerator.Settings)</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_Awake">SkeletonRenderer.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_ClearState">SkeletonRenderer.ClearState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_EnsureMeshGeneratorCapacity_System_Int32_">SkeletonRenderer.EnsureMeshGeneratorCapacity(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_OnBecameVisible">SkeletonRenderer.OnBecameVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_OnBecameInvisible">SkeletonRenderer.OnBecameInvisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_FindAndApplySeparatorSlots_System_String_System_Boolean_System_Boolean_">SkeletonRenderer.FindAndApplySeparatorSlots(string, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_FindAndApplySeparatorSlots_System_Func_System_String_System_Boolean__System_Boolean_System_Boolean_">SkeletonRenderer.FindAndApplySeparatorSlots(Func&lt;string, bool&gt;, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Spine.Unity.SkeletonRenderer.html#Spine_Unity_SkeletonRenderer_ReapplySeparatorSlotNames">SkeletonRenderer.ReapplySeparatorSlotNames()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Spine_Unity_SkeletonMecanim_translator" data-uid="Spine.Unity.SkeletonMecanim.translator">
+  translator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SkeletonMecanim.MecanimTranslator translator</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.SkeletonMecanim.html">SkeletonMecanim</a>.<a class="xref" href="Spine.Unity.SkeletonMecanim.MecanimTranslator.html">MecanimTranslator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Spine_Unity_SkeletonMecanim_Translator_" data-uid="Spine.Unity.SkeletonMecanim.Translator*"></a>
+
+  <h3 id="Spine_Unity_SkeletonMecanim_Translator" data-uid="Spine.Unity.SkeletonMecanim.Translator">
+  Translator
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkeletonMecanim.MecanimTranslator Translator { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.SkeletonMecanim.html">SkeletonMecanim</a>.<a class="xref" href="Spine.Unity.SkeletonMecanim.MecanimTranslator.html">MecanimTranslator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Spine_Unity_SkeletonMecanim_ApplyAnimation_" data-uid="Spine.Unity.SkeletonMecanim.ApplyAnimation*"></a>
+
+  <h3 id="Spine_Unity_SkeletonMecanim_ApplyAnimation" data-uid="Spine.Unity.SkeletonMecanim.ApplyAnimation">
+  ApplyAnimation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ApplyAnimation()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonMecanim_Initialize_" data-uid="Spine.Unity.SkeletonMecanim.Initialize*"></a>
+
+  <h3 id="Spine_Unity_SkeletonMecanim_Initialize_System_Boolean_System_Boolean_" data-uid="Spine.Unity.SkeletonMecanim.Initialize(System.Boolean,System.Boolean)">
+  Initialize(bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initialize this component. Attempts to load the SkeletonData and creates the internal Skeleton object and buffers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Initialize(bool overwrite, bool quiet = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>overwrite</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If set to <code>true</code>, it will overwrite internal objects if they were already generated. Otherwise, the initialized component will ignore subsequent calls to initialize.</p>
+</dd>
+    <dt><code>quiet</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonMecanim_LateUpdate_" data-uid="Spine.Unity.SkeletonMecanim.LateUpdate*"></a>
+
+  <h3 id="Spine_Unity_SkeletonMecanim_LateUpdate" data-uid="Spine.Unity.SkeletonMecanim.LateUpdate">
+  LateUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generates a new UnityEngine.Mesh from the internal Skeleton.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LateUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Spine_Unity_SkeletonMecanim_Update_" data-uid="Spine.Unity.SkeletonMecanim.Update*"></a>
+
+  <h3 id="Spine_Unity_SkeletonMecanim_Update" data-uid="Spine.Unity.SkeletonMecanim.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Spine_Unity_SkeletonMecanim_BeforeApply" data-uid="Spine.Unity.SkeletonMecanim.BeforeApply">
+  BeforeApply
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs before the animations are applied.
+Use this callback when you want to change the skeleton state before animations are applied on top.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event UpdateBonesDelegate BeforeApply</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.UpdateBonesDelegate.html">UpdateBonesDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonMecanim_UpdateComplete" data-uid="Spine.Unity.SkeletonMecanim.UpdateComplete">
+  UpdateComplete
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs after the Skeleton's bone world space values are resolved (including all constraints).
+Use this callback if you want to use bone world space values, but don't intend to modify bone local values.
+This callback can also be used when setting world position and the bone matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event UpdateBonesDelegate UpdateComplete</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.UpdateBonesDelegate.html">UpdateBonesDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonMecanim_UpdateLocal" data-uid="Spine.Unity.SkeletonMecanim.UpdateLocal">
+  UpdateLocal
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs after the animations are applied and before world space values are resolved.
+Use this callback when you want to set bone local values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event UpdateBonesDelegate UpdateLocal</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.UpdateBonesDelegate.html">UpdateBonesDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonMecanim_UpdateWorld" data-uid="Spine.Unity.SkeletonMecanim.UpdateWorld">
+  UpdateWorld
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Occurs after the Skeleton's bone world space values are resolved (including all constraints).
+Using this callback will cause the world space values to be solved an extra time.
+Use this callback if want to use bone world space values, and also set bone local values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event UpdateBonesDelegate UpdateWorld</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.UpdateBonesDelegate.html">UpdateBonesDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonMecanim__BeforeApply" data-uid="Spine.Unity.SkeletonMecanim._BeforeApply">
+  _BeforeApply
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected event UpdateBonesDelegate _BeforeApply</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.UpdateBonesDelegate.html">UpdateBonesDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonMecanim__UpdateComplete" data-uid="Spine.Unity.SkeletonMecanim._UpdateComplete">
+  _UpdateComplete
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected event UpdateBonesDelegate _UpdateComplete</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.UpdateBonesDelegate.html">UpdateBonesDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonMecanim__UpdateLocal" data-uid="Spine.Unity.SkeletonMecanim._UpdateLocal">
+  _UpdateLocal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected event UpdateBonesDelegate _UpdateLocal</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.UpdateBonesDelegate.html">UpdateBonesDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="Spine_Unity_SkeletonMecanim__UpdateWorld" data-uid="Spine.Unity.SkeletonMecanim._UpdateWorld">
+  _UpdateWorld
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected event UpdateBonesDelegate _UpdateWorld</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Spine.Unity.UpdateBonesDelegate.html">UpdateBonesDelegate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

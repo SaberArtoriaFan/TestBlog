@@ -1,0 +1,982 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LifeCycleMgr
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LifeCycleMgr
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="JEngine.Core.LifeCycleMgr">
+
+
+
+  <h1 id="JEngine_Core_LifeCycleMgr" data-uid="JEngine.Core.LifeCycleMgr" class="text-break">
+    Class LifeCycleMgr
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="JEngine.html">JEngine</a>.<a class="xref" href="JEngine.Core.html">Core</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LifeCycleMgr : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">LifeCycleMgr</span></div>
+    </dd>
+  </dl>
+
+
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="JEngine_Core_LifeCycleMgr_Instance_" data-uid="JEngine.Core.LifeCycleMgr.Instance*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_Instance" data-uid="JEngine.Core.LifeCycleMgr.Instance">
+  Instance
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>单例</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LifeCycleMgr Instance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="JEngine.Core.LifeCycleMgr.html">LifeCycleMgr</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="JEngine_Core_LifeCycleMgr_AddAwakeItem_" data-uid="JEngine.Core.LifeCycleMgr.AddAwakeItem*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_AddAwakeItem__1___0_System_Reflection_MethodInfo_" data-uid="JEngine.Core.LifeCycleMgr.AddAwakeItem``1(``0,System.Reflection.MethodInfo)">
+  AddAwakeItem&lt;T&gt;(T, MethodInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add awake task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddAwakeItem&lt;T&gt;(T instance, MethodInfo method) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_AddFixedUpdateItem_" data-uid="JEngine.Core.LifeCycleMgr.AddFixedUpdateItem*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_AddFixedUpdateItem_System_Object_System_Reflection_MethodInfo_" data-uid="JEngine.Core.LifeCycleMgr.AddFixedUpdateItem(System.Object,System.Reflection.MethodInfo)">
+  AddFixedUpdateItem(object, MethodInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add fixedUpdate task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please provide a gameObject that holds this instance to be able to monitor whether or not it should fixedUpdate&quot;)]
+public void AddFixedUpdateItem(object instance, MethodInfo method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_AddFixedUpdateItem_" data-uid="JEngine.Core.LifeCycleMgr.AddFixedUpdateItem*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_AddFixedUpdateItem__1___0_System_Reflection_MethodInfo_GameObject_" data-uid="JEngine.Core.LifeCycleMgr.AddFixedUpdateItem``1(``0,System.Reflection.MethodInfo,GameObject)">
+  AddFixedUpdateItem&lt;T&gt;(T, MethodInfo, GameObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add fixedUpdate task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFixedUpdateItem&lt;T&gt;(T instance, MethodInfo method, GameObject parent) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+    <dt><code>parent</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_AddLateUpdateItem_" data-uid="JEngine.Core.LifeCycleMgr.AddLateUpdateItem*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_AddLateUpdateItem_System_Object_System_Reflection_MethodInfo_" data-uid="JEngine.Core.LifeCycleMgr.AddLateUpdateItem(System.Object,System.Reflection.MethodInfo)">
+  AddLateUpdateItem(object, MethodInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add lateUpdate task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please provide a gameObject that holds this instance to be able to monitor whether or not it should lateUpdate&quot;)]
+public void AddLateUpdateItem(object instance, MethodInfo method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_AddLateUpdateItem_" data-uid="JEngine.Core.LifeCycleMgr.AddLateUpdateItem*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_AddLateUpdateItem__1___0_System_Reflection_MethodInfo_GameObject_" data-uid="JEngine.Core.LifeCycleMgr.AddLateUpdateItem``1(``0,System.Reflection.MethodInfo,GameObject)">
+  AddLateUpdateItem&lt;T&gt;(T, MethodInfo, GameObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add lateUpdate task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddLateUpdateItem&lt;T&gt;(T instance, MethodInfo method, GameObject parent) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+    <dt><code>parent</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_AddStartItem_" data-uid="JEngine.Core.LifeCycleMgr.AddStartItem*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_AddStartItem__1___0_System_Reflection_MethodInfo_" data-uid="JEngine.Core.LifeCycleMgr.AddStartItem``1(``0,System.Reflection.MethodInfo)">
+  AddStartItem&lt;T&gt;(T, MethodInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add start task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddStartItem&lt;T&gt;(T instance, MethodInfo method) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_AddTask_" data-uid="JEngine.Core.LifeCycleMgr.AddTask*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_AddTask_System_Action_" data-uid="JEngine.Core.LifeCycleMgr.AddTask(System.Action)">
+  AddTask(Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a task that will call once in the main thread</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid AddTask(Action action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_AddTask_" data-uid="JEngine.Core.LifeCycleMgr.AddTask*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_AddTask_System_Action_System_Func_System_Boolean__" data-uid="JEngine.Core.LifeCycleMgr.AddTask(System.Action,System.Func{System.Boolean})">
+  AddTask(Action, Func&lt;bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a task that will call once in the main thread when condition is true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid AddTask(Action action, Func&lt;bool&gt; condition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_AddTask_" data-uid="JEngine.Core.LifeCycleMgr.AddTask*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_AddTask__1___0_System_Action_" data-uid="JEngine.Core.LifeCycleMgr.AddTask``1(``0,System.Action)">
+  AddTask&lt;T&gt;(T, Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a task that will call once in the main thread</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTask&lt;T&gt;(T instance, Action action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_AddTask_" data-uid="JEngine.Core.LifeCycleMgr.AddTask*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_AddTask__1___0_System_Action_System_Func_System_Boolean__" data-uid="JEngine.Core.LifeCycleMgr.AddTask``1(``0,System.Action,System.Func{System.Boolean})">
+  AddTask&lt;T&gt;(T, Action, Func&lt;bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a task that will call once in the main thread when condition is true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTask&lt;T&gt;(T instance, Action action, Func&lt;bool&gt; condition) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_AddUpdateItem_" data-uid="JEngine.Core.LifeCycleMgr.AddUpdateItem*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_AddUpdateItem_System_Object_System_Reflection_MethodInfo_" data-uid="JEngine.Core.LifeCycleMgr.AddUpdateItem(System.Object,System.Reflection.MethodInfo)">
+  AddUpdateItem(object, MethodInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add update task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Please provide a gameObject that holds this instance to be able to monitor whether or not it should update&quot;)]
+public void AddUpdateItem(object instance, MethodInfo method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_AddUpdateItem_" data-uid="JEngine.Core.LifeCycleMgr.AddUpdateItem*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_AddUpdateItem__1___0_System_Reflection_MethodInfo_GameObject_" data-uid="JEngine.Core.LifeCycleMgr.AddUpdateItem``1(``0,System.Reflection.MethodInfo,GameObject)">
+  AddUpdateItem&lt;T&gt;(T, MethodInfo, GameObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add update task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddUpdateItem&lt;T&gt;(T instance, MethodInfo method, GameObject parent) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></dt>
+    <dd></dd>
+    <dt><code>parent</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_AddUpdateTask_" data-uid="JEngine.Core.LifeCycleMgr.AddUpdateTask*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_AddUpdateTask_System_Action_" data-uid="JEngine.Core.LifeCycleMgr.AddUpdateTask(System.Action)">
+  AddUpdateTask(Action)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a task that will always update each frame in the main thread</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid AddUpdateTask(Action action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_AddUpdateTask_" data-uid="JEngine.Core.LifeCycleMgr.AddUpdateTask*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_AddUpdateTask_System_Action_System_Func_System_Boolean__" data-uid="JEngine.Core.LifeCycleMgr.AddUpdateTask(System.Action,System.Func{System.Boolean})">
+  AddUpdateTask(Action, Func&lt;bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a task that will update each frame in the main thread when condition is true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid AddUpdateTask(Action action, Func&lt;bool&gt; condition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>condition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_ExecuteOnceTask_" data-uid="JEngine.Core.LifeCycleMgr.ExecuteOnceTask*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_ExecuteOnceTask" data-uid="JEngine.Core.LifeCycleMgr.ExecuteOnceTask">
+  ExecuteOnceTask()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>处理只调用一次的任务</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteOnceTask()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_Initialize_" data-uid="JEngine.Core.LifeCycleMgr.Initialize*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_Initialize" data-uid="JEngine.Core.LifeCycleMgr.Initialize">
+  Initialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>初始化</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Initialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_RemoveFixedUpdateItem_" data-uid="JEngine.Core.LifeCycleMgr.RemoveFixedUpdateItem*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_RemoveFixedUpdateItem__1___0_" data-uid="JEngine.Core.LifeCycleMgr.RemoveFixedUpdateItem``1(``0)">
+  RemoveFixedUpdateItem&lt;T&gt;(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove fixedUpdate task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveFixedUpdateItem&lt;T&gt;(T instance) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_RemoveLateUpdateItem_" data-uid="JEngine.Core.LifeCycleMgr.RemoveLateUpdateItem*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_RemoveLateUpdateItem__1___0_" data-uid="JEngine.Core.LifeCycleMgr.RemoveLateUpdateItem``1(``0)">
+  RemoveLateUpdateItem&lt;T&gt;(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove lateUpdate task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveLateUpdateItem&lt;T&gt;(T instance) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_RemoveTask_" data-uid="JEngine.Core.LifeCycleMgr.RemoveTask*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_RemoveTask_System_Guid__" data-uid="JEngine.Core.LifeCycleMgr.RemoveTask(System.Guid@)">
+  RemoveTask(in Guid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove a task that will call once in the main thread</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTask(in Guid guid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>guid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_RemoveTask_" data-uid="JEngine.Core.LifeCycleMgr.RemoveTask*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_RemoveTask__1___0_" data-uid="JEngine.Core.LifeCycleMgr.RemoveTask``1(``0)">
+  RemoveTask&lt;T&gt;(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove one time task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTask&lt;T&gt;(T instance) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="JEngine_Core_LifeCycleMgr_RemoveUpdateItem_" data-uid="JEngine.Core.LifeCycleMgr.RemoveUpdateItem*"></a>
+
+  <h3 id="JEngine_Core_LifeCycleMgr_RemoveUpdateItem__1___0_" data-uid="JEngine.Core.LifeCycleMgr.RemoveUpdateItem``1(``0)">
+  RemoveUpdateItem&lt;T&gt;(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove update task</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUpdateItem&lt;T&gt;(T instance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>instance</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,762 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SyncTimer
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SyncTimer
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="FishNet.Object.Synchronizing.SyncTimer">
+
+
+
+  <h1 id="FishNet_Object_Synchronizing_SyncTimer" data-uid="FishNet.Object.Synchronizing.SyncTimer" class="text-break">
+    Class SyncTimer
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="FishNet.html">FishNet</a>.<a class="xref" href="FishNet.Object.html">Object</a>.<a class="xref" href="FishNet.Object.Synchronizing.html">Synchronizing</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>A SyncObject to efficiently synchronize timers over the network.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SyncTimer : SyncBase, ISyncType, ICustomSync</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html">SyncBase</a></div>
+      <div><span class="xref">SyncTimer</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="FishNet.Object.Synchronizing.Internal.ISyncType.html">ISyncType</a></div>
+      <div><a class="xref" href="FishNet.Object.Synchronizing.ICustomSync.html">ICustomSync</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_IsRegistered">SyncBase.IsRegistered</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_IsNetworkInitialized">SyncBase.IsNetworkInitialized</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_IsSyncObject">SyncBase.IsSyncObject</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_Settings">SyncBase.Settings</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_SendRate">SyncBase.SendRate</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_IsDirty">SyncBase.IsDirty</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_NetworkManager">SyncBase.NetworkManager</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_NetworkBehaviour">SyncBase.NetworkBehaviour</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_NextSyncTick">SyncBase.NextSyncTick</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_SyncIndex">SyncBase.SyncIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_InitializeInstance_FishNet_Object_NetworkBehaviour_System_UInt32_FishNet_Object_Synchronizing_WritePermission_FishNet_Object_Synchronizing_ReadPermission_System_Single_FishNet_Transporting_Channel_System_Boolean_">SyncBase.InitializeInstance(NetworkBehaviour, uint, WritePermission, ReadPermission, float, Channel, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_SetRegistered">SyncBase.SetRegistered()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_Registered">SyncBase.Registered()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_PreInitialize_FishNet_Managing_NetworkManager_">SyncBase.PreInitialize(NetworkManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_CanNetworkSetValues_System_Boolean_">SyncBase.CanNetworkSetValues(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_LogServerNotActiveWarning">SyncBase.LogServerNotActiveWarning()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_Dirty">SyncBase.Dirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_WriteHeader_FishNet_Serializing_PooledWriter_System_Boolean_">SyncBase.WriteHeader(PooledWriter, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_Read_FishNet_Serializing_PooledReader_">SyncBase.Read(PooledReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="FishNet.Object.Synchronizing.Internal.SyncBase.html#FishNet_Object_Synchronizing_Internal_SyncBase_Reset">SyncBase.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_GetActualType_System_Object_">Extensions.GetActualType(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToDouble_System_Object_">Extensions.ToDouble(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToFloat_System_Object_">Extensions.ToFloat(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt16_System_Object_">Extensions.ToInt16(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt32_System_Object_">Extensions.ToInt32(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="ILRuntime.Runtime.Extensions.html#ILRuntime_Runtime_Extensions_ToInt64_System_Object_">Extensions.ToInt64(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_CanAssignTo_System_Object_System_Type_">Tools.CanAssignTo(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_ConvertSimpleType_System_Object_System_Type_">Tools.ConvertSimpleType(object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="JEngine.Core.Tools.html#JEngine_Core_Tools_GetGameObject_System_Object_">Tools.GetGameObject(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="FishNet_Object_Synchronizing_SyncTimer_Duration_" data-uid="FishNet.Object.Synchronizing.SyncTimer.Duration*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_Duration" data-uid="FishNet.Object.Synchronizing.SyncTimer.Duration">
+  Duration
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starting duration of the timer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Duration { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Object_Synchronizing_SyncTimer_Elapsed_" data-uid="FishNet.Object.Synchronizing.SyncTimer.Elapsed*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_Elapsed" data-uid="FishNet.Object.Synchronizing.SyncTimer.Elapsed">
+  Elapsed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>How much time has passed since the timer started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Elapsed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Object_Synchronizing_SyncTimer_Paused_" data-uid="FishNet.Object.Synchronizing.SyncTimer.Paused*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_Paused" data-uid="FishNet.Object.Synchronizing.SyncTimer.Paused">
+  Paused
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if the SyncTimer is currently paused. Calls to Update(float) will be ignored when paused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Paused { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="FishNet_Object_Synchronizing_SyncTimer_Remaining_" data-uid="FishNet.Object.Synchronizing.SyncTimer.Remaining*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_Remaining" data-uid="FishNet.Object.Synchronizing.SyncTimer.Remaining">
+  Remaining
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Time remaining on the timer. When the timer is expired this value will be 0f.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Remaining { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="FishNet_Object_Synchronizing_SyncTimer_GetSerializedType_" data-uid="FishNet.Object.Synchronizing.SyncTimer.GetSerializedType*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_GetSerializedType" data-uid="FishNet.Object.Synchronizing.SyncTimer.GetSerializedType">
+  GetSerializedType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return the serialized type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetSerializedType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Object_Synchronizing_SyncTimer_OnStartCallback_" data-uid="FishNet.Object.Synchronizing.SyncTimer.OnStartCallback*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_OnStartCallback_System_Boolean_" data-uid="FishNet.Object.Synchronizing.SyncTimer.OnStartCallback(System.Boolean)">
+  OnStartCallback(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called after OnStartXXXX has occurred.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnStartCallback(bool asServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>asServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if OnStartServer was called, false if OnStartClient.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Object_Synchronizing_SyncTimer_PauseTimer_" data-uid="FishNet.Object.Synchronizing.SyncTimer.PauseTimer*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_PauseTimer_System_Boolean_" data-uid="FishNet.Object.Synchronizing.SyncTimer.PauseTimer(System.Boolean)">
+  PauseTimer(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pauses the timer. Calling while already paused will be result in no action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PauseTimer(bool sendRemaining = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sendRemaining</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to send Remaining with this operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Object_Synchronizing_SyncTimer_Read_" data-uid="FishNet.Object.Synchronizing.SyncTimer.Read*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_Read_FishNet_Serializing_PooledReader_System_Boolean_" data-uid="FishNet.Object.Synchronizing.SyncTimer.Read(FishNet.Serializing.PooledReader,System.Boolean)">
+  Read(PooledReader, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads and sets the current values for server or client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Read(PooledReader reader, bool asServer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reader</code> <a class="xref" href="FishNet.Serializing.PooledReader.html">PooledReader</a></dt>
+    <dd></dd>
+    <dt><code>asServer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Object_Synchronizing_SyncTimer_StartTimer_" data-uid="FishNet.Object.Synchronizing.SyncTimer.StartTimer*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_StartTimer_System_Single_System_Boolean_" data-uid="FishNet.Object.Synchronizing.SyncTimer.StartTimer(System.Single,System.Boolean)">
+  StartTimer(float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts a timer. If called when a timer is already active then StopTimer will automatically be sent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartTimer(float remaining, bool sendRemainingOnStop = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>remaining</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Time in which the timer should start with.</p>
+</dd>
+    <dt><code>sendRemainingOnStop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to include remaining time when automatically sending StopTimer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Object_Synchronizing_SyncTimer_StopTimer_" data-uid="FishNet.Object.Synchronizing.SyncTimer.StopTimer*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_StopTimer_System_Boolean_" data-uid="FishNet.Object.Synchronizing.SyncTimer.StopTimer(System.Boolean)">
+  StopTimer(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops and resets the timer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopTimer(bool sendRemaining = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sendRemaining</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Object_Synchronizing_SyncTimer_UnpauseTimer_" data-uid="FishNet.Object.Synchronizing.SyncTimer.UnpauseTimer*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_UnpauseTimer" data-uid="FishNet.Object.Synchronizing.SyncTimer.UnpauseTimer">
+  UnpauseTimer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unpauses the timer. Calling while already unpaused will be result in no action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnpauseTimer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Object_Synchronizing_SyncTimer_Update_" data-uid="FishNet.Object.Synchronizing.SyncTimer.Update*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_Update_System_Single_" data-uid="FishNet.Object.Synchronizing.SyncTimer.Update(System.Single)">
+  Update(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes delta from Remaining for server and client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update(float delta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>delta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Value to remove from Remaining.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Object_Synchronizing_SyncTimer_WriteDelta_" data-uid="FishNet.Object.Synchronizing.SyncTimer.WriteDelta*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_WriteDelta_FishNet_Serializing_PooledWriter_System_Boolean_" data-uid="FishNet.Object.Synchronizing.SyncTimer.WriteDelta(FishNet.Serializing.PooledWriter,System.Boolean)">
+  WriteDelta(PooledWriter, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes all changed values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteDelta(PooledWriter writer, bool resetSyncTick = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="FishNet.Serializing.PooledWriter.html">PooledWriter</a></dt>
+    <dd></dd>
+    <dt><code>resetSyncTick</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True to set the next time data may sync.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="FishNet_Object_Synchronizing_SyncTimer_WriteFull_" data-uid="FishNet.Object.Synchronizing.SyncTimer.WriteFull*"></a>
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_WriteFull_FishNet_Serializing_PooledWriter_" data-uid="FishNet.Object.Synchronizing.SyncTimer.WriteFull(FishNet.Serializing.PooledWriter)">
+  WriteFull(PooledWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes all values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteFull(PooledWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="FishNet.Serializing.PooledWriter.html">PooledWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="FishNet_Object_Synchronizing_SyncTimer_OnChange" data-uid="FishNet.Object.Synchronizing.SyncTimer.OnChange">
+  OnChange
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when a timer operation occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event SyncTimer.SyncTypeChanged OnChange</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="FishNet.Object.Synchronizing.SyncTimer.html">SyncTimer</a>.<a class="xref" href="FishNet.Object.Synchronizing.SyncTimer.SyncTypeChanged.html">SyncTypeChanged</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
